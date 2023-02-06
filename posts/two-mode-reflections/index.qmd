@@ -1,0 +1,321 @@
+---
+title: "Reflective Centralities in Two Mode Data"
+author: "Omar Lizardo"
+date: "2023-01-24"
+categories: [Generalized similarities, Two-mode networks, Reflections, Complexity]
+draft: false
+---
+
+## Introduction 
+In a [2018 piece published in *Poetics*](https://doi.org/10.1016/j.poetic.2018.04.003) I adapted an approach to computing "reflective centralities" in two-mode data developed by [Hidalgo & Hausmann (2009)](https://www.pnas.org/doi/abs/10.1073/pnas.0900943106)---hereafter HH---to generalize basic formal notions in the study of cultural taste. Namely, "omnivorousness" on the side of people and "popularity" on the side of genres. The basic idea is that people can be characterized by the formal properties of the genres they choose (e.g., popularity versus nicheness) and genres can be characterized by the formal properties of the people who choose them (e.g., omnivores versus univores), at various levels of "reflections" (see the paper for more details).
+
+Of course, the HH reflective approach is not restricted to any type of data---although I would argue there is a particular elective affinity between this formalization and the substantive subject of cultural taste. In fact, it can be considered part of a family of reflective methods to compute the centralities of object in one node set in two-mode networks using relational information from the objects in the other node set.
+
+```{r Southern Women Data, echo=FALSE}
+#| label: tbl-southern
+#| tbl-cap: Southern Women Data.
+#| tbl-colwidths: [2]
+
+   library(kableExtra)
+    A <- matrix(
+         c(
+          1, 1, 1, 1, 1,  1, 0, 1, 1,  0, 0, 0, 0, 0, 
+          1, 1, 1, 0, 1,  1, 1, 1, 0,  0, 0, 0, 0, 0, 
+          0, 1, 1, 1, 1,  1, 1, 1, 1,  0, 0, 0, 0, 0, 
+          1, 0, 1, 1, 1,  1, 1, 1, 0,  0, 0, 0, 0, 0, 
+          0, 0, 1, 1, 1,  0, 1, 0, 0,  0, 0, 0, 0, 0, 
+          0, 0, 1, 0, 1,  1, 0, 1, 0,  0, 0, 0, 0, 0, 
+          0, 0, 0, 0, 1,  1, 1, 1, 0,  0, 0, 0, 0, 0, 
+          0, 0, 0, 0, 1,  0, 1, 1, 1,  0, 0, 0, 0, 0, 
+          
+          0, 0, 0, 0, 0,  0, 1, 1, 1,  0, 0, 1, 0, 0, 
+          0, 0, 0, 0, 0,  0, 0, 1, 1,  1, 0, 1, 0, 0, 
+          0, 0, 0, 0, 0,  0, 0, 1, 1,  1, 0, 1, 1, 1,
+          0, 0, 0, 0, 0,  0, 1, 1, 1,  1, 0, 1, 1, 1,
+          0, 0, 0, 0, 0,  0, 1, 0, 1,  1, 1, 1, 1, 1,
+          0, 0, 0, 0, 0,  0, 1, 1, 0,  1, 1, 1, 0, 0,
+          0, 0, 0, 0, 0,  0, 0, 0, 1,  0, 1, 0, 0, 0,
+          0, 0, 0, 0, 0,  0, 0, 0, 1,  0, 1, 1, 1, 0, 
+          
+          0, 0, 0, 0, 0,  1, 0, 1, 1,  0, 0, 0, 0, 0,
+          0, 0, 0, 0, 0,  0, 0, 1, 1,  0, 0, 0, 0, 0),
+          ncol = 14, byrow = TRUE)
+     w <- c("EVELYN", "LAURA", "THERESA", "BRENDA", "CHARLOTTE", "FRANCES", "ELEANOR", "RUTH", "VERNE", "MYRA", "KATHERINE", "SYLVIA", "NORA", "HELEN", "OLIVIA", "FLORA", "PEARL", "DOROTHY")
+     e <- paste("E", c(1:14), sep = "")
+     rownames(A) <- w
+     colnames(A) <- e
+     kbl(A, align = "c", format = "html", padding = 2) %>% 
+        footnote(general = "Rows ordered according to the generalized blockmodeling solution of Doreian et al. (2004, Table 4).")
+```
+
+## Reflective Centralities of Persons and Groups
+Take the classic case of the duality of persons and groups (Breiger, 1974). At the first level, the most basic measure of centrality is **degree centrality**. 
+Recall that a two-mode network composed of a set of people $P$ and their affiliation relations to a set of groups $P$ can be represented by an affiliation matrix $\mathbf{A}$ of dimensions $|P| \times |G|$ with people along the rows and groups across the columns, where $|P|$ is the cardinality of the people set and $|G|$ is the cardinality of the group set, with cell entries $a_{pg}= 1$ if person *p* is affiliated with group *g* and $a_{pg}= 0$ otherwise. 
+
+In this case, the degree centrality of people is given by:
+
+$$
+   C^R_p(1) = \sum_g a_{pg}
+$$ {#eq-pr1}
+
+And for groups:
+
+$$
+   C^R_g(1) = \sum_p a_{pg}
+$$ {#eq-gr1}
+
+For instance, for the classic Davis et al. (1941) Southern Women Data shown in @tbl-southern, the centrality of the degree centralities of the people are:
+
+```{r, echo=FALSE}
+   pr1 <- t(rowSums(A))
+   kbl(pr1, align = "c", format = "pipe")
+```
+
+And for the groups:
+
+```{r, echo=FALSE}
+   gr1 <- t(colSums(A))
+   kbl(gr1, align = "c", format = "pipe")
+```
+
+The key to the reflective approach, is the observation that, once we have these first-order quantities, it is possible to compute a "second order centralities" for both people and groups using the centralities of the other mode. 
+
+For people this is:
+
+$$
+   C^R_p(2) = \frac{1}{C^R_p(1)}\sum_g a_{pg}C^R_g(1)
+$$ {#eq-pr2}
+
+And for groups:
+
+$$
+   C^R_g(2) = \frac{1}{C^R_g(1)}\sum_p a_{pg}C^R_p(1)
+$$ {#eq-gr2}
+
+@eq-pr2 says "people are more central when the average membership of the groups they belong to is large" (e.g., $a_{pg} = 1$ and $C^R_g(1)$ is a big number). @eq-gr2 says "groups are more central when the average number of memberships of their members is large" (e.g., $a_{pg} = 1$ and $C^R_p(1)$ is a big number).
+
+Of course, we can keep on going and define third order reflections:
+
+$$
+   C^R_p(3) = \frac{1}{C^R_p(1)}\sum_g a_{pg}C^R_g(2)
+$$ {#eq-pr3}
+
+$$
+   C^R_g(3) = \frac{1}{C^R_g(1)}\sum_p a_{pg}C^R_p(2)
+$$ {#eq-gr3}
+
+@eq-pr3 says something like "people are more central when the average of the average number of memberships of the members of the groups they belong to is large" (e.g., $a_{pg} = 1$ and $C^R_g(2)$ is a big number). @eq-gr3 says something like "groups are more central when the average of the average number of members of the groups their members belong to is large" (e.g., $a_{pg} = 1$ and $C^R_p(2)$ is a big number).
+
+Note that for the people, the even numbered reflection $C^R_p(2)$ assigns centrality based on a formal feature of the *groups* they belong to (in this case, their degree centrality). The odd numbered reflection $C^R_p(3)$, on the other hand, assigns centrality based on a formal feature of the *members of the groups* they belong to. 
+
+In the same way, for the groups, the even-numbered reflection $C^R_g(2)$ assigns centrality based on a formal feature of the *people* who belong to them (in this case, their degree centrality). The odd numbered reflection $C^R_g(3)$, on the other hand, assigns centrality based on a formal feature of the *groups their members* they belong to.
+
+More generally, we can define a series of reflective quantities for people and groups (whose verbal interpretation becomes more complex as the number of iterations increases):
+
+$$
+   C^R_p(q) = \frac{1}{C^R_p(1)}\sum_g a_{pg}C^R_g(q-1) 
+$$
+
+$$
+   C^R_g(q) = \frac{1}{C^R_g(1)}\sum_p a_{pg}C^R_p(q-1)
+$$ {#eq-grq}
+
+For all $q>1$ (Hidalgo & Hausmann, 2009). This results in a series of vectors of reflective centrality scores for both people and groups across iterations $q =\{1, 2, 3, ....Q\}$, which can be arranged into a $P \times Q$ matrix (for people) and $G \times Q$ matrix (for groups).
+
+```{r, echo=FALSE}
+#| label: tbl-pr-even
+#| tbl-cap: Even numbered reflective centralities for people in the Southern Women Data
+#| tbl-cap-location: margin
+
+   source("C:/Users/Omar Lizardo/Google Drive/R/person-group-reflections/reflections.R")
+   evens <- function(x) subset(x, x %% 2 == 0)
+   odds <- function(x) subset(x, x %% 2 != 0)
+   a <- reflections(A, iter = 26)
+   p.e.r <- a$person$rr[, evens(1:20)]
+   p.e.r <- round(p.e.r, 0)
+   kbl(p.e.r, align = "c", format = "pipe")
+```
+
+## Results
+### Persons
+@tbl-pr-even shows the results of the even numbered reflections for the people in the Southern women data, using an R function called `reflections` that can be found [here](https://github.com/olizardo/person-group-reflections). @tbl-pr-odd show the corresponding odd numbered reflections. Each entry in the table is the rank (ordered so that smaller means higher rank) of standardized centrality score for each reflection. 
+
+```{r, echo=FALSE}
+#| label: tbl-pr-odd
+#| tbl-cap: Odd numbered reflective centralities for people in the Southern Women Data
+#| tbl-cap-location: margin
+
+   p.o.r <- a$person$rr[, odds(1:20)]
+   p.o.r <- round(p.o.r, 0)
+   p.o.r <- p.o.r[, -1]
+   kbl(p.o.r, align = "c", format = "pipe")
+```
+
+```{r, include=FALSE}
+   source("C:/Users/Omar Lizardo/Google Drive/R/person-group-reflections/ref.long.dat.R")
+     b <- ref.long.dat(a, max.iter = 26)
+```
+
+
+The reflective centrality pattern encoded in the tabular data can be more easily apprehended using a *bump chart*. @fig-pr-even and @fig-pr-odd show such charts for the data corresponding to @tbl-pr-even and @tbl-pr-odd respectively.^[The plots were rendered using the package [`ggbump`](https://github.com/davidsjoberg/ggbump). Color palette is "cols25" from the [`pals`](https://kwstat.github.io/pals/index.html) package.] As the tables show, in all cases, the rankings "freeze" after a relatively small number of iterations ($q \approx 18$)
+     
+```{r, echo=FALSE}
+#| label: fig-pr-even 
+#| fig-cap: Even numbered reflective centrality trajectories for actors in Southern Women Data.
+#| fig-width: 9
+#| fig-height: 7
+
+   library(ggbump)
+   library(cowplot)
+   library(ggrepel)
+   library(pals)
+   plot.dat <- b$person$even
+   p <- ggplot(data = filter(plot.dat, n.iter < 22),
+               mapping = aes(x = n.iter, y = ref, color = person))
+   # geoms
+   p <- p + geom_bump(linewidth = 1, smooth = 8, alpha = 0.4)
+   p <- p + geom_point(size = 4, alpha = 0.8)
+   p <-    p <- p + geom_text_repel(data = filter(plot.dat, n.iter == 2), 
+                                    aes(x = n.iter, label = person), 
+                                    size = 4, nudge_x = -3)
+   p <-    p <- p + geom_text(data = filter(plot.dat, n.iter == 22), 
+                              aes(x = n.iter, label = person), 
+                              size = 4, nudge_x = 0.5)
+
+   # fixings
+   p <- p + theme_minimal_grid(font_size = 14, line_size = 0)
+   p <- p + scale_x_continuous(limits = c(-4, 30), breaks = evens(2:22))
+   p <- p + labs(x = "Reflection")
+   p <- p + scale_y_reverse()
+   p <- p + theme(legend.position = "none",
+        panel.grid.major = element_blank(),
+        axis.text.y = element_blank(),
+        axis.title.y = element_blank()
+        )
+   p <- p + scale_color_manual(values=as.vector(cols25(18)))
+   p
+```
+
+As @fig-pr-even shows, $NORA$, $FLORA$, $CHARLOTTE$ and $EVELYN$ are the top-ranked actors when it comes to $C^R(2)$:  The average number of members of the groups they belong to. However, their fates in this reflective metric diverges at higher reflections, with Nora and Flora maintaining their top positions but $CHARLOTTE$ and $EVELYN$ tumbling down the ranks, suggesting that the members of the groups they belong to affiliate with smaller groups than the members of the groups $NORA$ and $FLORA$ belong to (and so on for higher reflections). 
+
+Notably, the reflective centrality ranks at the highest reflection ($q = 20$) in @tbl-pr-even, recovers the Doreian et al. (2004) block partition (see @tbl-southern), but this time with Dorothy and Pearl in the middle separating the two largest blocks of women. 
+
+```{r, echo=FALSE}
+#| label: fig-pr-odd
+#| fig-cap: Odd numbered reflective centrality trajectories for actors in Southern Women Data.
+#| fig-width: 9
+#| fig-height: 7
+
+   plot.dat <- b$person$odd
+   p <- ggplot(data = filter(plot.dat, n.iter < 19),
+               mapping = aes(x = n.iter, y = ref, color = person))
+   # geoms
+   p <- p + geom_bump(linewidth = 1, smooth = 8, alpha = 0.4)
+   #p <- p + geom_point(data = filter(plot.dat, n.iter > 1 & n.iter < 19), size = 4, alpha = 0.8)
+   p <- p + geom_point(size = 4, alpha = 0.8)
+   p <-    p <- p + geom_text(data = filter(plot.dat, n.iter == 19), 
+                              aes(x = n.iter, label = person), 
+                               size = 4, nudge_x = 0)
+   p <-    p <- p + geom_text_repel(data = filter(plot.dat, n.iter == 3), 
+                                    aes(x = n.iter, label = person), 
+                                    size = 4, nudge_x = -2)
+   # fixings
+   p <- p + theme_minimal_grid(font_size = 14, line_size = 0)
+   p <- p + scale_x_continuous(limits = c(-4, 22), breaks = odds(3:17))
+   p <- p + scale_y_reverse()
+   p <- p + labs(x = "Reflection")
+   p <- p + theme(legend.position = "none",
+        panel.grid.major = element_blank(),
+        axis.text.y = element_blank(),
+        axis.title.y = element_blank()
+        )
+   p <- p + scale_color_manual(values=as.vector(cols25(18)))
+   p
+```
+
+### Groups
+@fig-gr-even and @fig-gr-odd show the corresponding bump charts for the events. Just like for this actors, the equilibrium reflective centralities recover the ordering of the columns according to Doreian et al. generalized blockmodel with events 1-6 separated from events 10-15 by events 7-9 (see also Kovacs, 2010). 
+
+```{r, echo=FALSE}
+#| label: fig-gr-even 
+#| fig-cap: Even numbered reflective centrality trajectories for events in Southern Women Data.
+#| fig-width: 9
+#| fig-height: 7
+
+   plot.dat <- b$group$even
+   p <- ggplot(data = filter(plot.dat, n.iter < 22),
+               mapping = aes(x = n.iter, y = ref, color = group))
+   #geoms
+   p <- p + geom_bump(linewidth = 1, smooth = 8, alpha = 0.4)
+   p <- p + geom_point(size = 4, alpha = 1)
+   p <-    p <- p + geom_text(data = filter(plot.dat, n.iter == 24), 
+                              aes(x = n.iter, label = group), 
+                              size = 4, nudge_x = -2)
+   p <-    p <- p + geom_text_repel(data = filter(plot.dat, n.iter == 2), 
+                                    aes(x = n.iter, label = group), 
+                                    size = 4, nudge_x = -1)
+   #fixings
+   p <- p + theme_minimal_grid(font_size = 14, line_size = 0)
+   p <- p + scale_x_continuous(limits = c(-4, 30), breaks = evens(2:20))
+   p <- p + labs(x = "Reflection")
+   p <- p + scale_y_reverse()
+   p <- p + theme(legend.position = "none",
+        panel.grid.major = element_blank(),
+        axis.text.y = element_blank(),
+        axis.title.y = element_blank()
+        )
+   p <- p + scale_color_manual(values=as.vector(cols25(15)))
+   p
+```
+
+@fig-gr-even shows that $E14$ experiences the most dramatic improvement in status as we move to higher reflections. Relatively low ranked when it comes to the average number of memberships of its members, it increases in standing when considering the average of the average number memberships of its members (and so forth). 
+
+The most dramatic change in status is for $E1$ in fig-gr-odd, which begins as the top event when centrality is measured as the average size of the memberships of its members, but ends up dead last at higher reflections, suggesting that the average size of the events attended by the members of the groups its members belong to are smaller than other events (and so forth). 
+
+```{r, echo=FALSE}
+#| label: fig-gr-odd
+#| fig-cap: Odd numbered reflective centrality trajectories for events in Southern Women Data.
+#| fig-width: 9
+#| fig-height: 7
+
+   plot.dat <- b$group$odd
+   p <- ggplot(data = filter(plot.dat, n.iter < 19),
+               mapping = aes(x = n.iter, y = ref, color = group))
+   # geoms
+   p <- p + geom_bump(linewidth = 1, smooth = 8, alpha = 0.4)
+   p <- p + geom_point(size = 4, alpha = 0.8)
+   p <-    p <- p + geom_text(data = filter(plot.dat, n.iter == 19), 
+                              aes(x = n.iter, label = group), 
+                              size = 4,  nudge_x = -1)
+   p <-    p <- p + geom_text_repel(data = filter(plot.dat, n.iter == 3), 
+                                    aes(x = n.iter, label = group), 
+                                    size = 4, nudge_x = -1)
+   # fixings
+   p <- p + theme_minimal_grid(font_size = 14, line_size = 0)
+   p <- p + scale_x_continuous(limits = c(-4, 22), breaks = odds(3:17))
+   p <- p + labs(x = "Reflection")
+   p <- p + scale_y_reverse()
+   p <- p + theme(legend.position = "none",
+        panel.grid.major = element_blank(),
+        axis.text.y = element_blank(),
+        axis.title.y = element_blank()
+        )
+   p <- p + scale_color_manual(values=as.vector(cols25(15)))
+   p
+```
+
+## Conclusion
+The H-H reflective metric can be an insightful tool to analyze  centralities in two-mode data, respecting the principle of duality (Breiger, 1974). In this post, I showed the approach can reveal substantive meaningful patterns in the position of persons and groups in a classic two-mode network data set. 
+
+## References
+Breiger, R. L. (1974). The duality of persons and groups. *Social Forces*, 53(2), 181-190.
+
+Davis, A., Gardner, B. B., & Gardner, M. R. (1941). *Deep South A Social Anthropological Study of Caste and Class*. University of Chicago Press.
+
+Doreian, P., Batagelj, V., & Ferligoj, A. (2004). Generalized blockmodeling of two-mode network data. *Social Networks*, 26(1), 29-53.
+
+Hidalgo, C. A., & Hausmann, R. (2009). The building blocks of economic complexity. *Proceedings of the National Academy of Sciences*, 106(26), 10570-10575.
+
+Kovács, B. (2010). A generalized model of relational similarity. *Social Networks*, 32(3), 197-211.
+
+Lizardo, O. (2018). The mutual specification of genres and audiences: Reflective two-mode centralities in person-to-culture data. *Poetics*, 68, 52-71.

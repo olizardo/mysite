@@ -1,0 +1,42 @@
+project:
+  type: website
+
+website:
+  title: "Omar Lizardo"
+  search: false
+  navbar:
+    background: "#2D68C4"
+    right:
+      - file: pubs.qmd
+        text: "Work"
+        icon: pencil-square
+      - file: blog.qmd
+        text: "Blog"
+        icon: journal-richtext
+      - text: "Teaching"
+        icon: pencil
+        menu: 
+          - text: "Networks Textbook"
+            icon: book
+            href: networks-textbook/index.html
+          - text: "SOCIOL 208B (Spring 2022)"
+            icon: file-text
+            href: syllabi/SOCIOL208b-spring22.html
+      - file: vita.pdf
+        text: "Vita"
+        icon: file-pdf
+      - file: bio.qmd
+        text: "Bio"
+        icon: person-circle
+      - href: mailto:olizardo@soc.ucla.edu
+        icon: envelope
+        text: "Email"
+        
+format:
+  html:
+    theme: default
+    css: styles.css
+    toc: true
+
+editor: source
+
