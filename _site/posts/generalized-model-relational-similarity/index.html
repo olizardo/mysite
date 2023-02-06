@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.313">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Omar Lizardo">
+<meta name="dcterms.date" content="2023-01-20">
+
+<title>Omar Lizardo - Implementation of Kovacs’s Generalized Model of Relational Similarity for R</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Omar Lizardo</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../pubs.html"><i class="bi bi-pencil-square" role="img">
+</i> 
+ <span class="menu-text">Work</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../blog.html"><i class="bi bi-journal-richtext" role="img">
+</i> 
+ <span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-teaching" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-pencil" role="img">
+</i> 
+ <span class="menu-text">Teaching</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-teaching">    
+        <li>
+    <a class="dropdown-item" href="../../networks-textbook/index.html"><i class="bi bi-book" role="img">
+</i> 
+ <span class="dropdown-text">Networks Textbook</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../syllabi/SOCIOL208b-spring22.html"><i class="bi bi-file-text" role="img">
+</i> 
+ <span class="dropdown-text">SOCIOL 208B (Spring 2022)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../../vita.pdf"><i class="bi bi-file-pdf" role="img">
+</i> 
+ <span class="menu-text">Vita</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../bio.html"><i class="bi bi-person-circle" role="img">
+</i> 
+ <span class="menu-text">Bio</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="mailto:olizardo@soc.ucla.edu"><i class="bi bi-envelope" role="img">
+</i> 
+ <span class="menu-text">Email</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Implementation of Kovacs’s Generalized Model of Relational Similarity for R</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">Generalized similarities</div>
+                <div class="quarto-category">two-mode networks</div>
+                <div class="quarto-category">correlation distance</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Omar Lizardo </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">January 20, 2023</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#the-correlation-distance-as-a-function-of-row-and-column-profiles" id="toc-the-correlation-distance-as-a-function-of-row-and-column-profiles" class="nav-link" data-scroll-target="#the-correlation-distance-as-a-function-of-row-and-column-profiles">The Correlation Distance as a Function of Row and Column Profiles</a></li>
+  <li><a href="#generalized-similarities" id="toc-generalized-similarities" class="nav-link" data-scroll-target="#generalized-similarities">Generalized Similarities</a></li>
+  <li><a href="#analysis-of-southern-women-data" id="toc-analysis-of-southern-women-data" class="nav-link" data-scroll-target="#analysis-of-southern-women-data">Analysis of Southern Women Data</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block page-columns page-full" id="quarto-document-content">
+
+
+
+
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>In an insightful, and somewhat overlooked paper published in <em>Social Networks</em>, <a href="https://doi.org/10.1016/j.socnet.2010.02.001">Kovacs (2010) introduced a generalized relational similarity measure</a> based on iterated correlations, applicable to two-mode and one-mode network data. This post provides a brief description of Kovacs’s approach, and introduces an implementation of his proposed algorithm as a function for the <em>R</em> statistical computing environment.</p>
+<p>According to Kovacs, a desirable generalized similarity measure must have two desirable properties.</p>
+<ul>
+<li>First, it should respect the <em>principle of equivalence</em>, such that it classifies actors as similar if they have similar relations to other objects who are themselves similar.</li>
+<li>Second, the similarity measure should respect the <em>principle of duality</em> (Breiger, 1974), such that it classifies actors as similar if they have similar relations to similar objects, and objects as similar if they have similar relations to similar actors within the same system.</li>
+</ul>
+</section>
+<section id="the-correlation-distance-as-a-function-of-row-and-column-profiles" class="level2">
+<h2 class="anchored" data-anchor-id="the-correlation-distance-as-a-function-of-row-and-column-profiles">The Correlation Distance as a Function of Row and Column Profiles</h2>
+<p>Kovacs’s main observation is that such a generalized relational similarity measure could be obtained by transforming the usual correlation distance measure. Particularly, Kovacs begins by noting that in the two-mode case, the correlation distance between any pair of actors <span class="math inline">\(D(A)^{cor}_{i,j}\)</span> be expressed as a function of their row profiles in actors <span class="math inline">\(\times\)</span> objects affiliation matrix <span class="math inline">\(\mathbf{M}\)</span> as follows:</p>
+<p><span id="eq-1"><span class="math display">\[
+   D(A)^{cor}_{i,j} =
+    \frac{
+    (M_{i\bullet} - \bar{M_{i\bullet}})
+    (M_{j\bullet} - \bar{M_{j\bullet}})^T
+    }
+    {
+    \sqrt{
+    (M_{i\bullet} - \bar{M_{i\bullet}})
+    (M_{i\bullet} - \bar{M_{i\bullet}})^T
+    (M_{j\bullet} - \bar{M_{j\bullet}})
+    (M_{j\bullet} - \bar{M_{j\bullet}})^T
+        }
+    }
+\tag{1}\]</span></span></p>
+<p>Where <span class="math inline">\(M_{i\bullet}\)</span> is the row profile corresponding to actor <span class="math inline">\(i\)</span>, <span class="math inline">\(M_{j\bullet}\)</span> is the row profile corresponding to actor <span class="math inline">\(j\)</span>, <span class="math inline">\(\bar{M_{i\bullet}}\)</span> is the row mean for actor <span class="math inline">\(i\)</span>, and <span class="math inline">\(\bar{M_{j\bullet}}\)</span> is the row mean for actor <span class="math inline">\(j\)</span> in the affiliation matrix.</p>
+<p>The same approach can be used to find the correlation distance between any two column objects <span class="math inline">\(D(O)^{cor}_{i, j}\)</span>, by substituting their column profiles <span class="math inline">\((M_{\bullet i}, M_{\bullet j})\)</span> and column means <span class="math inline">\((\bar{M_{\bullet i}}, \bar{M_{\bullet j})}\)</span> into equation <a href="#eq-1">Equation&nbsp;1</a>.</p>
+<p>Overall, increasingly positive values of the correlation distance indicate actor similarity, while negative values indicate actor dissimilarity, with values bounded in the <span class="math inline">\((-1, 1)\)</span> interval.</p>
+<p>Kovacs noted that the correlation distance classifies actors as similar if they have similar relations to other objects, but fails to incorporate the inter-object similarities. That is, actors should receive more similarity ``points’’ if they connect to objects that are themselves similar. It thus fails to respect the principle of equivalence.</p>
+</section>
+<section id="generalized-similarities" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="generalized-similarities">Generalized Similarities</h2>
+<p>Kovacs proposed that a generalized measure of relational similiarity could be obtained by tweaking the standard correlation distance formula. To this end, consider a matrix <span class="math inline">\(\mathbf{S(O)}\)</span> with cell entries <span class="math inline">\(s(o)_{ij}\)</span> capturing pairwise similarities between the objects in the two-mode network. In this case, a generalized relational similarity (GRS) measure for actors based on the correlation distance can be expressed as:</p>
+<p><span id="eq-2"><span class="math display">\[
+   D(A)^{grs}_{i,j} =
+    \frac{
+    (M_{i\bullet} - \bar{M_{i\bullet}})
+    \mathbf{S(O)}
+    (M_{j\bullet} - \bar{M_{j\bullet}})^T
+    }
+    {
+    \sqrt{
+    (M_{i\bullet} - \bar{M_{i\bullet}})
+    \mathbf{S(O)}
+    (M_{i\bullet} - \bar{M_{i\bullet}})^T
+    }
+    \sqrt{
+    (M_{j\bullet} - \bar{M_{j\bullet}})
+    \mathbf{S(O)}
+    (M_{j\bullet} - \bar{M_{j\bullet}})^T
+        }
+    }
+\tag{2}\]</span></span></p>
+<p>Kovacs notes that if we have access to an analogous matrix of similarities between actors <span class="math inline">\(\mathbf{S(A)}\)</span> in the network, then we would be able to also calculate a generalized relational similarity score for objects <span class="math inline">\(D(O)^{grs}\)</span> by plugging in that matrix and the column profiles and means into equation <a href="#eq-2">Equation&nbsp;2</a>, yielding:</p>
+<p><span id="eq-3"><span class="math display">\[
+   D(O)^{grs}_{i,j} =
+    \frac{
+    (M_{\bullet i} - \bar{M_{\bullet i}})
+    \mathbf{S(A)}
+    (M_{\bullet i} - \bar{M_{\bullet i}})^T
+    }
+    {
+    \sqrt{
+    (M_{\bullet i} - \bar{M_{\bullet i}})
+    \mathbf{S(A)}
+    (M_{\bullet i} - \bar{M_{\bullet i}})^T
+    }
+    \sqrt{
+    (M_{\bullet j} - \bar{M_{\bullet j}})
+    \mathbf{S(A)}
+    (M_{\bullet j} - \bar{M_{\bullet j}})^T
+        }
+    }
+\tag{3}\]</span></span></p>
+<p>Typically, people only have access to the network information and not exogenous indication of pre-existing similarities between actors or objects, required to compute <a href="#eq-2">Equation&nbsp;2</a>, and <a href="#eq-3">Equation&nbsp;3</a>. Kovacs’s (ingenious) solution is to use the duality property and compute “reflective similarities” by obtaining initial object similarities plugging <span class="math inline">\(D(A)^{cor}\)</span> into <a href="#eq-3">Equation&nbsp;3</a>, equivalent to substituting the identity matrix, of dimensions <span class="math inline">\(O \times O\)</span>, into the slot occupied by <span class="math inline">\(\mathbf{S(O)}\)</span> in <a href="#eq-2">Equation&nbsp;2</a>. Then, in a second step, using the resulting actor similarities to compute generalized object similarities. This is done by substituting an <span class="math inline">\(A \times A\)</span> matrix of <span class="math inline">\(D(A)^{grs}\)</span> values obtained in the first step into the slot occupied by <span class="math inline">\(\mathbf{S(A)}\)</span> in <a href="#eq-3">Equation&nbsp;3</a>. The iterations continue until both <span class="math inline">\(D(A)^{grs}\)</span> and <span class="math inline">\(D(A)^{grs}\)</span> “freeze” according to some stopping criterion (<span class="math inline">\(\epsilon\)</span>).</p>
+<p>It is easy to see that <a href="#eq-2">Equation&nbsp;2</a> and <a href="#eq-3">Equation&nbsp;3</a> both respect the principle of equivalence. Actors count as similar to the extent they connect to similar objects (<span class="math inline">\(\mathbf{S(O)\)</span>). Conversely, objects count as similar to the extent they are chosen by similar actors ($ \mathbf{S(A)$).</p>
+<p>Because the similarities are defined according to the dual projection method, in which the similarity of actors is based on the objects they choose, and the similarity of objects is based on the actors who choose them, <a href="#eq-2">Equation&nbsp;2</a> and <a href="#eq-3">Equation&nbsp;3</a> also respect the principle of duality.</p>
+<div class="cell page-columns page-full">
+<div class="cell-output-display page-columns page-full">
+<div id="tbl-southern" class="anchored page-columns page-full">
+<table class="table table-sm table-striped">
+
+<colgroup>
+<col style="width: 14%">
+<col style="width: 5%">
+<col style="width: 5%">
+<col style="width: 5%">
+<col style="width: 5%">
+<col style="width: 5%">
+<col style="width: 5%">
+<col style="width: 5%">
+<col style="width: 5%">
+<col style="width: 5%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 7%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: center;">E1</th>
+<th style="text-align: center;">E2</th>
+<th style="text-align: center;">E3</th>
+<th style="text-align: center;">E4</th>
+<th style="text-align: center;">E5</th>
+<th style="text-align: center;">E6</th>
+<th style="text-align: center;">E7</th>
+<th style="text-align: center;">E8</th>
+<th style="text-align: center;">E9</th>
+<th style="text-align: center;">E10</th>
+<th style="text-align: center;">E11</th>
+<th style="text-align: center;">E12</th>
+<th style="text-align: center;">E13</th>
+<th style="text-align: center;">E14</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">EVELYN</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">LAURA</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">THERESA</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">BRENDA</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">CHARLOTTE</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">FRANCES</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ELEANOR</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">RUTH</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">VERNE</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">MYRA</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">KATHERINE</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">SYLVIA</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">NORA</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">HELEN</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">OLIVIA</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">FLORA</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">PEARL</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">DOROTHY</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+<td style="text-align: center;">0</td>
+</tr>
+</tbody>
+</table>
+<div class="quarto-table-caption margin-caption">Table&nbsp;1: Southern Women Data.</div></div>
+</div>
+</div>
+</section>
+<section id="analysis-of-southern-women-data" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="analysis-of-southern-women-data">Analysis of Southern Women Data</h2>
+<p>I implemented Kovacs’s algorithm as an R function, the latest version of which can be found <a href="https://github.com/olizardo/kovacs-gen-corr">here</a>. To show that it works as intended, I replicate Kovacs’s (2010) analysis of Davis et al.’s (1941) classic Southern Women two-mode network, shown in <a href="#tbl-southern">Table&nbsp;1</a>.</p>
+<div class="cell page-columns page-full">
+<div class="cell-output-display page-columns page-full">
+<div id="fig-rows" class="quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="figure page-columns page-full">
+<p><img src="index_files/figure-html/fig-rows-1.png" class="img-fluid figure-img" width="672"></p>
+<p></p><figcaption class="figure-caption margin-caption">Figure&nbsp;1: Generalized similarities among actors.</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p><a href="#fig-rows">Figure&nbsp;1</a> replicates Kovacs’s (2010, Figure 12b) exactly using the current <em>R</em> implementation.The algorithm converged (using <span class="math inline">\(\epsilon = 0.001\)</span>) after fourteen iterations. <a href="#fig-rows">Figure&nbsp;1</a> is the result of a multdimensional scaling solution of the equilibrium similarities, with actors projected to the space formed by the first two-dimensions, computed using the function <code>cmdscale</code> from the package <code>stats</code> in <em>R</em> version 4.2.2.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<p>As Kovacs noted in the original paper, the distribution of points in the two-dimensional metric MDS space obtained using the generalized relational similarities corresponds to the generalized blockmodeling solution reported by Doreian et al.&nbsp;(2004, Table 4), with two large sets of similar actors separated from one another and from the more peripheral Dorothy and Pearl.</p>
+<p><a href="#fig-cols">Figure&nbsp;2</a> reports the corresponding analysis for the object (events) relational similarities. In the original paper, Kovacs (2010, p.&nbsp;206), described these results verbally—no plot was provided—as follows:</p>
+<blockquote class="blockquote">
+<p>The generalized similarity model provides a grouping for the events as well (not shown here). This grouping differs slightly from Doreian et al.’s grouping: although the (1, 2, 3, 4, 5) and (10, 11, 12, 13, 14) clusters emerge in the generalized similarity solution as well, the picture differs for events 6, 7, 8, and 9. Event 6 here is clustered together with (1, 2, 3, 4, 5), while events 7, 8 and 9 do not fall into any group but stand separately .</p>
+</blockquote>
+<div class="cell page-columns page-full">
+<div class="cell-output-display page-columns page-full">
+<div id="fig-cols" class="quarto-figure quarto-figure-center anchored page-columns page-full">
+<figure class="figure page-columns page-full">
+<p><img src="index_files/figure-html/fig-cols-1.png" class="img-fluid figure-img" width="672"></p>
+<p></p><figcaption class="figure-caption margin-caption">Figure&nbsp;2: Generalized similarities among events.</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p>We can see that <a href="#fig-cols">Figure&nbsp;2</a> replicates Kocacs’s verbal description of these results to a tee.</p>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>Overall, this suggests that the current implementation of Kovacs’s generalized model of relational similarity works and produces results as intended. Hopefully having it available will increase the use of this relatively under-used relational technique for two-mode (and one-mode) data.</p>
+</section>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
+<p>Breiger, R. L. (1974). The duality of persons and groups. Social forces, 53(2), 181-190.</p>
+<p>Davis, A., Gardner, B. B., &amp; Gardner, M. R. (1941). Deep South A Social Anthropological Study of Caste and Class. University of Chicago Press.</p>
+<p>Doreian, P., Batagelj, V., &amp; Ferligoj, A. (2004). Generalized blockmodeling of two-mode network data. Social networks, 26(1), 29-53.</p>
+<p>Kovács, B. (2010). A generalized model of relational similarity. Social Networks, 32(3), 197-211.</p>
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>See <a href="https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/cmdscale">https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/cmdscale</a><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

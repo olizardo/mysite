@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.313">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Omar Lizardo">
+<meta name="dcterms.date" content="2023-01-14">
+<meta name="description" content="Post on the relationship between two-mode networks, cultural holes, and recent work in the categories literature.">
+
+<title>Omar Lizardo - Cultural Networks and Categories</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Omar Lizardo</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../pubs.html"><i class="bi bi-pencil-square" role="img">
+</i> 
+ <span class="menu-text">Work</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../blog.html"><i class="bi bi-journal-richtext" role="img">
+</i> 
+ <span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-teaching" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-pencil" role="img">
+</i> 
+ <span class="menu-text">Teaching</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-teaching">    
+        <li>
+    <a class="dropdown-item" href="../../networks-textbook/index.html"><i class="bi bi-book" role="img">
+</i> 
+ <span class="dropdown-text">Networks Textbook</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../syllabi/SOCIOL208b-spring22.html"><i class="bi bi-file-text" role="img">
+</i> 
+ <span class="dropdown-text">SOCIOL 208B (Spring 2022)</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../../vita.pdf"><i class="bi bi-file-pdf" role="img">
+</i> 
+ <span class="menu-text">Vita</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../bio.html"><i class="bi bi-person-circle" role="img">
+</i> 
+ <span class="menu-text">Bio</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="mailto:olizardo@soc.ucla.edu"><i class="bi bi-envelope" role="img">
+</i> 
+ <span class="menu-text">Email</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Cultural Networks and Categories</h1>
+                  <div>
+        <div class="description">
+          Post on the relationship between two-mode networks, cultural holes, and recent work in the categories literature.
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">cultural holes</div>
+                <div class="quarto-category">categories</div>
+                <div class="quarto-category">two-mode networks</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Omar Lizardo </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">January 14, 2023</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#culture-networks-objects-labels" id="toc-culture-networks-objects-labels" class="nav-link" data-scroll-target="#culture-networks-objects-labels">Culture, Networks, Objects, Labels</a></li>
+  <li><a href="#the-label-space-and-atypicality" id="toc-the-label-space-and-atypicality" class="nav-link" data-scroll-target="#the-label-space-and-atypicality">The Label Space and Atypicality</a></li>
+  <li><a href="#defining-object-atypicality" id="toc-defining-object-atypicality" class="nav-link" data-scroll-target="#defining-object-atypicality">Defining Object Atypicality</a></li>
+  <li><a href="#defining-peoples-taste-for-atypicality" id="toc-defining-peoples-taste-for-atypicality" class="nav-link" data-scroll-target="#defining-peoples-taste-for-atypicality">Defining People’s Taste for Atypicality</a></li>
+  <li><a href="#the-object-space-and-variety" id="toc-the-object-space-and-variety" class="nav-link" data-scroll-target="#the-object-space-and-variety">The Object Space and Variety</a></li>
+  <li><a href="#the-taste-for-variety" id="toc-the-taste-for-variety" class="nav-link" data-scroll-target="#the-taste-for-variety">The Taste for Variety</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">Conclusion</a>
+  <ul class="collapse">
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>In a forthcoming chapter on the subject of “culture and networks” for the second edition of the <em>Sage Handbook of Social Network Analysis</em> (edited by Peter J. Carrington, John McLevey, and John Scott)—see <a href="../../workpap/culture-and-networks.pdf">here</a> for an uncorrected draft—I argue that there intimate links between recent work on cultural networks, duality, and cultural holes, and recent work in the categories literature dealing with fuzziness of categorization, atypicality, and variety in cultural choices.</p>
+<p>This conceptual linkage is one that was initially noted and developed by <a href="https://scholar.google.com/citations?user=9wNfV58AAAAJ">Balazs Kocavs</a> in a couple of papers (see <a href="https://www.sciencedirect.com/science/article/pii/S0378873310000031">here</a> and <a href="https://doi.org/10.1002/9781118762707.ch16">here</a>) in the early 2010s, but which has not been pursued or developed of late. This is despite the fact that work on categories pursues relentless mathematical formalization, but in a language and style that either obscure or do not make very intuitive its link to formal approaches in the cultural networks tradition based on the ideas of <strong>duality</strong> and two-mode network analysis (Mützel &amp; Breiger, 2020).</p>
+<p>In the chapter I argue that particularly that the various conceptual distinctions and measures proposed in Goldberg et al.’s 2016 paper on category atypiticaly, variety, and cultural boundary spanning can be given a familiar representation using tools from the analysis of cultural networks. The argument in the chapter is mostly informal. The purpose of this post is to provide a more formal treatment and extension of some of the ideas discussed in the chapter.</p>
+</section>
+<section id="culture-networks-objects-labels" class="level2">
+<h2 class="anchored" data-anchor-id="culture-networks-objects-labels">Culture, Networks, Objects, Labels</h2>
+<p>The first observation is that the main difference between typical categories studies and studies of cultural networks is that while the latter usual deal with a two-mode network of people by the objects they choose (in which the “objects” can sometimes be categories themselves, like the typical people X genres network studied by sociologists of tastes), categories research differentiate between <em>particular</em> objects (this restaurant, this film, this piece of music) and the <em>category labels</em> that some external audiences imposed on those object to classify them or group them (see Goldberg et al.&nbsp;2016, p.&nbsp;222).</p>
+<p>So while the usual cultural networks study deals with a two-mode network of people by objects chosen (<span class="math inline">\(\mathbf{A}\)</span>) of dimensions <span class="math inline">\(P \times O\)</span>, categories research split the analysis and measurement tasks across two distinct two-networks: <span class="math inline">\(\mathbf{A}\)</span>, and a second object by labels network (<span class="math inline">\(\mathbf{B}\)</span>) of dimensions <span class="math inline">\(O \times L\)</span>.</p>
+</section>
+<section id="the-label-space-and-atypicality" class="level2">
+<h2 class="anchored" data-anchor-id="the-label-space-and-atypicality">The Label Space and Atypicality</h2>
+<p>It is easy to see that the main concepts developed by Goldberg et al.&nbsp;in the 2016 ASR paper (and previously Hannan and Kovacs <a href="https://sociologicalscience.com/articles-v2-13-252/">in a 2015 <em>Sociological Science</em> piece</a>) have ready-made representations in terms of two-mode network metrics.</p>
+<p>Take for, instance, the idea that the category structure of a domain can be captured by “geometrically” representing the cultural space (as defined by the labels). This requires coming up with a criterion for defining interlabel distances, which are themselves based on some criterion for interlabel similarity.</p>
+<p>In terms of two-mode network analysis, this boils down to taking the one mode projection of the (<span class="math inline">\(\mathbf{B}\)</span>) matrix:</p>
+<p><span id="eq-LL"><span class="math display">\[
+     LL = B^TB
+\tag{1}\]</span></span></p>
+<p>The square matrix <span class="math inline">\(\mathbf{LL}\)</span> contains the number of objects shared by each pair of labels <span class="math inline">\((i,j)\)</span> in the off-diagonals, and the number of objects covered by each label in the diagonals. The Jaccard (<strong>J</strong>) similarity measure proposed by Goldberg et al.&nbsp;(eq. 1) is a function of these quantities, and thus can be written as:</p>
+<p><span id="eq-J"><span class="math display">\[     
+     J_{ij} = \frac{LL_{ij}}{LL_{ii} + L_{jj} - LL_{ij}}
+\tag{2}\]</span></span></p>
+<p>But of course, so are many other measures of similarity, such as cosine, Dice, min-overlap, max-overlap, and the like. All can be defined from quantities obtained from the one-mode label <span class="math inline">\(\times\)</span> label network obtained from the projection of the original object <span class="math inline">\(\times\)</span> label network.</p>
+<p>Once we have a measure of similarity, inter-label distances are obtained by some transformation of label similarities, such that similar objects are close and dissimilar objects are far (Goldberg et al.&nbsp;use a negative exponential function due to Shepard). Distances, in this sense, are derivative of quantities obtained from the one-mode network projection.</p>
+</section>
+<section id="defining-object-atypicality" class="level2">
+<h2 class="anchored" data-anchor-id="defining-object-atypicality">Defining Object Atypicality</h2>
+<p>Having obtained inter-label similarity (distance) information, we can then loop back and define an object’s atypicality based on their likelihood of being assigned dissimilar (distant) labels. Conversely typical objects are those that are assigned similar (close) labels.</p>
+<div id="fig-typ" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="typical.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;1: Cultural ego networks of typical and atypical objects.</figcaption><p></p>
+</figure>
+</div>
+<p>Thus, if we think of each object as having an “object ego-network” (see #fig-typ) where the “alters” are the labels assigned to it, the typicality/atypicality is purely a function of the <em>weighted density</em> of the alter-alter network surrounding ego, where the weight of the tie between alters is given by the label similarities (or distances). So, when the weights are similarities, typical objects have high “constraint” in their cultural ego network—in Burt’s sense as defined by Lizardo (2014)—with their label alters strongly linked to one another. Atypical objects, on the other hand have low constraint, with their label alters weakly tied to one another. So this is another way of saying that <em>atypical objects span cultural holes in the interlabel network</em> (see <a href="#fig-typ">Figure&nbsp;1</a>).</p>
+</section>
+<section id="defining-peoples-taste-for-atypicality" class="level2">
+<h2 class="anchored" data-anchor-id="defining-peoples-taste-for-atypicality">Defining People’s Taste for Atypicality</h2>
+<p>But remember, we also have a network where people choose objects (<span class="math inline">\(\mathbf{B}\)</span>), so that means we can “loop back” to the people—see Lizardo (2018)—and define their “taste for atypicality” by aggregating the atypicalities of the objects they choose (which are based on two-mode metrics from the objects <span class="math inline">\(\times\)</span> label network). That’s exactly what Goldberg et al.&nbsp;do, but they don’t characterize it quite that way.</p>
+<p>So, people’s taste for variety is just the average atypicality of the objects they choose, suitably weighted by their rating of the object if such information is available (see Goldberg et al.&nbsp;eq. 7), such that only objects for which the person displays a positive (after sampling) evaluation count.</p>
+</section>
+<section id="the-object-space-and-variety" class="level2">
+<h2 class="anchored" data-anchor-id="the-object-space-and-variety">The Object Space and Variety</h2>
+<p>The same approach, of course, can be used to construct an object <span class="math inline">\(\times\)</span> object network either from the <span class="math inline">\(\mathbf{A}\)</span> or <span class="math inline">\(\mathbf{B}\)</span> networks to define people’s <em>taste for variety</em>. Basically, the idea is that variety seeking can be measured using information on “the average distance of the objects consumed [by people] and that variety seeking means liking pairs of objects that stand far apart in the cultural space” (Goldberg et al.&nbsp;2016, p.&nbsp;224).</p>
+<p>Here Goldberg et al.&nbsp;get into some over-complication territory, since they insist on using “cultural space” information to define the inter-object similarities (distances). But then get hung up on the fact that sometimes the label set sizes of different objects are not the same (in our terms, objects cultural ego network sizes are different), and they want to compare distances across sets of different sizes and so forth to define inter-object distances.</p>
+<p>Oddly, they ignore the lowest hanging fruit to defining inter-object similarities (and by implication distances). Had they been more attuned to the principle of <em>duality</em> they would have realized they actually had two choices:</p>
+<p><span id="eq-OO1"><span class="math display">\[     
+     OO_1 = A^TA
+\tag{3}\]</span></span></p>
+<p><span id="eq-OO2"><span class="math display">\[
+     OO_2 = B^BT
+\tag{4}\]</span></span></p>
+<p>Matrix <span class="math inline">\(OO_1\)</span> would contain the basic quantities to compute inter-object similarities based on audience overlap. Matrix <span class="math inline">\(OO_2\)</span> would contain the basic quantities to compute inter-object similarities based on inter-label overlap. The first approach is the one pursued by Lizardo (2014) for cultural object genre labels. Goldberg et al.&nbsp;want to use label distance information to define the inter-object similarity (distance) network, which is fine, so they opt for a complicated version of the projection approach, based on set theoretic distance measures between the label sets assigned to each pair of objects that account for different sizes across the pairs of sets being compared.</p>
+<div id="fig-mono-types" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="mono-types.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;2: Varieties of monism.</figcaption><p></p>
+</figure>
+</div>
+<p>A more straightforward approach based on duality—like that pursued by Kovacs (2010) in other work—would have just said that <em>objects are (similar) distant in cultural space to the extent they get assigned overlapping (different) labels</em>. Any of the similarity measures (Jaccard, cosine, Dice) applied pairwise to the cells of the <span class="math inline">\(OO_2\)</span> matrix would have yielded that information in a more intuitive way that Goldberg et al’s “modified Hausdorff distance” (Goldberg et al., eqs. 8-9) approach.</p>
+</section>
+<section id="the-taste-for-variety" class="level2">
+<h2 class="anchored" data-anchor-id="the-taste-for-variety">The Taste for Variety</h2>
+<p>In any case, once an interobject similarity (distance) network is obtained (preferably by the simpler duality approach), then we can loop back to the people and define their <em>taste for variety</em> similarly to how atypicality is defined for objects (this is what Goldberg et al.&nbsp;ultimately end up doing too).</p>
+<div id="fig-strong-poly" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="strong-poly.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;3: Strong poly-purism.</figcaption><p></p>
+</figure>
+</div>
+<p>People who seek variety have a cultural ego-network surrounded by objects who are themselves dissimilar (get assigned non-overlapping labels); people who don’t seek variety consume objects who get assigned overlapping labels. Thus, <em>people bridge cultural holes in the variety sense, when they consume categorically distinct pairs of objects</em>.</p>
+<p>Ultimately, we can see why Goldberg et al.’s approach yields empirically and analytically distinct measures of boundary spanning based on atypicality-seeking and variety-seeking. In the atypicality case, even an “univore” can cross cultural boundaries, by consuming a single atypical object, like riot grrrl jazz (<strong>mono-mixer</strong>). In the same way an expansive “omnivore” in terms of volume of choices can fail to span boundaries, by consuming many categorically indistinct objects. Of course, both strategies can be combined yielding a second way to span boundaries, consuming many atypical objects (<strong>poly-mixer</strong>); finally, a person can like variety while abhorring atypicality yielding yet a third way of crossing boundaries (<strong>poly-purist</strong>).</p>
+<div id="fig-weak-poly" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="weak-poly.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;4: Weak poly-purism.</figcaption><p></p>
+</figure>
+</div>
+<p>We can represent these distinct consumer types using the proposed three-mode network imagery. For instance, the different types of “mono” consumers (people with a relatively low taste for variety) are shown in <a href="#fig-mono-types">Figure&nbsp;2</a>. The “mono-mixer” (<a href="#fig-mono-types">Figure&nbsp;2</a> (a)) is a person who chooses one, albeit highly atypical, genre as given by the low similarity between the labels assigned to it. So while they connect to only a single object, they indirectly connect to multiple (weakly related) labels via that object.</p>
+<p>The mono-purist comes in two flavors (only implicitly distinguished in Goldberg et al.). The first (<a href="#fig-mono-types">Figure&nbsp;2</a> (b)) is the “purest” mono-purist: A person who chooses objects that are the most representative of their types (single-labeled objects). Then there is a relatively weaker form of mono-purism: Picking a multi-labeled object whose labels are strongly related to one another (<a href="#fig-mono-types">Figure&nbsp;2</a> (c)).</p>
+<p>The same approach can be used to distinguish between different forms of poly-purism. First, there is the strong poly-purist (<a href="#fig-strong-poly">Figure&nbsp;3</a>), who only consumes (and likes) objects that are the strongest representatives of their categories, as given by their single label assignment, and the relative <em>dissimilarities</em> between labels <em>across</em> objects consumed. Then there is a weaker form of poly-purism (<a href="#fig-weak-poly">Figure&nbsp;4</a>); a consumer who would countenance multi-labeled objects, as long as they are still typical members of their categories, as given by the strong similarities between the labels assigned, and the relative dissimilarities across label sets between objects (a similar appraoch could be used to define strong and weak varieties of poly-mixing).</p>
+</section>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
+<p>Overall, it is clear that the analysis of categories, typicality, and variety is set squarely in the same ballpark as the traditional analysis of cultural networks (DiMaggio, 2011). The move to a multimode case (featuring people <span class="math inline">\(\times\)</span> objects and objects <span class="math inline">\(\times\)</span> labels networks), and the reticence of categories researchers to use formal tools from the analysis of duality and cultural holes, has obscured some of these commonalities. Hopefully they have become a bit clearer here.</p>
+<section id="references" class="level3">
+<h3 class="anchored" data-anchor-id="references">References</h3>
+<p>Goldberg, A., Hannan, M. T., &amp; Kovács, B. (2016). What does it mean to span cultural boundaries? Variety and atypicality in cultural consumption. <em>American Sociological Review</em>, 81(2), 215-241.</p>
+<p>Kovács, B. (2010). A generalized model of relational similarity. <em>Social Networks</em>, 32(3), 197-211.</p>
+<p>Lizardo, O. (2014). Omnivorousness as the bridging of cultural holes: A measurement strategy. <em>Theory and Society</em>, 43(3), 395-419.</p>
+<p>Lizardo, O. (2018). The mutual specification of genres and audiences: Reflective two-mode centralities in person-to-culture data. <em>Poetics</em>, 68, 52-71.</p>
+<p>Mützel, S., Breiger, R. (2020). Duality beyond persons and groups, Pp. 392- in , R., Light, R., &amp; Moody, J. (Eds.), <em>The Oxford Handbook of Social Networks</em>. Oxford University Press.</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
