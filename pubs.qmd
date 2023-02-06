@@ -1,0 +1,142 @@
+---
+title: "Publications"
+---
+
+## Books
+
+- *Handbook of Classical Sociological Theory*. Springer. [https://doi.org/10.1007/978-3-030-78205-4](doi:10.1007/978-3-030-78205-4)
+
+- *Measuring Culture*. Columbia University Press. [https://doi.org/10.7312/mohr18028](doi:10.7312/mohr18028)
+
+- *Ritual, Emotion, Violence: Studies on the Micro-Sociology of Randall Collins*. Routledge. [https://doi.org/10.4324/9780429464157](doi:10.4324/9780429464157)
+
+
+## Selected Articles
+
+### Action Theory
+
+-   "Habit and the explanation of action." *Journal for the Theory of Social Behaviour* 51: 391-411. [doi:10.1111/jtsb.12273](https://doi.org/10.1111/jtsb.12273)
+
+-   "The hysteresis effect: Theorizing the regularity of mismatch in action." *Journal for the Theory of Social Behaviour* 47: 164--194. [doi:10.1111/jtsb.12117](https://doi.org/10.1111/jtsb.12117)
+
+-   "Beyond world images: Belief as embodied action in the world." *Sociological Theory* 33:44-70. [doi:10.1177/0735275115572397](https://doi.org/10.1177/0735275115572397)
+
+-   "Is a 'Special Psychology' of Practice Possible? From Values and Attitudes to Embodied Dispositions." *Theory & Psychology* 19: 1-15. [doi:10.1177/0959354309345891](https://doi.org/10.1177/0959354309345891)
+
+-   "'Mirror neurons,' collective objects and the problem of transmission: reconsidering Stephen Turner's critique of practice theory." *Journal for the Theory of Social Behaviour* 34: 375-401. [doi:10.1111/j.1468-5914.2007.00340.x](https://doi.org/10.1111/j.1468-5914.2007.00340.x)
+
+-   "The cognitive origins of Bourdieu's 'habitus'." *Journal for the Theory of Social Behaviour* 34: 375-401. [doi:10.1111/j.1468-5914.2004.00255.x](https://doi.org/10.1111/j.1468-5914.2004.00255.x)
+
+### Classical Theory
+
+-   "Chance, orientation, and interpretation: Max Weber's probabilism and the future of social theory." *Sociological Theory* [doi:10.1177/07352751221084712](https://doi.org/10.1177/07352751221084712)
+
+-   Max Weber's ideal versus material interest distinction revisited.'' *European Journal of Social Theory* 21: 3--21. [doi:10.1177/1368431017710906](https://doi.org/10.1177/1368431017710906)
+
+-   Schmaus' functionalist approach to the explanation of social facts: An assessment and critique.'' *Philosophy of the Social Sciences* 43: 453-492. [doi:10.1177/0048393112458491](https://doi.org/10.1177/0048393112458491)
+
+-   "Taking representational dualism seriously: Revisiting the Durkheim-Spencer debate on the rise of individualism." *Sociological Perspectives* 52: 533-555. [doi:10.1525/sop.2009.52.4.533](https://doi.org/10.1525/sop.2009.52.4.533)
+
+### Contemporary Theory
+
+-   "For a probabilistic sociology: A history of concept formation with Pierre Bourdieu." *Theory and Society* [doi:10.1007/s11186-021-09452-2](https://doi.org/10.1007/s11186-021-09452-2)
+
+-   "The cognitive-historical origins of conceptual ambiguity in social theory." Pp. 607-630 in S. Abrutyn and O. Lizardo (Eds.) *Handbook of Classical Sociological Theory*. New York: Springer. [doi:10.1007/978-3-030-78205-4_28](https://doi.org/10.1007/978-3-030-78205-4_28)
+
+-   "Deliberate trust and intuitive faith: A dual-process model of reliance." *Journal for the Theory of Social Behaviour* 48: 230-250. [doi:10.1111/jtsb.12160](https://doi.org/10.1111/jtsb.12160)
+
+-   "Reconceptualizing abstract conceptualization in social theory: The case of the 'structure' concept." *Journal for the Theory of Social Behaviour* 43: 155-180. [doi:10.1111/jtsb.12011](https://doi.org/10.1111/jtsb.12011)
+
+-   "Pierre Bourdieu as a post-cultural theorist." *Cultural Sociology* 5: 1-22.[doi:10.1177/1749975510389714](https://doi.org/10.1177/1749975510389714)
+
+-   "Beyond the antinomies of structure: Levi-Strauss, Giddens, Bourdieu and Sewell." *Theory and Society* 39: 651-688. [doi:10.1007/s11186-010-9125-1](https://doi.org/10.1007/s11186-010-9125-1)
+
+-   "Formalism, behavioral realism and the interdisciplinary challenge in sociological theory." *Journal for the Theory of Social Behaviour*. 39: 39-79. [doi:10.1111/j.1468-5914.2008.00393.x](https://doi.org/10.1111/j.1468-5914.2008.00393.x)
+
+### Cognitive Social Science
+
+-   "Culture, cognition, and internalization." *Sociological Forum* 36: 1177-1206. [doi:10.1111/socf.12771](https://doi.org/10.1111/socf.12771)
+
+-   "What can cognitive neuroscience do for cultural sociology?" *American Journal of Cultural Sociology* 8: 3-28. [doi:10.1057/s41290-019-00077-8](https://doi.org/10.1057/s41290-019-00077-8)
+
+-   "What are dual process models? Implications for cultural analysis in sociology." *Sociological Theory* 34: 287-310. [10.1177/0735275116675900](https://doi.org/10.1177/0735275116675900)
+
+-   "The conceptual bases of metaphors of dirt and cleanliness in moral and non-moral reasoning." *Cognitive Linguistics* 23-2: 367-394. [oi:10.1515/cog-2012-0011](https://doi.org/10.1515/cog-2012-0011)
+
+-   Skills, toolkits, contexts and institutions: clarifying the relationship between different approaches to cognition in cultural sociology." *Poetics: Journal of Empirical Research on Culture, the Media and the Arts* 38: 204-227. [doi:10.1016/j.poetic.2009.11.003](https://doi.org/10.1016/j.poetic.2009.11.003)
+
+### Cultural and Network Dynamics
+
+-   "Incubators or diffusers? Examining the dynamic coupling of context and social ties across multiple foci." *Social Networks* [doi:10.1016/j.socnet.2022.02.004](https://doi.org/10.1016/j.socnet.2022.02.004)
+
+-   "Simmel's dialectic of form and content in recent work in cultural sociology." *The Germanic Review: Literature, Culture, Theory* 94:93-100. [doi:10.1080/00168890.2019.1585664](https://doi.org/10.1080/00168890.2019.1585664)
+
+-   "Cultural fragmentation or acquired dispositions? A new approach to accounting for patterns of cultural change." *Socius: Sociological Research for a Dynamic World* 2. [doi:10.1177/2378023116669726](https://doi.org/10.1177/2378023116669726)
+
+-   "How macro-historical change shapes cultural taste: Legacies of democratization in Spain and Portugal." *American Sociological Review* 78: 213-223. [doi:10.1177/0003122413478816](https://doi.org/10.1177/0003122413478816)
+
+-   "Can cultural worldviews influence network composition?" *Social Forces* 88: 1595-1618. [doi:10.1353/sof.2010.0009](https://doi.org/10.1353/sof.2010.0009)
+
+-   "How cultural tastes shape personal networks." *American Sociological Review* 71: 778-807. [doi:10.1177/000312240607100504](https://doi.org/10.1177/000312240607100504)
+
+### Cultural Theory 
+
+-   "Kinding culture" *Working Paper* [(pdf)](/workpap/kinding.pdf)
+
+-   "The shallowness of deep culture or the deepness of shallow culture? Six ways culture can be internalized" *Working Paper* [(pdf)](/workpap/shallowness.pdf)
+
+- "Organizations and the structure of culture." *Sociology Compass* (forthcoming). [doi:10.1111/soc4.13063](https://doi.org/10.1111/soc4.13063)
+
+-   "What is implicit culture?" *Journal for the Theory of Social Behaviour* (forthcoming). [doi:10.1111/jtsb.12333](https://doi.org/10.1111/jtsb.12333)
+
+-   "Improving cultural analysis: Considering personal culture in its declarative and nondeclarative modes." *American Sociological Review* 82: 88-115. [doi:10.1177/0003122416675175](https://doi.org/10.1177/0003122416675175)
+
+-   "Cultural symbols and cultural power." *Qualitative Sociology* 39: 199-204. [doi:10.1007/s11133-016-9329-4](https://doi.org/10.1007/s11133-016-9329-4)
+
+-   "Cultural theory." Pp. 99-120 in Seth Abrutyn (Ed.), *Handbook of Contemporary Sociological Theory.* Springer. [{doi:10.1007/978-3-319-32250-6_6](https://doi.org/10.1007/978-3-319-32250-6_6)
+
+### Institutions and Organization
+
+-   "Specifying the 'what' and separating the 'how': Doings, sayings, codes, and artifacts as the building blocks of institutions." *Research in the Sociology of Organizations* 65(A): 217-234. [doi.org/10.1108/S0733-558X2019000065A021](doi.org/10.1108/S0733-558X2019000065A021)
+
+-   "How organizational theory can help network theorizing: Linking structure and dynamics via cross-level analogies." *Research in the Sociology of Organizations* 40: 33-56. [doi:10.1108/S0733-558X(2014)0000040002](https://doi.org/10.1108/S0733-558X(2014)0000040002)
+
+-   "Defining and theorizing terrorism: A global actor-centered approach." *Journal of World Systems Research* 14: 91-118.[doi:10.5195/jwsr.2008.341](https://doi.org/10.5195/jwsr.2008.341)
+
+-   "Can cultural capital theory be reconsidered in the light of world polity institutionalism? Evidence from Spain." *Poetics: Journal of Empirical Research on Culture, the Media and the Arts* 33: 81-110. [doi:10.1016/j.poetic.2005.02.001](https://doi.org/10.1016/j.poetic.2005.02.001)
+
+-   "The comparative analysis of organizational forms: Integrating field and ecological approaches." *Research in the Sociology of Organizations* 26: 117-151. [doi:10.1108/S0733-558X(2009)0000026007](https://doi.org/10.1108/S0733-558X(2009)0000026007)
+
+### Measuring Culture
+
+- "Culture and networks." Forthcoming in P. Carrington, J. McLevey and J. Scott (Eds.) *The Sage Handbook of Social Network Analysis*. Sage Publications. [(pdf)](/workpap/culture-and-networks.pdf)
+
+-   "Discovering micro-genre Communities in Survey Data on Cultural Tastes." *Working Paper* [(pdf)](/workpap/microgenres.pdf)
+
+-   "Institutional movement logics and the changing shape of the U.S. social movement field, 1960--1995." *Social Forces* 97: 1389--1422. [doi:10.1093/sf/soy122](https://doi.org/10.1093/sf/soy122)
+
+-   "The mutual specification of genres and audiences: Reflective two-mode centralities in person-to-culture choice data." *Poetics: Journal of Empirical Research on Culture, the Media and the Arts* 68: 52-71. [doi:10.1016/j.poetic.2018.04.003](https://doi.org/10.1016/j.poetic.2018.04.003)
+
+-   "An institutional logics approach to the analysis of social movement fields." *Social Currents* 2: 58-80. [doi:10.1017/nws.2014.7](https://doi.org/10.1017/nws.2014.7)
+
+-   "Omnivorousness as the bridging of cultural holes: A measurement strategy." *Theory and Society* 43: 395-419. [doi:10.1007/s11186-014-9220-9](https://doi.org/10.1007/s11186-014-9220-9)
+
+### Sociology of Taste and Consumption
+
+-   Bourdieu, distinction, and aesthetic consumption." In Frederick F. Wherry and Ian Woodward (Eds.), *The Oxford Handbook of Consumption*. Oxford University Press. [doi:10.1093/oxfordhb/9780190273385.013.4](http://dx.doi.org/10.1093/oxfordhb/9780190273385.013.4)
+
+-   "The end of symbolic exclusion? The rise of 'categorical tolerance' in the musical tastes of Americans: 1993 - 2012." *Sociological Science* 3: 85-108. [doi:10.15195/v3.a5](https://doi.org/10.15195/v3.a5)
+
+-   "Why 'cultural matters' matter: Culture talk as the mobilization of cultural capital in interaction." *Poetics: Journal of Empirical Research on Culture, the Media and the Arts* 58: 1-17. [doi:10.1016/j.poetic.2016.09.002](https://doi.org/10.1016/j.poetic.2016.09.002)
+
+-   "Cultural objects as prisms: Perceived audience composition of musical genres as a resource for symbolic exclusion." *Socius: Sociological Research for a Dynamic World* 2. [doi:10.1177/2378023116641695](https://doi.org/10.1177/2378023116641695)
+
+-   "Musical taste and patterns of symbolic exclusion in the United States 1993--2012: Generational dynamics of differentiation and continuity." *Poetics: Journal of Empirical Research on Culture, the Media and the Arts* [doi:10.1016/j.poetic.2015.08.003](https://doi.org/10.1016/j.poetic.2015.08.003)
+
+-   "Taste and the logic of practice in *Distinction*." *Czech Sociological Review* 50: 335-364. [doi:10.13060/00380288.2014.50.3.105](https://doi.org/10.13060/00380288.2014.50.3.105)
+
+-   "Reconceptualizing and theorizing 'omnivorousness': Genetic and relational mechanisms.'' *Sociological Theory* 30: 260-280. [doi:10.1177/0735275112466999](https://doi.org/10.1177/0735275112466999)
+
+-   "The question of culture consumption and stratification revisited." *Sociologica: Italian Online Sociological Review* 2/2008. [doi:10.2383/27709](https://www.rivisteweb.it/doi/10.2383/27709)
+
+-   "The puzzle of women's 'highbrow' culture consumption: Integrating gender and work into Bourdieu's class theory of taste." *Poetics: Journal of Empirical Research on Culture, the Media and the Arts* 34: 1-23. [doi:10.1016/j.poetic.2005.09.0011](https://doi.org/10.1016/j.poetic.2005.09.001)

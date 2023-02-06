@@ -1,0 +1,28 @@
+---
+title: "Omar Lizardo"
+about:
+  template: jolla
+  image: profile-cropped.jpg
+---
+
+<p align="justify"> 
+{{< fa address-card size=large >}} I am the LeRoy Neiman Term Chair Professor of Sociology at the University of California, Los Angeles, former co-editor of *American Sociological Review*, current member of the Sociological Research Association and the Board of Reviewing Editors of the journal *Science*. 
+</p>
+
+<p align="justify"> 
+{{< fa chart-line size=large >}} I study culture, cognition, networks, theory, consumption, institutions, and organization.
+</p>
+
+<p align="left"> 
+{{< fa graduation-cap size=large >}} PhD in Sociology, *University of Arizona*, 2006.
+</p>
+
+<p align="left"> 
+{{< fa graduation-cap size=large >}} BS in Psychology, *Brooklyn College of the City University of New York*, 1997.
+</p>
+
+<center>
+{{< ai google-scholar size=Large >}} [Google Scholar](https://scholar.google.com/citations?user=Lt5nMNkAAAAJ&hl=en) {{< ai semantic-scholar size=Large >}} [Semantic Scholar](https://www.semanticscholar.org/author/Omar-Lizardo/2632398) {{< ai orcid size=large >}} [0000-0002-5405-3007](https://orcid.org/0000-0002-5405-3007)
+
+{{< fa envelope size=large >}} [olizardo@soc.ucla.edu](mailto:olizardo@soc.ucla.edu)
+</center >
