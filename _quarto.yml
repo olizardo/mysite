@@ -3,7 +3,7 @@ project:
 
 website:
   title: "Omar Lizardo"
-  search: false
+  search: true
   navbar:
     background: "#2D68C4"
     right:
@@ -31,6 +31,9 @@ website:
       - href: mailto:olizardo@soc.ucla.edu
         icon: envelope
         text: "Email"
+      - icon: github
+        href: https://github.com/olizardo/mysite
+        text: GitHub
         
 format:
   html:
