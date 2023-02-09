@@ -90,6 +90,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="../../site_libs/quarto-nav/headroom.min.js"></script>
 <script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -100,6 +104,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -181,7 +191,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </i> 
  <span class="menu-text">Email</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://github.com/olizardo/mysite"><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text">GitHub</span></a>
+  </li>  
 </ul>
+              <div id="quarto-search" class="" title="Search"></div>
           </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
@@ -221,7 +237,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 
 
-<p>In a previous post, I showed how the “method of reflections” introduced by Hidalgo &amp; Hausmann (2009)—hereafter HH—works in the case of two-mode network data. While reading that, some of you might have thought that there is a well-established network centrality metric for two-mode networks that is supposed to work just lpge the method of reflections: That is, defining the centrality of entities in one mode (e.g., persons) according to centralities of the entities in the other mode (e.g., groups). I refer to the Bonacich “eigenvector” centrality—see Bonacich (1991) and Faust (1997, p.) for discussion.</p>
+<p>In a previous post, I showed how the “method of reflections” introduced by Hidalgo &amp; Hausmann (2009)—hereafter HH—works in the case of two-mode network data. While reading that, some of you might have thought that there is a well-established network centrality metric for two-mode networks that is supposed to work just like the method of reflections: That is, defining the centrality of entities in one mode (e.g., persons) according to centralities of the entities in the other mode (e.g., groups). I refer to the Bonacich “eigenvector” centrality—see Bonacich (1991) and Faust (1997, p.) for discussion.</p>
 <div class="cell">
 <div class="cell-output-display">
 <div id="tbl-southern" class="anchored">
@@ -564,7 +580,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 </div>
 </div>
-<p>In this post I show how the Bonacich centrality fits into the reflection idea, and why this shows it to be a different metric from that yielded by HH’s reflection method.</p>
+<p>In this post I show how the Bonacich centrality fits into the reflection idea, and why this means it is a different metric from that yielded by HH’s reflection method.</p>
 <p>Consider an affiliation matrix <span class="math inline">\(\mathbf{A}\)</span> of dimensions <span class="math inline">\(|P| \times |G|\)</span> where <span class="math inline">\(|P|\)</span> is the cardinality of the person set and <span class="math inline">\(|G|\)</span> the cardinality of the group set in the two-mode network. Each entry in the matrix <span class="math inline">\(a_{pg} = 1\)</span> if person <em>p</em> affiliates with group <span class="math inline">\(g\)</span> and zero otherwise.</p>
 <p>In this case, the degree centrality of people is given by:</p>
 <p><span id="eq-pc"><span class="math display">\[
@@ -601,18 +617,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>   <span class="fu">source</span>(<span class="st">"C:/Users/Omar Lizardo/Google Drive/R/person-group-reflections/reflections.R"</span>)</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>     a <span class="ot">&lt;-</span> <span class="fu">reflections</span>(A)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Loading required package: Matrix</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>
-Attaching package: 'expm'</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>The following object is masked from 'package:Matrix':
-
-    expm</code></pre>
-</div>
 </div>
 
 

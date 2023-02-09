@@ -1,6 +1,7 @@
 ---
 title: "Bonacich Centrality and the Method of Reflections"
 author: "Omar Lizardo"
+draft: true
 ---
 
 In a previous post, I showed how the "method of reflections" introduced by Hidalgo & Hausmann (2009)---hereafter HH---works in the case of two-mode network data. While reading that, some of you might have thought that there is a well-established network centrality metric for two-mode networks that is supposed to work just like the method of reflections: That is, defining the centrality of entities in one mode (e.g., persons) according to centralities of the entities in the other mode (e.g., groups). I refer to the Bonacich "eigenvector" centrality---see Bonacich (1991) and Faust (1997, p.) for discussion.
