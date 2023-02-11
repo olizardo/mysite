@@ -1,5 +1,6 @@
 project:
   type: website
+  output-dir: docs
 
 website:
   title: "Omar Lizardo"
@@ -16,9 +17,9 @@ website:
       - text: "Teaching"
         icon: pencil
         menu: 
-          - text: "Networks Textbook"
+          - text: "Social Networks (111) Textbook"
             icon: book
-            href: networks-textbook/index.html
+            href: https://olizardo.github.io/networks-textbook/
           - text: "SOCIOL 208B (Spring 2022)"
             icon: file-text
             href: syllabi/SOCIOL208b-spring22.html
