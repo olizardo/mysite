@@ -67,11 +67,11 @@ $$
 $${#eq-OO1}
 
 $$
-     OO_2 = B^BT
+     OO_2 = BB^T
 $${#eq-OO2}
 
 Matrix $OO_1$ would contain the basic quantities to compute inter-object similarities based on audience overlap. Matrix $OO_2$ would contain the basic quantities to compute inter-object similarities based on inter-label overlap. 
-The first approach is the one pursued by Lizardo (2014) for cultural object genre labels. Goldberg et al. want to use label distance information to define the inter-object similarity (distance) network, which is fine, so they opt for a complicated version of the projection approach, based on set theoretic distance measures between the label sets assigned to each pair of objects that account for different sizes across the pairs of sets being compared. 
+The first approach is the one pursued by Lizardo (2014) for cultural object genre labels. Goldberg et al. use label distance information to define the inter-object similarity (distance) network, which is fine, so they opt for a complicated version of the projection approach, based on set theoretic distance measures between the label sets assigned to each pair of objects that account for different sizes across the pairs of sets being compared. 
 
 ![Varieties of monism.](mono-types.png){#fig-mono-types}
 
@@ -90,9 +90,9 @@ Ultimately, we can see why Goldberg et al.'s approach yields empirically and ana
 
 We can represent these distinct consumer types using the proposed three-mode network imagery. For instance, the different types of "mono" consumers (people with a relatively low taste for variety) are shown in @fig-mono-types. The "mono-mixer" (@fig-mono-types (a)) is a person who chooses one, albeit highly atypical, genre as given by the low similarity between the labels assigned to it. So while they connect to only a single object, they indirectly connect to multiple (weakly related) labels via that object. 
 
-The mono-purist comes in two flavors (only implicitly distinguished in Goldberg et al.). The first (@fig-mono-types (b)) is the "purest" mono-purist: A person who chooses objects that are the most representative of their types (single-labeled objects). Then there is a relatively weaker form of mono-purism: Picking a multi-labeled object whose labels are strongly related to one another (@fig-mono-types (c)).
+The mono-purist comes in two flavors (only implicitly distinguished in Goldberg et al.). The first (@fig-mono-types (b)) is the "purest" mono-purist: A person who chooses objects most representative of their types (single-labeled objects). Then there is a relatively weaker form of mono-purism: Picking a multi-labeled object whose labels are strongly related to one another (@fig-mono-types (c)).
 
-The same approach can be used to distinguish between different forms of poly-purism. First, there is the strong poly-purist (@fig-strong-poly), who only consumes (and likes) objects that are the strongest representatives of their categories, as given by their single label assignment, and the relative *dissimilarities* between labels *across* objects consumed. Then there is a weaker form of poly-purism (@fig-weak-poly); a consumer who would countenance multi-labeled objects, as long as they are still typical members of their categories, as given by the strong similarities between the labels assigned, and the relative dissimilarities across label sets between objects (a similar appraoch could be used to define strong and weak varieties of poly-mixing).
+The same approach can be used to distinguish between different forms of poly-purism. First, there is the strong poly-purist (@fig-strong-poly), who only consumes (and likes) objects that are the strongest representatives of their categories, as given by their single label assignment, and the relative *dissimilarities* between labels *across* objects consumed. Then there is a weaker form of poly-purism (@fig-weak-poly); a consumer who would countenance multi-labeled objects, as long as they are still typical members of their categories, as given by the strong similarities between the labels assigned, and the relative dissimilarities across label sets between objects (a similar approach could be used to define strong and weak varieties of poly-mixing).
 
 ## Conclusion
 Overall, it is clear that the analysis of categories, typicality, and variety is set squarely in the same ballpark as the traditional analysis of cultural networks (DiMaggio, 2011). The move to a multimode case (featuring people $\times$ objects and objects $\times$ labels networks), and the reticence of categories researchers to use formal tools from the analysis of duality and cultural holes, has obscured some of these commonalities. Hopefully they have become a bit clearer here.
