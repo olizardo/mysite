@@ -67,18 +67,17 @@
 
 -   "Incubators or diffusers? Examining the dynamic coupling of context and social ties across multiple foci." *Social Networks* [doi:10.1016/j.socnet.2022.02.004](https://doi.org/10.1016/j.socnet.2022.02.004)
 
--   "Neither influence nor selection: Examining the co-evolution of political orientation and social networks in the *NetSense* and *NetHealth* studies." *PloS one* 15: e0233458. [https://doi.org/10.1371/journal.pone.0233458](https://doi.org/10.1371/journal.pone.0233458)
-
--   "A dyadic reciprocity index for repeated interaction networks." *Network Science* 1: 31-48. [https://doi.org/10.1017/nws.2012.5](https://doi.org/10.1017/nws.2012.5)
-
--   "Predictors of short-term decay of cell phone contacts in a large scale communication network." *Social Networks* 33: 245-257. [https://doi.org/10.1016/j.socnet.2011.07.002](https://doi.org/10.1016/j.socnet.2011.07.002)
-
 -   "Using big data to examine the effect of urbanism on social networks." *Journal of Urban Affairs* 43:40-56. [https://doi.org/10.1080/07352166.2018.1550350](https://doi.org/10.1080/07352166.2018.1550350)
 
 -   "Analysis of link formation, persistence, and dissolution in NetSense data." *Proceedings of the IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining*: 1197-1204. [https://doi.org/10.1109/ASONAM.2016.7752391](https://doi.org/10.1109/ASONAM.2016.7752391)
 
+-   "Neither influence nor selection: Examining the co-evolution of political orientation and social networks in the *NetSense* and *NetHealth* studies." *PloS one* 15: e0233458. [https://doi.org/10.1371/journal.pone.0233458](https://doi.org/10.1371/journal.pone.0233458)
+
 -   "Influence of personal preferences on link dynamics in social networks." *Complexity* [https://doi.org/10.1155/2017/4543563](https://doi.org/10.1155/2017/4543563)
 
+-   "A dyadic reciprocity index for repeated interaction networks." *Network Science* 1: 31-48. [https://doi.org/10.1017/nws.2012.5](https://doi.org/10.1017/nws.2012.5)
+
+-   "Predictors of short-term decay of cell phone contacts in a large scale communication network." *Social Networks* 33: 245-257. [https://doi.org/10.1016/j.socnet.2011.07.002](https://doi.org/10.1016/j.socnet.2011.07.002)
 
 ### Computational Social Science
 
@@ -93,7 +92,6 @@
 -   "Creation, evolution, and dissolution of social groups." *Scientific Reports* 11: 17470. [https://doi.org/10.1038/s41598-021-96805-7](https://doi.org/10.1038/s41598-021-96805-7)
 
 -   "Social networks through the prism of cognition." *Complexity*. [https://doi.org/10.1155/2021/4963903](https://doi.org/10.1155/2021/4963903)
-
 
 ### Culture and Network Dynamics
 
