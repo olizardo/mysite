@@ -5,7 +5,7 @@ project:
 website:
   title: "Omar Lizardo"
   search: true
-  repo-url: https://github.com/olizardo/networks-textbook
+  repo-url: https://github.com/olizardo/mysite
   repo-actions: [source]
   navbar:
     background: "#2D68C4"
