@@ -7,5 +7,3 @@ freeze: true
 # Enable banner style title blocks
 title-block-banner: true
 
-#repo-url: https://github.com/olizardo/mysite
-#repo-actions: [source]
