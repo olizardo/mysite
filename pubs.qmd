@@ -83,7 +83,7 @@
 
 -   "Predicting relationship labels and individual personality traits from telecommunication history in social networks using Hawkes processes." *IEEE Access* 11: 8492-8503. [https://doi.org/10.1109/ACCESS.2023.3238970](https://doi.org/10.1109/ACCESS.2023.3238970)
 
--   "Modeling memory imprints induced by interactions in social networks." Pp. 186-195 in R. Thomson, C. Dancy and A. Pyke (Eds.), *Social, Cultural, and Behavioral Modeling*. {\em SBP-BRiMS 2022. Lecture Notes in Computer Science, vol 13558}. Springer, Cham. [https://doi.org/10.1007/978-3-031-17114-7_18](https://doi.org/10.1007/978-3-031-17114-7_18)
+-   "Modeling memory imprints induced by interactions in social networks." Pp. 186-195 in R. Thomson, C. Dancy and A. Pyke (Eds.), *Social, Cultural, and Behavioral Modeling SBP-BRiMS 2022. Lecture Notes in Computer Science, vol 13558*. Springer, Cham. [https://doi.org/10.1007/978-3-031-17114-7_18](https://doi.org/10.1007/978-3-031-17114-7_18)
 
 -   "Examining the association between behavioral trajectory similarity clusters in social networks." Pp. 36-55 in G. Giordano, M. L. Restaino and A. Salvini (Eds.)  *Methods and Applications in Social Networks Analysis: Evidence from Collaborative, Governance, Historical and Mobility Networks*. FrancoAngeli [https://library.oapen.org/handle/20.500.12657/53211](20.500.12657/53211)
 
