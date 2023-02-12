@@ -3,6 +3,11 @@ title: "Omar Lizardo"
 about:
   template: jolla
   image: profile-cropped.jpg
+  image-shape: round
+  links:
+     - icon: github
+       text: View Source
+       href: https://github.com/olizardo/mysite/blob/main/index.qmd
 ---
 
 <p align="justify"> 
