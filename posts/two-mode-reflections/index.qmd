@@ -24,9 +24,9 @@ Of course, the HH reflective approach is not restricted to any type of data---al
           0, 1, 1, 1, 1,  1, 1, 1, 1,  0, 0, 0, 0, 0, 
           1, 0, 1, 1, 1,  1, 1, 1, 0,  0, 0, 0, 0, 0, 
           0, 0, 1, 1, 1,  0, 1, 0, 0,  0, 0, 0, 0, 0, 
-          0, 0, 1, 0, 1,  1, 0, 1, 0,  0, 0, 0, 0, 0, 
-          0, 0, 0, 0, 1,  1, 1, 1, 0,  0, 0, 0, 0, 0, 
-          0, 0, 0, 0, 1,  0, 1, 1, 1,  0, 0, 0, 0, 0, 
+          0, 0, 1, 1, 1,  1, 0, 1, 0,  0, 0, 0, 0, 0, 
+          0, 0, 0, 1, 1,  1, 1, 1, 0,  0, 0, 0, 0, 0, 
+          0, 0, 0, 1, 1,  0, 1, 1, 1,  0, 0, 0, 0, 0, 
           
           0, 0, 0, 0, 0,  0, 1, 1, 1,  0, 0, 1, 0, 0, 
           0, 0, 0, 0, 0,  0, 0, 1, 1,  1, 0, 1, 0, 0, 
@@ -35,7 +35,7 @@ Of course, the HH reflective approach is not restricted to any type of data---al
           0, 0, 0, 0, 0,  0, 1, 0, 1,  1, 1, 1, 1, 1,
           0, 0, 0, 0, 0,  0, 1, 1, 0,  1, 1, 1, 0, 0,
           0, 0, 0, 0, 0,  0, 0, 0, 1,  0, 1, 0, 0, 0,
-          0, 0, 0, 0, 0,  0, 0, 0, 1,  0, 1, 1, 1, 0, 
+          0, 0, 0, 0, 0,  0, 0, 0, 1,  0, 1, 0, 0, 0, 
           
           0, 0, 0, 0, 0,  1, 0, 1, 1,  0, 0, 0, 0, 0,
           0, 0, 0, 0, 0,  0, 0, 1, 1,  0, 0, 0, 0, 0),
@@ -126,13 +126,12 @@ For all $q>1$ (Hidalgo & Hausmann, 2009). This results in a series of vectors of
 #| label: tbl-pr-even
 #| tbl-cap: Even numbered reflective centralities for people in the Southern Women Data
 #| tbl-cap-location: margin
-
-   source("C:/Users/Omar Lizardo/Google Drive/R/person-group-reflections/reflections.R")
+   library(here)
+   source(here("posts", "two-mode-reflections", "reflections.R"))
    evens <- function(x) subset(x, x %% 2 == 0)
    odds <- function(x) subset(x, x %% 2 != 0)
    a <- reflections(A, iter = 26)
-   p.e.r <- a$person$rr[, evens(1:20)]
-   p.e.r <- round(p.e.r, 0)
+   p.e.r <- a$p.r[, evens(1:20)]
    kbl(p.e.r, align = "c", format = "pipe")
 ```
 
@@ -145,15 +144,14 @@ For all $q>1$ (Hidalgo & Hausmann, 2009). This results in a series of vectors of
 #| tbl-cap: Odd numbered reflective centralities for people in the Southern Women Data
 #| tbl-cap-location: margin
 
-   p.o.r <- a$person$rr[, odds(1:20)]
-   p.o.r <- round(p.o.r, 0)
+   p.o.r <- a$p.r[, odds(1:20)]
    p.o.r <- p.o.r[, -1]
    kbl(p.o.r, align = "c", format = "pipe")
 ```
 
 ```{r, include=FALSE}
-   source("C:/Users/Omar Lizardo/Google Drive/R/person-group-reflections/ref.long.dat.R")
-     b <- ref.long.dat(a, max.iter = 26)
+     source(here("posts", "two-mode-reflections", "ref.long.dat.R"))
+     b <- ref.long.dat(a = a$p.r, b = a$g.r, max.iter = 26)
 ```
 
 
@@ -270,7 +268,7 @@ Notably, the reflective centrality ranks at the highest reflection ($q = 20$) in
 
 @fig-gr-even shows that $E14$ experiences the most dramatic improvement in status as we move to higher reflections. Relatively low ranked when it comes to the average number of memberships of its members, it increases in standing when considering the average of the average number memberships of its members (and so forth). 
 
-The most dramatic change in status is for $E1$ in fig-gr-odd, which begins as the top event when centrality is measured as the average size of the memberships of its members, but ends up dead last at higher reflections, suggesting that the average size of the events attended by the members of the groups its members belong to are smaller than other events (and so forth). 
+The most dramatic change in status is for $E1$ in @fig-gr-odd, which begins as the top event when centrality is measured as the average size of the memberships of its members, but ends up dead last at higher reflections, suggesting that the average size of the events attended by the members of the groups its members belong to are smaller than other events (and so forth). 
 
 ```{r, echo=FALSE}
 #| label: fig-gr-odd

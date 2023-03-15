@@ -21,9 +21,9 @@ draft: false
           0, 1, 1, 1, 1,  1, 1, 1, 1,  0, 0, 0, 0, 0, 
           1, 0, 1, 1, 1,  1, 1, 1, 0,  0, 0, 0, 0, 0, 
           0, 0, 1, 1, 1,  0, 1, 0, 0,  0, 0, 0, 0, 0, 
-          0, 0, 1, 0, 1,  1, 0, 1, 0,  0, 0, 0, 0, 0, 
-          0, 0, 0, 0, 1,  1, 1, 1, 0,  0, 0, 0, 0, 0, 
-          0, 0, 0, 0, 1,  0, 1, 1, 1,  0, 0, 0, 0, 0, 
+          0, 0, 1, 1, 1,  1, 0, 1, 0,  0, 0, 0, 0, 0, 
+          0, 0, 0, 1, 1,  1, 1, 1, 0,  0, 0, 0, 0, 0, 
+          0, 0, 0, 1, 1,  0, 1, 1, 1,  0, 0, 0, 0, 0, 
           
           0, 0, 0, 0, 0,  0, 1, 1, 1,  0, 0, 1, 0, 0, 
           0, 0, 0, 0, 0,  0, 0, 1, 1,  1, 0, 1, 0, 0, 
@@ -32,7 +32,7 @@ draft: false
           0, 0, 0, 0, 0,  0, 1, 0, 1,  1, 1, 1, 1, 1,
           0, 0, 0, 0, 0,  0, 1, 1, 0,  1, 1, 1, 0, 0,
           0, 0, 0, 0, 0,  0, 0, 0, 1,  0, 1, 0, 0, 0,
-          0, 0, 0, 0, 0,  0, 0, 0, 1,  0, 1, 1, 1, 0, 
+          0, 0, 0, 0, 0,  0, 0, 0, 1,  0, 1, 0, 0, 0, 
           
           0, 0, 0, 0, 0,  1, 0, 1, 1,  0, 0, 0, 0, 0,
           0, 0, 0, 0, 0,  0, 0, 1, 1,  0, 0, 0, 0, 0),
@@ -170,7 +170,7 @@ I implemented Kovacs's algorithm as an R function, the latest version of which c
                   )
 ```
 
-@fig-rows replicates Kovacs's (2010, Figure 12b) exactly using the current *R* implementation.The algorithm converged (using $\epsilon = 0.001$) after fourteen iterations. @fig-rows is the result of a multdimensional scaling solution of the equilibrium similarities, with actors projected to the space formed by the first two-dimensions, computed using the function `cmdscale` from the package `stats` in *R* version 4.2.2.^[See [https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/cmdscale](https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/cmdscale)] 
+@fig-rows replicates Kovacs's (2010, Figure 12b) exactly using the current *R* implementation.The algorithm converged (using $\epsilon = 0.001$) after fourteen iterations. @fig-rows is the result of a multidimensional scaling solution of the equilibrium similarities, with actors projected to the space formed by the first two-dimensions, computed using the function `cmdscale` from the package `stats` in *R* version 4.2.2.^[See [https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/cmdscale](https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/cmdscale)] 
 
 As Kovacs noted in the original paper, the distribution of points in the two-dimensional metric MDS space obtained using the generalized relational similarities corresponds to the generalized blockmodeling solution reported by Doreian et al. (2004, Table 4), with two large sets of similar actors separated from one another and from the more peripheral Dorothy and Pearl.
 

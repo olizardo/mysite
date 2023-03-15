@@ -1,12 +1,12 @@
-ref.long.dat <- function(x, max.iter) {
+ref.long.dat <- function(a, b, max.iter) {
      library(tidyverse)
      evens <- function(x) subset(x, x %% 2 == 0)
      odds <- function(x) subset(x, x %% 2 != 0)
-     pr.long <- data.frame(x$person$rr)
+     pr.long <- data.frame(a)
      pr.long <- pr.long %>% 
           mutate(person = rownames(pr.long)) %>% 
           pivot_longer(
-               cols = 1:ncol(x$person$rr),
+               cols = 1:ncol(a),
                names_to = "iter",
                values_to = "ref"
           ) %>% 
@@ -15,11 +15,11 @@ ref.long.dat <- function(x, max.iter) {
      pr.long.e <- filter(pr.long, n.iter %in% c(evens(2:max.iter)))
      pr.long.o <- filter(pr.long, n.iter %in% c(odds(3:max.iter)))
      
-     gr.long <- data.frame(x$group$rr)
+     gr.long <- data.frame(b)
      gr.long <- gr.long %>% 
           mutate(group = rownames(gr.long)) %>% 
           pivot_longer(
-               cols = 1:ncol(x$group$rr),
+               cols = 1:ncol(b),
                names_to = "iter",
                values_to = "ref"
           ) %>% 
