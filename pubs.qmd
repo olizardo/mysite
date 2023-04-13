@@ -93,13 +93,19 @@
 
 -   "Social networks through the prism of cognition." *Complexity*. [https://doi.org/10.1155/2021/4963903](https://doi.org/10.1155/2021/4963903)
 
-### Culture and Network Dynamics
+- "Influence of personal preferences on link dynamics in social networks." *Complexity* [doi:10.1155/2017/4543563](https://doi.org/10.1155/2017/4543563)
 
--   "Simmel's dialectic of form and content in recent work in cultural sociology." *The Germanic Review: Literature, Culture, Theory* 94:93-100. [doi:10.1080/00168890.2019.1585664](https://doi.org/10.1080/00168890.2019.1585664)
+
+### Cultural Change 
 
 -   "Cultural fragmentation or acquired dispositions? A new approach to accounting for patterns of cultural change." *Socius: Sociological Research for a Dynamic World* 2. [doi:10.1177/2378023116669726](https://doi.org/10.1177/2378023116669726)
 
 -   "How macro-historical change shapes cultural taste: Legacies of democratization in Spain and Portugal." *American Sociological Review* 78: 213-223. [doi:10.1177/0003122413478816](https://doi.org/10.1177/0003122413478816)
+
+
+### Culture and Networks 
+
+- "Variety in cultural choice and the activation of social ties." *Social Science Research* 42: 321–330. [doi:10.1016/j.ssresearch.2012.09.014](https://doi.org/10.1016/j.ssresearch.2012.09.014)
 
 -   "Cultural correlates of ego-network closure."  *Sociological Perspectives* 54: 479-487. [https://doi.org/10.1525/sop.2011.54.3.479](https://doi.org/10.1525/sop.2011.54.3.479)
 
@@ -113,11 +119,11 @@
 
 -   "The shallowness of deep culture or the deepness of shallow culture? Six ways culture can be internalized" *Working Paper* [(pdf)](/workpap/shallowness.pdf)
 
-- "An analytical approach to culture." *Philosophy of the Social Sciences* (forthcoming). [(pdf)](/workpap/analytical-approach-to-culture.pdf)
+- "An analytical approach to culture." *Philosophy of the Social Sciences* (forthcoming). [doi:10.1177/00483931231169313](https://doi.org/10.1177/00483931231169313)
 
-- "Organizations and the structure of culture." *Sociology Compass* (forthcoming). [doi:10.1111/soc4.13063](https://doi.org/10.1111/soc4.13063)
+- "Organizations and the structure of culture." *Sociology Compass* 17: e13063. [doi:10.1111/soc4.13063](https://doi.org/10.1111/soc4.13063)
 
--   "What is implicit culture?" *Journal for the Theory of Social Behaviour* (forthcoming). [doi:10.1111/jtsb.12333](https://doi.org/10.1111/jtsb.12333)
+-   "What is implicit culture?" *Journal for the Theory of Social Behaviour* 52: 412-437. [doi:10.1111/jtsb.12333](https://doi.org/10.1111/jtsb.12333)
 
 -   "Improving cultural analysis: Considering personal culture in its declarative and nondeclarative modes." *American Sociological Review* 82: 88-115. [doi:10.1177/0003122416675175](https://doi.org/10.1177/0003122416675175)
 
@@ -129,6 +135,8 @@
 
 -   "Specifying the 'what' and separating the 'how': Doings, sayings, codes, and artifacts as the building blocks of institutions." *Research in the Sociology of Organizations* 65(A): 217-234. [doi.org/10.1108/S0733-558X2019000065A021](doi.org/10.1108/S0733-558X2019000065A021)
 
+-   "An institutional logics approach to the analysis of social movement fields." *Social Currents* 2: 58-80. [doi:10.1017/nws.2014.7](https://doi.org/10.1017/nws.2014.7)
+
 -   "How organizational theory can help network theorizing: Linking structure and dynamics via cross-level analogies." *Research in the Sociology of Organizations* 40: 33-56. [doi:10.1108/S0733-558X(2014)0000040002](https://doi.org/10.1108/S0733-558X(2014)0000040002)
 
 -   "Defining and theorizing terrorism: A global actor-centered approach." *Journal of World Systems Research* 14: 91-118.[doi:10.5195/jwsr.2008.341](https://doi.org/10.5195/jwsr.2008.341)
@@ -139,15 +147,15 @@
 
 ### Measuring Culture
 
+-   "Discovering micro-genre Communities in Survey Data on Cultural Tastes." *Working Paper* [(pdf)](/workpap/microgenres.pdf)
+
 -   "Culture and networks." Forthcoming in P. Carrington, J. McLevey and J. Scott (Eds.) *The Sage Handbook of Social Network Analysis*. Sage Publications. [(pdf)](/workpap/culture-and-networks.pdf)
 
--   "Discovering micro-genre Communities in Survey Data on Cultural Tastes." *Working Paper* [(pdf)](/workpap/microgenres.pdf)
+-   "Simmel's dialectic of form and content in recent work in cultural sociology." *The Germanic Review: Literature, Culture, Theory* 94:93-100. [doi:10.1080/00168890.2019.1585664](https://doi.org/10.1080/00168890.2019.1585664)
 
 -   "Institutional movement logics and the changing shape of the U.S. social movement field, 1960--1995." *Social Forces* 97: 1389--1422. [doi:10.1093/sf/soy122](https://doi.org/10.1093/sf/soy122)
 
 -   "The mutual specification of genres and audiences: Reflective two-mode centralities in person-to-culture choice data." *Poetics: Journal of Empirical Research on Culture, the Media and the Arts* 68: 52-71. [doi:10.1016/j.poetic.2018.04.003](https://doi.org/10.1016/j.poetic.2018.04.003)
-
--   "An institutional logics approach to the analysis of social movement fields." *Social Currents* 2: 58-80. [doi:10.1017/nws.2014.7](https://doi.org/10.1017/nws.2014.7)
 
 -   "Omnivorousness as the bridging of cultural holes: A measurement strategy." *Theory and Society* 43: 395-419. [doi:10.1007/s11186-014-9220-9](https://doi.org/10.1007/s11186-014-9220-9)
 
