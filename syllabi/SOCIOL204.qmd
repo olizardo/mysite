@@ -37,11 +37,10 @@ format:
 - Sewell, W. H. (2005). The concept(s) of culture. Pp. 152-174 in _Logics of History_. University of Chicago Press. [pdf](https://bruinlearn.ucla.edu/courses/143382/files/10517489?wrap=1 "sewell-concepts-of-culture.pdf")
 - Reckwitz, A. (2002). Toward a theory of social practices: A development in culturalist theorizing. _European Journal of Social Theory_, (2), 243-263. [pdf](https://bruinlearn.ucla.edu/courses/143382/files/10401036?wrap=1 "reckwitz-theory-of-social-practices.pdf")
 - Sendroiu, I. (2022). 'All the Old Illusions': On Guessing at Being in Crisis. _Sociological Theory_, 0(0). \[pdf\]  
-    
 - Winchester, D. (2008). Embodying the faith: Religious practice and the making of a Muslim moral habitus. _Social Forces_, _86_(4), 1753-1780. pdf
 - Pagis, M. (2010). From abstract concepts to experiential knowledge: Embodying enlightenment in a meditation center. _Qualitative Sociology_, _33_(4), 469-489. pdf
 - Ngo, H. (2016). Racist habits: A phenomenological analysis of racism and the habitual body. _Philosophy & Social Criticism_, _42_(9), 847-872. [pdf](https://bruinlearn.ucla.edu/courses/143382/files/10401099?wrap=1 "ngo-racist-habits.pdf")
-- Crawley, S. L., Whitlock, M. C., & Earles, J. (2021). Smithing queer empiricism: Engaging ethnomethodology for a queer social science. _Sociological Theory_, 39(3), 127-152. \[pdf\]
+- Crawley, S. L., Whitlock, M. C., & Earles, J. (2021). Smithing queer empiricism: Engaging ethnomethodology for a queer social science. _Sociological Theory_, 39(3), 127-152. [pdf]
 
 ### Week 4:  The Pragmatist Tradition 
 
@@ -60,6 +59,7 @@ format:
 - Berger, P. and T. Luckmann (1967) _The Social Construction of Reality_. Doubleday. (Pp. 29-46, 51-72, 129-147) [pdf](https://bruinlearn.ucla.edu/courses/143382/files/10401101?wrap=1 "berger-luckmann-social-construction-reality.PDF")
 - Crossley, N. (2001). The phenomenological habitus and its construction. _Theory and society_, _30_(1), 81-120. [pdf](https://bruinlearn.ucla.edu/courses/143382/files/10401102?wrap=1 "crossley-phenomenological-habitus-and-its-construction.pdf")
 - Itzigsohn, J., & Brown, K. (2015). Sociology and the theory of double consciousness: WEB Du Bois’s phenomenology of racialized subjectivity. _Du Bois Review_, _12_(2), 231-248. [pdf](https://bruinlearn.ucla.edu/courses/143382/files/10401103?wrap=1 "itzigsohn-brown-sociology-and-the-theory-of-double-consciousness.pdf")
+- Tavory, I., & Winchester, D. (2012). Experiential careers: the routinization and de-routinization of religious life. *Theory and Society*, 41, 351-373.
 - Reay, M. (2010). Knowledge distribution, embodiment, and insulation. _Sociological Theory_, _28_(1), 91-107. [pdf](https://bruinlearn.ucla.edu/courses/143382/files/10401096?wrap=1 "reay-knowledge-distribution-embodiment-insulation.pdf")
 - Tavory, I., & Eliasoph, N. (2013). Coordinating Futures: Toward a Theory of Anticipation. _American Journal of Sociology_, _118_(4), 908-942. [pdf](https://bruinlearn.ucla.edu/courses/143382/files/10401097?wrap=1 "tavory-eliasoph-coordinating-futures.pdf")
 - Atkinson, W. (2010). Phenomenological additions to the Bourdieusian toolbox: Two problems for Bourdieu, two solutions from Schutz. _Sociological Theory_, 28(1), 1-19. [pdf](https://bruinlearn.ucla.edu/courses/143382/files/11240000?wrap=1 "atkinson-phenomenological-additions-bourdieusian-toolbox.pdf")
