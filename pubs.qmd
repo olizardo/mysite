@@ -11,7 +11,7 @@
 
 ## Selected Articles
 
-### Action Theory
+### Action and Practice Theory
 
 -   "Habit and the explanation of action." *Journal for the Theory of Social Behaviour* 51: 391-411. [doi:10.1111/jtsb.12273](https://doi.org/10.1111/jtsb.12273)
 
@@ -25,7 +25,7 @@
 
 -   "The cognitive origins of Bourdieu's 'habitus'." *Journal for the Theory of Social Behaviour* 34: 375-401. [doi:10.1111/j.1468-5914.2004.00255.x](https://doi.org/10.1111/j.1468-5914.2004.00255.x)
 
-### Classical Theory
+### Classical Sociological Theory
 
 -   "Chance, orientation, and interpretation: Max Weber's probabilism and the future of social theory." *Sociological Theory* [doi:10.1177/07352751221084712](https://doi.org/10.1177/07352751221084712)
 
@@ -35,7 +35,7 @@
 
 -   "Taking representational dualism seriously: Revisiting the Durkheim-Spencer debate on the rise of individualism." *Sociological Perspectives* 52: 533-555. [doi:10.1525/sop.2009.52.4.533](https://doi.org/10.1525/sop.2009.52.4.533)
 
-### Contemporary Theory
+### Contemporary Sociological Theory
 
 -   "For a probabilistic sociology: A history of concept formation with Pierre Bourdieu." *Theory and Society* [doi:10.1007/s11186-021-09452-2](https://doi.org/10.1007/s11186-021-09452-2)
 
@@ -44,8 +44,6 @@
 -   "Deliberate trust and intuitive faith: A dual-process model of reliance." *Journal for the Theory of Social Behaviour* 48: 230-250. [doi:10.1111/jtsb.12160](https://doi.org/10.1111/jtsb.12160)
 
 -   "Reconceptualizing abstract conceptualization in social theory: The case of the 'structure' concept." *Journal for the Theory of Social Behaviour* 43: 155-180. [doi:10.1111/jtsb.12011](https://doi.org/10.1111/jtsb.12011)
-
--   "Pierre Bourdieu as a post-cultural theorist." *Cultural Sociology* 5: 1-22.[doi:10.1177/1749975510389714](https://doi.org/10.1177/1749975510389714)
 
 -   "Beyond the antinomies of structure: Levi-Strauss, Giddens, Bourdieu and Sewell." *Theory and Society* 39: 651-688. [doi:10.1007/s11186-010-9125-1](https://doi.org/10.1007/s11186-010-9125-1)
 
@@ -130,6 +128,8 @@
 -   "Cultural symbols and cultural power." *Qualitative Sociology* 39: 199-204. [doi:10.1007/s11133-016-9329-4](https://doi.org/10.1007/s11133-016-9329-4)
 
 -   "Cultural theory." Pp. 99-120 in Seth Abrutyn (Ed.), *Handbook of Contemporary Sociological Theory.* Springer. [{doi:10.1007/978-3-319-32250-6_6](https://doi.org/10.1007/978-3-319-32250-6_6)
+
+-   "Pierre Bourdieu as a post-cultural theorist." *Cultural Sociology* 5: 1-22.[doi:10.1177/1749975510389714](https://doi.org/10.1177/1749975510389714)
 
 ### Institutions and Organization
 
