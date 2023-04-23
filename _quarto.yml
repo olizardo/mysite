@@ -25,6 +25,9 @@ website:
           - text: "SOCIOL 208B (Spring 2022)"
             icon: file-text
             href: syllabi/SOCIOL208b-spring22.html
+          - text: "SOCIOL 204 (Sociological Theorizing)"
+            icon: file-text
+            href: syllabi/SOCIOL204.html
       - file: vita.pdf
         text: "Vita"
         icon: file-pdf
