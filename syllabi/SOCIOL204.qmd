@@ -8,35 +8,33 @@ format:
 ## Readings
 
 ### Week 1: Theory and Theorizing
-
-- Abend, G. (2008). The meaning of ‘Theory’. *Sociological Theory*, 26(2), 173-199. [pdf](https://bruinlearn.ucla.edu/courses/143382/files/10398308?wrap=1 "abend-meaning-of-theory.pdf")
-- Davis, M. S. (1971). That's interesting! Towards a phenomenology of sociology and a sociology of phenomenology. *Philosophy of the Social Sciences*, 1(2), 309-344. [pdf](https://bruinlearn.ucla.edu/courses/143382/files/10398295?wrap=1 "davis-thats-interesting.pdf")
-- Healy, K. (2017). Fuck nuance. *Sociological Theory*, 35(2), 118-127. [pdf](https://bruinlearn.ucla.edu/courses/143382/files/10398296?wrap=1 "healy-fuck-nuance.pdf")
-- Joas, H., & Knöbl, W. (2009). What is Theory? Pp. 1-19 in *Social Theory: Twenty Introductory Lectures*. Cambridge University Press. [pdf](https://bruinlearn.ucla.edu/courses/143382/files/10398298?wrap=1 "joas-knobl-what-is-theory.PDF")
+- Abend, G. (2008). The meaning of ‘Theory’. *Sociological Theory*, 26(2), 173-199. [pdf]
+- Davis, M. S. (1971). That's interesting! Towards a phenomenology of sociology and a sociology of phenomenology. *Philosophy of the Social Sciences*, 1(2), 309-344. [pdf]
+- Healy, K. (2017). Fuck nuance. *Sociological Theory*, 35(2), 118-127. [pdf]
+- Joas, H., & Knöbl, W. (2009). What is Theory? Pp. 1-19 in *Social Theory: Twenty Introductory Lectures*. Cambridge University Press. [pdf]
 
 #### Further Reading
-- Martin, J. L. (2015) On Theory in Sociology. Pp. 1-44 in *Thinking Through Theory*. W. W. Norton [pdf](https://bruinlearn.ucla.edu/courses/143382/files/10398300?wrap=1 "martin-theory-in-sociology.PDF")
+- Martin, J. L. (2015) On Theory in Sociology. Pp. 1-44 in *Thinking Through Theory*. W. W. Norton [pdf]
 - Selg, P. (2013). The politics of theory and the constitution of meaning. *Sociological Theory*, 31(1), 1-23. [pdf]
 
 ### Week 2: The (Culture in) Action Tradition
 
-- Joas, H., & Knöbl, W. (2009). The Classical Attempt at Synthesis. Pp. 20-42 in *Social Theory: Twenty Introductory Lectures*. Cambridge University Press. [pdf](https://bruinlearn.ucla.edu/courses/143382/files/10398503?wrap=1 "joas-knobl-classical-attempt-at-synthesis.PDF")
-- Swidler, A. (1986). Culture in action: Symbols and Strategies. *American Sociological Review*, 51,:273–286. [pdf](https://bruinlearn.ucla.edu/courses/143382/files/10398511?wrap=1 "swidler-culture-in-action.pdf")
-- Vaisey, S. (2009). Motivation and justification: Toward a dual-process theory of culture in action. *American Journal of Sociology*, 114(6):1675–1715. [pdf](https://bruinlearn.ucla.edu/courses/143382/files/10398512?wrap=1 "vaisey-motivation-justification.pdf")
-- Winchester, D. (2016). A hunger for God: embodied metaphor as cultural cognition in action. *Social Forces*, *95_(2), 585-606. [pdf](https://bruinlearn.ucla.edu/courses/143382/files/11240141?wrap=1 "winchester-hunger-for-god.pdf")
-- Lizardo, O., & Strand, M. (2010). Skills, toolkits, contexts and institutions: Clarifying the relationship between different approaches to cognition in cultural sociology. *Poetics*, 38(2), 205-228. [pdf](https://bruinlearn.ucla.edu/courses/143382/files/10401040?wrap=1 "lizardo-strand-skillts-toolkits-contexts-institutions.pdf")
+- Joas, H., & Knöbl, W. (2009). The Classical Attempt at Synthesis. Pp. 20-42 in *Social Theory: Twenty Introductory Lectures*. Cambridge University Press. [pdf]
+- Swidler, A. (1986). Culture in action: Symbols and Strategies. *American Sociological Review*, 51,:273–286. [pdf]
+- Vaisey, S. (2009). Motivation and justification: Toward a dual-process theory of culture in action. *American Journal of Sociology*, 114(6):1675–1715. [pdf]
+- Winchester, D. (2016). A hunger for God: embodied metaphor as cultural cognition in action. *Social Forces*, 95(2), 585-606. [pdf]
+- Lizardo, O., & Strand, M. (2010). Skills, toolkits, contexts and institutions: Clarifying the relationship between different approaches to cognition in cultural sociology. *Poetics*, 38(2), 205-228. [pdf]
 - Luft, A. (2020). Theorizing moral cognition: Culture in action, situations, and relationships. *Socius*, , 2378023120916125. [pdf]
-- Sendroiu, I. (2022). 'All the Old Illusions': On Guessing at Being in Crisis. *Sociological Theory*, 0(0). \[pdf\]  
+- Sendroiu, I. (2022). 'All the Old Illusions': On Guessing at Being in Crisis. *Sociological Theory*, 0(0). [pdf]
 
 #### Further Reading
-- Abramson, C. M. (2012). From “either‐or” to “when and how”: A context‐dependent model of culture in action. *Journal for the Theory of Social Behaviour*, *42_(2), 155-180. [pdf](https://bruinlearn.ucla.edu/courses/143382/files/11240142?wrap=1 "abramson-from-either-or-to-when-and-how.pdf")
-- Alexander, J. C. (1988).  Action and its Environments  Pp. 301-333 in *Action and its Environments: Toward a New Synthesis*. Columbia University Press, New York [pdf](https://bruinlearn.ucla.edu/courses/143382/files/10398501?wrap=1 "alexander-action-environments.pdf")
-- Eckstein, H. (1996). Culture as a foundation concept for the social sciences. *Journal of Theoretical Politics*, (4), 471-497. [pdf](https://bruinlearn.ucla.edu/courses/143382/files/10401762?wrap=1 "eckstein-culture-as-a-foundation-concept.pdf")
-- Emirbayer, M., & Mische, A. (1998). What is agency? *American Journal of Sociology*, 103(4), 962-1023 [pdf](https://bruinlearn.ucla.edu/courses/143382/files/10398630?wrap=1 "emirbayer-mische-agency.pdf")
-- Reed, I. A., & Weinman, M. (2019). Agency, power, modernity: A manifesto for social theory. *European Journal of Cultural and Political Sociology*, (1), 6-50. [pdf](https://bruinlearn.ucla.edu/courses/143382/files/10508196?wrap=1 "reed-weinman-agency-power-modernity.pdf")
+- Abramson, C. M. (2012). From “either‐or” to “when and how”: A context‐dependent model of culture in action. *Journal for the Theory of Social Behaviour*, 42(2), 155-180. [pdf]
+- Alexander, J. C. (1988).  Action and its Environments  Pp. 301-333 in *Action and its Environments: Toward a New Synthesis*. Columbia University Press, New York . [pdf]
+- Eckstein, H. (1996). Culture as a foundation concept for the social sciences. *Journal of Theoretical Politics*, (4), 471-497. 
+- Emirbayer, M., & Mische, A. (1998). What is agency? *American Journal of Sociology*, 103(4), 962-1023. [pdf]
+- Reed, I. A., & Weinman, M. (2019). Agency, power, modernity: A manifesto for social theory. *European Journal of Cultural and Political Sociology*, (1), 6-50. [pdf]
 
 ### Week 3: The Habit/Practice Tradition
-
 - Crawley, S. L., Whitlock, M. C., & Earles, J. (2021). Smithing queer empiricism: Engaging ethnomethodology for a queer social science. *Sociological Theory*, 39(3), 127-152. [pdf]
 - Crossley, N. (2013). Habit and habitus. *Body & Society*, *19_(2-3), 136-161. [pdf](https://bruinlearn.ucla.edu/courses/143382/files/10401037?wrap=1 "crossley-habit-and-habitus.pdf")
 - Engman, A., & Cranford, C. (2016). Habit and the Body: Lessons for Social Theories of Habit from the Experiences of People with Physical Disabilities. *Sociological Theory*, 34(1), 27-44. [pdf](https://bruinlearn.ucla.edu/courses/143382/files/10401039?wrap=1 "engman-crawford-habit-and-the-body.pdf")
@@ -55,9 +53,10 @@ format:
 
 - Brett, G. (2022). Dueling with Dual-Process Models: Cognition, Creativity, and Context. *Sociological Theory*, *40_(2), 179-201. [pdf](https://bruinlearn.ucla.edu/courses/143382/files/10401079?wrap=1 "brett-dueling-with-dual-process.pdf")
 - Dalton, B. (2004). Creativity, Habit, and the Social Products of Creative Action: Revising Joas, Incorporating Bourdieu. *Sociological Theory*, 22(4):603-622 [pdf](https://bruinlearn.ucla.edu/courses/143382/files/10401066?wrap=1 "dalton-creativity-habit.pdf")
-- Timmermans, S., & Tavory, I. (2020). Racist Encounters: A Pragmatist Semiotic Analysis of Interaction. *Sociological Theory*, *38_(4), 295-317. [pdf](https://bruinlearn.ucla.edu/courses/143382/files/10401080?wrap=1 "timmermans-tavory-racist-encounters.pdf")
-- Winchester, D., & Green, K. D. (2019). Talking your self into it: How and when accounts shape motivation for action. *Sociological Theory*, *37_(3), 257-281. pdf
-- Pagis, M., & Summers‐Effler, E. (2021). Aesthetic Engagement. In *Sociological Forum* (36), 1371-1394. [pdf]
+- Timmermans, S., & Tavory, I. (2020). Racist Encounters: A Pragmatist Semiotic Analysis of Interaction. *Sociological Theory*, 38(4), 295-317. [pdf](https://bruinlearn.ucla.edu/courses/143382/files/10401080?wrap=1 "timmermans-tavory-racist-encounters.pdf")
+- Winchester, D., & Green, K. D. (2019). Talking your self into it: How and when accounts shape motivation for action. *Sociological Theory*, 37(3), 257-281. [pdf]
+- Pagis, M., & Summers‐Effler, E. (2021). Aesthetic Engagement. *Sociological Forum* (36), 1371-1394. [pdf]
+- Gold, T. (2022). Contentious Tactics as Jazz Performances: A Pragmatist Approach to the Study of Repertoire Change. Sociological Theory, 40(3), 249-271. [pdf]
 
 #### Further Reading
 - Gross, N. (2009). A pragmatist theory of social mechanisms. *American Sociological Review,_ 74(3), 358-379. [pdf](https://bruinlearn.ucla.edu/courses/143382/files/10401057?wrap=1 "gross-social-mechanisms.pdf")
