@@ -18,7 +18,6 @@ format:
 - Selg, P. (2013). The politics of theory and the constitution of meaning. *Sociological Theory*, 31(1), 1-23. [pdf]
 
 ### Week 2: The (Culture in) Action Tradition
-
 - Joas, H., & Knöbl, W. (2009). The Classical Attempt at Synthesis. Pp. 20-42 in *Social Theory: Twenty Introductory Lectures*. Cambridge University Press. [pdf]
 - Swidler, A. (1986). Culture in action: Symbols and Strategies. *American Sociological Review*, 51,:273–286. [pdf]
 - Vaisey, S. (2009). Motivation and justification: Toward a dual-process theory of culture in action. *American Journal of Sociology*, 114(6):1675–1715. [pdf]
@@ -35,6 +34,7 @@ format:
 - Eckstein, H. (1996). Culture as a foundation concept for the social sciences. *Journal of Theoretical Politics*, (4), 471-497. 
 - Emirbayer, M., & Mische, A. (1998). What is agency? *American Journal of Sociology*, 103(4), 962-1023. [pdf]
 - Reed, I. A., & Weinman, M. (2019). Agency, power, modernity: A manifesto for social theory. *European Journal of Cultural and Political Sociology*, (1), 6-50. [pdf]
+- Strand, M., & Lizardo, O. (2017). The hysteresis effect: Theorizing mismatch in action. *Journal for the Theory of Social Behaviour*, 47(2), 164-194. [pdf]
 
 ### Week 3: The Habit/Practice Tradition
 - Crawley, S. L., Whitlock, M. C., & Earles, J. (2021). Smithing queer empiricism: Engaging ethnomethodology for a queer social science. *Sociological Theory*, 39(3), 127-152. [pdf]
