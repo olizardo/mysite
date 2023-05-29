@@ -100,36 +100,38 @@ format:
 
 ### Week 8: Fields and Ecologies
 
-- Abbott, A. (2005). Linked ecologies: States and universities as environments for professions. *Sociological Theory*, *23_(3), 245-274. [pdf](https://bruinlearn.ucla.edu/courses/143382/files/10401723?wrap=1 "abbott-linked-ecologies.pdf")
-- Buchholz, L. (2016). What is a global field? Theorizing fields beyond the nation-state. *The Sociological Review*, 64(2\_suppl), 31-60. [pdf](https://bruinlearn.ucla.edu/courses/143382/files/11235806?wrap=1 "bucholz-what-is-a-global-field.pdf")
-- Kluttz, D. N., & Fligstein, N. (2016). Varieties of sociological field theory. In *Handbook of Contemporary Sociological Theory* (pp. 185-204). Springer. [pdf](https://bruinlearn.ucla.edu/courses/143382/files/11235693?wrap=1 "kluttz-fligstein-varieties-of-sociological-field-theory.pdf")
-- Liu, S., & Emirbayer, M. (2016). Field and Ecology. *Sociological Theory*, 34(1), 62-79. [pdf](https://bruinlearn.ucla.edu/courses/143382/files/10401733?wrap=1 "liu-emirbayer-field-and-ecology.pdf")
+- Abbott, A. (2005). Linked ecologies: States and universities as environments for professions. *Sociological Theory*, *23_(3), 245-274. [pdf]
+- Buchholz, L. (2016). What is a global field? Theorizing fields beyond the nation-state. *The Sociological Review*, 64(2\_suppl), 31-60. [pdf]
+- Kluttz, D. N., & Fligstein, N. (2016). Varieties of sociological field theory. In *Handbook of Contemporary Sociological Theory* (pp. 185-204). Springer. [pdf]
+- Liu, S., & Emirbayer, M. (2016). Field and Ecology. *Sociological Theory*, 34(1), 62-79. [pdf]
 - Go, J. (2008). Global fields and imperial forms: Field theory and the British and American empires. *Sociological Theory*, 26(3), 201-229.
-- Krause, M. (2018). How fields vary. *The British Journal of Sociology*, *69_(1), 3-22. [pdf](https://bruinlearn.ucla.edu/courses/143382/files/10401732?wrap=1 "krause-how-fields-vary.pdf")
+- Krause, M. (2018). How fields vary. *The British Journal of Sociology*, *69_(1), 3-22. [pdf]
 
 #### Further Reading
-- Fligstein, N., & McAdam, D. (2011). Toward a general theory of strategic action fields. *Sociological Theory*, *29_(1), 1-26. [pdf](https://bruinlearn.ucla.edu/courses/143382/files/10401724?wrap=1 "fligstein-mcadam-general-theory-of-strategic-interaction-fields.pdf")
-- Martin, J. L. (2003). What is field theory? *American Journal of Sociology*, *109_(1), 1-49. [pdf](https://bruinlearn.ucla.edu/courses/143382/files/10412983?wrap=1 "martin-what-is-field-theory.pdf")
+- Fligstein, N., & McAdam, D. (2011). Toward a general theory of strategic action fields. *Sociological Theory*, *29_(1), 1-26. [pdf]
+- Martin, J. L. (2003). What is field theory? *American Journal of Sociology*, *109_(1), 1-49. [pdf]
 - Steinmetz, G. (2016). Social fields, subfields and social spaces at the scale of empires: Explaining the colonial state and colonial sociology. The Sociological Review, 64(2\_suppl), 98-123. [pdf]  
-- Wang, Y. (2016). Homology and isomorphism: Bourdieu in conversation with New Institutionalism. The *British Journal of Sociology*, 67(2), 348-370. [pdf](https://bruinlearn.ucla.edu/courses/143382/files/10401735?wrap=1 "wang-homology-isomorphism.pdf")
+- Wang, Y. (2016). Homology and isomorphism: Bourdieu in conversation with New Institutionalism. The *British Journal of Sociology*, 67(2), 348-370. [pdf]
 
 
 ### Week 9: The Interaction Tradition
 
-- Fligstein, N. (2001). Social skill and the theory of fields. *Sociological Theory*, 19(2):105-125. [pdf](https://bruinlearn.ucla.edu/courses/143382/files/10401465?wrap=1 "fligstein-social-skill-theory-of-fields.pdf")
-- Fuhse, J. A. (2009). The meaning structure of social networks. *Sociological theory*, *27_(1), 51-73. [pdf](https://bruinlearn.ucla.edu/courses/143382/files/10401466?wrap=1 "fuhse-meaning-structure-social-networks.pdf")
-- Hallett, T., & Hawbaker, A. (2021). The case for an inhabited institutionalism in organizational research: interaction, coupling, and change reconsidered. *Theory and Society*, *50_(1), 1-32. [pdf](https://bruinlearn.ucla.edu/courses/143382/files/10401467?wrap=1 "hallett-hawbaker-the-case-for-an-inhabited-institutionalism-organizational-research.pdf")
-- Cetina, K. K. (2009). The synthetic situation: Interactionism for a global world. *Symbolic Interaction*, 32(1), 61-87. [pdf](https://bruinlearn.ucla.edu/courses/143382/files/10412972?wrap=1 "knorr-cetina-the-synthetic-situation.pdf")
-- Tavory, I., & Fine, G. A. (2020). Disruption and the Theory of the Interaction Order. *Theory and Society*, *49_(3), 365-385. [pdf](https://bruinlearn.ucla.edu/courses/143382/files/10401471?wrap=1 "tavory-fine-disruption-theory-interaction-order.pdf")
-- Eliasoph, N., & Lichterman, P. (2003). Culture in interaction. American Journal of Sociology, 108(4), 735-794. [pdf](https://bruinlearn.ucla.edu/courses/143382/files/11232860?wrap=1 "eliasoph-lichterman-culture-in-interaction.pdf")
-- Tavory, I. (2018). Between situations: Anticipation, rhythms, and the theory of interaction. *Sociological Theory*, *36_(2), 117-133. [pdf](https://bruinlearn.ucla.edu/courses/143382/files/10401470?wrap=1 "tavory-between-situations.pdf")
+- Fligstein, N. (2001). Social skill and the theory of fields. *Sociological Theory*, 19(2):105-125. [pdf]
+- Fuhse, J. A. (2009). The meaning structure of social networks. *Sociological theory*, *27_(1), 51-73. [pdf]
+- Hallett, T., & Hawbaker, A. (2021). The case for an inhabited institutionalism in organizational research: interaction, coupling, and change reconsidered. *Theory and Society*, *50_(1), 1-32. [pdf]
+- Cetina, K. K. (2009). The synthetic situation: Interactionism for a global world. *Symbolic Interaction*, 32(1), 61-87. [pdf]
+- Tavory, I., & Fine, G. A. (2020). Disruption and the Theory of the Interaction Order. *Theory and Society*, *49_(3), 365-385. [pdf]
+- Eliasoph, N., & Lichterman, P. (2003). Culture in interaction. American Journal of Sociology, 108(4), 735-794. [pdf]
+- Tavory, I. (2018). Between situations: Anticipation, rhythms, and the theory of interaction. *Sociological Theory*, *36_(2), 117-133. [pdf]
 
 ### Week 10: The Structuration Tradition
 
-- Barley, S. R., & Tolbert, P. S. (1997). Institutionalization and structuration: Studying the links between action and institution. *Organization Studies*, 18(1), 93-117. [pdf](https://bruinlearn.ucla.edu/courses/143382/files/10401506?wrap=1 "barley-tolbert-institutions-structuration.pdf")
-- Freeman, K. J., Condron, D. J., & Steidl, C. R. (2020). Structures of stratification: Advancing a sociological debate over culture and resources. *Critical Sociology*, *46_(2), 191-206. [pdf](https://bruinlearn.ucla.edu/courses/143382/files/10401507?wrap=1 "freeman-etal-structures-of-stratification.pdf")
-- Haslanger, S. (2019). Cognition as a social skill. *Australasian Philosophical Review*, (1), 5-25. [pdf](https://bruinlearn.ucla.edu/courses/143382/files/10508189?wrap=1 "haslanger-cognition-as-a-social-skill.pdf")
-- Hays, S. (1994). Structure and agency and the sticky problem of culture. *Sociological theory*, 57-72. [pdf](https://bruinlearn.ucla.edu/courses/143382/files/10401508?wrap=1 "hays-structure-agency-sticky-problem-culture.pdf")
-- Ray, V. (2019). A theory of racialized organizations. *American Sociological Review*, *84_(1), 26-53. [pdf](https://bruinlearn.ucla.edu/courses/143382/files/10401510?wrap=1 "ray-theory-of-racialized-organizations.pdf")
-- Sewell Jr, W. H. (1992). A theory of structure: Duality, agency, and transformation. *American Journal of Sociology*, 98(1), 1-29. [pdf](https://bruinlearn.ucla.edu/courses/143382/files/10401512?wrap=1 "sewell-a-theory-of-structure.PDF")
+- Barley, S. R., & Tolbert, P. S. (1997). Institutionalization and structuration: Studying the links between action and institution. *Organization Studies*, 18(1), 93-117. [pdf]
+- Freeman, K. J., Condron, D. J., & Steidl, C. R. (2020). Structures of stratification: Advancing a sociological debate over culture and resources. *Critical Sociology*, 46_(2), 191-206. [pdf]
+- Haslanger, S. (2015). Distinguished lecture: Social structure, narrative and explanation. *Canadian Journal of Philosophy*, 45(1), 1-15.
+- Zheng, R. (2018). Bias, structure, and injustice: A reply to Haslanger. *Feminist Philosophy Quarterly*, 4(1).
+- Haslanger, S. (2019). Cognition as a social skill. *Australasian Philosophical Review*, (1), 5-25. [pdf]
+- Hays, S. (1994). Structure and agency and the sticky problem of culture. *Sociological theory*, 57-72. [pdf]
+- Ray, V. (2019). A theory of racialized organizations. *American Sociological Review*, *84_(1), 26-53. [pdf]
+- Sewell Jr, W. H. (1992). A theory of structure: Duality, agency, and transformation. *American Journal of Sociology*, 98(1), 1-29. [pdf]
 - Risman, B. J. (2004). Gender As a Social Structure: Theory Wrestling with Activism. Gender & Society, 18(4), 429-450. [pdf]
