@@ -84,7 +84,9 @@ format:
 - Leschziner, V., & Brett, G. (2021). Symbol Systems and Social Structures. Pp. pp. 559-582 in *Handbook of Classical Sociological Theory*. Springer. 
 - Mische, A. (2011) Relational sociology, culture, and agency. Pp. 80-97 in *The Sage handbook of Social Network Analysis*. Sage Publications. 
 - Joas, H., & Knöbl, W. (2009). Structuralism and Poststructuralism. Pp. 339-370 in *Social Theory: Twenty Introductory Lectures*. Cambridge University Press. 
-- Reed, I. A. (2013). Power: Relational, discursive, and performative dimensions. *Sociological Theory*, *31_(3), 193-218. 
+- Reed, I. A. (2013). Power: Relational, discursive, and performative dimensions. *Sociological Theory*, 31_(3), 193-218. 
+- Ritchie, K. (2020). Social structures and the ontology of social groups. *Philosophy and Phenomenological Research*, 100(2), 402-424.
+- Bourdieu, P. (1985). The social space and the genesis of groups. *Social science information*, 24(2), 195-220.
 
 ### Week 7: The Institutionalist Tradition 
 - Dimaggio, P. J., & Powell, W. W. (1983). The iron cage revisited: Institutional isomorphism and collective rationality in organizational fields. *American Sociological Review*, 48(2), 147-160. 
