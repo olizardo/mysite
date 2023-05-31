@@ -27,7 +27,7 @@ about:
 </p>
 
 <center>
-{{< ai google-scholar size=Large >}} [Google Scholar](https://scholar.google.com/citations?user=Lt5nMNkAAAAJ&hl=en) {{< ai semantic-scholar size=Large >}} [Semantic Scholar](https://www.semanticscholar.org/author/Omar-Lizardo/2632398) {{< ai orcid size=large >}} [0000-0002-5405-3007](https://orcid.org/0000-0002-5405-3007)
-{{< fa brands mastodon >}}[@omarlizardo@sciences.social](https://sciences.social/@omarlizardo)
+{{< ai google-scholar size=Large >}} [Google Scholar](https://scholar.google.com/citations?user=Lt5nMNkAAAAJ&hl=en) {{< ai semantic-scholar size=Large >}} [Semantic Scholar](https://www.semanticscholar.org/author/Omar-Lizardo/2632398) {{< ai orcid size=large >}} [0000-0002-5405-3007](https://orcid.org/0000-0002-5405-3007)<br>
+{{< fa brands mastodon size=large >}}[@omarlizardo@sciences.social](https://sciences.social/@omarlizardo)
 {{< fa envelope size=large >}} [olizardo@soc.ucla.edu](mailto:olizardo@soc.ucla.edu)
 </center >
