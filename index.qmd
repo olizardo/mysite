@@ -11,7 +11,7 @@ about:
 ---
 
 <p align="justify"> 
-{{< fa address-card size=large >}} I am the LeRoy Neiman Term Chair Professor of Sociology at the University of California, Los Angeles, and a former co-editor of [*American Sociological Review*](https://journals.sagepub.com/home/asr) and chair of the American Sociology Assocition's [Section for the Sociology of Culture](https://asaculturesection.org/). I am current member of the [Sociological Research Association](https://www.sociological-research-assoc.org/) and the Board of Reviewing Editors of the journal [*Science*](https://www.science.org/journal/science). I also serve as an associate editor for the journal [*Discover Data*](https://www.springer.com/journal/44248). 
+{{< fa address-card size=large >}} I am the LeRoy Neiman Term Chair Professor of Sociology at the University of California, Los Angeles, and a former co-editor of [*American Sociological Review*](https://journals.sagepub.com/home/asr) and chair of the American Sociology Association's [Section for the Sociology of Culture](https://asaculturesection.org/). I am current member of the [Sociological Research Association](https://www.sociological-research-assoc.org/) and the Board of Reviewing Editors of the journal [*Science*](https://www.science.org/journal/science). I also serve as an associate editor for the journal [*Discover Data*](https://www.springer.com/journal/44248). 
 </p>
 
 <p align="justify"> 
@@ -28,6 +28,6 @@ about:
 
 <center>
 {{< ai google-scholar size=Large >}} [Google Scholar](https://scholar.google.com/citations?user=Lt5nMNkAAAAJ&hl=en) {{< ai semantic-scholar size=Large >}} [Semantic Scholar](https://www.semanticscholar.org/author/Omar-Lizardo/2632398) {{< ai orcid size=large >}} [0000-0002-5405-3007](https://orcid.org/0000-0002-5405-3007)
-
+{{< fa brands mastodon >}}[@omarlizardo@sciences.social](https://sciences.social/@omarlizardo)
 {{< fa envelope size=large >}} [olizardo@soc.ucla.edu](mailto:olizardo@soc.ucla.edu)
 </center >
