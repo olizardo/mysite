@@ -5,9 +5,9 @@ format:
     page-layout: full
 ---
 
-## Readings
+# Readings
 
-### Week 1: Theory and Theorizing
+### Week 0: Theory and Theorizing
 - Abend, G. (2008). The meaning of ‘Theory’. *Sociological Theory*, 26(2), 173-199. [pdf]
 - Davis, M. S. (1971). That's interesting! Towards a phenomenology of sociology and a sociology of phenomenology. *Philosophy of the Social Sciences*, 1(2), 309-344. [pdf]
 - Healy, K. (2017). Fuck nuance. *Sociological Theory*, 35(2), 118-127. [pdf]
@@ -17,9 +17,16 @@ format:
 - Martin, J. L. (2015) On Theory in Sociology. Pp. 1-44 in *Thinking Through Theory*. W. W. Norton [pdf]
 - Selg, P. (2013). The politics of theory and the constitution of meaning. *Sociological Theory*, 31(1), 1-23. [pdf]
 
+### Week 1: Foundational Readings (The Greatest Hits)
+- Dimaggio, P. J., & Powell, W. W. (1983). The iron cage revisited: Institutional isomorphism and collective rationality in organizational fields. *American Sociological Review*, 48(2), 147-160. 
+- Emirbayer, M., & Goodwin, J. (1994). Network analysis, culture, and the problem of agency. *American Journal of Sociology*, 99(6), 1411-1454.
+- Emirbayer, M., & Mische, A. (1998). What is agency? *American Journal of Sociology*, 103(4), 962-1023. [pdf]
+- Martin, J. L. (2003). What is field theory? *American Journal of Sociology*, 109_(1), 1-49. [pdf]
+- Sewell Jr, W. H. (1992). A theory of structure: Duality, agency, and transformation. *American Journal of Sociology*, 98(1), 1-29. [pdf]
+- Swidler, A. (1986). Culture in action: Symbols and Strategies. *American Sociological Review*, 51,:273–286. [pdf]
+
 ### Week 2: The (Culture in) Action Tradition
 - Joas, H., & Knöbl, W. (2009). The Classical Attempt at Synthesis. Pp. 20-42 in *Social Theory: Twenty Introductory Lectures*. Cambridge University Press. [pdf]
-- Swidler, A. (1986). Culture in action: Symbols and Strategies. *American Sociological Review*, 51,:273–286. [pdf]
 - Vaisey, S. (2009). Motivation and justification: Toward a dual-process theory of culture in action. *American Journal of Sociology*, 114(6):1675–1715. [pdf]
 - Zilberstein, S., Lamont, M., & Sanchez, M. (2023). Recreating a Plausible Future: Combining Cultural Repertoires in Unsettled Times. *Sociological Science*, 10, 348-373. [pdf]
 - Ayala-Hurtado, E. (2022). Narrative continuity/rupture: Projected professional futures amid pervasive employment precarity. *Work and Occupations*, 49(1), 45-78. [pdf]
@@ -32,7 +39,6 @@ format:
 - Abramson, C. M. (2012). From “either‐or” to “when and how”: A context‐dependent model of culture in action. *Journal for the Theory of Social Behaviour*, 42(2), 155-180. [pdf]
 - Alexander, J. C. (1988).  Action and its Environments  Pp. 301-333 in *Action and its Environments: Toward a New Synthesis*. Columbia University Press, New York . [pdf]
 - Eckstein, H. (1996). Culture as a foundation concept for the social sciences. *Journal of Theoretical Politics*, (4), 471-497. 
-- Emirbayer, M., & Mische, A. (1998). What is agency? *American Journal of Sociology*, 103(4), 962-1023. [pdf]
 - Reed, I. A., & Weinman, M. (2019). Agency, power, modernity: A manifesto for social theory. *European Journal of Cultural and Political Sociology*, (1), 6-50. [pdf]
 - Strand, M., & Lizardo, O. (2017). The hysteresis effect: Theorizing mismatch in action. *Journal for the Theory of Social Behaviour*, 47(2), 164-194. [pdf]
 
@@ -79,8 +85,9 @@ format:
 - Reay, M. (2010). Knowledge distribution, embodiment, and insulation. *Sociological Theory*, *28_(1), 91-107.
 
 ### Week 6: The Structural/Relational Tradition
-- Erikson, E. (2013). Formalist and relationalist theory in social network analysis. *Sociological Theory*, *31_(3), 219-242. 
-- Emirbayer, M. (1997). Manifesto for a relational sociology. *American Journal of Sociology*, *103_(2), 281-317. 
+- Erikson, E. (2013). Formalist and relationalist theory in social network analysis. *Sociological Theory*, 31_(3), 219-242. 
+- Saito, H. (2011). An actor-network theory of cosmopolitanism. Sociological Theory, 29(2), 124-149.
+- Emirbayer, M. (1997). Manifesto for a relational sociology. *American Journal of Sociology*, 103_(2), 281-317. 
 - Leschziner, V., & Brett, G. (2021). Symbol Systems and Social Structures. Pp. pp. 559-582 in *Handbook of Classical Sociological Theory*. Springer. 
 - Mische, A. (2011) Relational sociology, culture, and agency. Pp. 80-97 in *The Sage handbook of Social Network Analysis*. Sage Publications. 
 - Joas, H., & Knöbl, W. (2009). Structuralism and Poststructuralism. Pp. 339-370 in *Social Theory: Twenty Introductory Lectures*. Cambridge University Press. 
@@ -90,7 +97,6 @@ format:
 - Bourdieu, P. (1985). The social space and the genesis of groups. *Social science information*, 24(2), 195-220.
 
 ### Week 7: The Institutionalist Tradition 
-- Dimaggio, P. J., & Powell, W. W. (1983). The iron cage revisited: Institutional isomorphism and collective rationality in organizational fields. *American Sociological Review*, 48(2), 147-160. 
 - Friedland, R. and Alford, R. (1991). Bringing society back in: Symbols, practices, and institutional contradictions. Pp. 232-263 in DiMaggio, P. and Powell, W., editors, *The New Institutionalism in Organizational Analysis*. University of Chicago Press. 
 - Meyer, J. W., & Jepperson, R. L. (2000). The ‘actors’ of modern society: The cultural construction of social agency. *Sociological Theory*, *18_(1), 100-120. 
 - Jepperson, R. L. (1991). Institutions, institutional effects, and institutionalism. Pp. 143-163 in DiMaggio, P. and Powell, W., editors, *The New Institutionalism in Organizational Analysis*. The University of Chicago Press. 
@@ -103,7 +109,6 @@ format:
 - Martin, P. Y. (2004). Gender as social institution. Social forces, 82(4), 1249-1273.
 
 ### Week 8: Fields and Ecologies
-
 - Abbott, A. (2005). Linked ecologies: States and universities as environments for professions. *Sociological Theory*, *23_(3), 245-274. [pdf]
 - Buchholz, L. (2016). What is a global field? Theorizing fields beyond the nation-state. *The Sociological Review*, 64(2\_suppl), 31-60. [pdf]
 - Kluttz, D. N., & Fligstein, N. (2016). Varieties of sociological field theory. In *Handbook of Contemporary Sociological Theory* (pp. 185-204). Springer. [pdf]
@@ -113,13 +118,10 @@ format:
 
 #### Further Reading
 - Fligstein, N., & McAdam, D. (2011). Toward a general theory of strategic action fields. *Sociological Theory*, *29_(1), 1-26. [pdf]
-- Martin, J. L. (2003). What is field theory? *American Journal of Sociology*, *109_(1), 1-49. [pdf]
 - Steinmetz, G. (2016). Social fields, subfields and social spaces at the scale of empires: Explaining the colonial state and colonial sociology. The Sociological Review, 64(2\_suppl), 98-123. [pdf]  
 - Wang, Y. (2016). Homology and isomorphism: Bourdieu in conversation with New Institutionalism. The *British Journal of Sociology*, 67(2), 348-370. [pdf]
-
-
+- 
 ### Week 9: The Interaction Tradition
-
 - Fligstein, N. (2001). Social skill and the theory of fields. *Sociological Theory*, 19(2):105-125. [pdf]
 - Fuhse, J. A. (2009). The meaning structure of social networks. *Sociological theory*, *27_(1), 51-73. [pdf]
 - Hallett, T., & Hawbaker, A. (2021). The case for an inhabited institutionalism in organizational research: interaction, coupling, and change reconsidered. *Theory and Society*, *50_(1), 1-32. [pdf]
@@ -129,13 +131,11 @@ format:
 - Tavory, I. (2018). Between situations: Anticipation, rhythms, and the theory of interaction. *Sociological Theory*, *36_(2), 117-133. [pdf]
 
 ### Week 10: The Structuration Tradition
-
 - Barley, S. R., & Tolbert, P. S. (1997). Institutionalization and structuration: Studying the links between action and institution. *Organization Studies*, 18(1), 93-117. [pdf]
+- Ray, V. (2019). A theory of racialized organizations. *American Sociological Review*, 84_(1), 26-53. [pdf]
 - Freeman, K. J., Condron, D. J., & Steidl, C. R. (2020). Structures of stratification: Advancing a sociological debate over culture and resources. *Critical Sociology*, 46_(2), 191-206. [pdf]
 - Haslanger, S. (2015). Distinguished lecture: Social structure, narrative and explanation. *Canadian Journal of Philosophy*, 45(1), 1-15.
 - Zheng, R. (2018). Bias, structure, and injustice: A reply to Haslanger. *Feminist Philosophy Quarterly*, 4(1).
 - Haslanger, S. (2019). Cognition as a social skill. *Australasian Philosophical Review*, (1), 5-25. [pdf]
 - Hays, S. (1994). Structure and agency and the sticky problem of culture. *Sociological theory*, 57-72. [pdf]
-- Ray, V. (2019). A theory of racialized organizations. *American Sociological Review*, *84_(1), 26-53. [pdf]
-- Sewell Jr, W. H. (1992). A theory of structure: Duality, agency, and transformation. *American Journal of Sociology*, 98(1), 1-29. [pdf]
 - Risman, B. J. (2004). Gender As a Social Structure: Theory Wrestling with Activism. Gender & Society, 18(4), 429-450. [pdf]
