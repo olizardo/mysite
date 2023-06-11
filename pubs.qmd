@@ -27,7 +27,7 @@
 
 ### Classical Sociological Theory
 
--   "Chance, orientation, and interpretation: Max Weber's probabilism and the future of social theory." *Sociological Theory* [doi:10.1177/07352751221084712](https://doi.org/10.1177/07352751221084712)
+-   "Chance, orientation, and interpretation: Max Weber's probabilism and the future of social theory." *Sociological Theory* 40:124-150. [doi:10.1177/07352751221084712](https://doi.org/10.1177/07352751221084712)
 
 -   Max Weber's ideal versus material interest distinction revisited.'' *European Journal of Social Theory* 21: 3--21. [doi:10.1177/1368431017710906](https://doi.org/10.1177/1368431017710906)
 
@@ -37,7 +37,7 @@
 
 ### Contemporary Sociological Theory
 
--   "For a probabilistic sociology: A history of concept formation with Pierre Bourdieu." *Theory and Society* [doi:10.1007/s11186-021-09452-2](https://doi.org/10.1007/s11186-021-09452-2)
+-   "For a probabilistic sociology: A history of concept formation with Pierre Bourdieu." *Theory and Society* 51: 399–434. [doi:10.1007/s11186-021-09452-2](https://doi.org/10.1007/s11186-021-09452-2)
 
 -   "The cognitive-historical origins of conceptual ambiguity in social theory." Pp. 607-630 in S. Abrutyn and O. Lizardo (Eds.) *Handbook of Classical Sociological Theory*. New York: Springer. [doi:10.1007/978-3-030-78205-4_28](https://doi.org/10.1007/978-3-030-78205-4_28)
 
@@ -119,9 +119,7 @@
 
 -   "The shallowness of deep culture or the deepness of shallow culture? Six ways culture can be internalized" *Working Paper* [(pdf)](/workpap/shallowness.pdf)
 
-- "An analytical approach to culture." *Philosophy of the Social Sciences* (forthcoming). [doi:10.1177/00483931231169313](https://doi.org/10.1177/00483931231169313)
-
-- "Organizations and the structure of culture." *Sociology Compass* 17: e13063. [doi:10.1111/soc4.13063](https://doi.org/10.1111/soc4.13063)
+- "An analytical approach to culture." *Philosophy of the Social Sciences*. [doi:10.1177/00483931231169313](https://doi.org/10.1177/00483931231169313)
 
 -   "What is implicit culture?" *Journal for the Theory of Social Behaviour* 52: 412-437. [doi:10.1111/jtsb.12333](https://doi.org/10.1111/jtsb.12333)
 
@@ -134,6 +132,8 @@
 -   "Pierre Bourdieu as a post-cultural theorist." *Cultural Sociology* 5: 1-22.[doi:10.1177/1749975510389714](https://doi.org/10.1177/1749975510389714)
 
 ### Institutions and Organization
+
+- "Organizations and the structure of culture." *Sociology Compass* 17: e13063. [doi:10.1111/soc4.13063](https://doi.org/10.1111/soc4.13063)
 
 -   "Specifying the 'what' and separating the 'how': Doings, sayings, codes, and artifacts as the building blocks of institutions." *Research in the Sociology of Organizations* 65(A): 217-234. [doi.org/10.1108/S0733-558X2019000065A021](doi.org/10.1108/S0733-558X2019000065A021)
 
