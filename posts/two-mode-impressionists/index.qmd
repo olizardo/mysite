@@ -1,0 +1,184 @@
+---
+title: "Two-Mode Relational Similarities Among Impressionist Artists"
+description: "Post using two-mode relational similarity to examine the link between impressionist artists, museums, and dealers."
+author: "Omar Lizardo"
+date: "2023-06-16"
+categories: [sociology of art, two-mode networks, relational similarity]
+draft: false
+---
+
+```{r setup, include=FALSE}
+     knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+     library(conflicted)
+     library(factoextra)
+     library(ggpubr)
+     library(googlesheets4)
+     library(tidyverse)
+     library(wesanderson)
+     source("C:/Users/Omar Lizardo/Google Drive/WORK/IN PROGRESS/NETWORKS/Two-Mode-Relational-Similarity/Functions/tm.corr.dist.R")
+
+```
+
+```{r Functions, include=FALSE}
+     cell.w <- function (x) {
+      rs <- rowSums(x)
+      cs <- colSums(x)
+       for (i in 1: nrow(x)) {
+            for (j in 1:ncol(x)) {
+                 x[i,j] = sqrt(x[i,j] / (rs[i]*cs[j]))
+            }
+       }
+      return(x)
+     }
+
+    get.dist <- function(x) {
+      x <- as.dist((1 - x)/2)
+    return(x)
+    }
+
+    get.mds <- function(x) {
+      x <- cmdscale(get.dist(x))
+      colnames(x) <- c("Dim.1", "Dim.2")
+    return(x)
+    }
+    
+    get.clus <- function(x, k = 3) {
+    # Hierarchical Clustering
+      hclus.cent <- tibble(cluster = eclust(x, "hclust", method = "ward.D2",
+                       k = k, graph = FALSE)$cluster) %>% 
+      cbind(x)  %>% 
+      group_by(cluster) %>% 
+      summarize(across(starts_with("Dim"), mean)) %>% 
+      dplyr::select(-1)
+      # Getting Cluster Centroids
+      km.clust <- eclust(x, "kmeans", 
+                       k = hclus.cent, graph = FALSE)$cluster 
+      n <- rownames(x)
+      # K-Means Clustering
+      x <- as_tibble(cbind(x, cluster = km.clust)) %>% 
+        mutate(cluster = factor(cluster)) %>% 
+        mutate(names = n)
+    return(x)    
+    }
+    
+    get.plot <- function(x, t = "", fsize = 14, pal = "Dark2") {
+    # Plot and color by groups
+      p <- ggscatter(x, x = "Dim.1", y = "Dim.2", 
+              label = "names",
+              color = "cluster",
+              palette = pal,
+              size = 1.5,
+              font.label = fsize,
+              label.rectangle = TRUE,
+              ellipse.type = "convex",
+              ellipse = TRUE,
+              ellipse.alpha = 0.35,
+              ellipse.border.remove = TRUE,
+              repel = TRUE)
+      p <- p + theme_minimal()
+      p <- p + theme(legend.position = "none", 
+                     axis.text = element_text(size = 12),
+                     axis.title = element_text(size = 16),
+                     title = element_text(size = 20)
+                     )
+      #p <- p + scale_y_continuous(limits = c(-.4, .4))
+      #p <- p + scale_x_continuous(limits = c(-.6, .6))
+      p <- p + ggtitle(t)
+    return(p)
+    }
+```
+
+```{r Getting data, include=FALSE}
+     # w <- read.csv("C:/Users/Omar Lizardo/Google Drive/UCLA/mysite/posts/impressionists-two-mode/impressionists - museums.csv")
+     gs4_deauth()
+     w <- read_sheet("https://docs.google.com/spreadsheets/d/1CBy0LMC1KhSPw_cTPNtgKshnniQT4gaPP8eD-0zwGfU/edit?usp=sharing") 
+     mus.dat <- as.matrix(w[2:ncol(w)])
+     rownames(mus.dat) <- w$artist
+     w <- read_sheet("https://docs.google.com/spreadsheets/d/1CBy0LMC1KhSPw_cTPNtgKshnniQT4gaPP8eD-0zwGfU/edit?usp=sharing", sheet = 2)
+     del.dat <- as.matrix(w[2:ncol(w)])
+     rownames(del.dat) <- w$dealer
+     w <- read_sheet("https://docs.google.com/spreadsheets/d/1CBy0LMC1KhSPw_cTPNtgKshnniQT4gaPP8eD-0zwGfU/edit?usp=sharing", sheet = 3)
+     col.dat <- as.matrix(w[2:ncol(w)])
+     rownames(col.dat) <- w$collector
+```
+
+```{r, Rescaling Data, include=FALSE}
+     mus.dat.w <- cell.w(mus.dat)
+     del.dat.w <- cell.w(del.dat)
+     col.dat.w <- cell.w(col.dat)
+```
+
+```{r, Museums, include = FALSE}
+    mus.res <- tm.corr.dist(mus.dat.w)
+    mds.a.m <- get.mds(mus.res$col.sims)
+    mds.o.m <- get.mds(mus.res$row.sims)
+    clus.a.m <- get.clus(mds.a.m, k = 4)
+    clus.o.m <- get.clus(mds.o.m)
+```
+
+```{r, Dealers, include = FALSE}
+    del.res <- tm.corr.dist(del.dat.w)
+    mds.a.d <- get.mds(del.res$row.sims)
+    mds.o.d <- get.mds(del.res$col.sims)
+    clus.a.d <- get.clus(mds.a.d)
+    clus.o.d <- get.clus(mds.o.d, k = 4)
+```
+
+```{r, Collectors, include = FALSE}
+    col.res <- tm.corr.dist(col.dat.w)
+    mds.a.c <- get.mds(col.res$row.sims)
+    mds.o.c <- get.mds(col.res$col.sims)
+    clus.a.c <- get.clus(mds.a.c)
+    clus.o.c <- get.clus(mds.o.c, k = 4)
+```
+
+```{r, Plots, include = FALSE}
+     p.am <- get.plot(clus.a.m, t = "",
+                        pal = wes_palette("Cavalcanti1"))
+     p.ad <- get.plot(clus.a.d, t = "",
+                        pal = wes_palette("Cavalcanti1"))
+     p.ac <- get.plot(clus.a.c, t = "",
+                        pal = wes_palette("Cavalcanti1"))
+     p.om <- get.plot(clus.o.m, t = "",
+                        pal = wes_palette("Cavalcanti1"))
+     p.od <- get.plot(clus.o.d, t = "",
+                        pal = wes_palette("Cavalcanti1"))
+     p.oc <- get.plot(clus.o.c, t = "",
+                        pal = wes_palette("Cavalcanti1"))
+```
+
+Cutting (2006) collected data on impressionist artists from a variety of sources. Three tables are relevant for the following analysis. One compiles a list of impressionist painters by the number of paintings housed in each of twenty two museums known for their impressionist collections. The first seven are "major" museums (e.g., the Met, Art Institute of Chicago, National Gallery in London, and the rest are more regional and specialized). The second lists the first major dealers of impressionist arts in the rows and the number of paintings they should for each artist in the columns. Finally, the third table lists the first major collectors of impressionist art in the rows, by the number of paintings of each artist they collected (in the columns). The data can be found [here](https://docs.google.com/spreadsheets/d/1CBy0LMC1KhSPw_cTPNtgKshnniQT4gaPP8eD-0zwGfU/edit?usp=sharing). You will need the function **tm.corr.dist.R** which you can find [here](https://github.com/olizardo/Two-Mode-Relational-Similarity).
+
+On the first sheet, is the artist by museum data. On the second sheet is the dealer by artist data. On the third sheet is the collector by artist data. In all three two-way tables the cell in each entry $x_{ij}$ is a count. In the first case, the number of paintings from artist *i* held by the $j^{th}$ museum. In the second case, the number of paintings that dealer *i* sold from the $j^{th}$ artist. In the third case, the number of paintings from artist *j* collected by collector *i*. 
+
+These are data that are ideal to analyze from the perspective of generalized relational similarity (Kovacs, 2010). Cutting (2006) analyzed the data using multidimensional scaling of the similarities but these were computed using the standard correlation distance. The correlation distance treats pairs of actors as similar if they have similar patterns of object choice. In a generalized relational similarity approach, on the other hand, actors are similar if they have similar patterns of choice with respect to *similar* objects. This is different from the usual similarity approach used by Cutting (2006) in which actors are similar only if they have similar patterns of choice, but where the similarity of the objects chosen is not taken into account. 
+
+I analyze these data using the two-mode variant of generalized similarity discussed in Lizardo (2024), where the correlation distance is tuned using the similarity in the other mode computed from the one-mode projection. In the museum table, we can think of the museums as the (institutional) "actors" doing the choosing and the impressionist artists as the objects chosen. In the same way, in dealers table, we can think of the dealers as the actors doing the choosing and the impressionist painters (or rather their paintings) as the objects chosen. Finally, in the collectors table, the collectors are the actors and the paintings collected from each artist the objects. 
+
+Accordingly, artists are similar to the extent that they are chosen by museums with similar patterns of cultural choice. Museums are similar to the extent that they choose similar artists. In the same way, dealers are similar to the extent that they choose similar artists, whereby artists' similarity is defined by their distribution across dealers (artists chosen by similar dealers are similar). Thus, we should expect to see a partitioning of the set of actors that reveals something about the wider field they are embedded in, both in the case of museums and artists. 
+
+```{r, echo=FALSE, fig.cap = "Two Mode Generalized Similarities Among Museums"}
+    p.am
+```
+
+The above plot shows the non-metric multidimensional scaling plot of generalized similarities across museums, clustered into four groups (a github repo containing material to reproduce all the analyses and plots can be found [here](https://github.com/olizardo/impressionists-two-mode)). Each cluster contains one or two of Cutting's seven "major" museums surrounded by minor satellites, revealing differentiation by region and status. Thus, the upper left is the Orsay cluster--considered the world's leading impressionist museum--surrounded by three European satellites: Two Danish museums (OrD and NGD) and a Museum in St. Petersburg. The middle right cluster contains two of the world's leading museum more generally, located in the two cities at the center of the global artworld: The Met in New York City and the National Gallery of Art in London (NGAL). Here, status serves as a glue linking the choices of these two institutions across the Atlantic. These are surrounded by museums in Washington DC (PC), Switzerland (RE and Bu), Pennsylvania (Ba), and a smaller London museums (Co). Continuing clockwise, we find a cluster anchored by the Philadelphia Museum of Art (PMA) and Museum of Fine Arts in Boston (MFAB), surrounded by a Harvard Art Museum (Fo)---in keeping with the regional logic---along with a state museum in Moscow (Pu). Finally, the last cluster is centered on two major "second city" (e.g., relative to New York) museum in the U.S.: The Art Institute of Chicago (AIC) and the Los Angeles County Museum of Art. These are surrounded by museums in Pasadena (NS)---again in keeping with the regional logic---along with institutions in Tennessee (Di), and Massachusetts (Cl). Surprisingly, this cluster also features a smaller Parisian museum (Ma).
+
+
+```{r, echo=FALSE, fig.cap = "Two Mode Generalized Similarities Among Dealers" }
+    p.ad
+```
+
+What about the dealers? The two-mode generalized similarities for these actors are shown in the above plot. The biggest cluster in the upper-left contains four out of the six "major" dealers according to Cutting (2006, pp. 93-95): Durand-Ruel, Petit, Bernheim-June and Rosenberg. These are all except Vollard and Wildenstein who form their own cluster in the lower-left (joined by New-York-based Acquavella), likely united by their voraciousness for Cezanne. The MDS maps of dealers differs systematically from that presented by Cutting (Fig. 6.1, p. 96) based on the simple correlation distance. 
+
+The map of artists based on dealers tastes shown below, also differs from that presented by Cutting (ibid). In Cutting's plot, Guillaumin, Manet, Monet, Pissarro and Sisley appear packed in the same area of the space, suggesting maximum similarity among these five artists. Taking into account the generalized similarity among dealers who sold their work, we can see that Manet and Monet are most similar, Sisley and Pissarro form their own cluster, and Guillaumin is clearly distinct from these two groups. In Cutting's plot, Degas and Renoir are similar, but taking into account similarity across dealers show that they are quite distinct along the second dimension, and that Renoir is most similar to Caillebotte, while Degas is most similar to Guillaumin, Gonzales, and Cassatt. 
+
+```{r, echo=FALSE, fig.cap = "Two Mode Generalized Similarities Among Artists (Based on Dealers' Similarity)"}
+    p.od
+```
+
+What about the collectors? The two-mode similarity MDS plot is shown below. The plot divides clearly into three clusters. The lower-right hand group includes Faure, Hoschede, Duret, and de Bellio, all four listed by Cutting (2006, p. 98) as the earliest impressionist collectors (early 1870s). They are joined by Tschudi a pioneer collector from Germany and Matsukata another early collector from Japan. The two mode generalized similarities therefore are picking up commonalities in their collecting patterns based on *timing* (as pioneers of impressionist collecting). The rest of the "first generation" collectors are split into two distinct clusters in the upper portion of the plot. Charpentier, Rouart, and Caillebotte on the right, and Choquet and Gachet on the left. Interesting, the two major early American collectors of this era Clark and Barnes are split across these two different groups, suggesting systematic differences in their patterns of cultural choice.
+
+```{r, echo=FALSE, fig.cap = "Two Mode Generalized Similarities Among Collectors"}
+    p.ac
+```
+
