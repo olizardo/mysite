@@ -185,7 +185,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#museums" id="toc-museums" class="nav-link active" data-scroll-target="#museums">Museums</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#museums" id="toc-museums" class="nav-link" data-scroll-target="#museums">Museums</a></li>
   <li><a href="#dealers" id="toc-dealers" class="nav-link" data-scroll-target="#dealers">Dealers</a></li>
   <li><a href="#collectors" id="toc-collectors" class="nav-link" data-scroll-target="#collectors">Collectors</a></li>
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
@@ -198,6 +199,8 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
 <p>Cutting (2006) collected data on impressionist artists from a variety of sources. Three tables are relevant for the following analysis. One compiles a list of impressionist painters by the number of paintings housed in each of twenty two museums known for their impressionist collections. The first seven are “major” museums (e.g., the Met, Art Institute of Chicago, National Gallery in London, and the rest are more regional and specialized). The second lists the first major dealers of impressionist arts in the rows and the number of paintings they should for each artist in the columns. Finally, the third table lists the first major collectors of impressionist art in the rows, by the number of paintings of each artist they collected (in the columns). The data can be found <a href="https://docs.google.com/spreadsheets/d/1CBy0LMC1KhSPw_cTPNtgKshnniQT4gaPP8eD-0zwGfU/edit?usp=sharing">here</a>. You will need the function <strong>tm.corr.dist.R</strong> which you can find <a href="https://github.com/olizardo/Two-Mode-Relational-Similarity/blob/main/Functions/tm.corr.dist.R">here</a>.</p>
 <p>On the first sheet, is the artist by museum data. On the second sheet is the dealer by artist data. On the third sheet is the collector by artist data. In all three two-way tables the cell in each entry <span class="math inline">\(x_{ij}\)</span> is a count. In the first case, the number of paintings from artist <em>i</em> held by the <span class="math inline">\(j^{th}\)</span> museum. In the second case, the number of paintings that dealer <em>i</em> sold from the <span class="math inline">\(j^{th}\)</span> artist. In the third case, the number of paintings from artist <em>j</em> collected by collector <em>i</em>. All three table can be thought of as <em>weighted two mode networks</em>, where the weighted between nodes in one set (e.g., museums) and nodes in the other set (e.g., artists) is given by the corresponding count in the <span class="math inline">\(x_{ij}\)</span> cell of the table.</p>
 <p>Some artists (e.g., Monet) pained many paintings, and some museums (e.g., Orsay) collected lots of paintings. To account for differences in artist popularity and the size of the museum impressionist collections, I normalize each edge-weight using the familiar approach used in Correspondence Analysis:</p>
@@ -209,6 +212,7 @@ ul.task-list li input[type="checkbox"] {
 <p>I analyze these data using the two-mode variant of generalized similarity proposed in Lizardo (2024), where the correlation distance between actors is tuned using the similarity of their object choices computed from the one-mode projection of the (in this case) weighted two-mode network data (and vice versa for objects). The quarto markdown source code file for this post (see the link towards the bottom of the right-hand navigation bar) contains all you need to reproduce all the analyses and plots presented later.</p>
 <p>In the museum table, we can think of the museums as the (institutional) “actors” doing the choosing and the impressionist artists as the objects chosen. In the same way, in dealers table, we can think of the dealers as the actors doing the choosing and the impressionist painters (or rather their paintings) as the objects chosen. Finally, in the collectors table, the collectors are the actors and the paintings collected from each artist the objects.</p>
 <p>Accordingly, in the first weighted two-mode network of artists by museums, artists are similar to the extent that they are chosen by museums with similar patterns of cultural choice. Museums are similar to the extent that they choose similar artists. In the same way, dealers are similar to the extent that they choose similar artists, whereby artists’ similarity is defined by their distribution across dealers (artists chosen by similar dealers are similar). Collector similarity is defined in the same way as dealers’. Thus, we should expect to see a partitioning of the set of actors that reveals something about the wider field they are embedded in, both in the case of museums and artists.</p>
+</section>
 <section id="museums" class="level2">
 <h2 class="anchored" data-anchor-id="museums">Museums</h2>
 <div class="cell">

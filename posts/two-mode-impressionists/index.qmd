@@ -15,7 +15,7 @@ draft: false
      library(googlesheets4)
      library(tidyverse)
      library(wesanderson)
-     source("C:/Users/Omar Lizardo/Google Drive/WORK/IN PROGRESS/NETWORKS/Two-Mode-Relational-Similarity/Functions/tm.corr.dist.R")
+     source("https://github.com/olizardo/Two-Mode-Relational-Similarity/blob/main/Functions/tm.corr.dist.R?raw=true")
 
 ```
 
@@ -146,6 +146,7 @@ draft: false
      p.oc <- get.plot(clus.o.c, t = "",
                         pal = wes_palette("Cavalcanti1"))
 ```
+## Introduction
 
 Cutting (2006) collected data on impressionist artists from a variety of sources. Three tables are relevant for the following analysis. One compiles a list of impressionist painters by the number of paintings housed in each of twenty two museums known for their impressionist collections. The first seven are "major" museums (e.g., the Met, Art Institute of Chicago, National Gallery in London, and the rest are more regional and specialized). The second lists the first major dealers of impressionist arts in the rows and the number of paintings they should for each artist in the columns. Finally, the third table lists the first major collectors of impressionist art in the rows, by the number of paintings of each artist they collected (in the columns). The data can be found [here](https://docs.google.com/spreadsheets/d/1CBy0LMC1KhSPw_cTPNtgKshnniQT4gaPP8eD-0zwGfU/edit?usp=sharing). You will need the function **tm.corr.dist.R** which you can find [here](https://github.com/olizardo/Two-Mode-Relational-Similarity/blob/main/Functions/tm.corr.dist.R).
 
