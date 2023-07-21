@@ -202,12 +202,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
 <p>Cutting (2006) collected data on impressionist artists from a variety of sources. Three tables are relevant for the following analysis. One compiles a list of impressionist painters by the number of paintings housed in each of twenty two museums known for their impressionist collections. The first seven are “major” museums (e.g., the Met, Art Institute of Chicago, National Gallery in London, and the rest are more regional and specialized). The second lists the first major dealers of impressionist arts in the rows and the number of paintings they should for each artist in the columns. Finally, the third table lists the first major collectors of impressionist art in the rows, by the number of paintings of each artist they collected (in the columns). The data can be found <a href="https://docs.google.com/spreadsheets/d/1CBy0LMC1KhSPw_cTPNtgKshnniQT4gaPP8eD-0zwGfU/edit?usp=sharing">here</a>. You will need the function <strong>tm.corr.dist.R</strong> which you can find <a href="https://github.com/olizardo/Two-Mode-Relational-Similarity/blob/main/Functions/tm.corr.dist.R">here</a>.</p>
-<p>On the first sheet, is the artist by museum data. On the second sheet is the dealer by artist data. On the third sheet is the collector by artist data. In all three two-way tables the cell in each entry <span class="math inline">\(x_{ij}\)</span> is a count. In the first case, the number of paintings from artist <em>i</em> held by the <span class="math inline">\(j^{th}\)</span> museum. In the second case, the number of paintings that dealer <em>i</em> sold from the <span class="math inline">\(j^{th}\)</span> artist. In the third case, the number of paintings from artist <em>j</em> collected by collector <em>i</em>. All three table can be thought of as <em>weighted two mode networks</em>, where the weighted between nodes in one set (e.g., museums) and nodes in the other set (e.g., artists) is given by the corresponding count in the <span class="math inline">\(x_{ij}\)</span> cell of the table.</p>
-<p>Some artists (e.g., Monet) pained many paintings, and some museums (e.g., Orsay) collected lots of paintings. To account for differences in artist popularity and the size of the museum impressionist collections, I normalize each edge-weight using the familiar approach used in Correspondence Analysis:</p>
-<p><span class="math display">\[\begin{equation}
-  \hat{x}_{ij} = \sqrt{\frac{x_{ij}}{x_{i+}x_{+j}}}
-\end{equation}\]</span></p>
-<p>Where <span class="math inline">\(x_{i+}\)</span> is the sum of counts for the <span class="math inline">\(i^{th}\)</span> row and <span class="math inline">\(x_{j+}\)</span> is the sum of counts for the <span class="math inline">\(j^{th}\)</span> column.</p>
+<p>On the first sheet, is the artist by museum data. On the second sheet is the dealer by artist data. On the third sheet is the collector by artist data. In all three two-way tables the cell in each entry <span class="math inline">\(x_{ij}\)</span> is a count. In the first case, the number of paintings from artist <em>i</em> held by the <span class="math inline">\(j^{th}\)</span> museum. In the second case, the number of paintings that dealer <em>i</em> sold from the <span class="math inline">\(j^{th}\)</span> artist. In the third case, the number of paintings from artist <em>j</em> collected by collector <em>i</em>. All three table can be thought of as <em>weighted two mode networks</em>, where the weighted between nodes in one set (e.g., museums) and nodes in the other set (e.g., artists) is given by the corresponding count in the <span class="math inline">\(x_{ij}\)</span> cell of the table. Some artists (e.g., Monet) pained many paintings, and some museums (e.g., Orsay) collected lots of paintings. To account for differences in artist popularity, I normalize the count of paintings held by each museum by the total number of paintings of each artist. I do same for the dealer and collector networks.</p>
 <p>These are data that are ideal to analyze from the perspective of generalized relational similarity (Kovacs, 2010). Cutting (2006) analyzed the data using multidimensional scaling of the similarities but these were computed using the standard correlation distance. The correlation distance treats pairs of actors as similar if they have similar patterns of object choice. In a generalized relational similarity approach, on the other hand, actors are similar if they have similar patterns of choice with respect to <em>similar</em> objects. Object similarity, in turn, is dually defined by their distribution across actors: Two objects are similar if they are chosen by <em>similar</em> actors.</p>
 <p>I analyze these data using the two-mode variant of generalized similarity proposed in Lizardo (2024), where the correlation distance between actors is tuned using the similarity of their object choices computed from the one-mode projection of the (in this case) weighted two-mode network data (and vice versa for objects). The quarto markdown source code file for this post (see the link towards the bottom of the right-hand navigation bar) contains all you need to reproduce all the analyses and plots presented later.</p>
 <p>In the museum table, we can think of the museums as the (institutional) “actors” doing the choosing and the impressionist artists as the objects chosen. In the same way, in dealers table, we can think of the dealers as the actors doing the choosing and the impressionist painters (or rather their paintings) as the objects chosen. Finally, in the collectors table, the collectors are the actors and the paintings collected from each artist the objects.</p>
@@ -225,15 +220,16 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-<p>The above plot shows the first two dimensions of a non-metric multidimensional scaling of generalized similarities across museums, clustered into four groups. Each cluster contains one or two of Cutting’s seven “major” museums surrounded by minor satellites, revealing differentiation by region and status. Thus, the upper left is the Orsay cluster—considered the world’s leading impressionist museum, and one that Cutting put into a class by itself–surrounded by three European satellites: Two Danish museums (OrD and NGD) and a Museum in St.&nbsp;Petersburg.</p>
+<p>The above plot shows the first two dimensions of a non-metric multidimensional scaling of generalized similarities across museums, based on the similarity among objects (impressionist artists) chosen. The plot clear divides the museums into four groups. Each cluster contains one or two of Cutting’s seven “major” museums surrounded by minor satellites, revealing differentiation by region and status. Thus, the upper left is the Orsay cluster—considered the world’s leading impressionist museum, and one that Cutting put into a class by itself–surrounded by three European satellites: Two Danish museums (OrD and NGD) and a Museum in St.&nbsp;Petersburg.</p>
 <p>The middle right cluster contains two of the world’s leading museums more generally, located in the two cities at the center of the global artworld: The Met in New York City and the National Gallery of Art in London (NGAL). Here, status serves as a glue linking the choices of these two institutions across the Atlantic. These are surrounded by museums in Washington DC (PC), Switzerland (RE and Bu), Pennsylvania (Ba), and a smaller London museums (Co).</p>
 <p>Continuing clockwise, we find a cluster anchored by the Philadelphia Museum of Art (PMA) and Museum of Fine Arts in Boston (MFAB), surrounded by a Harvard Art Museum (Fo)—in keeping with the regional logic—along with a state museum in Moscow (Pu). Finally, the last cluster is centered on two major “second city” (e.g., relative to New York) museums in the U.S.: The Art Institute of Chicago (AIC) and the Los Angeles County Museum of Art. These are surrounded by museums in Pasadena (NS)—again in keeping with the regional logic—along with institutions in Tennessee (Di), and Massachusetts (Cl). Surprisingly, this cluster also features a smaller Parisian museum (Ma).</p>
+<p>The plot below shows the similarities of the artists, based on the similarities of the museums in which their paintings are housed. The seven “major” artists that Cutting (2006, Table 4.1, p.&nbsp;45) argues are the basis of the impressionist canon are distributed across the three clusters, with Renoir and Cezanne in the upper left (in the same group as two of the most prominent post-impressionist artists: Van Goghh and Seurat), Degas, Pissarro, Manet, and Sisley in the larger cluster in the middle and Monet in the upper-right in the same cluster as Cassatt (the most canonized of the women impressionists) and Caillebotte.</p>
 <div class="cell">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="index_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="672"></p>
-<p></p><figcaption class="figure-caption">Two Mode Generalized Similarities Among Dealers</figcaption><p></p>
+<p></p><figcaption class="figure-caption">Two Mode Generalized Similarities Among Artists (Based on Museums’ Similarity)</figcaption><p></p>
 </figure>
 </div>
 </div>
@@ -241,13 +237,23 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="dealers" class="level2">
 <h2 class="anchored" data-anchor-id="dealers">Dealers</h2>
-<p>What about the dealers? The two-mode generalized similarities for these actors are shown in the above plot. The biggest cluster in the upper-left contains four out of the six “major” dealers according to Cutting (2006, pp.&nbsp;93-95): Durand-Ruel, Petit, Bernheim-June and Rosenberg. These are all except Vollard and Wildenstein who form their own cluster in the lower-left (joined by New-York-based Acquavella), likely united by their voraciousness for Cezanne. The MDS maps of dealers differs systematically from that presented by Cutting (Fig. 6.1, p.&nbsp;96) based on the simple correlation distance.</p>
-<p>The map of artists based on dealers tastes shown below, also differs from that presented by Cutting (ibid). In Cutting’s plot, Guillaumin, Manet, Monet, Pissarro and Sisley appear packed in the same area of the space, suggesting maximum similarity among these five artists. Taking into account the generalized similarity among dealers who sold their work, we can see that Manet and Monet are most similar, Sisley and Pissarro form their own cluster, and Guillaumin is clearly distinct from these two groups. In Cutting’s plot, Degas and Renoir are similar, but taking into account similarity across dealers show that they are quite distinct along the second dimension, and that Renoir is most similar to Caillebotte, while Degas is most similar to Guillaumin, Gonzales, and Cassatt.</p>
 <div class="cell">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="index_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="672"></p>
+<p></p><figcaption class="figure-caption">Two Mode Generalized Similarities Among Dealers</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p>What about the dealers? The two-mode generalized similarities for these actors are shown in the above plot. The biggest cluster on the left contains four out of the six “major” dealers according to Cutting (2006, pp.&nbsp;93-95): Durand-Ruel, Petit, Bernheim-June and Rosenberg. These are all except Vollard and Wildenstein who form their own cluster in the lower-right (joined by New-York-based Acquavella), likely united by their voraciousness for Cezanne. Finally, a cluster of “minor” dealers can be found on the upper-right. In the The MDS maps of dealers differs systematically from that presented by Cutting (Fig. 6.1, p.&nbsp;96) based on the simple correlation distance.</p>
+<p>The map of artists based on dealers choices is shown below. This plot comes a bit cluster to that presented by Cutting (ibid). In Cutting’s plot, Guillaumin, Manet, Monet, Pissarro and Sisley appear packed in the same area of the space, suggesting maximum similarity among these five artists. This more or less agrees with the two-mode relational similarity results as these artists all fall into a single cluster. In Cutting’s plot, Degas and Renoir are similar, which also agrees with the plot shown below.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" width="672"></p>
 <p></p><figcaption class="figure-caption">Two Mode Generalized Similarities Among Artists (Based on Dealers’ Similarity)</figcaption><p></p>
 </figure>
 </div>
@@ -256,17 +262,28 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="collectors" class="level2">
 <h2 class="anchored" data-anchor-id="collectors">Collectors</h2>
-<p>What about the collectors? The two-mode similarity MDS plot is shown below. The plot divides clearly into three clusters. The lower-right hand group includes Faure, Hoschede, Duret, and de Bellio, all four listed by Cutting (2006, p.&nbsp;98) as the earliest impressionist collectors (early 1870s). They are joined by Tschudi a pioneer collector from Germany and Matsukata another early collector from Japan. The two mode generalized similarities therefore are picking up commonalities in their collecting patterns based on <em>timing</em> (as pioneers of impressionist collecting). The rest of the “first generation” collectors are split into two distinct clusters in the upper portion of the plot. Charpentier, Rouart, and Caillebotte on the right, and Choquet and Gachet on the left. Interesting, the two major early American collectors of this era Clark and Barnes are split across these two different groups, suggesting systematic differences in their patterns of cultural choice.</p>
 <div class="cell">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="index_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="index_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid figure-img" width="672"></p>
 <p></p><figcaption class="figure-caption">Two Mode Generalized Similarities Among Collectors</figcaption><p></p>
 </figure>
 </div>
 </div>
 </div>
+<p>What about the collectors? The two-mode similarity MDS plot is shown above. The plot divides clearly into three clusters. The lower-middle group includes Faure, Hoschede, Duret, and de Bellio, all four listed by Cutting (2006, p.&nbsp;98) as the earliest impressionist collectors (early 1870s). They are joined by Tschudi a pioneer collector from Germany and Matsukata another early collector from Japan. The two mode generalized similarities therefore are picking up commonalities in their collecting patterns based on <em>timing</em> (as pioneers of impressionist collecting). The rest of the “first generation” collectors are split into two distinct clusters in the upper portion of the plot. Charpentier, Rouart, and Caillebotte on the left, and Choquet and Gachet on the right Interestingly, the two major early American collectors of this era—Clark and Barnes—are split across these two different groups, suggesting systematic differences in their patterns of cultural choice.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="index_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid figure-img" width="672"></p>
+<p></p><figcaption class="figure-caption">Two Mode Generalized Similarities Among Artists (Based on Collectors’ Similarity)</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Finally, the plot above shows how artists shake-up based on the similarity of the collectors. The plot shows a binary split, with Renoir and Cezanne oppossed to the rest of the major impressionists. In this second group, Monet and Manet are most similar, and Degas, Pissarro and Sisley are most similar.</p>
 </section>
 <section id="references" class="level1">
 <h1>References</h1>
