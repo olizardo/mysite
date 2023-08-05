@@ -152,7 +152,7 @@
 
 ### Measuring Culture
 
--   "Discovering micro-genre Communities in Survey Data on Cultural Tastes." *Working Paper* [(pdf)](/workpap/microgenres.pdf)
+-   "From macrogenres to microgenres via relationality." *Working Paper* [(pdf)](/workpap/microgenres.pdf)
 
 - "Two-mode relational similarities." *Social Networks*. [(pdf)](workpap/two-mode-rel-sim.pdf)
 
