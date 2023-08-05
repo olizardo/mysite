@@ -1,0 +1,136 @@
+---
+title: "Generalized Relational Similarities of Bipartite Graphs"
+author: "Omar Lizardo"
+date: "`r Sys.Date()`"
+---
+
+# Setup
+```{r setup}
+    knitr::opts_chunk$set(include = TRUE, echo = TRUE, warning = FALSE, message = FALSE)
+    library(expm)
+    library(factoextra)
+    library(ggpubr)
+    library(here)
+    library(sjPlot)
+    library(tidyverse)
+    source("https://github.com/olizardo/Two-Mode-Relational-Similarity/blob/main/Functions/gen.sim.corr.abs.R?raw=true")
+     source("https://github.com/olizardo/Two-Mode-Relational-Similarity/blob/main/Functions/tm.corr.dist.R?raw=true")
+
+```
+
+# Data
+```{r Southern women data}
+    A <- matrix(
+         c(
+          1, 1, 1, 1, 1,  1, 0, 1, 1,  0, 0, 0, 0, 0, 
+          1, 1, 1, 0, 1,  1, 1, 1, 0,  0, 0, 0, 0, 0, 
+          0, 1, 1, 1, 1,  1, 1, 1, 1,  0, 0, 0, 0, 0, 
+          1, 0, 1, 1, 1,  1, 1, 1, 0,  0, 0, 0, 0, 0, 
+          0, 0, 1, 1, 1,  0, 1, 0, 0,  0, 0, 0, 0, 0, 
+          0, 0, 1, 1, 1,  1, 0, 1, 0,  0, 0, 0, 0, 0, 
+          0, 0, 0, 1, 1,  1, 1, 1, 0,  0, 0, 0, 0, 0, 
+          0, 0, 0, 1, 1,  0, 1, 1, 1,  0, 0, 0, 0, 0, 
+          
+          0, 0, 0, 0, 0,  0, 1, 1, 1,  0, 0, 1, 0, 0, 
+          0, 0, 0, 0, 0,  0, 0, 1, 1,  1, 0, 1, 0, 0, 
+          0, 0, 0, 0, 0,  0, 0, 1, 1,  1, 0, 1, 1, 1,
+          0, 0, 0, 0, 0,  0, 1, 1, 1,  1, 0, 1, 1, 1,
+          0, 0, 0, 0, 0,  0, 1, 0, 1,  1, 1, 1, 1, 1,
+          0, 0, 0, 0, 0,  0, 1, 1, 0,  1, 1, 1, 0, 0,
+          0, 0, 0, 0, 0,  0, 0, 0, 1,  0, 1, 0, 0, 0,
+          0, 0, 0, 0, 0,  0, 0, 0, 1,  0, 1, 0, 0, 0, 
+          
+          0, 0, 0, 0, 0,  1, 0, 1, 1,  0, 0, 0, 0, 0,
+          0, 0, 0, 0, 0,  0, 0, 1, 1,  0, 0, 0, 0, 0),
+          ncol = 14, byrow = TRUE)
+     w <- c("EVELYN", "LAURA", "THERESA", "BRENDA", "CHARLOTTE", "FRANCES", "ELEANOR", "RUTH", "VERNE", "MYRA", "KATHERINE", "SYLVIA", "NORA", "HELEN", "OLIVIA", "FLORA", "PEARL", "DOROTHY")
+     e <- paste("E", c(1:14), sep = "")
+     rownames(A) <- w
+     colnames(A) <- e
+```
+
+```{r Creating bipartite graph}
+     P <- matrix(0, nrow(A), nrow(A))
+     rownames(P) <- w
+     colnames(P) <- w
+     G <- matrix(0, ncol(A), ncol(A))
+     rownames(G) <- e
+     colnames(G) <- e
+     At <- t(A)
+     s1 <- cbind(P, A)
+     s2 <- cbind(At, G)
+     B <- rbind(s1, s2)
+     B2 <- B%*%B
+```
+
+```{r Functions, include=FALSE}
+
+    get.dist <- function(x) {
+      x <- as.dist((1 - x)/2)
+    return(x)
+    }
+
+    get.mds <- function(x) {
+      x <- cmdscale(get.dist(x), k = 3)
+      colnames(x) <- c("Dim.1", "Dim.2", "Dim.3")
+    return(x)
+    }
+    
+    get.clus <- function(x, k = 3) {
+    # Hierarchical Clustering
+      hclus.cent <- tibble(cluster = eclust(x, "hclust", method = "ward.D2",
+                       k = k, graph = FALSE)$cluster) %>% 
+      cbind(x)  %>% 
+      group_by(cluster) %>% 
+      summarize(across(starts_with("Dim"), mean)) %>% 
+      dplyr::select(-1)
+      # Getting Cluster Centroids
+      km.clust <- eclust(x, "kmeans", 
+                       k = hclus.cent, graph = FALSE)$cluster 
+      n <- rownames(x)
+      # K-Means Clustering
+      x <- as_tibble(cbind(x, cluster = km.clust)) %>% 
+        mutate(cluster = factor(cluster)) %>% 
+        mutate(names = n)
+    return(x)    
+    }
+    
+    get.plot <- function(x, t = "", fsize = 14, pal = "Dark2") {
+    # Plot and color by groups
+      p <- ggscatter(x, x = "Dim.1", y = "Dim.2", 
+              label = "names",
+              color = "cluster",
+              palette = pal,
+              size = 1.5,
+              font.label = fsize,
+              label.rectangle = TRUE,
+              ellipse.type = "convex",
+              ellipse = TRUE,
+              ellipse.alpha = 0.35,
+              ellipse.border.remove = TRUE,
+              repel = TRUE)
+      p <- p + theme_minimal()
+      p <- p + theme(legend.position = "none", 
+                     axis.text = element_text(size = 12),
+                     axis.title = element_text(size = 16),
+                     title = element_text(size = 20)
+                     )
+      #p <- p + scale_y_continuous(limits = c(-.4, .4))
+      #p <- p + scale_x_continuous(limits = c(-.6, .6))
+      p <- p + ggtitle(t)
+    return(p)
+    }
+```
+
+
+```{r}
+     sim.res <- gen.sim.corr.abs(B)
+     mds.res <- get.mds(sim.res$col.sims) 
+     mds.res[, 2] <- mds.res[, 2] * 10000
+     clus.res <- get.clus(mds.res, k = 6)
+     p <- get.plot(clus.res)
+     p
+    save_plot("C:/Users/Omar Lizardo/OneDrive/Desktop/grs-bipart.png", width = 30, height = 25)
+
+```
+
