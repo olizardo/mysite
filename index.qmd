@@ -11,7 +11,15 @@ about:
 ---
 
 <p align="justify"> 
-{{< fa address-card size=large >}} I am the LeRoy Neiman Term Chair Professor of Sociology at the University of California, Los Angeles, and a former co-editor of [*American Sociological Review*](https://journals.sagepub.com/home/asr) and chair of the American Sociology Association's [Section for the Sociology of Culture](https://asaculturesection.org/). I am current member of the [Sociological Research Association](https://www.sociological-research-assoc.org/) and the Board of Reviewing Editors of the journal [*Science*](https://www.science.org/journal/science). I also serve as an associate editor for the journal [*Discover Data*](https://www.springer.com/journal/44248). Next year, I will begin a three-year stint as one of the lead editors of the journal [*Sociological Theory*](https://journals.sagepub.com/home/stx) with [S. L. Crawley](http://sociology.usf.edu/faculty/scrawley/), [Z. Magubane](https://www.bc.edu/bc-web/schools/mcas/departments/sociology/people/faculty-directory/zine-magubane.html), and [V. Patil](https://www.linkedin.com/in/vrushali01). 
+{{< fa address-card size=large >}} I am the LeRoy Neiman Term Chair Professor of Sociology at the University of California, Los Angeles. 
+
+Also: 
+- Former co-editor of [*American Sociological Review*](https://journals.sagepub.com/home/asr).
+- Former chair of the American Sociology Association's [Section for the Sociology of Culture](https://asaculturesection.org/). 
+- Current member of the [Sociological Research Association](https://www.sociological-research-assoc.org/).
+- Current member of the Board of Reviewing Editors of the journal [*Science*](https://www.science.org/journal/science).
+- Associate editor for the journal [*Discover Data*](https://www.springer.com/journal/44248). 
+- Next year, I will begin a three-year stint as one of the lead editors of the journal [*Sociological Theory*](https://journals.sagepub.com/home/stx) with [S. L. Crawley](http://sociology.usf.edu/faculty/scrawley/), [Z. Magubane](https://www.bc.edu/bc-web/schools/mcas/departments/sociology/people/faculty-directory/zine-magubane.html), and [V. Patil](https://www.linkedin.com/in/vrushali01). 
 </p>
 
 <p align="justify"> 
