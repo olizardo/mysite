@@ -154,7 +154,7 @@
 
 -   "From macrogenres to microgenres via relationality." *Working Paper* [(pdf)](/workpap/microgenres.pdf)
 
-- "Two-mode relational similarities." *Social Networks*. [(pdf)](workpap/two-mode-rel-sim.pdf)
+- "Two-mode relational similarities." *Social Networks* 76: 34-41. [doi:10.1016/j.socnet.2023.06.002](https://doi.org/10.1016/j.socnet.2023.06.002)
 
 
 -   "Simmel's dialectic of form and content in recent work in cultural sociology." *The Germanic Review: Literature, Culture, Theory* 94:93-100. [doi:10.1080/00168890.2019.1585664](https://doi.org/10.1080/00168890.2019.1585664)
