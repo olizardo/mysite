@@ -4,7 +4,7 @@ description: "Post using Correspondence Analysis to visualize tabular data with 
 author: "Omar Lizardo"
 date: "2023-06-22"
 categories: [Sociology of taste, Correspondence Analysis]
-draft: true
+draft: false
 ---
 
 
@@ -25,8 +25,6 @@ A lot of the time, these researchers will present key pieces data in tabular for
 
 # Example I: Journals and Theory Diagrams
 
-In a fascinating piece, Brett et al. (2020) study the ways sociologists use diagrams to visualize theory ideas. They select seven primarily or heavily "theoretical" journals in sociology (p. 227), and coded the "theory figures" included in a random sample of papers from each journal. The theory figure codes aimed at specifying what sort of visual languages authors used to construct the visualizations (e.g., boxes, arrows, geometrical figures, Venn diagrams and the like). The key tabular data is presented as an Appendix (A) to the paper, although it is the basis of many of the conclusions reported in the text. These data are reproduced in @tbl-theoryfigs.
-
 ```{r}
     tab <- matrix(c(72, 13, 7, 5, 3, 5, 0, 0, 0, 3, 1, 0, 1, 109, 
              27, 11, 4, 5, 19, 3, 1, 6, 11, 10, 1, 0,
@@ -44,15 +42,31 @@ In a fascinating piece, Brett et al. (2020) study the ways sociologists use diag
     rownames(tab) <- rows
 ```
 
+In a fascinating piece, Brett et al. (2020) study the ways sociologists use diagrams to visualize theory ideas. They select seven primarily or heavily "theoretical" journals in sociology (p. 227), and coded the "theory figures" included in a random sample of papers from each journal. The theory figure codes aimed at specifying what sort of visual languages authors used to construct the visualizations (e.g., boxes, arrows, geometrical figures, Venn diagrams and the like). The tabular data is presented as an Appendix (A) to the paper. These data are reproduced in @tbl-theoryfigs. The table has seven rows (for the journals) and eleven columns (for the theory figure motifs)
 
 ```{r}
 #| label: tbl-theoryfigs
 #| tbl-cap: Table of journals by theory figure characteristics.
     kbl(tab, format = "html", align = "c", padding = 2) %>% 
-        row_spec(1, bold = TRUE) %>%  
+        #row_spec(1, bold = TRUE) %>%  
         column_spec(1, bold = TRUE) %>%  
   kable_styling(bootstrap_options = c("hover", "condensed", "responsive"))
 ```
+
+The bulk of Brett et al.'s paper is concerned with specific examples, and the point is to delve into these to diagnose various problems in the ways sociologists use theory pictures (and end with some really good advice). Brett et al. were not concerned with the *relationship* between different journals and theory figure motifs, although they could have presented such data in a clear way by using a CA visualization of the table presented in the appendix. This is shown in @fig-theoryfigs.
+
+
+```{r}
+#| label: fig-theoryfigs
+#| fig-cap: CA Visualization of the table of journals by theory figure characteristics.
+#| fig-width: 8
+#| fig-height: 8
+    ca.res <- CA(tab)
+```
+
+The Figure shows that the distribution of theory figure motifs across theory journals is not random, something that would be hard to tell from eyeballing the numbers in @tbl-theoryfigs. Indeed, there is a pattern across journals, separating, on the main horizontal dimension, the *American Sociological Review* (ASR) and the *European Journal of Sociology* (EJS) on the one end from *Sociological Theory* (ST) at the other end. Both ASR and AJS are awash in **lines** and **path-diagrams**, while ST traffics heavily in **circles** (concentric and otherwise), **zig-zags**, **boxes**, and **Venn diagrams**. The *American Journal of Sociology* (AJS), square in the middle, balances between these two tendencies. The second dimension, on the other hand, separates the *European Journal of Social Theory* (EJST), which somehow gravitates towards **triangles**, from *Theory & Society* which likes **legends**. The **arrows** theory figure motif is neutral across journals, being placed close to the origin of the plot. 
+
+
 
 
 # References

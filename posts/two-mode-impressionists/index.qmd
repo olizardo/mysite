@@ -2,7 +2,7 @@
 title: "Two-Mode Relational Similarities Among Impressionist Artists"
 description: "Post using two-mode relational similarity to examine the link between impressionist artists, museums, and dealers."
 author: "Omar Lizardo"
-date: "2023-06-16"
+date: "2023-08-11"
 categories: [sociology of art, two-mode networks, relational similarity]
 draft: false
 ---
