@@ -1,6 +1,6 @@
 ---
-title: "Repertoire of taste by social class in van den Haak & Wilterdink (2019)"
-description: "Post using Correspondence Analysis to visualize the connection between taste repertoire and social class in a published interview study."
+title: "Using Simple Correspondence Analysis to Present Tabular Data"
+description: "Post using Correspondence Analysis to visualize tabular data with Examples."
 author: "Omar Lizardo"
 date: "2023-06-22"
 categories: [Sociology of taste, Correspondence Analysis]
@@ -18,50 +18,43 @@ draft: true
      library(wesanderson)
 ```
 
-```{r Data Table}
-     dat <- matrix(c(2, 5, 1, 6, 3, 13, 22, 20, 13, 0, 2, 3), 
-                   nrow = 4, byrow = TRUE)
-     rownames(dat) <- c("Only hierarchical", "Only egalitarian", 
-             "Both: ambivalent", "Neither: neutral")
-     colnames(dat) <- c("Stayers (Educated)", "Movers (Low Educ to High Educ)", "Stayers (Less Educ.)")
+# CA and Tabular Bias
+A lot of the time **Simple Correspondence Analysis** (here after CA) is presented as a complex, almost mystical technique, and its association with a relatively obscure data-analytic school in France and later Bourdieu's *Distinction* does not help. This is a pity, since CA is actually a quantitative data reduction technique that is perfect for the presenting qualitative data. Particular data from samples typical of those that ethnographers, interviewers, small-sample content-analysts, and historical sociologists deal with frequently. 
+
+A lot of the time, these researchers will present key pieces data in tabular form, and ask the readers to use a lot of brainpower to detect patterns by staring at numbers when it would be much easier to a do a simple CA and present the categories in the rows and columns of the table as a biplot of the first two-dimensions of a simple CA. I present three examples from published work showing this "tabular bias" and show how CA could have improved things greatly (and maybe revealed some insights). Note that picked these three articles not to drag them, but because *I liked them quite a lot*, and saw potential for them to be even better than they are. 
+
+# Example I: Journals and Theory Diagrams
+
+In a fascinating piece, Brett et al. (2020) study the ways sociologists use diagrams to visualize theory ideas. They select seven primarily or heavily "theoretical" journals in sociology (p. 227), and coded the "theory figures" included in a random sample of papers from each journal. The theory figure codes aimed at specifying what sort of visual languages authors used to construct the visualizations (e.g., boxes, arrows, geometrical figures, Venn diagrams and the like). The key tabular data is presented as an Appendix (A) to the paper, although it is the basis of many of the conclusions reported in the text. These data are reproduced in @tbl-theoryfigs.
+
+```{r}
+    tab <- matrix(c(72, 13, 7, 5, 3, 5, 0, 0, 0, 3, 1, 0, 1, 109, 
+             27, 11, 4, 5, 19, 3, 1, 6, 11, 10, 1, 0,
+             110, 34, 14, 3, 14, 24, 1, 0, 3, 9, 10, 0, 0,
+             14, 11, 9, 5, 5, 5, 4, 0, 0, 2, 0, 1, 0,
+             105, 57, 36, 34, 34, 24, 1, 4, 15, 3, 7, 17, 1,
+             162, 13, 5, 6, 6, 9, 3, 0, 2, 6, 2, 3, 0,
+             103, 35, 23, 12, 12, 20, 0, 0, 8, 3, 9, 0, 0), nrow = 7, byrow = TRUE)
+    cols <- c("Arrows", "Circles", "Boxes", "Lines", "Triangles", 
+              "Zig-Zags", "Legend", "Reading-Rules", "Path-Diag.",
+              "Venn-Diag.", "Con-Circles")
+    rows <- c("AJS", "ASR", "EJS", "EJST", "ST", "TCS", "TS")
+    tab <- tab[, -c(1:2)] #dropping frist two columns
+    colnames(tab) <- cols
+    rownames(tab) <- rows
 ```
 
-```{r CA}
-     ca.res <- CA(dat, graph = FALSE)
-     plot.dat <- bind_rows(data.frame(ca.res$row$coord), 
-                           data.frame(ca.res$col$coord)) %>% 
-               cbind(item = factor(c(1, 1, 1, 1, 2, 2, 2)))
-```
 
-```{r Table}
-        
-    kbl(dat, format = "html", align = "c", padding = 2) %>% 
-        kable_styling(bootstrap_options = c("hover", "condensed", "responsive"))
+```{r}
+#| label: tbl-theoryfigs
+#| tbl-cap: Table of journals by theory figure characteristics.
+    kbl(tab, format = "html", align = "c", padding = 2) %>% 
+        row_spec(1, bold = TRUE) %>%  
+        column_spec(1, bold = TRUE) %>%  
+  kable_styling(bootstrap_options = c("hover", "condensed", "responsive"))
 ```
 
 
-```{r Plot}
-     n <- rownames(plot.dat)
-     d1p <- paste(as.character(round(ca.res$eig[1, 2])), "%", sep = "")
-     d2p <- paste(as.character(round(ca.res$eig[2, 2])), "%", sep = "")
-
-     p <- ggplot(data = plot.dat, aes(x = Dim.1, y = Dim.2, fill = item))
-     p <- p + geom_vline(xintercept = 0, color = "gray40")
-     p <- p + geom_hline(yintercept = 0, color = "gray40")
-     p <- p + geom_label(aes(label = n), color = "white", size = 4)
-     p <- p + scale_y_continuous(limits = c(-.5, .75))
-     p <- p + scale_x_continuous(limits = c(-1, 1))
-     p <- p + scale_fill_manual(values = wes_palettes$Cavalcanti1[c(2, 5)])
-     p <- p + labs(x = paste("First Dimension:", d1p), 
-                   y = paste("Second Dimension:", d2p))
-     p <- p + guides(fill = "none")
-     p <- p + theme_sjplot2()
-```
-
-# Introduction
-In summarizing their results, van den Haak and Wilterdink note that "[a]s Table 1 specifies, the well-educated are clearly overrepresented in the hierarchical type and the (much larger) category of the ambivalent type, whereas the less-educated make up larger pro-portions of the egalitarian and the neutral categories (p. 422)."
-
-```{r, fig.cap = "Correspondence Analysis Plot of Data in Table 1 of van den Haak & Wilterdink (2019)"}
-   p
-```
+# References
+Brett, G., Silver, D., & Beelen,, K. (2020). The right tool for the job: problems and solutions in visualizing sociological theory. *Journal for the Theory of Social Behaviour*, 50(2), 223-248.
 
