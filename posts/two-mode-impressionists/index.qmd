@@ -153,7 +153,7 @@ On the first sheet, is the artist by museum data. On the second sheet is the dea
 
 These are data that are ideal to analyze from the perspective of generalized relational similarity (Kovacs, 2010). Cutting (2006) analyzed the data using multidimensional scaling of the similarities but these were computed using the standard correlation distance. The correlation distance treats pairs of actors as similar if they have similar patterns of object choice. In a generalized relational similarity approach, on the other hand, actors are similar if they have similar patterns of choice with respect to *similar* objects. This is different from the usual similarity approach used by Cutting (2006) in which actors are similar only if they have similar patterns of choice, but where the similarity of the objects chosen is not taken into account. 
 
-I analyze these data using the two-mode variant of generalized similarity discussed in Lizardo (2024), where the correlation distance is tuned using the similarity in the other mode computed from the one-mode projection. In the museum table, we can think of the museums as the (institutional) "actors" doing the choosing and the impressionist artists as the objects chosen. In the same way, in dealers table, we can think of the dealers as the actors doing the choosing and the impressionist painters (or rather their paintings) as the objects chosen. Finally, in the collectors table, the collectors are the actors and the paintings collected from each artist the objects. 
+I analyze these data using the two-mode variant of generalized similarity discussed in [Lizardo (2024)](https://www.sciencedirect.com/science/article/pii/S0378873323000461), where the correlation distance is tuned using the similarity in the other mode computed from the one-mode projection using the Breiger (1974) approach. In the museum table, we can think of the museums as the (institutional) "actors" doing the choosing and the impressionist artists as the objects chosen. In the same way, in dealers table, we can think of the dealers as the actors doing the choosing and the impressionist painters (or rather their paintings) as the objects chosen. Finally, in the collectors table, the collectors are the actors and the paintings collected from each artist the objects. 
 
 Accordingly, artists are similar to the extent that they are chosen by museums with similar patterns of cultural choice. Museums are similar to the extent that they choose similar artists. In the same way, dealers are similar to the extent that they choose similar artists, whereby artists' similarity is defined by their distribution across dealers (artists chosen by similar dealers are similar). Thus, we should expect to see a partitioning of the set of actors that reveals something about the wider field they are embedded in, both in the case of museums and artists. 
 
@@ -170,7 +170,7 @@ The above plot shows the non-metric multidimensional scaling plot of generalized
 
 What about the dealers? The two-mode generalized similarities for these actors are shown in the above plot. The biggest cluster in the upper-left contains four out of the six "major" dealers according to Cutting (2006, pp. 93-95): Durand-Ruel, Petit, Bernheim-June and Rosenberg. These are all except Vollard and Wildenstein who form their own cluster in the lower-left (joined by New-York-based Acquavella), likely united by their voraciousness for Cezanne. The MDS maps of dealers differs systematically from that presented by Cutting (Fig. 6.1, p. 96) based on the simple correlation distance. 
 
-The map of artists based on dealers tastes shown below, also differs from that presented by Cutting (ibid). In Cutting's plot, Guillaumin, Manet, Monet, Pissarro and Sisley appear packed in the same area of the space, suggesting maximum similarity among these five artists. Taking into account the generalized similarity among dealers who sold their work, we can see that Manet and Monet are most similar, Sisley and Pissarro form their own cluster, and Guillaumin is clearly distinct from these two groups. In Cutting's plot, Degas and Renoir are similar, but taking into account similarity across dealers show that they are quite distinct along the second dimension, and that Renoir is most similar to Caillebotte, while Degas is most similar to Guillaumin, Gonzales, and Cassatt. 
+The map of artists based on dealers tastes shown below, also differs from that presented by Cutting (*ibid*). In Cutting's plot, Guillaumin, Manet, Monet, Pissarro and Sisley appear packed in the same area of the space, suggesting maximum similarity among these five artists. Taking into account the generalized similarity among dealers who sold their work, we can see that Manet and Monet are most similar, Sisley and Pissarro form their own cluster, and Guillaumin is clearly distinct from these two groups. In Cutting's plot, Degas and Renoir are similar, but taking into account similarity across dealers show that they are quite distinct along the second dimension, and that Renoir is most similar to Caillebotte, while Degas is most similar to Guillaumin, Gonzales, and Cassatt. 
 
 ```{r, echo=FALSE, fig.cap = "Two Mode Generalized Similarities Among Artists (Based on Dealers' Similarity)"}
     p.od
@@ -182,3 +182,11 @@ What about the collectors? The two-mode similarity MDS plot is shown below. The 
     p.ac
 ```
 
+# References
+Breiger, R. L. (1974). The duality of persons and groups. *Social Forces*, 53(2), 181-190.
+
+Cutting, J. E. (2006). *Impressionism and Its Canon*. University Press of America.
+
+Kovács, B. (2010). A generalized model of relational similarity. *Social Networks*, 32(3), 197–211.
+
+Lizardo, O. (2024). Two-mode relational similarities. *Social Networks*, 76, 34–41.
