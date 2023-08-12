@@ -4,7 +4,7 @@ description: "Post using Correspondence Analysis to visualize tabular data with 
 author: "Omar Lizardo"
 date: "2023-08-14"
 categories: [Correspondence Analysis, Measuring Culture]
-draft: true
+draft: false
 ---
 
 
