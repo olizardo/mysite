@@ -2,26 +2,22 @@
 title: "Using Simple Correspondence Analysis to Present Tabular Data"
 description: "Post using Correspondence Analysis to visualize tabular data with Examples."
 author: "Omar Lizardo"
-date: "2023-06-22"
-categories: [Sociology of taste, Correspondence Analysis]
-draft: false
+date: "2023-08-14"
+categories: [Correspondence Analysis, Measuring Culture]
+draft: true
 ---
 
 
 ```{r Setup, include=FALSE}
      knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
-     library(conflicted)
      library(FactoMineR)
      library(kableExtra)
-     library(sjPlot)
-     library(tidyverse)
-     library(wesanderson)
 ```
 
 # CA and Tabular Bias
-A lot of the time **Simple Correspondence Analysis** (here after CA) is presented as a complex, almost mystical technique, and its association with a relatively obscure data-analytic school in France and later Bourdieu's *Distinction* does not help. This is a pity, since CA is actually a quantitative data reduction technique that is perfect for the presenting qualitative data. Particular data from samples typical of those that ethnographers, interviewers, small-sample content-analysts, and historical sociologists deal with frequently. 
+A lot of the time **Simple Correspondence Analysis** (here after CA) is presented as a complex, almost mystical technique, and its association with a relatively obscure data-analytic school in France and later Bourdieu's *Distinction* does not help. This is a pity, since CA is actually a quantitative data reduction technique that is perfect for the presenting qualitative data. Particular data from samples typical of those that ethnographers, interviewers, small-sample content-analysts, and historical sociologists deal with frequently.
 
-A lot of the time, these researchers will present key pieces data in tabular form, and ask the readers to use a lot of brainpower to detect patterns by staring at numbers when it would be much easier to a do a simple CA and present the categories in the rows and columns of the table as a biplot of the first two-dimensions of a simple CA. I present three examples from published work showing this "tabular bias" and show how CA could have improved things greatly (and maybe revealed some insights). Note that picked these three articles not to drag them, but because *I liked them quite a lot*, and saw potential for them to be even better than they are. 
+A lot of the time, these researchers will present key pieces data in tabular form, and ask the readers to use a lot of brainpower to detect patterns by staring at numbers when it would be much easier to a do a simple CA and present the categories in the rows and columns of the table as a biplot of the first two-dimensions of a simple CA. I present three examples from published work showing this "tabular bias" and show how CA could have improved things greatly (and maybe revealed some insights).^[All the analyses presented here use the package **FactoMineR** available at [https://cran.r-project.org/web/packages/FactoMineR/index.htm](https://cran.r-project.org/web/packages/FactoMineR/index.htm). To get the code necessary to replicate all the analyses and visualizations click on the "view source" button for this page on the context menu on the right.] Note that picked these three articles not to drag them, but because *I liked them quite a lot*, and saw potential for them to be even better than they are. 
 
 # Example I: Journals and Theory Diagrams
 
@@ -42,13 +38,12 @@ A lot of the time, these researchers will present key pieces data in tabular for
     rownames(tab) <- rows
 ```
 
-In a fascinating piece, Brett et al. (2020) study the ways sociologists use diagrams to visualize theory ideas. They select seven primarily or heavily "theoretical" journals in sociology (p. 227), and coded the "theory figures" included in a random sample of papers from each journal. The theory figure codes aimed at specifying what sort of visual languages authors used to construct the visualizations (e.g., boxes, arrows, geometrical figures, Venn diagrams and the like). The tabular data is presented as an Appendix (A) to the paper. These data are reproduced in @tbl-theoryfigs. The table has seven rows (for the journals) and eleven columns (for the theory figure motifs)
+In a fascinating piece, Brett et al. (2020) study the ways sociologists use diagrams to visualize theory ideas. They select seven primarily or heavily "theoretical" journals in sociology (p. 227), and coded the "theory figures" included in a random sample of papers from each journal. The theory figure codes aimed at specifying what sort of visual languages authors used to construct the visualizations (e.g., boxes, arrows, geometrical figures, Venn diagrams and the like). The tabular data is presented as an Appendix (A) to the paper. A two-mode table cross-classifying journals by the characteristics of the theory figures they typically publish These data are reproduced in @tbl-theoryfigs. The table has seven rows (for the journals) and eleven columns (for the theory figure motifs)
 
 ```{r}
 #| label: tbl-theoryfigs
 #| tbl-cap: Table of journals by theory figure characteristics.
     kbl(tab, format = "html", align = "c", padding = 2) %>% 
-        #row_spec(1, bold = TRUE) %>%  
         column_spec(1, bold = TRUE) %>%  
   kable_styling(bootstrap_options = c("hover", "condensed", "responsive"))
 ```
@@ -66,9 +61,92 @@ The bulk of Brett et al.'s paper is concerned with specific examples, and the po
 
 The Figure shows that the distribution of theory figure motifs across theory journals is not random, something that would be hard to tell from eyeballing the numbers in @tbl-theoryfigs. Indeed, there is a pattern across journals, separating, on the main horizontal dimension, the *American Sociological Review* (ASR) and the *European Journal of Sociology* (EJS) on the one end from *Sociological Theory* (ST) at the other end. Both ASR and AJS are awash in **lines** and **path-diagrams**, while ST traffics heavily in **circles** (concentric and otherwise), **zig-zags**, **boxes**, and **Venn diagrams**. The *American Journal of Sociology* (AJS), square in the middle, balances between these two tendencies. The second dimension, on the other hand, separates the *European Journal of Social Theory* (EJST), which somehow gravitates towards **triangles**, from *Theory & Society* which likes **legends**. The **arrows** theory figure motif is neutral across journals, being placed close to the origin of the plot. 
 
+# Example 2: Early Modern Authors in Economics
+Erikson & Hamilton (2018)---hereafter EH---discuss how early modern economic thought arose out of the very practical reflections of people directly involved in trade, particularly international trade. As evidence consistent with this claim, they are argue that authors of early modern economics texts were disproportionately more likely to be recruited from certain classes, trades, and stations (e.g., merchants, especially those involved in international trade in chartered companies) as compared to others (Gentry, Army types). This merchant connection is supposed to strengthen over time (going from the sixteenth into the seventeenth century). 
 
+```{r}
+#| label: tbl-econauthors
+#| tbl-cap: Table of time periods by classes of early modern economics authors.
+
+  d <- c(0, 0, 1, 0, 0, 1, 0,
+          0, 1, 2, 0, 14, 2, 1,
+          3, 4, 9, 1, 32, 6, 1,
+          4, 10, 16, 7, 35, 15, 2,
+          14, 38, 28, 22, 66, 38, 3,
+          22, 48, 40, 28, 103, 68, 11,
+          41, 49, 47, 12, 126, 65, 22,
+          123, 94, 97, 5, 222, 255, 3,
+          56, 48, 63, 5, 151, 205, 7
+          )
+  d <- t(matrix(d, nrow = 7, ncol = 9))
+  rownames(d) <- c("1550", "1570", "1590", "1610", "1630", "1650", "1670", "1690", "1710") 
+  colnames(d) <- c("Noble", "Gentry", "Clergy", "Military", "Professional", "Merchant", "Yeoman")
+
+    kbl(d, format = "html", align = "c", padding = 2) %>% 
+        column_spec(1, bold = TRUE) %>%  
+  kable_styling(bootstrap_options = c("hover", "condensed", "responsive"))
+```
+
+A key piece of evidence in this regard is presented in two-mode tabular form (Table 7, p. 140), reproduced here as Table @tbl-econauthors. The table cross-classifies ten time-periods by seven classes of economics authors. EH invite the reader to gaze at the numbers to reach the desired conclusion (e.g, that there are more merchants in later periods). I argue that the reader would have reached the conclusion faster, and would have been even more convinced of their argument if they had used CA to present the results of their cross-classification. The reader may have also noticed patterns that are just impossible to see by staring at the table. This is shown in @fig-econauthors.
+
+```{r}
+#| label: fig-econauthors
+#| fig-cap: CA Visualization of the table of time periods by classes of early modern economics authors.
+#| fig-width: 8
+#| fig-height: 8
+    ca.res <- CA(d)
+```
+
+The figure shows evidence consistent with EH's claims. Indeed, Merchants end up near the upper-left hand quadrant of the two-dimensional space, nearer the last two periods (1690-1710), indicating that they dominate the discussion during this era. They are maximally contrasted from authors with a military background (who are naturally better represented in more bellicose periods), and authors with a Yeoman background (who are better represented in the late sixteenth century). The CA also reveals insights not evident in the tabular presentation. First, Noblemen are also better represented among economics authors represented in the later period, even if they are less numerous than merchants. Second, clergymen are more or less evenly represented across periods, ending up close to the plot's origins. 
+
+# Example 3: Relationship Between Class and Mode of Aesthetic Self-Presentation 
+In a fascinating paper, van den Haak and Wilterdink---hereafter HW---analyze interview data from a sample of ninety Dutch people more or less evenly divided into three groups by class sitaution: Stayers in the less educated stratum, stayers in the more educated stratum, and movers from the low to the high educated stratum. HW asked this people about their cultural tastes, other people's cultural tastes, and whether there was such a thing as good and bad taste. 
+
+```{r}
+#| label: tbl-classmodes
+#| tbl-cap: Class status by mode of aesthetic self-presentation.
+
+d <- matrix(c(2, 5, 1, 6, 3, 13, 22, 20, 13, 0, 2, 3), 
+              nrow = 4, byrow = TRUE)
+rownames(d) <- c("Only hierarchical", "Only egalitarian", 
+                   "Both: ambivalent", "Neither: neutral")
+colnames(d) <- c("Stayers (Educated)", "Movers (Low Educ to High Educ)", "Stayers (Less Educ.)")
+d <- t(d)
+kbl(d, format = "html", align = "c", padding = 2) %>% 
+        column_spec(1, bold = TRUE) %>%  
+  kable_styling(bootstrap_options = c("hover", "condensed", "responsive"))
+```
+
+
+As you might imagine this resulted in a lot of "who am I to judge," and "to each their own," and "I wouldn't want to sound rude," and so forth. But the surprising thing is that HW also found that some non-substantial minority was not afraid to be *judgy* while the bulk of their sample shifted between *judgy* and "who am I..." discourses sometimes in the middle of the same thought! 
+
+So HW went back and coded their interview data (divided into the aforementioned) classes into different attitude groups:  People unafraid to produce **hierarchical** judgments of taste (e.g., "this type of culture is better than that other"), people who consistently stuck to the "who am I, and to each" script (**egalitarians**), and people who wavered between these (**ambivalents**). There was also a neutral category for those who didn't use any of these discourses. 
+
+```{r}
+#| label: fig-classmodes
+#| fig-cap: CA Visualization of the table of class status by mode of aesthetic self-presentation.
+#| fig-width: 6
+#| fig-height: 6
+    ca.res <- CA(d)
+```
+
+HW presented their results in their Table 1 (p. 422), reproduced here (rows and columns switched) as @tbl-classmodes. In summarizing their results, HW note that "[a]s Table 1 specifies, the well-educated are clearly overrepresented in the hierarchical type and the (much larger) category of the ambivalent type, whereas the less-educated make up larger pro-portions of the egalitarian and the neutral categories (p. 422)." I think this definitely what the table shows, but it is not as evident as HW think because, well, table. A CA of the table would show the result in a better way. Moreover, CA is particularly efficient at summarizing results of two-way tables with a relatively small number of cases like @tbl-classmodes. 
+
+The results are shown in @fig-classmodes. Indeed, stayers among the educated stratum are the most likely to use the **ambivalent** discourse in HW's data. In the same way, stayers in the less educated stratum are more consistently egalitarian (in nuanced ways that are better detailed in the paper), and also closer to the neutral pole (upper-right quadrant). However, what the CA plot also shows that is not that evident in the table is that movers into the educated stratum are also the most consistently **hierarchical**, perhaps in line with Bourdieu's original thesis that late comers into cultural capital tend to adopt the party line in more rigid and less flexible forms---as detailed in Lizardo (2018).
+
+# Conclusion
+Rhetorically, sociology is way past the "methods wars," that characterized the bad old days. Mixed methods are quite normal, and people are used to deploying multiple strategies to answer questions and present data. Yet, some practices are encrusted in tradition, particularly the use of tabular data to present results. Both qualitative and quantitative people use them, but most of the time, a picture is going to be better. One reason is that a two-way, two-mode table is a many-dimensional object (with as many dimensions as cells in the underlying matrix represented in the table) and it needs some reduction in dimensionality to be made comprehensible. 
+
+CA can be used for many purposes, but the two things it is really good at is (a) reducing dimensionality usually to $d = 2$, and visualizing this reduction is synoptic diagram (what Bourdieu loved about it). In the olden days CA was an obscure method ensconced in obscure software. Today, it is just a click away from the interface in all the popular data analysis programs (like *R* in the present case). 
+
+So whenever the urge to present something as a table occurs, especially at a key point in a paper, ask yourself: Wouldn't CA tell a better story here? I bet in most cases it will. 
 
 
 # References
 Brett, G., Silver, D., & Beelen,, K. (2020). The right tool for the job: problems and solutions in visualizing sociological theory. *Journal for the Theory of Social Behaviour*, 50(2), 223-248.
 
+Erikson, E., & Hamilton, M. (2018). Companies and the rise of economic thought: The institutional foundations of early economics in England, 1550–1720. *American Journal of Sociology*, 124(1), 111-149.
+
+van den Haak, M., & Wilterdink, N. (2019). Struggling with distinction: How and why people switch between cultural hierarchy and equality. *European Journal of Cultural Studies*, 22(4), 416–432.
+
+Lizardo, O. (2018). Bourdieu, Distinction, and Aesthetic Consumption. In F. F. Wherry & I. Woodward (Eds.), *The Oxford Handbook of Consumption* (pp. 179–194). Oxford University Press.
