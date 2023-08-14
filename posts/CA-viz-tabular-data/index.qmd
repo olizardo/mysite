@@ -110,7 +110,7 @@ d <- matrix(c(2, 5, 1, 6, 3, 13, 22, 20, 13, 0, 2, 3),
               nrow = 4, byrow = TRUE)
 rownames(d) <- c("Only hierarchical", "Only egalitarian", 
                    "Both: ambivalent", "Neither: neutral")
-colnames(d) <- c("Stayers (Educated)", "Movers (Low Educ to High Educ)", "Stayers (Less Educ.)")
+colnames(d) <- c("Stayers (High Educ.)", "Movers (Low to High)", "Stayers (Less Educ.)")
 d <- t(d)
 kbl(d, format = "html", align = "c", padding = 2) %>% 
         column_spec(1, bold = TRUE) %>%  
