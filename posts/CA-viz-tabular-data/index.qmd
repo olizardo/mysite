@@ -29,13 +29,11 @@ A lot of the time, these researchers will present key pieces data in tabular for
              105, 57, 36, 34, 34, 24, 1, 4, 15, 3, 7, 17, 1,
              162, 13, 5, 6, 6, 9, 3, 0, 2, 6, 2, 3, 0,
              103, 35, 23, 12, 12, 20, 0, 0, 8, 3, 9, 0, 0), nrow = 7, byrow = TRUE)
-    cols <- c("Arrows", "Circles", "Boxes", "Lines", "Triangles", 
+    tab <- tab[, -c(1, 2)] #dropping fist two columns
+    colnames(tab) <- c("Arrows", "Circles", "Boxes", "Lines", "Triangles", 
               "Zig-Zags", "Legend", "Reading-Rules", "Path-Diag.",
               "Venn-Diag.", "Con-Circles")
-    rows <- c("AJS", "ASR", "EJS", "EJST", "ST", "TCS", "TS")
-    tab <- tab[, -c(1:2)] #dropping frist two columns
-    colnames(tab) <- cols
-    rownames(tab) <- rows
+    rownames(tab) <- c("AJS", "ASR", "EJS", "EJST", "ST", "TCS", "TS")
 ```
 
 In a fascinating piece, Brett et al. (2020) study the ways sociologists use diagrams to visualize theory ideas. They select seven primarily or heavily "theoretical" journals in sociology (p. 227), and coded the "theory figures" included in a random sample of papers from each journal. The theory figure codes aimed at specifying what sort of visual languages authors used to construct the visualizations (e.g., boxes, arrows, geometrical figures, Venn diagrams and the like). The tabular data is presented as an Appendix (A) to the paper. A two-mode table cross-classifying journals by the characteristics of the theory figures they typically publish These data are reproduced in @tbl-theoryfigs. The table has seven rows (for the journals) and eleven columns (for the theory figure motifs)
