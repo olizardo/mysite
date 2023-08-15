@@ -22,6 +22,9 @@ website:
           - text: "Social Networks (111) Textbook"
             icon: book
             href: https://olizardo.github.io/networks-textbook/
+          - text: "Classical Social Theory Lecture Notes"
+            icon: book
+            href: https://olizardo.github.io/classical-sociological-theory-notes/
           - text: "SOCIOL 208B (Spring 2022)"
             icon: file-text
             href: syllabi/SOCIOL208b-spring22.html

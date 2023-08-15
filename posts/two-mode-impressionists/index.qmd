@@ -16,7 +16,6 @@ draft: false
      library(tidyverse)
      library(wesanderson)
      source("C:/Users/Omar Lizardo/Google Drive/WORK/IN PROGRESS/NETWORKS/Two-Mode-Relational-Similarity/Functions/tm.corr.dist.R")
-
 ```
 
 ```{r Functions, include=FALSE}

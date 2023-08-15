@@ -105,6 +105,11 @@ ul.task-list li input[type="checkbox"] {
  <span class="dropdown-text">Social Networks (111) Textbook</span></a>
   </li>  
         <li>
+    <a class="dropdown-item" href="https://olizardo.github.io/classical-sociological-theory-notes/"><i class="bi bi-book" role="img">
+</i> 
+ <span class="dropdown-text">Classical Social Theory Lecture Notes</span></a>
+  </li>  
+        <li>
     <a class="dropdown-item" href="../../syllabi/SOCIOL208b-spring22.html"><i class="bi bi-file-text" role="img">
 </i> 
  <span class="dropdown-text">SOCIOL 208B (Spring 2022)</span></a>
@@ -271,7 +276,7 @@ ul.task-list li input[type="checkbox"] {
     }
 \tag{3}\]</span></span></p>
 <p>Typically, people only have access to the network information and not exogenous indication of pre-existing similarities between actors or objects, required to compute <a href="#eq-2">Equation&nbsp;2</a>, and <a href="#eq-3">Equation&nbsp;3</a>. Kovacs’s (ingenious) solution is to use the duality property and compute “reflective similarities” by obtaining initial object similarities plugging <span class="math inline">\(D(A)^{cor}\)</span> into <a href="#eq-3">Equation&nbsp;3</a>, equivalent to substituting the identity matrix, of dimensions <span class="math inline">\(O \times O\)</span>, into the slot occupied by <span class="math inline">\(\mathbf{S(O)}\)</span> in <a href="#eq-2">Equation&nbsp;2</a>. Then, in a second step, using the resulting actor similarities to compute generalized object similarities. This is done by substituting an <span class="math inline">\(A \times A\)</span> matrix of <span class="math inline">\(D(A)^{grs}\)</span> values obtained in the first step into the slot occupied by <span class="math inline">\(\mathbf{S(A)}\)</span> in <a href="#eq-3">Equation&nbsp;3</a>. The iterations continue until both <span class="math inline">\(D(A)^{grs}\)</span> and <span class="math inline">\(D(A)^{grs}\)</span> “freeze” according to some stopping criterion (<span class="math inline">\(\epsilon\)</span>).</p>
-<p>It is easy to see that <a href="#eq-2">Equation&nbsp;2</a> and <a href="#eq-3">Equation&nbsp;3</a> both respect the principle of equivalence. Actors count as similar to the extent they connect to similar objects (<span class="math inline">\(\mathbf{S(O)\)</span>). Conversely, objects count as similar to the extent they are chosen by similar actors ($ \mathbf{S(A)$).</p>
+<p>It is easy to see that <a href="#eq-2">Equation&nbsp;2</a> and <a href="#eq-3">Equation&nbsp;3</a> both respect the principle of equivalence. Actors count as similar to the extent they connect to similar objects (<span class="math inline">\(\mathbf{S(O)}\)</span>). Conversely, objects count as similar to the extent they are chosen by similar actors ($ $).</p>
 <p>Because the similarities are defined according to the dual projection method, in which the similarity of actors is based on the objects they choose, and the similarity of objects is based on the actors who choose them, <a href="#eq-2">Equation&nbsp;2</a> and <a href="#eq-3">Equation&nbsp;3</a> also respect the principle of duality.</p>
 <div class="cell page-columns page-full">
 <div class="cell-output-display page-columns page-full">
@@ -629,7 +634,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="analysis-of-southern-women-data" class="level2 page-columns page-full">
 <h2 class="anchored" data-anchor-id="analysis-of-southern-women-data">Analysis of Southern Women Data</h2>
-<p>I implemented Kovacs’s algorithm as an R function, the latest version of which can be found <a href="https://github.com/olizardo/kovacs-gen-corr">here</a>. To show that it works as intended, I replicate Kovacs’s (2010) analysis of Davis et al.’s (1941) classic Southern Women two-mode network, shown in <a href="#tbl-southern">Table&nbsp;1</a>.</p>
+<p>I implemented Kovacs’s algorithm as an R function called <code>gen.sim.corr.abs</code>, the latest version of which can be found <a href="https://github.com/olizardo/Two-Mode-Relational-Similarity/blob/main/Functions/gen.sim.corr.abs.R">here</a>. To show that it works as intended, I replicate Kovacs’s (2010) analysis of Davis et al.’s (1941) classic Southern Women two-mode network, shown in <a href="#tbl-southern">Table&nbsp;1</a>.</p>
 <div class="cell page-columns page-full">
 <div class="cell-output-display page-columns page-full">
 <div id="fig-rows" class="quarto-figure quarto-figure-center anchored page-columns page-full">
@@ -640,7 +645,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-<p><a href="#fig-rows">Figure&nbsp;1</a> replicates Kovacs’s (2010, Figure 12b) exactly using the current <em>R</em> implementation.The algorithm converged (using <span class="math inline">\(\epsilon = 0.001\)</span>) after fourteen iterations. <a href="#fig-rows">Figure&nbsp;1</a> is the result of a multidimensional scaling solution of the equilibrium similarities, with actors projected to the space formed by the first two-dimensions, computed using the function <code>cmdscale</code> from the package <code>stats</code> in <em>R</em> version 4.2.2.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<p><a href="#fig-rows">Figure&nbsp;1</a> closely replicates Kovacs’s (2010, Figure 12b) using the current <em>R</em> implementation.The algorithm converged (using <span class="math inline">\(\epsilon = 0.001\)</span>) after 119 iterations. <a href="#fig-rows">Figure&nbsp;1</a> is the result of a multidimensional scaling solution of the equilibrium similarities, with actors projected to the space formed by the first two-dimensions, computed using the function <code>cmdscale</code> from the package <code>stats</code> in <em>R</em> version 4.2.2.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
 <p>As Kovacs noted in the original paper, the distribution of points in the two-dimensional metric MDS space obtained using the generalized relational similarities corresponds to the generalized blockmodeling solution reported by Doreian et al.&nbsp;(2004, Table 4), with two large sets of similar actors separated from one another and from the more peripheral Dorothy and Pearl.</p>
 <p><a href="#fig-cols">Figure&nbsp;2</a> reports the corresponding analysis for the object (events) relational similarities. In the original paper, Kovacs (2010, p.&nbsp;206), described these results verbally—no plot was provided—as follows:</p>
 <blockquote class="blockquote">
