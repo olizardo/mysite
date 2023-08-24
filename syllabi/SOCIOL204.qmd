@@ -120,7 +120,7 @@ format:
 - Fligstein, N., & McAdam, D. (2011). Toward a general theory of strategic action fields. *Sociological Theory*, *29_(1), 1-26. [pdf]
 - Steinmetz, G. (2016). Social fields, subfields and social spaces at the scale of empires: Explaining the colonial state and colonial sociology. The Sociological Review, 64(2\_suppl), 98-123. [pdf]  
 - Wang, Y. (2016). Homology and isomorphism: Bourdieu in conversation with New Institutionalism. The *British Journal of Sociology*, 67(2), 348-370. [pdf]
-- 
+
 ### Week 9: The Interaction Tradition
 - Fligstein, N. (2001). Social skill and the theory of fields. *Sociological Theory*, 19(2):105-125. [pdf]
 - Fuhse, J. A. (2009). The meaning structure of social networks. *Sociological theory*, *27_(1), 51-73. [pdf]
