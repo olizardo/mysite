@@ -118,16 +118,16 @@ format:
 
 #### Further Reading
 - Fligstein, N., & McAdam, D. (2011). Toward a general theory of strategic action fields. *Sociological Theory*, *29_(1), 1-26. [pdf]
-- Steinmetz, G. (2016). Social fields, subfields and social spaces at the scale of empires: Explaining the colonial state and colonial sociology. The Sociological Review, 64(2\_suppl), 98-123. [pdf]  
-- Wang, Y. (2016). Homology and isomorphism: Bourdieu in conversation with New Institutionalism. The *British Journal of Sociology*, 67(2), 348-370. [pdf]
+- Steinmetz, G. (2016). Social fields, subfields and social spaces at the scale of empires: Explaining the colonial state and colonial sociology. *The Sociological Review*, 64(2\_suppl), 98-123. [pdf]  
+- Wang, Y. (2016). Homology and isomorphism: Bourdieu in conversation with New Institutionalism. *The British Journal of Sociology*, 67(2), 348-370. [pdf]
 
 ### Week 9: The Interaction Tradition
 - Fligstein, N. (2001). Social skill and the theory of fields. *Sociological Theory*, 19(2):105-125. [pdf]
-- Fuhse, J. A. (2009). The meaning structure of social networks. *Sociological theory*, *27_(1), 51-73. [pdf]
+- Fuhse, J. A. (2009). The meaning structure of social networks. *Sociological theory*, 27(1), 51-73. [pdf]
 - Hallett, T., & Hawbaker, A. (2021). The case for an inhabited institutionalism in organizational research: interaction, coupling, and change reconsidered. *Theory and Society*, *50_(1), 1-32. [pdf]
 - Cetina, K. K. (2009). The synthetic situation: Interactionism for a global world. *Symbolic Interaction*, 32(1), 61-87. [pdf]
 - Tavory, I., & Fine, G. A. (2020). Disruption and the Theory of the Interaction Order. *Theory and Society*, *49_(3), 365-385. [pdf]
-- Eliasoph, N., & Lichterman, P. (2003). Culture in interaction. American Journal of Sociology, 108(4), 735-794. [pdf]
+- Eliasoph, N., & Lichterman, P. (2003). Culture in interaction. *American Journal of Sociology*, 108(4), 735-794. [pdf]
 - Tavory, I. (2018). Between situations: Anticipation, rhythms, and the theory of interaction. *Sociological Theory*, *36_(2), 117-133. [pdf]
 
 ### Week 10: The Structuration Tradition
