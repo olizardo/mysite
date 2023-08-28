@@ -137,7 +137,7 @@ For all $q>1$ (Hidalgo & Hausmann, 2009). This results in a series of vectors of
 
 ## Results
 ### Persons
-@tbl-pr-even shows the results of the even numbered reflections for the people in the Southern women data, using an R function called `reflections` that can be found [here](https://github.com/olizardo/person-group-reflections). @tbl-pr-odd show the corresponding odd numbered reflections. Each entry in the table is the rank (ordered so that smaller means higher rank) of standardized centrality score for each reflection. 
+@tbl-pr-even shows the results of the even-numbered reflections for the people in the Southern women data, using an R function called `reflections` that can be found [here](https://github.com/olizardo/person-group-reflections). @tbl-pr-odd shows the corresponding odd-numbered reflections. Each entry in the table is the rank (ordered so that smaller means higher rank) of the standardized centrality score for each reflection. 
 
 ```{r, echo=FALSE}
 #| label: tbl-pr-odd
@@ -194,7 +194,7 @@ The reflective centrality pattern encoded in the tabular data can be more easily
    p
 ```
 
-As @fig-pr-even shows, $NORA$, $FLORA$, $CHARLOTTE$ and $EVELYN$ are the top-ranked actors when it comes to $C^R(2)$:  The average number of members of the groups they belong to. However, their fates in this reflective metric diverges at higher reflections, with Nora and Flora maintaining their top positions but $CHARLOTTE$ and $EVELYN$ tumbling down the ranks, suggesting that the members of the groups they belong to affiliate with smaller groups than the members of the groups $NORA$ and $FLORA$ belong to (and so on for higher reflections). 
+As @fig-pr-even shows, $NORA$, $FLORA$, $CHARLOTTE$, and $EVELYN$ are the top-ranked actors when it comes to $C^R_p(2)$:  The average number of members of the groups they belong to. However, their fates in this reflective metric diverge at higher reflections, with $NORA$ and $FLORA$ maintaining their top positions but $CHARLOTTE$ and $EVELYN$ tumbling down the ranks, suggesting that the members of the groups they belong to affiliate with smaller groups than the members of the groups $NORA$ and $FLORA$ belong to (and so on for higher reflections). 
 
 Notably, the reflective centrality ranks at the highest reflection ($q = 20$) in @tbl-pr-even, recovers the Doreian et al. (2004) block partition (see @tbl-southern), but this time with Dorothy and Pearl in the middle separating the two largest blocks of women. 
 
