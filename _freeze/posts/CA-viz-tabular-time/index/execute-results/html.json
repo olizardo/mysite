@@ -1,0 +1,16 @@
+{
+  "hash": "2743cc88aae5a64d4c1c3f5fb01233c0",
+  "result": {
+    "markdown": "---\ntitle: \"Using Simple Correspondence Analysis to Present Tabular Data that Shows Change Over Time\"\ndescription: \"Post using Correspondence Analysis to visualize tabular data with Examples.\"\nauthor: \"Omar Lizardo\"\ndate: \"2023-08-22\"\ncategories: [Correspondence Analysis, Measuring Culture]\ndraft: true\n---\n\n\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n::: {.cell-output-display}\n![](index_files/figure-html/unnamed-chunk-2-1.png){width=672}\n:::\n\n::: {.cell-output .cell-output-stdout}\n```\n**Results of the Correspondence Analysis (CA)**\nThe row variable has  4  categories; the column variable has 3 categories\nThe chi square of independence between the two variables is equal to 15.66818 (p-value =  0.01565024 ).\n*The results are available in the following objects:\n\n   name              description                   \n1  \"$eig\"            \"eigenvalues\"                 \n2  \"$col\"            \"results for the columns\"     \n3  \"$col$coord\"      \"coord. for the columns\"      \n4  \"$col$cos2\"       \"cos2 for the columns\"        \n5  \"$col$contrib\"    \"contributions of the columns\"\n6  \"$row\"            \"results for the rows\"        \n7  \"$row$coord\"      \"coord. for the rows\"         \n8  \"$row$cos2\"       \"cos2 for the rows\"           \n9  \"$row$contrib\"    \"contributions of the rows\"   \n10 \"$call\"           \"summary called parameters\"   \n11 \"$call$marge.col\" \"weights of the columns\"      \n12 \"$call$marge.row\" \"weights of the rows\"         \n```\n:::\n:::\n\n::: {.cell .fig-cap-location-margin}\n::: {.cell-output .cell-output-stdout}\n```\n**Results of the Correspondence Analysis (CA)**\nThe row variable has  8  categories; the column variable has 4 categories\nThe chi square of independence between the two variables is equal to 436.1788 (p-value =  2.930305e-79 ).\n*The results are available in the following objects:\n\n   name              description                   \n1  \"$eig\"            \"eigenvalues\"                 \n2  \"$col\"            \"results for the columns\"     \n3  \"$col$coord\"      \"coord. for the columns\"      \n4  \"$col$cos2\"       \"cos2 for the columns\"        \n5  \"$col$contrib\"    \"contributions of the columns\"\n6  \"$row\"            \"results for the rows\"        \n7  \"$row$coord\"      \"coord. for the rows\"         \n8  \"$row$cos2\"       \"cos2 for the rows\"           \n9  \"$row$contrib\"    \"contributions of the rows\"   \n10 \"$call\"           \"summary called parameters\"   \n11 \"$call$marge.col\" \"weights of the columns\"      \n12 \"$call$marge.row\" \"weights of the rows\"         \n```\n:::\n\n::: {.cell-output-display}\n![Correspondence analysis biplot of a stacked table](index_files/figure-html/fig-stack-1.png){#fig-stack width=960}\n:::\n:::\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
