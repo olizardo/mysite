@@ -8,7 +8,7 @@ format:
 # Readings
 
 ### Week 0: Theory and Theorizing
-- Abend, G. (2008). The meaning of ‘Theory’. *Sociological Theory*, 26(2), 173-199. [pdf]
+- Abend, G. (2008). The meaning of 'Theory.' *Sociological Theory*, 26(2), 173-199. [pdf]
 - Davis, M. S. (1971). That's interesting! Towards a phenomenology of sociology and a sociology of phenomenology. *Philosophy of the Social Sciences*, 1(2), 309-344. [pdf]
 - Healy, K. (2017). Fuck nuance. *Sociological Theory*, 35(2), 118-127. [pdf]
 - Joas, H., & Knöbl, W. (2009). What is Theory? Pp. 1-19 in *Social Theory: Twenty Introductory Lectures*. Cambridge University Press. [pdf]
@@ -42,7 +42,7 @@ format:
 - Reed, I. A., & Weinman, M. (2019). Agency, power, modernity: A manifesto for social theory. *European Journal of Cultural and Political Sociology*, (1), 6-50. [pdf]
 - Strand, M., & Lizardo, O. (2017). The hysteresis effect: Theorizing mismatch in action. *Journal for the Theory of Social Behaviour*, 47(2), 164-194. [pdf]
 
-### Week 3: The Habit/Practice Tradition
+### Week 3: The Habit Tradition
 - Crawley, S. L., Whitlock, M. C., & Earles, J. (2021). Smithing queer empiricism: Engaging ethnomethodology for a queer social science. *Sociological Theory*, 39(3), 127-152. [pdf]
 - Crossley, N. (2013). Habit and habitus. *Body & Society*, 19(2-3), 136-161. [pdf]
 - Engman, A., & Cranford, C. (2016). Habit and the Body: Lessons for Social Theories of Habit from the Experiences of People with Physical Disabilities. *Sociological Theory*, 34(1), 27-44. [pdf]
@@ -56,6 +56,9 @@ format:
 - Reckwitz, A. (2002). Toward a theory of social practices: A development in culturalist theorizing. *European Journal of Social Theory*, (2), 243-263. [pdf]
 - Sewell, W. H. (2005). The concept(s) of culture. Pp. 152-174 in *Logics of History*. University of Chicago Press. [pdf]
 - Swidler, A. (2001). What anchors cultural practices. Pp. 74-92 in Schatzki, T. R., Knorr-Cetina, K., and Savigny, E. V., editors, *The Practice Turn in Contemporary Theory*. Routledge. [pdf]
+- Casey, E. S. (1984). Habitual body and memory in Merleau-Ponty. In *Phenomenology and the human sciences* (pp. 39-57). Dordrecht: Springer Netherlands.
+- Dubrule, A. (2022). Gender and Habit: John Dewey and Iris Marion Young on Embodiment and Transformation. *The Pluralist*, 17(1), 45-51. [pdf]
+- Sullivan, S. (2000). Reconfiguring gender with John Dewey: Habit, bodies, and cultural change. Hypatia, 15(1), 23-42. [pdf]
 
 ### Week 4:  The Pragmatist Tradition 
 - Brett, G. (2022). Dueling with Dual-Process Models: Cognition, Creativity, and Context. *Sociological Theory*, 40(2), 179-201. 
