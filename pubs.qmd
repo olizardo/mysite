@@ -69,6 +69,8 @@
 
 - "Theorizing the concept of social tie using frames." *Working Paper* [(pdf)](/workpap/tie-frames.pdf)
 
+- "Two-mode relational similarities." *Social Networks* 76: 34-41. [doi:10.1016/j.socnet.2023.06.002](https://doi.org/10.1016/j.socnet.2023.06.002)
+
 -   "Incubators or diffusers? Examining the dynamic coupling of context and social ties across multiple foci." *Social Networks* [doi:10.1016/j.socnet.2022.02.004](https://doi.org/10.1016/j.socnet.2022.02.004)
 
 -   "Using big data to examine the effect of urbanism on social networks." *Journal of Urban Affairs* 43:40-56. [https://doi.org/10.1080/07352166.2018.1550350](https://doi.org/10.1080/07352166.2018.1550350)
@@ -159,9 +161,6 @@
 ### Measuring Culture
 
 -   "From macrogenres to microgenres via relationality." *Working Paper* [(pdf)](/workpap/microgenres.pdf)
-
-- "Two-mode relational similarities." *Social Networks* 76: 34-41. [doi:10.1016/j.socnet.2023.06.002](https://doi.org/10.1016/j.socnet.2023.06.002)
-
 
 -   "Simmel's dialectic of form and content in recent work in cultural sociology." *The Germanic Review: Literature, Culture, Theory* 94:93-100. [doi:10.1080/00168890.2019.1585664](https://doi.org/10.1080/00168890.2019.1585664)
 
