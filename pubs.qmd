@@ -65,7 +65,9 @@
 
 -   Skills, toolkits, contexts and institutions: clarifying the relationship between different approaches to cognition in cultural sociology." *Poetics: Journal of Empirical Research on Culture, the Media and the Arts* 38: 204-227. [doi:10.1016/j.poetic.2009.11.003](https://doi.org/10.1016/j.poetic.2009.11.003)
 
-### Social Network Dynamics 
+### Social Network Analysis
+
+- "Theorizing the concept of social tie using frames." *Working Paper* [(pdf)](/workpap/tie-frames.pdf)
 
 -   "Incubators or diffusers? Examining the dynamic coupling of context and social ties across multiple foci." *Social Networks* [doi:10.1016/j.socnet.2022.02.004](https://doi.org/10.1016/j.socnet.2022.02.004)
 
