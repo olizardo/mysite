@@ -21,13 +21,13 @@ format:
 
 ### Week 2: Artworlds and Cultural Industry Systems
 
-- Becker, Howard S. 1982. *Art Worlds*. Berkeley: University of California Press. (Chap. 2)
+- Becker, Howard S. 1982. *Art Worlds*. Berkeley: University of California Press. (Chap. 2 and Chap. 5)
 
 - Hirsch, Paul M. 1972. "Processing Fads and Fashions: An Organization-Set Analysis of Cultural Industry Systems." *American Journal of Sociology* 77(4): 639-659.
 
 - Bourdieu, Pierre. 1980. "The Production of Belief: Contribution to an Economy of Symbolic Goods." *Media, Culture & Society* 2(3): 261-293.
 
-- Childress, Clayton. 2017. *Under the Cover: The Creation, Production, and Reception of a Novel*. Princeton University Press.
+- Childress, Clayton. 2017. *Under the Cover: The Creation, Production, and Reception of a Novel*. Princeton University Press. (Introduction and Chap. 6)
 
 - Wohl, Hannah. 2022. "Innovation and Creativity in Creative Industries." *Sociology Compass* 16(2): e12956.
 
@@ -100,9 +100,9 @@ format:
 
 - Sewell, William H. Jr. 1992. "A Theory of Structure: Duality, Agency, and Transformation." *American Journal of Sociology* 98: 1-29.
 
-- Elias, Norbert. 1978. *The Civilizing Process, Vol. 1: The History of Manners*. New York: Urizen Press [consult faculty for selections].
+- Elias, Norbert. 1978. *The Civilizing Process, Vol. 1: The History of Manners*. New York: Urizen Press. (Preface, Pp. 53-85)
 
-- Foucault, Michel. 1977. *Discipline and Punish: The Birth of the Prison*. New York: Random House 
+- Foucault, Michel. 1977. *Discipline and Punish: The Birth of the Prison*. New York: Random House. (Chap. 1, and Chap. 3)
 
 ### Week 9: Culture and Economic Life
 
@@ -119,9 +119,9 @@ format:
 
 ### Week 10: Culture, Politics, and Morality
 
-- Luker, Kristin. 1984. *Abortion and the Politics of Motherhood*. Berkeley, CA: University of California Press. (Chap.)
+- Luker, Kristin. 1984. *Abortion and the Politics of Motherhood*. Berkeley, CA: University of California Press. (Introduction, Chap. 8)
 
-- Binder, Amy J. 2009. *Contentious Curricula: Afrocentrism and Creationism in American Public Schools*. Princeton: Princeton University Press. (Chap.)
+- Binder, Amy J. 2009. *Contentious Curricula: Afrocentrism and Creationism in American Public Schools*. Princeton: Princeton University Press. (Chap. 6)
 
 - Alexander, Jeffrey C. 2018. "The Societalization of Social Problems: Church Pedophilia, Phone Hacking, and the Financial Crisis." *American Sociological Review* 83(6): 1049-1078.
 
