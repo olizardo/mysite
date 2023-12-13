@@ -31,6 +31,9 @@ website:
           - text: "SOCIOL 204 (Sociological Theorizing)"
             icon: file-text
             href: syllabi/SOCIOL204.html
+          - text: "SOCIOL 245 (Cultural Sociology)"
+            icon: file-text
+            href: syllabi/SOCIOL245.html
       - file: vita.pdf
         text: "Vita"
         icon: file-pdf
