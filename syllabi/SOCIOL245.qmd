@@ -63,11 +63,11 @@ format:
 
 - Bourdieu, Pierre. 1984. *Distinction: A Social Critique of the Judgement of Taste*. Translated by Richard Nice. Cambridge, MA, Harvard University Press. (Chap. 3)
 
-- Rivera, Lauren. 2012. "Hiring as Cultural Matching: The Case of Elite Professional Service Firms." *American Sociological Review* 77 (6): 999–1022. [link](https://doi.org/10.1177/0003122412463213)
-
 - Bryson, Bethany. 1996. "Anything but Heavy Metal”: Symbolic Exclusion and Musical Dislikes." *American Sociological Review* 61:884-899. [link](https://www.jstor.org/stable/2096459)
 
 - Lizardo, Omar, and Sara Skiles. 2016. "Cultural Objects as Prisms: Perceived Audience Composition of Musical Genres as a Resource for Symbolic Exclusion." *Socius* 2. [link](https://doi.org/10.1177/2378023116641695)
+
+- Rivera, Lauren. 2012. "Hiring as Cultural Matching: The Case of Elite Professional Service Firms." *American Sociological Review* 77 (6): 999–1022. [link](https://doi.org/10.1177/0003122412463213)
 
 ### Week 6: Culture, Institutions, and Historical Change
 
@@ -83,7 +83,7 @@ format:
 
 - Alexander, Jeffrey, and Philip Smith. 2001. “The Strong Program in Cultural Theory: Elements of a Structural Hermeneutics.” in *Handbook of Sociological Theory*, Pp. 135-150. Boston, MA: Springer.
 
-- Geertz, Clifford. 1973. *The Interpretation of Culture*. New York: Basic Books. (pp. 3-30, 193-233, 412-453).
+- Geertz, Clifford. 1973. *The Interpretation of Culture*. New York: Basic Books. (Chap. 1, Chap. 8 and Chap. 15).
 
 - Eliasoph, Nina, and Paul Lichterman. 2003. "Culture in Interaction." *American Journal of Sociology* 108(4): 735-794. [link](https://doi.org/10.1086/367920)
 
@@ -110,7 +110,6 @@ format:
 - Fourcade, Marion and Kieran Healy. 2017. "Seeing Like a Market." *Socio-Economic Review* 15.1: 9-29. [link](https://doi.org/10.1093/ser/mww033)
 
 - Krippner, Greta R. and Daniel Hirschman. 2022. "The Person of the Category: The Pricing of Risk and the Politics of Classification in Insurance and Credit." *Theory & Society* 51(5): 685-727. [link](https://doi.org/10.1007/s11186-022-09500-5)
-
 
 ### Week 10: Culture and Cognition
 
