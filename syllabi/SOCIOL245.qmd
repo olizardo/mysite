@@ -29,7 +29,7 @@ This course is designed with two main goals in mind:
 
 - To prepare for the sociology of culture field exam. 
 
-Although the course is designed to prepare sociology graduate students for the culture field exam taking the course in no way obligates students to take the exam. I am sure some of you are taking the class for you personal edification or because you know culture is one of the major areas of contemporary sociology that everyone should be familiar with!
+Although the course is designed to prepare sociology graduate students for the culture field exam, taking the course in no way obligates students to take the exam. I am sure some of you are taking the course for you personal edification, or because you know culture is one of the major areas of contemporary sociology that everyone should be familiar with!
 
 In any case, by the end of the term we will have covered the bulk of the "core" section of the [sociology of culture field exam reading list](https://docs.google.com/document/d/1G0qFGGka9eBAzYnhvaCuNI7NtNY5kcNXvjBoWXP9ZZE/edit?usp=sharing). Students who are interested in taking the culture fieldt exam should schedule an appointment to discuss optional readings, identify a second reader, and otherwise prepare to take the exam. This remaining preparation should take about a quarter of self-directed work during which you periodically check in with your readers.
 
@@ -39,9 +39,10 @@ The class is structured as a mixed lecture/discussion seminar. I will begin each
 
 # Course requirements
 There are three primary requirements in the class:
+
 1. Do the readings before class
-2. Participate in class discussion (50% of the final grade)
-3. Produce a final written assignment (50% of the final grade)
+1. Participate in class discussion (50% of the final grade)
+1. Produce a final written assignment (50% of the final grade)
 
 ## Doing the Readings
 Thankfully, you are literate, and part of the (increasingly select) [reading class](https://doi.org/10.1146/annurev.soc.31.041304.122312), so this should be no problem. Do the readings!
@@ -50,22 +51,27 @@ Thankfully, you are literate, and part of the (increasingly select) [reading cla
 
 There are two ways to participate in the discussion during the seminar.
 
-1. The formal side of participation will come in the form of you signing up as a co-discussion leader for two out of our nine meetings after week 1. 
+1. The formal side of participation will come in the form of you signing up as a co-discussion leader for *three* out of our nine meetings after week 1. 
 
 1. The informal side will come from you contributing to seminar discussion in the form of questions, comments, and observations regarding the readings assigned for that week.
+
+You can contribute to the seminar discussion in two ways:
+
+- By asking questions and providing comments during our IRL discussion in class.
+- By submitting questions and comments via the Bruinlearn discussion tool before class. 
  
 
 ### First Week Participation
 For our first week meeting, each of you should submit at least one comment or question on that week's reading via the general questions and comments discussion tool. These will be the basis of our seminar discussion for that week. 
 
 ### Discussion Leader Process (Weeks Two through Ten)
-The week you are a discussion leader you will work with your co-discussion leaders to create an analytic memo for each of the two class meetings that week. The memo should go beyond a summary of the readings. Instead you should aim to produce:
+The week you are a discussion leader you will work with your co-discussion leaders to create an analytic memo covering the readings for that week. The memo should go beyond a summary of the readings. Instead you should aim to produce:
 - A synthetic document, bringing up points of commonality, tensions, contradictions, and prospects for future development. 
 - In addition, the memo will close with a series of discussion questions for us to consider in class. The questions can focus on any aspect of the readings, whether conceptual, substantive, empirical applications, implications, and the like.
 - The memo will be submitted by noon the day before class (that is Thursday by 5p) in the so that your classmates have a chance to read it, comment on it, and add their own perspective and questions. You will submit it via the *discussion leader tool on Bruinlearn*, so that we all have a chance to take a look at it before we meet for class discussion.
 
 
-## Writing a Final Written Assingment 
+## Final Written Assingment 
 The basic goal here is for you to end up with something that could be useful to you at the end of the day. As such, I'll give you a set of options here, but if you none of these work, we can talk about something that can be customized for your needs and goals. 
 
 The final written assignment will be due on **Friday March 22nd at 11:59p**.
@@ -79,7 +85,7 @@ This will be a 15-20 page (double-spaced, Times New Roman Font, 12pt, 1in margin
 This will be a 15-20 page (double-spaced, Times New Roman Font, 12pt, 1in margins) draft of a theory paper. The paper will focus on a set of concepts, theoretical ideas, or overall perspectives for approaching the study of social life that are *based, inspired, extend, or incorporate ideas, concepts, debates, or perspectives from cultural sociology* (broadly defined). The goal here is to come up with a draft of a paper that could one day be submitted to the various social science and sociology-oriented journal focused on "culture" or "theory." 
 
 ### Draft Literature Review
-This will be a 10-15 page (double-spaced, Times New Roman Font, 12pt, 1in Margins) draft of a literature review of work *done from a cultural sociology perspective* on a topic of your interest. The paper will cover what has been done in the field so far, what the strengths and limitations of previous is, and will note gaps or opportunities for future work addressing those limitations or extending the literature to new substantive domains, perhaps linking previous work to the some of the stuff we will be reading in class. 
+This will be a 10 page (double-spaced, Times New Roman Font, 12pt, 1in margins) draft of a literature review of work *done from a cultural sociology perspective* on a topic of your interest. The paper will cover what has been done in the field so far, what the strengths and limitations of previous is, and will note gaps or opportunities for future work addressing those limitations or extending the literature to new substantive domains, perhaps linking previous work to the some of the stuff we will be reading in class. 
 
 ### Draft Research Proposal
 This will be a 10 page (single-spaced, Times New Roman Font, 12pt, 1in margins) draft of a research proposal for a *project incorporating core ideas and concepts from cultural sociology* that you plan to start in the near future. The proposal will include a background section reviewing previous work, noting their strengths and limitations, and pointing to gaps in the literature. It will also include an "approach" section describing your research project, your main research questions, the data gathering procedures you will use, and the data-analytic techniques you plan to implement once your data is collected. It will close with an implication sections describing what the contributions of your project will be and why it is relevant and important. 
