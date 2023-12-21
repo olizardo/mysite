@@ -44,8 +44,8 @@ format:
 
 ### Week 3: The Habit Tradition
 - Crawley, S. L., Whitlock, M. C., & Earles, J. (2021). Smithing queer empiricism: Engaging ethnomethodology for a queer social science. *Sociological Theory*, 39(3), 127-152. [pdf]
-- Crossley, N. (2013). Habit and habitus. *Body & Society*, 19(2-3), 136-161. [pdf]
 - Engman, A., & Cranford, C. (2016). Habit and the Body: Lessons for Social Theories of Habit from the Experiences of People with Physical Disabilities. *Sociological Theory*, 34(1), 27-44. [pdf]
+- Ostrow, J. (1987). Habit and inhabitance: an analysis of experience in the classroom. *Human Studies*, 213-224. [pdf]
 - Liao, S. Y., & Huebner, B. (2021). Oppressive things. *Philosophy and Phenomenological Research*, 103(1), 92-113. [pdf]
 - Winchester, D. (2008). Embodying the faith: Religious practice and the making of a Muslim moral habitus. *Social Forces*, 86(4), 1753-1780. [pdf]
 - Pagis, M. (2010). From abstract concepts to experiential knowledge: Embodying enlightenment in a meditation center. *Qualitative Sociology*, 33(4), 469-489. [pdf]
@@ -55,10 +55,11 @@ format:
 - Haslanger, S. (2018). What is a social practice? *Royal Institute of Philosophy Supplements*, 82, 231-247. [pdf]
 - Reckwitz, A. (2002). Toward a theory of social practices: A development in culturalist theorizing. *European Journal of Social Theory*, (2), 243-263. [pdf]
 - Sewell, W. H. (2005). The concept(s) of culture. Pp. 152-174 in *Logics of History*. University of Chicago Press. [pdf]
+- Crossley, N. (2013). Habit and habitus. *Body & Society*, 19(2-3), 136-161. [pdf]
 - Swidler, A. (2001). What anchors cultural practices. Pp. 74-92 in Schatzki, T. R., Knorr-Cetina, K., and Savigny, E. V., editors, *The Practice Turn in Contemporary Theory*. Routledge. [pdf]
-- Casey, E. S. (1984). Habitual body and memory in Merleau-Ponty. In *Phenomenology and the human sciences* (pp. 39-57). Dordrecht: Springer Netherlands.
+- Casey, E. S. (1984). Habitual body and memory in Merleau-Ponty. In *Phenomenology and the Human Sciences* (pp. 39-57). Dordrecht: Springer Netherlands.
 - Dubrule, A. (2022). Gender and Habit: John Dewey and Iris Marion Young on Embodiment and Transformation. *The Pluralist*, 17(1), 45-51. [pdf]
-- Sullivan, S. (2000). Reconfiguring gender with John Dewey: Habit, bodies, and cultural change. Hypatia, 15(1), 23-42. [pdf]
+- Sullivan, S. (2000). Reconfiguring gender with John Dewey: Habit, bodies, and cultural change. *Hypatia*, 15(1), 23-42. [pdf]
 
 ### Week 4:  The Pragmatist Tradition 
 - Brett, G. (2022). Dueling with Dual-Process Models: Cognition, Creativity, and Context. *Sociological Theory*, 40(2), 179-201. 
@@ -66,7 +67,7 @@ format:
 - Timmermans, S., & Tavory, I. (2020). Racist Encounters: A Pragmatist Semiotic Analysis of Interaction. *Sociological Theory*, 38(4), 295-317. 
 - Winchester, D., & Green, K. D. (2019). Talking your self into it: How and when accounts shape motivation for action. *Sociological Theory*, 37(3), 257-281. 
 - Pagis, M., & Summers‐Effler, E. (2021). Aesthetic Engagement. *Sociological Forum* (36), 1371-1394. 
-- Gold, T. (2022). Contentious Tactics as Jazz Performances: A Pragmatist Approach to the Study of Repertoire Change. Sociological Theory, 40(3), 249-271. 
+- Gold, T. (2022). Contentious Tactics as Jazz Performances: A Pragmatist Approach to the Study of Repertoire Change. *Sociological Theory*, 40(3), 249-271. 
 
 #### Further Reading
 - Gross, N. (2009). A pragmatist theory of social mechanisms. *American Sociological Review,_ 74(3), 358-379. 
@@ -79,6 +80,7 @@ format:
 - Tavory, I., & Winchester, D. (2012). Experiential careers: the routinization and de-routinization of religious life. *Theory and Society*, 41, 351-373.
 - Tavory, I., & Eliasoph, N. (2013). Coordinating Futures: Toward a Theory of Anticipation. *American Journal of Sociology*, 118(4), 908-942.
 - Young, I. M. (1980). Throwing like a girl: A phenomenology of feminine body comportment motility and spatiality. *Human Studies*, 3(1), 137-156.
+- Yancy, G. (2008). Elevators, social spaces and racism: A philosophical analysis. *Philosophy & Social Criticism*, 34(8), 843-876. [pdf]
 
 #### Further Reading
 - Atkinson, W. (2010). Phenomenological additions to the Bourdieusian toolbox: Two problems for Bourdieu, two solutions from Schutz. *Sociological Theory*, 28(1), 1-19.
