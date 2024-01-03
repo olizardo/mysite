@@ -69,9 +69,9 @@
 
 - "Theorizing the concept of social tie using frames." *Social Networks* [(pdf)](/workpap/tie-frames.pdf)
 
-- "Two-mode relational similarities." *Social Networks* 76: 34-41. [doi:10.1016/j.socnet.2023.06.002](https://doi.org/10.1016/j.socnet.2023.06.002)
-
 -   "Incubators or diffusers? Examining the dynamic coupling of context and social ties across multiple foci." *Social Networks* [doi:10.1016/j.socnet.2022.02.004](https://doi.org/10.1016/j.socnet.2022.02.004)
+
+- "Two-mode relational similarities." *Social Networks* 76: 34-41. [doi:10.1016/j.socnet.2023.06.002](https://doi.org/10.1016/j.socnet.2023.06.002)
 
 -   "Using big data to examine the effect of urbanism on social networks." *Journal of Urban Affairs* 43:40-56. [https://doi.org/10.1080/07352166.2018.1550350](https://doi.org/10.1080/07352166.2018.1550350)
 
@@ -191,6 +191,8 @@
 -   "Taste and the logic of practice in *Distinction*." *Czech Sociological Review* 50: 335-364. [doi:10.13060/00380288.2014.50.3.105](https://doi.org/10.13060/00380288.2014.50.3.105)
 
 -   "Reconceptualizing and theorizing 'omnivorousness': Genetic and relational mechanisms.'' *Sociological Theory* 30: 260-280. [doi:10.1177/0735275112466999](https://doi.org/10.1177/0735275112466999)
+
+- "Highbrow omnivorousness on the small screen? Cultural industry systems and patterns of cultural choice in Europe." *Poetics: Journal of Empirical Research on Culture, the Media and the Arts* 37: 1-23. [https://doi.org/10.1016/j.poetic.2008.10.001](doi:10.1016/j.poetic.2008.10.001)
 
 -   "The question of culture consumption and stratification revisited." *Sociologica: Italian Online Sociological Review* 2/2008. [doi:10.2383/27709](https://www.rivisteweb.it/doi/10.2383/27709)
 
