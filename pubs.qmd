@@ -102,7 +102,7 @@
 
 ### Cultural Change 
 
-- "Visualizing the decline in cultural participation in Europe post-crisis." *Socius: Sociological Research for a Dynamic World*. [(pdf)](workpap/europe-post-crisis-viz.pdf)
+- "Visualizing the decline in cultural participation in Europe post-crisis." *Socius: Sociological Research for a Dynamic World*. [doi:10.1177/23780231231184968](https://doi.org/10.1177/23780231231184968)
 
 -   "Cultural fragmentation or acquired dispositions? A new approach to accounting for patterns of cultural change." *Socius: Sociological Research for a Dynamic World* 2. [doi:10.1177/2378023116669726](https://doi.org/10.1177/2378023116669726)
 
