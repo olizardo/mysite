@@ -34,6 +34,9 @@ website:
           - text: "SOCIOL 245 (Cultural Sociology)"
             icon: file-text
             href: syllabi/SOCIOL245.html
+          - text: "SOCIOL 111 (Social Networks)"
+            icon: file-text
+            href: syllabi/SOCIOL111.html
       - file: vita.pdf
         text: "Vita"
         icon: file-pdf
