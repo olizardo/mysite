@@ -1,4 +1,5 @@
 ---
+title: "SOCIOL 245 (Cultural Sociology)"
 format: 
   html:
     page-layout: full

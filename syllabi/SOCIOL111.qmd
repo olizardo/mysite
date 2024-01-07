@@ -1,0 +1,198 @@
+---
+title: "SOCIOL 111 (Social Networks)"
+format: 
+  html:
+    page-layout: full
+---
+
+
+**THIS IS A LIVE DOCUMENT CHECK REGULARLY FOR CHANGES**
+
+# Instructor Information
+
+| Name | Omar Lizardo |
+| :---        |    :----   | 
+|Position  | Professor of Sociology |
+|Email | [olizardo@soc.ucla.edu](https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=olizardo@soc.ucla.edu) |
+|url | [https://olizardo.github.io/mysite/](https://olizardo.github.io/mysite/) |
+
+
+# Course Information
+
+| Name | SOCIOL 111 (Social Networks) |
+| :---        |    :----   |
+| Lecture Time | Mondays and Fridays 2-3:15p |
+| Lecture Place | Haines A18 |
+| Office Hours |  Wednesdays and Thursdays 1-2p |
+| Office | Haines 290 or by [Zoom](https://ucla.zoom.us/my/olizardo)  appointment |
+
+# Course Description
+These days, "social networks" are everywhere, [including Hollywood movies starring Jesse Eisenberg](https://www.imdb.com/title/tt1285016/), [self-help bestsellers trying to change your life](https://www.imdb.com/title/tt1285016/), to social media websites trying to get you to click on an ad. But way before networks, networking, and social media networks became buzzwords (e.g., before you were born), they were (and continue to be) a field of rigorous study in the social sciences called **social network analysis**. In fact, networks became central in sociology during the 1960s and 1970s because they were used to take such fuzzy concepts as "social relationships," "social ties," and "social structures" from being evocative abstractions that explained everything (and thus nothing) to real topics of empirical research. 
+
+In this course, we will explore this more concrete and "scientific" part of social networks. We will see that the field of study of social networks is distinctive for not only having its own set of theories and concepts (and associated "lingo") but also for the way in which these concepts are immediately made concrete in mathematical (usually quantitative form). In Social Network Analysis (SNA), there is thus no clear separation of the theory from the analysis part. Another thing is distinctive about SNA concerning other areas of sociology is that it is not thematically restricted. Instead, SNA is comprised of a general set of analytic tools that can be used to study social processes in *any* field of sociology. This course will thus reflect that thematic diversity.
+
+# Thematic Sequence
+
+The first half of the course is designed to introduce you to the entire panoply of concepts and theories that form the core of the field of SNA. This field has a long history, but today it is a massive endeavor recruiting people from all of the social science disciplines. Because the primary tools of SNA are [Graph Theory](https://en.wikipedia.org/wiki/Graph_theory) and [Matrix Algebra](https://en.wikipedia.org/wiki/Matrix_(mathematics)) the first half of the course will focus on that, so it will be the most "math heavy" part of the class (although we will encounter math later too). Then beginning around week 6 we will switch over to theories about social networks work. The second half of the class will broaden the scope as we explore how various social phenomena, from "balance," to status attainment, hierarchy, negative interactions, the diffusion of innovations (and disease), and "the small world" can be understood from a social network perspective. 
+
+# Learning Objectives
+
+By the end of the course, you should be able to:
+
+- Understand basic network concepts and theories.
+- Use social-scientific terminology to describe patterns of structure and change observed in networks.
+- Understand and be capable of using measures based on graph theory and matrix algebra to analyze and describe social networks.
+- Understand the way that social network concepts, theory, and measures can be applied to shed light on a wide variety of phenomena across different fields of study in the social sciences and beyond.
+- Have a good of sense of what the main theories in the field of social networks are and the phenomena they attempt to explain.
+
+# Organization of the Class
+
+*This is how each week of the class is organized.*
+
+- The official meeting times for this class are *Monday* and *Friday* this is when your TA-led section meetings and lectures will happen. Note that you are *required* to attend TA-led section meetings, as this is where your participation grades will be coming from.  
+
+- The lecture component for the class is schedule for **Mondays and Fridays starting at 2p Pacific Standard Time**. The current schedule of topics can be found on the Bruinlearn website under each class module (corresponding to each week). **Attendance at the lecture is not required**, but encouraged if you are able to make it. *Asking questions and taking notes during live delivery of the material aids learning and retention*. 
+
+- All the slides on which the lectures will be based can be found on the associated lesson page on Bruinlearn. **Note that these are live slides** (their contents is bound to change). However, you will be able to see those changes when they happen.
+
+- To prepare for each class, you should read all the material in advance, including slides and textbook readings, take notes, and prepare questions about anything that remains unclear.
+
+- There are no textbooks required for this course. All required readings will come from an online textbook (that is a work in progress). Links to each of the readings can be found in the Bruinlearn site.  
+
+# Course Requirements
+- **Section engagement (10% of the final grade)**: Because this is a large lecture class, attendance and participation at TA-led virtual discussion sections will be your primary form of graded participation and is highly encouraged.  In discussion sections you will: do activities and some writing (both in and out of class), discuss readings and homework, delve deeper, and work together to understand the material. To do this requires attendance, participation, and preparation. Your section TAs will gauge your performance in section to generate this score. You get one discussion section absence as a freebie. After that, each will result in a decrease in your grade for section engagement at the end of the semester (e.g., on your second absence an A- becomes a B+, on the third it becomes a B). *We recommend that you try to keep your camera on during the virtual discussion sections unless you have an overriding reason against*. Being able to interact visually is one form of active participation. 
+
+- **Homework Exercises (40% of the final grade)**: Starting on week 2, there will be **weekly homework assignments** designed to help you understand and apply the theories, concepts, and techniques that we will be learning in class. Instructions for each homework will be available on Bruinlearn.
+
+- **Midterm and Final Exams (50% of the final grade)**: The midterm and final will consist of a **timed exam** (100 minutes) designed to evaluate your understanding and capacity to apply the theories, concepts, and techniques that we will be learning during the quarter (with extra time alloted for those who have exemptions). The final is not cumulative. That means that midterm will deal with material covered from week 1 to week 5 and the final will deal with material covered from week 6 to week 10. 
+
+# Expectations and Policies
+
+## Participation
+*You are expected to participate in section meetings. This will be part of your grade in the course*. If you are unsure of how best to participate, talk to me or your TA and we will share ideas.
+
+## Email and Course Website
+The TAs and I expect you to check your email at least once each weekday and to log in to the course website at least three times a week. As an online course, these are our primary ways of getting in touch with you and ensuring that we are all on the same page. If you are planning to travel, be sure that you have regular access to the internet and a computer while you are away. This is a five-unit general education course. Our experience has been that online students are more successful if they space their work out regularly and predictably each week. 
+
+## Homework Assignments
+**The homework is very important. Please do it**. You will have 8 assignments over the 10 weeks, due weekly through the quarter. These homework assignments will give you an opportunity to use the concepts and techniques from the course to analyze various social systems, as well as testing your understanding of basic definitions and procedures. Think of them like exercises; they are there to build your network muscles!  
+
+**Please make sure you truly understand a solution, and please: DO NOT COPY SOLUTIONS.** We will figure it out. If we discover that some members of a working group have copied solutions, the entire group will be reported to the Dean of Students on the grounds of Academic Misconduct. Even if we don’t catch you, you won’t really understand what you’ve done, and things will not go well when exams roll around. You’ll only be hurting yourself in the long run.
+
+**If you turn in homework late, without permission or an extraordinarily good excuse (e.g., accompanied by a doctor’s note or irrefutable evidence of a zombie apocalypse), you will lose marks**: 2 points out of 10 for each day late. We will not accept homework more than 5 days after the due date, and may impose tighter deadlines for late homework as the need arises. When submitting an assignment, please be sure that you have the final version you intend to upload for grading. 
+
+## Exams
+Exams will usually consist of of multiple choice questions. **Both exams will be open book timed tests and administered via Bruinlearn** (not in person). Some of the questions will require you to engage in some simple arithmetic computations. Exams–including the final-will only be administered on the scheduled dates. An exception will only be made in the case of a documented illness or family emergency.  
+
+<!--# Violence and Discrimination Resources
+UCLA prohibits gender discrimination, sexual harassment, domestic and dating violence, sexual assault, and stalking. If you have experienced any of these, there are a variety of campus resources to assist you, including a confidential hotline where you can talk to someone 24/7: (310) 825-0768. Title IX is a federal civil rights law in the United States of America that was passed as part (Title IX) of the Education Amendments of 1972. Therefore international students have access to the same services at the Title IX office as non-international students. Please note that faculty and TAs are responsible employees, which means faculty, TAs, and other UC employees are required under the UC Policy on Sexual Violence and Sexual Harassment to inform the Title IX Coordinator—a non-confidential resource —should they become aware that you or any other student has experienced sexual violence or gender discrimination.
+
+## Campus-Based Confidential Resources: 
+- You can make an appointment with a CARE advocate to receive confidential support at the CARE Advocacy Office for Sexual and Gender-Based Violence, Murphy A Level, Room 233, [CAREadvocate@careprogram.ucla.edu](mailto:CAREadvocate@careprogram.ucla.edu), (310) 206-2465. CARE offers free and confidential services for students, staff and faculty impacted by sexual assault, relationship violence and stalking.
+- Counseling and Psychological Services (CAPS) also provides confidential counseling to all students and can be reached 24/7 at (310) 825-0768.  
+- Confidential legal counseling and assistance is available with [Student Legal Services](https://www.studentlegal.ucla.edu) at A239 Murphy Hall and or phone (310)-825-9894. 
+- The Office of Ombuds Services provides an informal dispute resolution process for students and postdoctoral employees. You can contact them at  (310) 825-7627 Monday through Friday, 8am-5pm.
+
+
+## Off-Campus Confidential Resources:
+- Rape Treatment Center UCLA Medical Center Santa Monica provides off-campus confidential counseling and guidance 24/7. You can contact them at (424) 259-7208.
+- BEAM (Black Emotional and Mental Health) is a collective of advocates, yoga teachers, artists, therapists, lawyers, religious leaders, teachers, psychologists and activists committed to the emotional/mental health and healing of Black communities. [www.beam.community](https://www.beam.community)
+- CAT-911 provides alternatives to 911 in sexual violence, domestic violence, mental health crisis, and other crises through transformative justice and conflict resolution. [www.cat-911.org](https://cat-911.org/)
+- Sojourn offers support to victims of domestic violence, including shelter, support groups, workshops, hotline calls, children’s empowerment programming, legal services and service referrals. 24/7 hotline: (310) 264-6644
+- Peace Over Violence provides emotional support, information, compassion, accompaniment, referral and advocacy services. 24/7 hotline: (213) 626-3393
+- Los Angeles LGBT Center offers services by LGBT-domestic violence specialists. Fees on a sliding scale. Call (323) 860-5806 from 9am-5pm or a 24/7 hotline at (888) 799-7233
+
+ 
+## Non-Confidential Reporting Resources: 
+- You can also report sexual violence or sexual harassment directly to the University's Title IX Office, 2255 Murphy Hall, [titleix@conet.ucla.edu](mailto:titleix@conet.ucla.edu), (310) 206-3417. 
+- Reports to law enforcement can be made to UCPD at (310) 825-1491. If you report through Title IX or UCPD, they may be required to pursue an official investigation.  
+- **Please note that any appointment you make with a Title IX counselor is NOT confidential.**-->
+
+
+## Final Grading Scheme
+### Assignment Point distribution 
+
+|Assignment | Points |
+|:--------- | :----- |
+|Homework (8, worth 12 pts each) | 120 pts total |
+|Section Engagement | 30 pts total |
+|Midterm  | 75 pts total |
+|Final | 75 pts total |
+|**Total** | **300** |
+
+### Letter Grade Determination
+
+|Letter Grade | Point %| Point Total|
+|:----- | :----- | :----- |
+|**A+** | >= 97% | 291+ |
+|**A**  | 93-96% | 279-290 |
+|**A-** | 90-92% | 270-278 |
+|**B+** | 87-89% | 261-269 |
+|**B**  | 83-86% | 249-260 |
+|**B-** | 80-82% | 240-248 |
+|**C+** | 77-79% | 231-239 |
+|**C**  | 73-76% | 219-230 |
+|**C-** | 70-72% | 210-218 |
+|**D** | 60-69% | 180-209 |
+|**F** | < 60%  | <= 179  |
+
+# Communicating with Us
+
+## Rules of engagement
+1. I try to be very available to my students. However, like you, I have a life beyond this class. I have a family and friends, other students, and other obligations. The TAs do too! 
+2. **Before emailing us with a question, please check the syllabus and/or course website to see if it has been answered somewhere else.** Check the emails I send periodically or ask someone from your small group. 
+3. When you do email or call, please be patient. We might respond immediately, we might not. Give us a day (or a weekend) to get back to you. 
+4. You don't need to schedule an appointment for my student hours. My virtual doors are wide open during that time (check with your TA about their particular scheduling policy). 
+5. However, if you want to meet outside student hours times, please contact me to set up an appointment for a time I am available. 
+6. Feel free to meet with any of us, regardless of the section you are in. However, if you want to discuss a grade, you must talk with the person who graded your assignment (your TA, unless otherwise noted).
+
+## Open Student Hours with Prof. Lizardo
+**Wed. and Thurs. 1-2p at Haines 290** 
+
+- *The Syllabus has answers to the most common questions about the course*. Please, check the syllabus first, before asking us about due-dates, assignment requirements, etc.
+
+- *Bruinlearn will be used for the majority of communication in this course*. You can find a link to the syllabus, the reading schedule, and all assignments there. We will also post lecture slides before each class. We strongly encourage you to make visits to the Canvas site as a regular part of your preparation for this course.
+
+- *E-mail should be used for quick communications* (things that can be responded to in no more than a few sentences); use office hours for anything requiring more depth. Please consider email as subject to the same standards of communication as you would all other forms of written material in this course (i.e., you should use complete sentences, proper punctuation, etc.). We will typically respond to email within two work days. 
+
+- *If you have a small question or a clarification question, please email your TA about it first.* If the TA does not have the answer, then email me. 
+
+- *We will not, under any circumstances discuss grades over email*. Use an office hour appointment to discuss grade issues with me. 
+
+- *Office Hours are available to add to your experience in this course*. Please make use of them.  Each of us has specific office hours each week.  If you can not make it during the times noted earlier, please email with at least two dates and times to arrange a meeting. 
+
+## Academic Code of Conduct
+Students are strongly encouraged to discuss ideas for papers and assignments with other students. You can also show drafts of your papers to other students and receive from them editing assistance. However, all written work (papers, posted questions and comments) must be written by the student submitting the work. Any suspected instance of cheating or plagiarism will be dealt with according to the policies of UCLA’s Honor Code. As an undergraduate at the UCLA, you are bound by the University's academic code of conduct found [here](https://www.deanofstudents.ucla.edu/Individual-Student-Code).
+
+We expect that everyone by now is familiar with it because not knowing the rules is not an excuse; you can violate the conduct without knowing it. So (re) familiarize yourself with it. Of most relevance to the class, is the part of the code of conduct that deals with "Academic Dishonesty."  This term covers a wide range of behaviors and practices, some of which you may think is not such a big deal at all (e.g., copying and pasting a sentence from a Wikipedia article without citation or attribution). Note, however, that academic dishonesty covers much more than that and includes but is not limited to: "cheating, fabrication or falsification, plagiarism, multiple submissions or facilitating academic misconduct which occurs in academic exercises or submissions."
+
+# Frequently Asked Questions
+
+- *I don’t like the time my discussion section meets. Can I join another one?*
+   
+> **No**. You are assigned to the discussion section you are assigned by the registrar and each section must remain the size that it is. However, if you do the legwork of finding another student to switch with you and notify both TAs about it, you may do so. 
+
+- *Is there a discussion the first week?*
+    
+> **No**. There are no discussion section meetings the first week.
+
+- *Do we need to do the readings before or after the lecture?*
+
+> **Yes**. The lectures will make more sense, and you will get more out of them, if you do the readings before the lecture and then review them again after the lecture. 
+
+- *There are a bunch of formulas! Do I have to memorize each and everyone of them to pass the exams?*
+
+> **No**. The beauty of network analysis is that we can clarify social science concepts using math. So most of the time, formulas will be there just to show that this can be done. However, there will be a very small amount (two to three) formulas that are very basic and that you should be able to use in the exam to come up with answers to the question. *I will let you know exactly which formulas these are* and where to find them in the lecture slides and the online lesson handouts.
+
+- *There are lots of concepts and terminology. Do I need to know everything definition?*
+
+> **No**. The textbook goes into more detail on the material and provide important background on key concepts. For the most part the lecture slides should be your guide as to what is important. If it is mentioned on both the textbook and the lecture, it will likely be in the exam. If it is mentioned in the textbook but not the lecture, I will not test you on it. 
+
+- *When should I turn my homework in?*
+
+> Check Bruinlearn for due dates for each homework. 
+
+- *I have multiple final exams on the same day as the one scheduled for this course, can I make a private arrangement to take the final on a different day?*
+
+> **No**. The midterm and final will be scheduled over a 12 hour window. This should allow you to find a time to take it without conflict. This is also information that is available to you from the get go so you can plan accordingly. Making private arrangements with every individual who has multiple finals scheduled for the same day would be both unworkable and unfair to others. The only reasons to reschedule an exam remain the ones listed above: Documentable emergencies, mental and physical health issues, or deaths in the family.
+
