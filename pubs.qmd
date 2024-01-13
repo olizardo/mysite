@@ -158,9 +158,9 @@
 
 ### Social Network Analysis
 
-- "Theorizing the concept of social tie using frames." *Social Networks* [doi:10.1016/j.socnet.2024.01.001](https://doi.org/10.1016/j.socnet.2024.01.001)
-
 -   "Incubators or diffusers? Examining the dynamic coupling of context and social ties across multiple foci." *Social Networks* [doi:10.1016/j.socnet.2022.02.004](https://doi.org/10.1016/j.socnet.2022.02.004)
+
+- "Theorizing the concept of social tie using frames." *Social Networks* 78: 138-149. [doi:10.1016/j.socnet.2024.01.001](https://doi.org/10.1016/j.socnet.2024.01.001)
 
 - "Two-mode relational similarities." *Social Networks* 76: 34-41. [doi:10.1016/j.socnet.2023.06.002](https://doi.org/10.1016/j.socnet.2023.06.002)
 
