@@ -523,5 +523,33 @@
     "title": "SOCIOL 245 (Cultural Sociology)",
     "section": "Week 10 (3/15): Culture and Cognition",
     "text": "Week 10 (3/15): Culture and Cognition\n\nSwidler, Ann. 1986. “Culture in Action: Symbols and Strategies.” American Sociological Review 51: 273-286. link\nVaisey, Stephen. 2009 “Motivation and justification: A Dual-Process Model of Culture in Action.” American Journal of Sociology 114(6): 1675-1715. link\nLizardo, Omar. 2017. “Improving Cultural Analysis: Considering Personal Culture in its Declarative and Nondeclarative Modes.” American Sociological Review 82(1): 88-115. link\nBrubaker, Rogers, Mara Loveman and Peter Stamatov. 2004. “Ethnicity as Cognition.” Theory & Society 33: 31-64. link\nCerulo, Karen A., Vanina Leschziner and Hana Shepherd. 2021. “Rethinking Culture and Cognition.” Annual Review of Sociology 47: 63-85. link"
+  },
+  {
+    "objectID": "soc-111-homeworks/homework1.html",
+    "href": "soc-111-homeworks/homework1.html",
+    "title": "Homework I: Graph Theory",
+    "section": "",
+    "text": "Figure 1: A simple graph.\n\n\n\n\nConsider the graph shown in Figure 1:\n\nWrite down the vertex set of the graph:   \nWrite down the edge set of the graph:"
+  },
+  {
+    "objectID": "soc-111-homeworks/homework1.html#node-neighborhoods",
+    "href": "soc-111-homeworks/homework1.html#node-neighborhoods",
+    "title": "Homework I: Graph Theory",
+    "section": "Node Neighborhoods",
+    "text": "Node Neighborhoods\n\n\n\n\n\nFigure 2: Another simple graph.\n\n\n\n\nConsider the graph shown in Figure 2:\n\nWrite down the neighborhood of node D   \nWrite down the neighborhood of node K   \nWhat is the intersection of the neighborhoods of nodes D and E?   \nWhat is the intersection of the neighborhoods of nodes E and F?   \nWhat is the union of the neighborhoods of nodes H and J?"
+  },
+  {
+    "objectID": "soc-111-homeworks/homework1.html#node-degree",
+    "href": "soc-111-homeworks/homework1.html#node-degree",
+    "title": "Homework I: Graph Theory",
+    "section": "Node Degree",
+    "text": "Node Degree\nConsider the graph shown in Figure 2:\n\nWhat is the degree of node B?  \nWhat is(are) the node(s) with the largest degree?  \nWhat is(are) the node(s) with the smallest degree?"
+  },
+  {
+    "objectID": "soc-111-homeworks/homework1.html#subgraphs",
+    "href": "soc-111-homeworks/homework1.html#subgraphs",
+    "title": "Homework I: Graph Theory",
+    "section": "Subgraphs",
+    "text": "Subgraphs\n\nGo back to Figure 1. Draw the node-deleted subgraph of this graph that excludes nodes D and G"
   }
 ]
