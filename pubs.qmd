@@ -51,6 +51,10 @@
 
 -   "Social networks through the prism of cognition." *Complexity*. [https://doi.org/10.1155/2021/4963903](https://doi.org/10.1155/2021/4963903)
 
+-   "Analysis of link formation, persistence, and dissolution in NetSense data." *Proceedings of the IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining*: 1197-1204. [https://doi.org/10.1109/ASONAM.2016.7752391](https://doi.org/10.1109/ASONAM.2016.7752391)
+
+-   "Influence of personal preferences on link dynamics in social networks." *Complexity* [https://doi.org/10.1155/2017/4543563](https://doi.org/10.1155/2017/4543563)
+
 ### Cognitive Social Science
 
 - The Raw and the (Over)Cooked: States are physical qualities.'' *Metaphor and the Social World*. [https://doi.org/10.1075/msw.00039.ash](doi:10.1075/msw.00039.ash)
@@ -79,6 +83,15 @@
 -   "Beyond the antinomies of structure: Levi-Strauss, Giddens, Bourdieu and Sewell." *Theory and Society* 39: 651-688. [doi:10.1007/s11186-010-9125-1](https://doi.org/10.1007/s11186-010-9125-1)
 
 -   "Formalism, behavioral realism and the interdisciplinary challenge in sociological theory." *Journal for the Theory of Social Behaviour*. 39: 39-79. [doi:10.1111/j.1468-5914.2008.00393.x](https://doi.org/10.1111/j.1468-5914.2008.00393.x)
+
+### Consumers and Consumption
+
+-   Bourdieu, distinction, and aesthetic consumption." In Frederick F. Wherry and Ian Woodward (Eds.), *The Oxford Handbook of Consumption*. Oxford University Press. [doi:10.1093/oxfordhb/9780190273385.013.4](http://dx.doi.org/10.1093/oxfordhb/9780190273385.013.4)
+
+-   "The question of culture consumption and stratification revisited." *Sociologica: Italian Online Sociological Review* 2/2008. [doi:10.2383/27709](https://www.rivisteweb.it/doi/10.2383/27709)
+
+-   "The puzzle of women's 'highbrow' culture consumption: Integrating gender and work into Bourdieu's class theory of taste." *Poetics: Journal of Empirical Research on Culture, the Media and the Arts* 34: 1-23. [doi:10.1016/j.poetic.2005.09.0011](https://doi.org/10.1016/j.poetic.2005.09.001)
+
 
 ### Cultural Change 
 
@@ -166,19 +179,13 @@
 
 -   "Using big data to examine the effect of urbanism on social networks." *Journal of Urban Affairs* 43:40-56. [https://doi.org/10.1080/07352166.2018.1550350](https://doi.org/10.1080/07352166.2018.1550350)
 
--   "Analysis of link formation, persistence, and dissolution in NetSense data." *Proceedings of the IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining*: 1197-1204. [https://doi.org/10.1109/ASONAM.2016.7752391](https://doi.org/10.1109/ASONAM.2016.7752391)
-
 -   "Neither influence nor selection: Examining the co-evolution of political orientation and social networks in the *NetSense* and *NetHealth* studies." *PloS one* 15: e0233458. [https://doi.org/10.1371/journal.pone.0233458](https://doi.org/10.1371/journal.pone.0233458)
-
--   "Influence of personal preferences on link dynamics in social networks." *Complexity* [https://doi.org/10.1155/2017/4543563](https://doi.org/10.1155/2017/4543563)
 
 -   "A dyadic reciprocity index for repeated interaction networks." *Network Science* 1: 31-48. [https://doi.org/10.1017/nws.2012.5](https://doi.org/10.1017/nws.2012.5)
 
 -   "Predictors of short-term decay of cell phone contacts in a large scale communication network." *Social Networks* 33: 245-257. [https://doi.org/10.1016/j.socnet.2011.07.002](https://doi.org/10.1016/j.socnet.2011.07.002)
 
-### Sociology of Taste and Consumption
-
--   Bourdieu, distinction, and aesthetic consumption." In Frederick F. Wherry and Ian Woodward (Eds.), *The Oxford Handbook of Consumption*. Oxford University Press. [doi:10.1093/oxfordhb/9780190273385.013.4](http://dx.doi.org/10.1093/oxfordhb/9780190273385.013.4)
+### Sociology of Taste 
 
 -   "The end of symbolic exclusion? The rise of 'categorical tolerance' in the musical tastes of Americans: 1993 - 2012." *Sociological Science* 3: 85-108. [doi:10.15195/v3.a5](https://doi.org/10.15195/v3.a5)
 
@@ -194,6 +201,3 @@
 
 - "Highbrow omnivorousness on the small screen? Cultural industry systems and patterns of cultural choice in Europe." *Poetics: Journal of Empirical Research on Culture, the Media and the Arts* 37: 1-23. [https://doi.org/10.1016/j.poetic.2008.10.001](doi:10.1016/j.poetic.2008.10.001)
 
--   "The question of culture consumption and stratification revisited." *Sociologica: Italian Online Sociological Review* 2/2008. [doi:10.2383/27709](https://www.rivisteweb.it/doi/10.2383/27709)
-
--   "The puzzle of women's 'highbrow' culture consumption: Integrating gender and work into Bourdieu's class theory of taste." *Poetics: Journal of Empirical Research on Culture, the Media and the Arts* 34: 1-23. [doi:10.1016/j.poetic.2005.09.0011](https://doi.org/10.1016/j.poetic.2005.09.001)

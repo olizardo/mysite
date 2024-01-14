@@ -75,7 +75,7 @@ Consider the graph shown in @fig-grex2:
 <br>
 <br>
 
-1. What is the **intersection** of the neighborhoods of nodes *D* and *E*?
+1. What is the **intersection** of the neighborhoods of nodes *D* and *I*?
 <br>
 <br>
 <br>
