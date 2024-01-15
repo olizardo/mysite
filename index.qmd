@@ -36,14 +36,11 @@ I am also:
   <li>Current member of the [Sociological Research Association](https://www.sociological-research-assoc.org/).</li>
   <li>Current member of the Board of Reviewing Editors of the journal [*Science*](https://www.science.org/journal/science).</li>
   <li>Associate editor for the journal [*Discover Data*](https://www.springer.com/journal/44248). </li>
-  <li>Current member of the Editorial Advisory Board of the journals [*Theory & Society*](https://www.springer.com/journal/11186), [*Poetics*](https://www.sciencedirect.com/journal/poetics), and [*Journal for the Theory of Social Behaviour*](https://onlinelibrary.wiley.com/journal/14685914).</li>
-  <li>Current member of the Editorial Advisory Board for the [*Stanford University Press Series on Culture and Economic Life*](https://www.sup.org/books/series/?series=CULTURE%20AND%20ECONOMIC%20LIFE).</li>
-  <li>Current member of the Editorial Advisory Board for the [*Princeton University Press Series on Studies in Cultural Sociology*](https://press.princeton.edu/series/princeton-studies-in-cultural-sociology).</li>
-  <li>One of the lead editors of the journal [*Sociological Theory*](https://journals.sagepub.com/home/stx) with [S. L. Crawley](http://sociology.usf.edu/faculty/scrawley/), [Z. Magubane](https://www.bc.edu/bc-web/schools/mcas/departments/sociology/people/faculty-directory/zine-magubane.html), and [V. Patil](https://www.linkedin.com/in/vrushali01).</li>
+  <li>Current member of the Editorial Advisory Board of the journals [*Poetics*](https://www.sciencedirect.com/journal/poetics), and [*Journal for the Theory of Social Behaviour*](https://onlinelibrary.wiley.com/journal/14685914)</li> and the book series [*Stanford University Press Series on Culture and Economic Life*](https://www.sup.org/books/series/?series=CULTURE%20AND%20ECONOMIC%20LIFE) and [*Princeton University Press Series on Studies in Cultural Sociology*](https://press.princeton.edu/series/princeton-studies-in-cultural-sociology).</li>
+  <li>Current co-editor of the journal [*Sociological Theory*](https://journals.sagepub.com/home/stx), with [Z. Magubane](https://www.bc.edu/bc-web/schools/mcas/departments/sociology/people/faculty-directory/zine-magubane.html), [V. Patil](https://www.linkedin.com/in/vrushali01) and [S. L. Crawley](http://sociology.usf.edu/faculty/scrawley/).</li>
 </ul>
 
 <center>
 {{< ai google-scholar size=Large >}} [Google Scholar](https://scholar.google.com/citations?user=Lt5nMNkAAAAJ&hl=en) {{< ai semantic-scholar size=Large >}} [Semantic Scholar](https://www.semanticscholar.org/author/Omar-Lizardo/2632398) {{< ai orcid size=large >}} [0000-0002-5405-3007](https://orcid.org/0000-0002-5405-3007)<br>
-{{< fa brands mastodon size=large >}}[@omarlizardo@sciences.social](https://sciences.social/@omarlizardo)
 {{< fa envelope size=large >}} [olizardo@soc.ucla.edu](mailto:olizardo@soc.ucla.edu)
 </center >
