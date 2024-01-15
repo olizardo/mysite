@@ -3,8 +3,9 @@ project:
   output-dir: docs
 
 website:
-  title: "Omar Lizardo"
+  title: "Omar Lizardo's Academic Website"
   search: true
+  open-graph: true
   repo-url: https://github.com/olizardo/mysite
   repo-actions: [source]
   navbar:
@@ -50,7 +51,9 @@ website:
         
 format:
   html:
-    theme: default
+    theme:
+      light: flatly
+      dark: darkly    
     css: styles.css
     toc: true
 
