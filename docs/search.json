@@ -474,5 +474,12 @@
     "title": "SOCIOL 245 (Cultural Sociology)",
     "section": "Week 10 (3/15): Culture and Cognition",
     "text": "Week 10 (3/15): Culture and Cognition\n\nSwidler, Ann. 1986. “Culture in Action: Symbols and Strategies.” American Sociological Review 51: 273-286. link\nVaisey, Stephen. 2009 “Motivation and justification: A Dual-Process Model of Culture in Action.” American Journal of Sociology 114(6): 1675-1715. link\nLizardo, Omar. 2017. “Improving Cultural Analysis: Considering Personal Culture in its Declarative and Nondeclarative Modes.” American Sociological Review 82(1): 88-115. link\nBrubaker, Rogers, Mara Loveman and Peter Stamatov. 2004. “Ethnicity as Cognition.” Theory & Society 33: 31-64. link\nCerulo, Karen A., Vanina Leschziner and Hana Shepherd. 2021. “Rethinking Culture and Cognition.” Annual Review of Sociology 47: 63-85. link"
+  },
+  {
+    "objectID": "soc-111-homeworks/homework2.html",
+    "href": "soc-111-homeworks/homework2.html",
+    "title": "Homework II: Directed Graphs",
+    "section": "",
+    "text": "Figure 1: A directed graph.\n\n\n\n\nConsider the graph shown in Figure 1:\n\nWrite down the edge set of the graph:   \nWho are the out-neighbors of node A?   \nWho are the in-neighbors of node D?   \nWhat is the intersection of the out-neighborhoods of nodes D and A?   \nWhat is the intersection of the in-neighborhoods of nodes D and F?   \nWhat is the union of the out-neighborhoods of nodes E and A?   \nWhat is the union of the in-neighborhoods of nodes D and F?   \nWhat is the out-degree of node E?   \nWhat is the in-degree of node D?   \nWhat is(are) the node(s) with the largest out-degree?   \nWhat is(are) the node(s) with the largest in-degree?   \nWhat is(are) the node(s) with the smallest out-degree?   \nWhat is(are) the node(s) with the smallest in-degree?   \nWhich is(are) the receiver node(s) in the graph?   \nWhich is(are) the transmitter node(s) in the graph?   \nWrite down the set of mutual dyads in the graph:   \nWhat type of dyad is formed by the subgraph containing nodes C and F?   \nWhat type of dyad is formed by the subgraph containing nodes B and C?   \nWhat type of dyad is formed by the subgraph containing nodes E and I?   \nHow many mutual dyads are there in the graph?"
   }
 ]
