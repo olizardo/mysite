@@ -56,7 +56,7 @@ format:
       dark: darkly    
     css: styles.css
     toc: true
-    linkcolor: "#ff7e26 ;"
+    linkcolor: "#ff7e26;"
 
 editor: source
 

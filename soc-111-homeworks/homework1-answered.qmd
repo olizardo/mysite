@@ -4,6 +4,7 @@ title: "Homework I: Graph Theory"
 
 ```{r setup, include=FALSE}
     knitr::opts_chunk$set(echo = FALSE, message=FALSE, warning=FALSE)
+    require(kableExtra)
     require(ggraph)
     require(tidygraph)
     require(igraph)
@@ -33,12 +34,22 @@ Consider the graph shown in @fig-grex1:
 
 1. Write down the **vertex set** of the graph: 
 <br>
+`r V(gr)$name`
 <br>
-<br>
+`r paste("V", V(gr)$name, sep = "")`
 
 1. Write down the **edge set** of the graph:
 <br>
-<br>
+```{r}
+    edges <- gr %>% 
+          activate(edges) %>% 
+          mutate(to_name = .N()$name[to], 
+          from_name = .N()$name[from]) %>% 
+          as_tibble() %>% 
+          select(from = from_name, to = to_name)
+kbl(t(paste(edges$from, edges$to, sep = "")))
+```
+
 <br>
 
 ## Node Neighborhoods
@@ -67,27 +78,27 @@ Consider the graph shown in @fig-grex2:
 
 1. Write down the **neighborhood** of node *D*
 <br>
-<br>
+`r toupper(letters[neighbors(gr, "D")])`
 <br>
 
 1. Write down the **neighborhood** of node *K*
 <br>
-<br>
+`r toupper(letters[neighbors(gr, "K")])`
 <br>
 
 1. What is the **intersection** of the neighborhoods of nodes *D* and *I*?
 <br>
-<br>
+`r toupper(intersect(letters[neighbors(gr, "D")], letters[neighbors(gr, "I")]))`
 <br>
 
 1. What is the **intersection** of the neighborhoods of nodes *E* and *F*?
 <br>
-<br>
+`r toupper(intersect(letters[neighbors(gr, "E")], letters[neighbors(gr, "F")]))`
 <br>
 
 1. What is the **union** of the neighborhoods of nodes *H* and *J*? 
 <br>
-<br>
+`r toupper(union(letters[neighbors(gr, "E")], letters[neighbors(gr, "F")]))`
 <br>
 
 ## Node Degree
@@ -96,14 +107,17 @@ Consider the graph shown in @fig-grex2:
 
 1. What is the **degree** of node *B*?
 <br>
+`r degree(gr, "B")`
 <br>
 
 1. What is(are) the node(s) with the largest **degree**?
 <br>
+`r max(degree(gr))`
 <br>
 
 1. What is(are) the node(s) with the smallest **degree**?
 <br>
+`r min(degree(gr))`
 <br>
 
 ## Subgraphs
@@ -112,14 +126,17 @@ Consider the graph shown in @fig-grex2:
 <br>
 <br>
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+```{r}
+    set.seed(529)
+    n <- 8
+    gr <- play_gnm(n = n, m = 16, directed = FALSE, loops = FALSE)
+    gr <- mutate(gr, name = toupper(letters[1:n]))
+    gr <- delete_vertices(gr, c("D", "G", "H"))
+    p <- ggraph(gr, layout = 'auto') 
+    p <- p + geom_edge_link(color = "steelblue", width = 1.25) 
+    p <- p + geom_node_point(aes(x = x, y = y), size = 18, color = "tan2") 
+    p <- p + geom_node_text(aes(label = name), size = 8, color = "white")
+    p <- p + theme_graph() + ylim(-1, 1)
+    p
+```
+
