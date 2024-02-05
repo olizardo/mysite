@@ -12,7 +12,7 @@ title: "Homework IV: Indirect Connections and Matrices"
 
 ## Indirect Connections
 
-Consider the graph shown in Figure @fig-grex1:
+Consider the graph shown in @fig-grex1:
 
 ```{r}
 #| label: fig-grex1
