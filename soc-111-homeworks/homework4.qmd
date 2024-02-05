@@ -37,12 +37,7 @@ Consider the graph shown in @fig-grex1:
     p
 ```
 
-1. Write down *all* the **paths** connecting node *A* and node *D*:
-<br>
-<br>
-<br>
-<br>
-<br>
+1. Write down *all* the **paths** of length five ($l = 5$) connecting node *G* and node *F*:
 <br>
 <br>
 <br>
@@ -63,7 +58,7 @@ Consider the graph shown in @fig-grex1:
 <br>
 <br>
 
-1. Write down the the **shortest path(s)** connecting nodes *G* and *I*:
+1. Write down all the **shortest paths** connecting nodes *G* and *I*:
 <br>
 <br>
 <br>
@@ -72,7 +67,7 @@ Consider the graph shown in @fig-grex1:
 <br>
 
 
-1. Write down *every* that **cycle** starts and ends with node *F*:
+1. Write down one **cycle** of length six that starts and ends with node *C*:
 <br>
 <br>
 <br>
@@ -125,7 +120,7 @@ Consider the graph shown in @fig-grex2:
 <br>
 <br>
 
-1. Write down *every* that **cycle** starts and ends with node *D*:
+1. Write down a directed **cycle** of length five ($l = 5$) starts and ends with node *D*:
 <br>
 <br>
 <br>
