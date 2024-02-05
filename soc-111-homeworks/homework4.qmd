@@ -37,7 +37,7 @@ Consider the graph shown in @fig-grex1:
     p
 ```
 
-1. Write down *all* the **paths** of length five ($l = 5$) connecting node *G* and node *F*:
+1. Write down *all* the **paths** of length four ($l = 4$) connecting node *G* and node *F*:
 <br>
 <br>
 <br>

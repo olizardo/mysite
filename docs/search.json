@@ -522,7 +522,7 @@
     "href": "soc-111-homeworks/homework4.html",
     "title": "Homework IV: Indirect Connections and Matrices",
     "section": "",
-    "text": "Consider the graph shown in Figure 1:\n\n\n\n\n\nFigure 1: An undirected graph.\n\n\n\n\n\nWrite down all the paths of length five (\\(l = 5\\)) connecting node G and node F:        \nWrite down all the paths of length two (\\(l = 2\\)) featuring node B as the inner node:         \nWrite down all the shortest paths connecting nodes G and I:      \nWrite down one cycle of length six that starts and ends with node C:"
+    "text": "Consider the graph shown in Figure 1:\n\n\n\n\n\nFigure 1: An undirected graph.\n\n\n\n\n\nWrite down all the paths of length four (\\(l = 4\\)) connecting node G and node F:        \nWrite down all the paths of length two (\\(l = 2\\)) featuring node B as the inner node:         \nWrite down all the shortest paths connecting nodes G and I:      \nWrite down one cycle of length six that starts and ends with node C:"
   },
   {
     "objectID": "soc-111-homeworks/homework4.html#directed-paths",
