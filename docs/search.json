@@ -513,8 +513,29 @@
   {
     "objectID": "soc-111-homeworks/homework3.html",
     "href": "soc-111-homeworks/homework3.html",
-    "title": "Homework III:",
+    "title": "Homework III: Graph Metrics",
     "section": "",
     "text": "Figure 1: An undirected graph.\n\n\n\n\nConsider the graph shown in Figure 1:\n\nWhat is the order of the graph?  \nWrite down the graph’s degree sequence:  \nWhat is the graph’s degree range?  \nWhat is the graph’s sum of degrees?  \nWhat is the size of the graph?  \nWhat is the graph’s average degree?  \nWhat is the graph’s maximum size?  \nCompute the density of the graph:    \n\n\n\n\n\n\nFigure 2: A directed graph.\n\n\n\n\nConsider the graph shown in Figure 2:\n\nWhat is the graph’s out-degree sequence?  \nWhat is the graph’s in-degree sequence?  \nWhat is the graph’s out-degree range?  \nWhat is the graph’s in-degree range?  \nWhat is the graph’s sum of degrees?  \nWhat is the size of the graph?  \nWhat is the graph’s maximum size?  \nCompute the density of the graph:"
+  },
+  {
+    "objectID": "soc-111-homeworks/homework4.html",
+    "href": "soc-111-homeworks/homework4.html",
+    "title": "Homework IV: Indirect Connections and Matrices",
+    "section": "",
+    "text": "Consider the graph shown in Figure Figure 1:\n\n\n\n\n\nFigure 1: An undirected graph.\n\n\n\n\n\nWrite down all the paths connecting node A and node D:             \nWrite down all the paths of length two (\\(l = 2\\)) featuring node B as the inner node:         \nWrite down the the shortest path(s) connecting nodes G and I:      \nWrite down every that cycle starts and ends with node F:"
+  },
+  {
+    "objectID": "soc-111-homeworks/homework4.html#directed-paths",
+    "href": "soc-111-homeworks/homework4.html#directed-paths",
+    "title": "Homework IV: Indirect Connections and Matrices",
+    "section": "Directed Paths",
+    "text": "Directed Paths\nConsider the graph shown in Figure 2:\n\n\n\n\n\nFigure 2: A directed graph.\n\n\n\n\n\nWrite down all the directed path(s) going from node G to node B:      \nWhat is the length of the shortest directed path(s) connecting going from node A to node C?   \nIf B wanted to send a message to H in the most efficient way, how many intermediaries would B have to use?   \nWrite down every that cycle starts and ends with node D:"
+  },
+  {
+    "objectID": "soc-111-homeworks/homework4.html#matrices",
+    "href": "soc-111-homeworks/homework4.html#matrices",
+    "title": "Homework IV: Indirect Connections and Matrices",
+    "section": "Matrices",
+    "text": "Matrices\n\nIn the matrix below, write down the cell entries for the adjacency matrix corresponding to the graph shown in Figure 2:\n\n\n\n\n\n \n  \n      \n    A \n    B \n    C \n    D \n    E \n    F \n    G \n    H \n    I \n  \n \n\n  \n    A \n    ---- \n     \n     \n     \n     \n     \n     \n     \n     \n  \n  \n    B \n     \n    ---- \n     \n     \n     \n     \n     \n     \n     \n  \n  \n    C \n     \n     \n    ---- \n     \n     \n     \n     \n     \n     \n  \n  \n    D \n     \n     \n     \n    ---- \n     \n     \n     \n     \n     \n  \n  \n    E \n     \n     \n     \n     \n    ---- \n     \n     \n     \n     \n  \n  \n    F \n     \n     \n     \n     \n     \n    ---- \n     \n     \n     \n  \n  \n    G \n     \n     \n     \n     \n     \n     \n    ---- \n     \n     \n  \n  \n    H \n     \n     \n     \n     \n     \n     \n     \n    ---- \n     \n  \n  \n    I \n     \n     \n     \n     \n     \n     \n     \n     \n    ---- \n  \n\n\n\n\n\n\nIn the matrix below, write down the cell entries for the reachability matrix corresponding to the graph shown in Figure 2:\n\n\n\n\n\n \n  \n      \n    A \n    B \n    C \n    D \n    E \n    F \n    G \n    H \n    I \n  \n \n\n  \n    A \n    ---- \n     \n     \n     \n     \n     \n     \n     \n     \n  \n  \n    B \n     \n    ---- \n     \n     \n     \n     \n     \n     \n     \n  \n  \n    C \n     \n     \n    ---- \n     \n     \n     \n     \n     \n     \n  \n  \n    D \n     \n     \n     \n    ---- \n     \n     \n     \n     \n     \n  \n  \n    E \n     \n     \n     \n     \n    ---- \n     \n     \n     \n     \n  \n  \n    F \n     \n     \n     \n     \n     \n    ---- \n     \n     \n     \n  \n  \n    G \n     \n     \n     \n     \n     \n     \n    ---- \n     \n     \n  \n  \n    H \n     \n     \n     \n     \n     \n     \n     \n    ---- \n     \n  \n  \n    I \n     \n     \n     \n     \n     \n     \n     \n     \n    ---- \n  \n\n\n\n\n\n\nIn the matrix below, write down the cell entries geodesic distance matrix corresponding to the graph shown in Figure 1:\n\n\n\n\n\n \n  \n      \n    A \n    B \n    C \n    D \n    E \n    F \n    G \n    H \n    I \n  \n \n\n  \n    A \n    ---- \n     \n     \n     \n     \n     \n     \n     \n     \n  \n  \n    B \n     \n    ---- \n     \n     \n     \n     \n     \n     \n     \n  \n  \n    C \n     \n     \n    ---- \n     \n     \n     \n     \n     \n     \n  \n  \n    D \n     \n     \n     \n    ---- \n     \n     \n     \n     \n     \n  \n  \n    E \n     \n     \n     \n     \n    ---- \n     \n     \n     \n     \n  \n  \n    F \n     \n     \n     \n     \n     \n    ---- \n     \n     \n     \n  \n  \n    G \n     \n     \n     \n     \n     \n     \n    ---- \n     \n     \n  \n  \n    H \n     \n     \n     \n     \n     \n     \n     \n    ---- \n     \n  \n  \n    I \n     \n     \n     \n     \n     \n     \n     \n     \n    ---- \n  \n\n\n\n\n\n\nWhat is the diameter of the graph shown in Figure 1?"
   }
 ]
