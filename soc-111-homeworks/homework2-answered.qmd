@@ -26,7 +26,7 @@ title: "Homework II: Directed Graphs"
     gr <- gr - edge("G|C")
     gr <- gr - edge("A|G")
     gr <- gr - edge("J|A")
-    gr <- add_edges(gr, c(9,10, 4,5, 4,8, 9,4, 1,4, 9,5))
+    gr <- add_edges(gr, c(9, 10, 4,5, 4,8, 9,4, 1,4, 9,5))
     p <- ggraph(gr, layout = 'auto') 
     p <- p + geom_edge_parallel(color = "steelblue", edge_width = 1.25,
                             arrow = arrow(length = unit(5, 'mm')),
@@ -42,113 +42,128 @@ title: "Homework II: Directed Graphs"
 
 Consider the graph shown in @fig-grex1:
 
-1. Write down the **edge set** of the graph:
+- Write down the **edge set** of the graph:
 ```{r}
     b <- as_edgelist(gr)
     kbl(b)
 ```
 
 
-1. Who are the **out-neighbors** of node *A*?
+- Who are the **out-neighbors** of node *A*?
 ```{r}
    a.out <- t(rownames(as.matrix(neighbors(gr, "A", mode = "out"))))
     kbl(a.out)
 ```
 
 
-1. Who are the **in-neighbors** of node *D*?
+- Who are the **in-neighbors** of node *D*?
 ```{r}
    d.in <- t(rownames(as.matrix(neighbors(gr, "D", mode = "in"))))
     kbl(d.in)
 ```
 
 
-1. What is the **intersection** of the **out-neighborhoods** of nodes *D* and *A*?
+- What is the **intersection** of the **out-neighborhoods** of nodes *D* and *A*?
 ```{r}
    d.out <- t(rownames(as.matrix(neighbors(gr, "D", mode = "out"))))
     kbl(t(intersect(a.out, d.out)))
 ```
 
-1. What is the **intersection** of the **in-neighborhoods** of nodes *D* and *F*?
+- What is the **intersection** of the **in-neighborhoods** of nodes *D* and *F*?
 ```{r}
    f.in <- t(rownames(as.matrix(neighbors(gr, "F", mode = "in"))))
     kbl(t(intersect(f.in, d.in)))
 ```
 
-1. What is the **union** of the **out-neighborhoods** of nodes *E* and *A*?
+- What is the **union** of the **out-neighborhoods** of nodes *E* and *A*?
 ```{r}
    a.out <- t(rownames(as.matrix(neighbors(gr, "A", mode = "out"))))
    e.out <- t(rownames(as.matrix(neighbors(gr, "E", mode = "out"))))
     kbl(t(union(a.out, e.out)))
 ```
-1. What is the **union** of the **in-neighborhoods** of nodes *D* and *F*?
+
+- What is the **union** of the **in-neighborhoods** of nodes *D* and *F*?
 ```{r}
     kbl(t(union(d.in, f.in)))
 ```
 
-1. What is the **out-degree** of node *E*?
+- What is the **out-degree** of node *E*?
 <br>
-$k_{out}^E$ = `r length(neighbors(gr, "E", mode = "out"))`
+$k(E)_{out}$ = `r length(neighbors(gr, "E", mode = "out"))`
 
-1. What is the **in-degree** of node *D*?
+- What is the **in-degree** of node *D*?
 <br>
-$k_{in}^D$ = `r length(neighbors(gr, "D", mode = "in"))`
+$k(D)_{in}$ = `r length(neighbors(gr, "D", mode = "in"))`
 
-1. What is(are) the node(s) with the largest **out-degree**?
+
+- What is(are) the node(s) with the largest **out-degree**?
 ```{r}
-    kbl(t(degree(gr, mode = "out")))
+    d <- as.matrix(degree(gr, mode = "out"))
+    kbl(t(d), format = "html") %>% 
+    kable_styling()
 ```
-
+<br>
+A D
 
 1. What is(are) the node(s) with the largest **in-degree**?
 ```{r}
-    kbl(t(degree(gr, mode = "in")))
+    d <- as.matrix(degree(gr, mode = "in"))
+    kbl(t(d), format = "html") %>% 
+        kable_styling()
 ```
+<br>
+F I
 
 1. What is(are) the node(s) with the smallest **out-degree**?
 <br>
-<br>
-<br>
+B F G
 
 1. What is(are) the node(s) with the smallest **in-degree**?
 <br>
-<br>
-<br>
+A C
 
 
 1. Which is(are) the **receiver node(s)** in the graph?
 <br>
-<br>
-<br>
+B F G
 
 1. Which is(are) the **transmitter node(s)** in the graph?
 <br>
-<br>
-<br>
+A C
 
 1. Write down the set of **mutual dyads** in the graph:
 <br>
-<br>
-<br>
+ED or DE <br>
+DH or HD <br>
+IJ or JI <br>
+DI or ID <br>
+EI or IE <br>
+
+Mutuals Matrix: <br>
+
+```{r}
+    a <- as.matrix(as_adjacency_matrix(gr))
+    b <- a * t(a)
+    kbl(b, format = "html") %>% 
+        kable_classic()
+```
 
 1. What type of **dyad** is formed by the subgraph containing nodes *C* and *F*?
 <br>
-<br>
-<br>
+Asymmetric or Non-reciprocal
 
 1. What type of **dyad** is formed by the subgraph containing nodes *B* and *C*?
 <br>
-<br>
-<br>
+Null or disconnected
 
 1. What type of **dyad** is formed by the subgraph containing nodes *E* and *I*?
 <br>
-<br>
-<br>
+Mutual or Reciprocal
 
 1. How many **mutual dyads** are there in the graph?
 <br>
-<br>
-<br>
+Five (5)
+
+
 
 

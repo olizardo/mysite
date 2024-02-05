@@ -199,9 +199,9 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <p>Consider the graph shown in <a href="#fig-grex1">Figure&nbsp;1</a>:</p>
-<ol type="1">
+<ul>
 <li>Write down the <strong>edge set</strong> of the graph:</li>
-</ol>
+</ul>
 <div class="cell">
 <div class="cell-output-display">
 
@@ -312,9 +312,9 @@ ul.task-list li input[type="checkbox"] {
 
 </div>
 </div>
-<ol type="1">
+<ul>
 <li>Who are the <strong>out-neighbors</strong> of node <em>A</em>?</li>
-</ol>
+</ul>
 <div class="cell">
 <div class="cell-output-display">
 
@@ -332,9 +332,9 @@ ul.task-list li input[type="checkbox"] {
 
 </div>
 </div>
-<ol type="1">
+<ul>
 <li>Who are the <strong>in-neighbors</strong> of node <em>D</em>?</li>
-</ol>
+</ul>
 <div class="cell">
 <div class="cell-output-display">
 
@@ -352,9 +352,9 @@ ul.task-list li input[type="checkbox"] {
 
 </div>
 </div>
-<ol type="1">
+<ul>
 <li>What is the <strong>intersection</strong> of the <strong>out-neighborhoods</strong> of nodes <em>D</em> and <em>A</em>?</li>
-</ol>
+</ul>
 <div class="cell">
 <div class="cell-output-display">
 
@@ -370,9 +370,9 @@ ul.task-list li input[type="checkbox"] {
 
 </div>
 </div>
-<ol type="1">
+<ul>
 <li>What is the <strong>intersection</strong> of the <strong>in-neighborhoods</strong> of nodes <em>D</em> and <em>F</em>?</li>
-</ol>
+</ul>
 <div class="cell">
 <div class="cell-output-display">
 
@@ -387,9 +387,9 @@ ul.task-list li input[type="checkbox"] {
 
 </div>
 </div>
-<ol type="1">
+<ul>
 <li>What is the <strong>union</strong> of the <strong>out-neighborhoods</strong> of nodes <em>E</em> and <em>A</em>?</li>
-</ol>
+</ul>
 <div class="cell">
 <div class="cell-output-display">
 
@@ -409,9 +409,9 @@ ul.task-list li input[type="checkbox"] {
 
 </div>
 </div>
-<ol type="1">
+<ul>
 <li>What is the <strong>union</strong> of the <strong>in-neighborhoods</strong> of nodes <em>D</em> and <em>F</em>?</li>
-</ol>
+</ul>
 <div class="cell">
 <div class="cell-output-display">
 
@@ -431,15 +431,15 @@ ul.task-list li input[type="checkbox"] {
 
 </div>
 </div>
-<ol type="1">
-<li><p>What is the <strong>out-degree</strong> of node <em>E</em>? <br> <span class="math inline">\(k_{out}^E\)</span> = 4</p></li>
-<li><p>What is the <strong>in-degree</strong> of node <em>D</em>? <br> <span class="math inline">\(k_{in}^D\)</span> = 5</p></li>
+<ul>
+<li><p>What is the <strong>out-degree</strong> of node <em>E</em>? <br> <span class="math inline">\(k(E)_{out}\)</span> = 4</p></li>
+<li><p>What is the <strong>in-degree</strong> of node <em>D</em>? <br> <span class="math inline">\(k(D)_{in}\)</span> = 5</p></li>
 <li><p>What is(are) the node(s) with the largest <strong>out-degree</strong>?</p></li>
-</ol>
+</ul>
 <div class="cell">
 <div class="cell-output-display">
 
-<table>
+<table class="table" style="margin-left: auto; margin-right: auto;">
  <thead>
   <tr>
    <th style="text-align:right;"> A </th>
@@ -472,13 +472,14 @@ ul.task-list li input[type="checkbox"] {
 
 </div>
 </div>
+<p><br> A D</p>
 <ol type="1">
 <li>What is(are) the node(s) with the largest <strong>in-degree</strong>?</li>
 </ol>
 <div class="cell">
 <div class="cell-output-display">
 
-<table>
+<table class="table" style="margin-left: auto; margin-right: auto;">
  <thead>
   <tr>
    <th style="text-align:right;"> A </th>
@@ -511,16 +512,175 @@ ul.task-list li input[type="checkbox"] {
 
 </div>
 </div>
+<p><br> F I</p>
 <ol type="1">
-<li><p>What is(are) the node(s) with the smallest <strong>out-degree</strong>? <br> <br> <br></p></li>
-<li><p>What is(are) the node(s) with the smallest <strong>in-degree</strong>? <br> <br> <br></p></li>
-<li><p>Which is(are) the <strong>receiver node(s)</strong> in the graph? <br> <br> <br></p></li>
-<li><p>Which is(are) the <strong>transmitter node(s)</strong> in the graph? <br> <br> <br></p></li>
-<li><p>Write down the set of <strong>mutual dyads</strong> in the graph: <br> <br> <br></p></li>
-<li><p>What type of <strong>dyad</strong> is formed by the subgraph containing nodes <em>C</em> and <em>F</em>? <br> <br> <br></p></li>
-<li><p>What type of <strong>dyad</strong> is formed by the subgraph containing nodes <em>B</em> and <em>C</em>? <br> <br> <br></p></li>
-<li><p>What type of <strong>dyad</strong> is formed by the subgraph containing nodes <em>E</em> and <em>I</em>? <br> <br> <br></p></li>
-<li><p>How many <strong>mutual dyads</strong> are there in the graph? <br> <br> <br></p></li>
+<li><p>What is(are) the node(s) with the smallest <strong>out-degree</strong>? <br> B F G</p></li>
+<li><p>What is(are) the node(s) with the smallest <strong>in-degree</strong>? <br> A C</p></li>
+<li><p>Which is(are) the <strong>receiver node(s)</strong> in the graph? <br> B F G</p></li>
+<li><p>Which is(are) the <strong>transmitter node(s)</strong> in the graph? <br> A C</p></li>
+<li><p>Write down the set of <strong>mutual dyads</strong> in the graph: <br> ED or DE <br> DH or HD <br> IJ or JI <br> DI or ID <br> EI or IE <br></p></li>
+</ol>
+<p>Mutuals Matrix: <br></p>
+<div class="cell">
+<div class="cell-output-display">
+
+<table class=" lightable-classic" style="font-family: &quot;Arial Narrow&quot;, &quot;Source Sans Pro&quot;, sans-serif; margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;">   </th>
+   <th style="text-align:right;"> A </th>
+   <th style="text-align:right;"> B </th>
+   <th style="text-align:right;"> C </th>
+   <th style="text-align:right;"> D </th>
+   <th style="text-align:right;"> E </th>
+   <th style="text-align:right;"> F </th>
+   <th style="text-align:right;"> G </th>
+   <th style="text-align:right;"> H </th>
+   <th style="text-align:right;"> I </th>
+   <th style="text-align:right;"> J </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> A </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> B </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> C </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> D </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> E </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> F </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> G </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> H </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> I </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> J </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:right;"> 0 </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+</div>
+<ol type="1">
+<li><p>What type of <strong>dyad</strong> is formed by the subgraph containing nodes <em>C</em> and <em>F</em>? <br> Asymmetric or Non-reciprocal</p></li>
+<li><p>What type of <strong>dyad</strong> is formed by the subgraph containing nodes <em>B</em> and <em>C</em>? <br> Null or disconnected</p></li>
+<li><p>What type of <strong>dyad</strong> is formed by the subgraph containing nodes <em>E</em> and <em>I</em>? <br> Mutual or Reciprocal</p></li>
+<li><p>How many <strong>mutual dyads</strong> are there in the graph? <br> Five (5)</p></li>
 </ol>
 
 
