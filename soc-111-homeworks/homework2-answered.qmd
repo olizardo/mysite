@@ -1,0 +1,154 @@
+---
+title: "Homework II: Directed Graphs"
+---
+
+```{r setup, include=FALSE}
+    knitr::opts_chunk$set(echo = FALSE, message=FALSE, warning=FALSE)
+    require(ggraph)
+    require(tidygraph)
+    require(igraph)
+    require(kableExtra)
+```
+
+```{r}
+#| label: fig-grex1
+#| fig-cap: "A directed graph."
+#| fig-cap-location: margin   
+#| fig-height: 12
+#| fig-width: 12
+    set.seed(528)
+    gr <- play_gnm(n = 10, m = 26, directed = TRUE, loops = FALSE)
+    gr <- mutate(gr, name = toupper(letters[1:10]))
+    gr <- gr - edge("B|D")
+    gr <- gr - edge("I|H")
+    gr <- gr - edge("F|H")
+    gr <- gr - edge("F|C")
+    gr <- gr - edge("G|C")
+    gr <- gr - edge("A|G")
+    gr <- gr - edge("J|A")
+    gr <- add_edges(gr, c(9,10, 4,5, 4,8, 9,4, 1,4, 9,5))
+    p <- ggraph(gr, layout = 'auto') 
+    p <- p + geom_edge_parallel(color = "steelblue", edge_width = 1.25,
+                            arrow = arrow(length = unit(5, 'mm')),
+                            end_cap = circle(10, 'mm'), 
+                            sep = unit(8, 'mm'))    
+    p <- p + geom_node_point(aes(x = x, y = y), size = 22, color = "tan2") 
+    p <- p + geom_node_text(aes(label = name), size = 10, color = "white")
+    p <- p + theme_graph()
+    p
+```
+
+
+
+Consider the graph shown in @fig-grex1:
+
+1. Write down the **edge set** of the graph:
+```{r}
+    b <- as_edgelist(gr)
+    kbl(b)
+```
+
+
+1. Who are the **out-neighbors** of node *A*?
+```{r}
+   a.out <- t(rownames(as.matrix(neighbors(gr, "A", mode = "out"))))
+    kbl(a.out)
+```
+
+
+1. Who are the **in-neighbors** of node *D*?
+```{r}
+   d.in <- t(rownames(as.matrix(neighbors(gr, "D", mode = "in"))))
+    kbl(d.in)
+```
+
+
+1. What is the **intersection** of the **out-neighborhoods** of nodes *D* and *A*?
+```{r}
+   d.out <- t(rownames(as.matrix(neighbors(gr, "D", mode = "out"))))
+    kbl(t(intersect(a.out, d.out)))
+```
+
+1. What is the **intersection** of the **in-neighborhoods** of nodes *D* and *F*?
+```{r}
+   f.in <- t(rownames(as.matrix(neighbors(gr, "F", mode = "in"))))
+    kbl(t(intersect(f.in, d.in)))
+```
+
+1. What is the **union** of the **out-neighborhoods** of nodes *E* and *A*?
+```{r}
+   a.out <- t(rownames(as.matrix(neighbors(gr, "A", mode = "out"))))
+   e.out <- t(rownames(as.matrix(neighbors(gr, "E", mode = "out"))))
+    kbl(t(union(a.out, e.out)))
+```
+1. What is the **union** of the **in-neighborhoods** of nodes *D* and *F*?
+```{r}
+    kbl(t(union(d.in, f.in)))
+```
+
+1. What is the **out-degree** of node *E*?
+<br>
+$k_{out}^E$ = `r length(neighbors(gr, "E", mode = "out"))`
+
+1. What is the **in-degree** of node *D*?
+<br>
+$k_{in}^D$ = `r length(neighbors(gr, "D", mode = "in"))`
+
+1. What is(are) the node(s) with the largest **out-degree**?
+```{r}
+    kbl(t(degree(gr, mode = "out")))
+```
+
+
+1. What is(are) the node(s) with the largest **in-degree**?
+```{r}
+    kbl(t(degree(gr, mode = "in")))
+```
+
+1. What is(are) the node(s) with the smallest **out-degree**?
+<br>
+<br>
+<br>
+
+1. What is(are) the node(s) with the smallest **in-degree**?
+<br>
+<br>
+<br>
+
+
+1. Which is(are) the **receiver node(s)** in the graph?
+<br>
+<br>
+<br>
+
+1. Which is(are) the **transmitter node(s)** in the graph?
+<br>
+<br>
+<br>
+
+1. Write down the set of **mutual dyads** in the graph:
+<br>
+<br>
+<br>
+
+1. What type of **dyad** is formed by the subgraph containing nodes *C* and *F*?
+<br>
+<br>
+<br>
+
+1. What type of **dyad** is formed by the subgraph containing nodes *B* and *C*?
+<br>
+<br>
+<br>
+
+1. What type of **dyad** is formed by the subgraph containing nodes *E* and *I*?
+<br>
+<br>
+<br>
+
+1. How many **mutual dyads** are there in the graph?
+<br>
+<br>
+<br>
+
+

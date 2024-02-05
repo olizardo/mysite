@@ -102,7 +102,7 @@ Consider the graph shown in @fig-grex2:
     p
 ```
 
-1. Write down *all* the **directed path(s)** going *from* node *G* *to* node *B*:
+1. Write down *all* the **directed path(s)** of length four ($l = 4$) going *from* node *G* *to* node *B*:
 <br>
 <br>
 <br>
