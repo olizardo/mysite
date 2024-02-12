@@ -76,7 +76,7 @@ title: "Homework V: Affiliation Networks"
 
 The Figure above shows the **bipartite graph** corresponding to (part of) the *Southern Women Events Data* a classic social network data set collected in the 1930s by the sociologist Allison Davis and collaborators and included in book [*Deep South*](https://www.amazon.com/Deep-South-Anthropological-Southern-Classics/dp/1570038155). The graph represents observed attendance at 14 social events by 18 Southern "high society" women from the South. 
 
-1. Write down the **affiliation matrix** corresponding to the Southern women network bipartite graph.
+- Write down the **affiliation matrix** corresponding to the Southern women network bipartite graph.
 
 ```{r}
     a <- matrix(" ", nrow = 10, ncol = 8)
@@ -118,7 +118,7 @@ The Figure above shows the **bipartite graph** corresponding to (part of) the *S
 <br>
 <br>
 
-1. Write down the *transpose* of the **affiliation matrix** corresponding to the Southern women network bipartite graph.
+- Write down the *transpose* of the **affiliation matrix** corresponding to the Southern women network bipartite graph.
 
 ```{r}
     t.a <- matrix(" ", nrow = 8, ncol = 10)
@@ -130,9 +130,9 @@ The Figure above shows the **bipartite graph** corresponding to (part of) the *S
         column_spec(1:10, color = "black", border_right = TRUE, border_left = TRUE)
 ```
 
-Using the information in 1 and 2 and what you know about **matrix multiplication** (5pts):
+Using the information in the previous tables and what you know about **matrix multiplication**:
 
-1. Write down the entries corresponding to the **co-membership matrix** of the Southern women.
+- Write down the entries corresponding to the **co-membership matrix** of the Southern women.
 
 ```{r}
     c.m <- matrix(" ", nrow = 10, ncol = 10)
@@ -144,7 +144,7 @@ Using the information in 1 and 2 and what you know about **matrix multiplication
         column_spec(1:10, color = "black", border_right = TRUE, border_left = TRUE)
 ```
 
-1. Write down the entries corresponding to the **group overlap matrix** of the Southern women.
+- Write down the entries corresponding to the **group overlap matrix** of the Southern women.
 
 ```{r}
     g.o <- matrix(" ", nrow = 8, ncol = 8)
