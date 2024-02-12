@@ -74,7 +74,7 @@ title: "Homework V: Affiliation Networks"
     p
 ```
 
-The Figure above shows the **bipartite graph** corresponding to (part of) the *Southern Women Events Data* a classic social network data set collected in the 1930s by the sociologist Allison Davis and collaborators and included in book [*Deep South*](https://www.amazon.com/Deep-South-Anthropological-Southern-Classics/dp/1570038155). The graph represents observed attendance at 14 social events by 18 Southern "high society" women from the South. 
+The Figure above shows the **bipartite graph** corresponding to (part of) the *Southern Women Events Data* a classic social network data set collected in the 1930s by the sociologist Allison Davis and collaborators and included in book [*Deep South*](https://www.amazon.com/Deep-South-Anthropological-Southern-Classics/dp/1570038155). The graph represents observed attendance at 8 social events by 10 Southern "high society" women from the South. 
 
 - Write down the **affiliation matrix** corresponding to the Southern women network bipartite graph.
 
