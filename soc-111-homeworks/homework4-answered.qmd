@@ -128,7 +128,7 @@ Consider the graph shown in @fig-grex2:
 -  If *B* wanted to send a message to *H* in the most efficient way, how many intermediaries would *B* have to use?
 <br>
 ```{r}
-    paths <- all_shortest_paths(gr, from = "A", to = "C", mode = "out")
+    paths <- all_shortest_paths(gr, from = "B", to = "H", mode = "out")
     length(paths$res[[1]]) - 2
 ```
 
