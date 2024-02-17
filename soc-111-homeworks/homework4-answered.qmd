@@ -1,0 +1,198 @@
+---
+title: "Homework IV: Indirect Connections and Matrices"
+---
+
+```{r setup, include=FALSE}
+    knitr::opts_chunk$set(echo = FALSE, message=FALSE, warning=FALSE)
+    require(ggraph)
+    require(kableExtra)
+    require(tidygraph)
+    require(igraph)
+```
+
+## Indirect Connections
+
+Consider the graph shown in Figure 1:
+
+```{r}
+#| label: fig-grex1
+#| fig-cap: "An undirected graph."
+#| fig-cap-location: margin   
+#| fig-height: 12
+#| fig-width: 12
+
+    set.seed(537)
+    w <- 0
+    while (w == 0) {
+      d <- sample(3:9, 9, replace = TRUE)
+      w <- as.numeric(is.graphical.degree.sequence(d))
+      }    
+    gr <- play_degree(d, method = "simple")
+    gr <- mutate(gr, name = toupper(letters[1:length(d)]))
+    p <- ggraph(gr, layout = 'auto') 
+    p <- p + geom_edge_link(color = "steelblue", width =  1.25) 
+    p <- p + geom_node_point(aes(x = x, y = y), size = 22, color = "tan2") 
+    p <- p + geom_node_text(aes(label = name), size = 10, color = "white")
+    p <- p + theme_graph() 
+    p
+```
+
+-  Write down *all* the **paths** of length four ($l = 4$) connecting node *G* and node *F*:
+<br>
+```{r}
+    paths <- all_simple_paths(gr, from = "G", to = "F", mode = "out")
+    p <- paths[which(sapply(paths, length) == 4)]
+    kbl(toupper(matrix(letters[unlist(p)], ncol = 4, byrow = TRUE)))
+```
+
+
+-  Write down *all* the **paths** of length two ($l = 2$) featuring node *B* as the **inner node**:
+<br>
+```{r}
+    paths <- all_simple_paths(gr, from = toupper(letters[1:length(d)]), cutoff = 2)
+    p <- paths[which(sapply(paths, length) == 3)]
+    m <- toupper(matrix(letters[unlist(p)], ncol = 3, byrow = TRUE))
+    m <- m[which(m[, 2] == "B"), ]
+    kbl(m)
+
+```
+
+
+-  Write down all the **shortest paths** connecting nodes *G* and *I*:
+<br>
+```{r}
+    paths <- all_shortest_paths(gr, from = "G", to = "I")
+    m <- toupper(matrix(letters[unlist(paths$res)], ncol = 4, byrow = TRUE))
+    kbl(m[c(1, 3, 5, 7), ])
+```
+
+-  Write down one **cycle** of length six that starts and ends with node *C*:
+<br>
+```{r}
+    c1 <- lapply(all_simple_paths(gr, "F", "C"), function(p) c("C",p))
+    c2 <- lapply(all_simple_paths(gr, "D", "C"), function(p) c("C",p))
+    c3 <- lapply(all_simple_paths(gr, "G", "C"), function(p) c("C",p))
+    c4 <- lapply(all_simple_paths(gr, "B", "C"), function(p) c("C",p))
+    c <- c(c1, c2, c3, c4)
+    c <- c[which(lapply(c, length) == 7)]
+    m <- matrix(unlist(lapply(c, names)), ncol = 7, byrow = TRUE)
+    m[, 1] <- rep("C", nrow(m))
+    kbl(m)
+```
+
+
+
+
+## Directed Paths
+
+Consider the graph shown in @fig-grex2:
+
+```{r}
+#| label: fig-grex2
+#| fig-cap: "A directed graph."
+#| fig-cap-location: margin   
+#| fig-height: 12
+#| fig-width: 12
+
+    set.seed(321)
+    fr <- sample(toupper(letters[1:9]), 24, replace = TRUE)
+    to <- sample(toupper(letters[1:9]), 24, replace = TRUE)
+    el <- matrix(c(fr, to), nc = 2, byrow = TRUE)
+    gr <- as_tbl_graph(simplify(graph_from_edgelist(el)))
+    p <- ggraph(gr, layout = 'auto') 
+    p <- p + geom_edge_parallel(color = "steelblue", edge_width = 1.25,
+                            arrow = arrow(length = unit(7, 'mm')),
+                            end_cap = circle(10, 'mm'), 
+                            sep = unit(8, 'mm'))
+    p <- p + geom_node_point(aes(x = x, y = y), size = 22, color = "tan2") 
+    p <- p + geom_node_text(aes(label = name), size = 10, color = "white")
+    p <- p + theme_graph() 
+    p
+```
+
+- Write down *all* the **directed path(s)** of length four ($l = 4$) going *from* node *G* *to* node *B*:
+<br>
+```{r}
+    paths <- all_simple_paths(gr, from = "G", to = "B", mode = "out")
+    p <- paths[which(sapply(paths, length) == 4)]
+    kbl(toupper(matrix(letters[unlist(p)], ncol = 4, byrow = TRUE)))
+```
+
+- What is the length of the **shortest directed path(s)** going *from* node *A* *to* node *C*?
+<br>
+```{r}
+    paths <- all_shortest_paths(gr, from = "A", to = "C", mode = "out")
+    length(paths$res[[1]])
+```
+
+-  If *B* wanted to send a message to *H* in the most efficient way, how many intermediaries would *B* have to use?
+<br>
+```{r}
+    paths <- all_shortest_paths(gr, from = "A", to = "C", mode = "out")
+    length(paths$res[[1]]) - 2
+```
+
+-  Write down a directed **cycle** of length five ($l = 5$) starts and ends with node *D*:
+<br>
+```{r}
+    c1 <- lapply(all_simple_paths(gr, "G", "D"), function(p) c("D",p))
+    c2 <- lapply(all_simple_paths(gr, "B", "D"), function(p) c("D",p))
+    c <- c(c1, c2)
+    c <- c[which(lapply(c, length) == 6)]
+    m <- matrix(unlist(lapply(c, names)), ncol = 6, byrow = TRUE)
+    m[, 1] <- rep("D", nrow(m))
+    kbl(m)
+```
+
+
+## Matrices
+
+- In the matrix below, write down the cell entries for the **adjacency matrix** corresponding to the graph shown in Figure 2:
+
+```{r}
+    m <- as.matrix(as_adjacency_matrix(gr))
+    diag(m) <- "--"
+    kbl(m[order(rownames(m)), order(colnames(m))], format = "html", align = "c")  %>% 
+         column_spec(1, bold = TRUE) %>% 
+         column_spec (2:10, border_left = T, border_right = T) %>%
+         row_spec(1:9, extra_css = "border-bottom: 1px solid") %>%
+         kable_styling()
+```
+
+- In the matrix below, write down the cell entries for the **reachability matrix** corresponding to the graph shown in Figure 2:
+
+```{r}
+    m <- 1*as.matrix(distances(gr, mode = "out") != Inf)
+    diag(m) <- "--"
+    kbl(m[order(rownames(m)), order(colnames(m))], format = "html", align = "c")  %>% 
+         column_spec(1, bold = TRUE) %>% 
+         column_spec (2:10, border_left = T, border_right = T) %>%
+         row_spec(1:9, extra_css = "border-bottom: 1px solid") %>%
+         kable_styling()
+```
+
+- In the matrix below, write down the cell entries **geodesic distance matrix** corresponding to the graph shown in Figure 1:
+
+```{r}
+    set.seed(537)
+    w <- 0
+    while (w == 0) {
+      d <- sample(3:9, 9, replace = TRUE)
+      w <- as.numeric(is.graphical.degree.sequence(d))
+      }    
+    gr <- play_degree(d, method = "simple")
+    gr <- mutate(gr, name = toupper(letters[1:length(d)]))
+    m <- as.matrix(distances(gr))
+    diag(m) <- "--"
+    kbl(m[order(rownames(m)), order(colnames(m))], format = "html", align = "c")  %>% 
+         column_spec(1, bold = TRUE) %>% 
+         column_spec (2:10, border_left = T, border_right = T) %>%
+         row_spec(1:9, extra_css = "border-bottom: 1px solid") %>%
+         kable_styling()
+```
+
+- What is the **diameter** of the graph shown in Figure 1?
+<br>
+`r max(as.matrix(distances(gr)))`
+
+
