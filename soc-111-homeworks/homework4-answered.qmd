@@ -85,7 +85,7 @@ Consider the graph shown in Figure 1:
 
 ## Directed Paths
 
-Consider the graph shown in @fig-grex2:
+Consider the graph shown in Figure 2:
 
 ```{r}
 #| label: fig-grex2
@@ -122,15 +122,15 @@ Consider the graph shown in @fig-grex2:
 <br>
 ```{r}
     paths <- all_shortest_paths(gr, from = "A", to = "C", mode = "out")
-    length(paths$res[[1]])
 ```
+A: `r length(paths$res[[1]]) - 1`
 
 -  If *B* wanted to send a message to *H* in the most efficient way, how many intermediaries would *B* have to use?
 <br>
 ```{r}
     paths <- all_shortest_paths(gr, from = "B", to = "H", mode = "out")
-    length(paths$res[[1]]) - 2
 ```
+A: `r length(paths$res[[1]]) - 2`
 
 -  Write down a directed **cycle** of length five ($l = 5$) starts and ends with node *D*:
 <br>
@@ -193,6 +193,6 @@ Consider the graph shown in @fig-grex2:
 
 - What is the **diameter** of the graph shown in Figure 1?
 <br>
-`r max(as.matrix(distances(gr)))`
+A: `r max(as.matrix(distances(gr)))`
 
 
