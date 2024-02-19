@@ -1,0 +1,239 @@
+---
+title: "Homework VI: Ego-Network Metrics"
+---
+
+```{r setup, include=FALSE}
+library(tufte)
+    # invalidate cache when the package version changes
+    knitr::opts_chunk$set(echo = FALSE, message=FALSE, warning=FALSE)
+    options(htmltools.dir.version = FALSE)
+    require(ggraph)
+    require(tidygraph)
+    require(igraph)
+    require(colorspace)
+    require(patchwork)
+```
+
+```{r}
+    set.seed(527)
+    s <- 12
+    c1 <- sample(rainbow_hcl(4), s, replace = TRUE)
+    c2 <- sample(rainbow_hcl(5), s, replace = TRUE)
+    c3 <- sample(rainbow_hcl(4), s, replace = TRUE)
+    c4 <- sample(rainbow_hcl(4), s, replace = TRUE)
+
+```
+
+```{r}
+#| label: fig-ego
+#| fig-cap: "Ego Network ties in a hypothetical ego-network."
+#| fig-cap-location: margin  
+#| fig-subcap:
+#|   - "Ego to alter ties."
+#|   - "Alter to alter ties."
+#| layout-ncol: 2 
+#| fig-height: 8
+#| fig-width: 8
+
+    gr <- create_star(s + 1, directed = FALSE) %>% 
+        mutate(name = c("Ego", toupper(letters[1:s])))
+    p <- ggraph(gr, layout = 'star') 
+    p <- p + geom_edge_link(color = "steelblue", width = 1.5) 
+    p <- p + geom_node_point(aes(x = x, y = y), size = c(24, rep(18, s)), color = c("red", rep("tan2", s))) 
+    p <- p + geom_node_text(aes(label = name), size = 8, color = "white")
+    p1 <- p + theme_graph()
+    p1
+    
+     set.seed(375)
+    w <- 0
+    while (w == 0) {
+      d <- sample(0:s-4, s, replace = TRUE)
+      w <- as.numeric(is.graphical.degree.sequence(d))
+      }      
+    gr <- play_degree(d, method = "simple.no.multiple")
+    gr <- mutate(gr, name = toupper(letters[1:length(d)]))
+    p <- ggraph(gr, layout = 'circle') 
+    p <- p + geom_edge_link(color = "steelblue", width = 1.25) 
+    p <- p + geom_node_point(aes(x = x, y = y), size = 16, color = "tan2") 
+    p <- p + geom_node_text(aes(label = name), size = 7, color = "white")
+    p2 <- p + theme_graph() 
+    p2
+```
+
+- Consider @fig-ego(a). This shows the **ego-to-alter** ties in a hypothetical ego-network.
+
+- Consider @fig-ego(b). This shows the **alter-to-alter** ties in the hypothetical ego-network shown in @fig-ego(a).
+
+1. What is the **size** of ego's network?
+<br>
+<br>
+<br>
+
+1. What is ego's clustering coefficient?
+<br>
+<br>
+<br>
+
+
+```{r}
+#| label: fig-altersdem1
+#| fig-cap: "Gender identification of alters."
+#| fig-cap-location: margin  
+#| fig-height: 10
+#| fig-width: 10
+
+    gr <- create_empty(s, directed = FALSE) %>% 
+        mutate(name = toupper(letters[1:s]))
+    p <- ggraph(gr, layout = 'circle') 
+    p <- p + geom_node_point(aes(x = x, y = y, color = c1), size = 24)
+    p <- p + geom_node_text(aes(label = name), size = 12, color = "white")
+    p <- p + theme_graph() + theme(legend.position = "bottom", legend.title = element_blank(), legend.text = element_text(size = 18))
+    p <- p + guides(color = guide_legend(override.aes = list(size = 14))) 
+    p1 <- p + scale_color_discrete(labels = c("Women", "Men", "Genderfluid", "Non-binary"))
+    p1
+```
+
+```{r}
+#| label: fig-altersdem2
+#| fig-cap: "Ethnoracial identification of alters."
+#| fig-cap-location: margin 
+#| fig-height: 10
+#| fig-width: 10
+
+    gr <- create_empty(s) %>% 
+        mutate(name = toupper(letters[1:s]))
+    p <- ggraph(gr, layout = 'circle') 
+    p <- p + geom_node_point(aes(x = x, y = y, color = c2), size = 24)
+    p <- p + geom_node_text(aes(label = name), size = 12, color = "white")
+    p <- p + theme_graph() + theme(legend.position = "bottom", legend.title = element_blank(), legend.text = element_text(size = 18))
+    p <- p + guides(color = guide_legend(override.aes = list(size = 14))) 
+    p2 <- p + scale_color_discrete(labels = c("Asian", "Black", "White", "Native", "Hispanic"))
+    p2
+```
+
+```{r}
+#| label: fig-altersdem3
+#| fig-cap: "Role relations of alters with Ego."
+#| fig-cap-location: margin 
+#| fig-height: 10
+#| fig-width: 10
+
+    gr <- create_empty(s, directed = FALSE) %>% 
+        mutate(name = toupper(letters[1:s]))
+    cl <- sample(rainbow_hcl(4), 11, replace = TRUE)
+    p <- ggraph(gr, layout = 'circle') 
+    p <- p + geom_node_point(aes(x = x, y = y, color = c3), size = 24)
+    p <- p + geom_node_text(aes(label = name), size = 12, color = "white")
+    p <- p + theme_graph() + theme(legend.position = "bottom", legend.title = element_blank(), legend.text = element_text(size = 18))
+    p <- p + guides(color = guide_legend(override.aes = list(size = 14))) 
+    p3 <- p + scale_color_discrete(labels = c("Neighbor", "Kin", "Acquaintance", "Friend"))
+    p3
+```
+
+```{r}
+#| label: fig-altersdem4
+#| fig-cap: "Employment status of alters."
+#| fig-cap-location: margin 
+#| fig-height: 10
+#| fig-width: 10
+
+    gr <- create_empty(s, directed = FALSE) %>% 
+        mutate(name = toupper(letters[1:s]))
+    cl <- sample(rainbow_hcl(4), 11, replace = TRUE)
+    p <- ggraph(gr, layout = 'circle') 
+    p <- p + geom_node_point(aes(x = x, y = y, color = c4), size = 24)
+    p <- p + geom_node_text(aes(label = name), size = 12, color = "white")
+    p <- p + theme_graph() + theme(legend.position = "bottom", legend.title = element_blank(), legend.text = element_text(size = 18))
+    p <- p + guides(color = guide_legend(override.aes = list(size = 14))) 
+    p4 <- p + scale_color_discrete(labels = c("Employed Outside the Home", "Retired", "Student", "Full-Time Parent"))
+    p4
+```
+@fig-altersdem1-@fig-altersdem4 show some sociodemographic and role-relational characteristics of alters in ego's network. Ego is a *UCLA student who identifies as Hispanic and as a Man*. Using this information:
+
+1. Compute Ego's **homophily** with respect to gender identity.
+<br>
+<br>
+<br>
+
+1. Compute Ego's **homophily** with respect to Ethnoracial identification.
+<br>
+<br>
+<br>
+
+1. Compute the **proportion** kin in Ego's network.
+<br>
+<br>
+<br>
+
+1. Compute the **proportion** non-Hispanic in Ego's network.
+<br>
+<br>
+<br>
+
+1. Compute the **proportion** of individuals employed outside the home in Ego's network.
+<br>
+<br>
+<br>
+
+1. Compute the **diversity** of Ego's Network with respect to ethnoracial identity.
+<br>
+<br>
+<br>
+
+1. Compute the **diversity** of Ego's Network with respect to employment status. 
+<br>
+<br>
+<br>
+
+1. Compute the **diversity** of Ego's Network with respect to gender identity.
+<br>
+<br>
+<br>
+
+1. Compute the **proportion** of fellow students in Ego's network.
+<br>
+<br>
+<br>
+
+1. Does ego have a stronger **same-group preference** with respect to race than with respect to gender? (Yes/No)
+<br>
+<br>
+<br>
+
+1. Is the **diversity** of ego's network larger when it comes to race than when it comes to employment status (Yes/No)
+<br>
+<br>
+<br>
+
+1. What is the **proportion** of ego's network composed of kin who are also full-time parents?
+<br>
+<br>
+<br>
+
+1. Compute the **proportion** of people who identify as Men or Women in ego's network. 
+<br>
+<br>
+<br>
+
+1. Draw the **subgraph** of Ego's alter-to-alter ties that is only composed of students
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
