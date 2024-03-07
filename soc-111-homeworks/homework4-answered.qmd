@@ -41,7 +41,7 @@ Consider the graph shown in Figure 1:
 <br>
 ```{r}
     paths <- all_simple_paths(gr, from = "G", to = "F", mode = "out")
-    p <- paths[which(sapply(paths, length) == 4)]
+    p <- paths[which(sapply(paths, length) == 5)]
     kbl(toupper(matrix(letters[unlist(p)], ncol = 4, byrow = TRUE)))
 ```
 
@@ -49,9 +49,16 @@ Consider the graph shown in Figure 1:
 -  Write down *all* the **paths** of length two ($l = 2$) featuring node *B* as the **inner node**:
 <br>
 ```{r}
-    paths <- all_simple_paths(gr, from = toupper(letters[1:length(d)]), cutoff = 2)
-    p <- paths[which(sapply(paths, length) == 3)]
-    m <- toupper(matrix(letters[unlist(p)], ncol = 3, byrow = TRUE))
+    nodes <- 1:length(V(gr))
+    nodes <- nodes[-2]
+    paths <- list()
+    for (i in nodes) {
+      newpaths <- all_simple_paths(gr, from = 2,
+                                  to = 1:length(V(gr)), 
+                              mode = "all", cutoff = 2)
+      paths <- c(paths, newpaths)
+    }
+    m <- toupper(matrix(letters[unlist(paths)], ncol = 3, byrow = TRUE))
     m <- m[which(m[, 2] == "B"), ]
     kbl(m)
 
@@ -114,7 +121,7 @@ Consider the graph shown in Figure 2:
 <br>
 ```{r}
     paths <- all_simple_paths(gr, from = "G", to = "B", mode = "out")
-    p <- paths[which(sapply(paths, length) == 4)]
+    p <- paths[which(sapply(paths, length) == 5)]
     kbl(toupper(matrix(letters[unlist(p)], ncol = 4, byrow = TRUE)))
 ```
 
