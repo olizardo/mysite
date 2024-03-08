@@ -60,6 +60,7 @@ Consider the graph shown in Figure 1:
     }
     m <- toupper(matrix(letters[unlist(paths)], ncol = 3, byrow = TRUE))
     m <- m[which(m[, 2] == "B"), ]
+    m <- m[which(m[, 1] != m[, 3]), ]
     kbl(m)
 
 ```
