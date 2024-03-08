@@ -1,0 +1,152 @@
+---
+title: "Homework V: Affiliation Networks"
+---
+
+```{r setup, include=FALSE}
+    knitr::opts_chunk$set(echo = FALSE, message=FALSE, warning=FALSE)
+    require(ggraph)
+    require(tidygraph)
+    require(igraph)
+    require(kableExtra)
+```
+```{r Southern women data}
+    A <- matrix(
+         c(
+          1, 1, 1, 1, 1,  1, 0, 1, 1,  0, 0, 0, 0, 0, 
+          1, 1, 1, 0, 1,  1, 1, 1, 0,  0, 0, 0, 0, 0, 
+          0, 1, 1, 1, 1,  1, 1, 1, 1,  0, 0, 0, 0, 0, 
+          1, 0, 1, 1, 1,  1, 1, 1, 0,  0, 0, 0, 0, 0, 
+          0, 0, 1, 1, 1,  0, 1, 0, 0,  0, 0, 0, 0, 0, 
+          0, 0, 1, 1, 1,  1, 0, 1, 0,  0, 0, 0, 0, 0, 
+          0, 0, 0, 1, 1,  1, 1, 1, 0,  0, 0, 0, 0, 0, 
+          0, 0, 0, 1, 1,  0, 1, 1, 1,  0, 0, 0, 0, 0, 
+          
+          0, 0, 0, 0, 0,  0, 1, 1, 1,  0, 0, 1, 0, 0, 
+          0, 0, 0, 0, 0,  0, 0, 1, 1,  1, 0, 1, 0, 0, 
+          0, 0, 0, 0, 0,  0, 0, 1, 1,  1, 0, 1, 1, 1,
+          0, 0, 0, 0, 0,  0, 1, 1, 1,  1, 0, 1, 1, 1,
+          0, 0, 0, 0, 0,  0, 1, 0, 1,  1, 1, 1, 1, 1,
+          0, 0, 0, 0, 0,  0, 1, 1, 0,  1, 1, 1, 0, 0,
+          0, 0, 0, 0, 0,  0, 0, 0, 1,  0, 1, 0, 0, 0,
+          0, 0, 0, 0, 0,  0, 0, 0, 1,  0, 1, 0, 0, 0, 
+          
+          0, 0, 0, 0, 0,  1, 0, 1, 1,  0, 0, 0, 0, 0,
+          0, 0, 0, 0, 0,  0, 0, 1, 1,  0, 0, 0, 0, 0),
+          ncol = 14, byrow = TRUE)
+     p <- c("EVELYN", "LAURA", "THERESA", "BRENDA", "CHARLOTTE", "FRANCES", "ELEANOR", "RUTH", "VERNE", "MYRA", "KATHERINE", "SYLVIA", "NORA", "HELEN", "OLIVIA", "FLORA", "PEARL", "DOROTHY")
+     p.abv <- c("EV", "LA", "TH", "BR", "CH", "FR", "EL", "RU", "VE", "MY", "KA", "SY", "NO", "HE", "OL", "FL", "PE", "DO")
+     g <- paste("E", c(1:14), sep = "")
+     rownames(A) <- p
+     colnames(A) <- g
+     set.seed(682)
+     A <- A[sample(1:18, 10), sample(1:14, 8)]
+     affil.el <- data.frame(matrix(ncol = 2, nrow = 0))
+          k <- 1
+          for (i in 1:nrow(A)) {
+              for(j in 1:ncol(A)) {
+                  if (A[i, j] == 1) {
+                    affil.el[k, 1] = rownames(A)[i]
+                    affil.el[k, 2] = colnames(A)[j]
+                  k <- k + 1
+                  }
+              }
+          }
+    k_e <- rowSums(A)
+    k_w <- colSums(A)
+    max.e <- names(which(k_e == max(k_e)))
+    min.e <- names(which(k_e == min(k_e)))
+    avg.e <- sum(k_e) / length(k_e)
+    max.w <- names(which(k_w == max(k_w)))
+    min.w <- names(which(k_w == min(k_w)))
+    avg.w <- sum(k_w) / length(k_w)
+```
+
+```{r}
+#| label: fig-grex1
+#| fig-cap: "Southern women bipartite graph."
+#| fig-cap-location: margin   
+#| fig-height: 8
+#| fig-width: 12
+
+    gr <- graph_from_data_frame(data.frame(affil.el), directed = FALSE)
+    V(gr)$type <- bipartite_mapping(gr)$type
+    p <- ggraph(gr, layout = 'bipartite') 
+    p <- p + geom_edge_link(color = "steelblue", edge_width = 1.1) 
+    p <- p + geom_node_point(color = c(rep("white", 10), rep("tan2", 8)), 
+                             shape = c(rep("square", 10), rep("circle", 8)), 
+                             size = c(rep(15, 10), rep(20, 8)))
+    p <- p + geom_node_text(aes(label = c(rownames(A), colnames(A))), 
+                            size = c(rep(5, 10), rep(6, 8)), 
+                            color = "black")   
+    p <- p + theme_graph() + theme(legend.position = "none") 
+    p
+```
+
+The Figure above shows the **bipartite graph** corresponding to (part of) the *Southern Women Events Data* a classic social network data set collected in the 1930s by the sociologist Allison Davis and collaborators and included in book [*Deep South*](https://www.amazon.com/Deep-South-Anthropological-Southern-Classics/dp/1570038155). The graph represents observed attendance at 8 social events by 10 Southern "high society" women from the South. 
+
+- Write down the **affiliation matrix** corresponding to the Southern women network bipartite graph.
+
+```{r}
+    kbl(A, format = "html", padding = 1, align = "c") %>% 
+        kable_classic(lightable_options = "striped") %>% 
+        row_spec(1:10, color = "black", extra_css = "border-bottom: 1px solid;") %>% 
+        column_spec(1:8, color = "black", border_right = TRUE, border_left = TRUE)
+```
+
+1. Which women attend the most events?
+<br>
+`r max.e`
+
+1. Which women attend the least events?
+<br>
+`r min.e`
+
+1. What is the average number of events attended by the women?
+<br>
+`r avg.e`
+
+1. Which are the largest event(s)?
+<br>
+`r max.w`
+
+1. Which are the smallest event(s)?
+<br>
+`r min.w`
+
+1. What is the average event size?
+<br>
+`r avg.w`
+
+- Write down the *transpose* of the **affiliation matrix** corresponding to the Southern women network bipartite graph.
+
+```{r}
+    tA <- t(A)
+    kbl(tA, format = "html", padding = 1, align = "c") %>% 
+        kable_classic(lightable_options = "striped") %>% 
+        row_spec(1:8, color = "black", extra_css = "border-bottom: 1px solid;") %>% 
+        column_spec(1:10, color = "black", border_right = TRUE, border_left = TRUE)
+```
+
+
+Using the information in the previous tables and what you know about **matrix multiplication**:
+
+- Write down the entries corresponding to the **co-membership matrix** of the Southern women.
+
+```{r}
+    M <- A %*% t(A)
+    kbl(M, format = "html", padding = 1, align = "c") %>% 
+        kable_classic(lightable_options = "striped") %>% 
+        row_spec(1:10, color = "black", extra_css = "border-bottom: 1px solid;") %>% 
+        column_spec(1:10, color = "black", border_right = TRUE, border_left = TRUE)
+```
+
+
+- Write down the entries corresponding to the **group overlap matrix** of the Southern women.
+
+```{r}
+    O <- t(A) %*% A 
+    kbl(O, format = "html", padding = 1, align = "c") %>% 
+        kable_classic(lightable_options = "striped") %>% 
+        row_spec(1:8, color = "black", extra_css = "border-bottom: 1px solid;") %>% 
+        column_spec(1:8, color = "black", border_right = TRUE, border_left = TRUE)
+```
