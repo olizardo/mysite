@@ -1,0 +1,144 @@
+---
+title: "Homework VIII: Graph Connectivity and Structural Similarity"
+---
+
+```{r setup, include=FALSE}
+    knitr::opts_chunk$set(echo = FALSE, message=FALSE, warning=FALSE)
+    library(ggraph)
+    library(tidygraph)
+    library(igraph)
+    library(kableExtra)
+```
+
+
+```{r}
+#| label: fig-grex1
+#| fig-cap: "An undirected graph."
+#| fig-cap-location: margin   
+#| fig-height: 8
+#| fig-width: 8
+
+    set.seed(567)
+    pm <- matrix(c( .1, .11, .12,  1, 
+                    .11, .5, .1,   0,
+                    .12, .1, .5,  0,
+                     1,  0,  0,   0), nrow=4)
+    pm[lower.tri(pm)] = t(pm)[lower.tri(pm)]
+    gr <- play_blocks(n = 14, size_blocks = c(4, 2, 4, 4), 
+                      p_between = pm)
+    V(gr)$name <- LETTERS[1:length(V(gr))]
+    p <- ggraph(gr, layout = 'kk') 
+    p <- p + geom_edge_link(color = "steelblue", width = 1.07) 
+    p <- p + geom_node_point(color = "tan2", size = 16) 
+    p <- p + geom_node_text(aes(label = name), size = 8, color = "white")
+    p <- p + theme_graph() 
+    p
+```
+
+- In the matrix below, write down the cell entries for the **adjacency matrix** corresponding to the graph shown in @fig-grex1:
+
+```{r}
+    a <- matrix(as_adjacency_matrix(gr), nrow = length(V(gr)))
+    rownames(a) <- LETTERS[1:length(V(gr))]
+    colnames(a) <- LETTERS[1:length(V(gr))]
+    diag(a) <- "----"
+    kbl(a, format = "html", align = "c")  %>% 
+         column_spec(1, bold = TRUE) %>% 
+         column_spec (2:nrow(a), 
+                      border_left = T, border_right = T) %>%
+         row_spec(1:length(V(gr)), 
+                  extra_css = "border-bottom: 1px solid") %>%
+         kable_styling()
+```
+
+- Using the information from the previous matrix, in the matrix below, write down the cell entries for the **structural similarity matrix** corresponding to the graph shown in @fig-grex1 using the **Euclidean Distance**:
+
+```{r}
+    eudist <- function(x) {
+      r <- nrow(x)
+      edist <- matrix(0, r, r)
+      for (i in 1: r) {
+          for (j in 1: r) {
+            e <- x[i, ] - x[j, ]
+            e <- e^2
+            e <- round(sqrt(sum(e)), 1)
+            edist[i, j] <- e
+          }
+        }
+    return(edist)
+    }
+    a <- matrix(as_adjacency_matrix(gr), nrow = length(V(gr)))
+    a <- eudist(a)
+    rownames(a) <- LETTERS[1:length(V(gr))]
+    colnames(a) <- LETTERS[1:length(V(gr))]
+    kbl(a, format = "html", align = "c")  %>% 
+         column_spec(1, bold = TRUE) %>% 
+         column_spec (2:length(V(gr)), 
+                      border_left = T, border_right = T) %>%
+         row_spec(1:length(V(gr)), 
+                  extra_css = "border-bottom: 1px solid") %>%
+         kable_styling()
+```
+
+1. Using the Information in the previous matrix, write down the set of nodes that are **structurally equivalent** (e.g., connected to the same set of neighbors) in the graph shown in @fig-grex1.
+<br>
+K, L, M, N
+
+1. Out of the nodes that are not structurally equivalent, which pairs of nodes have the highest **structural similarity** in the graph shown in @fig-grex1?
+<br>
+A, B
+
+1. Using the **Jaccard Similarity** metric, compute the structural similarity between nodes *B* and *D* in the graph shown in @fig-grex1.
+<br>
+```{r}
+    m <- matrix(as_adjacency_matrix(gr), nrow = length(V(gr)))
+    a <- sum(m[2, ])
+    b <- sum(m[4, ])
+    i <- sum(m[2, ] * m[4, ])
+    J <- round(i / (a + b - i), 2)
+    kbl(t(J))
+```
+
+
+1. Using the **Dice Similarity** metric, compute the structural similarity between nodes *C* and *D* in the graph shown in @fig-grex1.
+<br>
+```{r}
+    a <- sum(m[3, ])
+    b <- sum(m[4, ])
+    i <- sum(m[3, ] * m[4, ])
+    D <- round((2 * i) / (a + b), 2)
+    kbl(t(D))
+```
+
+
+1. Using the **Cosine Similarity** metric, compute the structural similarity between nodes *A* and *C* in the graph shown in @fig-grex1.
+<br>
+```{r}
+    a <- sum(m[1, ])
+    b <- sum(m[3, ])
+    i <- sum(m[1, ] * m[3, ])
+    C <- round(i / sqrt(a * b), 2)
+    kbl(t(C))
+```
+
+1. Write down a **node cut set** for the graph shown in @fig-grex1.
+<br>
+[Grade Generously]
+
+
+1. Write down an **edge cut set** for the graph shown in @fig-grex1.
+<br>
+[Grade Generously]
+
+1. What is the **k-connectivity** of the graph?
+<br>
+3 (also accept 4)
+
+1. What is the **edge connectivity** of the graph?
+<br>
+3 (also accept 4)
+
+1. What is the **pairwise k-connectivity** between nodes *E* and *G*?
+<br>
+4
+
