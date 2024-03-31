@@ -25,9 +25,8 @@ format:
 - Granovetter, M. S. (1973). The Strength of Weak Ties. *American Journal of Sociology*, 78(3), 1360–1380.
      - Rejection letter from *American Sociological Review* of the first (1969) version of the paper 
      - Granovetter, M. S. (1969) ``Alienation Reconsidered: The Strength of Weak Ties.'' Reprinted in *Connections* 5(2): 4-16. 
+     - Wang, D., & Uzzi, B. (2022). Weak ties, failed tries, and success. *Science*, 377(6612), 1256-1258.
 - Centola, D., & Macy, M. (2007). Complex Contagions and the Weakness of Long Ties. *American Journal of Sociology*, 113(3), 702-734. 
-- McPherson, M., Smith-Lovin, L., & Cook, J. M. (2001). Birds of a feather: Homophily in social networks. *Annual Review of Sociology*, 27(1), 415-444. 
-
 
 ## Week 3: Brokerage and Intermediation
 ### Tuesday, April 16
