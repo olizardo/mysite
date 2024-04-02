@@ -31,6 +31,7 @@ title: "Homework VII: Subgroups"
          bind_graphs(gr2) %>% 
          bind_graphs(gr3) %>% 
          graph_join(gr4)
+    gr <- simplify(gr)
     p <- ggraph(gr, layout = 'kk') 
     p <- p + geom_edge_link(color = "steelblue", width = 1.15) 
     p <- p + geom_node_point(color = "tan2", size = 16) 

@@ -29,10 +29,11 @@ format:
 ### Thursday, April 11
 - Granovetter, M. S. (1973). The Strength of Weak Ties. *American Journal of Sociology*, 78(3), 1360–1380.
      - Rejection letter from *American Sociological Review* of the first (1969) version of the paper 
-     - Granovetter, M. S. (1969) ``Alienation Reconsidered: The Strength of Weak Ties.'' Reprinted in *Connections* 5(2): 4-16. 
-     - Wang, D., & Uzzi, B. (2022). Weak ties, failed tries, and success. *Science*, 377(6612), 1256-1258.
+     - Granovetter, M. S. (1969) "Alienation Reconsidered: The Strength of Weak Ties." Reprinted in *Connections* 5(2): 4-16. 
+- Wang, D., & Uzzi, B. (2022). Weak ties, failed tries, and success. *Science*, 377(6612), 1256-1258.
      
-- Centola, D., & Macy, M. (2007). Complex Contagions and the Weakness of Long Ties. *American Journal of Sociology*, 113(3), 702-734. 
+- McPherson, M., Smith-Lovin, L., & Cook, J. M. (2001). Birds of a feather: Homophily in social networks. *Annual Review of Sociology*, 27(1), 415-444. [pdf]
+
 
 ## Week 3: Brokerage
 ### Tuesday, April 16 (Virtual Meeting)
@@ -84,7 +85,7 @@ format:
 
 ### Thursday, May 9
 
-- Liu, K. Y., King, M., & Bearman, P. S. (2010). Social influence and the autism epidemic. *American Journal of Sociology*, 115(5), 1387-1434.
+- Centola, D., & Macy, M. (2007). Complex Contagions and the Weakness of Long Ties. *American Journal of Sociology*, 113(3), 702-734. 
 
 - Bail, C. A., Brown, T. W., & Wimmer, A. (2019). Prestige, proximity, and prejudice: how Google search terms diffuse across the world. *American Journal of Sociology*, 124(5), 1496-1548.
 
