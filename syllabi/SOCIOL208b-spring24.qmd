@@ -32,7 +32,7 @@ format:
      - Granovetter, M. S. (1969) "Alienation Reconsidered: The Strength of Weak Ties." Reprinted in *Connections* 5(2): 4-16. 
 - Wang, D., & Uzzi, B. (2022). Weak ties, failed tries, and success. *Science*, 377(6612), 1256-1258.
      
-- McPherson, M., Smith-Lovin, L., & Cook, J. M. (2001). Birds of a feather: Homophily in social networks. *Annual Review of Sociology*, 27(1), 415-444. [pdf]
+- McPherson, M., Smith-Lovin, L., & Cook, J. M. (2001). Birds of a feather: Homophily in social networks. *Annual Review of Sociology*, 27(1), 415-444.
 
 
 ## Week 3: Brokerage
@@ -54,7 +54,7 @@ format:
 ### Tuesday, April 23
 - Moody, J. (2004). The Structure of A Social Scientific Collaboration Network. *American Sociological Review*, 69, 213-238. 
 
-- Clauset, A., Arbesman, S., & Larremore, D. B. (2015). Systematic inequality and hierarchy in faculty hiring networks. *Science Advances*, 1(1), e1400005. [pdf]
+- Clauset, A., Arbesman, S., & Larremore, D. B. (2015). Systematic inequality and hierarchy in faculty hiring networks. *Science Advances*, 1(1), e1400005.
 
 ### Thursday, April 25
 - Gondal, N. (2018). Duality of departmental specializations and PhD exchange: A Weberian analysis of status in interaction using multilevel exponential random graph models (mERGM). *Social Networks*, 55, 202-212. 
@@ -87,6 +87,8 @@ format:
 
 - Centola, D., & Macy, M. (2007). Complex Contagions and the Weakness of Long Ties. *American Journal of Sociology*, 113(3), 702-734. 
 
+- Gondal, N. (2023). Diffusion of innovations through social networks: Determinants and implications. *Sociology Compass*, 17(5), e13084.
+
 - Bail, C. A., Brown, T. W., & Wimmer, A. (2019). Prestige, proximity, and prejudice: how Google search terms diffuse across the world. *American Journal of Sociology*, 124(5), 1496-1548.
 
 ## Week 7: Culture 
@@ -116,16 +118,20 @@ format:
 
 ## Week 9: Inequality
 ### Tuesday, May 28
-- Burris, V. (2004). The Academic Caste System: Prestige Hierarchies In PhD Exchange Networks. *American Sociological Review*, 69, 239-264. [pdf]
+
+- DiMaggio, P., & Garip, F. (2012). Network effects and social inequality. *Annual Review of Sociology*, 38, 93-118.
 
 - Pedulla, D. S., & Pager, D. (2019). Race and networks in the job search process. *American Sociological Review*, 84(6), 983-1012.
 
+- Hofstra, B., Corten, R., Van Tubergen, F., & Ellison, N. B. (2017). Sources of segregation in social networks: A novel approach using Facebook. *American Sociological Review*, 82(3), 625-656.
+
 ### Thursday, May 30
-- DiMaggio, P., & Garip, F. (2011). How network externalities can exacerbate intergroup inequality. *American Journal of Sociology*, 116(6), 1887-1933.
 
-- Gondal, N. (2015). Inequality preservation through uneven diffusion of Cultural materials across stratified groups. *Social Forces*, 93(3), 1109-1137.
+- Erikson, E., & Occhiuto, N. (2017). Social networks and macrosocial change. *Annual Review of Sociology*, 43, 229-248.
 
-- Thomas, R. J., & Mark, N. P. (2013). Population size, network density, and the emergence of inherited inequality. *Social Forces*, 92(2), 521-544.
+- Zhang, J., & Centola, D. (2019). Social networks and health: New developments in diffusion, online and offline. *Annual Review of Sociology*, 45, 91-109.
+
+- Hill, K. M. (2018). Sweet and sour: Social networks and inequality in a Chinese restaurant. *Sociology of Race and Ethnicity*, 4(1), 114-127.
 
 ## Week 10: Linking Micro and Macro
 ### Tuesday, June 4
