@@ -81,6 +81,8 @@ format:
 
 - DellaPosta, D., Shi, Y., & Macy, M. (2015). Why do liberals drink lattes?. *American Journal of Sociology*, 120(5), 1473-1511.
 
+- DellaPosta, D. (2020). Pluralistic collapse: The "oil spill" model of mass opinion polarization. *American Sociological Review*, 85(3), 507-536.
+
 - Goldberg, A., & Stein, S. K. (2018). Beyond Social Contagion: Associative Diffusion and The Emergence of Cultural Variation. *American Sociological Review*, 83(5), 897-932. 
 
 ### Thursday, May 9
@@ -93,37 +95,33 @@ format:
 
 ## Week 7: Culture 
 ### Tuesday, May 14
-
-- Lizardo, 0. (2023). Culture and Networks. Pp. 188-201 in *The SAGE Handbook of Social Network Analysis*. SAGE Publications Ltd.
+- Lizardo, O. (2023). Culture and Networks. Pp. 188-201 in *The SAGE Handbook of Social Network Analysis*. SAGE Publications Ltd.
 
 - Lewis, K., & Kaufman, J. (2018). The Conversion of Cultural Tastes Into Social Network Ties. *American Journal of Sociology*, 123(6), 1684-1742. 
-
-- DellaPosta, D. (2020). Pluralistic collapse: The "oil spill" model of mass opinion polarization. *American Sociological Review*, 85(3), 507-536.
 
 - Rawlings, C. M., & Childress, C. (2023). The Polarization of Popular Culture: Tracing the Size, Shape, and Depth of the "Oil Spill". *Social Forces*, soad150.
 
 ### Thursday, May 16 (No Meeting)
-
-
 ## Week 8: History  
 ### Tuesday, May 21 (Virtual Meeting)
 - Padgett, J. F., & Ansell, C. K. (1993). Robust Action and the Rise of the Medici, 1400-1434. *American Journal of Sociology*, 98(6), 1259–1319. 
 
-- Gould, R. V. (1991). Multiple Networks and Mobilization In The Paris Commune, 1871. *American Sociological Review*, 56(6), 716-729. 
+- Gould, R. V. (1991). Multiple Networks and Mobilization In The Paris Commune, 1871. *American Sociological Review*, 56(6), 716-729.
+
+- Bearman, P., Moody, J., & Faris, R. (2002). Networks and History. *Complexity*, 8(1), 61-71.
 
 ### Thursday, May 23
+- Erikson, E., & Feltham E., (2021) Historical Network Research, Pp. 432–442 in R Light, and J Moody (eds), *The Oxford Handbook of Social Networks*. Oxford University Press.
+
 - Erikson, E., & Bearman, P. (2006). Malfeasance and the Foundations For Global Trade: The Structure of English Trade In The East Indies, 1601–1833. *American Journal of Sociology*, 112(1), 195-230. 
 
 - Becker, S. O., Hsiao, Y., Pfaff, S., & Rubin, J. (2020). Multiplex Network Ties and the Spatial Diffusion of Radical Innovations: Martin Luther's Leadership In The Early Reformation. *American Sociological Review*, 85(5), 857-894. 
 
 ## Week 9: Inequality
 ### Tuesday, May 28
-
 - DiMaggio, P., & Garip, F. (2012). Network effects and social inequality. *Annual Review of Sociology*, 38, 93-118.
 
 - Pedulla, D. S., & Pager, D. (2019). Race and networks in the job search process. *American Sociological Review*, 84(6), 983-1012.
-
-- Hofstra, B., Corten, R., Van Tubergen, F., & Ellison, N. B. (2017). Sources of segregation in social networks: A novel approach using Facebook. *American Sociological Review*, 82(3), 625-656.
 
 ### Thursday, May 30
 
@@ -131,7 +129,7 @@ format:
 
 - Zhang, J., & Centola, D. (2019). Social networks and health: New developments in diffusion, online and offline. *Annual Review of Sociology*, 45, 91-109.
 
-- Hill, K. M. (2018). Sweet and sour: Social networks and inequality in a Chinese restaurant. *Sociology of Race and Ethnicity*, 4(1), 114-127.
+- Hofstra, B., Corten, R., Van Tubergen, F., & Ellison, N. B. (2017). Sources of segregation in social networks: A novel approach using Facebook. *American Sociological Review*, 82(3), 625-656.
 
 ## Week 10: Linking Micro and Macro
 ### Tuesday, June 4
