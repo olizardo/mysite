@@ -53,11 +53,11 @@
 
 -   "Analysis of link formation, persistence, and dissolution in NetSense data." *Proceedings of the IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining*: 1197-1204. [https://doi.org/10.1109/ASONAM.2016.7752391](https://doi.org/10.1109/ASONAM.2016.7752391)
 
--   "Influence of personal preferences on link dynamics in social networks." *Complexity* [https://doi.org/10.1155/2017/4543563](https://doi.org/10.1155/2017/4543563)
+-   "Influence of personal preferences on link dynamics in social networks." *Complexity* [https://doi.org/10.1155/2017/4543563](https://doi.org/10.1155/2017/4543563) 
 
 ### Cognitive Social Science
 
-- The Raw and the (Over)Cooked: States are physical qualities.'' *Metaphor and the Social World*. [https://doi.org/10.1075/msw.00039.ash](doi:10.1075/msw.00039.ash)
+- The Raw and the (Over)Cooked: States are physical qualities.'' *Metaphor and the Social World* 14: 22-42. [https://doi.org/10.1075/msw.00039.ash](doi:10.1075/msw.00039.ash)
 
 -   "Culture, cognition, and internalization." *Sociological Forum* 36: 1177-1206. [doi:10.1111/socf.12771](https://doi.org/10.1111/socf.12771)
 
@@ -105,7 +105,7 @@
 
 -   "Kinding culture" *Working Paper* [(pdf)](/workpap/kinding.pdf)
 
--   "The shallowness of deep culture or the deepness of shallow culture? Six ways culture can be internalized" *Working Paper* [(pdf)](/workpap/shallowness.pdf)
+- "Culture and social psychology." Forthcoming in L. Doan, K. A. Hegtvedt and  J. E. Stets (Eds.), *The Handbook of Social Psychology: Micro, Meso, and Macro Orientations*. Springer. [(pdf)](/workpap/culture-and-social-psychology.pdf)
 
 - "An analytical approach to culture." *Philosophy of the Social Sciences*. [doi:10.1177/00483931231169313](https://doi.org/10.1177/00483931231169313)
 
@@ -124,11 +124,11 @@
 -   "Pierre Bourdieu as a post-cultural theorist." *Cultural Sociology* 5: 1-22.[doi:10.1177/1749975510389714](https://doi.org/10.1177/1749975510389714)
 
 ### Culture and Networks 
+<!--
+-   "Culture and social capital." Forthcoming in R. Côté, S. McDonald and J. Shen (Eds.) *The Handbook of Inequality and Social Capital*. Edward Elgar.
+-->
 
--   "Culture and social capital." Forthcoming in R. Côté, S. McDonald and J. Shen (Eds.) *The Handbook of Inequality and Social Capital*. Edward Elgar. [(pdf)](/workpap/culture-and-social-capital.pdf)
-
-
--   "Culture and networks." Forthcoming in P. Carrington, J. McLevey and J. Scott (Eds.) *The Sage Handbook of Social Network Analysis*. Sage Publications. [(pdf)](/workpap/culture-and-networks-corrected.pdf)
+-   "Culture and networks." Pp. 188-201 in J. McLevey, J. Scott, and P. J. Carrington (Eds.) *The Sage Handbook of Social Network Analysis*. Sage Publications. [doi:10.4135/9781529682618](https://doi.org/10.4135/9781529682618)
 
 - "Variety in cultural choice and the activation of social ties." *Social Science Research* 42: 321–330. [doi:10.1016/j.ssresearch.2012.09.014](https://doi.org/10.1016/j.ssresearch.2012.09.014)
 
@@ -156,7 +156,7 @@
 
 ### Measuring Culture
 
--   "From macrogenres to microgenres via relationality." *Poetics: Journal of Empirical Research on Culture, the Media and the Arts* [(pdf)](/workpap/microgenres.pdf)
+-   "From macrogenres to microgenres via relationality." *Poetics: Journal of Empirical Research on Culture, the Media and the Arts* [doi:10.1016/j.poetic.2024.101868](https://doi.org/10.1016/j.poetic.2024.101868)
 
 -   "Simmel's dialectic of form and content in recent work in cultural sociology." *The Germanic Review: Literature, Culture, Theory* 94:93-100. [doi:10.1080/00168890.2019.1585664](https://doi.org/10.1080/00168890.2019.1585664)
 
@@ -171,7 +171,7 @@
 
 ### Social Network Analysis
 
--   "Incubators or diffusers? Examining the dynamic coupling of context and social ties across multiple foci." *Social Networks* [doi:10.1016/j.socnet.2022.02.004](https://doi.org/10.1016/j.socnet.2022.02.004)
+-   "Incubators or diffusers? Examining the dynamic coupling of context and social ties across multiple foci." *Social Networks* 77: 151-165. [doi:10.1016/j.socnet.2022.02.004](https://doi.org/10.1016/j.socnet.2022.02.004)
 
 - "Theorizing the concept of social tie using frames." *Social Networks* 78: 138-149. [doi:10.1016/j.socnet.2024.01.001](https://doi.org/10.1016/j.socnet.2024.01.001)
 
