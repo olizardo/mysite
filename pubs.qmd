@@ -15,6 +15,10 @@
 
 - "Hysteresis in recent sociological research" *Working Paper*. [(pdf)](/workpap/hysteresis-review.pdf)
 
+- "Wanting, Liking, and the sociology of motivation." *Sociological Forum*. [pdf](/workpap/motivation.pdf)
+
+- "A motivational theory of roles, rewards, and institutions.'' *Journal for the Theory of Social Behaviour* 53: 200-220. [doi:10.1111/jtsb.12360](https://doi.org/10.1111/jtsb.12360)
+
 -   "Habit and the explanation of action." *Journal for the Theory of Social Behaviour* 51: 391-411. [doi:10.1111/jtsb.12273](https://doi.org/10.1111/jtsb.12273)
 
 -   "The hysteresis effect: Theorizing mismatch in action." *Journal for the Theory of Social Behaviour* 47: 164--194. [doi:10.1111/jtsb.12117](https://doi.org/10.1111/jtsb.12117)
@@ -107,7 +111,7 @@
 
 - "Culture and social psychology." Forthcoming in L. Doan, K. A. Hegtvedt and  J. E. Stets (Eds.), *The Handbook of Social Psychology: Micro, Meso, and Macro Orientations*. Springer. [(pdf)](/workpap/culture-and-social-psychology.pdf)
 
-- "An analytical approach to culture." *Philosophy of the Social Sciences*. [doi:10.1177/00483931231169313](https://doi.org/10.1177/00483931231169313)
+- "An analytical approach to culture." *Philosophy of the Social Sciences*. 53: 281–302. [doi:10.1177/00483931231169313](https://doi.org/10.1177/00483931231169313)
 
 -   "What is implicit culture?" *Journal for the Theory of Social Behaviour* 52: 412-437. [doi:10.1111/jtsb.12333](https://doi.org/10.1111/jtsb.12333)
 
@@ -156,7 +160,7 @@
 
 ### Measuring Culture
 
--   "From macrogenres to microgenres via relationality." *Poetics: Journal of Empirical Research on Culture, the Media and the Arts* [doi:10.1016/j.poetic.2024.101868](https://doi.org/10.1016/j.poetic.2024.101868)
+-   "From macrogenres to microgenres via relationality." *Poetics: Journal of Empirical Research on Culture, the Media and the Arts* 102: 101868. [doi:10.1016/j.poetic.2024.101868](https://doi.org/10.1016/j.poetic.2024.101868)
 
 -   "Simmel's dialectic of form and content in recent work in cultural sociology." *The Germanic Review: Literature, Culture, Theory* 94:93-100. [doi:10.1080/00168890.2019.1585664](https://doi.org/10.1080/00168890.2019.1585664)
 
