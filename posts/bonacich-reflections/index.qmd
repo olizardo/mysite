@@ -2,6 +2,7 @@
 title: "Bonacich Centrality and the Method of Reflections"
 author: "Omar Lizardo"
 date: "2024-05-05"
+categories: [reflections, two-mode networks, centrality, eigenvectors]
 draft: false
 ---
 

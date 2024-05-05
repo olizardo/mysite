@@ -2,7 +2,7 @@
 title: "Reflective Centralities in Two Mode Data"
 author: "Omar Lizardo"
 date: "2023-01-24"
-categories: [Generalized similarities, Two-mode networks, Reflections, Complexity]
+categories: [generalized similarities, two-mode networks, reflections, complexity]
 draft: false
 ---
 

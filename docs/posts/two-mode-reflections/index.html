@@ -169,10 +169,10 @@ ul.task-list li input[type="checkbox"] {
     <div class="quarto-title column-body">
       <h1 class="title">Reflective Centralities in Two Mode Data</h1>
                                 <div class="quarto-categories">
-                <div class="quarto-category">Generalized similarities</div>
-                <div class="quarto-category">Two-mode networks</div>
-                <div class="quarto-category">Reflections</div>
-                <div class="quarto-category">Complexity</div>
+                <div class="quarto-category">generalized similarities</div>
+                <div class="quarto-category">two-mode networks</div>
+                <div class="quarto-category">reflections</div>
+                <div class="quarto-category">complexity</div>
               </div>
                   </div>
   </div>
@@ -712,8 +712,8 @@ ul.task-list li input[type="checkbox"] {
 </table>
 </div>
 </div>
-<p>The key to the reflective approach, is the observation that, once we have these first-order quantities, it is possible to compute a “second order centralities” for both people and groups using the centralities of the other mode.</p>
-<p>For people this is:</p>
+<p>The key to the reflective approach is the observation that, once we have these first-order quantities, it is possible to compute “second order centralities” for both people and groups using the centralities of the other mode.</p>
+<p>For people, this is:</p>
 <p><span id="eq-pr2"><span class="math display">\[
    C^R_p(2) = \frac{1}{C^R_p(1)}\sum_g a_{pg}C^R_g(1)
 \tag{3}\]</span></span></p>
@@ -722,7 +722,7 @@ ul.task-list li input[type="checkbox"] {
    C^R_g(2) = \frac{1}{C^R_g(1)}\sum_p a_{pg}C^R_p(1)
 \tag{4}\]</span></span></p>
 <p><a href="#eq-pr2">Equation&nbsp;3</a> says “people are more central when the average membership of the groups they belong to is large” (e.g., <span class="math inline">\(a_{pg} = 1\)</span> and <span class="math inline">\(C^R_g(1)\)</span> is a big number). <a href="#eq-gr2">Equation&nbsp;4</a> says “groups are more central when the average number of memberships of their members is large” (e.g., <span class="math inline">\(a_{pg} = 1\)</span> and <span class="math inline">\(C^R_p(1)\)</span> is a big number).</p>
-<p>Of course, we can keep on going and define third order reflections:</p>
+<p>Of course, we can keep on going and define third-order reflections:</p>
 <p><span id="eq-pr3"><span class="math display">\[
    C^R_p(3) = \frac{1}{C^R_p(1)}\sum_g a_{pg}C^R_g(2)
 \tag{5}\]</span></span></p>
@@ -730,8 +730,8 @@ ul.task-list li input[type="checkbox"] {
    C^R_g(3) = \frac{1}{C^R_g(1)}\sum_p a_{pg}C^R_p(2)
 \tag{6}\]</span></span></p>
 <p><a href="#eq-pr3">Equation&nbsp;5</a> says something like “people are more central when the average of the average number of memberships of the members of the groups they belong to is large” (e.g., <span class="math inline">\(a_{pg} = 1\)</span> and <span class="math inline">\(C^R_g(2)\)</span> is a big number). <a href="#eq-gr3">Equation&nbsp;6</a> says something like “groups are more central when the average of the average number of members of the groups their members belong to is large” (e.g., <span class="math inline">\(a_{pg} = 1\)</span> and <span class="math inline">\(C^R_p(2)\)</span> is a big number).</p>
-<p>Note that for the people, the even numbered reflection <span class="math inline">\(C^R_p(2)\)</span> assigns centrality based on a formal feature of the <em>groups</em> they belong to (in this case, their degree centrality). The odd numbered reflection <span class="math inline">\(C^R_p(3)\)</span>, on the other hand, assigns centrality based on a formal feature of the <em>members of the groups</em> they belong to.</p>
-<p>In the same way, for the groups, the even-numbered reflection <span class="math inline">\(C^R_g(2)\)</span> assigns centrality based on a formal feature of the <em>people</em> who belong to them (in this case, their degree centrality). The odd numbered reflection <span class="math inline">\(C^R_g(3)\)</span>, on the other hand, assigns centrality based on a formal feature of the <em>groups their members</em> they belong to.</p>
+<p>Note that for the people, the even-numbered reflection <span class="math inline">\(C^R_p(2)\)</span> assigns centrality based on a formal feature of the <em>groups</em> they belong to (in this case, their degree centrality). On the other hand, the odd-numbered reflection <span class="math inline">\(C^R_p(3)\)</span> assigns centrality based on a formal feature of the <em>members of the groups</em> they belong to.</p>
+<p>In the same way, for the groups, the even-numbered reflection <span class="math inline">\(C^R_g(2)\)</span> assigns centrality based on a formal feature of the <em>people</em> who belong to them (in this case, their degree centrality). On the other hand, the odd-numbered reflection <span class="math inline">\(C^R_g(3)\)</span> assigns centrality based on a formal feature of the <em>groups their members belong to</em>.</p>
 <p>More generally, we can define a series of reflective quantities for people and groups (whose verbal interpretation becomes more complex as the number of iterations increases):</p>
 <p><span class="math display">\[
    C^R_p(q) = \frac{1}{C^R_p(1)}\sum_g a_{pg}C^R_g(q-1)
@@ -1021,7 +1021,7 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="results">Results</h2>
 <section id="persons" class="level3 page-columns page-full">
 <h3 class="anchored" data-anchor-id="persons">Persons</h3>
-<p><a href="#tbl-pr-even">Table&nbsp;2</a> shows the results of the even numbered reflections for the people in the Southern women data, using an R function called <code>reflections</code> that can be found <a href="https://github.com/olizardo/person-group-reflections">here</a>. <a href="#tbl-pr-odd">Table&nbsp;3</a> show the corresponding odd numbered reflections. Each entry in the table is the rank (ordered so that smaller means higher rank) of standardized centrality score for each reflection.</p>
+<p><a href="#tbl-pr-even">Table&nbsp;2</a> shows the results of the even-numbered reflections for the people in the Southern women data, using an R function called <code>reflections</code> that can be found <a href="https://github.com/olizardo/person-group-reflections">here</a>. <a href="#tbl-pr-odd">Table&nbsp;3</a> shows the corresponding odd-numbered reflections. Each entry in the table is the rank (ordered so that smaller means higher rank) of the standardized centrality score for each reflection.</p>
 <div class="cell page-columns page-full">
 <div class="cell-output-display page-columns page-full">
 <div id="tbl-pr-odd" class="anchored page-columns page-full">
@@ -1295,7 +1295,7 @@ Attaching package: 'cowplot'</code></pre>
 </div>
 </div>
 </div>
-<p>As <a href="#fig-pr-even">Figure&nbsp;1</a> shows, <span class="math inline">\(NORA\)</span>, <span class="math inline">\(FLORA\)</span>, <span class="math inline">\(CHARLOTTE\)</span> and <span class="math inline">\(EVELYN\)</span> are the top-ranked actors when it comes to <span class="math inline">\(C^R(2)\)</span>: The average number of members of the groups they belong to. However, their fates in this reflective metric diverges at higher reflections, with Nora and Flora maintaining their top positions but <span class="math inline">\(CHARLOTTE\)</span> and <span class="math inline">\(EVELYN\)</span> tumbling down the ranks, suggesting that the members of the groups they belong to affiliate with smaller groups than the members of the groups <span class="math inline">\(NORA\)</span> and <span class="math inline">\(FLORA\)</span> belong to (and so on for higher reflections).</p>
+<p>As <a href="#fig-pr-even">Figure&nbsp;1</a> shows, <span class="math inline">\(NORA\)</span>, <span class="math inline">\(FLORA\)</span>, <span class="math inline">\(CHARLOTTE\)</span>, and <span class="math inline">\(EVELYN\)</span> are the top-ranked actors when it comes to <span class="math inline">\(C^R_p(2)\)</span>: The average number of members of the groups they belong to. However, their fates in this reflective metric diverge at higher reflections, with <span class="math inline">\(NORA\)</span> and <span class="math inline">\(FLORA\)</span> maintaining their top positions but <span class="math inline">\(CHARLOTTE\)</span> and <span class="math inline">\(EVELYN\)</span> tumbling down the ranks, suggesting that the members of the groups they belong to affiliate with smaller groups than the members of the groups <span class="math inline">\(NORA\)</span> and <span class="math inline">\(FLORA\)</span> belong to (and so on for higher reflections).</p>
 <p>Notably, the reflective centrality ranks at the highest reflection (<span class="math inline">\(q = 20\)</span>) in <a href="#tbl-pr-even">Table&nbsp;2</a>, recovers the Doreian et al.&nbsp;(2004) block partition (see <a href="#tbl-southern">Table&nbsp;1</a>), but this time with Dorothy and Pearl in the middle separating the two largest blocks of women.</p>
 <div class="cell">
 <div class="cell-output-display">
