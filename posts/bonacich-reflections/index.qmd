@@ -1,7 +1,8 @@
 ---
 title: "Bonacich Centrality and the Method of Reflections"
 author: "Omar Lizardo"
-draft: true
+date: "2024-05-05"
+draft: false
 ---
 
 ```{r setup, include=FALSE}
