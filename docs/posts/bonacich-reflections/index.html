@@ -21,69 +21,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { color: #008000; } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { color: #008000; font-weight: bold; } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
 
@@ -252,7 +189,13 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#references" id="toc-references" class="nav-link active" data-scroll-target="#references">References</a></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/olizardo/mysite/blob/main/posts/bonacich-reflections/index.qmd" class="toc-action">View source</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
@@ -260,12 +203,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 
 
-<p>In a previous post, I showed how the “method of reflections” introduced by Hidalgo &amp; Hausmann (2009)—hereafter HH—works in the case of two-mode network data. While reading that, some of you might have thought that there is a well-established network centrality metric for two-mode networks that is supposed to work just like the method of reflections: That is, defining the centrality of entities in one mode (e.g., persons) according to centralities of the entities in the other mode (e.g., groups). I refer to the Bonacich “eigenvector” centrality—see Bonacich (1991) and Faust (1997, p.) for discussion.</p>
+<p>In a <a href="https://olizardo.github.io/mysite/posts/two-mode-reflections/">previous post</a>, I showed how the “method of reflections” introduced by Hidalgo &amp; Hausmann (2009)—hereafter HH—works in the case of two-mode network data. While reading that, some of you might have thought that there is a well-established network centrality metric for two-mode networks that is supposed to work just like the method of reflections: That is, defining the centrality of entities in one mode (e.g., persons) according to centralities of the entities in the other mode (e.g., groups). I refer to the Bonacich “eigenvector” centrality—see Bonacich (1991) and Faust (1997) for discussion.</p>
 <div class="cell">
 <div class="cell-output-display">
-<div id="tbl-southern" class="anchored">
+<div id="tbl-sw" class="anchored">
 
-<table style="NAborder-bottom: 0;"><caption>Table&nbsp;1:  Southern Women Data. </caption>
+<table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;"><caption>Table&nbsp;1:  Southern Women Data. </caption>
  <thead>
   <tr>
    <th style="text-align:left;">   </th>
@@ -287,58 +230,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;"> EVELYN </td>
-   <td style="text-align:center;"> 1 </td>
-   <td style="text-align:center;"> 1 </td>
-   <td style="text-align:center;"> 1 </td>
-   <td style="text-align:center;"> 1 </td>
-   <td style="text-align:center;"> 1 </td>
-   <td style="text-align:center;"> 1 </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 1 </td>
-   <td style="text-align:center;"> 1 </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> LAURA </td>
-   <td style="text-align:center;"> 1 </td>
-   <td style="text-align:center;"> 1 </td>
-   <td style="text-align:center;"> 1 </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 1 </td>
-   <td style="text-align:center;"> 1 </td>
-   <td style="text-align:center;"> 1 </td>
-   <td style="text-align:center;"> 1 </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> THERESA </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 1 </td>
-   <td style="text-align:center;"> 1 </td>
-   <td style="text-align:center;"> 1 </td>
-   <td style="text-align:center;"> 1 </td>
-   <td style="text-align:center;"> 1 </td>
-   <td style="text-align:center;"> 1 </td>
-   <td style="text-align:center;"> 1 </td>
-   <td style="text-align:center;"> 1 </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> BRENDA </td>
+   <td style="text-align:left;font-weight: bold;"> BRENDA </td>
    <td style="text-align:center;"> 1 </td>
    <td style="text-align:center;"> 0 </td>
    <td style="text-align:center;"> 1 </td>
@@ -355,7 +247,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
    <td style="text-align:center;"> 0 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> CHARLOTTE </td>
+   <td style="text-align:left;font-weight: bold;"> CHARLOTTE </td>
    <td style="text-align:center;"> 0 </td>
    <td style="text-align:center;"> 0 </td>
    <td style="text-align:center;"> 1 </td>
@@ -372,48 +264,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
    <td style="text-align:center;"> 0 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> FRANCES </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 1 </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 1 </td>
-   <td style="text-align:center;"> 1 </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:left;font-weight: bold;"> DOROTHY </td>
    <td style="text-align:center;"> 0 </td>
    <td style="text-align:center;"> 0 </td>
    <td style="text-align:center;"> 0 </td>
    <td style="text-align:center;"> 0 </td>
    <td style="text-align:center;"> 0 </td>
    <td style="text-align:center;"> 0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> ELEANOR </td>
    <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 1 </td>
-   <td style="text-align:center;"> 1 </td>
-   <td style="text-align:center;"> 1 </td>
-   <td style="text-align:center;"> 1 </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> RUTH </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 1 </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 1 </td>
    <td style="text-align:center;"> 1 </td>
    <td style="text-align:center;"> 1 </td>
    <td style="text-align:center;"> 0 </td>
@@ -423,109 +281,41 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
    <td style="text-align:center;"> 0 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> VERNE </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:left;font-weight: bold;"> ELEANOR </td>
    <td style="text-align:center;"> 0 </td>
    <td style="text-align:center;"> 0 </td>
    <td style="text-align:center;"> 0 </td>
    <td style="text-align:center;"> 1 </td>
    <td style="text-align:center;"> 1 </td>
    <td style="text-align:center;"> 1 </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 0 </td>
    <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
    <td style="text-align:center;"> 0 </td>
    <td style="text-align:center;"> 0 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> MYRA </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:left;font-weight: bold;"> EVELYN </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
    <td style="text-align:center;"> 1 </td>
    <td style="text-align:center;"> 1 </td>
    <td style="text-align:center;"> 1 </td>
    <td style="text-align:center;"> 0 </td>
    <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
    <td style="text-align:center;"> 0 </td>
    <td style="text-align:center;"> 0 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> KATHERINE </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 1 </td>
-   <td style="text-align:center;"> 1 </td>
-   <td style="text-align:center;"> 1 </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 1 </td>
-   <td style="text-align:center;"> 1 </td>
-   <td style="text-align:center;"> 1 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> SYLVIA </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 1 </td>
-   <td style="text-align:center;"> 1 </td>
-   <td style="text-align:center;"> 1 </td>
-   <td style="text-align:center;"> 1 </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 1 </td>
-   <td style="text-align:center;"> 1 </td>
-   <td style="text-align:center;"> 1 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> NORA </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 1 </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 1 </td>
-   <td style="text-align:center;"> 1 </td>
-   <td style="text-align:center;"> 1 </td>
-   <td style="text-align:center;"> 1 </td>
-   <td style="text-align:center;"> 1 </td>
-   <td style="text-align:center;"> 1 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> HELEN </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 1 </td>
-   <td style="text-align:center;"> 1 </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 1 </td>
-   <td style="text-align:center;"> 1 </td>
-   <td style="text-align:center;"> 1 </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> OLIVIA </td>
+   <td style="text-align:left;font-weight: bold;"> FLORA </td>
    <td style="text-align:center;"> 0 </td>
    <td style="text-align:center;"> 0 </td>
    <td style="text-align:center;"> 0 </td>
@@ -542,33 +332,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
    <td style="text-align:center;"> 0 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> FLORA </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:left;font-weight: bold;"> FRANCES </td>
    <td style="text-align:center;"> 0 </td>
    <td style="text-align:center;"> 0 </td>
    <td style="text-align:center;"> 1 </td>
-   <td style="text-align:center;"> 0 </td>
    <td style="text-align:center;"> 1 </td>
    <td style="text-align:center;"> 1 </td>
    <td style="text-align:center;"> 1 </td>
    <td style="text-align:center;"> 0 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> PEARL </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 0 </td>
    <td style="text-align:center;"> 1 </td>
    <td style="text-align:center;"> 0 </td>
-   <td style="text-align:center;"> 1 </td>
-   <td style="text-align:center;"> 1 </td>
    <td style="text-align:center;"> 0 </td>
    <td style="text-align:center;"> 0 </td>
    <td style="text-align:center;"> 0 </td>
@@ -576,8 +349,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
    <td style="text-align:center;"> 0 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> DOROTHY </td>
-   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:left;font-weight: bold;"> HELEN </td>
    <td style="text-align:center;"> 0 </td>
    <td style="text-align:center;"> 0 </td>
    <td style="text-align:center;"> 0 </td>
@@ -587,62 +359,2160 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
    <td style="text-align:center;"> 1 </td>
    <td style="text-align:center;"> 1 </td>
    <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
    <td style="text-align:center;"> 0 </td>
    <td style="text-align:center;"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> KATHERINE </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> LAURA </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> MYRNA </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> NORA </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> OLIVIA </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> PEARL </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> RUTH </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> SYLVIA </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> THERESA </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> VERNE </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 1 </td>
    <td style="text-align:center;"> 0 </td>
    <td style="text-align:center;"> 0 </td>
   </tr>
 </tbody>
-<tfoot>
-<tr><td style="padding: 0; " colspan="100%"><span style="font-style: italic;">Note: </span></td></tr>
-<tr><td style="padding: 0; " colspan="100%">
-<sup></sup> Rows ordered according to the generalized blockmodeling solution of Doreian et al. (2004, Table 4).</td></tr>
-</tfoot>
 </table>
 
 </div>
 </div>
 </div>
-<p>In this post I show how the Bonacich centrality fits into the reflection idea, and why this means it is a different metric from that yielded by HH’s reflection method.</p>
-<p>Consider an affiliation matrix <span class="math inline">\(\mathbf{A}\)</span> of dimensions <span class="math inline">\(|P| \times |G|\)</span> where <span class="math inline">\(|P|\)</span> is the cardinality of the person set and <span class="math inline">\(|G|\)</span> the cardinality of the group set in the two-mode network. Each entry in the matrix <span class="math inline">\(a_{pg} = 1\)</span> if person <em>p</em> affiliates with group <span class="math inline">\(g\)</span> and zero otherwise.</p>
+<p>In this post I show how the Bonacich centrality fits into the reflection idea, and why this means it is a different metric from that yielded by HH’s reflection method. This also the difference between Bonacich and Correspondence Analysis (CA), because the HH reflection method is equivalent to CA.</p>
+<p>Consider an affiliation matrix <span class="math inline">\(\mathbf{A}\)</span> of dimensions <span class="math inline">\(|P| \times |G|\)</span> where <span class="math inline">\(|P|\)</span> is the cardinality of the person set and <span class="math inline">\(|G|\)</span> the cardinality of the group set in the two-mode network. Each entry in the matrix <span class="math inline">\(a_{pg} = 1\)</span> if person <em>p</em> affiliates with group <span class="math inline">\(g\)</span> and zero otherwise. An affiliation matrix of this type, representing Davis et al.’s (1941) famous Southern Women data, is shown as <a href="#tbl-sw">Table&nbsp;1</a>.</p>
 <p>In this case, the degree centrality of people is given by:</p>
 <p><span id="eq-pc"><span class="math display">\[
-   C^R_p(1) = \sum_g a_{pg}
+   C^B_p(1) = \sum_g a_{pg} \frac{1}{max\left(C^R_{p \in P}(1)\right)}
 \tag{1}\]</span></span></p>
 <p>And for groups:</p>
 <p><span id="eq-gc"><span class="math display">\[
-   C^R_g(1) = \sum_p a_{pg}
+   C^B_g(1) = \sum_p a_{pg} \frac{1}{max\left(C^B_{g \in G}(1)\right)}
 \tag{2}\]</span></span></p>
+<p>The left side of the right hand sides of <a href="#eq-pc">Equation&nbsp;1</a> and <a href="#eq-gc">Equation&nbsp;2</a> are just the first order degree centralities of people and groups (Faust, 1997). People are central when they have many memberships and groups are central when they have many members. Because we only care about the rank order, we normalize each by the maximum observed centrality for persons and groups.</p>
 <p>Once we have this information, we can define a second order “Bonacich-reflection” on both the persons and groups using the formulas:</p>
 <p><span id="eq-pr2"><span class="math display">\[
-   C^R_p(2) = \sum_g a_{pg}C^R_g(1)
+   C^B_p(2) = \sum_g a_{pg}C^R_g(1) \frac{1}{max\left(C^B_{p \in P}(2)\right)}
 \tag{3}\]</span></span></p>
 <p><span id="eq-gr2"><span class="math display">\[
-   C^R_g(2) = \sum_p a_{pg}C^R_p(1)
+   C^B_g(2) = \sum_p a_{pg}C^R_p(1) \frac{1}{max\left(C^B_{g \in G}(2)\right)}
 \tag{4}\]</span></span></p>
 <p><a href="#eq-pr2">Equation&nbsp;3</a> says that people are central when the sum of the number of members of the groups they belong to is large. <a href="#eq-gr2">Equation&nbsp;4</a> says groups are central when the sum of the number of memberships of the people who belong to them is large.</p>
 <p>We can keep on going and define a third order reflection using the formulas:</p>
 <p><span id="eq-pr3"><span class="math display">\[
-   C^R_p(3) = \sum_g a_{pg}C^R_g(2)
+   C^B_p(3) = \sum_g a_{pg}C^R_g(2) \frac{1}{max\left(C^B_{p \in P}(3)\right)}
 \tag{5}\]</span></span></p>
 <p><span id="eq-gr3"><span class="math display">\[
-   C^R_g(3) = \sum_p a_{pg}C^R_p(2)
+   C^B_g(3) = \sum_p a_{pg}C^R_p(2) \frac{1}{max\left(C^B_{g \in G}(3)\right)}
 \tag{6}\]</span></span></p>
 <p><a href="#eq-pr3">Equation&nbsp;7</a> says that people are central when the sum of the sum of the number of memberships held by the people who belong to the groups they belong to is large. <a href="#eq-pr3">Equation&nbsp;7</a> says that groups are central when the sum of the sum of the number of members of the groups their members belong to is large.</p>
+<p>Once again, we can keep going and define fourth order, fifth order, and higher reflections <span class="math inline">\(C^R_p(4), C^R_p(4) \ldots C^R_p(q)\)</span>.</p>
 <p>More generally, the reflective Bonacich centralities for persons and groups are given by:</p>
 <p><span id="eq-pr3"><span class="math display">\[
-   C^R_p(q) = \sum_g a_{pg}C^R_g(q-1)
+   C^B_p(q) = \sum_g a_{pg}C^R_g(q-1) \frac{1}{max\left(C^B_{p \in P}(q)\right)}
 \tag{7}\]</span></span></p>
 <p><span id="eq-gr3"><span class="math display">\[
-   C^R_g(q) = \sum_p a_{pg}C^R_p(q-1)
+   C^B_g(q) = \sum_p a_{pg}C^R_p(q-1) \frac{1}{max\left(C^B_{g \in G}(q)\right)}
 \tag{8}\]</span></span></p>
 <p>For all q &gt; 1.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>   <span class="fu">source</span>(<span class="st">"C:/Users/Omar Lizardo/Google Drive/R/person-group-reflections/reflections.R"</span>)</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>     a <span class="ot">&lt;-</span> <span class="fu">reflections</span>(A)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+
 </div>
+<p>Let’s see how that looks like with real data. The results of the reflection equations for the Southern Women data, for people up to sixteen reflections, are shown in <a href="#tbl-refp">Table&nbsp;2</a>. The corresponding results for groups are shown in <a href="#tbl-refg">Table&nbsp;3</a>.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="tbl-refp" class="anchored">
+
+<table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;"><caption>Table&nbsp;2:  Bonacich reflections on Southern Women Data (Persons) </caption>
+ <thead>
+  <tr>
+   <th style="text-align:left;">   </th>
+   <th style="text-align:center;"> 1 </th>
+   <th style="text-align:center;"> 2 </th>
+   <th style="text-align:center;"> 3 </th>
+   <th style="text-align:center;"> 4 </th>
+   <th style="text-align:center;"> 5 </th>
+   <th style="text-align:center;"> 6 </th>
+   <th style="text-align:center;"> 7 </th>
+   <th style="text-align:center;"> 8 </th>
+   <th style="text-align:center;"> 9 </th>
+   <th style="text-align:center;"> 10 </th>
+   <th style="text-align:center;"> 11 </th>
+   <th style="text-align:center;"> 12 </th>
+   <th style="text-align:center;"> 13 </th>
+   <th style="text-align:center;"> 14 </th>
+   <th style="text-align:center;"> 15 </th>
+   <th style="text-align:center;"> 16 </th>
+   <th style="text-align:center;"> 17 </th>
+   <th style="text-align:center;"> 18 </th>
+   <th style="text-align:center;"> 19 </th>
+   <th style="text-align:center;"> 20 </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> EVELYN </td>
+   <td style="text-align:center;"> 1.00 </td>
+   <td style="text-align:center;"> 0.90 </td>
+   <td style="text-align:center;"> 0.90 </td>
+   <td style="text-align:center;"> 0.90 </td>
+   <td style="text-align:center;"> 0.91 </td>
+   <td style="text-align:center;"> 0.91 </td>
+   <td style="text-align:center;"> 0.91 </td>
+   <td style="text-align:center;"> 0.91 </td>
+   <td style="text-align:center;"> 0.91 </td>
+   <td style="text-align:center;"> 0.91 </td>
+   <td style="text-align:center;"> 0.91 </td>
+   <td style="text-align:center;"> 0.91 </td>
+   <td style="text-align:center;"> 0.91 </td>
+   <td style="text-align:center;"> 0.91 </td>
+   <td style="text-align:center;"> 0.91 </td>
+   <td style="text-align:center;"> 0.91 </td>
+   <td style="text-align:center;"> 0.91 </td>
+   <td style="text-align:center;"> 0.91 </td>
+   <td style="text-align:center;"> 0.91 </td>
+   <td style="text-align:center;"> 0.91 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> LAURA </td>
+   <td style="text-align:center;"> 0.88 </td>
+   <td style="text-align:center;"> 0.76 </td>
+   <td style="text-align:center;"> 0.80 </td>
+   <td style="text-align:center;"> 0.79 </td>
+   <td style="text-align:center;"> 0.80 </td>
+   <td style="text-align:center;"> 0.80 </td>
+   <td style="text-align:center;"> 0.80 </td>
+   <td style="text-align:center;"> 0.80 </td>
+   <td style="text-align:center;"> 0.80 </td>
+   <td style="text-align:center;"> 0.80 </td>
+   <td style="text-align:center;"> 0.80 </td>
+   <td style="text-align:center;"> 0.80 </td>
+   <td style="text-align:center;"> 0.80 </td>
+   <td style="text-align:center;"> 0.80 </td>
+   <td style="text-align:center;"> 0.80 </td>
+   <td style="text-align:center;"> 0.80 </td>
+   <td style="text-align:center;"> 0.80 </td>
+   <td style="text-align:center;"> 0.80 </td>
+   <td style="text-align:center;"> 0.80 </td>
+   <td style="text-align:center;"> 0.80 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> THERESA </td>
+   <td style="text-align:center;"> 1.00 </td>
+   <td style="text-align:center;"> 1.00 </td>
+   <td style="text-align:center;"> 1.00 </td>
+   <td style="text-align:center;"> 1.00 </td>
+   <td style="text-align:center;"> 1.00 </td>
+   <td style="text-align:center;"> 1.00 </td>
+   <td style="text-align:center;"> 1.00 </td>
+   <td style="text-align:center;"> 1.00 </td>
+   <td style="text-align:center;"> 1.00 </td>
+   <td style="text-align:center;"> 1.00 </td>
+   <td style="text-align:center;"> 1.00 </td>
+   <td style="text-align:center;"> 1.00 </td>
+   <td style="text-align:center;"> 1.00 </td>
+   <td style="text-align:center;"> 1.00 </td>
+   <td style="text-align:center;"> 1.00 </td>
+   <td style="text-align:center;"> 1.00 </td>
+   <td style="text-align:center;"> 1.00 </td>
+   <td style="text-align:center;"> 1.00 </td>
+   <td style="text-align:center;"> 1.00 </td>
+   <td style="text-align:center;"> 1.00 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> BRENDA </td>
+   <td style="text-align:center;"> 0.88 </td>
+   <td style="text-align:center;"> 0.82 </td>
+   <td style="text-align:center;"> 0.85 </td>
+   <td style="text-align:center;"> 0.84 </td>
+   <td style="text-align:center;"> 0.85 </td>
+   <td style="text-align:center;"> 0.85 </td>
+   <td style="text-align:center;"> 0.86 </td>
+   <td style="text-align:center;"> 0.86 </td>
+   <td style="text-align:center;"> 0.86 </td>
+   <td style="text-align:center;"> 0.86 </td>
+   <td style="text-align:center;"> 0.86 </td>
+   <td style="text-align:center;"> 0.86 </td>
+   <td style="text-align:center;"> 0.86 </td>
+   <td style="text-align:center;"> 0.86 </td>
+   <td style="text-align:center;"> 0.86 </td>
+   <td style="text-align:center;"> 0.86 </td>
+   <td style="text-align:center;"> 0.86 </td>
+   <td style="text-align:center;"> 0.86 </td>
+   <td style="text-align:center;"> 0.86 </td>
+   <td style="text-align:center;"> 0.86 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> CHARLOTTE </td>
+   <td style="text-align:center;"> 0.50 </td>
+   <td style="text-align:center;"> 0.46 </td>
+   <td style="text-align:center;"> 0.49 </td>
+   <td style="text-align:center;"> 0.48 </td>
+   <td style="text-align:center;"> 0.49 </td>
+   <td style="text-align:center;"> 0.49 </td>
+   <td style="text-align:center;"> 0.49 </td>
+   <td style="text-align:center;"> 0.49 </td>
+   <td style="text-align:center;"> 0.49 </td>
+   <td style="text-align:center;"> 0.49 </td>
+   <td style="text-align:center;"> 0.49 </td>
+   <td style="text-align:center;"> 0.49 </td>
+   <td style="text-align:center;"> 0.49 </td>
+   <td style="text-align:center;"> 0.49 </td>
+   <td style="text-align:center;"> 0.49 </td>
+   <td style="text-align:center;"> 0.49 </td>
+   <td style="text-align:center;"> 0.49 </td>
+   <td style="text-align:center;"> 0.49 </td>
+   <td style="text-align:center;"> 0.49 </td>
+   <td style="text-align:center;"> 0.49 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> FRANCES </td>
+   <td style="text-align:center;"> 0.62 </td>
+   <td style="text-align:center;"> 0.63 </td>
+   <td style="text-align:center;"> 0.64 </td>
+   <td style="text-align:center;"> 0.64 </td>
+   <td style="text-align:center;"> 0.65 </td>
+   <td style="text-align:center;"> 0.65 </td>
+   <td style="text-align:center;"> 0.65 </td>
+   <td style="text-align:center;"> 0.65 </td>
+   <td style="text-align:center;"> 0.66 </td>
+   <td style="text-align:center;"> 0.66 </td>
+   <td style="text-align:center;"> 0.66 </td>
+   <td style="text-align:center;"> 0.66 </td>
+   <td style="text-align:center;"> 0.66 </td>
+   <td style="text-align:center;"> 0.66 </td>
+   <td style="text-align:center;"> 0.66 </td>
+   <td style="text-align:center;"> 0.66 </td>
+   <td style="text-align:center;"> 0.66 </td>
+   <td style="text-align:center;"> 0.66 </td>
+   <td style="text-align:center;"> 0.66 </td>
+   <td style="text-align:center;"> 0.66 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> ELEANOR </td>
+   <td style="text-align:center;"> 0.62 </td>
+   <td style="text-align:center;"> 0.69 </td>
+   <td style="text-align:center;"> 0.69 </td>
+   <td style="text-align:center;"> 0.70 </td>
+   <td style="text-align:center;"> 0.70 </td>
+   <td style="text-align:center;"> 0.70 </td>
+   <td style="text-align:center;"> 0.70 </td>
+   <td style="text-align:center;"> 0.70 </td>
+   <td style="text-align:center;"> 0.70 </td>
+   <td style="text-align:center;"> 0.70 </td>
+   <td style="text-align:center;"> 0.70 </td>
+   <td style="text-align:center;"> 0.70 </td>
+   <td style="text-align:center;"> 0.70 </td>
+   <td style="text-align:center;"> 0.70 </td>
+   <td style="text-align:center;"> 0.70 </td>
+   <td style="text-align:center;"> 0.70 </td>
+   <td style="text-align:center;"> 0.70 </td>
+   <td style="text-align:center;"> 0.70 </td>
+   <td style="text-align:center;"> 0.70 </td>
+   <td style="text-align:center;"> 0.70 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> RUTH </td>
+   <td style="text-align:center;"> 0.62 </td>
+   <td style="text-align:center;"> 0.76 </td>
+   <td style="text-align:center;"> 0.73 </td>
+   <td style="text-align:center;"> 0.74 </td>
+   <td style="text-align:center;"> 0.73 </td>
+   <td style="text-align:center;"> 0.73 </td>
+   <td style="text-align:center;"> 0.73 </td>
+   <td style="text-align:center;"> 0.73 </td>
+   <td style="text-align:center;"> 0.73 </td>
+   <td style="text-align:center;"> 0.73 </td>
+   <td style="text-align:center;"> 0.73 </td>
+   <td style="text-align:center;"> 0.73 </td>
+   <td style="text-align:center;"> 0.73 </td>
+   <td style="text-align:center;"> 0.73 </td>
+   <td style="text-align:center;"> 0.73 </td>
+   <td style="text-align:center;"> 0.73 </td>
+   <td style="text-align:center;"> 0.73 </td>
+   <td style="text-align:center;"> 0.73 </td>
+   <td style="text-align:center;"> 0.73 </td>
+   <td style="text-align:center;"> 0.73 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> VERNE </td>
+   <td style="text-align:center;"> 0.50 </td>
+   <td style="text-align:center;"> 0.63 </td>
+   <td style="text-align:center;"> 0.58 </td>
+   <td style="text-align:center;"> 0.58 </td>
+   <td style="text-align:center;"> 0.57 </td>
+   <td style="text-align:center;"> 0.56 </td>
+   <td style="text-align:center;"> 0.56 </td>
+   <td style="text-align:center;"> 0.56 </td>
+   <td style="text-align:center;"> 0.55 </td>
+   <td style="text-align:center;"> 0.55 </td>
+   <td style="text-align:center;"> 0.55 </td>
+   <td style="text-align:center;"> 0.55 </td>
+   <td style="text-align:center;"> 0.55 </td>
+   <td style="text-align:center;"> 0.55 </td>
+   <td style="text-align:center;"> 0.55 </td>
+   <td style="text-align:center;"> 0.55 </td>
+   <td style="text-align:center;"> 0.55 </td>
+   <td style="text-align:center;"> 0.55 </td>
+   <td style="text-align:center;"> 0.55 </td>
+   <td style="text-align:center;"> 0.55 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> MYRNA </td>
+   <td style="text-align:center;"> 0.50 </td>
+   <td style="text-align:center;"> 0.55 </td>
+   <td style="text-align:center;"> 0.50 </td>
+   <td style="text-align:center;"> 0.50 </td>
+   <td style="text-align:center;"> 0.48 </td>
+   <td style="text-align:center;"> 0.48 </td>
+   <td style="text-align:center;"> 0.47 </td>
+   <td style="text-align:center;"> 0.47 </td>
+   <td style="text-align:center;"> 0.47 </td>
+   <td style="text-align:center;"> 0.46 </td>
+   <td style="text-align:center;"> 0.46 </td>
+   <td style="text-align:center;"> 0.46 </td>
+   <td style="text-align:center;"> 0.46 </td>
+   <td style="text-align:center;"> 0.46 </td>
+   <td style="text-align:center;"> 0.46 </td>
+   <td style="text-align:center;"> 0.46 </td>
+   <td style="text-align:center;"> 0.46 </td>
+   <td style="text-align:center;"> 0.46 </td>
+   <td style="text-align:center;"> 0.46 </td>
+   <td style="text-align:center;"> 0.46 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> KATHERINE </td>
+   <td style="text-align:center;"> 0.75 </td>
+   <td style="text-align:center;"> 0.64 </td>
+   <td style="text-align:center;"> 0.61 </td>
+   <td style="text-align:center;"> 0.59 </td>
+   <td style="text-align:center;"> 0.57 </td>
+   <td style="text-align:center;"> 0.56 </td>
+   <td style="text-align:center;"> 0.55 </td>
+   <td style="text-align:center;"> 0.55 </td>
+   <td style="text-align:center;"> 0.54 </td>
+   <td style="text-align:center;"> 0.54 </td>
+   <td style="text-align:center;"> 0.54 </td>
+   <td style="text-align:center;"> 0.54 </td>
+   <td style="text-align:center;"> 0.54 </td>
+   <td style="text-align:center;"> 0.54 </td>
+   <td style="text-align:center;"> 0.54 </td>
+   <td style="text-align:center;"> 0.54 </td>
+   <td style="text-align:center;"> 0.54 </td>
+   <td style="text-align:center;"> 0.54 </td>
+   <td style="text-align:center;"> 0.54 </td>
+   <td style="text-align:center;"> 0.54 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> SYLVIA </td>
+   <td style="text-align:center;"> 0.88 </td>
+   <td style="text-align:center;"> 0.79 </td>
+   <td style="text-align:center;"> 0.76 </td>
+   <td style="text-align:center;"> 0.74 </td>
+   <td style="text-align:center;"> 0.71 </td>
+   <td style="text-align:center;"> 0.71 </td>
+   <td style="text-align:center;"> 0.70 </td>
+   <td style="text-align:center;"> 0.69 </td>
+   <td style="text-align:center;"> 0.69 </td>
+   <td style="text-align:center;"> 0.69 </td>
+   <td style="text-align:center;"> 0.68 </td>
+   <td style="text-align:center;"> 0.68 </td>
+   <td style="text-align:center;"> 0.68 </td>
+   <td style="text-align:center;"> 0.68 </td>
+   <td style="text-align:center;"> 0.68 </td>
+   <td style="text-align:center;"> 0.68 </td>
+   <td style="text-align:center;"> 0.68 </td>
+   <td style="text-align:center;"> 0.68 </td>
+   <td style="text-align:center;"> 0.68 </td>
+   <td style="text-align:center;"> 0.68 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> NORA </td>
+   <td style="text-align:center;"> 0.88 </td>
+   <td style="text-align:center;"> 0.64 </td>
+   <td style="text-align:center;"> 0.60 </td>
+   <td style="text-align:center;"> 0.57 </td>
+   <td style="text-align:center;"> 0.55 </td>
+   <td style="text-align:center;"> 0.54 </td>
+   <td style="text-align:center;"> 0.53 </td>
+   <td style="text-align:center;"> 0.53 </td>
+   <td style="text-align:center;"> 0.52 </td>
+   <td style="text-align:center;"> 0.52 </td>
+   <td style="text-align:center;"> 0.52 </td>
+   <td style="text-align:center;"> 0.52 </td>
+   <td style="text-align:center;"> 0.52 </td>
+   <td style="text-align:center;"> 0.52 </td>
+   <td style="text-align:center;"> 0.51 </td>
+   <td style="text-align:center;"> 0.51 </td>
+   <td style="text-align:center;"> 0.51 </td>
+   <td style="text-align:center;"> 0.51 </td>
+   <td style="text-align:center;"> 0.51 </td>
+   <td style="text-align:center;"> 0.51 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> HELEN </td>
+   <td style="text-align:center;"> 0.62 </td>
+   <td style="text-align:center;"> 0.58 </td>
+   <td style="text-align:center;"> 0.55 </td>
+   <td style="text-align:center;"> 0.53 </td>
+   <td style="text-align:center;"> 0.52 </td>
+   <td style="text-align:center;"> 0.51 </td>
+   <td style="text-align:center;"> 0.51 </td>
+   <td style="text-align:center;"> 0.50 </td>
+   <td style="text-align:center;"> 0.50 </td>
+   <td style="text-align:center;"> 0.50 </td>
+   <td style="text-align:center;"> 0.50 </td>
+   <td style="text-align:center;"> 0.50 </td>
+   <td style="text-align:center;"> 0.50 </td>
+   <td style="text-align:center;"> 0.50 </td>
+   <td style="text-align:center;"> 0.50 </td>
+   <td style="text-align:center;"> 0.50 </td>
+   <td style="text-align:center;"> 0.50 </td>
+   <td style="text-align:center;"> 0.50 </td>
+   <td style="text-align:center;"> 0.50 </td>
+   <td style="text-align:center;"> 0.50 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> OLIVIA </td>
+   <td style="text-align:center;"> 0.25 </td>
+   <td style="text-align:center;"> 0.24 </td>
+   <td style="text-align:center;"> 0.19 </td>
+   <td style="text-align:center;"> 0.19 </td>
+   <td style="text-align:center;"> 0.18 </td>
+   <td style="text-align:center;"> 0.18 </td>
+   <td style="text-align:center;"> 0.17 </td>
+   <td style="text-align:center;"> 0.17 </td>
+   <td style="text-align:center;"> 0.17 </td>
+   <td style="text-align:center;"> 0.17 </td>
+   <td style="text-align:center;"> 0.17 </td>
+   <td style="text-align:center;"> 0.17 </td>
+   <td style="text-align:center;"> 0.17 </td>
+   <td style="text-align:center;"> 0.17 </td>
+   <td style="text-align:center;"> 0.17 </td>
+   <td style="text-align:center;"> 0.17 </td>
+   <td style="text-align:center;"> 0.17 </td>
+   <td style="text-align:center;"> 0.17 </td>
+   <td style="text-align:center;"> 0.17 </td>
+   <td style="text-align:center;"> 0.17 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> FLORA </td>
+   <td style="text-align:center;"> 0.25 </td>
+   <td style="text-align:center;"> 0.24 </td>
+   <td style="text-align:center;"> 0.19 </td>
+   <td style="text-align:center;"> 0.19 </td>
+   <td style="text-align:center;"> 0.18 </td>
+   <td style="text-align:center;"> 0.18 </td>
+   <td style="text-align:center;"> 0.17 </td>
+   <td style="text-align:center;"> 0.17 </td>
+   <td style="text-align:center;"> 0.17 </td>
+   <td style="text-align:center;"> 0.17 </td>
+   <td style="text-align:center;"> 0.17 </td>
+   <td style="text-align:center;"> 0.17 </td>
+   <td style="text-align:center;"> 0.17 </td>
+   <td style="text-align:center;"> 0.17 </td>
+   <td style="text-align:center;"> 0.17 </td>
+   <td style="text-align:center;"> 0.17 </td>
+   <td style="text-align:center;"> 0.17 </td>
+   <td style="text-align:center;"> 0.17 </td>
+   <td style="text-align:center;"> 0.17 </td>
+   <td style="text-align:center;"> 0.17 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> PEARL </td>
+   <td style="text-align:center;"> 0.38 </td>
+   <td style="text-align:center;"> 0.49 </td>
+   <td style="text-align:center;"> 0.46 </td>
+   <td style="text-align:center;"> 0.46 </td>
+   <td style="text-align:center;"> 0.46 </td>
+   <td style="text-align:center;"> 0.46 </td>
+   <td style="text-align:center;"> 0.45 </td>
+   <td style="text-align:center;"> 0.45 </td>
+   <td style="text-align:center;"> 0.45 </td>
+   <td style="text-align:center;"> 0.45 </td>
+   <td style="text-align:center;"> 0.45 </td>
+   <td style="text-align:center;"> 0.45 </td>
+   <td style="text-align:center;"> 0.45 </td>
+   <td style="text-align:center;"> 0.45 </td>
+   <td style="text-align:center;"> 0.45 </td>
+   <td style="text-align:center;"> 0.45 </td>
+   <td style="text-align:center;"> 0.45 </td>
+   <td style="text-align:center;"> 0.45 </td>
+   <td style="text-align:center;"> 0.45 </td>
+   <td style="text-align:center;"> 0.45 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> DOROTHY </td>
+   <td style="text-align:center;"> 0.25 </td>
+   <td style="text-align:center;"> 0.39 </td>
+   <td style="text-align:center;"> 0.34 </td>
+   <td style="text-align:center;"> 0.35 </td>
+   <td style="text-align:center;"> 0.34 </td>
+   <td style="text-align:center;"> 0.34 </td>
+   <td style="text-align:center;"> 0.34 </td>
+   <td style="text-align:center;"> 0.34 </td>
+   <td style="text-align:center;"> 0.34 </td>
+   <td style="text-align:center;"> 0.34 </td>
+   <td style="text-align:center;"> 0.34 </td>
+   <td style="text-align:center;"> 0.34 </td>
+   <td style="text-align:center;"> 0.34 </td>
+   <td style="text-align:center;"> 0.34 </td>
+   <td style="text-align:center;"> 0.33 </td>
+   <td style="text-align:center;"> 0.33 </td>
+   <td style="text-align:center;"> 0.33 </td>
+   <td style="text-align:center;"> 0.33 </td>
+   <td style="text-align:center;"> 0.33 </td>
+   <td style="text-align:center;"> 0.33 </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div id="tbl-refg" class="anchored">
+
+<table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;"><caption>Table&nbsp;3:  Bonacich reflections on Southern Women Data (Groups) </caption>
+ <thead>
+  <tr>
+   <th style="text-align:left;">   </th>
+   <th style="text-align:center;"> 1 </th>
+   <th style="text-align:center;"> 2 </th>
+   <th style="text-align:center;"> 3 </th>
+   <th style="text-align:center;"> 4 </th>
+   <th style="text-align:center;"> 5 </th>
+   <th style="text-align:center;"> 6 </th>
+   <th style="text-align:center;"> 7 </th>
+   <th style="text-align:center;"> 8 </th>
+   <th style="text-align:center;"> 9 </th>
+   <th style="text-align:center;"> 10 </th>
+   <th style="text-align:center;"> 11 </th>
+   <th style="text-align:center;"> 12 </th>
+   <th style="text-align:center;"> 13 </th>
+   <th style="text-align:center;"> 14 </th>
+   <th style="text-align:center;"> 15 </th>
+   <th style="text-align:center;"> 16 </th>
+   <th style="text-align:center;"> 17 </th>
+   <th style="text-align:center;"> 18 </th>
+   <th style="text-align:center;"> 19 </th>
+   <th style="text-align:center;"> 20 </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> E1 </td>
+   <td style="text-align:center;"> 0.21 </td>
+   <td style="text-align:center;"> 0.29 </td>
+   <td style="text-align:center;"> 0.26 </td>
+   <td style="text-align:center;"> 0.27 </td>
+   <td style="text-align:center;"> 0.27 </td>
+   <td style="text-align:center;"> 0.28 </td>
+   <td style="text-align:center;"> 0.28 </td>
+   <td style="text-align:center;"> 0.28 </td>
+   <td style="text-align:center;"> 0.28 </td>
+   <td style="text-align:center;"> 0.28 </td>
+   <td style="text-align:center;"> 0.28 </td>
+   <td style="text-align:center;"> 0.28 </td>
+   <td style="text-align:center;"> 0.28 </td>
+   <td style="text-align:center;"> 0.28 </td>
+   <td style="text-align:center;"> 0.28 </td>
+   <td style="text-align:center;"> 0.28 </td>
+   <td style="text-align:center;"> 0.28 </td>
+   <td style="text-align:center;"> 0.28 </td>
+   <td style="text-align:center;"> 0.28 </td>
+   <td style="text-align:center;"> 0.28 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> E2 </td>
+   <td style="text-align:center;"> 0.21 </td>
+   <td style="text-align:center;"> 0.30 </td>
+   <td style="text-align:center;"> 0.28 </td>
+   <td style="text-align:center;"> 0.29 </td>
+   <td style="text-align:center;"> 0.29 </td>
+   <td style="text-align:center;"> 0.29 </td>
+   <td style="text-align:center;"> 0.29 </td>
+   <td style="text-align:center;"> 0.29 </td>
+   <td style="text-align:center;"> 0.29 </td>
+   <td style="text-align:center;"> 0.29 </td>
+   <td style="text-align:center;"> 0.30 </td>
+   <td style="text-align:center;"> 0.30 </td>
+   <td style="text-align:center;"> 0.30 </td>
+   <td style="text-align:center;"> 0.30 </td>
+   <td style="text-align:center;"> 0.30 </td>
+   <td style="text-align:center;"> 0.30 </td>
+   <td style="text-align:center;"> 0.30 </td>
+   <td style="text-align:center;"> 0.30 </td>
+   <td style="text-align:center;"> 0.30 </td>
+   <td style="text-align:center;"> 0.30 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> E3 </td>
+   <td style="text-align:center;"> 0.43 </td>
+   <td style="text-align:center;"> 0.51 </td>
+   <td style="text-align:center;"> 0.47 </td>
+   <td style="text-align:center;"> 0.50 </td>
+   <td style="text-align:center;"> 0.50 </td>
+   <td style="text-align:center;"> 0.51 </td>
+   <td style="text-align:center;"> 0.51 </td>
+   <td style="text-align:center;"> 0.51 </td>
+   <td style="text-align:center;"> 0.51 </td>
+   <td style="text-align:center;"> 0.51 </td>
+   <td style="text-align:center;"> 0.51 </td>
+   <td style="text-align:center;"> 0.51 </td>
+   <td style="text-align:center;"> 0.51 </td>
+   <td style="text-align:center;"> 0.51 </td>
+   <td style="text-align:center;"> 0.51 </td>
+   <td style="text-align:center;"> 0.51 </td>
+   <td style="text-align:center;"> 0.51 </td>
+   <td style="text-align:center;"> 0.51 </td>
+   <td style="text-align:center;"> 0.51 </td>
+   <td style="text-align:center;"> 0.51 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> E4 </td>
+   <td style="text-align:center;"> 0.50 </td>
+   <td style="text-align:center;"> 0.55 </td>
+   <td style="text-align:center;"> 0.55 </td>
+   <td style="text-align:center;"> 0.56 </td>
+   <td style="text-align:center;"> 0.57 </td>
+   <td style="text-align:center;"> 0.57 </td>
+   <td style="text-align:center;"> 0.58 </td>
+   <td style="text-align:center;"> 0.58 </td>
+   <td style="text-align:center;"> 0.58 </td>
+   <td style="text-align:center;"> 0.58 </td>
+   <td style="text-align:center;"> 0.58 </td>
+   <td style="text-align:center;"> 0.58 </td>
+   <td style="text-align:center;"> 0.58 </td>
+   <td style="text-align:center;"> 0.58 </td>
+   <td style="text-align:center;"> 0.58 </td>
+   <td style="text-align:center;"> 0.58 </td>
+   <td style="text-align:center;"> 0.58 </td>
+   <td style="text-align:center;"> 0.58 </td>
+   <td style="text-align:center;"> 0.58 </td>
+   <td style="text-align:center;"> 0.58 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> E5 </td>
+   <td style="text-align:center;"> 0.57 </td>
+   <td style="text-align:center;"> 0.64 </td>
+   <td style="text-align:center;"> 0.62 </td>
+   <td style="text-align:center;"> 0.65 </td>
+   <td style="text-align:center;"> 0.65 </td>
+   <td style="text-align:center;"> 0.66 </td>
+   <td style="text-align:center;"> 0.66 </td>
+   <td style="text-align:center;"> 0.67 </td>
+   <td style="text-align:center;"> 0.67 </td>
+   <td style="text-align:center;"> 0.67 </td>
+   <td style="text-align:center;"> 0.67 </td>
+   <td style="text-align:center;"> 0.67 </td>
+   <td style="text-align:center;"> 0.67 </td>
+   <td style="text-align:center;"> 0.67 </td>
+   <td style="text-align:center;"> 0.67 </td>
+   <td style="text-align:center;"> 0.67 </td>
+   <td style="text-align:center;"> 0.67 </td>
+   <td style="text-align:center;"> 0.67 </td>
+   <td style="text-align:center;"> 0.67 </td>
+   <td style="text-align:center;"> 0.67 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> E6 </td>
+   <td style="text-align:center;"> 0.50 </td>
+   <td style="text-align:center;"> 0.57 </td>
+   <td style="text-align:center;"> 0.55 </td>
+   <td style="text-align:center;"> 0.57 </td>
+   <td style="text-align:center;"> 0.57 </td>
+   <td style="text-align:center;"> 0.58 </td>
+   <td style="text-align:center;"> 0.58 </td>
+   <td style="text-align:center;"> 0.58 </td>
+   <td style="text-align:center;"> 0.58 </td>
+   <td style="text-align:center;"> 0.58 </td>
+   <td style="text-align:center;"> 0.59 </td>
+   <td style="text-align:center;"> 0.59 </td>
+   <td style="text-align:center;"> 0.59 </td>
+   <td style="text-align:center;"> 0.59 </td>
+   <td style="text-align:center;"> 0.59 </td>
+   <td style="text-align:center;"> 0.59 </td>
+   <td style="text-align:center;"> 0.59 </td>
+   <td style="text-align:center;"> 0.59 </td>
+   <td style="text-align:center;"> 0.59 </td>
+   <td style="text-align:center;"> 0.59 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> E7 </td>
+   <td style="text-align:center;"> 0.71 </td>
+   <td style="text-align:center;"> 0.78 </td>
+   <td style="text-align:center;"> 0.74 </td>
+   <td style="text-align:center;"> 0.75 </td>
+   <td style="text-align:center;"> 0.74 </td>
+   <td style="text-align:center;"> 0.75 </td>
+   <td style="text-align:center;"> 0.74 </td>
+   <td style="text-align:center;"> 0.74 </td>
+   <td style="text-align:center;"> 0.74 </td>
+   <td style="text-align:center;"> 0.74 </td>
+   <td style="text-align:center;"> 0.74 </td>
+   <td style="text-align:center;"> 0.74 </td>
+   <td style="text-align:center;"> 0.74 </td>
+   <td style="text-align:center;"> 0.74 </td>
+   <td style="text-align:center;"> 0.74 </td>
+   <td style="text-align:center;"> 0.74 </td>
+   <td style="text-align:center;"> 0.74 </td>
+   <td style="text-align:center;"> 0.74 </td>
+   <td style="text-align:center;"> 0.74 </td>
+   <td style="text-align:center;"> 0.74 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> E8 </td>
+   <td style="text-align:center;"> 1.00 </td>
+   <td style="text-align:center;"> 1.00 </td>
+   <td style="text-align:center;"> 1.00 </td>
+   <td style="text-align:center;"> 1.00 </td>
+   <td style="text-align:center;"> 1.00 </td>
+   <td style="text-align:center;"> 1.00 </td>
+   <td style="text-align:center;"> 1.00 </td>
+   <td style="text-align:center;"> 1.00 </td>
+   <td style="text-align:center;"> 1.00 </td>
+   <td style="text-align:center;"> 1.00 </td>
+   <td style="text-align:center;"> 1.00 </td>
+   <td style="text-align:center;"> 1.00 </td>
+   <td style="text-align:center;"> 1.00 </td>
+   <td style="text-align:center;"> 1.00 </td>
+   <td style="text-align:center;"> 1.00 </td>
+   <td style="text-align:center;"> 1.00 </td>
+   <td style="text-align:center;"> 1.00 </td>
+   <td style="text-align:center;"> 1.00 </td>
+   <td style="text-align:center;"> 1.00 </td>
+   <td style="text-align:center;"> 1.00 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> E9 </td>
+   <td style="text-align:center;"> 0.86 </td>
+   <td style="text-align:center;"> 0.76 </td>
+   <td style="text-align:center;"> 0.76 </td>
+   <td style="text-align:center;"> 0.73 </td>
+   <td style="text-align:center;"> 0.73 </td>
+   <td style="text-align:center;"> 0.72 </td>
+   <td style="text-align:center;"> 0.72 </td>
+   <td style="text-align:center;"> 0.71 </td>
+   <td style="text-align:center;"> 0.71 </td>
+   <td style="text-align:center;"> 0.71 </td>
+   <td style="text-align:center;"> 0.71 </td>
+   <td style="text-align:center;"> 0.71 </td>
+   <td style="text-align:center;"> 0.71 </td>
+   <td style="text-align:center;"> 0.71 </td>
+   <td style="text-align:center;"> 0.71 </td>
+   <td style="text-align:center;"> 0.71 </td>
+   <td style="text-align:center;"> 0.71 </td>
+   <td style="text-align:center;"> 0.71 </td>
+   <td style="text-align:center;"> 0.71 </td>
+   <td style="text-align:center;"> 0.71 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> E10 </td>
+   <td style="text-align:center;"> 0.36 </td>
+   <td style="text-align:center;"> 0.38 </td>
+   <td style="text-align:center;"> 0.33 </td>
+   <td style="text-align:center;"> 0.32 </td>
+   <td style="text-align:center;"> 0.31 </td>
+   <td style="text-align:center;"> 0.30 </td>
+   <td style="text-align:center;"> 0.30 </td>
+   <td style="text-align:center;"> 0.30 </td>
+   <td style="text-align:center;"> 0.30 </td>
+   <td style="text-align:center;"> 0.30 </td>
+   <td style="text-align:center;"> 0.30 </td>
+   <td style="text-align:center;"> 0.29 </td>
+   <td style="text-align:center;"> 0.29 </td>
+   <td style="text-align:center;"> 0.29 </td>
+   <td style="text-align:center;"> 0.29 </td>
+   <td style="text-align:center;"> 0.29 </td>
+   <td style="text-align:center;"> 0.29 </td>
+   <td style="text-align:center;"> 0.29 </td>
+   <td style="text-align:center;"> 0.29 </td>
+   <td style="text-align:center;"> 0.29 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> E11 </td>
+   <td style="text-align:center;"> 0.29 </td>
+   <td style="text-align:center;"> 0.21 </td>
+   <td style="text-align:center;"> 0.18 </td>
+   <td style="text-align:center;"> 0.16 </td>
+   <td style="text-align:center;"> 0.16 </td>
+   <td style="text-align:center;"> 0.15 </td>
+   <td style="text-align:center;"> 0.15 </td>
+   <td style="text-align:center;"> 0.15 </td>
+   <td style="text-align:center;"> 0.15 </td>
+   <td style="text-align:center;"> 0.15 </td>
+   <td style="text-align:center;"> 0.15 </td>
+   <td style="text-align:center;"> 0.15 </td>
+   <td style="text-align:center;"> 0.15 </td>
+   <td style="text-align:center;"> 0.15 </td>
+   <td style="text-align:center;"> 0.15 </td>
+   <td style="text-align:center;"> 0.15 </td>
+   <td style="text-align:center;"> 0.15 </td>
+   <td style="text-align:center;"> 0.15 </td>
+   <td style="text-align:center;"> 0.15 </td>
+   <td style="text-align:center;"> 0.15 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> E12 </td>
+   <td style="text-align:center;"> 0.43 </td>
+   <td style="text-align:center;"> 0.43 </td>
+   <td style="text-align:center;"> 0.40 </td>
+   <td style="text-align:center;"> 0.38 </td>
+   <td style="text-align:center;"> 0.37 </td>
+   <td style="text-align:center;"> 0.37 </td>
+   <td style="text-align:center;"> 0.36 </td>
+   <td style="text-align:center;"> 0.36 </td>
+   <td style="text-align:center;"> 0.36 </td>
+   <td style="text-align:center;"> 0.36 </td>
+   <td style="text-align:center;"> 0.36 </td>
+   <td style="text-align:center;"> 0.35 </td>
+   <td style="text-align:center;"> 0.35 </td>
+   <td style="text-align:center;"> 0.35 </td>
+   <td style="text-align:center;"> 0.35 </td>
+   <td style="text-align:center;"> 0.35 </td>
+   <td style="text-align:center;"> 0.35 </td>
+   <td style="text-align:center;"> 0.35 </td>
+   <td style="text-align:center;"> 0.35 </td>
+   <td style="text-align:center;"> 0.35 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> E13 </td>
+   <td style="text-align:center;"> 0.21 </td>
+   <td style="text-align:center;"> 0.26 </td>
+   <td style="text-align:center;"> 0.22 </td>
+   <td style="text-align:center;"> 0.21 </td>
+   <td style="text-align:center;"> 0.20 </td>
+   <td style="text-align:center;"> 0.20 </td>
+   <td style="text-align:center;"> 0.19 </td>
+   <td style="text-align:center;"> 0.19 </td>
+   <td style="text-align:center;"> 0.19 </td>
+   <td style="text-align:center;"> 0.19 </td>
+   <td style="text-align:center;"> 0.19 </td>
+   <td style="text-align:center;"> 0.19 </td>
+   <td style="text-align:center;"> 0.19 </td>
+   <td style="text-align:center;"> 0.19 </td>
+   <td style="text-align:center;"> 0.19 </td>
+   <td style="text-align:center;"> 0.19 </td>
+   <td style="text-align:center;"> 0.19 </td>
+   <td style="text-align:center;"> 0.19 </td>
+   <td style="text-align:center;"> 0.19 </td>
+   <td style="text-align:center;"> 0.19 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> E14 </td>
+   <td style="text-align:center;"> 0.21 </td>
+   <td style="text-align:center;"> 0.26 </td>
+   <td style="text-align:center;"> 0.22 </td>
+   <td style="text-align:center;"> 0.21 </td>
+   <td style="text-align:center;"> 0.20 </td>
+   <td style="text-align:center;"> 0.20 </td>
+   <td style="text-align:center;"> 0.19 </td>
+   <td style="text-align:center;"> 0.19 </td>
+   <td style="text-align:center;"> 0.19 </td>
+   <td style="text-align:center;"> 0.19 </td>
+   <td style="text-align:center;"> 0.19 </td>
+   <td style="text-align:center;"> 0.19 </td>
+   <td style="text-align:center;"> 0.19 </td>
+   <td style="text-align:center;"> 0.19 </td>
+   <td style="text-align:center;"> 0.19 </td>
+   <td style="text-align:center;"> 0.19 </td>
+   <td style="text-align:center;"> 0.19 </td>
+   <td style="text-align:center;"> 0.19 </td>
+   <td style="text-align:center;"> 0.19 </td>
+   <td style="text-align:center;"> 0.19 </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<p>We can see that the results for both persons and groups freeze into a stable rank after a few iterations. The resulting final ranks of persons and groups are shown in <a href="#tbl-final-1">Table&nbsp;4 (a)</a> and <a href="#tbl-final-2">Table&nbsp;4 (b)</a>.</p>
+<div id="tbl-final" class="cell tbl-parent quarto-layout-panel anchored">
+<div class="panel-caption table-caption">
+<p>Table&nbsp;4: Final rankings of persons and groups according to Bonacich reflections.</p>
+</div>
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div id="tbl-final-1" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-final" style="flex-basis: 50.0%;justify-content: center;">
+
+<table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;"><caption>(a) Final rank of persons </caption>
+<tbody>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> THERESA </td>
+   <td style="text-align:center;"> 1.00 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> EVELYN </td>
+   <td style="text-align:center;"> 0.91 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> BRENDA </td>
+   <td style="text-align:center;"> 0.86 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> LAURA </td>
+   <td style="text-align:center;"> 0.80 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> RUTH </td>
+   <td style="text-align:center;"> 0.73 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> ELEANOR </td>
+   <td style="text-align:center;"> 0.70 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> SYLVIA </td>
+   <td style="text-align:center;"> 0.68 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> FRANCES </td>
+   <td style="text-align:center;"> 0.66 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> VERNE </td>
+   <td style="text-align:center;"> 0.55 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> KATHERINE </td>
+   <td style="text-align:center;"> 0.54 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> NORA </td>
+   <td style="text-align:center;"> 0.51 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> HELEN </td>
+   <td style="text-align:center;"> 0.50 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> CHARLOTTE </td>
+   <td style="text-align:center;"> 0.49 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> MYRNA </td>
+   <td style="text-align:center;"> 0.46 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> PEARL </td>
+   <td style="text-align:center;"> 0.45 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> DOROTHY </td>
+   <td style="text-align:center;"> 0.33 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> OLIVIA </td>
+   <td style="text-align:center;"> 0.17 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> FLORA </td>
+   <td style="text-align:center;"> 0.17 </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+<div id="tbl-final-2" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-final" style="flex-basis: 50.0%;justify-content: center;">
+
+<table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;"><caption>(b) Final rank of groups </caption>
+<tbody>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> E8 </td>
+   <td style="text-align:center;"> 1.00 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> E7 </td>
+   <td style="text-align:center;"> 0.74 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> E9 </td>
+   <td style="text-align:center;"> 0.71 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> E5 </td>
+   <td style="text-align:center;"> 0.67 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> E6 </td>
+   <td style="text-align:center;"> 0.59 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> E4 </td>
+   <td style="text-align:center;"> 0.58 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> E3 </td>
+   <td style="text-align:center;"> 0.51 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> E12 </td>
+   <td style="text-align:center;"> 0.35 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> E2 </td>
+   <td style="text-align:center;"> 0.30 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> E10 </td>
+   <td style="text-align:center;"> 0.29 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> E1 </td>
+   <td style="text-align:center;"> 0.28 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> E13 </td>
+   <td style="text-align:center;"> 0.19 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> E14 </td>
+   <td style="text-align:center;"> 0.19 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> E11 </td>
+   <td style="text-align:center;"> 0.15 </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<p>The final rankings of both persons and groups should look familiar, for they are equivalent to the “dual” Bonacich centralities that can be calculated directly using methods from linear algebra as detailed in Bonacich (1991). That is, consider the standard one-mode person and group projections, which can be obtained from the original affiliation matrix as discussed in Breiger (1974).</p>
+<p>These are given by:</p>
+<p><span id="eq-brei1"><span class="math display">\[
+B_p = AA^T
+\tag{9}\]</span></span></p>
+<p><span id="eq-brei1"><span class="math display">\[
+B_g = A^TA
+\tag{10}\]</span></span></p>
+<p>Where <span class="math inline">\(B_p\)</span> is the <span class="math inline">\(|P| \times |P|\)</span> person projection matrix (with off-diagonal cells indicating the number of groups two people have in common and diagonal cells indicting each person’s number of memberships), <span class="math inline">\(B_g\)</span> is the <span class="math inline">\(|G| \times |G|\)</span> group projection matrix (with off-diagonal cells indicating the number of people two groups have in common and diagonal cells indicting each group’s number of members), and <span class="math inline">\(A\)</span> is the original affiliation matrix. For both persons and groups the projection matrices are shown in <a href="#tbl-proj-1">Table&nbsp;5 (a)</a> and <a href="#tbl-proj-2">Table&nbsp;5 (b)</a>.</p>
+<div id="tbl-proj" class="cell tbl-parent quarto-layout-panel anchored">
+<div class="panel-caption table-caption">
+<p>Table&nbsp;5: One mode projections for Southern Women Data.</p>
+</div>
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div id="tbl-proj-1" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-proj" style="flex-basis: 100.0%;justify-content: center;">
+
+<table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;"><caption>(a) One mode projection of persons </caption>
+<tbody>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> EVELYN </td>
+   <td style="text-align:center;"> 8 </td>
+   <td style="text-align:center;"> 6 </td>
+   <td style="text-align:center;"> 7 </td>
+   <td style="text-align:center;"> 6 </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 5 </td>
+   <td style="text-align:center;"> 4 </td>
+   <td style="text-align:center;"> 4 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 2 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> LAURA </td>
+   <td style="text-align:center;"> 6 </td>
+   <td style="text-align:center;"> 7 </td>
+   <td style="text-align:center;"> 6 </td>
+   <td style="text-align:center;"> 6 </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 4 </td>
+   <td style="text-align:center;"> 4 </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> THERESA </td>
+   <td style="text-align:center;"> 7 </td>
+   <td style="text-align:center;"> 6 </td>
+   <td style="text-align:center;"> 8 </td>
+   <td style="text-align:center;"> 6 </td>
+   <td style="text-align:center;"> 4 </td>
+   <td style="text-align:center;"> 5 </td>
+   <td style="text-align:center;"> 5 </td>
+   <td style="text-align:center;"> 5 </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 2 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> BRENDA </td>
+   <td style="text-align:center;"> 6 </td>
+   <td style="text-align:center;"> 6 </td>
+   <td style="text-align:center;"> 6 </td>
+   <td style="text-align:center;"> 7 </td>
+   <td style="text-align:center;"> 4 </td>
+   <td style="text-align:center;"> 5 </td>
+   <td style="text-align:center;"> 5 </td>
+   <td style="text-align:center;"> 4 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> CHARLOTTE </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 4 </td>
+   <td style="text-align:center;"> 4 </td>
+   <td style="text-align:center;"> 4 </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> FRANCES </td>
+   <td style="text-align:center;"> 5 </td>
+   <td style="text-align:center;"> 4 </td>
+   <td style="text-align:center;"> 5 </td>
+   <td style="text-align:center;"> 5 </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 5 </td>
+   <td style="text-align:center;"> 4 </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> ELEANOR </td>
+   <td style="text-align:center;"> 4 </td>
+   <td style="text-align:center;"> 4 </td>
+   <td style="text-align:center;"> 5 </td>
+   <td style="text-align:center;"> 5 </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 4 </td>
+   <td style="text-align:center;"> 5 </td>
+   <td style="text-align:center;"> 4 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> RUTH </td>
+   <td style="text-align:center;"> 4 </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 5 </td>
+   <td style="text-align:center;"> 4 </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 4 </td>
+   <td style="text-align:center;"> 5 </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 2 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> VERNE </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 4 </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 4 </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 2 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> MYRNA </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 4 </td>
+   <td style="text-align:center;"> 4 </td>
+   <td style="text-align:center;"> 4 </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 2 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> KATHERINE </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 4 </td>
+   <td style="text-align:center;"> 6 </td>
+   <td style="text-align:center;"> 6 </td>
+   <td style="text-align:center;"> 5 </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 2 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> SYLVIA </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 4 </td>
+   <td style="text-align:center;"> 4 </td>
+   <td style="text-align:center;"> 6 </td>
+   <td style="text-align:center;"> 7 </td>
+   <td style="text-align:center;"> 6 </td>
+   <td style="text-align:center;"> 4 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 2 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> NORA </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 5 </td>
+   <td style="text-align:center;"> 6 </td>
+   <td style="text-align:center;"> 7 </td>
+   <td style="text-align:center;"> 4 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> HELEN </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 4 </td>
+   <td style="text-align:center;"> 4 </td>
+   <td style="text-align:center;"> 5 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> OLIVIA </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> FLORA </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> PEARL </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 2 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> DOROTHY </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 2 </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+</div>
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div id="tbl-proj-2" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-proj" style="flex-basis: 100.0%;justify-content: center;">
+
+<table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;"><caption>(b) One mode projection of groups </caption>
+<tbody>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> E1 </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> E2 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> E3 </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 6 </td>
+   <td style="text-align:center;"> 5 </td>
+   <td style="text-align:center;"> 6 </td>
+   <td style="text-align:center;"> 5 </td>
+   <td style="text-align:center;"> 4 </td>
+   <td style="text-align:center;"> 5 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> E4 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 5 </td>
+   <td style="text-align:center;"> 7 </td>
+   <td style="text-align:center;"> 7 </td>
+   <td style="text-align:center;"> 5 </td>
+   <td style="text-align:center;"> 5 </td>
+   <td style="text-align:center;"> 6 </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> E5 </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 6 </td>
+   <td style="text-align:center;"> 7 </td>
+   <td style="text-align:center;"> 8 </td>
+   <td style="text-align:center;"> 6 </td>
+   <td style="text-align:center;"> 6 </td>
+   <td style="text-align:center;"> 7 </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> E6 </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 5 </td>
+   <td style="text-align:center;"> 5 </td>
+   <td style="text-align:center;"> 6 </td>
+   <td style="text-align:center;"> 7 </td>
+   <td style="text-align:center;"> 4 </td>
+   <td style="text-align:center;"> 7 </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> E7 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 4 </td>
+   <td style="text-align:center;"> 5 </td>
+   <td style="text-align:center;"> 6 </td>
+   <td style="text-align:center;"> 4 </td>
+   <td style="text-align:center;"> 10 </td>
+   <td style="text-align:center;"> 8 </td>
+   <td style="text-align:center;"> 5 </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 4 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 2 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> E8 </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 5 </td>
+   <td style="text-align:center;"> 6 </td>
+   <td style="text-align:center;"> 7 </td>
+   <td style="text-align:center;"> 7 </td>
+   <td style="text-align:center;"> 8 </td>
+   <td style="text-align:center;"> 14 </td>
+   <td style="text-align:center;"> 9 </td>
+   <td style="text-align:center;"> 4 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 5 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 2 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> E9 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 5 </td>
+   <td style="text-align:center;"> 9 </td>
+   <td style="text-align:center;"> 12 </td>
+   <td style="text-align:center;"> 4 </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 5 </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 3 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> E10 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 4 </td>
+   <td style="text-align:center;"> 4 </td>
+   <td style="text-align:center;"> 5 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 5 </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 3 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> E11 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 4 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> E12 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 4 </td>
+   <td style="text-align:center;"> 5 </td>
+   <td style="text-align:center;"> 5 </td>
+   <td style="text-align:center;"> 5 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 6 </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 3 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> E13 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 3 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> E14 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 0 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 2 </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 1 </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 3 </td>
+   <td style="text-align:center;"> 3 </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<p>Bonacich shows that vectors that will order people and groups in the same way as that shown in <a href="#tbl-final">Table&nbsp;4</a>, can be obtained by solving the following system of linear equations:</p>
+<p><span id="eq-bon1"><span class="math display">\[
+B_p c_p = \lambda c_p
+\tag{11}\]</span></span></p>
+<p><span id="eq-bon2"><span class="math display">\[
+B_g c_g = \lambda c_g
+\tag{12}\]</span></span></p>
+<p>Which means that <span class="math inline">\(c_p\)</span> is an eigenvector of the projection matrix <span class="math inline">\(B_p\)</span> and <span class="math inline">\(c_g\)</span> is an eigenvector of the projection matrix <span class="math inline">\(B_g\)</span>. In fact, the vector of centrality scores that will order people exactly as in <a href="#tbl-final">Table&nbsp;4</a>, are the leading (first) eigenvectors of each projection matrix (Bonacich, 1991; Faust, 1997). These are shown in <a href="#tbl-eigen">Table&nbsp;6</a>.</p>
+<p>As we can see, the order of persons and groups is identical to that shown in <a href="#tbl-final">Table&nbsp;4</a>. In fact, if we take the absolute value of the eigenvector scores and normalize the person and group centrality vectors by dividing by the maximum, we end up with scores shown in <a href="#tbl-norm">Table&nbsp;7</a>. These agree pretty closely (save for rounding error) with the Bonacich reflection scores in <a href="#tbl-final">Table&nbsp;4</a>.</p>
+<div id="tbl-eigen" class="cell tbl-parent quarto-layout-panel anchored">
+<div class="panel-caption table-caption">
+<p>Table&nbsp;6: Leading Eigenvectors for projection matrices of Southern Women Data.</p>
+</div>
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div id="tbl-eigen-1" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-eigen" style="flex-basis: 50.0%;justify-content: center;">
+
+<table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;"><caption>(a) Eigenvector scores of persons </caption>
+<tbody>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> THERESA </td>
+   <td style="text-align:center;"> -0.38 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> EVELYN </td>
+   <td style="text-align:center;"> -0.34 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> BRENDA </td>
+   <td style="text-align:center;"> -0.32 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> LAURA </td>
+   <td style="text-align:center;"> -0.30 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> RUTH </td>
+   <td style="text-align:center;"> -0.27 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> ELEANOR </td>
+   <td style="text-align:center;"> -0.26 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> SYLVIA </td>
+   <td style="text-align:center;"> -0.26 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> FRANCES </td>
+   <td style="text-align:center;"> -0.25 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> VERNE </td>
+   <td style="text-align:center;"> -0.21 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> KATHERINE </td>
+   <td style="text-align:center;"> -0.20 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> CHARLOTTE </td>
+   <td style="text-align:center;"> -0.19 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> NORA </td>
+   <td style="text-align:center;"> -0.19 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> HELEN </td>
+   <td style="text-align:center;"> -0.19 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> MYRNA </td>
+   <td style="text-align:center;"> -0.17 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> PEARL </td>
+   <td style="text-align:center;"> -0.17 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> DOROTHY </td>
+   <td style="text-align:center;"> -0.13 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> OLIVIA </td>
+   <td style="text-align:center;"> -0.06 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> FLORA </td>
+   <td style="text-align:center;"> -0.06 </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+<div id="tbl-eigen-2" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-eigen" style="flex-basis: 50.0%;justify-content: center;">
+
+<table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;"><caption>(b) Eigenvector scores of groups </caption>
+<tbody>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> E8 </td>
+   <td style="text-align:center;"> -0.50 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> E7 </td>
+   <td style="text-align:center;"> -0.38 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> E9 </td>
+   <td style="text-align:center;"> -0.36 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> E5 </td>
+   <td style="text-align:center;"> -0.34 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> E6 </td>
+   <td style="text-align:center;"> -0.30 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> E4 </td>
+   <td style="text-align:center;"> -0.29 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> E3 </td>
+   <td style="text-align:center;"> -0.26 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> E12 </td>
+   <td style="text-align:center;"> -0.18 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> E2 </td>
+   <td style="text-align:center;"> -0.15 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> E10 </td>
+   <td style="text-align:center;"> -0.15 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> E1 </td>
+   <td style="text-align:center;"> -0.14 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> E13 </td>
+   <td style="text-align:center;"> -0.10 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> E14 </td>
+   <td style="text-align:center;"> -0.10 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> E11 </td>
+   <td style="text-align:center;"> -0.07 </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<div id="tbl-norm" class="cell tbl-parent quarto-layout-panel anchored">
+<div class="panel-caption table-caption">
+<p>Table&nbsp;7: Normalized Eigenvectors for projection matrices of Southern Women Data.</p>
+</div>
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div id="tbl-norm-1" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-norm" style="flex-basis: 50.0%;justify-content: center;">
+
+<table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;"><caption>(a) Normalized Eigenvector scores of persons </caption>
+<tbody>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> THERESA </td>
+   <td style="text-align:center;"> 1.00 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> EVELYN </td>
+   <td style="text-align:center;"> 0.89 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> BRENDA </td>
+   <td style="text-align:center;"> 0.84 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> LAURA </td>
+   <td style="text-align:center;"> 0.79 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> RUTH </td>
+   <td style="text-align:center;"> 0.71 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> ELEANOR </td>
+   <td style="text-align:center;"> 0.68 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> SYLVIA </td>
+   <td style="text-align:center;"> 0.68 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> FRANCES </td>
+   <td style="text-align:center;"> 0.66 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> VERNE </td>
+   <td style="text-align:center;"> 0.55 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> KATHERINE </td>
+   <td style="text-align:center;"> 0.53 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> CHARLOTTE </td>
+   <td style="text-align:center;"> 0.50 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> NORA </td>
+   <td style="text-align:center;"> 0.50 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> HELEN </td>
+   <td style="text-align:center;"> 0.50 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> MYRNA </td>
+   <td style="text-align:center;"> 0.45 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> PEARL </td>
+   <td style="text-align:center;"> 0.45 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> DOROTHY </td>
+   <td style="text-align:center;"> 0.34 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> OLIVIA </td>
+   <td style="text-align:center;"> 0.16 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> FLORA </td>
+   <td style="text-align:center;"> 0.16 </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+<div id="tbl-norm-2" class="quarto-layout-cell quarto-layout-cell-subref anchored" data-ref-parent="tbl-norm" style="flex-basis: 50.0%;justify-content: center;">
+
+<table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;"><caption>(b) Normalized Eigenvector scores of groups </caption>
+<tbody>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> E8 </td>
+   <td style="text-align:center;"> 1.00 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> E7 </td>
+   <td style="text-align:center;"> 0.76 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> E9 </td>
+   <td style="text-align:center;"> 0.72 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> E5 </td>
+   <td style="text-align:center;"> 0.68 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> E6 </td>
+   <td style="text-align:center;"> 0.60 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> E4 </td>
+   <td style="text-align:center;"> 0.58 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> E3 </td>
+   <td style="text-align:center;"> 0.52 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> E12 </td>
+   <td style="text-align:center;"> 0.36 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> E2 </td>
+   <td style="text-align:center;"> 0.30 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> E10 </td>
+   <td style="text-align:center;"> 0.30 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> E1 </td>
+   <td style="text-align:center;"> 0.28 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> E13 </td>
+   <td style="text-align:center;"> 0.20 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> E14 </td>
+   <td style="text-align:center;"> 0.20 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;"> E11 </td>
+   <td style="text-align:center;"> 0.14 </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
+<p>Bonacich, P. (1991). Simultaneous group and individual centralities. <em>Social Networks</em>, 13(2), 155-168.</p>
+<p>Breiger, R. L. (1974). The duality of persons and groups. <em>Social Forces</em>, 53(2), 181-190.</p>
+<p>Davis, A., Gardner, B. B., &amp; Gardner, M. R. (1941). <em>Deep South: A social anthropological study of caste and class</em>. University of Chicago Press</p>
+<p>Faust, K. (1997). Centrality in affiliation networks. <em>Social Networks</em>, 19(2), 157-191.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
