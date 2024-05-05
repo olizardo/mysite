@@ -120,7 +120,7 @@ For all q > 1.
   ref.res <- bon.ref(sw.dat(), 20)
 ```
 
-Let's see how that looks like with real data. The results of the reflection equations for the Southern Women data, for people up to sixteen reflections, are shown in @tbl-refp. The corresponding results for groups are shown in @tbl-refg. 
+Let's see how that looks like with real data. The results of the reflection equations for the Southern Women data, for people up to twenty reflections, are shown in @tbl-refp. The corresponding results for groups are shown in @tbl-refg. 
 
 ```{r}
 #| label: tbl-refp
