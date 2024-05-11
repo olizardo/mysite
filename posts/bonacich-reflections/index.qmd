@@ -219,7 +219,7 @@ $$
 B_g c_g = \lambda c_g
 $$ {#eq-bon2}
 
-Which means that $c_p$ is an eigenvector of the projection matrix $B_p$ and $c_g$ is an eigenvector of the projection matrix $B_g$. In fact, the vector of centrality scores that will order people exactly as in @tbl-final, are the leading (first) eigenvectors of each projection matrix (Bonacich, 1991; Faust, 1997). These are shown in @tbl-eigen. 
+Which means that $c_p$ is an eigenvector of the projection matrix $B_p$ and $c_g$ is an eigenvector of the projection matrix $B_g$. In fact, the person and groupo vectors of centrality scores that will order people and groups exactly as in @tbl-final, are the leading (first) eigenvectors of each respective projection matrix (Bonacich, 1991; Faust, 1997). These are shown in @tbl-eigen. 
 
 As we can see, the order of persons and groups is identical to that shown in @tbl-final. In fact, if we take the absolute value of the eigenvector scores and normalize the person and group centrality vectors by dividing by the maximum, we end up with scores shown in @tbl-norm. These agree pretty closely (save for rounding error) with the Bonacich reflection scores in @tbl-final. 
 
