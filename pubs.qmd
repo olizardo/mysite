@@ -15,7 +15,7 @@
 
 - "Hysteresis in recent sociological research" *Working Paper*. [(pdf)](/workpap/hysteresis-review.pdf)
 
-- "Wanting, Liking, and the sociology of motivation." *Sociological Forum*. [(pdf)](/workpap/motivation.pdf)
+- "Wanting, Liking, and the sociology of motivation." *Sociological Forum*. [doi:10.1111/socf.12996](http://doi.org/10.1111/socf.12996)
 
 - "A motivational theory of roles, rewards, and institutions.'' *Journal for the Theory of Social Behaviour* 53: 200-220. [doi:10.1111/jtsb.12360](https://doi.org/10.1111/jtsb.12360)
 
