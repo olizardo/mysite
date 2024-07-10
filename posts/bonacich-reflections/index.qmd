@@ -34,25 +34,25 @@ Consider an affiliation matrix $\mathbf{A}$ of dimensions $|P| \times |G|$ where
 In this case, the degree centrality of people is given by:
 
 $$
-   C^B_p(1) = \sum_g a_{pg} \frac{1}{max\left(C^R_{p \in P}(1)\right)}
+   C^B_p(1) = \sum_g a_{pg} 
 $$ {#eq-pc}
 
 And for groups:
 
 $$
-   C^B_g(1) = \sum_p a_{pg} \frac{1}{max\left(C^B_{g \in G}(1)\right)}
+   C^B_g(1) = \sum_p a_{pg} 
 $$ {#eq-gc}
 
-The left side of the right hand sides of @eq-pc and @eq-gc are just the first order degree centralities of people and groups (Faust, 1997). People are central when they have many memberships and groups are central when they have many members. Because we only care about the rank order, we normalize each by the maximum observed centrality for persons and groups. 
+The right hand sides of @eq-pc and @eq-gc are just the first order degree centralities of people and groups (Faust, 1997). People are central when they have many memberships and groups are central when they have many members.
 
 Once we have this information, we can define a second order "Bonacich-reflection" on both the persons and groups using the formulas:
 
 $$
-   C^B_p(2) = \sum_g a_{pg}C^R_g(1) \frac{1}{max\left(C^B_{p \in P}(2)\right)}
+   C^B_p(2) = \sum_g a_{pg}C^R_g(1) 
 $$ {#eq-pr2}
 
 $$
-   C^B_g(2) = \sum_p a_{pg}C^R_p(1) \frac{1}{max\left(C^B_{g \in G}(2)\right)}
+   C^B_g(2) = \sum_p a_{pg}C^R_p(1) 
 $$ {#eq-gr2}
 
 @eq-pr2 says that people are central when the sum of the number of members of the groups they belong to is large. @eq-gr2 says groups are central when the sum of the number of memberships of the people who belong to them is large. 
@@ -60,11 +60,11 @@ $$ {#eq-gr2}
 We can keep on going and define a third order reflection using the formulas:
 
 $$
-   C^B_p(3) = \sum_g a_{pg}C^R_g(2) \frac{1}{max\left(C^B_{p \in P}(3)\right)}
+   C^B_p(3) = \sum_g a_{pg}C^R_g(2) 
 $$ {#eq-pr3}
 
 $$
-   C^B_g(3) = \sum_p a_{pg}C^R_p(2) \frac{1}{max\left(C^B_{g \in G}(3)\right)}
+   C^B_g(3) = \sum_p a_{pg}C^R_p(2) 
 $$ {#eq-gr3}
 
 @eq-pr3 says that people are central when the sum of the sum of the number of memberships held by the people who belong to the groups they belong to is large. @eq-pr3 says that groups are central when the sum of the sum of the number of members of the groups their members belong to is large. 
@@ -74,50 +74,69 @@ Once again, we can keep going and define fourth order, fifth order, and higher r
 More generally, the reflective Bonacich centralities for persons and groups are given by:
 
 $$
-   C^B_p(q) = \sum_g a_{pg}C^R_g(q-1) \frac{1}{max\left(C^B_{p \in P}(q)\right)}
-$$ {#eq-pr3}
+   C^B_p(q) = \sum_g a_{pg}C^R_g(q-1) 
+$$ {#eq-prq}
 
 $$
-   C^B_g(q) = \sum_p a_{pg}C^R_p(q-1) \frac{1}{max\left(C^B_{g \in G}(q)\right)}
-$$ {#eq-gr3}
+   C^B_g(q) = \sum_p a_{pg}C^R_p(q-1) 
+$$ {#eq-grq}
 
 For all q > 1. 
 
+Actually, the preceding set of equations won't quite work, because we are computing sums of sums, of sums which means that both the person and group reflective Bonacich centralities would diverge toward infinity as $q$ increases. 
+
+To prevent this divergence and guarantee *convergence* to a set of manageable scores after a few iterations, we need to *normalize* the sum of centralities at each step $q > 1$ before feeding them to the subsequent sum at step $q+1$. We do this by dividing the computed centrality vectors for both persons and group at each step q by a *vector norm*, which in this case is the *Euclidean vector norm*, as follows:
+
+$$
+   C^B_p(q) = \frac{C^B_p(q)}{||C^B_p(q)||_2}
+$$ {#eq-prqn}
+
+$$
+   C^B_p(q) = \frac{C^B_p(q)}{||C^B_p(q)||_2}
+$$ {#eq-grqn}
+
+With the Euclidean norm for each centrality vector defined as:
+
+$$
+   ||C^B_p(q)||_2 = \sqrt{\sum_i^{|P|}(C^B_p(q)_i)^2}
+$$ {#eq-peuc}
+
+$$
+   ||C^B_g(q)||_2 = \sqrt{\sum_j^{|G|}(C^B_g(q)_j)^2}
+$$ {#eq-geuc}
+
 ```{r}
    bon.ref <- function(x, iter = 20) { #x is a matrix with people as rows and groups as columns iters is number of reflections
-      p <- nrow(x)
-      g <- ncol(x)
-      p.c <- matrix(0, p, iter) #initialize person centralities
-      g.c <- matrix(0, g, iter) #initialize group centralities trajectory matrix
-      
-      rownames(p.c) <- rownames(x)
-      rownames(g.c) <- colnames(x)
-      
-      colnames(p.c) <- paste("", c(1:iter), sep = "")
-      colnames(g.c) <- paste("", c(1:iter), sep = "")
-      
-      
-      p.c[, 1] <- rowSums(x) #person degree centrality normed to max
-      g.c[, 1] <- colSums(x) #group degree centrality normed to max
-      
-      k <- 1 #initializing counter
-      while (k < iter) {
-         m <- k + 1
-         p.c[, k] <- p.c[, k]/max(p.c[, k]) #norming person centrality vector to max
-         g.c[, k] <- g.c[, k]/max(g.c[, k]) #norming group centrality vector to max
-         for(i in 1:p) {
-            p.c[i, m] <- sum(x[i, ] * g.c[, k])  #assign person avg. centrality groups they belong to
-         } #end person loop
-         for(j in 1:g) {
-            g.c[j, m] <- sum(x[, j] * p.c[, k])  #assign group avg. person centrality of people in group
-         } #end group loop
-         k <- k + 1 #increase counter
-      } #end while loop 
-   p.c[, k] <- p.c[, k]/max(p.c[, k]) #norming person centrality vector to max
-   g.c[, k] <- g.c[, k]/max(g.c[, k]) #norming group centrality vector to max
-   return(list(p.c = p.c, g.c = g.c))
+        p <- nrow(x) #number of people
+        g <- ncol(x) #number of groups
+        p.c <- matrix(0, p, iter) #initialize person centrality trajectories in a p X iter matrix
+        g.c <- matrix(0, g, iter) #initialize group centrality trajectories matrix in a g X iter matrix
+        rownames(p.c) <- rownames(x)
+        rownames(g.c) <- colnames(x)
+        colnames(p.c) <- paste("", c(1:iter), sep = "")
+        colnames(g.c) <- paste("", c(1:iter), sep = "")
+        
+        p.c[, 1] <- rowSums(x) #initialize person degree centralities
+        g.c[, 1] <- colSums(x) #initialize group degree centralities 
+        
+        k <- 1 #initializing counter
+        while (k < iter) {
+             m <- k + 1
+             p.c[, k] <- p.c[, k]/norm(as.matrix(p.c[, k]), type = "E") #norming person centrality vector to max
+             g.c[, k] <- g.c[, k]/norm(as.matrix(g.c[, k]), type = "E") #norming group centrality vector to max
+             for(i in 1:p) {
+                  p.c[i, m] <- sum(x[i, ] * g.c[, k])  #assign person avg. centrality groups they belong to
+             } #end person loop
+             for(j in 1:g) {
+                  g.c[j, m] <- sum(x[, j] * p.c[, k])  #assign group avg. person centrality of people in group
+             } #end group loop
+             k <- k + 1 #increase counter
+        } #end while loop 
+        p.c[, k] <- p.c[, k]/norm(as.matrix(p.c[, k]), type = "E") #norming person centrality vector to max
+        g.c[, k] <- g.c[, k]/norm(as.matrix(g.c[, k]), type = "E") #norming group centrality vector to max
+        return(list(p.c = p.c, g.c = g.c))
    }
-  ref.res <- bon.ref(sw.dat(), 20)
+   ref.res <- bon.ref(sw.dat(), 20)
 ```
 
 Let's see how that looks like with real data. The results of the reflection equations for the Southern Women data, for people up to twenty reflections, are shown in @tbl-refp. The corresponding results for groups are shown in @tbl-refg. 
@@ -147,7 +166,7 @@ Let's see how that looks like with real data. The results of the reflection equa
 
 ```
 
-We can see that the results for both persons and groups freeze into a stable rank after a few iterations. The resulting final ranks of persons and groups are shown in @tbl-final-1 and @tbl-final-2.
+We can see that the results for both persons and groups freeze into values after a few iterations. The resulting final ranks of persons and groups are shown in @tbl-final-1 and @tbl-final-2.
 
 ```{r}
 #| label: tbl-final
@@ -219,9 +238,7 @@ $$
 B_g c_g = \lambda c_g
 $$ {#eq-bon2}
 
-Which means that $c_p$ is an eigenvector of the projection matrix $B_p$ and $c_g$ is an eigenvector of the projection matrix $B_g$. In fact, the person and groupo vectors of centrality scores that will order people and groups exactly as in @tbl-final, are the leading (first) eigenvectors of each respective projection matrix (Bonacich, 1991; Faust, 1997). These are shown in @tbl-eigen. 
-
-As we can see, the order of persons and groups is identical to that shown in @tbl-final. In fact, if we take the absolute value of the eigenvector scores and normalize the person and group centrality vectors by dividing by the maximum, we end up with scores shown in @tbl-norm. These agree pretty closely (save for rounding error) with the Bonacich reflection scores in @tbl-final. 
+Which means that $c_p$ is an eigenvector of the projection matrix $B_p$ and $c_g$ is an eigenvector of the projection matrix $B_g$. In fact, the person and group vectors of centrality scores that will order people and groups exactly as in @tbl-final, are the leading (first) eigenvectors of each respective projection matrix (Bonacich, 1991; Faust, 1997). These are shown in @tbl-eigen. As we can see, the (absolute) value for the eigenvectors of persons and groups in @tbl-eigen is identical to that shown in @tbl-final. The reason for this is that the reflective iterative method, is actually a way of computing the eigenvectors of a matrix! (It's called the "power" method and was first discovered by von Mises)
 
 
 ```{r}
@@ -251,31 +268,6 @@ As we can see, the order of persons and groups is identical to that shown in @tb
 
 ```
 
-
-```{r}
-#| label: tbl-norm
-#| tbl-cap: Normalized Eigenvectors for projection matrices of Southern Women Data.
-#| tbl-subcap: 
-#|   - Normalized Eigenvector scores of persons
-#|   - Normalized Eigenvector scores of groups
-#| layout-ncol: 2
-
-   cp <- abs(cp)
-   cg <- abs(cg)
-   cp <- round(cp/max(cp), 2)
-   cg <- round(cg/max(cg), 2)
-   
-   kbl(cp, align = "c", format = "html", col.names = NULL)  %>% 
-         column_spec(1, bold = TRUE) %>% 
-         kable_styling(bootstrap_options = 
-                          c("striped", "hover", "condensed", "responsive"))
-   
-   kbl(cg, align = "c", format = "html", col.names = NULL)  %>% 
-         column_spec(1, bold = TRUE) %>% 
-         kable_styling(bootstrap_options = 
-                          c("striped", "hover", "condensed", "responsive"))
-
-```
 
 ## References
 
