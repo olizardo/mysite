@@ -30,7 +30,7 @@ website:
             icon: file-text
             href: syllabi/SOCIOL204.qmd
           - text: "SOCIOL 208A & 208B (Computational Social Networks Sequence)"
-            icon: file-text
+            icon: globe
             href: https://olizardo.github.io/SOCIOL208/
           - text: "SOCIOL 245 (Cultural Sociology)"
             icon: file-text
