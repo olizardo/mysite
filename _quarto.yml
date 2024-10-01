@@ -29,7 +29,7 @@ website:
           - text: "SOCIOL 204 (Topics in Sociological Theorizing)"
             icon: file-text
             href: syllabi/SOCIOL204.qmd
-          - text: "Computational Networks Sequence (208A & 208B)"
+          - text: "SOCIOL 208A & 208B (Computational Social Networks Sequence)"
             icon: file-text
             href: https://olizardo.github.io/SOCIOL208/
           - text: "SOCIOL 245 (Cultural Sociology)"
