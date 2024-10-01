@@ -23,21 +23,18 @@ website:
           - text: "Social Networks (111) Textbook"
             icon: book
             href: https://olizardo.github.io/networks-textbook/
-          - text: "Classical Social Theory Lecture Notes"
-            icon: book
-            href: https://olizardo.github.io/classical-sociological-theory-notes/
-          - text: "SOCIOL 208B (Spring 2022)"
+          - text: "SOCIOL 111 (Social Networks Undergraduate Class)"
             icon: file-text
-            href: syllabi/SOCIOL208b-spring22.html
-          - text: "SOCIOL 204 (Sociological Theorizing)"
+            href: syllabi/SOCIOL111.qmd
+          - text: "SOCIOL 204 (Topics in Sociological Theorizing)"
             icon: file-text
-            href: syllabi/SOCIOL204.html
+            href: syllabi/SOCIOL204.qmd
+          - text: "Computational Networks Sequence (208A & 208B)"
+            icon: file-text
+            href: https://olizardo.github.io/SOCIOL208/
           - text: "SOCIOL 245 (Cultural Sociology)"
             icon: file-text
-            href: syllabi/SOCIOL245.html
-          - text: "SOCIOL 111 (Social Networks)"
-            icon: file-text
-            href: syllabi/SOCIOL111.html
+            href: syllabi/SOCIOL245.qmd
 
       - file: vita.pdf
         text: "Vita"

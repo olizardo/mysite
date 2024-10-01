@@ -131,7 +131,7 @@
 
 ### Culture and Networks 
 <!--
--   "Culture and social capital." Forthcoming in R. Côté, S. McDonald and J. Shen (Eds.) *The Handbook of Inequality and Social Capital*. Edward Elgar.
+-   "Culture and social capital." Forthcoming in R. Côté, S. McDonald and J. Shen (Eds.) *[The Handbook of Inequality and Social Capital](https://www.e-elgar.com/shop/usd/handbook-on-inequality-and-social-capital-9781802202366.html)*. Edward Elgar.
 -->
 
 -   "Culture and networks." Pp. 188-201 in J. McLevey, J. Scott, and P. J. Carrington (Eds.) *The Sage Handbook of Social Network Analysis*. Sage Publications. [doi:10.4135/9781529682618](https://doi.org/10.4135/9781529682618)
