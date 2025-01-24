@@ -43,33 +43,33 @@
 
 ### Computational Social Science
 
--   "Predicting relationship labels and individual personality traits from telecommunication history in social networks using Hawkes processes." *IEEE Access* 11: 8492-8503. [https://doi.org/10.1109/ACCESS.2023.3238970](https://doi.org/10.1109/ACCESS.2023.3238970)
+-   "Predicting relationship labels and individual personality traits from telecommunication history in social networks using Hawkes processes." *IEEE Access* 11: 8492-8503. [doi:10.1109/ACCESS.2023.3238970](https://doi.org/10.1109/ACCESS.2023.3238970)
 
--   "Modeling memory imprints induced by interactions in social networks." Pp. 186-195 in R. Thomson, C. Dancy and A. Pyke (Eds.), *Social, Cultural, and Behavioral Modeling SBP-BRiMS 2022. Lecture Notes in Computer Science, vol 13558*. Springer, Cham. [https://doi.org/10.1007/978-3-031-17114-7_18](https://doi.org/10.1007/978-3-031-17114-7_18)
+-   "Modeling memory imprints induced by interactions in social networks." Pp. 186-195 in R. Thomson, C. Dancy and A. Pyke (Eds.), *Social, Cultural, and Behavioral Modeling SBP-BRiMS 2022. Lecture Notes in Computer Science, vol 13558*. Springer, Cham. [doi:10.1007/978-3-031-17114-7_18](https://doi.org/10.1007/978-3-031-17114-7_18)
 
--   "Examining the association between behavioral trajectory similarity clusters in social networks." Pp. 36-55 in G. Giordano, M. L. Restaino and A. Salvini (Eds.)  *Methods and Applications in Social Networks Analysis: Evidence from Collaborative, Governance, Historical and Mobility Networks*. FrancoAngeli [https://library.oapen.org/handle/20.500.12657/53211](20.500.12657/53211)
+-   "Examining the association between behavioral trajectory similarity clusters in social networks." Pp. 36-55 in G. Giordano, M. L. Restaino and A. Salvini (Eds.)  *Methods and Applications in Social Networks Analysis: Evidence from Collaborative, Governance, Historical and Mobility Networks*. FrancoAngeli [ONIX_20220303_9788835124603_9](https://library.oapen.org/handle/20.500.12657/53211)
 
--   "Predicting homophily and social network connectivity from dyadic behavioral similarity trajectory clusters." *Social Science Computer Review* 40:195-211. [https://doi.org/10.1177/0894439320923123](https://doi.org/10.1177/0894439320923123)
+-   "Predicting homophily and social network connectivity from dyadic behavioral similarity trajectory clusters." *Social Science Computer Review* 40:195-211. [doi:10.1177/0894439320923123](https://doi.org/10.1177/0894439320923123)
 
--   "Creation, evolution, and dissolution of social groups." *Scientific Reports* 11: 17470. [https://doi.org/10.1038/s41598-021-96805-7](https://doi.org/10.1038/s41598-021-96805-7)
+-   "Creation, evolution, and dissolution of social groups." *Scientific Reports* 11: 17470. [doi:10.1038/s41598-021-96805-7](https://doi.org/10.1038/s41598-021-96805-7)
 
--   "Social networks through the prism of cognition." *Complexity*. [https://doi.org/10.1155/2021/4963903](https://doi.org/10.1155/2021/4963903)
+-   "Social networks through the prism of cognition." *Complexity*. [doi:10.1155/2021/4963903](https://doi.org/10.1155/2021/4963903)
 
--   "Analysis of link formation, persistence, and dissolution in NetSense data." *Proceedings of the IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining*: 1197-1204. [https://doi.org/10.1109/ASONAM.2016.7752391](https://doi.org/10.1109/ASONAM.2016.7752391)
+-   "Analysis of link formation, persistence, and dissolution in NetSense data." *Proceedings of the IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining*: 1197-1204. [doi:10.1109/ASONAM.2016.7752391](https://doi.org/10.1109/ASONAM.2016.7752391)
 
--   "Influence of personal preferences on link dynamics in social networks." *Complexity* [https://doi.org/10.1155/2017/4543563](https://doi.org/10.1155/2017/4543563) 
+-   "Influence of personal preferences on link dynamics in social networks." *Complexity* [doi:10.1155/2017/4543563](https://doi.org/10.1155/2017/4543563) 
 
 ### Cognitive Social Science
 
-- The Raw and the (Over)Cooked: States are physical qualities.'' *Metaphor and the Social World* 14: 22-42. [https://doi.org/10.1075/msw.00039.ash](doi:10.1075/msw.00039.ash)
+- The Raw and the (Over)Cooked: States are physical qualities.'' *Metaphor and the Social World* 14: 22-42. [doi:10.1075/msw.00039.ash](doi:10.1075/msw.00039.ash)
 
 -   "Culture, cognition, and internalization." *Sociological Forum* 36: 1177-1206. [doi:10.1111/socf.12771](https://doi.org/10.1111/socf.12771)
 
 -   "What can cognitive neuroscience do for cultural sociology?" *American Journal of Cultural Sociology* 8: 3-28. [doi:10.1057/s41290-019-00077-8](https://doi.org/10.1057/s41290-019-00077-8)
 
--   "What are dual process models? Implications for cultural analysis in sociology." *Sociological Theory* 34: 287-310. [10.1177/0735275116675900](https://doi.org/10.1177/0735275116675900)
+-   "What are dual process models? Implications for cultural analysis in sociology." *Sociological Theory* 34: 287-310. [doi:10.1177/0735275116675900](https://doi.org/10.1177/0735275116675900)
 
--   "The conceptual bases of metaphors of dirt and cleanliness in moral and non-moral reasoning." *Cognitive Linguistics* 23-2: 367-394. [oi:10.1515/cog-2012-0011](https://doi.org/10.1515/cog-2012-0011)
+-   "The conceptual bases of metaphors of dirt and cleanliness in moral and non-moral reasoning." *Cognitive Linguistics* 23-2: 367-394. [doi:10.1515/cog-2012-0011](https://doi.org/10.1515/cog-2012-0011)
 
 -   Skills, toolkits, contexts and institutions: clarifying the relationship between different approaches to cognition in cultural sociology." *Poetics: Journal of Empirical Research on Culture, the Media and the Arts* 38: 204-227. [doi:10.1016/j.poetic.2009.11.003](https://doi.org/10.1016/j.poetic.2009.11.003)
 
@@ -117,7 +117,7 @@
 
 -   "What is implicit culture?" *Journal for the Theory of Social Behaviour* 52: 412-437. [doi:10.1111/jtsb.12333](https://doi.org/10.1111/jtsb.12333)
 
-- "Culture, cognition, and internalization." *Sociological Forum* 36: 1177-1206. [https://doi.org/10.1111/socf.12771](doi:10.1111/socf.1277)
+- "Culture, cognition, and internalization." *Sociological Forum* 36: 1177-1206. [doi:10.1111/socf.12771](doi:10.1111/socf.1277)
 
 -   "Improving cultural analysis: Considering personal culture in its declarative and nondeclarative modes." *American Sociological Review* 82: 88-115. [doi:10.1177/0003122416675175](https://doi.org/10.1177/0003122416675175)
 
@@ -125,13 +125,13 @@
 
 -   "Cultural theory." Pp. 99-120 in Seth Abrutyn (Ed.), *Handbook of Contemporary Sociological Theory.* Springer. [doi:10.1007/978-3-319-32250-6_6](https://doi.org/10.1007/978-3-319-32250-6_6)
 
-- "Embodied culture as procedure: Cognitive science and the link between subjective and objective culture." Pp. 70-86 in A. Warde and D. Southerton (Eds.), *The Habits of Consumption: COLLeGIUM: Studies Across Disciplines in the Humanities and Social Sciences*, Volume 12. Helsinki Collegium of Advanced Studies. [http://hdl.handle.net/10138/34223](http://hdl.handle.net/10138/34223)
+- "Embodied culture as procedure: Cognitive science and the link between subjective and objective culture." Pp. 70-86 in A. Warde and D. Southerton (Eds.), *The Habits of Consumption: COLLeGIUM: Studies Across Disciplines in the Humanities and Social Sciences*, Volume 12. Helsinki Collegium of Advanced Studies. [H918](http://hdl.handle.net/10138/34223)
 
 -   "Pierre Bourdieu as a post-cultural theorist." *Cultural Sociology* 5: 1-22.[doi:10.1177/1749975510389714](https://doi.org/10.1177/1749975510389714)
 
 ### Culture and Networks 
 
--   "Culture and everyday networks" Pp. 53-65 in N. Crossley and P. Widdop (Eds.) *The Handbook of Inequality and Social Capital*. Edward Elgar. [doi:10.4337/9781803928784.00010](https://doi.org/10.4337/9781803928784.00010)
+-   "Culture and everyday networks" Pp. 53-65 in N. Crossley and P. Widdop (Eds.) *The Handbook of Culture and Social Networks*. Edward Elgar. [doi:10.4337/9781803928784.00010](https://doi.org/10.4337/9781803928784.00010)
 
 -   "Culture and social capital." Pp. 140–156 in R. Côté, S. McDonald and J. Shen (Eds.) *The Handbook of Inequality and Social Capital*. Edward Elgar. [doi:10.4337/9781802202373.00018](https://doi.org/10.4337/9781802202373.00018)
 
@@ -139,7 +139,7 @@
 
 - "Variety in cultural choice and the activation of social ties." *Social Science Research* 42: 321–330. [doi:10.1016/j.ssresearch.2012.09.014](https://doi.org/10.1016/j.ssresearch.2012.09.014)
 
--   "Cultural correlates of ego-network closure."  *Sociological Perspectives* 54: 479-487. [https://doi.org/10.1525/sop.2011.54.3.479](https://doi.org/10.1525/sop.2011.54.3.479)
+-   "Cultural correlates of ego-network closure."  *Sociological Perspectives* 54: 479-487. [doi:10.1525/sop.2011.54.3.479](https://doi.org/10.1525/sop.2011.54.3.479)
 
 -   "Can cultural worldviews influence network composition?" *Social Forces* 88: 1595-1618. [doi:10.1353/sof.2010.0009](https://doi.org/10.1353/sof.2010.0009)
 
@@ -188,13 +188,13 @@
 
 - "Two-mode relational similarities." *Social Networks* 76: 34-41. [doi:10.1016/j.socnet.2023.06.002](https://doi.org/10.1016/j.socnet.2023.06.002)
 
--   "Using big data to examine the effect of urbanism on social networks." *Journal of Urban Affairs* 43:40-56. [https://doi.org/10.1080/07352166.2018.1550350](https://doi.org/10.1080/07352166.2018.1550350)
+-   "Using big data to examine the effect of urbanism on social networks." *Journal of Urban Affairs* 43:40-56. [doi:10.1080/07352166.2018.1550350](https://doi.org/10.1080/07352166.2018.1550350)
 
--   "Neither influence nor selection: Examining the co-evolution of political orientation and social networks in the *NetSense* and *NetHealth* studies." *PloS one* 15: e0233458. [https://doi.org/10.1371/journal.pone.0233458](https://doi.org/10.1371/journal.pone.0233458)
+-   "Neither influence nor selection: Examining the co-evolution of political orientation and social networks in the *NetSense* and *NetHealth* studies." *PloS one* 15: e0233458. [doi:10.1371/journal.pone.0233458](https://doi.org/10.1371/journal.pone.0233458)
 
--   "A dyadic reciprocity index for repeated interaction networks." *Network Science* 1: 31-48. [https://doi.org/10.1017/nws.2012.5](https://doi.org/10.1017/nws.2012.5)
+-   "A dyadic reciprocity index for repeated interaction networks." *Network Science* 1: 31-48. [doi:10.1017/nws.2012.5](https://doi.org/10.1017/nws.2012.5)
 
--   "Predictors of short-term decay of cell phone contacts in a large scale communication network." *Social Networks* 33: 245-257. [https://doi.org/10.1016/j.socnet.2011.07.002](https://doi.org/10.1016/j.socnet.2011.07.002)
+-   "Predictors of short-term decay of cell phone contacts in a large scale communication network." *Social Networks* 33: 245-257. [doi:10.1016/j.socnet.2011.07.002](https://doi.org/10.1016/j.socnet.2011.07.002)
 
 ### Sociology of Taste 
 
@@ -210,5 +210,5 @@
 
 -   "Reconceptualizing and theorizing 'omnivorousness': Genetic and relational mechanisms.'' *Sociological Theory* 30: 260-280. [doi:10.1177/0735275112466999](https://doi.org/10.1177/0735275112466999)
 
-- "Highbrow omnivorousness on the small screen? Cultural industry systems and patterns of cultural choice in Europe." *Poetics: Journal of Empirical Research on Culture, the Media and the Arts* 37: 1-23. [https://doi.org/10.1016/j.poetic.2008.10.001](doi:10.1016/j.poetic.2008.10.001)
+- "Highbrow omnivorousness on the small screen? Cultural industry systems and patterns of cultural choice in Europe." *Poetics: Journal of Empirical Research on Culture, the Media and the Arts* 37: 1-23. [doi:10.1016/j.poetic.2008.10.001](doi:10.1016/j.poetic.2008.10.001)
 
