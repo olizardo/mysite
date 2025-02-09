@@ -1,5 +1,6 @@
 ---
-title: "SOCIOL 204 (Sociological Theorizing) Reading List"
+title: "SOCIOL 204 (Sociological Theorizing)"
+subtitle: "Master Reading List"
 format: 
   html:
     page-layout: full
@@ -9,15 +10,16 @@ format:
 
 ## Theory and Theorizing
 - Abend, G. (2008). The meaning of 'Theory.' *Sociological Theory*, 26(2), 173-199. 
-- Alexander, J. C. (1987). 'What is Theory?' Twenty Lectures: Sociological Theory Since World War II. Columbia University Press. (Pp. 1-21).
-- Craib, I. (1992) 'What's Wrong with Theory and Why We Still Need it.' Modern Social Theory. St Martin's Press. (Pp. 1-13).
-- Craib, I. (1992) 'Cutting a Path Through the Jungle.' Modern Social Theory. St Martin's Press. (Pp. 15-31).
+- Alexander, J. C. (1987). What is Theory? Twenty Lectures: Sociological Theory Since World War II. Columbia University Press. (Pp. 1-21).
+- Craib, I. (1992) What's Wrong with Theory and Why We Still Need it. Modern Social Theory. St Martin's Press. (Pp. 1-13).
+- Craib, I. (1992) Cutting a Path Through the Jungle. Modern Social Theory. St Martin's Press. (Pp. 15-31).
 - Davis, M. S. (1971). That's interesting! Towards a phenomenology of sociology and a sociology of phenomenology. *Philosophy of the Social Sciences*, 1(2), 309-344. 
 - Healy, K. (2017). Fuck nuance. *Sociological Theory*, 35(2), 118-127. 
 - Heiskala, R. (2014). Evidence and interest in social theory An ontological-practical approach. *Acta Sociologica*, 57(4), 279-292.
 - Joas, H., & Knöbl, W. (2009). What is Theory? Pp. 1-19 in *Social Theory: Twenty Introductory Lectures*. Cambridge University Press 
+- Martin, J. L. (2015) On Theory in Sociology. Pp. 1-44 in *Thinking Through Theory*. W. W. Norton
 
-## Habit and Practice Theories
+## Habit and Practice 
 - Archer, M. S. (2010). Routine, reflexivity, and realism. *Sociological Theory*, 28(3), 272-303. 
 -  Camic, C.  (1986). The Matter of Habit. *American Journal of Sociology* 91,(5), 1039-1087.
 - Casey, E. S. (1984). Habitual body and memory in Merleau-Ponty. In *Phenomenology and the Human Sciences* (pp. 39-57). Dordrecht: Springer Netherlands.
