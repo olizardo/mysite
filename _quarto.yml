@@ -26,9 +26,12 @@ website:
           - text: "SOCIOL 111 (Social Networks Undergraduate Class)"
             icon: file-text
             href: syllabi/SOCIOL111.qmd
-          - text: "SOCIOL 204 (Topics in Sociological Theorizing)"
+          - text: "SOCIOL 204 (Topics in Sociological Theorizing Reading List)"
             icon: file-text
             href: syllabi/SOCIOL204.qmd
+          - text: "SOCIOL 204 (Topics in Sociological Theorizing Spring 2025)"
+            icon: file-text
+            href: syllabi/SOCIOL204-sp25.qmd
           - text: "SOCIOL 208A & 208B (Computational Social Networks Sequence)"
             icon: globe
             href: https://olizardo.github.io/SOCIOL208/

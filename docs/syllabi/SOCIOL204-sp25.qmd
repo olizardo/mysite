@@ -1,0 +1,100 @@
+---
+title: "SOCIOL 204 (Sociological Theorizing)"
+format: 
+  html:
+    page-layout: full
+---
+
+# Readings
+
+## Theory and Theorizing
+### Week 0
+- Abend, G. (2008). The meaning of 'Theory.' *Sociological Theory*, 26(2), 173-199. 
+- Alexander, J. C. (1987). 'What is Theory?' Twenty Lectures: Sociological Theory Since World War II. Columbia University Press. (Pp. 1-21).
+- Craib, I. (1992) 'What's Wrong with Theory and Why We Still Need it.' Modern Social Theory. St Martin's Press. (Pp. 1-13).
+- Craib, I. (1992) 'Cutting a Path Through the Jungle.' Modern Social Theory. St Martin's Press. (Pp. 15-31).
+- Davis, M. S. (1971). That's interesting! Towards a phenomenology of sociology and a sociology of phenomenology. *Philosophy of the Social Sciences*, 1(2), 309-344. 
+- Healy, K. (2017). Fuck nuance. *Sociological Theory*, 35(2), 118-127. 
+- Heiskala, R. (2014). Evidence and interest in social theory An ontological-practical approach. *Acta Sociologica*, 57(4), 279-292.
+- Joas, H., & Knöbl, W. (2009). What is Theory? Pp. 1-19 in *Social Theory: Twenty Introductory Lectures*. Cambridge University Press. 
+
+#### Further Reading
+- Martin, J. L. (2015) On Theory in Sociology. Pp. 1-44 in *Thinking Through Theory*. W. W. Norton 
+- Selg, P. (2013). The politics of theory and the constitution of meaning. *Sociological Theory*, 31(1), 1-23. 
+
+## Habit and Practice Theories
+### Week 1
+- Haslanger, S. (2018). What is a social practice? *Royal Institute of Philosophy Supplements*, 82, 231-247. 
+- Dubrule, A. (2022). Gender and Habit: John Dewey and Iris Marion Young on Embodiment and Transformation. *The Pluralist*, 17(1), 45-51. 
+- Pagis, M. (2010). From abstract concepts to experiential knowledge: Embodying enlightenment in a meditation center. *Qualitative Sociology*, 33(4), 469-489. 
+- Liao, S. Y., & Huebner, B. (2021). Oppressive things. *Philosophy and Phenomenological Research*, 103(1), 92-113. 
+- Engman, A., & Cranford, C. (2016). Habit and the Body: Lessons for Social Theories of Habit from the Experiences of People with Physical Disabilities. *Sociological Theory*, 34(1), 27-44. 
+
+### Week 2
+- Crawley, S. L., Whitlock, M. C., & Earles, J. (2021). Smithing queer empiricism: Engaging ethnomethodology for a queer social science. *Sociological Theory*, 39(3), 127-152. 
+- Gold, T. (2022). Contentious Tactics as Jazz Performances: A Pragmatist Approach to the Study of Repertoire Change. *Sociological Theory*, 40(3), 249-271. 
+- Ngo, H. (2016). Racist habits: A phenomenological analysis of racism and the habitual body. *Philosophy & Social Criticism*, 42(9), 847-872. 
+- Swidler, A. (2001). What anchors cultural practices. Pp. 74-92 in Schatzki, T. R., Knorr-Cetina, K., and Savigny, E. V., editors, *The Practice Turn in Contemporary Theory*. Routledge. 
+- Winchester, D. (2008). Embodying the faith: Religious practice and the making of a Muslim moral habitus. *Social Forces*, 86(4), 1753-1780. 
+
+## Fields, Ecologies, and Institutions
+
+### Week 3
+
+- Abbott, A. (2005). Linked ecologies: States and universities as environments for professions. *Sociological Theory*, *23_(3), 245-274. 
+- Buchholz, L. (2016). What is a global field? Theorizing fields beyond the nation-state. *The Sociological Review*, 64(2\_suppl), 31-60. 
+- Dimaggio, P. J., & Powell, W. W. (1983). The iron cage revisited: Institutional isomorphism and collective rationality in organizational fields. *American Sociological Review*, 48(2), 147-160. 
+- Krause, M. (2018). How fields vary. *The British Journal of Sociology*, *69_(1), 3-22. 
+- Strang, D., & Meyer, J. W. (1993). Institutional conditions for diffusion. *Theory and Society*, 487-511.
+
+### Week 4
+
+- Armstrong, E. A., & Bernstein, M. (2008). Culture, power, and institutions: A multi‐institutional politics approach to social movements. *Sociological Theory*, 26(1), 74-99.
+- Beckert, J. (2010). Institutional isomorphism revisited: Convergence and divergence in institutional change. *Sociological Theory*, 28(2), 150-166.
+- Fligstein, N., & McAdam, D. (2011). Toward a general theory of strategic action fields. *Sociological Theory*, *29_(1), 1-26. 
+- Liu, S., & Emirbayer, M. (2016). Field and Ecology. *Sociological Theory*, 34(1), 62-79. 
+- Martin, J. L. (2003). What is field theory? *American Journal of Sociology*, 109_(1), 1-49. 
+
+## Interactionism and Phenomenology
+
+### Week 5
+- Fligstein, N. (2001). Social skill and the theory of fields. *Sociological Theory*, 19(2):105-125. 
+- Hallett, T., & Hawbaker, A. (2021). The case for an inhabited institutionalism in organizational research: interaction, coupling, and change reconsidered. *Theory and Society*, *50_(1), 1-32. 
+- Itzigsohn, J., & Brown, K. (2015). Sociology and the theory of double consciousness: WEB Du Bois’s phenomenology of racialized subjectivity. *Du Bois Review*, 12(2), 231-248.
+- Surak, K. (2017). Rupture and Rhythm: A Phenomenology of National Experiences. *Sociological Theory*, 35(4), 312-333.
+- Tavory, I., & Eliasoph, N. (2013). Coordinating Futures: Toward a Theory of Anticipation. *American Journal of Sociology*, 118(4), 908-942.
+
+### Week 6
+- Cetina, K. K. (2009). The synthetic situation: Interactionism for a global world. *Symbolic Interaction*, 32(1), 61-87. 
+- Eliasoph, N., & Lichterman, P. (2003). Culture in interaction. *American Journal of Sociology*, 108(4), 735-794. 
+- Fuhse, J. A. (2009). The meaning structure of social networks. *Sociological theory*, 27(1), 51-73. 
+- Tavory, I., & Fine, G. A. (2020). Disruption and the Theory of the Interaction Order. *Theory and Society*, *49_(3), 365-385. 
+- Yancy, G. (2008). Elevators, social spaces and racism: A philosophical analysis. *Philosophy & Social Criticism*, 34(8), 843-876. 
+
+
+## Structures and Structuralism
+
+### Week 7
+- Emirbayer, M., & Goodwin, J. (1994). Network analysis, culture, and the problem of agency. *American Journal of Sociology*, 99(6), 1411-1454.
+
+### Week 8
+
+
+## Culture, Cognition, and Action
+
+### Week 9
+
+- Hays, S. (1994). Structure and agency and the sticky problem of culture. *Sociological theory*, 57-72. 
+- Lizardo, O., & Strand, M. (2010). Skills, toolkits, contexts and institutions: Clarifying the relationship between different approaches to cognition in cultural sociology. *Poetics*, 38(2), 205-228. 
+- Sendroiu, I. (2022). 'All the Old Illusions': On Guessing at Being in Crisis. *Sociological Theory*, 0(0). 
+- Sewell, W. H. (2005). The concept(s) of culture. Pp. 152-174 in *Logics of History*. University of Chicago Press. 
+- Vaisey, S. (2009). Motivation and justification: Toward a dual-process theory of culture in action. *American Journal of Sociology*, 114(6):1675–1715. 
+
+### Week 10
+- Brett, G. (2022). Dueling with Dual-Process Models: Cognition, Creativity, and Context. *Sociological Theory*, 40(2), 179-201. 
+- Freeman, K. J., Condron, D. J., & Steidl, C. R. (2020). Structures of stratification: Advancing a sociological debate over culture and resources. *Critical Sociology*, 46_(2), 191-206. 
+- Haslanger, S. (2019). Cognition as a social skill. *Australasian Philosophical Review*, (1), 5-25. 
+- Luft, A. (2020). Theorizing moral cognition: Culture in action, situations, and relationships. *Socius*, , 2378023120916125. 
+- Reed, I. A., & Weinman, M. (2019). Agency, power, modernity: A manifesto for social theory. *European Journal of Cultural and Political Sociology*, (1), 6-50. 
+
+
