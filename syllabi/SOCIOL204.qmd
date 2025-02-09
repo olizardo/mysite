@@ -72,7 +72,7 @@ format:
 ## Interactionism and Phenomenology
 - Atkinson, W. (2010). Phenomenological additions to the Bourdieusian toolbox: Two problems for Bourdieu, two solutions from Schutz. *Sociological Theory*, 28(1), 1-19.
 - Cetina, K. K. (2009). The synthetic situation: Interactionism for a global world. *Symbolic Interaction*, 32(1), 61-87. 
-- Crawley, S. L., Whitlock, M. C., & Earles, J. (2021). Smithing queer empiricism: Engaging ethnomethodology for a queer social science. *Sociological Theory*, 39(3), 127-152. 
+- Crawley, S. L. (2022). Queering doing gender: The curious absence of ethnomethodology in gender studies and in sociology. *Sociological Theory*, 40(4), 366-392.
 - Crossley, N. (2001). The phenomenological habitus and its construction. *Theory and society*, *30_(1), 81-120.
 - Fligstein, N. (2001). Social skill and the theory of fields. *Sociological Theory*, 19(2):105-125. 
 - Hallett, T., & Hawbaker, A. (2021). The case for an inhabited institutionalism in organizational research: interaction, coupling, and change reconsidered. *Theory and Society*, *50_(1), 1-32. 
@@ -82,7 +82,6 @@ format:
 - Reay, M. (2010). Knowledge distribution, embodiment, and insulation. *Sociological Theory*, *28_(1), 91-107.
 - Surak, K. (2017). Rupture and Rhythm: A Phenomenology of National Experiences. *Sociological Theory*, 35(4), 312-333.
 - Tavory, I., & Fine, G. A. (2020). Disruption and the Theory of the Interaction Order. *Theory and Society*, *49_(3), 365-385. 
-- Eliasoph, N., & Lichterman, P. (2003). Culture in interaction. *American Journal of Sociology*, 108(4), 735-794. 
 - Tavory, I. (2018). Between situations: Anticipation, rhythms, and the theory of interaction. *Sociological Theory*, *36_(2), 117-133.
 - Tavory, I., & Winchester, D. (2012). Experiential careers: the routinization and de-routinization of religious life. *Theory and Society*, 41, 351-373.
 - Tavory, I., & Eliasoph, N. (2013). Coordinating Futures: Toward a Theory of Anticipation. *American Journal of Sociology*, 118(4), 908-942.
@@ -100,13 +99,9 @@ format:
 - Joas, H., & Knöbl, W. (2009). Structuralism and Poststructuralism. Pp. 339-370 in *Social Theory: Twenty Introductory Lectures*. Cambridge University Press. 
 - Erikson, E. (2013). Formalist and relationalist theory in social network analysis. *Sociological Theory*, 31_(3), 219-242.
 - Fuhse, J. A. (2009). The meaning structure of social networks. *Sociological theory*, 27(1), 51-73. 
-- Hays, S. (1994). Structure and agency and the sticky problem of culture. *Sociological theory*, 57-72. 
 - Emirbayer, M. (1997). Manifesto for a relational sociology. *American Journal of Sociology*, 103_(2), 281-317. 
-- Emirbayer, M., & Goodwin, J. (1994). Network analysis, culture, and the problem of agency. *American Journal of Sociology*, 99(6), 1411-1454.
-- Freeman, K. J., Condron, D. J., & Steidl, C. R. (2020). Structures of stratification: Advancing a sociological debate over culture and resources. *Critical Sociology*, 46_(2), 191-206. 
 - Heiskala, R. (2001). Theorizing power: Weber, Parsons, Foucault and neostructuralism. *Social Science Information*, 40(2), 241-264
 - Leschziner, V., & Brett, G. (2021). Symbol Systems and Social Structures. Pp. pp. 559-582 in *Handbook of Classical Sociological Theory*. Springer. 
-- Leschziner, V., & Green, A. I. (2013). Thinking about Food and Sex Deliberate Cognition in the Routine Practices of a Field. *Sociological Theory*, 31(2), 116-144
 - Maryanski, A. and Turner, J. (1991). The off
 spring of functionalism: French and British structuralism. *Sociological Theory*, 9(1):106-111.
 - Mische, A. (2011) Relational sociology, culture, and agency. Pp. 80-97 in *The Sage handbook of Social Network Analysis*. Sage Publications. 
@@ -119,25 +114,30 @@ spring of functionalism: French and British structuralism. *Sociological Theory*
 - Saito, H. (2011). An actor-network theory of cosmopolitanism. *Sociological Theory*, 29(2), 124-149.
 - Sewell Jr, W. H. (1992). A theory of structure: Duality, agency, and transformation. *American Journal of Sociology*, 98(1), 1-29.
 - Singh, S. (2016). What Is Relational Structure? Introducing History to the Debates on the Relation between Fields and Social Networks. *Sociological Theory*, 34(2), 128-150.
-- Spillman, L. (1995). Culture, social structures, and discursive fields. *Current Perspectives in Social Theory*, 15:129-154.
 
 ## Culture, Cognition, and Action
-- Abramson, C. M. (2012). From “either‐or” to “when and how”: A context‐dependent model of culture in action. *Journal for the Theory of Social Behaviour*, 42(2), 155-180. 
+- Abramson, C. M. (2012). From 'either‐or' to 'when and how': A context‐dependent model of culture in action. *Journal for the Theory of Social Behaviour*, 42(2), 155-180. 
 - Alexander, J. C. (1988).  Action and its Environments  Pp. 301-333 in *Action and its Environments: Toward a New Synthesis*. Columbia University Press, New York . 
 - Ayala-Hurtado, E. (2022). Narrative continuity/rupture: Projected professional futures amid pervasive employment precarity. *Work and Occupations*, 49(1), 45-78.
 - Brett, G. (2022). Dueling with Dual-Process Models: Cognition, Creativity, and Context. *Sociological Theory*, 40(2), 179-201. 
 - Eckstein, H. (1996). Culture as a foundation concept for the social sciences. *Journal of Theoretical Politics*, (4), 471-497.
+- Eliasoph, N., & Lichterman, P. (2003). Culture in interaction. *American Journal of Sociology*, 108(4), 735-794. 
 - Emirbayer, M., & Mische, A. (1998). What is agency? *American Journal of Sociology*, 103(4), 962-1023. 
+- Emirbayer, M., & Goodwin, J. (1994). Network analysis, culture, and the problem of agency. *American Journal of Sociology*, 99(6), 1411-1454.
+- Freeman, K. J., Condron, D. J., & Steidl, C. R. (2020). Structures of stratification: Advancing a sociological debate over culture and resources. *Critical Sociology*, 46_(2), 191-206. 
 - Haslanger, S. (2019). Cognition as a social skill. *Australasian Philosophical Review*, (1), 5-25. 
+- Hays, S. (1994). Structure and agency and the sticky problem of culture. *Sociological theory*, 57-72. 
 - Joas, H., & Knöbl, W. (2009). The Classical Attempt at Synthesis. Pp. 20-42 in *Social Theory: Twenty Introductory Lectures*. Cambridge University Press. 
+- Leschziner, V., & Green, A. I. (2013). Thinking about Food and Sex Deliberate Cognition in the Routine Practices of a Field. *Sociological Theory*, 31(2), 116-144
 - Lizardo, O., & Strand, M. (2010). Skills, toolkits, contexts and institutions: Clarifying the relationship between different approaches to cognition in cultural sociology. *Poetics*, 38(2), 205-228. 
 - Luft, A. (2020). Theorizing moral cognition: Culture in action, situations, and relationships. *Socius*, , 2378023120916125. 
 - Luft, A. (2023). The moral career of the genocide perpetrator: Cognition, emotions, and dehumanization as a consequence, not a cause, of violence. *Sociological Theory*, 41(4), 324-351.
 - Miles, A. (2014). Addressing the problem of cultural anchoring an identity-based model of culture in action. *Social Psychology Quarterly*, 77(2), 210-227
 - Reed, I. A., & Weinman, M. (2019). Agency, power, modernity: A manifesto for social theory. *European Journal of Cultural and Political Sociology*, (1), 6-50. 
-- Sendroiu, I. (2022). 'All the Old Illusions': On Guessing at Being in Crisis. *Sociological Theory*, 0(0). 
+- Sendroiu, I. (2022). 'All the old illusions': on guessing at being in crisis. *Sociological Theory*, 40(4), 297-321.
 - Strand, M., & Lizardo, O. (2017). The hysteresis effect: Theorizing mismatch in action. *Journal for the Theory of Social Behaviour*, 47(2), 164-194.
 - Sewell, W. H. (2005). The concept(s) of culture. Pp. 152-174 in *Logics of History*. University of Chicago Press. 
+- Spillman, L. (1995). Culture, social structures, and discursive fields. *Current Perspectives in Social Theory*, 15:129-154.
 - Silver, D. (2011). The moodiness of action. *Sociological Theory*, *29_(3), 199-222. 
 - Swidler, A. (1986). Culture in action: Symbols and Strategies. *American Sociological Review*, 51,:273–286. 
 - Vaisey, S. (2009). Motivation and justification: Toward a dual-process theory of culture in action. *American Journal of Sociology*, 114(6):1675–1715. 
