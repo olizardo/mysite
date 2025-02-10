@@ -54,8 +54,6 @@ format:
 - Hallett, T., & Hawbaker, A. (2021). The case for an inhabited institutionalism in organizational research: interaction, coupling, and change reconsidered. *Theory and Society*, *50_(1), 1-32. 
 - Crawley, S. L. (2022). Queering doing gender: The curious absence of ethnomethodology in gender studies and in sociology. *Sociological Theory*, 40(4), 366-392.
 
-
-
 ### Week 6 (May. 7)
 - Itzigsohn, J., & Brown, K. (2015). Sociology and the theory of double consciousness: WEB Du Bois’s phenomenology of racialized subjectivity. *Du Bois Review*, 12(2), 231-248.
 - Surak, K. (2017). Rupture and rhythm: A phenomenology of national experiences. *Sociological Theory*, 35(4), 312-333.
@@ -70,7 +68,7 @@ format:
 - Erikson, E. (2013). Formalist and relationalist theory in social network analysis. *Sociological Theory*, 31_(3), 219-242.
 - Fuhse, J. A. (2009). The meaning structure of social networks. *Sociological theory*, 27(1), 51-73.
 - Sewell Jr, W. H. (1992). A theory of structure: Duality, agency, and transformation. *American Journal of Sociology*, 98(1), 1-29.
-- Reed, I. A. (2017). Chains of power and their representation. Sociological Theory, 35(2), 87-117.
+- Reed, I. A. (2017). Chains of power and their representation. *Sociological Theory*, 35(2), 87-117.
 
 ### Week 8 (May. 21)
 - Dépelteau, F. (2008). Relational Thinking: A Critique of Co‐Deterministic Theories of sructure and Agency.*Sociological Theory*,26(1), 51-73 
