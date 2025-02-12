@@ -7,7 +7,7 @@ format:
 ---
 
 ## Theory and Theorizing
-### Week 0 (Mar. 26)
+### Week 0 (Mar. 28)
 - Abend, G. (2008). The meaning of 'Theory.' *Sociological Theory*, 26(2), 173-199. 
 - Craib, I. (1992) Cutting a Path Through the Jungle. Modern Social Theory. St Martin's Press. (Pp. 15-31).
 - Davis, M. S. (1971). That's interesting! Towards a phenomenology of sociology and a sociology of phenomenology. *Philosophy of the Social Sciences*, 1(2), 309-344. 
@@ -15,14 +15,14 @@ format:
 - Martin, J. L. (2015) On Theory in Sociology. Pp. 1-44 in *Thinking Through Theory*. W. W. Norton
 
 ## Habits, Bodies, and Practice 
-### Week 1 (Apr. 2)
+### Week 1 (Apr. 4)
 - Dubrule, A. (2022). Gender and Habit: John Dewey and Iris Marion Young on Embodiment and Transformation. *The Pluralist*, 17(1), 45-51. 
 - Engman, A., & Cranford, C. (2016). Habit and the Body: Lessons for Social Theories of Habit from the Experiences of People with Physical Disabilities. *Sociological Theory*, 34(1), 27-44.
 - Liao, S. Y., & Huebner, B. (2021). Oppressive things. *Philosophy and Phenomenological Research*, 103(1), 92-113. 
 - Sullivan, S. (2000). Reconfiguring gender with John Dewey: Habit, bodies, and cultural change. *Hypatia*, 15(1), 23-42. 
 - Young, I. M. (1980). Throwing like a girl: A phenomenology of feminine body comportment motility and spatiality. *Human Studies*, 3(1), 137-156.
 
-### Week 2 (Apr. 9)
+### Week 2 (Apr. 11)
 - Haslanger, S. (2018). What is a social practice? *Royal Institute of Philosophy Supplements*, 82, 231-247. 
 - Lau, R. W. (2004). Habitus and the Practical Logic of Practice: An Interpretation. *Sociology*, 38(2), 369-387
 - Ngo, H. (2016). Racist habits: A phenomenological analysis of racism and the habitual body. *Philosophy & Social Criticism*, 42(9), 847-872. 
@@ -31,7 +31,7 @@ format:
 
 ## Fields, Ecologies, and Institutions
 
-### Week 3 (Apr. 16)
+### Week 3 (Apr. 18)
 - Abbott, A. (2005). Linked ecologies: States and universities as environments for professions. *Sociological Theory*, 23(3), 245-274. 
 - Beckert, J. (2010). Institutional isomorphism revisited: Convergence and divergence in institutional change. *Sociological Theory*, 28(2), 150-166.
 - Dimaggio, P. J., & Powell, W. W. (1983). The iron cage revisited: Institutional isomorphism and collective rationality in organizational fields. *American Sociological Review*, 48(2), 147-160. 
@@ -39,7 +39,7 @@ format:
 - Martin, P. Y. (2004). Gender as social institution. *Social Forces*, 82(4), 1249-1273.
 - Wang, Y. (2016). Homology and isomorphism: Bourdieu in conversation with New Institutionalism. *The British Journal of Sociology*, 67(2), 348-370. 
 
-### Week 4 (Apr. 23)
+### Week 4 (Apr. 25)
 - Armstrong, E. A., & Bernstein, M. (2008). Culture, power, and institutions: A multi‐institutional politics approach to social movements. *Sociological Theory*, 26(1), 74-99.
 - Fligstein, N., & McAdam, D. (2011). Toward a general theory of strategic action fields. *Sociological Theory*, 29(1), 1-26.
 - Krause, M. (2018). How fields vary. *The British Journal of Sociology*, 69(1), 3-22. 
@@ -48,14 +48,14 @@ format:
 - Strang, D., & Meyer, J. W. (1993). Institutional conditions for diffusion. *Theory and Society*, 487-511.
 
 ## Interaction, Situations, and Phenomenology
-### Week 5 (Apr. 30)
+### Week 5 (May 2)
 - Cetina, K. K. (2009). The synthetic situation: Interactionism for a global world. *Symbolic Interaction*, 32(1), 61-87. 
 - Fligstein, N. (2001). Social skill and the theory of fields. *Sociological Theory*, 19(2):105-125. 
 - Hallett, T., & Hawbaker, A. (2021). The case for an inhabited institutionalism in organizational research: interaction, coupling, and change reconsidered. *Theory and Society*, 50(1), 1-32. 
 - Itzigsohn, J., & Brown, K. (2015). Sociology and the theory of double consciousness: WEB Du Bois’s phenomenology of racialized subjectivity. *Du Bois Review*, 12(2), 231-248.
 - Crawley, S. L. (2022). Queering doing gender: The curious absence of ethnomethodology in gender studies and in sociology. *Sociological Theory*, 40(4), 366-392.
 
-### Week 6 (May. 7)
+### Week 6 (May 9)
 - Hitlin, S., & Elder, G. H. (2007). Time, self, and the curiously abstract concept of agency. *Sociological Theory*, 25(2), 170-191.
 - Timmermans, S., & Tavory, I. (2020). Racist Encounters: A Pragmatist Semiotic Analysis of Interaction. *Sociological Theory*, 38(4), 295-317. 
 - Surak, K. (2017). Rupture and rhythm: A phenomenology of national experiences. *Sociological Theory*, 35(4), 312-333.
@@ -64,14 +64,14 @@ format:
 
 ## Networks, Relations, and Structures
 
-### Week 7 (May. 14)
+### Week 7 (May 16)
 - Crossley, N. (2022). A Dependent Structure of Interdependence: Structure and Agency in Relational Perspective. *Sociology*, 56(1), 166-182. 
 - Erikson, E. (2013). Formalist and relationalist theory in social network analysis. *Sociological Theory*, 31_(3), 219-242.
 - Fuhse, J. A. (2009). The meaning structure of social networks. *Sociological theory*, 27(1), 51-73.
 - Sewell Jr, W. H. (1992). A theory of structure: Duality, agency, and transformation. *American Journal of Sociology*, 98(1), 1-29.
 - Reed, I. A. (2017). Chains of power and their representation. *Sociological Theory*, 35(2), 87-117.
 
-### Week 8 (May. 21)
+### Week 8 (May 23)
 - Dépelteau, F. (2008). Relational Thinking: A Critique of Co‐Deterministic Theories of sructure and Agency.*Sociological Theory*,26(1), 51-73 
 - Elder Vass, D. (2008). Integrating institutional, relational and embodied structure: an emergentist perspective. *The British Journal of Sociology*, 59(2), 281-299.
 - Porpora, D. V. (1989). Four concepts of social structure. *Journal for the Theory of Social Behaviour*, 19(2), 195–211
@@ -81,14 +81,14 @@ format:
 
 ## Culture, Cognition, and Action
 
-### Week 9 (May. 28)
+### Week 9 (May 30)
 - Emirbayer, M., & Goodwin, J. (1994). Network analysis, culture, and the problem of agency. *American Journal of Sociology*, 99(6), 1411-1454.
 - Freeman, K. J., Condron, D. J., & Steidl, C. R. (2020). Structures of stratification: Advancing a sociological debate over culture and resources. *Critical Sociology*, 46_(2), 191-206. 
 - Hays, S. (1994). Structure and agency and the sticky problem of culture. *Sociological theory*, 57-72. 
 - Vaisey, S. (2009). Motivation and justification: Toward a dual-process theory of culture in action. *American Journal of Sociology*, 114(6):1675–1715. 
 - Swidler, A. (1986). Culture in action: Symbols and strategies. *American Sociological Review*, 51,:273–286. 
 
-### Week 10 (Jun. 4)
+### Week 10 (Jun. 6)
 - Patterson, O. (2015). The nature and dynamics of cultural processes. In *The cultural Matrix: Understanding Black Youth* (pp. 25-44). Harvard University Press.
 - Brett, G. (2022). Dueling with Dual-Process Models: Cognition, Creativity, and Context. *Sociological Theory*, 40(2), 179-201.
 - Eliasoph, N., & Lichterman, P. (2003). Culture in interaction. *American Journal of Sociology*, 108(4), 735-794. 
