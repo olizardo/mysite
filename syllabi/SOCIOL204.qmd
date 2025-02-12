@@ -1,6 +1,6 @@
 ---
 title: "SOCIOL 204 (Sociological Theorizing)"
-subtitle: "Master Reading List"
+subtitle: "Expanded Reading List"
 format: 
   html:
     page-layout: full
@@ -65,6 +65,7 @@ format:
 - Meyer, J. W., & Jepperson, R. L. (2000). The 'actors' of modern society: The cultural construction of social agency. *Sociological Theory*, *18_(1), 100-120. 
 - Meyer, J. W., Boli, J., Thomas, G. M., & Ramirez, F. O. (1997). World society and the nation-state. *American Journal of Sociology*, *103_(1), 144-181. 
 - Schneiberg, M., & Clemens, E. S. (2006). The typical tools for the job: Research strategies in institutional analysis. *Sociological Theory*, 24(3), 195-227.
+- Silber, I. F. (1995). Space, fields, boundaries: The rise of spatial metaphors in contemporary sociological theory. *Social Research*, 323-355.
 - Steinmetz, G. (2016). Social fields, subfields and social spaces at the scale of empires: Explaining the colonial state and colonial sociology. *The Sociological Review*, 64(2), 98-123.
 - Strang, D., & Meyer, J. W. (1993). Institutional conditions for diffusion. *Theory and Society*, 487-511.
 - Wang, Y. (2016). Homology and isomorphism: Bourdieu in conversation with New Institutionalism. *The British Journal of Sociology*, 67(2), 348-370. 
@@ -134,6 +135,7 @@ spring of functionalism: French and British structuralism. *Sociological Theory*
 - Luft, A. (2020). Theorizing moral cognition: Culture in action, situations, and relationships. *Socius*, , 2378023120916125. 
 - Luft, A. (2023). The moral career of the genocide perpetrator: Cognition, emotions, and dehumanization as a consequence, not a cause, of violence. *Sociological Theory*, 41(4), 324-351.
 - Miles, A. (2014). Addressing the problem of cultural anchoring an identity-based model of culture in action. *Social Psychology Quarterly*, 77(2), 210-227
+- Patterson, O. (2015). The nature and dynamics of cultural processes. In *The cultural Matrix: Understanding Black Youth* (pp. 25-44). Harvard University Press.
 - Reed, I. A., & Weinman, M. (2019). Agency, power, modernity: A manifesto for social theory. *European Journal of Cultural and Political Sociology*, (1), 6-50. 
 - Sendroiu, I. (2022). 'All the old illusions': on guessing at being in crisis. *Sociological Theory*, 40(4), 297-321.
 - Strand, M., & Lizardo, O. (2017). The hysteresis effect: Theorizing mismatch in action. *Journal for the Theory of Social Behaviour*, 47(2), 164-194.
