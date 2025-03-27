@@ -21,37 +21,39 @@ format:
 
 | Name | SOCIOL 111 (Social Networks) |
 | :---        |    :----   |
-| Lecture Time | Mondays and Fridays 2-3:15p |
-| Lecture Place | Haines A18 |
-| Office Hours |  Wednesdays and Thursdays 1-2p |
-| Office | Haines 290 or by [Zoom](https://ucla.zoom.us/my/olizardo)  appointment |
+| Lecture Time | Mondays and Wednesdays 8-9:15a |
+| Lecture Place | Royce 190 |
+| In-Person Office Hours |  Fridays 1-2p |
+| Zoom Office Hours |  Mondays 1-2p |
+| Office | Haines 290 
+| Zoom Office | [https://ucla.zoom.us/my/olizardo](https://ucla.zoom.us/my/olizardo) |
 
 # Course Description
-These days, "social networks" are everywhere, [including Hollywood movies starring Jesse Eisenberg](https://www.imdb.com/title/tt1285016/), [self-help bestsellers trying to change your life](https://www.imdb.com/title/tt1285016/), to social media websites trying to get you to click on an ad. But way before networks, networking, and social media networks became buzzwords (e.g., before you were born), they were (and continue to be) a field of rigorous study in the social sciences called **social network analysis**. In fact, networks became central in sociology during the 1960s and 1970s because they were used to take such fuzzy concepts as "social relationships," "social ties," and "social structures" from being evocative abstractions that explained everything (and thus nothing) to real topics of empirical research. 
+These days, "social networks" are everywhere. Yet, before networking, and social media networks became buzzwords (e.g., before you were born) they were (and continue to be) a field of rigorous study in the social sciences called **social network analysis** (SNA). In fact, networks became central in sociology during the 1960s and 1970s because they were used to take such fuzzy concepts as "social relationships," "social ties," and "social structures" from being evocative abstractions that explained everything (and therefore nothing) to concrete topics of empirical research and social-scientific measurement. 
 
-In this course, we will explore this more concrete and "scientific" part of social networks. We will see that the field of study of social networks is distinctive for not only having its own set of theories and concepts (and associated "lingo") but also for the way in which these concepts are immediately made concrete in mathematical (usually quantitative form). In Social Network Analysis (SNA), there is thus no clear separation of the theory from the analysis part. Another thing is distinctive about SNA concerning other areas of sociology is that it is not thematically restricted. Instead, SNA is comprised of a general set of analytic tools that can be used to study social processes in *any* field of sociology. This course will thus reflect that thematic diversity.
+In this course, we will explore this more concrete and "scientific" part of social networks. We will see that the field of study of social networks is distinctive for not only having its own set of theories and concepts (and associated "lingo") but also for the way in which these concepts are immediately made tangible in mathematical (usually quantitative form) using the tools of graph theory and matrix algebra. In Social Network Analysis (SNA), there is thus no clear separation of the theory from the analysis part. Another thing is distinctive about SNA concerning other areas of sociology is that it is not thematically restricted. Instead, SNA is comprised of a general set of analytic tools that can be used to study social processes in *any* field of sociology. This course will thus reflect that thematic diversity.
 
 # Thematic Sequence
 
-The first half of the course is designed to introduce you to the entire panoply of concepts and theories that form the core of the field of SNA. This field has a long history, but today it is a massive endeavor recruiting people from all of the social science disciplines. Because the primary tools of SNA are [Graph Theory](https://en.wikipedia.org/wiki/Graph_theory) and [Matrix Algebra](https://en.wikipedia.org/wiki/Matrix_(mathematics)) the first half of the course will focus on that, so it will be the most "math heavy" part of the class (although we will encounter math later too). Then beginning around week 6 we will switch over to theories about social networks work. The second half of the class will broaden the scope as we explore how various social phenomena, from "balance," to status attainment, hierarchy, negative interactions, the diffusion of innovations (and disease), and "the small world" can be understood from a social network perspective. 
+The course is designed to introduce you to the entire panoply of concepts and theories that form the core of the field of SNA as well as the relevant measurement and mathematical representation tools. This field has a long history, but today it is a massive endeavor recruiting people from all of the social science disciplines. Because the primary tools of SNA are [Graph Theory](https://en.wikipedia.org/wiki/Graph_theory) and [Matrix Algebra](https://en.wikipedia.org/wiki/Matrix_(mathematics)). Throughout the quarter we will jump back and forth between conceptual discussion and mathematical representation, so we will intersperse the more "math heavy" parts of the class---concentrating on **social network analysis**---with the more "concept heavy" parts, focusing on **social network theory**. These parts of the class will broaden the scope of the discussion, exploring how various social phenomena, from affective "balance" in social relations, to status attainment, hierarchy, negative interactions, the diffusion of innovations (and disease), and "the small world" can be understood from a social network perspective. 
 
-# Learning Objectives
+# Learning Goals and Objectives
 
 By the end of the course, you should be able to:
 
 - Understand basic network concepts and theories.
-- Use social-scientific terminology to describe patterns of structure and change observed in networks.
-- Understand and be capable of using measures based on graph theory and matrix algebra to analyze and describe social networks.
-- Understand the way that social network concepts, theory, and measures can be applied to shed light on a wide variety of phenomena across different fields of study in the social sciences and beyond.
+- Use basic social-scientific terminology to describe patterns of structure and change observed in networks.
+- Master and be capable of using measures based on graph theory and matrix algebra to analyze and describe social networks.
+- Comprehend the way that social network concepts, theory, and measures can be applied to shed light on a wide variety of phenomena across different fields of study in the social sciences and beyond.
 - Have a good of sense of what the main theories in the field of social networks are and the phenomena they attempt to explain.
 
 # Organization of the Class
 
 *This is how each week of the class is organized.*
 
-- The official meeting times for this class are *Monday* and *Friday* this is when your TA-led section meetings and lectures will happen. Note that you are *required* to attend TA-led section meetings, as this is where your participation grades will be coming from.  
+- The official meeting times for this class are *Monday* and *Wednesday* these are also the days when your TA-led section meetings and lectures will happen. Note that you are *required* to attend TA-led section meetings, as this is where your participation grades will be coming from.  
 
-- The lecture component for the class is schedule for **Mondays and Fridays starting at 2p Pacific Standard Time**. The current schedule of topics can be found on the Bruinlearn website under each class module (corresponding to each week). **Attendance at the lecture is not required**, but encouraged if you are able to make it. *Asking questions and taking notes during live delivery of the material aids learning and retention*. 
+- The lecture component for the class is scheduled for **Mondays and Wednesdays starting at 8a Pacific Standard Time**. The current (rolling) schedule of topics can be found on the Bruinlearn website under each class module (corresponding to each week). **Attendance at the lecture is not required**, but it is **strongly** encouraged if you are able to make it. In fact, *the best predictor of doing well in the class is regular attendance at the lecture*. **Asking questions and taking notes during live delivery of the material aids learning and retention**. 
 
 - All the slides on which the lectures will be based can be found on the associated lesson page on Bruinlearn. **Note that these are live slides** (their contents is bound to change). However, you will be able to see those changes when they happen.
 
@@ -147,19 +149,19 @@ UCLA prohibits gender discrimination, sexual harassment, domestic and dating vio
 6. Feel free to meet with any of us, regardless of the section you are in. However, if you want to discuss a grade, you must talk with the person who graded your assignment (your TA, unless otherwise noted).
 
 ## Open Student Hours with Prof. Lizardo
-**Wed. and Thurs. 1-2p at Haines 290** 
+**Fridays 1-3p at Haines 290** 
 
-- *The Syllabus has answers to the most common questions about the course*. Please, check the syllabus first, before asking us about due-dates, assignment requirements, etc.
+- *This Syllabus has answers to the most common questions about the course*. Please, check the syllabus first, before asking us about due-dates, assignment requirements, etc.
 
 - *Bruinlearn will be used for the majority of communication in this course*. You can find a link to the syllabus, the reading schedule, and all assignments there. I will also post lecture slides before each class. We strongly encourage you to make visits to the Bruinlearn site as a regular part of your preparation for this course.
 
-- *E-mail should be used for quick communications* (things that can be responded to in no more than a few sentences); use office hours for anything requiring more depth. Please consider email as subject to the same standards of communication as you would all other forms of written material in this course (i.e., you should use complete sentences, proper punctuation, etc.). We will typically respond to email within two work days. 
+- *E-mail should be used for quick communications* (things that can be responded to in no more than a few sentences); use office hours for anything requiring more in-depth discussion. Please consider email as subject to the same standards of communication as you would all other forms of written material in this course (i.e., you should use complete sentences, proper punctuation, etc.). We will typically respond to email within two work days. 
 
 - *If you have a small question or a clarification question, please email your TA about it first.* If the TA does not have the answer, then email me. 
 
 - *We will not, under any circumstances discuss grades over email*. Use an office hour appointment to discuss grade issues with me. 
 
-- *Office Hours are available to add to your experience in this course*. Please make use of them.  Each of us has specific office hours each week.  If you can not make it during the times noted earlier, please email with at least two dates and times to arrange a meeting. 
+- *Office Hours are available to add to your experience in this course*. Please make use of them.  Each of us has specific office hours each week.  If you can not make it during the times noted earlier, please email with at least two dates and times to arrange a meeting either in-person or over Zoom. 
 
 ## Academic Code of Conduct
 Students are strongly encouraged to discuss ideas for papers and assignments with other students. You can also show drafts of your papers to other students and receive from them editing assistance. However, all written work (papers, posted questions and comments) must be written by the student submitting the work. Any suspected instance of cheating or plagiarism will be dealt with according to the policies of UCLA’s Honor Code. As an undergraduate at the UCLA, you are bound by the University's academic code of conduct found [here](https://www.deanofstudents.ucla.edu/Individual-Student-Code).
@@ -196,3 +198,10 @@ We expect that everyone by now is familiar with it because not knowing the rules
 
 > **No**. The midterm and final will be scheduled over a 12 hour window. This should allow you to find a time to take it without conflict. This is also information that is available to you from the get go so you can plan accordingly. Making private arrangements with every individual who has multiple finals scheduled for the same day would be both unworkable and unfair to others. The only reasons to reschedule an exam remain the ones listed above: Documentable emergencies, mental and physical health issues, or deaths in the family.
 
+- *I fell behind and now I want some extra-credit. Can I please get some?*
+
+> **No**. This class is designed and battle-tested for you to do well with the actual number of assingments and requirements listed here. Keep up with everything and you are guaranteed to do well. 
+
+- *I am on the waiting list. Can you just let me into the class if I beg really hard?*
+
+> **No**. The class cannot go over the official enrollment. The waiting list is exactly as advertised. You wait until sommeone drops. 
