@@ -19,23 +19,25 @@
 
 - "A motivational theory of roles, rewards, and institutions.'' *Journal for the Theory of Social Behaviour* 53: 200-220. [doi:10.1111/jtsb.12360](https://doi.org/10.1111/jtsb.12360)
 
--   "Habit and the explanation of action." *Journal for the Theory of Social Behaviour* 51: 391-411. [doi:10.1111/jtsb.12273](https://doi.org/10.1111/jtsb.12273)
+- "Habit and the explanation of action." *Journal for the Theory of Social Behaviour* 51: 391-411. [doi:10.1111/jtsb.12273](https://doi.org/10.1111/jtsb.12273)
 
--   "The hysteresis effect: Theorizing mismatch in action." *Journal for the Theory of Social Behaviour* 47: 164--194. [doi:10.1111/jtsb.12117](https://doi.org/10.1111/jtsb.12117)
+- "The hysteresis effect: Theorizing mismatch in action." *Journal for the Theory of Social Behaviour* 47: 164--194. [doi:10.1111/jtsb.12117](https://doi.org/10.1111/jtsb.12117)
 
--   "Beyond world images: Belief as embodied action in the world." *Sociological Theory* 33:44-70. [doi:10.1177/0735275115572397](https://doi.org/10.1177/0735275115572397)
+- "Beyond world images: Belief as embodied action in the world." *Sociological Theory* 33:44-70. [doi:10.1177/0735275115572397](https://doi.org/10.1177/0735275115572397)
 
--   "Is a 'Special Psychology' of practice possible? From values and attitudes to embodied dispositions." *Theory & Psychology* 19: 1-15. [doi:10.1177/0959354309345891](https://doi.org/10.1177/0959354309345891)
+- "Is a 'Special Psychology' of practice possible? From values and attitudes to embodied dispositions." *Theory & Psychology* 19: 1-15. [doi:10.1177/0959354309345891](https://doi.org/10.1177/0959354309345891)
 
--   "'Mirror neurons,' collective objects and the problem of transmission: reconsidering Stephen Turner's critique of practice theory." *Journal for the Theory of Social Behaviour* 34: 375-401. [doi:10.1111/j.1468-5914.2007.00340.x](https://doi.org/10.1111/j.1468-5914.2007.00340.x)
+- "'Mirror neurons,' collective objects and the problem of transmission: reconsidering Stephen Turner's critique of practice theory." *Journal for the Theory of Social Behaviour* 34: 375-401. [doi:10.1111/j.1468-5914.2007.00340.x](https://doi.org/10.1111/j.1468-5914.2007.00340.x)
 
--   "The cognitive origins of Bourdieu's 'habitus'." *Journal for the Theory of Social Behaviour* 34: 375-401. [doi:10.1111/j.1468-5914.2004.00255.x](https://doi.org/10.1111/j.1468-5914.2004.00255.x)
+- "The cognitive origins of Bourdieu's 'habitus'." *Journal for the Theory of Social Behaviour* 34: 375-401. [doi:10.1111/j.1468-5914.2004.00255.x](https://doi.org/10.1111/j.1468-5914.2004.00255.x)
 
 ### Classical Sociological Theory
 
--   "Chance, orientation, and interpretation: Max Weber's probabilism and the future of social theory." *Sociological Theory* 40:124-150. [doi:10.1177/07352751221084712](https://doi.org/10.1177/07352751221084712)
+- "Human totality and the Total Social Fact." [(pdf)](/workpap/tsf.pdf)
 
--   Max Weber's ideal versus material interest distinction revisited.'' *European Journal of Social Theory* 21: 3--21. [doi:10.1177/1368431017710906](https://doi.org/10.1177/1368431017710906)
+- "Chance, orientation, and interpretation: Max Weber's probabilism and the future of social theory." *Sociological Theory* 40:124-150. [doi:10.1177/07352751221084712](https://doi.org/10.1177/07352751221084712)
+
+- "Max Weber's ideal versus material interest distinction revisited." *European Journal of Social Theory* 21: 3--21. [doi:10.1177/1368431017710906](https://doi.org/10.1177/1368431017710906)
 
 -   Schmaus' functionalist approach to the explanation of social facts: An assessment and critique.'' *Philosophy of the Social Sciences* 43: 453-492. [doi:10.1177/0048393112458491](https://doi.org/10.1177/0048393112458491)
 
@@ -109,7 +111,7 @@
 
 ### Cultural Theory 
 
--   "Kinding culture" *Working Paper* [(pdf)](/workpap/kinding.pdf)
+- "Kinding culture" *Working Paper* [(pdf)](/workpap/kinding.pdf)
 
 - "Culture and social psychology." Forthcoming in L. Doan, K. A. Hegtvedt and  J. E. Stets (Eds.), *The Handbook of Social Psychology: Micro, Meso, and Macro Orientations*. Springer. [(pdf)](/workpap/culture-and-social-psychology.pdf)
 
