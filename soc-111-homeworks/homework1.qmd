@@ -11,48 +11,15 @@ title: "Homework I: Graph Theory"
 
 ## Vertex and edge sets
 
+
 ```{r}
 #| label: fig-grex1
 #| fig-cap: "A simple graph."
-#| fig-cap-location: margin   
-#| fig-height: 8
-#| fig-width: 8
-    set.seed(529)
-    n <- 8
-    gr <- play_gnm(n = n, m = 16, directed = FALSE, loops = FALSE)
-    gr <- mutate(gr, name = toupper(letters[1:n]))
-    p <- ggraph(gr, layout = 'auto') 
-    p <- p + geom_edge_link(color = "steelblue", width = 1.25) 
-    p <- p + geom_node_point(aes(x = x, y = y), size = 18, color = "tan2") 
-    p <- p + geom_node_text(aes(label = name), size = 8, color = "white")
-    p <- p + theme_graph() + ylim(-1, 1)
-    p
-```
-
-Consider the graph shown in @fig-grex1:
-
-1. Write down the **vertex set** of the graph: 
-<br>
-<br>
-<br>
-
-1. Write down the **edge set** of the graph:
-<br>
-<br>
-<br>
-
-## Node Neighborhoods
-
-
-```{r}
-#| label: fig-grex2
-#| fig-cap: "Another simple graph."
-#| fig-cap-location: margin 
-#| fig-height: 12
-#| fig-width: 12
-    set.seed(471)
+#| fig-height: 10
+#| fig-width: 10
+    set.seed(500)
     n <- 12
-    gr <- play_gnm(n = n, m = 20, directed = FALSE, loops = FALSE)
+    gr <- play_gnm(n = n, m = 22, directed = FALSE, loops = FALSE)
     gr <- mutate(gr, name = toupper(letters[1:n]))
     p <- ggraph(gr, layout = 'auto') 
     p <- p + geom_edge_link(color = "steelblue", width = 1.25) 
@@ -63,52 +30,118 @@ Consider the graph shown in @fig-grex1:
     
 ```
 
-Consider the graph shown in @fig-grex2:
+Consider the graph shown in @fig-grex1:
 
-1. Write down the **neighborhood** of node *D*
+1. Write down the **vertex set** of the graph: 
 <br>
-<br>
-<br>
-
-1. Write down the **neighborhood** of node *K*
 <br>
 <br>
 <br>
 
-1. What is the **intersection** of the neighborhoods of nodes *D* and *I*?
+1. Write down the **edge set** of the graph:
 <br>
-<br>
-<br>
-
-1. What is the **intersection** of the neighborhoods of nodes *E* and *F*?
 <br>
 <br>
 <br>
 
-1. What is the **union** of the neighborhoods of nodes *H* and *J*? 
+## Node Neighborhoods
+
+1. Write down the **neighborhood** of node **F**
+<br>
 <br>
 <br>
 <br>
 
-## Node Degree
-
-Consider the graph shown in @fig-grex2:
-
-1. What is the **degree** of node *B*?
+1. Write down the **neighborhood** of node **J**
+<br>
+<br>
 <br>
 <br>
 
-1. What is(are) the node(s) with the largest **degree**?
+1. What is the **intersection** of the neighborhoods of nodes **F** and **J**?
+<br>
+<br>
 <br>
 <br>
 
-1. What is(are) the node(s) with the smallest **degree**?
+1. What is the **intersection** of the neighborhoods of nodes **A** and **F**?
 <br>
 <br>
+<br>
+<br>
+
+1. What is the **union** of the neighborhoods of nodes **H** and **J**? 
+<br>
+<br>
+<br>
+<br>
+
+## Graph Metrics
+
+1. What is the **order** of the graph?
+<br>
+<br>
+<br>
+<br>
+
+1. What is the **size** of the graph?
+<br>
+<br>
+<br>
+<br>
+
+1. Write down the graph's **degree sequence**:
+<br>
+<br>
+<br>
+<br>
+
+1. Write down the graph's **maximum Degree**:
+<br>
+<br>
+<br>
+<br>
+
+1. Write down the graph's **minimum degree**:
+<br>
+<br>
+<br>
+<br>
+
+1. What is the graph's **degree range**?
+<br>
+<br>
+<br>
+<br>
+
+1. What is the graph's **sum of degrees**?
+<br>
+<br>
+<br>
+<br>
+
+1. What is the graph's **average degree**?
+<br>
+<br>
+<br>
+<br>
+
+1. What is the graph's **maximum size**?
+<br>
+<br>
+<br>
+<br>
+
+1. Compute the **density** of the graph:
+<br>
+<br>
+<br>
+<br>
+
 
 ## Subgraphs
 
-1. Go back to @fig-grex1. Draw the **node-deleted** subgraph of this graph that *excludes* nodes *D* and *G*
+1. Go back to @fig-grex1. Draw the **node-deleted** subgraph of this graph that *excludes* nodes *D*, *F*, and *J*
 <br>
 <br>
 <br>
@@ -117,6 +150,29 @@ Consider the graph shown in @fig-grex2:
 <br>
 <br>
 <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+1. List the **isolate** nodes in the node-deleted subgraph you obtained in the previous step.
+
 <br>
 <br>
 <br>

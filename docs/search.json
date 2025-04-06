@@ -277,14 +277,14 @@
     "href": "soc-111-homeworks/homework1.html",
     "title": "Homework I: Graph Theory",
     "section": "",
-    "text": "Figure 1: A simple graph.\n\n\n\n\nConsider the graph shown in Figure 1:\n\nWrite down the vertex set of the graph:   \nWrite down the edge set of the graph:"
+    "text": "Figure 1: A simple graph.\n\n\n\n\nConsider the graph shown in Figure 1:\n\nWrite down the vertex set of the graph:    \nWrite down the edge set of the graph:"
   },
   {
     "objectID": "soc-111-homeworks/homework1.html#node-neighborhoods",
     "href": "soc-111-homeworks/homework1.html#node-neighborhoods",
     "title": "Homework I: Graph Theory",
     "section": "Node Neighborhoods",
-    "text": "Node Neighborhoods\n\n\n\n\n\nFigure 2: Another simple graph.\n\n\n\n\nConsider the graph shown in Figure 2:\n\nWrite down the neighborhood of node D   \nWrite down the neighborhood of node K   \nWhat is the intersection of the neighborhoods of nodes D and I?   \nWhat is the intersection of the neighborhoods of nodes E and F?   \nWhat is the union of the neighborhoods of nodes H and J?"
+    "text": "Node Neighborhoods\n\nWrite down the neighborhood of node F    \nWrite down the neighborhood of node J    \nWhat is the intersection of the neighborhoods of nodes F and J?    \nWhat is the intersection of the neighborhoods of nodes A and F?    \nWhat is the union of the neighborhoods of nodes H and J?"
   },
   {
     "objectID": "soc-111-homeworks/homework1.html#node-degree",
@@ -298,7 +298,7 @@
     "href": "soc-111-homeworks/homework1.html#subgraphs",
     "title": "Homework I: Graph Theory",
     "section": "Subgraphs",
-    "text": "Subgraphs\n\nGo back to Figure 1. Draw the node-deleted subgraph of this graph that excludes nodes D and G"
+    "text": "Subgraphs\n\nGo back to Figure 1. Draw the node-deleted subgraph of this graph that excludes nodes D, F, and J                            \nList the isolate nodes in the node-deleted subgraph you obtained in the previous step."
   },
   {
     "objectID": "soc-111-homeworks/homework2-answered.html",
@@ -649,5 +649,12 @@
     "title": "SOCIOL 204 (Sociological Theorizing)",
     "section": "Interaction, Situations, and Phenomenology",
     "text": "Interaction, Situations, and Phenomenology\n\nWeek 5 (May 2)\n\nCetina, K. K. (2009). The synthetic situation: Interactionism for a global world. Symbolic Interaction, 32(1), 61-87.\nFligstein, N. (2001). Social skill and the theory of fields. Sociological Theory, 19(2):105-125.\nHallett, T., & Hawbaker, A. (2021). The case for an inhabited institutionalism in organizational research: interaction, coupling, and change reconsidered. Theory and Society, 50(1), 1-32.\nItzigsohn, J., & Brown, K. (2015). Sociology and the theory of double consciousness: WEB Du Bois’s phenomenology of racialized subjectivity. Du Bois Review, 12(2), 231-248.\nCrawley, S. L. (2022). Queering doing gender: The curious absence of ethnomethodology in gender studies and in sociology. Sociological Theory, 40(4), 366-392.\n\n\n\nWeek 6 (May 9)\n\nHitlin, S., & Elder, G. H. (2007). Time, self, and the curiously abstract concept of agency. Sociological Theory, 25(2), 170-191.\nTimmermans, S., & Tavory, I. (2020). Racist Encounters: A Pragmatist Semiotic Analysis of Interaction. Sociological Theory, 38(4), 295-317.\nSurak, K. (2017). Rupture and rhythm: A phenomenology of national experiences. Sociological Theory, 35(4), 312-333.\nTavory, I., & Fine, G. A. (2020). Disruption and the theory of the interaction Order. Theory and Society, *49_(3), 365-385.\nTavory, I., & Eliasoph, N. (2013). Coordinating futures: Toward a theory of anticipation. American Journal of Sociology, 118(4), 908-942."
+  },
+  {
+    "objectID": "soc-111-homeworks/homework1.html#graph-metrics",
+    "href": "soc-111-homeworks/homework1.html#graph-metrics",
+    "title": "Homework I: Graph Theory",
+    "section": "Graph Metrics",
+    "text": "Graph Metrics\n\nWhat is the order of the graph?    \nWhat is the size of the graph?    \nWrite down the graph’s degree sequence:    \nWrite down the graph’s maximum Degree:    \nWrite down the graph’s minimum degree:    \nWhat is the graph’s degree range?    \nWhat is the graph’s sum of degrees?    \nWhat is the graph’s average degree?    \nWhat is the graph’s maximum size?    \nCompute the density of the graph:"
   }
 ]
