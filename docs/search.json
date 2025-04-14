@@ -312,7 +312,7 @@
     "href": "soc-111-homeworks/homework2.html",
     "title": "Homework II: Directed Graphs",
     "section": "",
-    "text": "Figure 1: A directed graph.\n\n\n\n\nConsider the graph shown in Figure 1:\n\nWrite down the edge set of the graph:   \nWho are the out-neighbors of node A?   \nWho are the in-neighbors of node D?   \nWhat is the intersection of the out-neighborhoods of nodes D and A?   \nWhat is the intersection of the in-neighborhoods of nodes D and F?   \nWhat is the union of the out-neighborhoods of nodes E and A?   \nWhat is the union of the in-neighborhoods of nodes D and F?   \nWhat is the out-degree of node E?   \nWhat is the in-degree of node D?   \nWhat is(are) the node(s) with the largest out-degree?   \nWhat is(are) the node(s) with the largest in-degree?   \nWhat is(are) the node(s) with the smallest out-degree?   \nWhat is(are) the node(s) with the smallest in-degree?   \nWhich is(are) the receiver node(s) in the graph?   \nWhich is(are) the transmitter node(s) in the graph?   \nWrite down the set of mutual dyads in the graph:   \nWhat type of dyad is formed by the subgraph containing nodes C and F?   \nWhat type of dyad is formed by the subgraph containing nodes B and C?   \nWhat type of dyad is formed by the subgraph containing nodes E and I?   \nHow many mutual dyads are there in the graph?"
+    "text": "Figure 1: A directed graph.\nConsider the graph shown in Figure 1:"
   },
   {
     "objectID": "soc-111-homeworks/homework3-answered.html",
@@ -656,5 +656,47 @@
     "title": "Homework I: Graph Theory",
     "section": "Graph Metrics",
     "text": "Graph Metrics\n\nWhat is the order of the graph?    \nWhat is the size of the graph?    \nWrite down the graph’s degree sequence:    \nWrite down the graph’s maximum Degree:    \nWrite down the graph’s minimum degree:    \nWhat is the graph’s degree range?    \nWhat is the graph’s sum of degrees?    \nWhat is the graph’s average degree?    \nWhat is the graph’s maximum size?    \nCompute the density of the graph:"
+  },
+  {
+    "objectID": "soc-111-homeworks/homework2.html#directed-graph-neighborhoods",
+    "href": "soc-111-homeworks/homework2.html#directed-graph-neighborhoods",
+    "title": "Homework II: Directed Graphs",
+    "section": "Directed Graph Neighborhoods",
+    "text": "Directed Graph Neighborhoods\n\nWho are the out-neighbors of node A?   \nWho are the in-neighbors of node D?   \nWhat is the intersection of the out-neighborhoods of nodes C and I?   \nWhat is the intersection of the in-neighborhoods of nodes D and E?   \nWhat is the union of the out-neighborhoods of nodes L and K?   \nWhat is the union of the in-neighborhoods of nodes B and A?"
+  },
+  {
+    "objectID": "soc-111-homeworks/homework2.html#directed-graph-metrics",
+    "href": "soc-111-homeworks/homework2.html#directed-graph-metrics",
+    "title": "Homework II: Directed Graphs",
+    "section": "Directed Graph Metrics",
+    "text": "Directed Graph Metrics\n\nWhat is the graph’s in-degree sequence?   \nWhat is the graph’s out-degree range?   \nWhat is the graph’s in-degree range?   c\nWhat is the graph’s sum of degrees?   \nWhat is the size of the graph?   \nWhat is the graph’s maximum size?   \nCompute the density of the graph:"
+  },
+  {
+    "objectID": "soc-111-homeworks/homework2.html#from-graph-to-matrix",
+    "href": "soc-111-homeworks/homework2.html#from-graph-to-matrix",
+    "title": "Homework II: Directed Graphs",
+    "section": "From Graph to Matrix",
+    "text": "From Graph to Matrix\n\nIn the matrix below, write down the cell entries for the adjacency matrix corresponding to the graph shown in Figure 1:\n\n\n\n\n\n \n  \n      \n    A \n    B \n    C \n    D \n    E \n    F \n    G \n    H \n    I \n    J \n    K \n    L \n  \n \n\n  \n    A \n    ---- \n     \n     \n     \n     \n     \n     \n     \n     \n     \n     \n     \n  \n  \n    B \n     \n    ---- \n     \n     \n     \n     \n     \n     \n     \n     \n     \n     \n  \n  \n    C \n     \n     \n    ---- \n     \n     \n     \n     \n     \n     \n     \n     \n     \n  \n  \n    D \n     \n     \n     \n    ---- \n     \n     \n     \n     \n     \n     \n     \n     \n  \n  \n    E \n     \n     \n     \n     \n    ---- \n     \n     \n     \n     \n     \n     \n     \n  \n  \n    F \n     \n     \n     \n     \n     \n    ---- \n     \n     \n     \n     \n     \n     \n  \n  \n    G \n     \n     \n     \n     \n     \n     \n    ---- \n     \n     \n     \n     \n     \n  \n  \n    H \n     \n     \n     \n     \n     \n     \n     \n    ---- \n     \n     \n     \n     \n  \n  \n    I \n     \n     \n     \n     \n     \n     \n     \n     \n    ---- \n     \n     \n     \n  \n  \n    J \n     \n     \n     \n     \n     \n     \n     \n     \n     \n    ---- \n     \n     \n  \n  \n    K \n     \n     \n     \n     \n     \n     \n     \n     \n     \n     \n    ---- \n     \n  \n  \n    L \n     \n     \n     \n     \n     \n     \n     \n     \n     \n     \n     \n    ----"
+  },
+  {
+    "objectID": "soc-111-homeworks/homework2.html#directed-graph-degrees",
+    "href": "soc-111-homeworks/homework2.html#directed-graph-degrees",
+    "title": "Homework II: Directed Graphs",
+    "section": "Directed Graph Degrees",
+    "text": "Directed Graph Degrees\n\nWhat is the out-degree of node K?   \nWhat is the in-degree of node E?   \nWhat is(are) the node(s) with the largest out-degree?   \nWhat is(are) the node(s) with the largest in-degree?   \nWhat is(are) the node(s) with the smallest out-degree?   \nWhat is(are) the node(s) with the smallest in-degree?"
+  },
+  {
+    "objectID": "soc-111-homeworks/homework2.html#directed-graph-node-types",
+    "href": "soc-111-homeworks/homework2.html#directed-graph-node-types",
+    "title": "Homework II: Directed Graphs",
+    "section": "Directed Graph Node Types",
+    "text": "Directed Graph Node Types\n\nWhich is(are) the receiver node(s) in the graph?   \nWhich is(are) the transmitter node(s) in the graph?"
+  },
+  {
+    "objectID": "soc-111-homeworks/homework2.html#matrices",
+    "href": "soc-111-homeworks/homework2.html#matrices",
+    "title": "Homework II: Directed Graphs",
+    "section": "Matrices",
+    "text": "Matrices\n\nIn the matrix below, write down the cell entries for the adjacency matrix corresponding to the graph shown in Figure 1:\n\n\n\n\n\n \n  \n      \n    A \n    B \n    C \n    D \n    E \n    F \n    G \n    H \n    I \n    J \n    K \n    L \n  \n \n\n  \n    A \n    ---- \n     \n     \n     \n     \n     \n     \n     \n     \n     \n     \n     \n  \n  \n    B \n     \n    ---- \n     \n     \n     \n     \n     \n     \n     \n     \n     \n     \n  \n  \n    C \n     \n     \n    ---- \n     \n     \n     \n     \n     \n     \n     \n     \n     \n  \n  \n    D \n     \n     \n     \n    ---- \n     \n     \n     \n     \n     \n     \n     \n     \n  \n  \n    E \n     \n     \n     \n     \n    ---- \n     \n     \n     \n     \n     \n     \n     \n  \n  \n    F \n     \n     \n     \n     \n     \n    ---- \n     \n     \n     \n     \n     \n     \n  \n  \n    G \n     \n     \n     \n     \n     \n     \n    ---- \n     \n     \n     \n     \n     \n  \n  \n    H \n     \n     \n     \n     \n     \n     \n     \n    ---- \n     \n     \n     \n     \n  \n  \n    I \n     \n     \n     \n     \n     \n     \n     \n     \n    ---- \n     \n     \n     \n  \n  \n    J \n     \n     \n     \n     \n     \n     \n     \n     \n     \n    ---- \n     \n     \n  \n  \n    K \n     \n     \n     \n     \n     \n     \n     \n     \n     \n     \n    ---- \n     \n  \n  \n    L \n     \n     \n     \n     \n     \n     \n     \n     \n     \n     \n     \n    ----"
   }
 ]

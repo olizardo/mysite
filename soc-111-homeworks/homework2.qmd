@@ -7,6 +7,7 @@ title: "Homework II: Directed Graphs"
     require(ggraph)
     require(tidygraph)
     require(igraph)
+    require(kableExtra)
 ```
 
 ```{r}
@@ -15,17 +16,24 @@ title: "Homework II: Directed Graphs"
 #| fig-cap-location: margin   
 #| fig-height: 12
 #| fig-width: 12
-    set.seed(528)
-    gr <- play_gnm(n = 10, m = 26, directed = TRUE, loops = FALSE)
-    gr <- mutate(gr, name = toupper(letters[1:10]))
-    gr <- gr - edge("B|D")
-    gr <- gr - edge("I|H")
-    gr <- gr - edge("F|H")
-    gr <- gr - edge("F|C")
-    gr <- gr - edge("G|C")
-    gr <- gr - edge("A|G")
-    gr <- gr - edge("J|A")
-    gr <- add_edges(gr, c(9,10, 4,5, 4,8, 9,4, 1,4, 9,5))
+    set.seed(1234)
+    gr <- sample_gnp(n = 12, p = 0.28, directed = TRUE, loops = FALSE)
+    V(gr)$name <- LETTERS[1:12]
+    gr <- gr - edge("C|K")
+    gr <- gr - edge("H|A")
+    gr <- gr - edge("A|F")
+    gr <- gr - edge("L|I")
+    gr <- gr - edge("L|J")
+    gr <- gr - edge("K|J")
+    gr <- gr - edge("F|L")
+    gr <- gr - edge("J|L")
+    gr <- gr - edge("B|F")
+    gr <- gr - edge("B|K")
+    gr <- gr - edge("J|H")
+    gr <- gr + edge(6,4)
+    gr <- gr + edge(10,5)
+    gr <- gr + edge(9,3)
+    
     p <- ggraph(gr, layout = 'auto') 
     p <- p + geom_edge_parallel(color = "steelblue", edge_width = 1.25,
                             arrow = arrow(length = unit(5, 'mm')),
@@ -41,10 +49,15 @@ title: "Homework II: Directed Graphs"
 
 Consider the graph shown in @fig-grex1:
 
+
 1. Write down the **edge set** of the graph:
 <br>
 <br>
 <br>
+<br>
+<br>
+
+## Directed Graph Neighborhoods
 
 1. Who are the **out-neighbors** of node *A*?
 <br>
@@ -56,32 +69,34 @@ Consider the graph shown in @fig-grex1:
 <br>
 <br>
 
-1. What is the **intersection** of the **out-neighborhoods** of nodes *D* and *A*?
+1. What is the **intersection** of the **out-neighborhoods** of nodes *C* and *I*?
 <br>
 <br>
 <br>
 
-1. What is the **intersection** of the **in-neighborhoods** of nodes *D* and *F*?
+1. What is the **intersection** of the **in-neighborhoods** of nodes *D* and *E*?
 <br>
 <br>
 <br>
 
-1. What is the **union** of the **out-neighborhoods** of nodes *E* and *A*?
+1. What is the **union** of the **out-neighborhoods** of nodes *L* and *K*?
 <br>
 <br>
 <br>
 
-1. What is the **union** of the **in-neighborhoods** of nodes *D* and *F*?
+1. What is the **union** of the **in-neighborhoods** of nodes *B* and *A*?
 <br>
 <br>
 <br>
 
-1. What is the **out-degree** of node *E*?
+## Directed Graph Degrees
+
+1. What is the **out-degree** of node *K*?
 <br>
 <br>
 <br>
 
-1. What is the **in-degree** of node *D*?
+1. What is the **in-degree** of node *E*?
 <br>
 <br>
 <br>
@@ -106,6 +121,7 @@ Consider the graph shown in @fig-grex1:
 <br>
 <br>
 
+## Directed Graph Node Types
 
 1. Which is(are) the **receiver node(s)** in the graph?
 <br>
@@ -117,29 +133,60 @@ Consider the graph shown in @fig-grex1:
 <br>
 <br>
 
-1. Write down the set of **mutual dyads** in the graph:
+## Directed Graph Metrics
+
+1. What is the graph's **in-degree sequence**?
 <br>
 <br>
 <br>
 
-1. What type of **dyad** is formed by the subgraph containing nodes *C* and *F*?
+1. What is the graph's **out-degree range**?
 <br>
 <br>
 <br>
 
-1. What type of **dyad** is formed by the subgraph containing nodes *B* and *C*?
+1. What is the graph's **in-degree range**?
+<br>
+<br>
+c
+
+1. What is the graph's **sum of degrees**?
 <br>
 <br>
 <br>
 
-1. What type of **dyad** is formed by the subgraph containing nodes *E* and *I*?
+1. What is the **size** of the graph?
 <br>
 <br>
 <br>
 
-1. How many **mutual dyads** are there in the graph?
+1. What is the graph's **maximum size**?
 <br>
 <br>
 <br>
 
+1. Compute the **density** of the graph:
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
+## From Graph to Matrix
+
+- In the matrix below, write down the cell entries for the **adjacency matrix** corresponding to the graph shown in @fig-grex1:
+
+```{r}
+    a <- matrix(" ", nrow = 12, ncol = 12)
+    rownames(a) <- toupper(letters[1:12])
+    colnames(a) <- toupper(letters[1:12])
+    diag(a) <- "----"
+    kbl(a, format = "html", align = "c")  %>% 
+         column_spec(1, bold = TRUE) %>% 
+         column_spec (2:13, border_left = T, border_right = T) %>%
+         row_spec(1:12, extra_css = "border-bottom: 1px solid") %>%
+         kable_styling()
+```
