@@ -64,6 +64,7 @@ format:
 - Meyer, J. W., & Rowan, B. (1977). Institutionalized organizations: Formal structure as myth and ceremony. *American Journal of Sociology*, *83_(2), 340-363. 
 - Meyer, J. W., & Jepperson, R. L. (2000). The 'actors' of modern society: The cultural construction of social agency. *Sociological Theory*, *18_(1), 100-120. 
 - Meyer, J. W., Boli, J., Thomas, G. M., & Ramirez, F. O. (1997). World society and the nation-state. *American Journal of Sociology*, *103_(1), 144-181. 
+- Ocasio, W., & Thornton, P. H. (1999). Institutional logics and the historical contingency of power in organizations: Executive succession in the higher education publishing industry, 1958-1990. *American journal of Sociology*, 105(3), 801-843.
 - Schneiberg, M., & Clemens, E. S. (2006). The typical tools for the job: Research strategies in institutional analysis. *Sociological Theory*, 24(3), 195-227.
 - Silber, I. F. (1995). Space, fields, boundaries: The rise of spatial metaphors in contemporary sociological theory. *Social Research*, 323-355.
 - Steinmetz, G. (2016). Social fields, subfields and social spaces at the scale of empires: Explaining the colonial state and colonial sociology. *The Sociological Review*, 64(2), 98-123.
