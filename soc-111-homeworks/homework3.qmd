@@ -1,13 +1,18 @@
 ---
-title: "Homework III: Graph Metrics"
+title: "Homework III: Indirect Connections and Matrices"
 ---
 
 ```{r setup, include=FALSE}
     knitr::opts_chunk$set(echo = FALSE, message=FALSE, warning=FALSE)
     require(ggraph)
+    require(kableExtra)
     require(tidygraph)
     require(igraph)
 ```
+
+## Undirected Paths
+
+Consider the graph shown in @fig-grex1:
 
 ```{r}
 #| label: fig-grex1
@@ -16,114 +21,176 @@ title: "Homework III: Graph Metrics"
 #| fig-height: 12
 #| fig-width: 12
 
-    set.seed(418)
+    set.seed(34789)
     w <- 0
     while (w == 0) {
-      d <- sample(1:10, 16, replace = TRUE)
+      d <- sample(3:12, 9, replace = TRUE)
       w <- as.numeric(is.graphical.degree.sequence(d))
-      }
+      }    
     gr <- play_degree(d, method = "simple")
     gr <- mutate(gr, name = toupper(letters[1:length(d)]))
-    p <- ggraph(gr, layout = 'auto') 
+    gr1 <- simplify(as.igraph(gr))
+    p <- ggraph(gr1, layout = 'auto') 
     p <- p + geom_edge_link(color = "steelblue", width = 1.25) 
-    p <- p + geom_node_point(aes(x = x, y = y), size = 16, color = "tan2") 
-    p <- p + geom_node_text(aes(label = name), size = 7, color = "white")
+    p <- p + geom_node_point(aes(x = x, y = y), size = 22, color = "tan2") 
+    p <- p + geom_node_text(aes(label = name), size = 10, color = "white")
     p <- p + theme_graph() 
     p
 ```
 
-Consider the graph shown in @fig-grex1:
-
-1. What is the **order** of the graph?
+1. Write down *all* the **paths** of length four ($l = 4$) connecting node *E* and node *C*:
 <br>
 <br>
-
-1. Write down the graph's **degree sequence**:
 <br>
 <br>
-
-1. What is the graph's **degree range**?
 <br>
 <br>
-
-1. What is the graph's **sum of degrees**?
+<br>
+<br>
+<br>
 <br>
 <br>
 
-1. What is the **size** of the graph?
+1. Write down *all* the **paths** of length two ($l = 2$) featuring node *F* as the **inner node**:
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 <br>
 <br>
 
-1. What is the graph's **average degree**?
+1. Write down *all* the **shortest paths** connecting nodes *A* and *D*:
 <br>
 <br>
-
-1. What is the graph's **maximum size**?
-<br>
-<br>
-
-1. Compute the **density** of the graph:
 <br>
 <br>
 <br>
 <br>
 
 
+1. Write down *all* the **cycles** of length *four* that start and end with node *G*:
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+## Directed Paths
+
+Consider the graph shown in @fig-grex2:
 
 ```{r}
 #| label: fig-grex2
 #| fig-cap: "A directed graph."
 #| fig-cap-location: margin   
 #| fig-height: 12
-#| fig-width: 12
+#| fig-width: 16
 
-    set.seed(924)
-    gr <- play_gnm(n = 13, m = 28, directed = TRUE, loops = FALSE)
-    gr <- mutate(gr, name = toupper(letters[1:13]))
-    p <- ggraph(gr, layout = 'auto') 
-    p <- p + geom_edge_parallel(color = "steelblue", edge_width = 1.1,
-                            arrow = arrow(length = unit(4, 'mm')),
-                            end_cap = circle(7, 'mm'), 
-                            sep = unit(8, 'mm'))    
-    p <- p + geom_node_point(aes(x = x, y = y), size = 16, color = "tan2") 
-    p <- p + geom_node_text(aes(label = name), size = 7, color = "white")
-    p <- p + theme_graph()
+    set.seed(456324)
+    fr <- sample(toupper(letters[3:12]), 24, replace = TRUE)
+    to <- sample(toupper(letters[2:9]), 24, replace = TRUE)
+    el <- matrix(c(fr, to), nc = 2, byrow = TRUE)
+    gr <- as_tbl_graph(simplify(graph_from_edgelist(el)))
+    gr2 <- as.igraph(gr)
+    p <- ggraph(gr2, layout = 'auto') 
+    p <- p + geom_edge_parallel(color = "steelblue", edge_width = 1.25,
+                            arrow = arrow(length = unit(7, 'mm')),
+                            end_cap = circle(10, 'mm'), 
+                            sep = unit(8, 'mm'))
+    p <- p + geom_node_point(aes(x = x, y = y), size = 22, color = "tan2") 
+    p <- p + geom_node_text(aes(label = name), size = 10, color = "white")
+    p <- p + theme_graph() 
     p
 ```
 
-Consider the graph shown in @fig-grex2:
-
-1. What is the graph's **out-degree sequence**?
+1. Write down *all* the **directed path(s)** of length five ($l = 5$) going *from* node *K* *to* node *C*:
+<br>
+<br>
+<br>
+<br>
 <br>
 <br>
 
-1. What is the graph's **in-degree sequence**?
-<br>
-<br>
 
-1. What is the graph's **out-degree range**?
+1. What is the length of the **shortest directed path(s)** going *from* node *L* *to* node *I*?
 <br>
-<br>
-
-1. What is the graph's **in-degree range**?
 <br>
 <br>
 
-1. What is the graph's **sum of degrees**?
+1. If *E* wanted to send a message to *D* in the most efficient way, how many intermediaries would *E* have to use?
+<br>
 <br>
 <br>
 
-1. What is the **size** of the graph?
+1. Write down *all* the directed **cycles** of length four ($l = 4$) that start and end with node *D*:
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 <br>
 <br>
 
-1. What is the graph's **maximum size**?
+## Matrices
+
+- In the matrix below, write down the cell entries **geodesic distance matrix** corresponding to the graph shown in @fig-grex1:
+
+```{r}
+    n <- vcount(gr1)
+    m <- n - 1
+    a <- matrix(" ", nrow = n, ncol = n)
+    rownames(a) <- V(gr1)$name
+    colnames(a) <- V(gr1)$name
+    diag(a) <- "----"
+    kbl(a, format = "html", align = "c")  %>% 
+         column_spec(1, bold = TRUE) %>% 
+         column_spec (2:n, border_left = T, border_right = T) %>%
+         row_spec(1:m, extra_css = "border-bottom: 1px solid") %>%
+         kable_styling()
+```
+
+
+- In the matrix below, write down the cell entries for the **reachability matrix** corresponding to the graph shown in @fig-grex2:
+
+```{r}
+    n <- vcount(gr2)
+    m <- n - 1
+    b <- matrix(" ", nrow = n, ncol = n)
+    rownames(b) <- V(gr2)$name
+    colnames(b) <- V(gr2)$name
+    diag(b) <- "----"
+    kbl(b, format = "html", align = "c")  %>% 
+         column_spec(1, bold = TRUE) %>% 
+         column_spec (2:n, border_left = T, border_right = T) %>%
+         row_spec(1:m, extra_css = "border-bottom: 1px solid") %>%
+         kable_styling()
+```
+
+- In the matrix below, write down the cell entries **geodesic distance matrix** corresponding to the graph shown in @fig-grex2:
+
+```{r}
+    diag(b) <- "----"
+    kbl(b, format = "html", align = "c")  %>% 
+         column_spec(1, bold = TRUE) %>% 
+         column_spec (2:n, border_left = T, border_right = T) %>%
+         row_spec(1:m, extra_css = "border-bottom: 1px solid") %>%
+         kable_styling()
+```
+
+- What is the **diameter** of the graph shown in @fig-grex1?
+<br>
 <br>
 <br>
 
-1. Compute the **density** of the graph:
-<br>
-<br>
-<br>
-<br>
 

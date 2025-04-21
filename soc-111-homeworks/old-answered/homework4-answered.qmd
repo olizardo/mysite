@@ -29,6 +29,7 @@ Consider the graph shown in Figure 1:
       }    
     gr <- play_degree(d, method = "simple")
     gr <- mutate(gr, name = toupper(letters[1:length(d)]))
+    gr <- simplify(as.igraph(gr))
     p <- ggraph(gr, layout = 'auto') 
     p <- p + geom_edge_link(color = "steelblue", width =  1.25) 
     p <- p + geom_node_point(aes(x = x, y = y), size = 22, color = "tan2") 
@@ -82,8 +83,8 @@ Consider the graph shown in Figure 1:
     c3 <- lapply(all_simple_paths(gr, "G", "C"), function(p) c("C",p))
     c4 <- lapply(all_simple_paths(gr, "B", "C"), function(p) c("C",p))
     c <- c(c1, c2, c3, c4)
-    c <- c[which(lapply(c, length) == 7)]
-    m <- matrix(unlist(lapply(c, names)), ncol = 7, byrow = TRUE)
+    c <- c[which(lapply(c, length) == 5)]
+    m <- matrix(unlist(lapply(c, names)), ncol = 5, byrow = TRUE)
     m[, 1] <- rep("C", nrow(m))
     kbl(m)
 ```
