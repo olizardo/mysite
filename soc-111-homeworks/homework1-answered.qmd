@@ -73,7 +73,7 @@ Consider the graph shown in @fig-grex1:
 
 1. What is the **intersection** of the neighborhoods of nodes **F** and **J**?
 <br>
-`r intersect(LETTERS[neighbors(gr, "F")], LETTERS[neighbors(gr, "F")])`
+`r intersect(LETTERS[neighbors(gr, "F")], LETTERS[neighbors(gr, "J")])`
 <br>
 
 1. What is the **intersection** of the neighborhoods of nodes **A** and **F**?
@@ -118,7 +118,6 @@ Consider the graph shown in @fig-grex1:
 1. What is the graph's **degree range**?
 <br>
 `r max(degree(gr)) - min(degree(gr))`
-
 <br>
 
 1. What is the graph's **sum of degrees**?

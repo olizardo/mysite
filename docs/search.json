@@ -256,7 +256,7 @@
     "href": "soc-111-homeworks/homework1-answered.html#node-neighborhoods",
     "title": "Homework I: Graph Theory",
     "section": "Node Neighborhoods",
-    "text": "Node Neighborhoods\n\nWrite down the neighborhood of node F  A, C, D, E, G, J, K, L \nWrite down the neighborhood of node J  A, D, F, I \nWhat is the intersection of the neighborhoods of nodes F and J?  A, C, D, E, G, J, K, L \nWhat is the intersection of the neighborhoods of nodes A and F?  C, J \nWhat is the union of the neighborhoods of nodes H and J?  A, B, D, F, I"
+    "text": "Node Neighborhoods\n\nWrite down the neighborhood of node F  A, C, D, E, G, J, K, L \nWrite down the neighborhood of node J  A, D, F, I \nWhat is the intersection of the neighborhoods of nodes F and J?  A, D \nWhat is the intersection of the neighborhoods of nodes A and F?  C, J \nWhat is the union of the neighborhoods of nodes H and J?  A, B, D, F, I"
   },
   {
     "objectID": "soc-111-homeworks/homework1-answered.html#node-degree",
@@ -718,6 +718,6 @@
     "href": "soc-111-homeworks/homework1-answered.html#graph-metrics",
     "title": "Homework I: Graph Theory",
     "section": "Graph Metrics",
-    "text": "Graph Metrics\n\nWhat is the order of the graph?  12 \nWhat is the size of the graph?  22 \nWrite down the graph’s degree sequence: \n\n\n\n\n\n \n  \n    F \n    D \n    A \n    B \n    J \n    C \n    I \n    L \n    E \n    G \n    H \n    K \n  \n \n\n  \n    8 \n    6 \n    5 \n    5 \n    4 \n    3 \n    3 \n    3 \n    2 \n    2 \n    2 \n    1 \n  \n\n\n\n\n\n\n\nWrite down the graph’s maximum Degree:  8 \nWrite down the graph’s minimum degree:  1 \nWhat is the graph’s degree range?  7\n\n\n\nWhat is the graph’s sum of degrees?  44 \nWhat is the graph’s average degree?  3.667 \nWhat is the graph’s maximum size?  66 \nCompute the density of the graph:  0.333"
+    "text": "Graph Metrics\n\nWhat is the order of the graph?  12 \nWhat is the size of the graph?  22 \nWrite down the graph’s degree sequence: \n\n\n\n\n\n \n  \n    F \n    D \n    A \n    B \n    J \n    C \n    I \n    L \n    E \n    G \n    H \n    K \n  \n \n\n  \n    8 \n    6 \n    5 \n    5 \n    4 \n    3 \n    3 \n    3 \n    2 \n    2 \n    2 \n    1 \n  \n\n\n\n\n\n\n\nWrite down the graph’s maximum Degree:  8 \nWrite down the graph’s minimum degree:  1 \nWhat is the graph’s degree range?  7 \nWhat is the graph’s sum of degrees?  44 \nWhat is the graph’s average degree?  3.667 \nWhat is the graph’s maximum size?  66 \nCompute the density of the graph:  0.333"
   }
 ]
