@@ -1,0 +1,170 @@
+---
+title: "Homework I: Graph Theory"
+---
+
+```{r setup, include=FALSE}
+    knitr::opts_chunk$set(echo = FALSE, message=FALSE, warning=FALSE)
+    require(ggraph)
+    require(tidygraph)
+    require(igraph)
+```
+
+## Vertex and edge sets
+
+
+```{r}
+#| label: fig-grex1
+#| fig-cap: "A simple graph."
+#| fig-height: 10
+#| fig-width: 10
+    set.seed(500)
+    n <- 12
+    gr <- play_gnm(n = n, m = 22, directed = FALSE, loops = FALSE)
+    gr <- mutate(gr, name = LETTERS[1:n])
+    p <- ggraph(gr, layout = 'auto') 
+    p <- p + geom_edge_link(color = "steelblue", width = 1.25) 
+    p <- p + geom_node_point(aes(x = x, y = y), size = 18, color = "tan2") 
+    p <- p + geom_node_text(aes(label = name), size = 8, color = "white")
+    p <- p + theme_graph() 
+    p
+    
+```
+
+Consider the graph shown in @fig-grex1:
+
+1. Write down the **vertex set** of the graph: 
+<br>
+<br>
+`r V(gr)$name`
+<br>
+<br>
+<br>
+`r paste("V", V(gr)$name, sep = "")`
+
+1. Write down the **edge set** of the graph:
+<br>
+<br>
+```{r}
+    library(kableExtra)
+    edges <- gr %>% 
+          activate(edges) %>% 
+          mutate(to_name = .N()$name[to], 
+          from_name = .N()$name[from]) %>% 
+          as_tibble() %>% 
+          select(from = from_name, to = to_name)
+    a <- edges$from
+    b <- edges$to
+    b <- paste(b, ", ", sep = "")
+    c <- paste(a, b, sep = "")
+    kbl(t(c))
+```
+
+## Node Neighborhoods
+
+1. Write down the **neighborhood** of node **F**
+<br>
+`r LETTERS[neighbors(gr, "F")]`
+<br>
+
+1. Write down the **neighborhood** of node **J**
+<br>
+`r LETTERS[neighbors(gr, "J")]`
+<br>
+
+1. What is the **intersection** of the neighborhoods of nodes **F** and **J**?
+<br>
+`r intersect(LETTERS[neighbors(gr, "F")], LETTERS[neighbors(gr, "F")])`
+<br>
+
+1. What is the **intersection** of the neighborhoods of nodes **A** and **F**?
+<br>
+`r intersect(LETTERS[neighbors(gr, "A")], LETTERS[neighbors(gr, "F")])`
+<br>
+
+1. What is the **union** of the neighborhoods of nodes **H** and **J**? 
+<br>
+`r union(LETTERS[neighbors(gr, "H")], LETTERS[neighbors(gr, "J")])`
+<br>
+
+## Graph Metrics
+
+1. What is the **order** of the graph?
+<br>
+`r vcount(gr)`
+<br>
+
+1. What is the **size** of the graph?
+<br>
+`r ecount(gr)`
+<br>
+
+1. Write down the graph's **degree sequence**:
+<br>
+```{r} 
+    kbl(t(sort(degree(gr), decreasing = TRUE)))
+```
+<br>
+
+1. Write down the graph's **maximum Degree**:
+<br>
+`r max(degree(gr))`
+<br>
+
+1. Write down the graph's **minimum degree**:
+<br>
+`r min(degree(gr))`
+<br>
+
+1. What is the graph's **degree range**?
+<br>
+`r max(degree(gr)) - min(degree(gr))`
+
+<br>
+
+1. What is the graph's **sum of degrees**?
+<br>
+`r sum(degree(gr))`
+<br>
+
+1. What is the graph's **average degree**?
+<br>
+`r round(mean(degree(gr)), 3)`
+<br>
+
+1. What is the graph's **maximum size**?
+<br>
+`r (vcount(gr) * (vcount(gr)-1))/2`
+<br>
+
+1. Compute the **density** of the graph:
+<br>
+`r round(edge_density(gr), 3)`
+<br>
+
+
+## Subgraphs
+
+1. Go back to @fig-grex1. Draw the **node-deleted** subgraph of this graph that *excludes* nodes *D*, *F*, and *J*
+
+```{r}
+#| label: fig-grex2
+#| fig-cap: "A node deleted graph."
+#| fig-height: 10
+#| fig-width: 10
+    set.seed(500)
+    n <- 12
+    gr <- delete_vertices(gr, which(as.numeric(LETTERS[1:26] %in% c("D", "F", "J")) == 1))
+    p <- ggraph(gr, layout = 'auto') 
+    p <- p + geom_edge_link(color = "steelblue", width = 1.25) 
+    p <- p + geom_node_point(aes(x = x, y = y), size = 18, color = "tan2") 
+    p <- p + geom_node_text(aes(label = name), size = 8, color = "white")
+    p <- p + theme_graph() 
+    p
+    
+```
+
+1. List the **isolate** nodes in the node-deleted subgraph you obtained in the previous step.
+
+<br>
+`r names(degree(gr)[which(degree(gr) == 0)])`
+<br>

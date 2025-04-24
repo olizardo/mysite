@@ -171,7 +171,7 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#vertex-and-edge-sets" id="toc-vertex-and-edge-sets" class="nav-link active" data-scroll-target="#vertex-and-edge-sets">Vertex and edge sets</a></li>
   <li><a href="#node-neighborhoods" id="toc-node-neighborhoods" class="nav-link" data-scroll-target="#node-neighborhoods">Node Neighborhoods</a></li>
-  <li><a href="#node-degree" id="toc-node-degree" class="nav-link" data-scroll-target="#node-degree">Node Degree</a></li>
+  <li><a href="#graph-metrics" id="toc-graph-metrics" class="nav-link" data-scroll-target="#graph-metrics">Graph Metrics</a></li>
   <li><a href="#subgraphs" id="toc-subgraphs" class="nav-link" data-scroll-target="#subgraphs">Subgraphs</a></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/olizardo/mysite/blob/main/soc-111-homeworks/homework1-answered.qmd" class="toc-action">View source</a></p></div></div></nav>
@@ -198,11 +198,11 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="vertex-and-edge-sets" class="level2">
 <h2 class="anchored" data-anchor-id="vertex-and-edge-sets">Vertex and edge sets</h2>
-<div class="cell" data-fig-cap-location="margin">
+<div class="cell">
 <div class="cell-output-display">
 <div id="fig-grex1" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><img src="homework1-answered_files/figure-html/fig-grex1-1.png" class="img-fluid figure-img" width="768"></p>
+<p><img src="homework1-answered_files/figure-html/fig-grex1-1.png" class="img-fluid figure-img" width="960"></p>
 <p></p><figcaption class="figure-caption">Figure&nbsp;1: A simple graph.</figcaption><p></p>
 </figure>
 </div>
@@ -210,8 +210,8 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <p>Consider the graph shown in <a href="#fig-grex1">Figure&nbsp;1</a>:</p>
 <ol type="1">
-<li><p>Write down the <strong>vertex set</strong> of the graph: <br> A, B, C, D, E, F, G, H <br> VA, VB, VC, VD, VE, VF, VG, VH</p></li>
-<li><p>Write down the <strong>edge set</strong> of the graph: <br></p></li>
+<li><p>Write down the <strong>vertex set</strong> of the graph: <br> <br> A, B, C, D, E, F, G, H, I, J, K, L <br> <br> <br> VA, VB, VC, VD, VE, VF, VG, VH, VI, VJ, VK, VL</p></li>
+<li><p>Write down the <strong>edge set</strong> of the graph: <br> <br></p></li>
 </ol>
 <div class="cell">
 <div class="cell-output-display">
@@ -219,22 +219,86 @@ ul.task-list li input[type="checkbox"] {
 <table>
 <tbody>
   <tr>
-   <td style="text-align:left;"> AB </td>
-   <td style="text-align:left;"> AC </td>
-   <td style="text-align:left;"> BC </td>
-   <td style="text-align:left;"> BD </td>
-   <td style="text-align:left;"> CD </td>
-   <td style="text-align:left;"> DE </td>
-   <td style="text-align:left;"> DF </td>
-   <td style="text-align:left;"> EF </td>
-   <td style="text-align:left;"> AG </td>
-   <td style="text-align:left;"> BG </td>
-   <td style="text-align:left;"> DG </td>
-   <td style="text-align:left;"> EG </td>
-   <td style="text-align:left;"> FG </td>
-   <td style="text-align:left;"> AH </td>
-   <td style="text-align:left;"> CH </td>
-   <td style="text-align:left;"> EH </td>
+   <td style="text-align:left;"> AB, </td>
+   <td style="text-align:left;"> AC, </td>
+   <td style="text-align:left;"> BD, </td>
+   <td style="text-align:left;"> CD, </td>
+   <td style="text-align:left;"> AF, </td>
+   <td style="text-align:left;"> CF, </td>
+   <td style="text-align:left;"> DF, </td>
+   <td style="text-align:left;"> EF, </td>
+   <td style="text-align:left;"> BG, </td>
+   <td style="text-align:left;"> FG, </td>
+   <td style="text-align:left;"> AH, </td>
+   <td style="text-align:left;"> BH, </td>
+   <td style="text-align:left;"> BI, </td>
+   <td style="text-align:left;"> DI, </td>
+   <td style="text-align:left;"> AJ, </td>
+   <td style="text-align:left;"> DJ, </td>
+   <td style="text-align:left;"> FJ, </td>
+   <td style="text-align:left;"> IJ, </td>
+   <td style="text-align:left;"> FK, </td>
+   <td style="text-align:left;"> DL, </td>
+   <td style="text-align:left;"> EL, </td>
+   <td style="text-align:left;"> FL, </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</section>
+<section id="node-neighborhoods" class="level2">
+<h2 class="anchored" data-anchor-id="node-neighborhoods">Node Neighborhoods</h2>
+<ol type="1">
+<li><p>Write down the <strong>neighborhood</strong> of node <strong>F</strong> <br> A, C, D, E, G, J, K, L <br></p></li>
+<li><p>Write down the <strong>neighborhood</strong> of node <strong>J</strong> <br> A, D, F, I <br></p></li>
+<li><p>What is the <strong>intersection</strong> of the neighborhoods of nodes <strong>F</strong> and <strong>J</strong>? <br> A, C, D, E, G, J, K, L <br></p></li>
+<li><p>What is the <strong>intersection</strong> of the neighborhoods of nodes <strong>A</strong> and <strong>F</strong>? <br> C, J <br></p></li>
+<li><p>What is the <strong>union</strong> of the neighborhoods of nodes <strong>H</strong> and <strong>J</strong>? <br> A, B, D, F, I <br></p></li>
+</ol>
+</section>
+<section id="graph-metrics" class="level2">
+<h2 class="anchored" data-anchor-id="graph-metrics">Graph Metrics</h2>
+<ol type="1">
+<li><p>What is the <strong>order</strong> of the graph? <br> 12 <br></p></li>
+<li><p>What is the <strong>size</strong> of the graph? <br> 22 <br></p></li>
+<li><p>Write down the graph’s <strong>degree sequence</strong>: <br></p></li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+
+<table>
+ <thead>
+  <tr>
+   <th style="text-align:right;"> F </th>
+   <th style="text-align:right;"> D </th>
+   <th style="text-align:right;"> A </th>
+   <th style="text-align:right;"> B </th>
+   <th style="text-align:right;"> J </th>
+   <th style="text-align:right;"> C </th>
+   <th style="text-align:right;"> I </th>
+   <th style="text-align:right;"> L </th>
+   <th style="text-align:right;"> E </th>
+   <th style="text-align:right;"> G </th>
+   <th style="text-align:right;"> H </th>
+   <th style="text-align:right;"> K </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:right;"> 8 </td>
+   <td style="text-align:right;"> 6 </td>
+   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 5 </td>
+   <td style="text-align:right;"> 4 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 3 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 1 </td>
   </tr>
 </tbody>
 </table>
@@ -242,47 +306,38 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <p><br></p>
-</section>
-<section id="node-neighborhoods" class="level2">
-<h2 class="anchored" data-anchor-id="node-neighborhoods">Node Neighborhoods</h2>
-<div class="cell" data-fig-cap-location="margin">
-<div class="cell-output-display">
-<div id="fig-grex2" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="homework1-answered_files/figure-html/fig-grex2-1.png" class="img-fluid figure-img" width="1152"></p>
-<p></p><figcaption class="figure-caption">Figure&nbsp;2: Another simple graph.</figcaption><p></p>
-</figure>
-</div>
-</div>
-</div>
-<p>Consider the graph shown in <a href="#fig-grex2">Figure&nbsp;2</a>:</p>
 <ol type="1">
-<li><p>Write down the <strong>neighborhood</strong> of node <em>D</em> <br> C, E, F, G, I <br></p></li>
-<li><p>Write down the <strong>neighborhood</strong> of node <em>K</em> <br> A, B, I <br></p></li>
-<li><p>What is the <strong>intersection</strong> of the neighborhoods of nodes <em>D</em> and <em>I</em>? <br> C, F <br></p></li>
-<li><p>What is the <strong>intersection</strong> of the neighborhoods of nodes <em>E</em> and <em>F</em>? <br> D, H <br></p></li>
-<li><p>What is the <strong>union</strong> of the neighborhoods of nodes <em>H</em> and <em>J</em>? <br> A, B, D, H, I, J <br></p></li>
+<li><p>Write down the graph’s <strong>maximum Degree</strong>: <br> 8 <br></p></li>
+<li><p>Write down the graph’s <strong>minimum degree</strong>: <br> 1 <br></p></li>
+<li><p>What is the graph’s <strong>degree range</strong>? <br> 7</p></li>
 </ol>
-</section>
-<section id="node-degree" class="level2">
-<h2 class="anchored" data-anchor-id="node-degree">Node Degree</h2>
-<p>Consider the graph shown in <a href="#fig-grex2">Figure&nbsp;2</a>:</p>
+<p><br></p>
 <ol type="1">
-<li><p>What is the <strong>degree</strong> of node <em>B</em>? <br> 4 <br></p></li>
-<li><p>What is(are) the node(s) with the largest <strong>degree</strong>? <br> 5 <br></p></li>
-<li><p>What is(are) the node(s) with the smallest <strong>degree</strong>? <br> 1 <br></p></li>
+<li><p>What is the graph’s <strong>sum of degrees</strong>? <br> 44 <br></p></li>
+<li><p>What is the graph’s <strong>average degree</strong>? <br> 3.667 <br></p></li>
+<li><p>What is the graph’s <strong>maximum size</strong>? <br> 66 <br></p></li>
+<li><p>Compute the <strong>density</strong> of the graph: <br> 0.333 <br></p></li>
 </ol>
 </section>
 <section id="subgraphs" class="level2">
 <h2 class="anchored" data-anchor-id="subgraphs">Subgraphs</h2>
 <ol type="1">
-<li>Go back to <a href="#fig-grex1">Figure&nbsp;1</a>. Draw the <strong>node-deleted</strong> subgraph of this graph that <em>excludes</em> nodes <em>D</em> and <em>G</em> <br> <br> <br></li>
+<li>Go back to <a href="#fig-grex1">Figure&nbsp;1</a>. Draw the <strong>node-deleted</strong> subgraph of this graph that <em>excludes</em> nodes <em>D</em>, <em>F</em>, and <em>J</em></li>
 </ol>
 <div class="cell">
 <div class="cell-output-display">
-<p><img src="homework1-answered_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid" width="672"></p>
+<div id="fig-grex2" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="homework1-answered_files/figure-html/fig-grex2-1.png" class="img-fluid figure-img" width="960"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;2: A node deleted graph.</figcaption><p></p>
+</figure>
 </div>
 </div>
+</div>
+<ol type="1">
+<li>List the <strong>isolate</strong> nodes in the node-deleted subgraph you obtained in the previous step.</li>
+</ol>
+<p><br> K <br></p>
 
 
 </section>

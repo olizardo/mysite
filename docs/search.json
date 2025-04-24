@@ -249,14 +249,14 @@
     "href": "soc-111-homeworks/homework1-answered.html",
     "title": "Homework I: Graph Theory",
     "section": "",
-    "text": "Figure 1: A simple graph.\n\n\n\n\nConsider the graph shown in Figure 1:\n\nWrite down the vertex set of the graph:  A, B, C, D, E, F, G, H  VA, VB, VC, VD, VE, VF, VG, VH\nWrite down the edge set of the graph: \n\n\n\n\n\n\n  \n    AB \n    AC \n    BC \n    BD \n    CD \n    DE \n    DF \n    EF \n    AG \n    BG \n    DG \n    EG \n    FG \n    AH \n    CH \n    EH"
+    "text": "Figure 1: A simple graph.\n\n\n\n\nConsider the graph shown in Figure 1:\n\nWrite down the vertex set of the graph:   A, B, C, D, E, F, G, H, I, J, K, L    VA, VB, VC, VD, VE, VF, VG, VH, VI, VJ, VK, VL\nWrite down the edge set of the graph:  \n\n\n\n\n\n\n  \n    AB, \n    AC, \n    BD, \n    CD, \n    AF, \n    CF, \n    DF, \n    EF, \n    BG, \n    FG, \n    AH, \n    BH, \n    BI, \n    DI, \n    AJ, \n    DJ, \n    FJ, \n    IJ, \n    FK, \n    DL, \n    EL, \n    FL,"
   },
   {
     "objectID": "soc-111-homeworks/homework1-answered.html#node-neighborhoods",
     "href": "soc-111-homeworks/homework1-answered.html#node-neighborhoods",
     "title": "Homework I: Graph Theory",
     "section": "Node Neighborhoods",
-    "text": "Node Neighborhoods\n\n\n\n\n\nFigure 2: Another simple graph.\n\n\n\n\nConsider the graph shown in Figure 2:\n\nWrite down the neighborhood of node D  C, E, F, G, I \nWrite down the neighborhood of node K  A, B, I \nWhat is the intersection of the neighborhoods of nodes D and I?  C, F \nWhat is the intersection of the neighborhoods of nodes E and F?  D, H \nWhat is the union of the neighborhoods of nodes H and J?  A, B, D, H, I, J"
+    "text": "Node Neighborhoods\n\nWrite down the neighborhood of node F  A, C, D, E, G, J, K, L \nWrite down the neighborhood of node J  A, D, F, I \nWhat is the intersection of the neighborhoods of nodes F and J?  A, C, D, E, G, J, K, L \nWhat is the intersection of the neighborhoods of nodes A and F?  C, J \nWhat is the union of the neighborhoods of nodes H and J?  A, B, D, F, I"
   },
   {
     "objectID": "soc-111-homeworks/homework1-answered.html#node-degree",
@@ -270,7 +270,7 @@
     "href": "soc-111-homeworks/homework1-answered.html#subgraphs",
     "title": "Homework I: Graph Theory",
     "section": "Subgraphs",
-    "text": "Subgraphs\n\nGo back to Figure 1. Draw the node-deleted subgraph of this graph that excludes nodes D and G"
+    "text": "Subgraphs\n\nGo back to Figure 1. Draw the node-deleted subgraph of this graph that excludes nodes D, F, and J\n\n\n\n\n\n\nFigure 2: A node deleted graph.\n\n\n\n\n\nList the isolate nodes in the node-deleted subgraph you obtained in the previous step.\n\n K"
   },
   {
     "objectID": "soc-111-homeworks/homework1.html",
@@ -712,5 +712,12 @@
     "title": "Homework III: Indirect Connections and Matrices",
     "section": "Matrices",
     "text": "Matrices\n\nIn the matrix below, write down the cell entries geodesic distance matrix corresponding to the graph shown in Figure 1:\n\n\n\n\n\n \n  \n      \n    A \n    B \n    C \n    D \n    E \n    F \n    G \n    H \n    I \n  \n \n\n  \n    A \n    ---- \n     \n     \n     \n     \n     \n     \n     \n     \n  \n  \n    B \n     \n    ---- \n     \n     \n     \n     \n     \n     \n     \n  \n  \n    C \n     \n     \n    ---- \n     \n     \n     \n     \n     \n     \n  \n  \n    D \n     \n     \n     \n    ---- \n     \n     \n     \n     \n     \n  \n  \n    E \n     \n     \n     \n     \n    ---- \n     \n     \n     \n     \n  \n  \n    F \n     \n     \n     \n     \n     \n    ---- \n     \n     \n     \n  \n  \n    G \n     \n     \n     \n     \n     \n     \n    ---- \n     \n     \n  \n  \n    H \n     \n     \n     \n     \n     \n     \n     \n    ---- \n     \n  \n  \n    I \n     \n     \n     \n     \n     \n     \n     \n     \n    ---- \n  \n\n\n\n\n\n\nIn the matrix below, write down the cell entries for the reachability matrix corresponding to the graph shown in Figure 2:\n\n\n\n\n\n \n  \n      \n    H \n    G \n    C \n    E \n    L \n    D \n    F \n    K \n    I \n    B \n  \n \n\n  \n    H \n    ---- \n     \n     \n     \n     \n     \n     \n     \n     \n     \n  \n  \n    G \n     \n    ---- \n     \n     \n     \n     \n     \n     \n     \n     \n  \n  \n    C \n     \n     \n    ---- \n     \n     \n     \n     \n     \n     \n     \n  \n  \n    E \n     \n     \n     \n    ---- \n     \n     \n     \n     \n     \n     \n  \n  \n    L \n     \n     \n     \n     \n    ---- \n     \n     \n     \n     \n     \n  \n  \n    D \n     \n     \n     \n     \n     \n    ---- \n     \n     \n     \n     \n  \n  \n    F \n     \n     \n     \n     \n     \n     \n    ---- \n     \n     \n     \n  \n  \n    K \n     \n     \n     \n     \n     \n     \n     \n    ---- \n     \n     \n  \n  \n    I \n     \n     \n     \n     \n     \n     \n     \n     \n    ---- \n     \n  \n  \n    B \n     \n     \n     \n     \n     \n     \n     \n     \n     \n    ---- \n  \n\n\n\n\n\n\nIn the matrix below, write down the cell entries geodesic distance matrix corresponding to the graph shown in Figure 2:\n\n\n\n\n\n \n  \n      \n    H \n    G \n    C \n    E \n    L \n    D \n    F \n    K \n    I \n    B \n  \n \n\n  \n    H \n    ---- \n     \n     \n     \n     \n     \n     \n     \n     \n     \n  \n  \n    G \n     \n    ---- \n     \n     \n     \n     \n     \n     \n     \n     \n  \n  \n    C \n     \n     \n    ---- \n     \n     \n     \n     \n     \n     \n     \n  \n  \n    E \n     \n     \n     \n    ---- \n     \n     \n     \n     \n     \n     \n  \n  \n    L \n     \n     \n     \n     \n    ---- \n     \n     \n     \n     \n     \n  \n  \n    D \n     \n     \n     \n     \n     \n    ---- \n     \n     \n     \n     \n  \n  \n    F \n     \n     \n     \n     \n     \n     \n    ---- \n     \n     \n     \n  \n  \n    K \n     \n     \n     \n     \n     \n     \n     \n    ---- \n     \n     \n  \n  \n    I \n     \n     \n     \n     \n     \n     \n     \n     \n    ---- \n     \n  \n  \n    B \n     \n     \n     \n     \n     \n     \n     \n     \n     \n    ---- \n  \n\n\n\n\n\n\nWhat is the diameter of the graph shown in Figure 1?"
+  },
+  {
+    "objectID": "soc-111-homeworks/homework1-answered.html#graph-metrics",
+    "href": "soc-111-homeworks/homework1-answered.html#graph-metrics",
+    "title": "Homework I: Graph Theory",
+    "section": "Graph Metrics",
+    "text": "Graph Metrics\n\nWhat is the order of the graph?  12 \nWhat is the size of the graph?  22 \nWrite down the graph’s degree sequence: \n\n\n\n\n\n \n  \n    F \n    D \n    A \n    B \n    J \n    C \n    I \n    L \n    E \n    G \n    H \n    K \n  \n \n\n  \n    8 \n    6 \n    5 \n    5 \n    4 \n    3 \n    3 \n    3 \n    2 \n    2 \n    2 \n    1 \n  \n\n\n\n\n\n\n\nWrite down the graph’s maximum Degree:  8 \nWrite down the graph’s minimum degree:  1 \nWhat is the graph’s degree range?  7\n\n\n\nWhat is the graph’s sum of degrees?  44 \nWhat is the graph’s average degree?  3.667 \nWhat is the graph’s maximum size?  66 \nCompute the density of the graph:  0.333"
   }
 ]
