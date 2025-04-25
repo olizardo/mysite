@@ -305,7 +305,7 @@
     "href": "soc-111-homeworks/homework2-answered.html",
     "title": "Homework II: Directed Graphs",
     "section": "",
-    "text": "Figure 1: A directed graph.\n\n\n\n\nConsider the graph shown in Figure 1:\n\nWrite down the edge set of the graph:\n\n\n\n\n\n\n  \n    A \n    J \n  \n  \n    A \n    F \n  \n  \n    A \n    H \n  \n  \n    A \n    I \n  \n  \n    C \n    F \n  \n  \n    C \n    H \n  \n  \n    D \n    F \n  \n  \n    D \n    G \n  \n  \n    D \n    I \n  \n  \n    E \n    B \n  \n  \n    E \n    D \n  \n  \n    E \n    G \n  \n  \n    E \n    I \n  \n  \n    H \n    D \n  \n  \n    H \n    F \n  \n  \n    H \n    G \n  \n  \n    I \n    B \n  \n  \n    J \n    D \n  \n  \n    J \n    I \n  \n  \n    I \n    J \n  \n  \n    D \n    E \n  \n  \n    D \n    H \n  \n  \n    I \n    D \n  \n  \n    A \n    D \n  \n  \n    I \n    E \n  \n\n\n\n\n\n\nWho are the out-neighbors of node A?\n\n\n\n\n\n\n  \n    D \n    F \n    H \n    I \n    J \n  \n\n\n\n\n\n\nWho are the in-neighbors of node D?\n\n\n\n\n\n\n  \n    A \n    E \n    H \n    I \n    J \n  \n\n\n\n\n\n\nWhat is the intersection of the out-neighborhoods of nodes D and A?\n\n\n\n\n\n\n  \n    F \n    H \n    I \n  \n\n\n\n\n\n\nWhat is the intersection of the in-neighborhoods of nodes D and F?\n\n\n\n\n\n\n  \n    A \n    H \n  \n\n\n\n\n\n\nWhat is the union of the out-neighborhoods of nodes E and A?\n\n\n\n\n\n\n  \n    D \n    F \n    H \n    I \n    J \n    B \n    G \n  \n\n\n\n\n\n\nWhat is the union of the in-neighborhoods of nodes D and F?\n\n\n\n\n\n\n  \n    A \n    E \n    H \n    I \n    J \n    C \n    D \n  \n\n\n\n\n\n\nWhat is the out-degree of node E?  \\(k(E)_{out}\\) = 4\nWhat is the in-degree of node D?  \\(k(D)_{in}\\) = 5\nWhat is(are) the node(s) with the largest out-degree?\n\n\n\n\n\n \n  \n    A \n    B \n    C \n    D \n    E \n    F \n    G \n    H \n    I \n    J \n  \n \n\n  \n    5 \n    0 \n    2 \n    5 \n    4 \n    0 \n    0 \n    3 \n    4 \n    2 \n  \n\n\n\n\n\n A D\n\nWhat is(are) the node(s) with the largest in-degree?\n\n\n\n\n\n \n  \n    A \n    B \n    C \n    D \n    E \n    F \n    G \n    H \n    I \n    J \n  \n \n\n  \n    0 \n    2 \n    0 \n    5 \n    2 \n    4 \n    3 \n    3 \n    4 \n    2 \n  \n\n\n\n\n\n F I\n\nWhat is(are) the node(s) with the smallest out-degree?  B F G\nWhat is(are) the node(s) with the smallest in-degree?  A C\nWhich is(are) the receiver node(s) in the graph?  B F G\nWhich is(are) the transmitter node(s) in the graph?  A C\nWrite down the set of mutual dyads in the graph:  ED or DE  DH or HD  IJ or JI  DI or ID  EI or IE \n\nMutuals Matrix: \n\n\n\n\n \n  \n      \n    A \n    B \n    C \n    D \n    E \n    F \n    G \n    H \n    I \n    J \n  \n \n\n  \n    A \n    0 \n    0 \n    0 \n    0 \n    0 \n    0 \n    0 \n    0 \n    0 \n    0 \n  \n  \n    B \n    0 \n    0 \n    0 \n    0 \n    0 \n    0 \n    0 \n    0 \n    0 \n    0 \n  \n  \n    C \n    0 \n    0 \n    0 \n    0 \n    0 \n    0 \n    0 \n    0 \n    0 \n    0 \n  \n  \n    D \n    0 \n    0 \n    0 \n    0 \n    1 \n    0 \n    0 \n    1 \n    1 \n    0 \n  \n  \n    E \n    0 \n    0 \n    0 \n    1 \n    0 \n    0 \n    0 \n    0 \n    1 \n    0 \n  \n  \n    F \n    0 \n    0 \n    0 \n    0 \n    0 \n    0 \n    0 \n    0 \n    0 \n    0 \n  \n  \n    G \n    0 \n    0 \n    0 \n    0 \n    0 \n    0 \n    0 \n    0 \n    0 \n    0 \n  \n  \n    H \n    0 \n    0 \n    0 \n    1 \n    0 \n    0 \n    0 \n    0 \n    0 \n    0 \n  \n  \n    I \n    0 \n    0 \n    0 \n    1 \n    1 \n    0 \n    0 \n    0 \n    0 \n    1 \n  \n  \n    J \n    0 \n    0 \n    0 \n    0 \n    0 \n    0 \n    0 \n    0 \n    1 \n    0 \n  \n\n\n\n\n\n\nWhat type of dyad is formed by the subgraph containing nodes C and F?  Asymmetric or Non-reciprocal\nWhat type of dyad is formed by the subgraph containing nodes B and C?  Null or disconnected\nWhat type of dyad is formed by the subgraph containing nodes E and I?  Mutual or Reciprocal\nHow many mutual dyads are there in the graph?  Five (5)"
+    "text": "Figure 1: A directed graph.\nConsider the graph shown in Figure 1:"
   },
   {
     "objectID": "soc-111-homeworks/homework2.html",
@@ -719,5 +719,40 @@
     "title": "Homework I: Graph Theory",
     "section": "Graph Metrics",
     "text": "Graph Metrics\n\nWhat is the order of the graph?  12 \nWhat is the size of the graph?  22 \nWrite down the graph’s degree sequence: \n\n\n\n\n\n \n  \n    F \n    D \n    A \n    B \n    J \n    C \n    I \n    L \n    E \n    G \n    H \n    K \n  \n \n\n  \n    8 \n    6 \n    5 \n    5 \n    4 \n    3 \n    3 \n    3 \n    2 \n    2 \n    2 \n    1 \n  \n\n\n\n\n\n\n\nWrite down the graph’s maximum Degree:  8 \nWrite down the graph’s minimum degree:  1 \nWhat is the graph’s degree range?  7 \nWhat is the graph’s sum of degrees?  44 \nWhat is the graph’s average degree?  3.667 \nWhat is the graph’s maximum size?  66 \nCompute the density of the graph:  0.333"
+  },
+  {
+    "objectID": "soc-111-homeworks/homework2-answered.html#directed-graph-degrees",
+    "href": "soc-111-homeworks/homework2-answered.html#directed-graph-degrees",
+    "title": "Homework II: Directed Graphs",
+    "section": "Directed Graph Degrees",
+    "text": "Directed Graph Degrees\n\nWhat is the out-degree of node K?  6 \nWhat is the in-degree of node E?  4 \nWhat is(are) the node(s) with the largest out-degree?  K \nWhat is(are) the node(s) with the largest in-degree?  C \nWhat is(are) the node(s) with the smallest out-degree?  B, C \nWhat is(are) the node(s) with the smallest in-degree?  H, L"
+  },
+  {
+    "objectID": "soc-111-homeworks/homework2-answered.html#directed-graph-node-types",
+    "href": "soc-111-homeworks/homework2-answered.html#directed-graph-node-types",
+    "title": "Homework II: Directed Graphs",
+    "section": "Directed Graph Node Types",
+    "text": "Directed Graph Node Types\n\nWhich is(are) the receiver node(s) in the graph?  B, C \nWhich is(are) the transmitter node(s) in the graph?  H, L"
+  },
+  {
+    "objectID": "soc-111-homeworks/homework2-answered.html#directed-graph-metrics",
+    "href": "soc-111-homeworks/homework2-answered.html#directed-graph-metrics",
+    "title": "Homework II: Directed Graphs",
+    "section": "Directed Graph Metrics",
+    "text": "Directed Graph Metrics\n\nWhat is the graph’s in-degree sequence? \n\n\n\n\n\n \n  \n    C \n    D \n    E \n    B \n    A \n    F \n    G \n    I \n    J \n    K \n    H \n    L \n  \n \n\n  \n    5 \n    4 \n    4 \n    3 \n    2 \n    2 \n    2 \n    2 \n    2 \n    2 \n    0 \n    0 \n  \n\n\n\n\n\n\n\nWhat is the graph’s out-degree range?  6 \nWhat is the graph’s in-degree range?  5 \nWhat is the graph’s sum of degrees?  28 \nWhat is the size of the graph?  28 \nWhat is the graph’s maximum size?  132 \nCompute the density of the graph:  0.212"
+  },
+  {
+    "objectID": "soc-111-homeworks/homework2-answered.html#from-graph-to-matrix",
+    "href": "soc-111-homeworks/homework2-answered.html#from-graph-to-matrix",
+    "title": "Homework II: Directed Graphs",
+    "section": "From Graph to Matrix",
+    "text": "From Graph to Matrix\n\nIn the matrix below, write down the cell entries for the adjacency matrix corresponding to the graph shown in Figure 1:\n\n\n\n\n\n \n  \n      \n    A \n    B \n    C \n    D \n    E \n    F \n    G \n    H \n    I \n    J \n    K \n    L \n  \n \n\n  \n    A \n    ---- \n    1 \n    1 \n    0 \n    0 \n    0 \n    0 \n    0 \n    0 \n    0 \n    0 \n    0 \n  \n  \n    B \n    0 \n    ---- \n    0 \n    0 \n    0 \n    0 \n    0 \n    0 \n    0 \n    0 \n    0 \n    0 \n  \n  \n    C \n    0 \n    0 \n    ---- \n    0 \n    0 \n    0 \n    0 \n    0 \n    0 \n    0 \n    0 \n    0 \n  \n  \n    D \n    0 \n    0 \n    0 \n    ---- \n    0 \n    1 \n    1 \n    0 \n    0 \n    0 \n    0 \n    0 \n  \n  \n    E \n    0 \n    0 \n    1 \n    0 \n    ---- \n    0 \n    0 \n    0 \n    0 \n    1 \n    0 \n    0 \n  \n  \n    F \n    0 \n    1 \n    0 \n    1 \n    1 \n    ---- \n    0 \n    0 \n    0 \n    0 \n    0 \n    0 \n  \n  \n    G \n    0 \n    0 \n    0 \n    1 \n    0 \n    0 \n    ---- \n    0 \n    0 \n    0 \n    0 \n    0 \n  \n  \n    H \n    0 \n    0 \n    1 \n    1 \n    0 \n    0 \n    0 \n    ---- \n    1 \n    1 \n    1 \n    0 \n  \n  \n    I \n    1 \n    0 \n    1 \n    0 \n    0 \n    0 \n    0 \n    0 \n    ---- \n    0 \n    1 \n    0 \n  \n  \n    J \n    0 \n    0 \n    1 \n    0 \n    1 \n    0 \n    0 \n    0 \n    0 \n    ---- \n    0 \n    0 \n  \n  \n    K \n    1 \n    1 \n    0 \n    1 \n    1 \n    1 \n    0 \n    0 \n    1 \n    0 \n    ---- \n    0 \n  \n  \n    L \n    0 \n    0 \n    0 \n    0 \n    1 \n    0 \n    1 \n    0 \n    0 \n    0 \n    0 \n    ----"
+  },
+  {
+    "objectID": "soc-111-homeworks/homework2-answered.html#directed-graph-neighborhoods",
+    "href": "soc-111-homeworks/homework2-answered.html#directed-graph-neighborhoods",
+    "title": "Homework II: Directed Graphs",
+    "section": "Directed Graph Neighborhoods",
+    "text": "Directed Graph Neighborhoods\n\nWho are the out-neighbors of node A?  B, C \nWho are the in-neighbors of node D?  F, G, H, K \nWhat is the intersection of the out-neighborhoods of nodes C and I? \n\n\n\nWhat is the intersection of the in-neighborhoods of nodes D and E?  F, K \nWhat is the union of the out-neighborhoods of nodes L and K?  E, G, A, B, D, F, I\n\n\n\nWhat is the union of the in-neighborhoods of nodes B and A?  A, F, K, I"
   }
 ]

@@ -7,6 +7,7 @@ title: "Homework I: Graph Theory"
     require(ggraph)
     require(tidygraph)
     require(igraph)
+    require(kableExtra)
 ```
 
 ## Vertex and edge sets
@@ -45,15 +46,9 @@ Consider the graph shown in @fig-grex1:
 <br>
 <br>
 ```{r}
-    library(kableExtra)
-    edges <- gr %>% 
-          activate(edges) %>% 
-          mutate(to_name = .N()$name[to], 
-          from_name = .N()$name[from]) %>% 
-          as_tibble() %>% 
-          select(from = from_name, to = to_name)
-    a <- edges$from
-    b <- edges$to
+    edges <- get.edgelist(gr)
+    a <- edges[,1]
+    b <- edges[,2]
     b <- paste(b, ", ", sep = "")
     c <- paste(a, b, sep = "")
     kbl(t(c))

@@ -64,7 +64,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/kePrint-0.0.1/kePrint.js"></script>
 <link href="../site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
 
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="../styles.css">
 <meta property="og:title" content="Omar Lizardo’s Academic Website - Homework II: Directed Graphs">
@@ -166,7 +165,17 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#directed-graph-neighborhoods" id="toc-directed-graph-neighborhoods" class="nav-link active" data-scroll-target="#directed-graph-neighborhoods">Directed Graph Neighborhoods</a></li>
+  <li><a href="#directed-graph-degrees" id="toc-directed-graph-degrees" class="nav-link" data-scroll-target="#directed-graph-degrees">Directed Graph Degrees</a></li>
+  <li><a href="#directed-graph-node-types" id="toc-directed-graph-node-types" class="nav-link" data-scroll-target="#directed-graph-node-types">Directed Graph Node Types</a></li>
+  <li><a href="#directed-graph-metrics" id="toc-directed-graph-metrics" class="nav-link" data-scroll-target="#directed-graph-metrics">Directed Graph Metrics</a></li>
+  <li><a href="#from-graph-to-matrix" id="toc-from-graph-to-matrix" class="nav-link" data-scroll-target="#from-graph-to-matrix">From Graph to Matrix</a></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/olizardo/mysite/blob/main/soc-111-homeworks/homework2-answered.qmd" class="toc-action">View source</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -199,491 +208,355 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <p>Consider the graph shown in <a href="#fig-grex1">Figure&nbsp;1</a>:</p>
-<ul>
-<li>Write down the <strong>edge set</strong> of the graph:</li>
-</ul>
+<ol type="1">
+<li>Write down the <strong>edge set</strong> of the graph: <br></li>
+</ol>
 <div class="cell">
 <div class="cell-output-display">
 
 <table>
 <tbody>
   <tr>
-   <td style="text-align:left;"> A </td>
-   <td style="text-align:left;"> J </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> A </td>
-   <td style="text-align:left;"> F </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> A </td>
-   <td style="text-align:left;"> H </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> A </td>
-   <td style="text-align:left;"> I </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> C </td>
-   <td style="text-align:left;"> F </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> C </td>
-   <td style="text-align:left;"> H </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> D </td>
-   <td style="text-align:left;"> F </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> D </td>
-   <td style="text-align:left;"> G </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> D </td>
-   <td style="text-align:left;"> I </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> E </td>
-   <td style="text-align:left;"> B </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> E </td>
-   <td style="text-align:left;"> D </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> E </td>
-   <td style="text-align:left;"> G </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> E </td>
-   <td style="text-align:left;"> I </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> H </td>
-   <td style="text-align:left;"> D </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> H </td>
-   <td style="text-align:left;"> F </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> H </td>
-   <td style="text-align:left;"> G </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> I </td>
-   <td style="text-align:left;"> B </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> J </td>
-   <td style="text-align:left;"> D </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> J </td>
-   <td style="text-align:left;"> I </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> I </td>
-   <td style="text-align:left;"> J </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> D </td>
-   <td style="text-align:left;"> E </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> D </td>
-   <td style="text-align:left;"> H </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> I </td>
-   <td style="text-align:left;"> D </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> A </td>
-   <td style="text-align:left;"> D </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> I </td>
-   <td style="text-align:left;"> E </td>
+   <td style="text-align:left;"> IA, </td>
+   <td style="text-align:left;"> KA, </td>
+   <td style="text-align:left;"> AB, </td>
+   <td style="text-align:left;"> FB, </td>
+   <td style="text-align:left;"> KB, </td>
+   <td style="text-align:left;"> AC, </td>
+   <td style="text-align:left;"> EC, </td>
+   <td style="text-align:left;"> HC, </td>
+   <td style="text-align:left;"> JC, </td>
+   <td style="text-align:left;"> GD, </td>
+   <td style="text-align:left;"> HD, </td>
+   <td style="text-align:left;"> KD, </td>
+   <td style="text-align:left;"> FE, </td>
+   <td style="text-align:left;"> KE, </td>
+   <td style="text-align:left;"> LE, </td>
+   <td style="text-align:left;"> DF, </td>
+   <td style="text-align:left;"> KF, </td>
+   <td style="text-align:left;"> DG, </td>
+   <td style="text-align:left;"> LG, </td>
+   <td style="text-align:left;"> HI, </td>
+   <td style="text-align:left;"> KI, </td>
+   <td style="text-align:left;"> EJ, </td>
+   <td style="text-align:left;"> HJ, </td>
+   <td style="text-align:left;"> HK, </td>
+   <td style="text-align:left;"> IK, </td>
+   <td style="text-align:left;"> FD, </td>
+   <td style="text-align:left;"> JE, </td>
+   <td style="text-align:left;"> IC, </td>
   </tr>
 </tbody>
 </table>
 
 </div>
 </div>
-<ul>
-<li>Who are the <strong>out-neighbors</strong> of node <em>A</em>?</li>
-</ul>
+<p><br></p>
+<section id="directed-graph-neighborhoods" class="level2">
+<h2 class="anchored" data-anchor-id="directed-graph-neighborhoods">Directed Graph Neighborhoods</h2>
+<ol type="1">
+<li><p>Who are the <strong>out-neighbors</strong> of node <em>A</em>? <br> B, C <br></p></li>
+<li><p>Who are the <strong>in-neighbors</strong> of node <em>D</em>? <br> F, G, H, K <br></p></li>
+<li><p>What is the <strong>intersection</strong> of the <strong>out-neighborhoods</strong> of nodes <em>C</em> and <em>I</em>? <br></p></li>
+</ol>
+<p><br></p>
+<ol type="1">
+<li><p>What is the <strong>intersection</strong> of the <strong>in-neighborhoods</strong> of nodes <em>D</em> and <em>E</em>? <br> F, K <br></p></li>
+<li><p>What is the <strong>union</strong> of the <strong>out-neighborhoods</strong> of nodes <em>L</em> and <em>K</em>? <br> E, G, A, B, D, F, I</p></li>
+</ol>
+<p><br></p>
+<ol type="1">
+<li>What is the <strong>union</strong> of the <strong>in-neighborhoods</strong> of nodes <em>B</em> and <em>A</em>? <br> A, F, K, I <br></li>
+</ol>
+</section>
+<section id="directed-graph-degrees" class="level2">
+<h2 class="anchored" data-anchor-id="directed-graph-degrees">Directed Graph Degrees</h2>
+<ol type="1">
+<li><p>What is the <strong>out-degree</strong> of node <em>K</em>? <br> 6 <br></p></li>
+<li><p>What is the <strong>in-degree</strong> of node <em>E</em>? <br> 4 <br></p></li>
+<li><p>What is(are) the node(s) with the largest <strong>out-degree</strong>? <br> K <br></p></li>
+<li><p>What is(are) the node(s) with the largest <strong>in-degree</strong>? <br> C <br></p></li>
+<li><p>What is(are) the node(s) with the smallest <strong>out-degree</strong>? <br> B, C <br></p></li>
+<li><p>What is(are) the node(s) with the smallest <strong>in-degree</strong>? <br> H, L <br></p></li>
+</ol>
+</section>
+<section id="directed-graph-node-types" class="level2">
+<h2 class="anchored" data-anchor-id="directed-graph-node-types">Directed Graph Node Types</h2>
+<ol type="1">
+<li><p>Which is(are) the <strong>receiver node(s)</strong> in the graph? <br> B, C <br></p></li>
+<li><p>Which is(are) the <strong>transmitter node(s)</strong> in the graph? <br> H, L <br></p></li>
+</ol>
+</section>
+<section id="directed-graph-metrics" class="level2">
+<h2 class="anchored" data-anchor-id="directed-graph-metrics">Directed Graph Metrics</h2>
+<ol type="1">
+<li>What is the graph’s <strong>in-degree sequence</strong>? <br></li>
+</ol>
 <div class="cell">
 <div class="cell-output-display">
 
 <table>
-<tbody>
-  <tr>
-   <td style="text-align:left;"> D </td>
-   <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> H </td>
-   <td style="text-align:left;"> I </td>
-   <td style="text-align:left;"> J </td>
-  </tr>
-</tbody>
-</table>
-
-</div>
-</div>
-<ul>
-<li>Who are the <strong>in-neighbors</strong> of node <em>D</em>?</li>
-</ul>
-<div class="cell">
-<div class="cell-output-display">
-
-<table>
-<tbody>
-  <tr>
-   <td style="text-align:left;"> A </td>
-   <td style="text-align:left;"> E </td>
-   <td style="text-align:left;"> H </td>
-   <td style="text-align:left;"> I </td>
-   <td style="text-align:left;"> J </td>
-  </tr>
-</tbody>
-</table>
-
-</div>
-</div>
-<ul>
-<li>What is the <strong>intersection</strong> of the <strong>out-neighborhoods</strong> of nodes <em>D</em> and <em>A</em>?</li>
-</ul>
-<div class="cell">
-<div class="cell-output-display">
-
-<table>
-<tbody>
-  <tr>
-   <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> H </td>
-   <td style="text-align:left;"> I </td>
-  </tr>
-</tbody>
-</table>
-
-</div>
-</div>
-<ul>
-<li>What is the <strong>intersection</strong> of the <strong>in-neighborhoods</strong> of nodes <em>D</em> and <em>F</em>?</li>
-</ul>
-<div class="cell">
-<div class="cell-output-display">
-
-<table>
-<tbody>
-  <tr>
-   <td style="text-align:left;"> A </td>
-   <td style="text-align:left;"> H </td>
-  </tr>
-</tbody>
-</table>
-
-</div>
-</div>
-<ul>
-<li>What is the <strong>union</strong> of the <strong>out-neighborhoods</strong> of nodes <em>E</em> and <em>A</em>?</li>
-</ul>
-<div class="cell">
-<div class="cell-output-display">
-
-<table>
-<tbody>
-  <tr>
-   <td style="text-align:left;"> D </td>
-   <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> H </td>
-   <td style="text-align:left;"> I </td>
-   <td style="text-align:left;"> J </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> G </td>
-  </tr>
-</tbody>
-</table>
-
-</div>
-</div>
-<ul>
-<li>What is the <strong>union</strong> of the <strong>in-neighborhoods</strong> of nodes <em>D</em> and <em>F</em>?</li>
-</ul>
-<div class="cell">
-<div class="cell-output-display">
-
-<table>
-<tbody>
-  <tr>
-   <td style="text-align:left;"> A </td>
-   <td style="text-align:left;"> E </td>
-   <td style="text-align:left;"> H </td>
-   <td style="text-align:left;"> I </td>
-   <td style="text-align:left;"> J </td>
-   <td style="text-align:left;"> C </td>
-   <td style="text-align:left;"> D </td>
-  </tr>
-</tbody>
-</table>
-
-</div>
-</div>
-<ul>
-<li><p>What is the <strong>out-degree</strong> of node <em>E</em>? <br> <span class="math inline">\(k(E)_{out}\)</span> = 4</p></li>
-<li><p>What is the <strong>in-degree</strong> of node <em>D</em>? <br> <span class="math inline">\(k(D)_{in}\)</span> = 5</p></li>
-<li><p>What is(are) the node(s) with the largest <strong>out-degree</strong>?</p></li>
-</ul>
-<div class="cell">
-<div class="cell-output-display">
-
-<table class="table" style="margin-left: auto; margin-right: auto;">
  <thead>
   <tr>
-   <th style="text-align:right;"> A </th>
-   <th style="text-align:right;"> B </th>
    <th style="text-align:right;"> C </th>
    <th style="text-align:right;"> D </th>
    <th style="text-align:right;"> E </th>
+   <th style="text-align:right;"> B </th>
+   <th style="text-align:right;"> A </th>
    <th style="text-align:right;"> F </th>
    <th style="text-align:right;"> G </th>
-   <th style="text-align:right;"> H </th>
    <th style="text-align:right;"> I </th>
    <th style="text-align:right;"> J </th>
+   <th style="text-align:right;"> K </th>
+   <th style="text-align:right;"> H </th>
+   <th style="text-align:right;"> L </th>
   </tr>
  </thead>
 <tbody>
   <tr>
    <td style="text-align:right;"> 5 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 2 </td>
-   <td style="text-align:right;"> 5 </td>
    <td style="text-align:right;"> 4 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 4 </td>
    <td style="text-align:right;"> 3 </td>
-   <td style="text-align:right;"> 4 </td>
    <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 2 </td>
+   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:right;"> 0 </td>
   </tr>
 </tbody>
 </table>
 
 </div>
 </div>
-<p><br> A D</p>
+<p><br></p>
 <ol type="1">
-<li>What is(are) the node(s) with the largest <strong>in-degree</strong>?</li>
+<li><p>What is the graph’s <strong>out-degree range</strong>? <br> 6 <br></p></li>
+<li><p>What is the graph’s <strong>in-degree range</strong>? <br> 5 <br></p></li>
+<li><p>What is the graph’s <strong>sum of degrees</strong>? <br> 28 <br></p></li>
+<li><p>What is the <strong>size</strong> of the graph? <br> 28 <br></p></li>
+<li><p>What is the graph’s <strong>maximum size</strong>? <br> 132 <br></p></li>
+<li><p>Compute the <strong>density</strong> of the graph: <br> 0.212 <br></p></li>
 </ol>
+</section>
+<section id="from-graph-to-matrix" class="level2">
+<h2 class="anchored" data-anchor-id="from-graph-to-matrix">From Graph to Matrix</h2>
+<ul>
+<li>In the matrix below, write down the cell entries for the <strong>adjacency matrix</strong> corresponding to the graph shown in <a href="#fig-grex1">Figure&nbsp;1</a>:</li>
+</ul>
 <div class="cell">
 <div class="cell-output-display">
 
 <table class="table" style="margin-left: auto; margin-right: auto;">
- <thead>
-  <tr>
-   <th style="text-align:right;"> A </th>
-   <th style="text-align:right;"> B </th>
-   <th style="text-align:right;"> C </th>
-   <th style="text-align:right;"> D </th>
-   <th style="text-align:right;"> E </th>
-   <th style="text-align:right;"> F </th>
-   <th style="text-align:right;"> G </th>
-   <th style="text-align:right;"> H </th>
-   <th style="text-align:right;"> I </th>
-   <th style="text-align:right;"> J </th>
-  </tr>
- </thead>
-<tbody>
-  <tr>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 2 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 5 </td>
-   <td style="text-align:right;"> 2 </td>
-   <td style="text-align:right;"> 4 </td>
-   <td style="text-align:right;"> 3 </td>
-   <td style="text-align:right;"> 3 </td>
-   <td style="text-align:right;"> 4 </td>
-   <td style="text-align:right;"> 2 </td>
-  </tr>
-</tbody>
-</table>
-
-</div>
-</div>
-<p><br> F I</p>
-<ol type="1">
-<li><p>What is(are) the node(s) with the smallest <strong>out-degree</strong>? <br> B F G</p></li>
-<li><p>What is(are) the node(s) with the smallest <strong>in-degree</strong>? <br> A C</p></li>
-<li><p>Which is(are) the <strong>receiver node(s)</strong> in the graph? <br> B F G</p></li>
-<li><p>Which is(are) the <strong>transmitter node(s)</strong> in the graph? <br> A C</p></li>
-<li><p>Write down the set of <strong>mutual dyads</strong> in the graph: <br> ED or DE <br> DH or HD <br> IJ or JI <br> DI or ID <br> EI or IE <br></p></li>
-</ol>
-<p>Mutuals Matrix: <br></p>
-<div class="cell">
-<div class="cell-output-display">
-
-<table class=" lightable-classic" style="font-family: &quot;Arial Narrow&quot;, &quot;Source Sans Pro&quot;, sans-serif; margin-left: auto; margin-right: auto;">
  <thead>
   <tr>
    <th style="text-align:left;">   </th>
-   <th style="text-align:right;"> A </th>
-   <th style="text-align:right;"> B </th>
-   <th style="text-align:right;"> C </th>
-   <th style="text-align:right;"> D </th>
-   <th style="text-align:right;"> E </th>
-   <th style="text-align:right;"> F </th>
-   <th style="text-align:right;"> G </th>
-   <th style="text-align:right;"> H </th>
-   <th style="text-align:right;"> I </th>
-   <th style="text-align:right;"> J </th>
+   <th style="text-align:center;"> A </th>
+   <th style="text-align:center;"> B </th>
+   <th style="text-align:center;"> C </th>
+   <th style="text-align:center;"> D </th>
+   <th style="text-align:center;"> E </th>
+   <th style="text-align:center;"> F </th>
+   <th style="text-align:center;"> G </th>
+   <th style="text-align:center;"> H </th>
+   <th style="text-align:center;"> I </th>
+   <th style="text-align:center;"> J </th>
+   <th style="text-align:center;"> K </th>
+   <th style="text-align:center;"> L </th>
   </tr>
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;"> A </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> A </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> ---- </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> B </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> ---- </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> C </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> C </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> ---- </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> D </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 1 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 1 </td>
-   <td style="text-align:right;"> 1 </td>
-   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> D </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> ---- </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> E </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 1 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 1 </td>
-   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> E </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> ---- </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> F </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> F </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> ---- </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> G </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> G </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> ---- </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> H </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 1 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> H </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> ---- </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> I </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 1 </td>
-   <td style="text-align:right;"> 1 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 1 </td>
+   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> I </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> ---- </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
   </tr>
   <tr>
-   <td style="text-align:left;"> J </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 0 </td>
-   <td style="text-align:right;"> 1 </td>
-   <td style="text-align:right;"> 0 </td>
+   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> J </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> ---- </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> K </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> ---- </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> L </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> ---- </td>
   </tr>
 </tbody>
 </table>
 
 </div>
 </div>
-<ol type="1">
-<li><p>What type of <strong>dyad</strong> is formed by the subgraph containing nodes <em>C</em> and <em>F</em>? <br> Asymmetric or Non-reciprocal</p></li>
-<li><p>What type of <strong>dyad</strong> is formed by the subgraph containing nodes <em>B</em> and <em>C</em>? <br> Null or disconnected</p></li>
-<li><p>What type of <strong>dyad</strong> is formed by the subgraph containing nodes <em>E</em> and <em>I</em>? <br> Mutual or Reciprocal</p></li>
-<li><p>How many <strong>mutual dyads</strong> are there in the graph? <br> Five (5)</p></li>
-</ol>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
