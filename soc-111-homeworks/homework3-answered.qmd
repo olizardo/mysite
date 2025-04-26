@@ -40,49 +40,49 @@ Consider the graph shown in @fig-grex1:
 
 1. Write down *all* the **paths** of length four ($l = 4$) connecting node *E* and node *C*:
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+```{r}
+    paths <- all_simple_paths(gr, from = "E", to = "C")
+    p <- paths[which(sapply(paths, length) == 5)]
+    kbl(toupper(matrix(letters[unlist(p)], ncol = 5, byrow = TRUE)))
+```
 
 1. Write down *all* the **paths** of length two ($l = 2$) featuring node *F* as the **inner node**:
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+```{r}
+    paths <- list()
+    for (i in 1:vcount(gr)) {
+      p <- all_simple_paths(gr, from = i, cutoff = 2)
+      p <- p[which(sapply(p, length) == 3)]
+      paths[[i]] <- p
+      }
+    m <- matrix(LETTERS[unlist(paths)], ncol = 3, byrow = TRUE)
+    m <- m[which(m[, 2] == "F"), ]
+    m <- m[which(m[, 1] != m[, 3]), ]
+    kbl(m)
+```
 
 1. Write down *all* the **shortest paths** connecting nodes *A* and *D*:
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+```{r}
+    paths <- all_shortest_paths(gr, from = "A", to = "D")
+    m <- matrix(LETTERS[unlist(paths$res)], ncol = 4, byrow = TRUE)
+    m <- m[c(1, 2, 4, 6),]
+    kbl(m)
+```
 
 
 1. Write down *all* the **cycles** of length *four* that start and end with node *G*:
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
+```{r}
+    c1 <- lapply(all_simple_paths(gr, "E", "G"), function(p) c("G",p))
+    c2 <- lapply(all_simple_paths(gr, "H", "G"), function(p) c("G",p))
+    c3 <- lapply(all_simple_paths(gr, "B", "G"), function(p) c("G",p))
+    c4 <- lapply(all_simple_paths(gr, "D", "G"), function(p) c("G",p))
+    c <- c(c1, c2, c3, c4)
+    c <- c[which(lapply(c, length) == 5)]
+    m <- matrix(unlist(lapply(c, names)), ncol = 5, byrow = TRUE)
+    m[, 1] <- rep("G", nrow(m))
+    kbl(m)
+```
 
 ## Directed Paths
 
@@ -114,84 +114,90 @@ Consider the graph shown in @fig-grex2:
 
 1. Write down *all* the **directed path(s)** of length five ($l = 5$) going *from* node *K* *to* node *C*:
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
+```{r}
+    paths <- all_simple_paths(gr2, from = "K", to = "C", mode = "out")
+    p <- paths[which(sapply(paths, length) == 6)]
+    p <- matrix(rownames(as.matrix(unlist(p))), ncol = 6, byrow = TRUE)
+    kbl(p)
+```
 
 1. What is the length of the **shortest directed path(s)** going *from* node *L* *to* node *I*?
 <br>
-<br>
-<br>
+```{r}
+    paths <- all_shortest_paths(gr, from = "L", to = "I", mode = "out")
+```
+`r length(paths$res[[1]]) - 1`
 
 1. If *E* wanted to send a message to *D* in the most efficient way, how many intermediaries would *E* have to use?
 <br>
-<br>
-<br>
+```{r}
+    paths <- all_shortest_paths(gr, from = "E", to = "D", mode = "out")
+```
+`r length(paths$res[[1]]) - 2`
 
 1. Write down *all* the directed **cycles** of length four ($l = 4$) that start and end with node *D*:
 <br>
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+```{r}
+    c1 <- lapply(all_simple_paths(gr, "H", "D"), function(p) c("D",p))
+    c2 <- lapply(all_simple_paths(gr, "L", "D"), function(p) c("D",p))
+    c3 <- lapply(all_simple_paths(gr, "F", "D"), function(p) c("D",p))
+    c <- c(c1, c2, c3)
+    c <- c[which(lapply(c, length) == 5)]
+    m <- matrix(unlist(lapply(c, names)), ncol = 5, byrow = TRUE)
+    m[, 1] <- rep("D", nrow(m))
+    kbl(m)
+```
+
 
 ## Matrices
 
 - In the matrix below, write down the cell entries **geodesic distance matrix** corresponding to the graph shown in @fig-grex1:
 
 ```{r}
-    n <- vcount(gr1)
-    m <- n - 1
-    a <- matrix(" ", nrow = n, ncol = n)
-    rownames(a) <- V(gr1)$name
-    colnames(a) <- V(gr1)$name
-    diag(a) <- "----"
-    kbl(a, format = "html", align = "c")  %>% 
+    m <- as.matrix(distances(gr))
+    diag(m) <- "--"
+    kbl(m[order(rownames(m)), order(colnames(m))], format = "html", align = "c")  %>% 
          column_spec(1, bold = TRUE) %>% 
-         column_spec (2:n, border_left = T, border_right = T) %>%
-         row_spec(1:m, extra_css = "border-bottom: 1px solid") %>%
+         column_spec (2:10, border_left = T, border_right = T) %>%
+         row_spec(1:9, extra_css = "border-bottom: 1px solid") %>%
          kable_styling()
 ```
+
 
 
 - In the matrix below, write down the cell entries for the **reachability matrix** corresponding to the graph shown in @fig-grex2:
 
 ```{r}
-    n <- vcount(gr2)
-    m <- n - 1
-    b <- matrix(" ", nrow = n, ncol = n)
-    rownames(b) <- V(gr2)$name
-    colnames(b) <- V(gr2)$name
-    diag(b) <- "----"
-    kbl(b, format = "html", align = "c")  %>% 
+    m <- as.matrix(distances(gr2, mode = "out"))
+    r <- nrow(m)
+    s <- r-1
+    m <- (1/m > 0) * 1
+    diag(m) <- "--"
+    kbl(m[order(rownames(m)), order(colnames(m))], format = "html", align = "c")  %>% 
          column_spec(1, bold = TRUE) %>% 
-         column_spec (2:n, border_left = T, border_right = T) %>%
-         row_spec(1:m, extra_css = "border-bottom: 1px solid") %>%
+         column_spec (2:r, border_left = T, border_right = T) %>%
+         row_spec(1:s, extra_css = "border-bottom: 1px solid") %>%
          kable_styling()
 ```
+
 
 - In the matrix below, write down the cell entries **geodesic distance matrix** corresponding to the graph shown in @fig-grex2:
 
 ```{r}
-    diag(b) <- "----"
+    b <- as.matrix(distances(gr2, mode = "out"))
+    r <- nrow(m)
+    s <- r-1
     kbl(b, format = "html", align = "c")  %>% 
          column_spec(1, bold = TRUE) %>% 
-         column_spec (2:n, border_left = T, border_right = T) %>%
-         row_spec(1:m, extra_css = "border-bottom: 1px solid") %>%
+         column_spec (2:r, border_left = T, border_right = T) %>%
+         row_spec(1:s, extra_css = "border-bottom: 1px solid") %>%
          kable_styling()
 ```
 
 - What is the **diameter** of the graph shown in @fig-grex1?
 <br>
-<br>
+`r max(distances(gr))`
 <br>
 
 
