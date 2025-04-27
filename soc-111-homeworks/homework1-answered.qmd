@@ -51,7 +51,7 @@ Consider the graph shown in @fig-grex1:
     b <- edges[,2]
     b <- paste(b, ", ", sep = "")
     c <- paste(a, b, sep = "")
-    kbl(t(c))
+    kable(t(c))
 ```
 
 ## Node Neighborhoods
@@ -96,7 +96,7 @@ Consider the graph shown in @fig-grex1:
 1. Write down the graph's **degree sequence**:
 <br>
 ```{r} 
-    kbl(t(sort(degree(gr), decreasing = TRUE)))
+    kable(t(sort(degree(gr), decreasing = TRUE)))
 ```
 <br>
 
