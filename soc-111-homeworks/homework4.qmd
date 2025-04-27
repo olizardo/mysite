@@ -90,13 +90,19 @@ title: "Homework IV: Affiliation Networks"
 <br>
 <br>
 <br>
+<br>
+<br>
 
 2. Write down the event degree sequence
 <br>
 <br>
 <br>
+<br>
+<br>
 
 3. What is the bipartite graph's sum of degrees?
+<br>
+<br>
 <br>
 <br>
 <br>
