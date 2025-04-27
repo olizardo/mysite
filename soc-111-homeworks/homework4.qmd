@@ -38,6 +38,8 @@ title: "Homework IV: Affiliation Networks"
 
 @fig-grex1 shows a **bipartite graph** corresponding to the attendance of different *people* (the tan square nodes) at different *events* (the red circle nodes).
 
+## From Bipartite Graph to Affiliation Matrix
+
 - Write down the **affiliation matrix** corresponding to the **bipartite graph** shown in @fig-grex1. 
 
 ```{r}
@@ -49,6 +51,57 @@ title: "Homework IV: Affiliation Networks"
         row_spec(1:a, color = "black", extra_css = "border-bottom: 1px solid;") %>% 
         column_spec(1:b+1, color = "black", border_right = TRUE, border_left = TRUE) 
 ```
+
+## Bipartite Node Neighborhoods
+
+1. Write down the neighborhood of node *G*
+<br>
+<br>
+<br>
+
+2. Write down the neighborhood of event *E11*
+<br>
+<br>
+<br>
+
+3. What is the intersection of the neighborhoods nodes *A* and *E*?
+<br>
+<br>
+<br>
+
+4. What is the intersection of the neighborhoods of events *E11* and *E6*?
+<br>
+<br>
+<br>
+
+3. What is the union of the neighborhoods nodes *I* and *C*?
+<br>
+<br>
+<br>
+
+4. What is the union of the neighborhoods of events *E9* and *E5*?
+<br>
+<br>
+<br>
+
+## Bipartite Degrees
+
+1. Write down the person degree sequence
+<br>
+<br>
+<br>
+
+2. Write down the event degree sequence
+<br>
+<br>
+<br>
+
+3. What is the bipartite graph's sum of degrees?
+<br>
+<br>
+<br>
+
+## Bipartite Graph Metrics
 
 1. Which person(s) attend(s) the most events?
 <br>
@@ -80,6 +133,9 @@ title: "Homework IV: Affiliation Networks"
 <br>
 <br>
 
+
+## Matrix Transpose
+
 - Write down the **transpose** of the **affiliation matrix** corresponding to the bipartite graph.
 
 ```{r}
@@ -91,6 +147,8 @@ title: "Homework IV: Affiliation Networks"
         row_spec(1:b, color = "black", extra_css = "border-bottom: 1px solid;") %>% 
         column_spec(1:a+1, color = "black", border_right = TRUE, border_left = TRUE)
 ```
+
+## The Duality of Persons and Groups
 
 Using the information in the previous tables and what you know about **matrix multiplication**:
 
