@@ -1,0 +1,115 @@
+---
+title: "Homework IV: Affiliation Networks"
+---
+
+```{r setup, include=FALSE}
+    knitr::opts_chunk$set(echo = FALSE, message=FALSE, warning=FALSE)
+    require(ggraph)
+    require(tidygraph)
+    require(igraph)
+    require(kableExtra)
+```
+
+```{r}
+#| label: fig-grex1
+#| fig-cap: "A bipartite graph."
+#| fig-cap-location: margin   
+#| fig-height: 12
+#| fig-width: 12
+    set.seed(1234)
+    a <- sample(6:9, 1)
+    b <- sample(12:16, 1) 
+    gr <- sample_bipartite(n1 = a, n2 = b, type = "gnp", p = runif(1, 0.28, 0.30))
+    V(gr)$type <- bipartite_mapping(gr)$type
+    V(gr)$color <- ifelse(V(gr)$type, "red", "tan2")
+    V(gr)$shape <- ifelse(V(gr)$type, "circle", "square")
+    V(gr)$size <- ifelse(V(gr)$type, 18, 16)
+    V(gr)$name <- c(LETTERS[1:a], paste("E", 1:b, sep = ""))
+    E(gr)$color <- "steelblue"
+    p <- ggraph(gr, layout = 'sugiyama') 
+    p <- p + geom_edge_link(color = "steelblue", edge_width = 1.1) 
+    p <- p + geom_node_point(size = V(gr)$size, color = V(gr)$color, shape = V(gr)$shape)
+    p <- p + geom_node_text(aes(label = V(gr)$name), color = "white", 
+                            size = c(rep(9, a), rep(7, b)), 
+                            fontface = "bold")
+    p <- p + theme_graph() 
+    p
+```
+
+@fig-grex1 shows a **bipartite graph** corresponding to the attendance of different *people* (the tan square nodes) at different *events* (the red circle nodes).
+
+- Write down the **affiliation matrix** corresponding to the **bipartite graph** shown in @fig-grex1. 
+
+```{r}
+    A <- as.matrix(as_biadjacency_matrix(gr))
+    kbl(A, format = "html", padding = 1, align = "c") %>% 
+        kable_classic(lightable_options = "striped") %>% 
+        row_spec(1:a, color = "black", extra_css = "border-bottom: 1px solid;") %>% 
+        column_spec(1:b+1, color = "black", border_right = TRUE, border_left = TRUE) 
+```
+
+1. Which person(s) attend(s) the most events?
+<br>
+`r names(which(rowSums(A) == max(rowSums(A))))`
+<br>
+
+1. Which person(s) attend(s) the least events?
+<br>
+`r names(which(rowSums(A) == min(rowSums(A))))`
+<br>
+
+1. What is the average number of events attended by people?
+<br>
+`r mean(rowSums(A))`
+<br>
+
+1. Which is(are) the largest event(s)?
+<br>
+`r names(which(colSums(A) == max(colSums(A))))`
+<br>
+
+1. Which is(are) the smallest event(s)?
+<br>
+`r names(which(colSums(A) == min(colSums(A))))`
+<br>
+
+1. What is the average event size?
+<br>
+`r mean(colSums(A))`
+<br>
+
+- Write down the **transpose** of the **affiliation matrix** corresponding to the bipartite graph.
+
+```{r}
+    At <- t(as.matrix(as_biadjacency_matrix(gr)))
+    kbl(At, format = "html", padding = 1, align = "c") %>% 
+        kable_classic(lightable_options = "striped") %>% 
+        row_spec(1:b, color = "black", extra_css = "border-bottom: 1px solid;") %>% 
+        column_spec(1:a+1, color = "black", border_right = TRUE, border_left = TRUE) 
+```
+
+Using the information in the previous tables and what you know about **matrix multiplication**:
+
+- Write down the entries corresponding to the **co-membership matrix** for the different people.
+
+```{r}
+    c.m <- A %*% t(A)
+    rownames(c.m) <- LETTERS[1:a]
+    colnames(c.m) <- LETTERS[1:a]
+    kbl(c.m, format = "html", padding = 1, align = "c") %>% 
+        kable_classic(lightable_options = "striped") %>% 
+        row_spec(1:a, color = "black", extra_css = "border-bottom: 1px solid;") %>% 
+        column_spec(1:a+1, color = "black", border_right = TRUE, border_left = TRUE)
+```
+
+- Write down the entries corresponding to the **group overlap matrix** for the different events.
+
+```{r}
+    g.o <- t(A) %*% A 
+    rownames(g.o) <- paste("E", 1:b, sep = "")
+    colnames(g.o) <- paste("E", 1:b, sep = "")
+    kbl(g.o, format = "html", padding = 1, align = "c") %>% 
+        kable_classic(lightable_options = "striped") %>% 
+        row_spec(1:b, color = "black", extra_css = "border-bottom: 1px solid;") %>% 
+        column_spec(1:b+1, color = "black", border_right = TRUE, border_left = TRUE)
+```
