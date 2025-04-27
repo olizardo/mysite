@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Omar Lizardo’s Academic Website - Homework IV: Indirect Connections and Matrices</title>
+<title>Omar Lizardo’s Academic Website - Homework IV: Affiliation Networks</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -64,11 +64,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/kePrint-0.0.1/kePrint.js"></script>
 <link href="../site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
 
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="../styles.css">
-<meta property="og:title" content="Omar Lizardo’s Academic Website - Homework IV: Indirect Connections and Matrices">
-<meta property="og:description" content="Consider the graph shown in Figure&nbsp;1:">
+<meta property="og:title" content="Omar Lizardo’s Academic Website - Homework IV: Affiliation Networks">
+<meta property="og:description" content="Figure&nbsp;1 shows a bipartite graph corresponding to the attendance of different people (the tan square nodes) at different events (the red circle nodes).">
 <meta property="og:site-name" content="Omar Lizardo's Academic Website">
 </head>
 
@@ -166,22 +165,14 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#undirected-paths" id="toc-undirected-paths" class="nav-link active" data-scroll-target="#undirected-paths">Undirected Paths</a></li>
-  <li><a href="#directed-paths" id="toc-directed-paths" class="nav-link" data-scroll-target="#directed-paths">Directed Paths</a></li>
-  <li><a href="#matrices" id="toc-matrices" class="nav-link" data-scroll-target="#matrices">Matrices</a></li>
-  </ul>
-<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/olizardo/mysite/blob/main/soc-111-homeworks/homework4.qmd" class="toc-action">View source</a></p></div></div></nav>
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Homework IV: Indirect Connections and Matrices</h1>
+<h1 class="title">Homework IV: Affiliation Networks</h1>
 </div>
 
 
@@ -196,55 +187,207 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="undirected-paths" class="level2">
-<h2 class="anchored" data-anchor-id="undirected-paths">Undirected Paths</h2>
-<p>Consider the graph shown in <a href="#fig-grex1">Figure&nbsp;1</a>:</p>
 <div class="cell" data-fig-cap-location="margin">
 <div class="cell-output-display">
 <div id="fig-grex1" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="homework4_files/figure-html/fig-grex1-1.png" class="img-fluid figure-img" width="1152"></p>
-<p></p><figcaption class="figure-caption">Figure&nbsp;1: An undirected graph.</figcaption><p></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;1: A bipartite graph.</figcaption><p></p>
 </figure>
 </div>
 </div>
 </div>
-<ol type="1">
-<li><p>Write down <em>all</em> the <strong>paths</strong> of length four (<span class="math inline">\(l = 4\)</span>) connecting node <em>E</em> and node <em>C</em>: <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br></p></li>
-<li><p>Write down <em>all</em> the <strong>paths</strong> of length two (<span class="math inline">\(l = 2\)</span>) featuring node <em>F</em> as the <strong>inner node</strong>: <br> <br> <br> <br> <br> <br> <br> <br> <br></p></li>
-<li><p>Write down <em>all</em> the <strong>shortest paths</strong> connecting nodes <em>A</em> and <em>D</em>: <br> <br> <br> <br> <br> <br></p></li>
-<li><p>Write down <em>all</em> the <strong>cycles</strong> of length <em>four</em> that start and end with node <em>G</em>: <br> <br> <br> <br> <br> <br> <br> <br> <br></p></li>
-</ol>
-</section>
-<section id="directed-paths" class="level2">
-<h2 class="anchored" data-anchor-id="directed-paths">Directed Paths</h2>
-<p>Consider the graph shown in <a href="#fig-grex2">Figure&nbsp;2</a>:</p>
-<div class="cell" data-fig-cap-location="margin">
-<div class="cell-output-display">
-<div id="fig-grex2" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="homework4_files/figure-html/fig-grex2-1.png" class="img-fluid figure-img" width="1536"></p>
-<p></p><figcaption class="figure-caption">Figure&nbsp;2: A directed graph.</figcaption><p></p>
-</figure>
-</div>
-</div>
-</div>
-<ol type="1">
-<li><p>Write down <em>all</em> the <strong>directed path(s)</strong> of length five (<span class="math inline">\(l = 5\)</span>) going <em>from</em> node <em>K</em> <em>to</em> node <em>C</em>: <br> <br> <br> <br> <br> <br></p></li>
-<li><p>What is the length of the <strong>shortest directed path(s)</strong> going <em>from</em> node <em>L</em> <em>to</em> node <em>I</em>? <br> <br> <br></p></li>
-<li><p>If <em>E</em> wanted to send a message to <em>D</em> in the most efficient way, how many intermediaries would <em>E</em> have to use? <br> <br> <br></p></li>
-<li><p>Write down <em>all</em> the directed <strong>cycles</strong> of length four (<span class="math inline">\(l = 4\)</span>) that start and end with node <em>D</em>: <br> <br> <br> <br> <br> <br> <br> <br> <br> <br></p></li>
-</ol>
-</section>
-<section id="matrices" class="level2">
-<h2 class="anchored" data-anchor-id="matrices">Matrices</h2>
+<p><a href="#fig-grex1">Figure&nbsp;1</a> shows a <strong>bipartite graph</strong> corresponding to the attendance of different <em>people</em> (the tan square nodes) at different <em>events</em> (the red circle nodes).</p>
 <ul>
-<li>In the matrix below, write down the cell entries <strong>geodesic distance matrix</strong> corresponding to the graph shown in <a href="#fig-grex1">Figure&nbsp;1</a>:</li>
+<li>Write down the <strong>affiliation matrix</strong> corresponding to the <strong>bipartite graph</strong> shown in <a href="#fig-grex1">Figure&nbsp;1</a>.</li>
 </ul>
 <div class="cell">
 <div class="cell-output-display">
 
-<table class="table" style="margin-left: auto; margin-right: auto;">
+<table class=" lightable-classic lightable-striped" style="font-family: &quot;Arial Narrow&quot;, &quot;Source Sans Pro&quot;, sans-serif; margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;">   </th>
+   <th style="text-align:center;"> E1 </th>
+   <th style="text-align:center;"> E2 </th>
+   <th style="text-align:center;"> E3 </th>
+   <th style="text-align:center;"> E4 </th>
+   <th style="text-align:center;"> E5 </th>
+   <th style="text-align:center;"> E6 </th>
+   <th style="text-align:center;"> E7 </th>
+   <th style="text-align:center;"> E8 </th>
+   <th style="text-align:center;"> E9 </th>
+   <th style="text-align:center;"> E10 </th>
+   <th style="text-align:center;"> E11 </th>
+   <th style="text-align:center;"> E12 </th>
+   <th style="text-align:center;"> E13 </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> A </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> B </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> C </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> D </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> E </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> F </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> G </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> H </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> I </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+</div>
+<ol type="1">
+<li><p>Which person(s) attend(s) the most events? <br> <br> <br></p></li>
+<li><p>Which person(s) attend(s) the least events? <br> <br> <br></p></li>
+<li><p>What is the average number of events attended by people? <br> <br> <br></p></li>
+<li><p>Which is(are) the largest event(s)? <br> <br> <br></p></li>
+<li><p>Which is(are) the smallest event(s)? <br> <br> <br></p></li>
+<li><p>What is the average event size? <br> <br> <br></p></li>
+</ol>
+<ul>
+<li>Write down the <strong>transpose</strong> of the <strong>affiliation matrix</strong> corresponding to the bipartite graph.</li>
+</ul>
+<div class="cell">
+<div class="cell-output-display">
+
+<table class=" lightable-classic lightable-striped" style="font-family: &quot;Arial Narrow&quot;, &quot;Source Sans Pro&quot;, sans-serif; margin-left: auto; margin-right: auto;">
  <thead>
   <tr>
    <th style="text-align:left;">   </th>
@@ -261,270 +404,296 @@ ul.task-list li input[type="checkbox"] {
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> A </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> ---- </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-bottom: 1px solid">  </td>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> E1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
   </tr>
   <tr>
-   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> B </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> ---- </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-bottom: 1px solid">  </td>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> E2 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
   </tr>
   <tr>
-   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> C </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> ---- </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-bottom: 1px solid">  </td>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> E3 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
   </tr>
   <tr>
-   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> D </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> ---- </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-bottom: 1px solid">  </td>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> E4 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
   </tr>
   <tr>
-   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> E </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> ---- </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-bottom: 1px solid">  </td>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> E5 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
   </tr>
   <tr>
-   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> F </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> ---- </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-bottom: 1px solid">  </td>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> E6 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
   </tr>
   <tr>
-   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> G </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> ---- </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-bottom: 1px solid">  </td>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> E7 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
   </tr>
   <tr>
-   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> H </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> ---- </td>
-   <td style="text-align:center;border-bottom: 1px solid">  </td>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> E8 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
   </tr>
   <tr>
-   <td style="text-align:left;font-weight: bold;"> I </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;">  </td>
-   <td style="text-align:center;"> ---- </td>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> E9 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> E10 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> E11 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> E12 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> E13 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
   </tr>
 </tbody>
 </table>
 
 </div>
 </div>
+<p>Using the information in the previous tables and what you know about <strong>matrix multiplication</strong>:</p>
 <ul>
-<li>In the matrix below, write down the cell entries for the <strong>reachability matrix</strong> corresponding to the graph shown in <a href="#fig-grex2">Figure&nbsp;2</a>:</li>
+<li>Write down the entries corresponding to the <strong>co-membership matrix</strong> for the different people.</li>
 </ul>
 <div class="cell">
 <div class="cell-output-display">
 
-<table class="table" style="margin-left: auto; margin-right: auto;">
+<table class=" lightable-classic lightable-striped" style="font-family: &quot;Arial Narrow&quot;, &quot;Source Sans Pro&quot;, sans-serif; margin-left: auto; margin-right: auto;">
  <thead>
   <tr>
    <th style="text-align:left;">   </th>
-   <th style="text-align:center;"> H </th>
-   <th style="text-align:center;"> G </th>
-   <th style="text-align:center;"> C </th>
-   <th style="text-align:center;"> E </th>
-   <th style="text-align:center;"> L </th>
-   <th style="text-align:center;"> D </th>
-   <th style="text-align:center;"> F </th>
-   <th style="text-align:center;"> K </th>
-   <th style="text-align:center;"> I </th>
+   <th style="text-align:center;"> A </th>
    <th style="text-align:center;"> B </th>
+   <th style="text-align:center;"> C </th>
+   <th style="text-align:center;"> D </th>
+   <th style="text-align:center;"> E </th>
+   <th style="text-align:center;"> F </th>
+   <th style="text-align:center;"> G </th>
+   <th style="text-align:center;"> H </th>
+   <th style="text-align:center;"> I </th>
   </tr>
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> H </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> ---- </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-bottom: 1px solid">  </td>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> A </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
   </tr>
   <tr>
-   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> G </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> ---- </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-bottom: 1px solid">  </td>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> B </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
   </tr>
   <tr>
-   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> C </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> ---- </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-bottom: 1px solid">  </td>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> C </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
   </tr>
   <tr>
-   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> E </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> ---- </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-bottom: 1px solid">  </td>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> D </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
   </tr>
   <tr>
-   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> L </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> ---- </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-bottom: 1px solid">  </td>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> E </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
   </tr>
   <tr>
-   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> D </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> ---- </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-bottom: 1px solid">  </td>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> F </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
   </tr>
   <tr>
-   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> F </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> ---- </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-bottom: 1px solid">  </td>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> G </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
   </tr>
   <tr>
-   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> K </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> ---- </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-bottom: 1px solid">  </td>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> H </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
   </tr>
   <tr>
-   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> I </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> ---- </td>
-   <td style="text-align:center;border-bottom: 1px solid">  </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;font-weight: bold;"> B </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;">  </td>
-   <td style="text-align:center;"> ---- </td>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> I </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
   </tr>
 </tbody>
 </table>
@@ -532,169 +701,246 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <ul>
-<li>In the matrix below, write down the cell entries <strong>geodesic distance matrix</strong> corresponding to the graph shown in <a href="#fig-grex2">Figure&nbsp;2</a>:</li>
+<li>Write down the entries corresponding to the <strong>group overlap matrix</strong> for the different events.</li>
 </ul>
 <div class="cell">
 <div class="cell-output-display">
 
-<table class="table" style="margin-left: auto; margin-right: auto;">
+<table class=" lightable-classic lightable-striped" style="font-family: &quot;Arial Narrow&quot;, &quot;Source Sans Pro&quot;, sans-serif; margin-left: auto; margin-right: auto;">
  <thead>
   <tr>
    <th style="text-align:left;">   </th>
-   <th style="text-align:center;"> H </th>
-   <th style="text-align:center;"> G </th>
-   <th style="text-align:center;"> C </th>
-   <th style="text-align:center;"> E </th>
-   <th style="text-align:center;"> L </th>
-   <th style="text-align:center;"> D </th>
-   <th style="text-align:center;"> F </th>
-   <th style="text-align:center;"> K </th>
-   <th style="text-align:center;"> I </th>
-   <th style="text-align:center;"> B </th>
+   <th style="text-align:center;"> E1 </th>
+   <th style="text-align:center;"> E2 </th>
+   <th style="text-align:center;"> E3 </th>
+   <th style="text-align:center;"> E4 </th>
+   <th style="text-align:center;"> E5 </th>
+   <th style="text-align:center;"> E6 </th>
+   <th style="text-align:center;"> E7 </th>
+   <th style="text-align:center;"> E8 </th>
+   <th style="text-align:center;"> E9 </th>
+   <th style="text-align:center;"> E10 </th>
+   <th style="text-align:center;"> E11 </th>
+   <th style="text-align:center;"> E12 </th>
+   <th style="text-align:center;"> E13 </th>
   </tr>
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> H </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> ---- </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-bottom: 1px solid">  </td>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> E1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
   </tr>
   <tr>
-   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> G </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> ---- </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-bottom: 1px solid">  </td>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> E2 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
   </tr>
   <tr>
-   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> C </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> ---- </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-bottom: 1px solid">  </td>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> E3 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
   </tr>
   <tr>
-   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> E </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> ---- </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-bottom: 1px solid">  </td>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> E4 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
   </tr>
   <tr>
-   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> L </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> ---- </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-bottom: 1px solid">  </td>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> E5 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
   </tr>
   <tr>
-   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> D </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> ---- </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-bottom: 1px solid">  </td>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> E6 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
   </tr>
   <tr>
-   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> F </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> ---- </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-bottom: 1px solid">  </td>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> E7 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
   </tr>
   <tr>
-   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> K </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> ---- </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-bottom: 1px solid">  </td>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> E8 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
   </tr>
   <tr>
-   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> I </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> ---- </td>
-   <td style="text-align:center;border-bottom: 1px solid">  </td>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> E9 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
   </tr>
   <tr>
-   <td style="text-align:left;font-weight: bold;"> B </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;">  </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;">  </td>
-   <td style="text-align:center;"> ---- </td>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> E10 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> E11 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> E12 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> E13 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;">  </td>
   </tr>
 </tbody>
 </table>
 
 </div>
 </div>
-<ul>
-<li>What is the <strong>diameter</strong> of the graph shown in <a href="#fig-grex1">Figure&nbsp;1</a>? <br> <br> <br></li>
-</ul>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
