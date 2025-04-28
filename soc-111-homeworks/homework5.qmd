@@ -1,0 +1,172 @@
+---
+title: "Homework V: Centrality"
+---
+
+```{r setup, include=FALSE}
+    knitr::opts_chunk$set(echo = FALSE, message=FALSE, warning=FALSE)
+    require(ggraph)
+    require(kableExtra)
+    require(tidygraph)
+    require(igraph)
+```
+
+```{r}
+#| label: fig-grex1
+#| fig-cap: "An undirected graph."
+#| fig-cap-location: margin   
+#| fig-height: 12
+#| fig-width: 12
+    set.seed(123)
+    w <- 0
+    n <- 12
+    while (w == 0) {
+      d <- sample(1:n, n, replace = TRUE)
+      w <- as.numeric(is_graphical(d, allowed.edge.types = "simple"))
+      }    
+    gr <- sample_degseq(d, method = "configuration")
+    gr <- simplify(gr)
+    V(gr)$name <- LETTERS[1:length(d)]
+    p <- ggraph(gr, layout = 'auto') 
+    p <- p + geom_edge_link(color = "steelblue", width = 1.25) 
+    p <- p + geom_node_point(aes(x = x, y = y), size = 22, color = "tan2") 
+    p <- p + geom_node_text(aes(label = name), size = 12, color = "white")
+    p <- p + theme_graph() 
+    p
+```
+
+## Degree Centrality in Undirected Graphs
+
+Rank all the nodes in the graph shown in @fig-grex2 by their **degree centrality**.
+
+```{r}
+    a <- matrix(" ", nrow = n, ncol = 2)
+    colnames(a) <- c("Node", "Degree")
+    kable(a, format = "html", align = "c", full_width = F)  %>% 
+         column_spec(1, bold = TRUE) %>% 
+         column_spec (1:2, border_left = T, border_right = T) %>%
+         row_spec(1:n, extra_css = "border-bottom: 1px solid") %>%
+         kable_styling()
+
+```
+
+```{r}
+#| label: fig-grex2
+#| fig-cap: "A directed graph."
+#| fig-cap-location: margin   
+#| fig-height: 10
+#| fig-width: 12
+    set.seed(123)
+    w <- 0
+    n <- 12
+    a <- n - 4
+    b <- n - 6
+    while (w == 0) {
+      d1 <- sample(1:a, n, replace = TRUE)
+      d2 <- sample(1:b, n, replace = TRUE)
+      w <- as.numeric(is_graphical(d1, d2, allowed.edge.types = "simple"))
+    }    
+    gr2 <- sample_degseq(d1, d2, method = "configuration")
+    gr2 <- simplify(gr2)
+    V(gr2)$name <- LETTERS[1:length(d1)]
+    gr2 <- gr2 + edge(2,6)
+    gr2 <- gr2 - edge("K|F")
+    gr2 <- gr2 - edge("L|B")
+    p <- ggraph(gr2, layout = 'kk') 
+    p <- p + geom_edge_parallel(color = "steelblue", edge_width = 1.25,
+                            arrow = arrow(length = unit(7, 'mm')),
+                            end_cap = circle(10, 'mm'), 
+                            sep = unit(8, 'mm'))    
+    p <- p + geom_node_point(aes(x = x, y = y), size = 20, color = "tan2") 
+    p <- p + geom_node_text(aes(label = name), size = 10, color = "white")
+    p <- p + theme_graph() 
+    p
+```
+
+Rank all the nodes in the graph shown in @fig-grex1 by their **outdegree centrality** and **indegree centrality**.
+
+```{r}
+    a <- matrix(" ", nrow = n, ncol = 4)
+    colnames(a) <- c("Node", "Outdegree", "Node", "Indegree")
+    kable(a, format = "html", align = "c", full_width = F)  %>% 
+         column_spec(1, bold = TRUE) %>% 
+         column_spec (1:4, border_left = T, border_right = T) %>%
+         row_spec(1:n, extra_css = "border-bottom: 1px solid") %>%
+         kable_styling()
+
+```
+
+## Closeness Centrality in Directed Graphs
+- In the matrix below, write down the cell entries **geodesic distance matrix** corresponding to the graph shown in @fig-grex2:
+
+```{r}
+     b <- matrix(" ", nrow = n, ncol = n)
+     rownames(b) <- LETTERS[1:length(d1)]
+     colnames(b) <- LETTERS[1:length(d1)]
+     diag(b) <- "----"
+     kbl(b, format = "html", align = "c")  %>% 
+         column_spec(1, bold = TRUE) %>% 
+         column_spec (1:n+1, border_left = T, border_right = T) %>%
+         row_spec(1:n, extra_css = "border-bottom: 1px solid") %>%
+         kable_styling()
+```
+
+Using the information in the above matrix, rank all the nodes in the graph shown in @fig-grex2 by their **closeness centrality**.
+
+```{r}
+    a <- matrix(" ", nrow = n, ncol = 2)
+    colnames(a) <- c("Node", "Closeness")
+    kable(a, format = "html", align = "c", full_width = F)  %>% 
+         column_spec(1, bold = TRUE) %>% 
+         column_spec (1:2, border_left = T, border_right = T) %>%
+         row_spec(1:n, extra_css = "border-bottom: 1px solid") %>%
+         kable_styling()
+
+```
+
+## Relative Betweenness Centrality
+
+Go back to @fig-grex1. 
+
+What is the **relative betweenness centrality** of node *I* with respect to nodes *J* and *C*? (show your work)
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+Go back to @fig-grex2. 
+
+What is the **relative betweenness centrality** of node *H* with respect to nodes *I* and *E*? (show your work)
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+## Degree Centralization
+Compute the **degree centralization** of the graph shown in @fig-grex1.
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
