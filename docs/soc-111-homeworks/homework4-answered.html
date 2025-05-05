@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Omar Lizardo’s Academic Website - Homework IV: Indirect Connections and Matrices</title>
+<title>Omar Lizardo’s Academic Website - Homework IV: Affiliation Networks</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -64,11 +64,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/kePrint-0.0.1/kePrint.js"></script>
 <link href="../site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
 
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="../styles.css">
-<meta property="og:title" content="Omar Lizardo’s Academic Website - Homework IV: Indirect Connections and Matrices">
-<meta property="og:description" content="Consider the graph shown in Figure 1:">
+<meta property="og:title" content="Omar Lizardo’s Academic Website - Homework IV: Affiliation Networks">
+<meta property="og:description" content="Figure&nbsp;1 shows a bipartite graph corresponding to the attendance of different people (the tan square nodes) at different events (the red circle nodes).">
 <meta property="og:site-name" content="Omar Lizardo's Academic Website">
 </head>
 
@@ -170,9 +169,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#indirect-connections" id="toc-indirect-connections" class="nav-link active" data-scroll-target="#indirect-connections">Indirect Connections</a></li>
-  <li><a href="#directed-paths" id="toc-directed-paths" class="nav-link" data-scroll-target="#directed-paths">Directed Paths</a></li>
-  <li><a href="#matrices" id="toc-matrices" class="nav-link" data-scroll-target="#matrices">Matrices</a></li>
+  <li><a href="#from-bipartite-graph-to-affiliation-matrix" id="toc-from-bipartite-graph-to-affiliation-matrix" class="nav-link active" data-scroll-target="#from-bipartite-graph-to-affiliation-matrix">From Bipartite Graph to Affiliation Matrix</a></li>
+  <li><a href="#bipartite-node-neighborhoods" id="toc-bipartite-node-neighborhoods" class="nav-link" data-scroll-target="#bipartite-node-neighborhoods">Bipartite Node Neighborhoods</a></li>
+  <li><a href="#bipartite-degrees" id="toc-bipartite-degrees" class="nav-link" data-scroll-target="#bipartite-degrees">Bipartite Degrees</a></li>
+  <li><a href="#bipartite-graph-metrics" id="toc-bipartite-graph-metrics" class="nav-link" data-scroll-target="#bipartite-graph-metrics">Bipartite Graph Metrics</a></li>
   </ul>
 <div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/olizardo/mysite/blob/main/soc-111-homeworks/homework4-answered.qmd" class="toc-action">View source</a></p></div></div></nav>
     </div>
@@ -181,7 +181,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Homework IV: Indirect Connections and Matrices</h1>
+<h1 class="title">Homework IV: Affiliation Networks</h1>
 </div>
 
 
@@ -196,599 +196,188 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="indirect-connections" class="level2">
-<h2 class="anchored" data-anchor-id="indirect-connections">Indirect Connections</h2>
-<p>Consider the graph shown in Figure 1:</p>
 <div class="cell" data-fig-cap-location="margin">
 <div class="cell-output-display">
 <div id="fig-grex1" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
 <p><img src="homework4-answered_files/figure-html/fig-grex1-1.png" class="img-fluid figure-img" width="1152"></p>
-<p></p><figcaption class="figure-caption">Figure&nbsp;1: An undirected graph.</figcaption><p></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;1: A bipartite graph.</figcaption><p></p>
 </figure>
 </div>
 </div>
 </div>
+<p><a href="#fig-grex1">Figure&nbsp;1</a> shows a <strong>bipartite graph</strong> corresponding to the attendance of different <em>people</em> (the tan square nodes) at different <em>events</em> (the red circle nodes).</p>
+<section id="from-bipartite-graph-to-affiliation-matrix" class="level2">
+<h2 class="anchored" data-anchor-id="from-bipartite-graph-to-affiliation-matrix">From Bipartite Graph to Affiliation Matrix</h2>
 <ul>
-<li>Write down <em>all</em> the <strong>paths</strong> of length four (<span class="math inline">\(l = 4\)</span>) connecting node <em>G</em> and node <em>F</em>: <br></li>
+<li>Write down the <strong>affiliation matrix</strong> corresponding to the <strong>bipartite graph</strong> shown in <a href="#fig-grex1">Figure&nbsp;1</a>.</li>
 </ul>
 <div class="cell">
 <div class="cell-output-display">
 
-<table>
+<table class=" lightable-classic lightable-striped" style="font-family: &quot;Arial Narrow&quot;, &quot;Source Sans Pro&quot;, sans-serif; margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;">   </th>
+   <th style="text-align:center;"> E1 </th>
+   <th style="text-align:center;"> E2 </th>
+   <th style="text-align:center;"> E3 </th>
+   <th style="text-align:center;"> E4 </th>
+   <th style="text-align:center;"> E5 </th>
+   <th style="text-align:center;"> E6 </th>
+   <th style="text-align:center;"> E7 </th>
+   <th style="text-align:center;"> E8 </th>
+   <th style="text-align:center;"> E9 </th>
+   <th style="text-align:center;"> E10 </th>
+   <th style="text-align:center;"> E11 </th>
+   <th style="text-align:center;"> E12 </th>
+   <th style="text-align:center;"> E13 </th>
+  </tr>
+ </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;"> G </td>
-   <td style="text-align:left;"> C </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> E </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> G </td>
-   <td style="text-align:left;"> C </td>
-   <td style="text-align:left;"> B </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> H </td>
-   <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> G </td>
-   <td style="text-align:left;"> E </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> C </td>
-   <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> G </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> E </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> H </td>
-   <td style="text-align:left;"> F </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> G </td>
-   <td style="text-align:left;"> H </td>
-   <td style="text-align:left;"> A </td>
-   <td style="text-align:left;"> B </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> G </td>
-   <td style="text-align:left;"> H </td>
-   <td style="text-align:left;"> B </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> C </td>
-   <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> G </td>
-   <td style="text-align:left;"> H </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> E </td>
-   <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> G </td>
-  </tr>
-</tbody>
-</table>
-
-</div>
-</div>
-<ul>
-<li>Write down <em>all</em> the <strong>paths</strong> of length two (<span class="math inline">\(l = 2\)</span>) featuring node <em>B</em> as the <strong>inner node</strong>: <br></li>
-</ul>
-<div class="cell">
-<div class="cell-output-display">
-
-<table>
-<tbody>
-  <tr>
-   <td style="text-align:left;"> D </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> C </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> C </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> G </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> E </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> A </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> H </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> H </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> G </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> I </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> D </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> C </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> C </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> G </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> E </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> A </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> H </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> H </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> G </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> I </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> D </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> C </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> C </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> G </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> E </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> A </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> H </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> H </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> G </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> I </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> D </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> C </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> C </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> G </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> E </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> A </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> H </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> H </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> G </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> I </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> D </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> C </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> C </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> G </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> E </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> A </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> H </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> H </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> G </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> I </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> D </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> C </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> C </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> G </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> E </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> A </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> H </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> H </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> G </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> I </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> D </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> C </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> C </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> G </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> E </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> A </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> H </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> H </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> G </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> I </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> D </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> C </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> C </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> G </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> E </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> A </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> H </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> H </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> G </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> I </td>
-  </tr>
-</tbody>
-</table>
-
-</div>
-</div>
-<ul>
-<li>Write down all the <strong>shortest paths</strong> connecting nodes <em>G</em> and <em>I</em>: <br></li>
-</ul>
-<div class="cell">
-<div class="cell-output-display">
-
-<table>
-<tbody>
-  <tr>
-   <td style="text-align:left;"> G </td>
-   <td style="text-align:left;"> H </td>
-   <td style="text-align:left;"> A </td>
-   <td style="text-align:left;"> I </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> G </td>
-   <td style="text-align:left;"> C </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> I </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> G </td>
-   <td style="text-align:left;"> E </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> I </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> G </td>
-   <td style="text-align:left;"> H </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> I </td>
-  </tr>
-</tbody>
-</table>
-
-</div>
-</div>
-<ul>
-<li>Write down one <strong>cycle</strong> of length six that starts and ends with node <em>C</em>: <br></li>
-</ul>
-<div class="cell">
-<div class="cell-output-display">
-
-<table>
-<tbody>
-  <tr>
-   <td style="text-align:left;"> C </td>
-   <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> A </td>
-   <td style="text-align:left;"> H </td>
-   <td style="text-align:left;"> G </td>
-   <td style="text-align:left;"> C </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> C </td>
-   <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> E </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> H </td>
-   <td style="text-align:left;"> G </td>
-   <td style="text-align:left;"> C </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> C </td>
-   <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> E </td>
-   <td style="text-align:left;"> G </td>
-   <td style="text-align:left;"> H </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> C </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> C </td>
-   <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> H </td>
-   <td style="text-align:left;"> A </td>
-   <td style="text-align:left;"> I </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> C </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> C </td>
-   <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> H </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> E </td>
-   <td style="text-align:left;"> G </td>
-   <td style="text-align:left;"> C </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> C </td>
-   <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> H </td>
-   <td style="text-align:left;"> G </td>
-   <td style="text-align:left;"> E </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> C </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> C </td>
-   <td style="text-align:left;"> D </td>
-   <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> E </td>
-   <td style="text-align:left;"> G </td>
-   <td style="text-align:left;"> C </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> C </td>
-   <td style="text-align:left;"> D </td>
-   <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> H </td>
-   <td style="text-align:left;"> G </td>
-   <td style="text-align:left;"> C </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> C </td>
-   <td style="text-align:left;"> D </td>
-   <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> H </td>
-   <td style="text-align:left;"> A </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> C </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> C </td>
-   <td style="text-align:left;"> G </td>
-   <td style="text-align:left;"> E </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> D </td>
-   <td style="text-align:left;"> C </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> C </td>
-   <td style="text-align:left;"> G </td>
-   <td style="text-align:left;"> E </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> H </td>
-   <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> C </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> C </td>
-   <td style="text-align:left;"> G </td>
-   <td style="text-align:left;"> E </td>
-   <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> H </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> C </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> C </td>
-   <td style="text-align:left;"> G </td>
-   <td style="text-align:left;"> H </td>
-   <td style="text-align:left;"> A </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> C </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> C </td>
-   <td style="text-align:left;"> G </td>
-   <td style="text-align:left;"> H </td>
-   <td style="text-align:left;"> A </td>
-   <td style="text-align:left;"> I </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> C </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> C </td>
-   <td style="text-align:left;"> G </td>
-   <td style="text-align:left;"> H </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> E </td>
-   <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> C </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> C </td>
-   <td style="text-align:left;"> G </td>
-   <td style="text-align:left;"> H </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> D </td>
-   <td style="text-align:left;"> C </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> C </td>
-   <td style="text-align:left;"> G </td>
-   <td style="text-align:left;"> H </td>
-   <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> E </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> C </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> C </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> A </td>
-   <td style="text-align:left;"> H </td>
-   <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> D </td>
-   <td style="text-align:left;"> C </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> C </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> E </td>
-   <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> H </td>
-   <td style="text-align:left;"> G </td>
-   <td style="text-align:left;"> C </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> C </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> E </td>
-   <td style="text-align:left;"> G </td>
-   <td style="text-align:left;"> H </td>
-   <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> C </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> C </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> H </td>
-   <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> E </td>
-   <td style="text-align:left;"> G </td>
-   <td style="text-align:left;"> C </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> C </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> H </td>
-   <td style="text-align:left;"> G </td>
-   <td style="text-align:left;"> E </td>
-   <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> C </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> C </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> I </td>
-   <td style="text-align:left;"> A </td>
-   <td style="text-align:left;"> H </td>
-   <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> C </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> C </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> I </td>
-   <td style="text-align:left;"> A </td>
-   <td style="text-align:left;"> H </td>
-   <td style="text-align:left;"> G </td>
-   <td style="text-align:left;"> C </td>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> A </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> B </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> C </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> D </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> E </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> F </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> G </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> H </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> I </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
   </tr>
 </tbody>
 </table>
@@ -796,111 +385,116 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </section>
-<section id="directed-paths" class="level2">
-<h2 class="anchored" data-anchor-id="directed-paths">Directed Paths</h2>
-<p>Consider the graph shown in Figure 2:</p>
-<div class="cell" data-fig-cap-location="margin">
-<div class="cell-output-display">
-<div id="fig-grex2" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="homework4-answered_files/figure-html/fig-grex2-1.png" class="img-fluid figure-img" width="1152"></p>
-<p></p><figcaption class="figure-caption">Figure&nbsp;2: A directed graph.</figcaption><p></p>
-</figure>
-</div>
-</div>
-</div>
-<ul>
-<li>Write down <em>all</em> the <strong>directed path(s)</strong> of length four (<span class="math inline">\(l = 4\)</span>) going <em>from</em> node <em>G</em> <em>to</em> node <em>B</em>: <br></li>
-</ul>
-<div class="cell">
-<div class="cell-output-display">
-
-<table>
-<tbody>
-  <tr>
-   <td style="text-align:left;"> G </td>
-   <td style="text-align:left;"> A </td>
-   <td style="text-align:left;"> C </td>
-   <td style="text-align:left;"> F </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> G </td>
-   <td style="text-align:left;"> E </td>
-   <td style="text-align:left;"> C </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> G </td>
-   <td style="text-align:left;"> A </td>
-  </tr>
-</tbody>
-</table>
-
-</div>
-</div>
-<ul>
-<li>What is the length of the <strong>shortest directed path(s)</strong> going <em>from</em> node <em>A</em> <em>to</em> node <em>C</em>? <br></li>
-</ul>
-<div class="cell">
-
-</div>
-<p>A: 3</p>
-<ul>
-<li>If <em>B</em> wanted to send a message to <em>H</em> in the most efficient way, how many intermediaries would <em>B</em> have to use? <br></li>
-</ul>
-<div class="cell">
-
-</div>
-<p>A: 4</p>
-<ul>
-<li>Write down a directed <strong>cycle</strong> of length five (<span class="math inline">\(l = 5\)</span>) starts and ends with node <em>D</em>: <br></li>
-</ul>
-<div class="cell">
-<div class="cell-output-display">
-
-<table>
-<tbody>
-  <tr>
-   <td style="text-align:left;"> D </td>
-   <td style="text-align:left;"> G </td>
-   <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> I </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> D </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> D </td>
-   <td style="text-align:left;"> G </td>
-   <td style="text-align:left;"> F </td>
-   <td style="text-align:left;"> I </td>
-   <td style="text-align:left;"> A </td>
-   <td style="text-align:left;"> D </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;"> D </td>
-   <td style="text-align:left;"> G </td>
-   <td style="text-align:left;"> A </td>
-   <td style="text-align:left;"> I </td>
-   <td style="text-align:left;"> B </td>
-   <td style="text-align:left;"> D </td>
-  </tr>
-</tbody>
-</table>
-
-</div>
-</div>
+<section id="bipartite-node-neighborhoods" class="level2">
+<h2 class="anchored" data-anchor-id="bipartite-node-neighborhoods">Bipartite Node Neighborhoods</h2>
+<ol type="1">
+<li><p>Write down the neighborhood of node <em>G</em> <br> E2, E5, E6, E10, E11 <br></p></li>
+<li><p>Write down the neighborhood of event <em>E11</em> <br> A, C, D, E, G, H <br></p></li>
+<li><p>What is the intersection of the neighborhoods nodes <em>A</em> and <em>E</em>? <br> E1, E2, E11, E13 <br></p></li>
+<li><p>What is the intersection of the neighborhoods of events <em>E11</em> and <em>E6</em>? <br> C, D, E, G <br></p></li>
+<li><p>What is the union of the neighborhoods nodes <em>I</em> and <em>C</em>? <br> E4, E6, E9, E1, E11 <br></p></li>
+<li><p>What is the union of the neighborhoods of events <em>E9</em> and <em>E5</em>? <br> H, I, G <br></p></li>
+</ol>
 </section>
-<section id="matrices" class="level2">
-<h2 class="anchored" data-anchor-id="matrices">Matrices</h2>
+<section id="bipartite-degrees" class="level2">
+<h2 class="anchored" data-anchor-id="bipartite-degrees">Bipartite Degrees</h2>
+<ol type="1">
+<li>Write down the person degree sequence <br> <br></li>
+</ol>
+<table class="table">
+<thead>
+<tr class="header">
+<th style="text-align: right;">E</th>
+<th style="text-align: right;">A</th>
+<th style="text-align: right;">G</th>
+<th style="text-align: right;">D</th>
+<th style="text-align: right;">H</th>
+<th style="text-align: right;">B</th>
+<th style="text-align: right;">C</th>
+<th style="text-align: right;">I</th>
+<th style="text-align: right;">F</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
+</tr>
+</tbody>
+</table>
+<p><br> <br></p>
+<ol type="1">
+<li>Write down the event degree sequence <br> <br></li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-sm table-striped">
+<thead>
+<tr class="header">
+<th style="text-align: right;">E6</th>
+<th style="text-align: right;">E11</th>
+<th style="text-align: right;">E1</th>
+<th style="text-align: right;">E2</th>
+<th style="text-align: right;">E3</th>
+<th style="text-align: right;">E4</th>
+<th style="text-align: right;">E10</th>
+<th style="text-align: right;">E12</th>
+<th style="text-align: right;">E8</th>
+<th style="text-align: right;">E9</th>
+<th style="text-align: right;">E13</th>
+<th style="text-align: right;">E5</th>
+<th style="text-align: right;">E7</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p><br> <br></p>
+<ol type="1">
+<li>What is the bipartite graph’s sum of degrees? <br> <br> 38 <br> <br></li>
+</ol>
+</section>
+<section id="bipartite-graph-metrics" class="level2">
+<h2 class="anchored" data-anchor-id="bipartite-graph-metrics">Bipartite Graph Metrics</h2>
+<ol type="1">
+<li><p>Which person(s) attend(s) the most events? <br> E <br></p></li>
+<li><p>Which person(s) attend(s) the least events? <br> F <br></p></li>
+<li><p>What is the average number of events attended by people? <br> 4.222 <br></p></li>
+<li><p>Which is(are) the largest event(s)? <br> E6, E11 <br></p></li>
+<li><p>Which is(are) the smallest event(s)? <br> E5, E7 <br></p></li>
+<li><p>What is the average event size? <br> 2.923 <br></p></li>
+</ol>
 <ul>
-<li>In the matrix below, write down the cell entries for the <strong>adjacency matrix</strong> corresponding to the graph shown in Figure 2:</li>
+<li>Write down the <strong>transpose</strong> of the <strong>affiliation matrix</strong> corresponding to the bipartite graph.</li>
 </ul>
 <div class="cell">
 <div class="cell-output-display">
 
-<table class="table" style="margin-left: auto; margin-right: auto;">
+<table class=" lightable-classic lightable-striped" style="font-family: &quot;Arial Narrow&quot;, &quot;Source Sans Pro&quot;, sans-serif; margin-left: auto; margin-right: auto;">
  <thead>
   <tr>
    <th style="text-align:left;">   </th>
@@ -917,125 +511,174 @@ ul.task-list li input[type="checkbox"] {
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> A </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> -- </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> E1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
   </tr>
   <tr>
-   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> B </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> -- </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> E2 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
   </tr>
   <tr>
-   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> C </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> -- </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> E3 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
   </tr>
   <tr>
-   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> D </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> -- </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> E4 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
   </tr>
   <tr>
-   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> E </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> -- </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> E5 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
   </tr>
   <tr>
-   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> F </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> -- </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> E6 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
   </tr>
   <tr>
-   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> G </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> -- </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> E7 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
   </tr>
   <tr>
-   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> H </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> -- </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> E8 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
   </tr>
   <tr>
-   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> I </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> -- </td>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> E9 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> E10 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> E11 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> E12 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> E13 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
   </tr>
 </tbody>
 </table>
 
 </div>
 </div>
+<p>Using the information in the previous tables and what you know about <strong>matrix multiplication</strong>:</p>
 <ul>
-<li>In the matrix below, write down the cell entries for the <strong>reachability matrix</strong> corresponding to the graph shown in Figure 2:</li>
+<li>Write down the entries corresponding to the <strong>co-membership matrix</strong> for the different people.</li>
 </ul>
 <div class="cell">
 <div class="cell-output-display">
 
-<table class="table" style="margin-left: auto; margin-right: auto;">
+<table class=" lightable-classic lightable-striped" style="font-family: &quot;Arial Narrow&quot;, &quot;Source Sans Pro&quot;, sans-serif; margin-left: auto; margin-right: auto;">
  <thead>
   <tr>
    <th style="text-align:left;">   </th>
@@ -1052,112 +695,112 @@ ul.task-list li input[type="checkbox"] {
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> A </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> -- </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> A </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 6 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 2 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 4 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 3 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 2 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
   </tr>
   <tr>
-   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> B </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> -- </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> B </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 3 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 2 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 2 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
   </tr>
   <tr>
-   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> C </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> -- </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> C </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 2 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 3 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 2 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 3 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 2 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
   </tr>
   <tr>
-   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> D </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> -- </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> D </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 2 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 2 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 4 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 3 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 2 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 2 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
   </tr>
   <tr>
-   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> E </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> -- </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> E </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 4 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 3 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 3 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 8 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 3 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 2 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 2 </td>
   </tr>
   <tr>
-   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> F </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> -- </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> F </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 2 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
   </tr>
   <tr>
-   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> G </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> -- </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> G </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 3 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 2 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 2 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 2 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 3 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 5 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
   </tr>
   <tr>
-   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> H </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> -- </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> H </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 2 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 2 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 2 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 4 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
   </tr>
   <tr>
-   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> I </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> -- </td>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> I </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 2 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 3 </td>
   </tr>
 </tbody>
 </table>
@@ -1165,143 +808,244 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <ul>
-<li>In the matrix below, write down the cell entries <strong>geodesic distance matrix</strong> corresponding to the graph shown in Figure 1:</li>
+<li>Write down the entries corresponding to the <strong>group overlap matrix</strong> for the different events.</li>
 </ul>
 <div class="cell">
 <div class="cell-output-display">
 
-<table class="table" style="margin-left: auto; margin-right: auto;">
+<table class=" lightable-classic lightable-striped" style="font-family: &quot;Arial Narrow&quot;, &quot;Source Sans Pro&quot;, sans-serif; margin-left: auto; margin-right: auto;">
  <thead>
   <tr>
    <th style="text-align:left;">   </th>
-   <th style="text-align:center;"> A </th>
-   <th style="text-align:center;"> B </th>
-   <th style="text-align:center;"> C </th>
-   <th style="text-align:center;"> D </th>
-   <th style="text-align:center;"> E </th>
-   <th style="text-align:center;"> F </th>
-   <th style="text-align:center;"> G </th>
-   <th style="text-align:center;"> H </th>
-   <th style="text-align:center;"> I </th>
+   <th style="text-align:center;"> E1 </th>
+   <th style="text-align:center;"> E2 </th>
+   <th style="text-align:center;"> E3 </th>
+   <th style="text-align:center;"> E4 </th>
+   <th style="text-align:center;"> E5 </th>
+   <th style="text-align:center;"> E6 </th>
+   <th style="text-align:center;"> E7 </th>
+   <th style="text-align:center;"> E8 </th>
+   <th style="text-align:center;"> E9 </th>
+   <th style="text-align:center;"> E10 </th>
+   <th style="text-align:center;"> E11 </th>
+   <th style="text-align:center;"> E12 </th>
+   <th style="text-align:center;"> E13 </th>
   </tr>
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> A </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> -- </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 3 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> E1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 3 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 2 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 2 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 3 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 2 </td>
   </tr>
   <tr>
-   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> B </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> -- </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> E2 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 2 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 3 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 2 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 2 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 3 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 2 </td>
   </tr>
   <tr>
-   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> C </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> -- </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2 </td>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> E3 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 3 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 2 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
   </tr>
   <tr>
-   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> D </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 3 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> -- </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 3 </td>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> E4 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 3 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 2 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
   </tr>
   <tr>
-   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> E </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> -- </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2 </td>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> E5 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
   </tr>
   <tr>
-   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> F </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> -- </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2 </td>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> E6 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 2 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 2 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 2 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 2 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 6 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 2 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 4 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 2 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
   </tr>
   <tr>
-   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> G </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> -- </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 3 </td>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> E7 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
   </tr>
   <tr>
-   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> H </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> -- </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2 </td>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> E8 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 2 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 2 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
   </tr>
   <tr>
-   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> I </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 3 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 3 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> -- </td>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> E9 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 2 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> E10 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 2 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 2 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 3 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 2 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> E11 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 3 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 3 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 4 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 2 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 2 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 6 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 3 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 2 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> E12 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 2 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 3 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 3 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;color: black !important;border-bottom: 1px solid;"> E13 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 2 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 2 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 0 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 2 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 1 </td>
+   <td style="text-align:center;color: black !important;border-bottom: 1px solid;color: black !important;border-left:1px solid;border-right:1px solid;"> 2 </td>
   </tr>
 </tbody>
 </table>
 
 </div>
 </div>
-<ul>
-<li>What is the <strong>diameter</strong> of the graph shown in Figure 1? <br> A: 3</li>
-</ul>
 
 
 </section>

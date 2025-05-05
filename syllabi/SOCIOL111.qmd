@@ -24,7 +24,7 @@ format:
 | Lecture Time | Mondays and Wednesdays 8-9:15a |
 | Lecture Place | Royce 190 |
 | In-Person Office Hours |  Fridays 1-2p |
-| Zoom Office Hours |  Mondays 1-2p |
+| Zoom Office Hours |  Mondays Noon-1p |
 | Office | Haines 290 
 | Zoom Office | [https://ucla.zoom.us/my/olizardo](https://ucla.zoom.us/my/olizardo) |
 

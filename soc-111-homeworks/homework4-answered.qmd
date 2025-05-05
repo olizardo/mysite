@@ -38,6 +38,8 @@ title: "Homework IV: Affiliation Networks"
 
 @fig-grex1 shows a **bipartite graph** corresponding to the attendance of different *people* (the tan square nodes) at different *events* (the red circle nodes).
 
+## From Bipartite Graph to Affiliation Matrix
+
 - Write down the **affiliation matrix** corresponding to the **bipartite graph** shown in @fig-grex1. 
 
 ```{r}
@@ -47,6 +49,71 @@ title: "Homework IV: Affiliation Networks"
         row_spec(1:a, color = "black", extra_css = "border-bottom: 1px solid;") %>% 
         column_spec(1:b+1, color = "black", border_right = TRUE, border_left = TRUE) 
 ```
+
+## Bipartite Node Neighborhoods
+
+1. Write down the neighborhood of node *G*
+<br>
+`r V(gr)$name[neighbors(gr, "G")]`
+<br>
+
+1. Write down the neighborhood of event *E11*
+<br>
+`r V(gr)$name[neighbors(gr, "E11")]`
+<br>
+
+1. What is the intersection of the neighborhoods nodes *A* and *E*?
+<br>
+`r intersect(V(gr)$name[neighbors(gr, "A")], V(gr)$name[neighbors(gr, "E")])`
+<br>
+
+1. What is the intersection of the neighborhoods of events *E11* and *E6*?
+<br>
+`r intersect(V(gr)$name[neighbors(gr, "E11")], V(gr)$name[neighbors(gr, "E6")])`
+<br>
+
+1. What is the union of the neighborhoods nodes *I* and *C*?
+<br>
+`r union(V(gr)$name[neighbors(gr, "I")], V(gr)$name[neighbors(gr, "C")])`
+<br>
+
+1. What is the union of the neighborhoods of events *E9* and *E5*?
+<br>
+`r union(V(gr)$name[neighbors(gr, "E9")], V(gr)$name[neighbors(gr, "E5")])`
+<br>
+
+## Bipartite Degrees
+
+1. Write down the person degree sequence
+<br>
+<br>
+`r kable(t(sort(degree(gr)[1:a], decreasing = TRUE)))`
+<br>
+<br>
+
+1. Write down the event degree sequence
+<br>
+<br>
+```{r} 
+    c <- a + 1
+    d <- a + b
+    kable(t(sort(degree(gr)[c:d], decreasing = TRUE)))
+```
+<br>
+<br>
+
+1. What is the bipartite graph's sum of degrees?
+<br>
+<br>
+`r sum(degree(gr))/2`
+<br>
+<br>
+
+
+
+
+
+## Bipartite Graph Metrics
 
 1. Which person(s) attend(s) the most events?
 <br>
@@ -60,7 +127,7 @@ title: "Homework IV: Affiliation Networks"
 
 1. What is the average number of events attended by people?
 <br>
-`r mean(rowSums(A))`
+`r round(mean(rowSums(A)), 3)`
 <br>
 
 1. Which is(are) the largest event(s)?
@@ -75,7 +142,7 @@ title: "Homework IV: Affiliation Networks"
 
 1. What is the average event size?
 <br>
-`r mean(colSums(A))`
+`r round(mean(colSums(A)), 3)`
 <br>
 
 - Write down the **transpose** of the **affiliation matrix** corresponding to the bipartite graph.
