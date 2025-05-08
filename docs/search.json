@@ -851,7 +851,7 @@
     "href": "soc-111-homeworks/homework5.html#degree-centrality-in-undirected-graphs",
     "title": "Homework V: Centrality",
     "section": "Degree Centrality in Undirected Graphs",
-    "text": "Degree Centrality in Undirected Graphs\nRank all the nodes in the graph shown in Figure 2 by their degree centrality.\n\n\n\n\n \n  \n    Node \n    Degree \n  \n \n\n  \n     \n     \n  \n  \n     \n     \n  \n  \n     \n     \n  \n  \n     \n     \n  \n  \n     \n     \n  \n  \n     \n     \n  \n  \n     \n     \n  \n  \n     \n     \n  \n  \n     \n     \n  \n  \n     \n     \n  \n  \n     \n     \n  \n  \n     \n     \n  \n\n\n\n\n\n\n\n\n\n\nFigure 2: A directed graph.\n\n\n\n\nRank all the nodes in the graph shown in Figure 1 by their outdegree centrality and indegree centrality.\n\n\n\n\n \n  \n    Node \n    Outdegree \n    Node \n    Indegree"
+    "text": "Degree Centrality in Undirected Graphs\nRank all the nodes in the graph shown in Figure 1 by their degree centrality.\n\n\n\n\n \n  \n    Node \n    Degree \n  \n \n\n  \n     \n     \n  \n  \n     \n     \n  \n  \n     \n     \n  \n  \n     \n     \n  \n  \n     \n     \n  \n  \n     \n     \n  \n  \n     \n     \n  \n  \n     \n     \n  \n  \n     \n     \n  \n  \n     \n     \n  \n  \n     \n     \n  \n  \n     \n     \n  \n\n\n\n\n\n\n\n\n\n\nFigure 2: A directed graph.\n\n\n\n\nRank all the nodes in the graph shown in Figure 2 by their outdegree centrality and indegree centrality.\n\n\n\n\n \n  \n    Node \n    Outdegree \n    Node \n    Indegree"
   },
   {
     "objectID": "soc-111-homeworks/homework5.html#closeness-centrality-in-directed-graphs",

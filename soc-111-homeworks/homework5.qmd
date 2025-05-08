@@ -36,7 +36,7 @@ title: "Homework V: Centrality"
 
 ## Degree Centrality in Undirected Graphs
 
-Rank all the nodes in the graph shown in @fig-grex2 by their **degree centrality**.
+Rank all the nodes in the graph shown in @fig-grex1 by their **degree centrality**.
 
 ```{r}
     a <- matrix(" ", nrow = n, ncol = 2)
@@ -82,7 +82,7 @@ Rank all the nodes in the graph shown in @fig-grex2 by their **degree centrality
     p
 ```
 
-Rank all the nodes in the graph shown in @fig-grex1 by their **outdegree centrality** and **indegree centrality**.
+Rank all the nodes in the graph shown in @fig-grex2 by their **outdegree centrality** and **indegree centrality**.
 
 ```{r}
     a <- matrix(" ", nrow = n, ncol = 4)
