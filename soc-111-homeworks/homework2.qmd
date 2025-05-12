@@ -181,8 +181,8 @@ c
 
 ```{r}
     a <- matrix(" ", nrow = 12, ncol = 12)
-    rownames(a) <- toupper(letters[1:12])
-    colnames(a) <- toupper(letters[1:12])
+    rownames(a) <- LETTERS[1:12]
+    colnames(a) <- LETTERS[1:12]
     diag(a) <- "----"
     kbl(a, format = "html", align = "c")  %>% 
          column_spec(1, bold = TRUE) %>% 

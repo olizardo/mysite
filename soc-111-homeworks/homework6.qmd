@@ -1,0 +1,267 @@
+---
+title: "Homework VI: Balance and Signed Graphs"
+---
+
+```{r setup, include=FALSE}
+    knitr::opts_chunk$set(echo = FALSE, message=FALSE, warning=FALSE)
+    library(ggraph)
+    library(kableExtra)
+    library(tidygraph)
+    library(igraph)
+    library(signnet)
+```
+
+## Signed Graphs 
+
+```{r}
+#| label: fig-grex0
+#| fig-cap: "A directed signed graph."
+#| fig-cap-location: margin   
+#| fig-height: 12
+#| fig-width: 12
+     set.seed(123)
+     n <- 10
+     gr <- sample_gnp_signed(n, p = 0.27, p_neg = 0.5, 
+                             directed = TRUE, loops = FALSE)
+     V(gr)$name <- LETTERS[1:n]
+     p <- ggraph(gr, layout = 'kk') 
+    p <- p + geom_edge_parallel(aes(color = as.factor(sign)), 
+                                edge_width = 1.5,
+                            arrow = arrow(length = unit(5, 'mm')),
+                            end_cap = circle(10, 'mm'), 
+                            sep = unit(8, 'mm')) 
+     p <- p + geom_node_point(aes(x = x, y = y), size = 18, color = "tan2") 
+     p <- p + geom_node_text(aes(label = name), size = 10, color = "white")
+     p <- p + theme_graph() + theme(legend.position = "none")
+     p
+```
+
+@fig-grex0 is a **directed signed graph**. In the figure **teal** edges represent *positive* ties between the two nodes and **red** edges represent negative ties. 
+
+1. Write the directed signed graph's **positive edge set**.
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+1. Write the directed signed graph's **negative edge set**.
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+1. In the matrix below, write down the cell entries for the **adjacency matrix** corresponding to the graph shown in @fig-grex0:
+
+```{r}
+    a <- matrix(" ", nrow = n, ncol = n)
+    rownames(a) <- LETTERS[1:n]
+    colnames(a) <- LETTERS[1:n]
+    diag(a) <- "----"
+    kbl(a, format = "html", align = "c")  %>% 
+         column_spec(1, bold = TRUE) %>% 
+         column_spec (1:n+1, border_left = T, border_right = T) %>%
+         row_spec(1:n, extra_css = "border-bottom: 1px solid") %>%
+         kable_styling()
+```
+
+## Balanced and Unbalanced Triads
+
+```{r}
+#| label: fig-grex1
+#| fig-cap: "A complete signed graph."
+#| fig-cap-location: margin   
+#| fig-height: 12
+#| fig-width: 12
+     set.seed(4567)
+     n <- 6
+     gr <- make_full_graph(n, directed = FALSE, loops = FALSE)
+     E(gr)$sign <- sample(c(-1,1), ecount(gr), replace = TRUE)
+     V(gr)$name <- LETTERS[1:n]
+     p <- ggraph(gr, layout = 'auto') 
+     p <- p + geom_edge_link(aes(color =  as.factor(sign)), width = 2.5)
+     p <- p + geom_node_point(aes(x = x, y = y), size = 28, color = "tan2") 
+     p <- p + geom_node_text(aes(label = name), size = 16, color = "white")
+     p <- p + theme_graph() + theme(legend.position = "none")
+     p
+```
+
+@fig-grex1 is a **complete signed graph**. In the figure **teal** edges represent *positive* ties between the two nodes and **red** edges represent negative ties. 
+
+1. Write down all the **balanced triads** in the graph (you refer to a triad by listing all three nodes in it, like ABC):
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+1. Write down all the **unbalanced triads** in the graph:
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+1. How many **balanced** triads with *all positive edges* exist in the graph?
+<br>
+<br>
+<br>
+<br>
+
+1. How many **balanced** triads with *two negative edges* exist in the graph?
+<br>
+<br>
+<br>
+<br>
+
+1. How many **unbalanced** triads with *three negative edges* exist in the graph?
+<br>
+<br>
+<br>
+<br>
+
+1. How many **unbalanced** triads with *one negative edge* exist in the graph?
+<br>
+<br>
+<br>
+<br>
+
+For the following questions write either "positive" or "negative" as a possible answer. *Remember that showing your work helps you get partial credit*.
+
+1. What is the **sign of the path** ADFBC? 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+1. What is the **sign of the path** CDEBFA? 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+1. What is the **sign of the cycle** BDEFB?
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+1. What is the **sign of the cycle** CADFC?
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+## Structural Balance
+
+```{r}
+#| label: fig-grex2
+#| fig-cap: "A complete balanced signed graph."
+#| fig-cap-location: margin   
+#| fig-height: 12
+#| fig-width: 12
+     set.seed(4567)
+     gr <- sample_islands_signed(2, 4, 1, 24)
+     V(gr)$name <- LETTERS[1:8]
+     p <- ggraph(gr, layout = 'auto') 
+     p <- p + geom_edge_link(aes(color = as.factor(sign), width = 1.25))
+     p <- p + geom_node_point(aes(x = x, y = y), size = 22, color = "tan2") 
+     p <- p + geom_node_text(aes(label = name), size = 14, color = "white")
+     p <- p + theme_graph() + theme(legend.position = "none")
+     p
+```
+
+Cartwright and Harary's **fundamental theory of structural balance** says that in a balanced signed graph like the one in @fig-grex2, the node set can be divided into two cliques (subset of nodes) such that there are only positive ties among members of the clique and negative ties with members of the other clique.
+
+1. Write down the nodes that belong to each of the two cliques in @fig-grex2:
+
+- First clique:
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+- Second clique:
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+## Clustering 
+
+```{r}
+#| label: fig-grex3
+#| fig-cap: "A clusterable signed graph."
+#| fig-cap-location: margin   
+#| fig-height: 12
+#| fig-width: 12
+     set.seed(123)
+     gr <- sample_islands_signed(4, 3, 1, 4)
+     V(gr)$name <- LETTERS[1:12]
+     p <- ggraph(gr, layout = 'kk') 
+     p <- p + geom_edge_link(aes(color = as.factor(sign), width = 1))
+     p <- p + geom_node_point(aes(x = x, y = y), size = 26, color = "tan2") 
+     p <- p + geom_node_text(aes(label = name), size = 14, color = "white")
+     p <- p + theme_graph() + theme(legend.position = "none")
+     p
+```
+
+According to Davis, a graph is **clusterable** if it can be divided into multiple groups such that there are only positive or null dyads *within* groups and negative or null dyads *across* groups.
+
+1. How many clusters are there in @fig-grex3?
+<br>
+<br>
+<br>
+<br>
+<br>
+
+1. Write down the names of the nodes in each cluster of @fig-grex3:
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+

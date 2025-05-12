@@ -394,9 +394,9 @@
   {
     "objectID": "soc-111-homeworks/homework6.html",
     "href": "soc-111-homeworks/homework6.html",
-    "title": "Homework VI: Ego-Network Metrics",
+    "title": "Homework VI: Balance and Signed Graphs",
     "section": "",
-    "text": "(a) Ego to alter ties.\n\n\n\n\n\n\n\n(b) Alter to alter ties.\n\n\n\n\nFigure 1: Ego Network ties in a hypothetical ego-network.\n\n\n\nConsider Figure 1(a). This shows the ego-to-alter ties in a hypothetical ego-network.\nConsider Figure 1(b). This shows the alter-to-alter ties in the hypothetical ego-network shown in Figure 1(a).\n\n\nWhat is the size of ego’s network?   \nWhat is ego’s clustering coefficient?   \n\n\n\n\n\n\nFigure 2: Gender identification of alters.\n\n\n\n\n\n\n\n\n\nFigure 3: Ethnoracial identification of alters.\n\n\n\n\n\n\n\n\n\nFigure 4: Role relations of alters with Ego.\n\n\n\n\n\n\n\n\n\nFigure 5: Employment status of alters.\n\n\n\n\nFigure 2-Figure 5 show some sociodemographic and role-relational characteristics of alters in ego’s network. Ego is a UCLA student who identifies as Hispanic and as a Man. Using this information:\n\nCompute Ego’s homophily with respect to gender identity.   \nCompute Ego’s homophily with respect to Ethnoracial identification.   \nCompute the proportion kin in Ego’s network.   \nCompute the proportion non-Hispanic in Ego’s network.   \nCompute the proportion of individuals employed outside the home in Ego’s network.   \nCompute the diversity of Ego’s Network with respect to ethnoracial identity.   \nCompute the diversity of Ego’s Network with respect to employment status.   \nCompute the diversity of Ego’s Network with respect to gender identity.   \nCompute the proportion of fellow students in Ego’s network.   \nDoes ego have a stronger same-group preference with respect to race than with respect to gender? (Yes/No)   \nIs the diversity of ego’s network larger when it comes to race than when it comes to employment status (Yes/No)   \nWhat is the proportion of ego’s network composed of kin who are also full-time parents?   \nCompute the proportion of people who identify as Men or Women in ego’s network.   \nDraw the subgraph of Ego’s alter-to-alter ties that is only composed of students"
+    "text": "Figure 1: A directed signed graph.\n\n\n\n\nFigure 1 is a directed signed graph. In the figure teal edges represent positive ties between the two nodes and red edges represent negative ties.\n\nWrite the directed signed graph’s positive edge set.      \nWrite the directed signed graph’s negative edge set.      \nIn the matrix below, write down the cell entries for the adjacency matrix corresponding to the graph shown in Figure 1:\n\n\n\n\n\n \n  \n      \n    A \n    B \n    C \n    D \n    E \n    F \n    G \n    H \n    I \n    J \n  \n \n\n  \n    A \n    ---- \n     \n     \n     \n     \n     \n     \n     \n     \n     \n  \n  \n    B \n     \n    ---- \n     \n     \n     \n     \n     \n     \n     \n     \n  \n  \n    C \n     \n     \n    ---- \n     \n     \n     \n     \n     \n     \n     \n  \n  \n    D \n     \n     \n     \n    ---- \n     \n     \n     \n     \n     \n     \n  \n  \n    E \n     \n     \n     \n     \n    ---- \n     \n     \n     \n     \n     \n  \n  \n    F \n     \n     \n     \n     \n     \n    ---- \n     \n     \n     \n     \n  \n  \n    G \n     \n     \n     \n     \n     \n     \n    ---- \n     \n     \n     \n  \n  \n    H \n     \n     \n     \n     \n     \n     \n     \n    ---- \n     \n     \n  \n  \n    I \n     \n     \n     \n     \n     \n     \n     \n     \n    ---- \n     \n  \n  \n    J \n     \n     \n     \n     \n     \n     \n     \n     \n     \n    ----"
   },
   {
     "objectID": "soc-111-homeworks/homework7-answered.html",
@@ -873,5 +873,26 @@
     "title": "Homework V: Centrality",
     "section": "Degree Centralization",
     "text": "Degree Centralization\nCompute the degree centralization of the graph shown in Figure 1."
+  },
+  {
+    "objectID": "soc-111-homeworks/homework6.html#balanced-and-unbalanced-triads",
+    "href": "soc-111-homeworks/homework6.html#balanced-and-unbalanced-triads",
+    "title": "Homework VI: Balance and Signed Graphs",
+    "section": "Balanced and Unbalanced Triads",
+    "text": "Balanced and Unbalanced Triads\n\n\n\n\n\nFigure 2: A complete signed graph.\n\n\n\n\nFigure 2 is a complete signed graph. In the figure teal edges represent positive ties between the two nodes and red edges represent negative ties.\n\nWrite down all the balanced triads in the graph (you refer to a triad by listing all three nodes in it, like ABC):              \nWrite down all the unbalanced triads in the graph:              \nHow many balanced triads with all positive edges exist in the graph?    \nHow many balanced triads with two negative edges exist in the graph?    \nHow many unbalanced triads with three negative edges exist in the graph?    \nHow many unbalanced triads with one negative edge exist in the graph?    \n\nFor the following questions write either “positive” or “negative” as a possible answer. Remember that showing your work helps you get partial credit.\n\nWhat is the sign of the path ADFBC?      \nWhat is the sign of the path CDEBFA?      \nWhat is the sign of the cycle BDEFB?      \nWhat is the sign of the cycle CADFC?"
+  },
+  {
+    "objectID": "soc-111-homeworks/homework6.html#structural-balance",
+    "href": "soc-111-homeworks/homework6.html#structural-balance",
+    "title": "Homework VI: Balance and Signed Graphs",
+    "section": "Structural Balance",
+    "text": "Structural Balance\n\n\n\n\n\nFigure 3: A complete balanced signed graph.\n\n\n\n\nCartwright and Harary’s fundamental theory of structural balance says that in a balanced signed graph like the one in Figure 3, the node set can be divided into two cliques (subset of nodes) such that there are only positive ties among members of the clique and negative ties with members of the other clique.\n\nWrite down the nodes that belong to each of the two cliques in Figure 3:\n\n\nFirst clique:      \nSecond clique:"
+  },
+  {
+    "objectID": "soc-111-homeworks/homework6.html#clustering",
+    "href": "soc-111-homeworks/homework6.html#clustering",
+    "title": "Homework VI: Balance and Signed Graphs",
+    "section": "Clustering",
+    "text": "Clustering\n\n\n\n\n\nFigure 4: A clusterable signed graph.\n\n\n\n\nAccording to Davis, a graph is clusterable if it can be divided into multiple groups such that there are only positive or null dyads within groups and negative or null dyads across groups.\n\nHow many clusters are there in Figure 4?     \nWrite down the names of the nodes in each cluster of Figure 4:"
   }
 ]
