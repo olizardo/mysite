@@ -194,7 +194,7 @@ title: "Homework VII: Ego-Network Metrics"
 <br>
 <br>
 
-1. Compute the **proportion** of people who identity as Hispanic in Ego's network.
+1. Compute the **proportion** of people who identify as Hispanic in Ego's network.
 <br>
 <br>
 <br>
