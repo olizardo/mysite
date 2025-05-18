@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Omar Lizardo’s Academic Website - Homework VII: Subgroups</title>
+<title>Omar Lizardo’s Academic Website - Homework VII: Ego-Network Metrics</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -61,10 +61,10 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="../styles.css">
-<meta property="og:title" content="Omar Lizardo’s Academic Website - Homework VII: Subgroups">
+<meta property="og:title" content="Omar Lizardo’s Academic Website - Homework VII: Ego-Network Metrics">
+<meta property="og:description" content="Figure&nbsp;2 (a)-Figure&nbsp;2 (d) show some sociodemographic and role-relational characteristics of alters in ego’s network. Ego is a UCLA student who identifies as Asian and as a Woman.">
 <meta property="og:site-name" content="Omar Lizardo's Academic Website">
 </head>
 
@@ -162,14 +162,21 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#size-effective-size-and-clustering" id="toc-size-effective-size-and-clustering" class="nav-link active" data-scroll-target="#size-effective-size-and-clustering">Size, Effective Size, and Clustering</a></li>
+  <li><a href="#composition-diversity-and-homophily" id="toc-composition-diversity-and-homophily" class="nav-link" data-scroll-target="#composition-diversity-and-homophily">Composition, Diversity, and Homophily</a></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/olizardo/mysite/blob/main/soc-111-homeworks/homework7.qmd" class="toc-action">View source</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Homework VII: Subgroups</h1>
+<h1 class="title">Homework VII: Ego-Network Metrics</h1>
 </div>
 
 
@@ -184,30 +191,105 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<div class="cell" data-fig-cap-location="margin">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
+<div class="cell">
+
+</div>
+<section id="size-effective-size-and-clustering" class="level2">
+<h2 class="anchored" data-anchor-id="size-effective-size-and-clustering">Size, Effective Size, and Clustering</h2>
+<div id="fig-ego" class="cell quarto-layout-panel" data-fig-cap-location="margin">
 <figure class="figure">
-<p><img src="homework7_files/figure-html/clique-1.png" class="img-fluid figure-img" width="1152"></p>
-<p></p><figcaption class="figure-caption">An undirected graph.</figcaption><p></p>
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="cell-output-display quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 50.0%;justify-content: center;">
+<div id="fig-ego-1" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="homework7_files/figure-html/fig-ego-1.png" class="img-fluid figure-img" data-ref-parent="fig-ego" width="768"></p>
+<p></p><figcaption class="figure-caption">(a) Ego to alter ties.</figcaption><p></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 50.0%;justify-content: center;">
+<div id="fig-ego-2" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="homework7_files/figure-html/fig-ego-2.png" class="img-fluid figure-img" data-ref-parent="fig-ego" width="768"></p>
+<p></p><figcaption class="figure-caption">(b) Alter to alter ties.</figcaption><p></p>
 </figure>
 </div>
 </div>
 </div>
+<p></p><figcaption class="figure-caption">Figure&nbsp;1: Ego Network ties in a hypothetical ego-network.</figcaption><p></p>
+</figure>
+</div>
+<ul>
+<li><p>Consider <a href="#fig-ego-1">Figure&nbsp;1 (a)</a>. This shows the <strong>ego-to-alter</strong> ties in a hypothetical ego-network.</p></li>
+<li><p>Consider <a href="#fig-ego-2">Figure&nbsp;1 (b)</a>. This shows the <strong>alter-to-alter</strong> ties in the hypothetical ego-network shown in <a href="#fig-ego-1">Figure&nbsp;1 (a)</a>.</p></li>
+</ul>
 <ol type="1">
-<li><p>List the nodes in all the <strong>cliques</strong> of <em>size four</em> in the graph. <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br></p></li>
-<li><p>How many <strong>cliques</strong> of <em>size four</em> does node <em>M</em> belong to? <br> <br> <br> <br> <br> <br></p></li>
-<li><p>List the edges would have to be added to the graph to make nodes <span class="math inline">\(\{A, C, F, J, O\}\)</span> into a clique of size 5: <br> <br> <br> <br> <br> <br></p></li>
-<li><p>Write down a set of <em>two</em> nodes that if removed would disconnect the graph: <br> <br> <br></p></li>
-<li><p>Write down a set of <em>three</em> edges that if removed would disconnect the graph: <br> <br> <br></p></li>
-<li><p>List the nodes in two 2-cliques in the graph: <br> <br> <br> <br></p></li>
-<li><p>List the nodes in one 3-clique in the graph: <br> <br> <br> <br></p></li>
-<li><p>Imagine we removed the edges <span class="math inline">\(\{FJ, FC, EO, AO, BP\}\)</span>. How many components would the resulting graph have? <br> <br> <br> <br></p></li>
-<li><p>List the nodes in the <em>five cliques of size four</em> nested inside the clique of size five. <br> <br> <br> <br> <br> <br> <br> <br> <br> <br></p></li>
-<li><p>List the nodes in the <em>four cliques of size three</em> nested inside one of the cliques of size four. <br> <br> <br> <br> <br> <br> <br> <br></p></li>
+<li><p>What is the <strong>size</strong> of ego’s network? <br> <br> <br> <br> <br> <br></p></li>
+<li><p>What is the <strong>effective size</strong> of ego’s network? <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br></p></li>
+<li><p>What is ego’s <strong>clustering coefficient</strong>? <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br></p></li>
+</ol>
+</section>
+<section id="composition-diversity-and-homophily" class="level2">
+<h2 class="anchored" data-anchor-id="composition-diversity-and-homophily">Composition, Diversity, and Homophily</h2>
+<div id="fig-altersdem" class="cell quarto-layout-panel" data-fig-cap-location="margin">
+<figure class="figure">
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="cell-output-display quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 50.0%;justify-content: center;">
+<div id="fig-altersdem-1" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="homework7_files/figure-html/fig-altersdem-1.png" class="img-fluid figure-img" data-ref-parent="fig-altersdem" width="960"></p>
+<p></p><figcaption class="figure-caption">(a) Gender Identification of Alters.</figcaption><p></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 50.0%;justify-content: center;">
+<div id="fig-altersdem-2" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="homework7_files/figure-html/fig-altersdem-2.png" class="img-fluid figure-img" data-ref-parent="fig-altersdem" width="960"></p>
+<p></p><figcaption class="figure-caption">(b) Ethnoracial identification of alters.</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="quarto-layout-row quarto-layout-valign-top">
+<div class="cell-output-display quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 50.0%;justify-content: center;">
+<div id="fig-altersdem-3" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="homework7_files/figure-html/fig-altersdem-3.png" class="img-fluid figure-img" data-ref-parent="fig-altersdem" width="960"></p>
+<p></p><figcaption class="figure-caption">(c) Role relations of alters with Ego.</figcaption><p></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 50.0%;justify-content: center;">
+<div id="fig-altersdem-4" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="homework7_files/figure-html/fig-altersdem-4.png" class="img-fluid figure-img" data-ref-parent="fig-altersdem" width="960"></p>
+<p></p><figcaption class="figure-caption">(d) Employment status of alters.</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p></p><figcaption class="figure-caption">Figure&nbsp;2: Socio-demographic Characteristics of Alters</figcaption><p></p>
+</figure>
+</div>
+<p><a href="#fig-altersdem-1">Figure&nbsp;2 (a)</a>-<a href="#fig-altersdem-4">Figure&nbsp;2 (d)</a> show some sociodemographic and role-relational characteristics of alters in ego’s network. Ego is a <em>UCLA student who identifies as Asian and as a Woman</em>. Using this information:</p>
+<ol type="1">
+<li><p>Compute Ego’s EI <strong>homophily</strong> index with respect to gender identity. <br> <br> <br> <br> <br> <br></p></li>
+<li><p>Compute Ego’s EI <strong>homophily</strong> index with respect to Ethnoracial identification. <br> <br> <br> <br> <br> <br></p></li>
+<li><p>Compute the <strong>proportion</strong> of neighbors in Ego’s network. <br> <br> <br> <br> <br> <br></p></li>
+<li><p>Compute the <strong>proportion</strong> of people who identity as Hispanic in Ego’s network. <br> <br> <br> <br> <br> <br></p></li>
+<li><p>Compute the <strong>proportion</strong> of fellow students in Ego’s network. <br> <br> <br> <br> <br> <br></p></li>
+<li><p>Compute the <strong>diversity</strong> of Ego’s Network with respect to ethnoracial identity. <br> <br> <br> <br> <br> <br></p></li>
+<li><p>Compute the <strong>diversity</strong> of Ego’s Network with respect to employment status. <br> <br> <br> <br> <br> <br></p></li>
+<li><p>Compute the <strong>diversity</strong> of Ego’s Network with respect to gender identity. <br> <br> <br> <br> <br> <br></p></li>
+<li><p>Does ego have a stronger <strong>same-group preference</strong> with respect to race than with respect to gender? (Yes/No, show your reasoning) <br> <br> <br> <br> <br> <br></p></li>
+<li><p>Is the <strong>diversity</strong> of ego’s network larger when it comes to race than when it comes to employment status (Yes/No, show your reasoning) <br> <br> <br> <br> <br> <br></p></li>
+<li><p>What is the <strong>proportion</strong> of ego’s network composed of friends who are also Genderfluid? <br> <br> <br> <br> <br> <br></p></li>
+<li><p>Compute the <strong>proportion</strong> of people who identify as either Men or Women in ego’s network. <br> <br> <br> <br> <br> <br></p></li>
 </ol>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
