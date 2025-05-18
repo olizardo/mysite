@@ -155,7 +155,7 @@ Consider the graph shown in @fig-grex2:
 - In the matrix below, write down the cell entries **geodesic distance matrix** corresponding to the graph shown in @fig-grex1:
 
 ```{r}
-    m <- as.matrix(distances(gr))
+    m <- as.matrix(distances(gr1))
     diag(m) <- "--"
     kbl(m[order(rownames(m)), order(colnames(m))], format = "html", align = "c")  %>% 
          column_spec(1, bold = TRUE) %>% 
