@@ -186,6 +186,7 @@ Consider the graph shown in @fig-grex2:
 
 ```{r}
     b <- as.matrix(distances(gr2, mode = "out"))
+    b <- b[sort(rownames(b)), sort(colnames(b))]
     r <- nrow(m)
     s <- r-1
     kbl(b, format = "html", align = "c")  %>% 
