@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Omar Lizardo’s Academic Website - Homework VIII: Graph Connectivity and Structural Similarity</title>
+<title>Omar Lizardo’s Academic Website - Homework VIII: Subgroups, Graph Connectivity, and Structural Similarity</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -66,7 +66,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="../styles.css">
-<meta property="og:title" content="Omar Lizardo’s Academic Website - Homework VIII: Graph Connectivity and Structural Similarity">
+<meta property="og:title" content="Omar Lizardo’s Academic Website - Homework VIII: Subgroups, Graph Connectivity, and Structural Similarity">
 <meta property="og:site-name" content="Omar Lizardo's Academic Website">
 </head>
 
@@ -164,14 +164,22 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#cliques-and-n-cliques" id="toc-cliques-and-n-cliques" class="nav-link active" data-scroll-target="#cliques-and-n-cliques">Cliques and n-Cliques</a></li>
+  <li><a href="#structural-equivalence-and-structural-similarity" id="toc-structural-equivalence-and-structural-similarity" class="nav-link" data-scroll-target="#structural-equivalence-and-structural-similarity">Structural Equivalence and Structural Similarity</a></li>
+  <li><a href="#graph-connectivity" id="toc-graph-connectivity" class="nav-link" data-scroll-target="#graph-connectivity">Graph Connectivity</a></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/olizardo/mysite/blob/main/soc-111-homeworks/homework8.qmd" class="toc-action">View source</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Homework VIII: Graph Connectivity and Structural Similarity</h1>
+<h1 class="title">Homework VIII: Subgroups, Graph Connectivity, and Structural Similarity</h1>
 </div>
 
 
@@ -186,6 +194,28 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<section id="cliques-and-n-cliques" class="level2">
+<h2 class="anchored" data-anchor-id="cliques-and-n-cliques">Cliques and n-Cliques</h2>
+<div class="cell" data-fig-cap-location="margin">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="homework8_files/figure-html/clique-1.png" class="img-fluid figure-img" width="1152"></p>
+<p></p><figcaption class="figure-caption">An undirected graph.</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<ol type="1">
+<li><p>List the nodes in all the <strong>cliques</strong> of <em>size four</em> in the graph. <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br></p></li>
+<li><p>List the nodes in all the <strong>cliques</strong> of <em>size five</em> in the graph. <br> <br> <br> <br> <br> <br></p></li>
+<li><p>How many <strong>cliques</strong> of <em>size four</em> does node <em>M</em> belong to? <br> <br> <br> <br> <br> <br></p></li>
+<li><p>List the nodes in one of the <strong>2-cliques</strong> in the graph: <br> <br> <br> <br></p></li>
+<li><p>List the nodes in the <em>five cliques of size four</em> nested inside the clique of size five. <br> <br> <br> <br> <br> <br> <br> <br> <br> <br></p></li>
+</ol>
+</section>
+<section id="structural-equivalence-and-structural-similarity" class="level2">
+<h2 class="anchored" data-anchor-id="structural-equivalence-and-structural-similarity">Structural Equivalence and Structural Similarity</h2>
 <div class="cell" data-fig-cap-location="margin">
 <div class="cell-output-display">
 <div id="fig-grex1" class="quarto-figure quarto-figure-center anchored">
@@ -739,17 +769,23 @@ ul.task-list li input[type="checkbox"] {
 <ol type="1">
 <li><p>Using the Information in the previous matrix, write down the set of nodes that are <strong>structurally equivalent</strong> (e.g., connected to the same set of neighbors) in the graph shown in <a href="#fig-grex1">Figure&nbsp;1</a>. <br> <br> <br> <br></p></li>
 <li><p>Out of the nodes that are not structurally equivalent, which pairs of nodes have the highest <strong>structural similarity</strong> in the graph shown in <a href="#fig-grex1">Figure&nbsp;1</a>? <br> <br> <br> <br></p></li>
-<li><p>Using the <strong>Jaccard Similarity</strong> metric, compute the structural similarity between nodes <em>B</em> and <em>D</em> in the graph shown in <a href="#fig-grex1">Figure&nbsp;1</a>. <br> <br> <br> <br></p></li>
-<li><p>Using the <strong>Dice Similarity</strong> metric, compute the structural similarity between nodes <em>C</em> and <em>D</em> in the graph shown in <a href="#fig-grex1">Figure&nbsp;1</a>. <br> <br> <br> <br></p></li>
-<li><p>Using the <strong>Cosine Similarity</strong> metric, compute the structural similarity between nodes <em>A</em> and <em>C</em> in the graph shown in <a href="#fig-grex1">Figure&nbsp;1</a>. <br> <br> <br> <br></p></li>
+<li><p>Using the <strong>Jaccard Similarity</strong> metric, compute the structural similarity between nodes <em>K</em> and <em>N</em> in the graph shown in <a href="#fig-grex1">Figure&nbsp;1</a>. <br> <br> <br> <br></p></li>
+<li><p>Using the <strong>Dice Similarity</strong> metric, compute the structural similarity between nodes <em>L</em> and <em>M</em> in the graph shown in <a href="#fig-grex1">Figure&nbsp;1</a>. <br> <br> <br> <br></p></li>
+<li><p>Using the <strong>Cosine Similarity</strong> metric, compute the structural similarity between nodes <em>D</em> and <em>B</em> in the graph shown in <a href="#fig-grex1">Figure&nbsp;1</a>. <br> <br> <br> <br></p></li>
+</ol>
+</section>
+<section id="graph-connectivity" class="level2">
+<h2 class="anchored" data-anchor-id="graph-connectivity">Graph Connectivity</h2>
+<ol type="1">
 <li><p>Write down a <strong>node cut set</strong> for the graph shown in <a href="#fig-grex1">Figure&nbsp;1</a>. <br> <br> <br> <br></p></li>
 <li><p>Write down an <strong>edge cut set</strong> for the graph shown in <a href="#fig-grex1">Figure&nbsp;1</a>. <br> <br> <br> <br></p></li>
-<li><p>What is the <strong>k-connectivity</strong> of the graph? <br> <br> <br> <br></p></li>
-<li><p>What is the <strong>edge connectivity</strong> of the graph? <br> <br> <br> <br></p></li>
-<li><p>What is the <strong>pairwise k-connectivity</strong> between nodes <em>E</em> and <em>G</em>? <br> <br> <br> <br></p></li>
+<li><p>What is the <strong>k-connectivity</strong> of the graph in <a href="#fig-grex1">Figure&nbsp;1</a>? <br> <br> <br> <br></p></li>
+<li><p>What is the <strong>edge connectivity</strong> of the graph in <a href="#fig-grex1">Figure&nbsp;1</a>? <br> <br> <br> <br></p></li>
+<li><p>What is the <strong>pairwise k-connectivity</strong> between nodes <em>J</em> and <em>O</em> in <a href="#fig-grex1">Figure&nbsp;1</a>? <br> <br> <br> <br></p></li>
 </ol>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
