@@ -198,36 +198,36 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="cliques-and-n-cliques">Cliques and n-Cliques</h2>
 <div class="cell" data-fig-cap-location="margin">
 <div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
+<div id="fig-grex1" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><img src="homework8_files/figure-html/clique-1.png" class="img-fluid figure-img" width="1152"></p>
-<p></p><figcaption class="figure-caption">An undirected graph.</figcaption><p></p>
+<p><img src="homework8_files/figure-html/fig-grex1-1.png" class="img-fluid figure-img" width="1152"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;1: An undirected graph.</figcaption><p></p>
 </figure>
 </div>
 </div>
 </div>
 <ol type="1">
-<li><p>List the nodes in all the <strong>cliques</strong> of <em>size four</em> in the graph. <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br></p></li>
-<li><p>List the nodes in all the <strong>cliques</strong> of <em>size five</em> in the graph. <br> <br> <br> <br> <br> <br></p></li>
+<li><p>List the nodes in all the <strong>cliques</strong> of <em>size four</em> in <a href="#fig-grex1">Figure&nbsp;1</a>. <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br></p></li>
+<li><p>List the nodes in all the <strong>cliques</strong> of <em>size five</em> in <a href="#fig-grex1">Figure&nbsp;1</a>. <br> <br> <br> <br> <br> <br></p></li>
 <li><p>How many <strong>cliques</strong> of <em>size four</em> does node <em>M</em> belong to? <br> <br> <br> <br> <br> <br></p></li>
-<li><p>List the nodes in one of the <strong>2-cliques</strong> in the graph: <br> <br> <br> <br></p></li>
-<li><p>List the nodes in the <em>five cliques of size four</em> nested inside the clique of size five. <br> <br> <br> <br> <br> <br> <br> <br> <br> <br></p></li>
+<li><p>List the nodes in one of the <strong>2-cliques</strong> in <a href="#fig-grex1">Figure&nbsp;1</a>: <br> <br> <br> <br></p></li>
+<li><p>List the nodes in the <em>five cliques of size four</em> nested inside the clique of size five in <a href="#fig-grex1">Figure&nbsp;1</a>. <br> <br> <br> <br> <br> <br> <br> <br> <br> <br></p></li>
 </ol>
 </section>
 <section id="structural-equivalence-and-structural-similarity" class="level2">
 <h2 class="anchored" data-anchor-id="structural-equivalence-and-structural-similarity">Structural Equivalence and Structural Similarity</h2>
 <div class="cell" data-fig-cap-location="margin">
 <div class="cell-output-display">
-<div id="fig-grex1" class="quarto-figure quarto-figure-center anchored">
+<div id="fig-grex2" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><img src="homework8_files/figure-html/fig-grex1-1.png" class="img-fluid figure-img" width="768"></p>
-<p></p><figcaption class="figure-caption">Figure&nbsp;1: An undirected graph.</figcaption><p></p>
+<p><img src="homework8_files/figure-html/fig-grex2-1.png" class="img-fluid figure-img" width="768"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;2: An undirected graph.</figcaption><p></p>
 </figure>
 </div>
 </div>
 </div>
 <ul>
-<li>In the matrix below, write down the cell entries for the <strong>adjacency matrix</strong> corresponding to the graph shown in <a href="#fig-grex1">Figure&nbsp;1</a>:</li>
+<li>In the matrix below, write down the cell entries for the <strong>adjacency matrix</strong> corresponding to the graph shown in <a href="#fig-grex2">Figure&nbsp;2</a>:</li>
 </ul>
 <div class="cell">
 <div class="cell-output-display">
@@ -497,7 +497,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <ul>
-<li>Using the information from the previous matrix, in the matrix below, write down the cell entries for the <strong>structural similarity matrix</strong> corresponding to the graph shown in <a href="#fig-grex1">Figure&nbsp;1</a> using the <strong>Euclidean Distance</strong>:</li>
+<li>Using the information from the previous matrix, in the matrix below, write down the cell entries for the <strong>structural similarity matrix</strong> corresponding to the graph shown in <a href="#fig-grex2">Figure&nbsp;2</a> using the <strong>Euclidean Distance</strong>:</li>
 </ul>
 <div class="cell">
 <div class="cell-output-display">
@@ -767,11 +767,11 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <ol type="1">
-<li><p>Using the Information in the previous matrix, write down the set of nodes that are <strong>structurally equivalent</strong> (e.g., connected to the same set of neighbors) in the graph shown in <a href="#fig-grex1">Figure&nbsp;1</a>. <br> <br> <br> <br></p></li>
-<li><p>Out of the nodes that are not structurally equivalent, which pairs of nodes have the highest <strong>structural similarity</strong> in the graph shown in <a href="#fig-grex1">Figure&nbsp;1</a>? <br> <br> <br> <br></p></li>
-<li><p>Using the <strong>Jaccard Similarity</strong> metric, compute the structural similarity between nodes <em>K</em> and <em>N</em> in the graph shown in <a href="#fig-grex1">Figure&nbsp;1</a>. <br> <br> <br> <br></p></li>
-<li><p>Using the <strong>Dice Similarity</strong> metric, compute the structural similarity between nodes <em>L</em> and <em>M</em> in the graph shown in <a href="#fig-grex1">Figure&nbsp;1</a>. <br> <br> <br> <br></p></li>
-<li><p>Using the <strong>Cosine Similarity</strong> metric, compute the structural similarity between nodes <em>D</em> and <em>B</em> in the graph shown in <a href="#fig-grex1">Figure&nbsp;1</a>. <br> <br> <br> <br></p></li>
+<li><p>Using the Information in the previous matrix, write down the set of nodes that are <strong>structurally equivalent</strong> (e.g., connected to the same set of neighbors) in the graph shown in <a href="#fig-grex2">Figure&nbsp;2</a>. <br> <br> <br> <br></p></li>
+<li><p>Out of the nodes that are not structurally equivalent, which pairs of nodes have the highest <strong>structural similarity</strong> in the graph shown in <a href="#fig-grex2">Figure&nbsp;2</a>? <br> <br> <br> <br></p></li>
+<li><p>Using the <strong>Jaccard Similarity</strong> metric, compute the structural similarity between nodes <em>K</em> and <em>N</em> in the graph shown in <a href="#fig-grex2">Figure&nbsp;2</a>. <br> <br> <br> <br></p></li>
+<li><p>Using the <strong>Dice Similarity</strong> metric, compute the structural similarity between nodes <em>L</em> and <em>M</em> in the graph shown in <a href="#fig-grex2">Figure&nbsp;2</a>. <br> <br> <br> <br></p></li>
+<li><p>Using the <strong>Cosine Similarity</strong> metric, compute the structural similarity between nodes <em>D</em> and <em>B</em> in the graph shown in <a href="#fig-grex2">Figure&nbsp;2</a>. <br> <br> <br> <br></p></li>
 </ol>
 </section>
 <section id="graph-connectivity" class="level2">

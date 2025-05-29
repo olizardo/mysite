@@ -13,7 +13,7 @@ title: "Homework VIII: Subgroups, Graph Connectivity, and Structural Similarity"
 ## Cliques and n-Cliques
 
 ```{r}
-#| label: clique
+#| label: fig-grex1
 #| fig-width: 12
 #| fig-height: 12
 #| fig-cap: "An undirected graph."
@@ -40,7 +40,7 @@ title: "Homework VIII: Subgroups, Graph Connectivity, and Structural Similarity"
     p <- p + theme_graph() 
     p
 ```
-1. List the nodes in all the **cliques** of *size four* in the graph.
+1. List the nodes in all the **cliques** of *size four* in @fig-grex1.
 <br>
 <br>
 <br>
@@ -60,7 +60,7 @@ title: "Homework VIII: Subgroups, Graph Connectivity, and Structural Similarity"
 <br>
 <br>
 
-1. List the nodes in all the **cliques** of *size five* in the graph.
+1. List the nodes in all the **cliques** of *size five* in @fig-grex1.
 <br>
 <br>
 <br>
@@ -78,14 +78,14 @@ title: "Homework VIII: Subgroups, Graph Connectivity, and Structural Similarity"
 <br>
 
 
-1. List the nodes in one of the **2-cliques** in the graph:
+1. List the nodes in one of the **2-cliques** in @fig-grex1:
 <br>
 <br>
 <br>
 <br>
 
 
-1. List the nodes in the *five cliques of size four* nested inside the clique of size five.
+1. List the nodes in the *five cliques of size four* nested inside the clique of size five in @fig-grex1.
 <br>
 <br>
 <br>
@@ -100,7 +100,7 @@ title: "Homework VIII: Subgroups, Graph Connectivity, and Structural Similarity"
 ## Structural Equivalence and Structural Similarity
 
 ```{r}
-#| label: fig-grex1
+#| label: fig-grex2
 #| fig-cap: "An undirected graph."
 #| fig-cap-location: margin   
 #| fig-height: 8
@@ -123,7 +123,7 @@ title: "Homework VIII: Subgroups, Graph Connectivity, and Structural Similarity"
     p
 ```
 
-- In the matrix below, write down the cell entries for the **adjacency matrix** corresponding to the graph shown in @fig-grex1:
+- In the matrix below, write down the cell entries for the **adjacency matrix** corresponding to the graph shown in @fig-grex2:
 
 ```{r}
     a <- matrix(" ", nrow = length(V(gr)), ncol = length(V(gr)))
@@ -139,7 +139,7 @@ title: "Homework VIII: Subgroups, Graph Connectivity, and Structural Similarity"
          kable_styling()
 ```
 
-- Using the information from the previous matrix, in the matrix below, write down the cell entries for the **structural similarity matrix** corresponding to the graph shown in @fig-grex1 using the **Euclidean Distance**:
+- Using the information from the previous matrix, in the matrix below, write down the cell entries for the **structural similarity matrix** corresponding to the graph shown in @fig-grex2 using the **Euclidean Distance**:
 
 ```{r}
     a <- matrix(" ", nrow = length(V(gr)), ncol = length(V(gr)))
@@ -155,31 +155,31 @@ title: "Homework VIII: Subgroups, Graph Connectivity, and Structural Similarity"
          kable_styling()
 ```
 
-1. Using the Information in the previous matrix, write down the set of nodes that are **structurally equivalent** (e.g., connected to the same set of neighbors) in the graph shown in @fig-grex1.
+1. Using the Information in the previous matrix, write down the set of nodes that are **structurally equivalent** (e.g., connected to the same set of neighbors) in the graph shown in @fig-grex2.
 <br>
 <br>
 <br>
 <br>
 
-1. Out of the nodes that are not structurally equivalent, which pairs of nodes have the highest **structural similarity** in the graph shown in @fig-grex1?
+1. Out of the nodes that are not structurally equivalent, which pairs of nodes have the highest **structural similarity** in the graph shown in @fig-grex2?
 <br>
 <br>
 <br>
 <br>
 
-1. Using the **Jaccard Similarity** metric, compute the structural similarity between nodes *K* and *N* in the graph shown in @fig-grex1.
+1. Using the **Jaccard Similarity** metric, compute the structural similarity between nodes *K* and *N* in the graph shown in @fig-grex2.
 <br>
 <br>
 <br>
 <br>
 
-1. Using the **Dice Similarity** metric, compute the structural similarity between nodes *L* and *M* in the graph shown in @fig-grex1.
+1. Using the **Dice Similarity** metric, compute the structural similarity between nodes *L* and *M* in the graph shown in @fig-grex2.
 <br>
 <br>
 <br>
 <br>
 
-1. Using the **Cosine Similarity** metric, compute the structural similarity between nodes *D* and *B* in the graph shown in @fig-grex1.
+1. Using the **Cosine Similarity** metric, compute the structural similarity between nodes *D* and *B* in the graph shown in @fig-grex2.
 <br>
 <br>
 <br>
