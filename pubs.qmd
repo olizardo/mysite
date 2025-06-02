@@ -151,7 +151,7 @@
 
 - "Functionaries: A distributional approach to institutional analysis." [(pdf)](/workpap/functionaries.pdf)
 
-- "The Cultural environment for innovation and entrepreneurship." In O. Sorenson and P. Thornton (Eds.), *Handbook of Sociology of Innovation and Entrepreneurship*. De Gruyter. [(pdf)](/workpap/cult-env.pdf)
+- "The Cultural environment for innovation and entrepreneurship." In O. Sorenson and P. Thornton (Eds.), *Handbook of Sociology of Innovation and Entrepreneurship*. De Gruyter. [doi:10.1515/9783111085722-026](https://doi.org/10.1515/9783111085722-026)
 
 - "Organizations and the structure of culture." *Sociology Compass* 17: e13063. [doi:10.1111/soc4.13063](https://doi.org/10.1111/soc4.13063)
 
