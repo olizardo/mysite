@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Omar Lizardo’s Academic Website - Homework VI: Ego-Network Metrics</title>
+<title>Omar Lizardo’s Academic Website - Homework VI: Balance and Signed Graphs</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -61,10 +61,13 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+<script src="../site_libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="../site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
+
 
 <link rel="stylesheet" href="../styles.css">
-<meta property="og:title" content="Omar Lizardo’s Academic Website - Homework VI: Ego-Network Metrics">
-<meta property="og:description" content="Figure&nbsp;2-Figure&nbsp;5 show some sociodemographic and role-relational characteristics of alters in ego’s network. Ego is a UCLA student who identifies as Hispanic and as a Man. Using this information:">
+<meta property="og:title" content="Omar Lizardo’s Academic Website - Homework VI: Balance and Signed Graphs">
+<meta property="og:description" content="Figure&nbsp;1 is a directed signed graph. In the figure teal edges represent positive ties between the two nodes and red edges represent negative ties.">
 <meta property="og:site-name" content="Omar Lizardo's Academic Website">
 </head>
 
@@ -162,14 +165,23 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#signed-graphs" id="toc-signed-graphs" class="nav-link active" data-scroll-target="#signed-graphs">Signed Graphs</a></li>
+  <li><a href="#balanced-and-unbalanced-triads" id="toc-balanced-and-unbalanced-triads" class="nav-link" data-scroll-target="#balanced-and-unbalanced-triads">Balanced and Unbalanced Triads</a></li>
+  <li><a href="#structural-balance" id="toc-structural-balance" class="nav-link" data-scroll-target="#structural-balance">Structural Balance</a></li>
+  <li><a href="#clustering" id="toc-clustering" class="nav-link" data-scroll-target="#clustering">Clustering</a></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/olizardo/mysite/blob/main/soc-111-homeworks/homework6-answered.qmd" class="toc-action">View source</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Homework VI: Ego-Network Metrics</h1>
+<h1 class="title">Homework VI: Balance and Signed Graphs</h1>
 </div>
 
 
@@ -184,104 +196,636 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<section id="signed-graphs" class="level2">
+<h2 class="anchored" data-anchor-id="signed-graphs">Signed Graphs</h2>
+<div class="cell" data-fig-cap-location="margin">
+<div class="cell-output-display">
+<div id="fig-grex0" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="homework6-answered_files/figure-html/fig-grex0-1.png" class="img-fluid figure-img" width="1152"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;1: A directed signed graph.</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p><a href="#fig-grex0">Figure&nbsp;1</a> is a <strong>directed signed graph</strong>. In the figure <strong>teal</strong> edges represent <em>positive</em> ties between the two nodes and <strong>red</strong> edges represent negative ties.</p>
+<ol type="1">
+<li>Write the directed signed graph’s <strong>positive edge set</strong>.</li>
+</ol>
 <div class="cell">
+<div class="cell-output-display">
+
+<table>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> DA, </td>
+   <td style="text-align:left;"> BJ, </td>
+   <td style="text-align:left;"> DJ, </td>
+   <td style="text-align:left;"> CE, </td>
+   <td style="text-align:left;"> DF, </td>
+   <td style="text-align:left;"> GF, </td>
+   <td style="text-align:left;"> AG, </td>
+   <td style="text-align:left;"> GJ, </td>
+   <td style="text-align:left;"> HG, </td>
+   <td style="text-align:left;"> AH, </td>
+   <td style="text-align:left;"> IH, </td>
+  </tr>
+</tbody>
+</table>
 
 </div>
-<div id="fig-ego" class="cell quarto-layout-panel" data-fig-cap-location="margin">
+</div>
+<ol type="1">
+<li>Write the directed signed graph’s <strong>negative edge set</strong>.</li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+
+<table>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> AB, </td>
+   <td style="text-align:left;"> CB, </td>
+   <td style="text-align:left;"> EB, </td>
+   <td style="text-align:left;"> GC, </td>
+   <td style="text-align:left;"> FD, </td>
+   <td style="text-align:left;"> HD, </td>
+   <td style="text-align:left;"> JD, </td>
+   <td style="text-align:left;"> CG, </td>
+   <td style="text-align:left;"> EH, </td>
+   <td style="text-align:left;"> DI, </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+</div>
+<ol type="1">
+<li>In the matrix below, write down the cell entries for the <strong>adjacency matrix</strong> corresponding to the graph shown in <a href="#fig-grex0">Figure&nbsp;1</a>:</li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+
+<table class="table" style="margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;">   </th>
+   <th style="text-align:center;"> A </th>
+   <th style="text-align:center;"> B </th>
+   <th style="text-align:center;"> C </th>
+   <th style="text-align:center;"> D </th>
+   <th style="text-align:center;"> E </th>
+   <th style="text-align:center;"> F </th>
+   <th style="text-align:center;"> G </th>
+   <th style="text-align:center;"> H </th>
+   <th style="text-align:center;"> I </th>
+   <th style="text-align:center;"> J </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> A </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> ---- </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> -1 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> B </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> ---- </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> C </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> -1 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> ---- </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> -1 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> D </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> ---- </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> -1 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> E </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> -1 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> ---- </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> -1 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> F </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> -1 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> ---- </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> G </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> -1 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> ---- </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> H </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> -1 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> ---- </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> I </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> ---- </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> J </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> -1 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> ---- </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</section>
+<section id="balanced-and-unbalanced-triads" class="level2">
+<h2 class="anchored" data-anchor-id="balanced-and-unbalanced-triads">Balanced and Unbalanced Triads</h2>
+<div class="cell" data-fig-cap-location="margin">
+<div class="cell-output-display">
+<div id="fig-grex1" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<div class="quarto-layout-row quarto-layout-valign-top">
-<div class="cell-output-display quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 50.0%;justify-content: center;">
-<div id="fig-ego-1" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="homework6-answered_files/figure-html/fig-ego-1.png" class="img-fluid figure-img" data-ref-parent="fig-ego" width="768"></p>
-<p></p><figcaption class="figure-caption">(a) Ego to alter ties.</figcaption><p></p>
+<p><img src="homework6-answered_files/figure-html/fig-grex1-1.png" class="img-fluid figure-img" width="1152"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;2: A complete signed graph.</figcaption><p></p>
 </figure>
 </div>
 </div>
-<div class="cell-output-display quarto-layout-cell quarto-layout-cell-subref" style="flex-basis: 50.0%;justify-content: center;">
-<div id="fig-ego-2" class="quarto-figure quarto-figure-center anchored">
+</div>
+<p><a href="#fig-grex1">Figure&nbsp;2</a> is a <strong>complete signed graph</strong>. In the figure <strong>teal</strong> edges represent <em>positive</em> ties between the two nodes and <strong>red</strong> edges represent negative ties.</p>
+<ol type="1">
+<li>Write down all the <strong>balanced triads</strong> in the graph (you refer to a triad by listing all three nodes in it, like ABC):</li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+
+<table>
+ <thead>
+  <tr>
+   <th style="text-align:left;"> V1 </th>
+   <th style="text-align:left;"> V2 </th>
+   <th style="text-align:left;"> V3 </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> A </td>
+   <td style="text-align:left;"> B </td>
+   <td style="text-align:left;"> E </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> A </td>
+   <td style="text-align:left;"> E </td>
+   <td style="text-align:left;"> F </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> B </td>
+   <td style="text-align:left;"> C </td>
+   <td style="text-align:left;"> E </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> B </td>
+   <td style="text-align:left;"> D </td>
+   <td style="text-align:left;"> E </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> C </td>
+   <td style="text-align:left;"> E </td>
+   <td style="text-align:left;"> F </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> D </td>
+   <td style="text-align:left;"> E </td>
+   <td style="text-align:left;"> F </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+</div>
+<ol type="1">
+<li>Write down all the <strong>unbalanced triads</strong> in the graph:</li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+
+<table>
+ <thead>
+  <tr>
+   <th style="text-align:left;"> V1 </th>
+   <th style="text-align:left;"> V2 </th>
+   <th style="text-align:left;"> V3 </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> A </td>
+   <td style="text-align:left;"> B </td>
+   <td style="text-align:left;"> F </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> A </td>
+   <td style="text-align:left;"> B </td>
+   <td style="text-align:left;"> C </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> A </td>
+   <td style="text-align:left;"> B </td>
+   <td style="text-align:left;"> D </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> A </td>
+   <td style="text-align:left;"> C </td>
+   <td style="text-align:left;"> F </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> A </td>
+   <td style="text-align:left;"> C </td>
+   <td style="text-align:left;"> E </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> A </td>
+   <td style="text-align:left;"> C </td>
+   <td style="text-align:left;"> D </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> A </td>
+   <td style="text-align:left;"> D </td>
+   <td style="text-align:left;"> F </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> A </td>
+   <td style="text-align:left;"> D </td>
+   <td style="text-align:left;"> E </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> B </td>
+   <td style="text-align:left;"> C </td>
+   <td style="text-align:left;"> F </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> B </td>
+   <td style="text-align:left;"> C </td>
+   <td style="text-align:left;"> D </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> B </td>
+   <td style="text-align:left;"> D </td>
+   <td style="text-align:left;"> F </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> B </td>
+   <td style="text-align:left;"> E </td>
+   <td style="text-align:left;"> F </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> C </td>
+   <td style="text-align:left;"> D </td>
+   <td style="text-align:left;"> F </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> C </td>
+   <td style="text-align:left;"> D </td>
+   <td style="text-align:left;"> E </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+</div>
+<ol type="1">
+<li>How many <strong>balanced</strong> triads with <em>all positive edges</em> exist in the graph?</li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+
+<table>
+ <thead>
+  <tr>
+   <th style="text-align:left;"> V1 </th>
+   <th style="text-align:left;"> V2 </th>
+   <th style="text-align:left;"> V3 </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> A </td>
+   <td style="text-align:left;"> B </td>
+   <td style="text-align:left;"> E </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> B </td>
+   <td style="text-align:left;"> C </td>
+   <td style="text-align:left;"> E </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> B </td>
+   <td style="text-align:left;"> D </td>
+   <td style="text-align:left;"> E </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+</div>
+<p>ANSWER: 3</p>
+<ol type="1">
+<li>How many <strong>balanced</strong> triads with <em>two negative edges</em> exist in the graph?</li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+
+<table>
+ <thead>
+  <tr>
+   <th style="text-align:left;"> V1 </th>
+   <th style="text-align:left;"> V2 </th>
+   <th style="text-align:left;"> V3 </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> A </td>
+   <td style="text-align:left;"> E </td>
+   <td style="text-align:left;"> F </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> C </td>
+   <td style="text-align:left;"> E </td>
+   <td style="text-align:left;"> F </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> D </td>
+   <td style="text-align:left;"> E </td>
+   <td style="text-align:left;"> F </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+</div>
+<p>ANSWER: 3</p>
+<ol type="1">
+<li>How many <strong>unbalanced</strong> triads with <em>three negative edges</em> exist in the graph?</li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+
+<table>
+ <thead>
+  <tr>
+   <th style="text-align:left;"> V1 </th>
+   <th style="text-align:left;"> V2 </th>
+   <th style="text-align:left;"> V3 </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> A </td>
+   <td style="text-align:left;"> C </td>
+   <td style="text-align:left;"> F </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> A </td>
+   <td style="text-align:left;"> C </td>
+   <td style="text-align:left;"> D </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> A </td>
+   <td style="text-align:left;"> D </td>
+   <td style="text-align:left;"> F </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> C </td>
+   <td style="text-align:left;"> D </td>
+   <td style="text-align:left;"> F </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+</div>
+<p>ANSWER: 4</p>
+<ol type="1">
+<li>How many <strong>unbalanced</strong> triads with <em>one negative edge</em> exist in the graph?</li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+
+<table>
+ <thead>
+  <tr>
+   <th style="text-align:left;"> V1 </th>
+   <th style="text-align:left;"> V2 </th>
+   <th style="text-align:left;"> V3 </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> A </td>
+   <td style="text-align:left;"> B </td>
+   <td style="text-align:left;"> F </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> A </td>
+   <td style="text-align:left;"> B </td>
+   <td style="text-align:left;"> C </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> A </td>
+   <td style="text-align:left;"> B </td>
+   <td style="text-align:left;"> D </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> A </td>
+   <td style="text-align:left;"> C </td>
+   <td style="text-align:left;"> E </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> A </td>
+   <td style="text-align:left;"> D </td>
+   <td style="text-align:left;"> E </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> B </td>
+   <td style="text-align:left;"> C </td>
+   <td style="text-align:left;"> F </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> B </td>
+   <td style="text-align:left;"> C </td>
+   <td style="text-align:left;"> D </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> B </td>
+   <td style="text-align:left;"> D </td>
+   <td style="text-align:left;"> F </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> B </td>
+   <td style="text-align:left;"> E </td>
+   <td style="text-align:left;"> F </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> C </td>
+   <td style="text-align:left;"> D </td>
+   <td style="text-align:left;"> E </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+</div>
+<p>ANSWER: 10</p>
+<p>For the following questions write either “positive” or “negative” as a possible answer. <em>Remember that showing your work helps you get partial credit</em>.</p>
+<ol type="1">
+<li>What is the <strong>sign of the path</strong> ADFBC?</li>
+</ol>
+<p>ANSWER: Positive</p>
+<ol type="1">
+<li>What is the <strong>sign of the path</strong> CDEBFA?</li>
+</ol>
+<p>ANSWER: Positive</p>
+<ol type="1">
+<li>What is the <strong>sign of the cycle</strong> BDEFB?</li>
+</ol>
+<p>ANSWER: Negative</p>
+<ol type="1">
+<li>What is the <strong>sign of the cycle</strong> CADFC?</li>
+</ol>
+<p>ANSWER: Positive</p>
+</section>
+<section id="structural-balance" class="level2">
+<h2 class="anchored" data-anchor-id="structural-balance">Structural Balance</h2>
+<div class="cell" data-fig-cap-location="margin">
+<div class="cell-output-display">
+<div id="fig-grex2" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><img src="homework6-answered_files/figure-html/fig-ego-2.png" class="img-fluid figure-img" data-ref-parent="fig-ego" width="768"></p>
-<p></p><figcaption class="figure-caption">(b) Alter to alter ties.</figcaption><p></p>
+<p><img src="homework6-answered_files/figure-html/fig-grex2-1.png" class="img-fluid figure-img" width="1152"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;3: A complete balanced signed graph.</figcaption><p></p>
 </figure>
 </div>
 </div>
 </div>
-<p></p><figcaption class="figure-caption">Figure&nbsp;1: Ego Network ties in a hypothetical ego-network.</figcaption><p></p>
-</figure>
-</div>
+<p>Cartwright and Harary’s <strong>fundamental theory of structural balance</strong> says that in a balanced signed graph like the one in <a href="#fig-grex2">Figure&nbsp;3</a>, the node set can be divided into two cliques (subset of nodes) such that there are only positive ties among members of the clique and negative ties with members of the other clique.</p>
+<ol type="1">
+<li>Write down the nodes that belong to each of the two cliques in <a href="#fig-grex2">Figure&nbsp;3</a>:</li>
+</ol>
 <ul>
-<li><p>Consider <a href="#fig-ego">Figure&nbsp;1</a>(a). This shows the <strong>ego-to-alter</strong> ties in a hypothetical ego-network.</p></li>
-<li><p>Consider <a href="#fig-ego">Figure&nbsp;1</a>(b). This shows the <strong>alter-to-alter</strong> ties in the hypothetical ego-network shown in <a href="#fig-ego">Figure&nbsp;1</a>(a).</p></li>
+<li>First clique:</li>
 </ul>
+<p>A, B, C, D</p>
+<ul>
+<li>Second clique:</li>
+</ul>
+<p>E, F, G, H</p>
+</section>
+<section id="clustering" class="level2">
+<h2 class="anchored" data-anchor-id="clustering">Clustering</h2>
+<div class="cell" data-fig-cap-location="margin">
+<div class="cell-output-display">
+<div id="fig-grex3" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="homework6-answered_files/figure-html/fig-grex3-1.png" class="img-fluid figure-img" width="1152"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;4: A clusterable signed graph.</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p>According to Davis, a graph is <strong>clusterable</strong> if it can be divided into multiple groups such that there are only positive or null dyads <em>within</em> groups and negative or null dyads <em>across</em> groups.</p>
 <ol type="1">
-<li><p>What is the <strong>size</strong> of ego’s network? <br> 12</p></li>
-<li><p>What is ego’s clustering coefficient? <br> 0.273</p></li>
+<li>How many clusters are there in <a href="#fig-grex3">Figure&nbsp;4</a>?</li>
 </ol>
-<div class="cell" data-fig-cap-location="margin">
-<div class="cell-output-display">
-<div id="fig-altersdem1" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="homework6-answered_files/figure-html/fig-altersdem1-1.png" class="img-fluid figure-img" width="960"></p>
-<p></p><figcaption class="figure-caption">Figure&nbsp;2: Gender identification of alters.</figcaption><p></p>
-</figure>
-</div>
-</div>
-</div>
-<div class="cell" data-fig-cap-location="margin">
-<div class="cell-output-display">
-<div id="fig-altersdem2" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="homework6-answered_files/figure-html/fig-altersdem2-1.png" class="img-fluid figure-img" width="960"></p>
-<p></p><figcaption class="figure-caption">Figure&nbsp;3: Ethnoracial identification of alters.</figcaption><p></p>
-</figure>
-</div>
-</div>
-</div>
-<div class="cell" data-fig-cap-location="margin">
-<div class="cell-output-display">
-<div id="fig-altersdem3" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="homework6-answered_files/figure-html/fig-altersdem3-1.png" class="img-fluid figure-img" width="960"></p>
-<p></p><figcaption class="figure-caption">Figure&nbsp;4: Role relations of alters with Ego.</figcaption><p></p>
-</figure>
-</div>
-</div>
-</div>
-<div class="cell" data-fig-cap-location="margin">
-<div class="cell-output-display">
-<div id="fig-altersdem4" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="homework6-answered_files/figure-html/fig-altersdem4-1.png" class="img-fluid figure-img" width="960"></p>
-<p></p><figcaption class="figure-caption">Figure&nbsp;5: Employment status of alters.</figcaption><p></p>
-</figure>
-</div>
-</div>
-</div>
-<p><a href="#fig-altersdem1">Figure&nbsp;2</a>-<a href="#fig-altersdem4">Figure&nbsp;5</a> show some sociodemographic and role-relational characteristics of alters in ego’s network. Ego is a <em>UCLA student who identifies as Hispanic and as a Man</em>. Using this information:</p>
+<p>ANSWER: 4</p>
 <ol type="1">
-<li><p>Compute Ego’s <strong>homophily</strong> with respect to gender identity. <br> 0.5</p></li>
-<li><p>Compute Ego’s <strong>homophily</strong> with respect to Ethnoracial identification. <br> 0.33</p></li>
-<li><p>Compute the <strong>proportion</strong> kin in Ego’s network. <br> 0.33</p></li>
-<li><p>Compute the <strong>proportion</strong> non-Hispanic in Ego’s network. <br> 0.67</p></li>
-<li><p>Compute the <strong>proportion</strong> of individuals employed outside the home in Ego’s network. <br> 0.08</p></li>
-<li><p>Compute the <strong>diversity</strong> of Ego’s Network with respect to ethnoracial identity. <br> 0.76</p></li>
-<li><p>Compute the <strong>diversity</strong> of Ego’s Network with respect to employment status. <br> 0.6</p></li>
-<li><p>Compute the <strong>diversity</strong> of Ego’s Network with respect to gender identity. <br> 0.74</p></li>
-<li><p>Compute the <strong>proportion</strong> of fellow students in Ego’s network. <br> 0.58</p></li>
-<li><p>Does ego have a stronger <strong>same-group preference</strong> with respect to race than with respect to gender? (Yes/No) <br> Race: 0.33 <br> Gender: 0.5 <br> Answer: Yes</p></li>
-<li><p>Is the <strong>diversity</strong> of ego’s network larger when it comes to race than when it comes to employment status (Yes/No) <br> Yes</p></li>
-<li><p>What is the <strong>proportion</strong> of ego’s network composed of kin who are also full-time parents? <br> 0.08</p></li>
-<li><p>Compute the <strong>proportion</strong> of people who identify as Men or Women in ego’s network. <br> 0.42</p></li>
-<li><p>Draw the <strong>subgraph</strong> of Ego’s alter-to-alter ties that is only composed of students <br> <br> <br> <br> <br></p></li>
+<li>Write down the names of the nodes in each cluster of <a href="#fig-grex3">Figure&nbsp;4</a>:</li>
 </ol>
-<div class="cell">
-<div class="cell-output-display">
-<p><img src="homework6-answered_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid" width="768"></p>
-</div>
-</div>
+<p>A, B, C</p>
+<p>D, E, F</p>
+<p>G, H, I</p>
+<p>J, K, L</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
