@@ -971,5 +971,19 @@
     "title": "Homework VI: Balance and Signed Graphs",
     "section": "Clustering",
     "text": "Clustering\n\n\n\n\n\nFigure 4: A clusterable signed graph.\n\n\n\n\nAccording to Davis, a graph is clusterable if it can be divided into multiple groups such that there are only positive or null dyads within groups and negative or null dyads across groups.\n\nHow many clusters are there in Figure 4?\n\nANSWER: 4\n\nWrite down the names of the nodes in each cluster of Figure 4:\n\nA, B, C\nD, E, F\nG, H, I\nJ, K, L"
+  },
+  {
+    "objectID": "soc-111-homeworks/homework7-answered.html#size-effective-size-and-clustering",
+    "href": "soc-111-homeworks/homework7-answered.html#size-effective-size-and-clustering",
+    "title": "Homework VII: Ego-Network Metrics",
+    "section": "Size, Effective Size, and Clustering",
+    "text": "Size, Effective Size, and Clustering\n\n\n\n\n\n\n\n(a) Ego to alter ties.\n\n\n\n\n\n\n\n(b) Alter to alter ties.\n\n\n\n\nFigure 1: Ego Network ties in a hypothetical ego-network.\n\n\n\nConsider Figure 1 (a). This shows the ego-to-alter ties in a hypothetical ego-network.\nConsider Figure 1 (b). This shows the alter-to-alter ties in the hypothetical ego-network shown in Figure 1 (a).\n\n\nWhat is the size of ego’s network?\n\nANSWER: 10\n\nWhat is the effective size of ego’s network?\n\nANSWER: 6.8 `\n\nWhat is ego’s clustering coefficient?\n\nANSWER: 0.356"
+  },
+  {
+    "objectID": "soc-111-homeworks/homework7-answered.html#composition-diversity-and-homophily",
+    "href": "soc-111-homeworks/homework7-answered.html#composition-diversity-and-homophily",
+    "title": "Homework VII: Ego-Network Metrics",
+    "section": "Composition, Diversity, and Homophily",
+    "text": "Composition, Diversity, and Homophily\n\n\n\n\n\n\n\n(a) Gender Identification of Alters.\n\n\n\n\n\n\n\n(b) Ethnoracial identification of alters.\n\n\n\n\n\n\n\n\n\n(c) Role relations of alters with Ego.\n\n\n\n\n\n\n\n(d) Employment status of alters.\n\n\n\n\nFigure 2: Socio-demographic Characteristics of Alters\n\n\nFigure 2 (a)-Figure 2 (d) show some sociodemographic and role-relational characteristics of alters in ego’s network. Ego is a UCLA student who identifies as Asian and as a Woman. Using this information:\n\nCompute Ego’s EI homophily index with respect to gender identity.\n\nANSWER: 0.6\n\nCompute Ego’s EI homophily index with respect to Ethnoracial identification.\n\nANSWER: 0.8\n\nCompute the proportion of neighbors in Ego’s network.\n\nANSWER: 0.5\n\nCompute the proportion of people who identify as Hispanic in Ego’s network.\n\nANSWER: 0.2\n\nCompute the proportion of fellow students in Ego’s network.\n\nANSWER: 0.1\n\nCompute the diversity of Ego’s Network with respect to ethnoracial identity.\n\nANSWER: 0.74\n\nCompute the diversity of Ego’s Network with respect to employment status.\n\nANSWER: 0.7\n\nCompute the diversity of Ego’s Network with respect to gender identity.\n\nANSWER: 0.7\n\nDoes ego have a stronger same-group preference with respect to race than with respect to gender? (Yes/No, show your reasoning)\n\nANSWER: No (Gender EI = 0.6, versus Race EI = 0.8)\n\nIs the diversity of ego’s network larger when it comes to race than when it comes to employment status (Yes/No, show your reasoning)\n\nANSWER: Yes (Race H = 0.74, versus Employment H = 0.7)\n\nWhat is the proportion of ego’s network composed of friends who are also Genderfluid?\n\nANSWER: 0.2\n\nCompute the proportion of people who identify as either Men or Women in ego’s network.\n\nANSWER: 0.5"
   }
 ]
