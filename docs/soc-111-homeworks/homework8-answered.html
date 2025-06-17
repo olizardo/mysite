@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Omar Lizardo’s Academic Website - Homework VIII: Graph Connectivity and Structural Similarity</title>
+<title>Omar Lizardo’s Academic Website - Homework VIII: Subgroups, Graph Connectivity, and Structural Similarity</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -66,7 +66,8 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="../styles.css">
-<meta property="og:title" content="Omar Lizardo’s Academic Website - Homework VIII: Graph Connectivity and Structural Similarity">
+<meta property="og:title" content="Omar Lizardo’s Academic Website - Homework VIII: Subgroups, Graph Connectivity, and Structural Similarity">
+<meta property="og:description" content="ANSWER: 4">
 <meta property="og:site-name" content="Omar Lizardo's Academic Website">
 </head>
 
@@ -164,14 +165,22 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#cliques-and-n-cliques" id="toc-cliques-and-n-cliques" class="nav-link active" data-scroll-target="#cliques-and-n-cliques">Cliques and n-Cliques</a></li>
+  <li><a href="#structural-equivalence-and-structural-similarity" id="toc-structural-equivalence-and-structural-similarity" class="nav-link" data-scroll-target="#structural-equivalence-and-structural-similarity">Structural Equivalence and Structural Similarity</a></li>
+  <li><a href="#graph-connectivity" id="toc-graph-connectivity" class="nav-link" data-scroll-target="#graph-connectivity">Graph Connectivity</a></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/olizardo/mysite/blob/main/soc-111-homeworks/homework8-answered.qmd" class="toc-action">View source</a></p></div></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Homework VIII: Graph Connectivity and Structural Similarity</h1>
+<h1 class="title">Homework VIII: Subgroups, Graph Connectivity, and Structural Similarity</h1>
 </div>
 
 
@@ -186,18 +195,165 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<section id="cliques-and-n-cliques" class="level2">
+<h2 class="anchored" data-anchor-id="cliques-and-n-cliques">Cliques and n-Cliques</h2>
 <div class="cell" data-fig-cap-location="margin">
 <div class="cell-output-display">
 <div id="fig-grex1" class="quarto-figure quarto-figure-center anchored">
 <figure class="figure">
-<p><img src="homework8-answered_files/figure-html/fig-grex1-1.png" class="img-fluid figure-img" width="768"></p>
+<p><img src="homework8-answered_files/figure-html/fig-grex1-1.png" class="img-fluid figure-img" width="1152"></p>
 <p></p><figcaption class="figure-caption">Figure&nbsp;1: An undirected graph.</figcaption><p></p>
 </figure>
 </div>
 </div>
 </div>
+<ol type="1">
+<li>List the nodes in all the <strong>cliques</strong> of <em>size four</em> in <a href="#fig-grex1">Figure&nbsp;1</a>.</li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+
+<table>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> J </td>
+   <td style="text-align:left;"> K </td>
+   <td style="text-align:left;"> L </td>
+   <td style="text-align:left;"> M </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> M </td>
+   <td style="text-align:left;"> N </td>
+   <td style="text-align:left;"> O </td>
+   <td style="text-align:left;"> P </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> E </td>
+   <td style="text-align:left;"> F </td>
+   <td style="text-align:left;"> G </td>
+   <td style="text-align:left;"> H </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> A </td>
+   <td style="text-align:left;"> B </td>
+   <td style="text-align:left;"> C </td>
+   <td style="text-align:left;"> D </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> I </td>
+   <td style="text-align:left;"> J </td>
+   <td style="text-align:left;"> K </td>
+   <td style="text-align:left;"> L </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> I </td>
+   <td style="text-align:left;"> J </td>
+   <td style="text-align:left;"> K </td>
+   <td style="text-align:left;"> M </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> I </td>
+   <td style="text-align:left;"> J </td>
+   <td style="text-align:left;"> L </td>
+   <td style="text-align:left;"> M </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> I </td>
+   <td style="text-align:left;"> K </td>
+   <td style="text-align:left;"> L </td>
+   <td style="text-align:left;"> M </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+</div>
+<ol type="1">
+<li>List the nodes in all the <strong>cliques</strong> of <em>size five</em> in <a href="#fig-grex1">Figure&nbsp;1</a>.</li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+
+<table>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> I </td>
+   <td style="text-align:left;"> J </td>
+   <td style="text-align:left;"> K </td>
+   <td style="text-align:left;"> L </td>
+   <td style="text-align:left;"> M </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+</div>
+<ol type="1">
+<li>How many <strong>cliques</strong> of <em>size four</em> does node <em>M</em> belong to?</li>
+</ol>
+<p>ANSWER: 4</p>
+<ol type="1">
+<li>List the nodes in one of the <strong>2-cliques</strong> in <a href="#fig-grex1">Figure&nbsp;1</a>:</li>
+</ol>
+<p>ANSWER: Anything in the ballpark</p>
+<ol type="1">
+<li>List the nodes in the <em>five cliques of size four</em> nested inside the clique of size five in <a href="#fig-grex1">Figure&nbsp;1</a>.</li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+
+<table>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> J </td>
+   <td style="text-align:left;"> K </td>
+   <td style="text-align:left;"> L </td>
+   <td style="text-align:left;"> M </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> I </td>
+   <td style="text-align:left;"> J </td>
+   <td style="text-align:left;"> K </td>
+   <td style="text-align:left;"> L </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> I </td>
+   <td style="text-align:left;"> J </td>
+   <td style="text-align:left;"> K </td>
+   <td style="text-align:left;"> M </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> I </td>
+   <td style="text-align:left;"> J </td>
+   <td style="text-align:left;"> L </td>
+   <td style="text-align:left;"> M </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> I </td>
+   <td style="text-align:left;"> K </td>
+   <td style="text-align:left;"> L </td>
+   <td style="text-align:left;"> M </td>
+  </tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</section>
+<section id="structural-equivalence-and-structural-similarity" class="level2">
+<h2 class="anchored" data-anchor-id="structural-equivalence-and-structural-similarity">Structural Equivalence and Structural Similarity</h2>
+<div class="cell" data-fig-cap-location="margin">
+<div class="cell-output-display">
+<div id="fig-grex2" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="homework8-answered_files/figure-html/fig-grex2-1.png" class="img-fluid figure-img" width="768"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;2: An undirected graph.</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
 <ul>
-<li>In the matrix below, write down the cell entries for the <strong>adjacency matrix</strong> corresponding to the graph shown in <a href="#fig-grex1">Figure&nbsp;1</a>:</li>
+<li>In the matrix below, write down the cell entries for the <strong>adjacency matrix</strong> corresponding to the graph shown in <a href="#fig-grex2">Figure&nbsp;2</a>:</li>
 </ul>
 <div class="cell">
 <div class="cell-output-display">
@@ -225,97 +381,97 @@ ul.task-list li input[type="checkbox"] {
 <tbody>
   <tr>
    <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> A </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> ---- </td>
    <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
    <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
    <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
    <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
    <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
    <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-bottom: 1px solid"> 1 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> B </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> ---- </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
    <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
    <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-bottom: 1px solid"> 1 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> C </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> ---- </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-bottom: 1px solid"> 1 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> D </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> ---- </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-bottom: 1px solid"> 1 </td>
-  </tr>
-  <tr>
-   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> E </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> ---- </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
    <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
    <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
    <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
    <td style="text-align:center;border-bottom: 1px solid"> 0 </td>
   </tr>
   <tr>
-   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> F </td>
+   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> B </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
    <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
    <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
    <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
    <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
    <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> ---- </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
+   <td style="text-align:center;border-bottom: 1px solid"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> C </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-bottom: 1px solid"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> D </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
+   <td style="text-align:center;border-bottom: 1px solid"> 0 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> E </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-bottom: 1px solid"> 1 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> F </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
    <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
    <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
    <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
@@ -333,11 +489,11 @@ ul.task-list li input[type="checkbox"] {
    <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
    <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
    <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> ---- </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
    <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
    <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
    <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
    <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
    <td style="text-align:center;border-bottom: 1px solid"> 0 </td>
@@ -345,13 +501,13 @@ ul.task-list li input[type="checkbox"] {
   <tr>
    <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> H </td>
    <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
    <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
    <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> ---- </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
    <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
    <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
    <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
@@ -362,104 +518,104 @@ ul.task-list li input[type="checkbox"] {
   <tr>
    <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> I </td>
    <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
    <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
    <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
    <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
    <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
    <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> ---- </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
    <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
    <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
    <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
    <td style="text-align:center;border-bottom: 1px solid"> 0 </td>
   </tr>
   <tr>
    <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> J </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
    <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
    <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
    <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
    <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
    <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
    <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
    <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> ---- </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
    <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
    <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
    <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-bottom: 1px solid"> 1 </td>
   </tr>
   <tr>
    <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> K </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
    <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
    <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
    <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> ---- </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
    <td style="text-align:center;border-bottom: 1px solid"> 0 </td>
   </tr>
   <tr>
    <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> L </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
    <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
    <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
    <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
    <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> ---- </td>
    <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
    <td style="text-align:center;border-bottom: 1px solid"> 0 </td>
   </tr>
   <tr>
    <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> M </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
    <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
    <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
    <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
    <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
    <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
    <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
    <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
    <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
    <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> ---- </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
    <td style="text-align:center;border-bottom: 1px solid"> 0 </td>
   </tr>
   <tr>
    <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> N </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
    <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
    <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
    <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
    <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1 </td>
    <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
    <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
    <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0 </td>
-   <td style="text-align:center;border-bottom: 1px solid"> ---- </td>
+   <td style="text-align:center;border-bottom: 1px solid"> 0 </td>
   </tr>
 </tbody>
 </table>
@@ -467,7 +623,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <ul>
-<li>Using the information from the previous matrix, in the matrix below, write down the cell entries for the <strong>structural similarity matrix</strong> corresponding to the graph shown in <a href="#fig-grex1">Figure&nbsp;1</a> using the <strong>Euclidean Distance</strong>:</li>
+<li>Using the information from the previous matrix, in the matrix below, write down the cell entries for the <strong>structural similarity matrix</strong> corresponding to the graph shown in <a href="#fig-grex2">Figure&nbsp;2</a> using the <strong>Euclidean Distance</strong>:</li>
 </ul>
 <div class="cell">
 <div class="cell-output-display">
@@ -495,241 +651,241 @@ ul.task-list li input[type="checkbox"] {
 <tbody>
   <tr>
    <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> A </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0.0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1.0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1.7 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1.7 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.8 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.6 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.8 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.2 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.6 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.6 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 3.0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 3.0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 3.0 </td>
-   <td style="text-align:center;border-bottom: 1px solid"> 3.0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0.00 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 3.16 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.83 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.65 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.83 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0.00 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.65 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0.00 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.00 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 3.00 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.65 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.24 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.24 </td>
+   <td style="text-align:center;border-bottom: 1px solid"> 0.00 </td>
   </tr>
   <tr>
    <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> B </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1.0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0.0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1.4 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1.4 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.6 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.4 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.6 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.4 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.8 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.4 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.8 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.8 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.8 </td>
-   <td style="text-align:center;border-bottom: 1px solid"> 2.8 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 3.16 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0.00 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1.41 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.65 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1.41 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 3.16 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.65 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 3.16 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 3.16 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1.00 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.65 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.24 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 3.00 </td>
+   <td style="text-align:center;border-bottom: 1px solid"> 3.16 </td>
   </tr>
   <tr>
    <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> C </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1.7 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1.4 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0.0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1.4 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.6 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.8 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.2 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.8 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.8 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.8 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.8 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.8 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.8 </td>
-   <td style="text-align:center;border-bottom: 1px solid"> 2.8 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.83 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1.41 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0.00 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.65 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0.00 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.83 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.65 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.83 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.83 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1.00 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.65 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.24 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.65 </td>
+   <td style="text-align:center;border-bottom: 1px solid"> 2.83 </td>
   </tr>
   <tr>
    <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> D </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1.7 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1.4 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1.4 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0.0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.2 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.8 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.6 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.8 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.8 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.4 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.8 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.8 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.8 </td>
-   <td style="text-align:center;border-bottom: 1px solid"> 2.8 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.65 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.65 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.65 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0.00 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.65 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.65 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.00 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.65 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.24 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.83 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1.41 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.00 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.00 </td>
+   <td style="text-align:center;border-bottom: 1px solid"> 2.65 </td>
   </tr>
   <tr>
    <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> E </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.8 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.6 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.6 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.2 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0.0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.2 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.2 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1.7 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1.7 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.2 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.2 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.2 </td>
-   <td style="text-align:center;border-bottom: 1px solid"> 2.2 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.83 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1.41 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0.00 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.65 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0.00 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.83 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.65 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.83 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.83 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1.00 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.65 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.24 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.65 </td>
+   <td style="text-align:center;border-bottom: 1px solid"> 2.83 </td>
   </tr>
   <tr>
    <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> F </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.6 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.4 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.8 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.8 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.2 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0.0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.2 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1.4 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.4 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.4 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.4 </td>
-   <td style="text-align:center;border-bottom: 1px solid"> 2.4 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0.00 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 3.16 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.83 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.65 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.83 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0.00 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.65 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0.00 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.00 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 3.00 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.65 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.24 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.24 </td>
+   <td style="text-align:center;border-bottom: 1px solid"> 0.00 </td>
   </tr>
   <tr>
    <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> G </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.8 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.6 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.2 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.6 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.2 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0.0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.2 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.2 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1.7 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.2 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.2 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.2 </td>
-   <td style="text-align:center;border-bottom: 1px solid"> 2.2 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.65 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.65 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.65 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.00 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.65 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.65 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0.00 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.65 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.65 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.45 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.00 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1.41 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1.41 </td>
+   <td style="text-align:center;border-bottom: 1px solid"> 2.65 </td>
   </tr>
   <tr>
    <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> H </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.2 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.4 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.8 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.8 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.2 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1.4 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.2 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0.0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1.4 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.4 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.4 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.4 </td>
-   <td style="text-align:center;border-bottom: 1px solid"> 2.4 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0.00 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 3.16 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.83 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.65 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.83 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0.00 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.65 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0.00 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.00 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 3.00 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.65 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.24 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.24 </td>
+   <td style="text-align:center;border-bottom: 1px solid"> 0.00 </td>
   </tr>
   <tr>
    <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> I </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.6 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.8 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.8 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.8 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1.7 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.2 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1.4 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0.0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.4 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.8 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.8 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.8 </td>
-   <td style="text-align:center;border-bottom: 1px solid"> 2.8 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.00 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 3.16 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.83 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.24 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.83 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.00 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.65 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.00 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0.00 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 3.00 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.24 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.24 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.24 </td>
+   <td style="text-align:center;border-bottom: 1px solid"> 2.00 </td>
   </tr>
   <tr>
    <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> J </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.6 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.4 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.8 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.4 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1.7 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1.7 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.4 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0.0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.0 </td>
-   <td style="text-align:center;border-bottom: 1px solid"> 2.0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 3.00 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1.00 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1.00 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.83 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1.00 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 3.00 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.45 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 3.00 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 3.00 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0.00 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.83 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.00 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.83 </td>
+   <td style="text-align:center;border-bottom: 1px solid"> 3.00 </td>
   </tr>
   <tr>
    <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> K </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 3.0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.8 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.8 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.8 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.2 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.4 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.2 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.4 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.8 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0.0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0.0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0.0 </td>
-   <td style="text-align:center;border-bottom: 1px solid"> 0.0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.65 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.65 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.65 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1.41 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.65 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.65 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.00 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.65 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.24 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.83 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0.00 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.00 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.00 </td>
+   <td style="text-align:center;border-bottom: 1px solid"> 2.65 </td>
   </tr>
   <tr>
    <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> L </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 3.0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.8 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.8 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.8 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.2 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.4 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.2 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.4 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.8 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0.0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0.0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0.0 </td>
-   <td style="text-align:center;border-bottom: 1px solid"> 0.0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.24 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.24 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.24 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.00 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.24 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.24 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1.41 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.24 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.24 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.00 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.00 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0.00 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.00 </td>
+   <td style="text-align:center;border-bottom: 1px solid"> 2.24 </td>
   </tr>
   <tr>
    <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> M </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 3.0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.8 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.8 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.8 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.2 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.4 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.2 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.4 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.8 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0.0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0.0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0.0 </td>
-   <td style="text-align:center;border-bottom: 1px solid"> 0.0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.24 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 3.00 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.65 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.00 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.65 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.24 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 1.41 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.24 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.24 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.83 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.00 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.00 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0.00 </td>
+   <td style="text-align:center;border-bottom: 1px solid"> 2.24 </td>
   </tr>
   <tr>
    <td style="text-align:left;font-weight: bold;border-bottom: 1px solid"> N </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 3.0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.8 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.8 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.8 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.2 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.4 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.2 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.4 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.8 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0.0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0.0 </td>
-   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0.0 </td>
-   <td style="text-align:center;border-bottom: 1px solid"> 0.0 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0.00 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 3.16 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.83 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.65 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.83 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0.00 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.65 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 0.00 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.00 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 3.00 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.65 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.24 </td>
+   <td style="text-align:center;border-left:1px solid;border-right:1px solid;border-bottom: 1px solid"> 2.24 </td>
+   <td style="text-align:center;border-bottom: 1px solid"> 0.00 </td>
   </tr>
 </tbody>
 </table>
@@ -737,9 +893,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <ol type="1">
-<li><p>Using the Information in the previous matrix, write down the set of nodes that are <strong>structurally equivalent</strong> (e.g., connected to the same set of neighbors) in the graph shown in <a href="#fig-grex1">Figure&nbsp;1</a>. <br> K, L, M, N</p></li>
-<li><p>Out of the nodes that are not structurally equivalent, which pairs of nodes have the highest <strong>structural similarity</strong> in the graph shown in <a href="#fig-grex1">Figure&nbsp;1</a>? <br> A, B</p></li>
-<li><p>Using the <strong>Jaccard Similarity</strong> metric, compute the structural similarity between nodes <em>B</em> and <em>D</em> in the graph shown in <a href="#fig-grex1">Figure&nbsp;1</a>. <br></p></li>
+<li>Using the Information in the previous matrix, write down the set of nodes that are <strong>structurally equivalent</strong> (e.g., connected to the same set of neighbors) in the graph shown in <a href="#fig-grex2">Figure&nbsp;2</a>.</li>
 </ol>
 <div class="cell">
 <div class="cell-output-display">
@@ -747,7 +901,32 @@ ul.task-list li input[type="checkbox"] {
 <table>
 <tbody>
   <tr>
-   <td style="text-align:right;"> 0.67 </td>
+   <td style="text-align:left;"> A </td>
+   <td style="text-align:left;"> F </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> A </td>
+   <td style="text-align:left;"> H </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> A </td>
+   <td style="text-align:left;"> N </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> C </td>
+   <td style="text-align:left;"> E </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> F </td>
+   <td style="text-align:left;"> H </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> F </td>
+   <td style="text-align:left;"> N </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> H </td>
+   <td style="text-align:left;"> N </td>
   </tr>
 </tbody>
 </table>
@@ -755,7 +934,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <ol type="1">
-<li>Using the <strong>Dice Similarity</strong> metric, compute the structural similarity between nodes <em>C</em> and <em>D</em> in the graph shown in <a href="#fig-grex1">Figure&nbsp;1</a>. <br></li>
+<li>Out of the nodes that are not structurally equivalent, which pairs of nodes have the highest <strong>structural similarity</strong> in the graph shown in <a href="#fig-grex2">Figure&nbsp;2</a>?</li>
 </ol>
 <div class="cell">
 <div class="cell-output-display">
@@ -763,7 +942,16 @@ ul.task-list li input[type="checkbox"] {
 <table>
 <tbody>
   <tr>
-   <td style="text-align:right;"> 0.83 </td>
+   <td style="text-align:left;"> J </td>
+   <td style="text-align:left;"> B </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> J </td>
+   <td style="text-align:left;"> E </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> J </td>
+   <td style="text-align:left;"> C </td>
   </tr>
 </tbody>
 </table>
@@ -771,30 +959,49 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <ol type="1">
-<li>Using the <strong>Cosine Similarity</strong> metric, compute the structural similarity between nodes <em>A</em> and <em>C</em> in the graph shown in <a href="#fig-grex1">Figure&nbsp;1</a>. <br></li>
+<li>Using the <strong>Jaccard Similarity</strong> metric, compute the structural similarity between nodes <em>K</em> and <em>N</em> in the graph shown in <a href="#fig-grex2">Figure&nbsp;2</a>.</li>
 </ol>
 <div class="cell">
-<div class="cell-output-display">
-
-<table>
-<tbody>
-  <tr>
-   <td style="text-align:right;"> 0.73 </td>
-  </tr>
-</tbody>
-</table>
 
 </div>
+<p>ANSWER: 0</p>
+<ol type="1">
+<li>Using the <strong>Dice Similarity</strong> metric, compute the structural similarity between nodes <em>L</em> and <em>M</em> in the graph shown in <a href="#fig-grex2">Figure&nbsp;2</a>.</li>
+</ol>
+<p>ANSWER: 0</p>
+<ol type="1">
+<li>Using the <strong>Cosine Similarity</strong> metric, compute the structural similarity between nodes <em>D</em> and <em>B</em> in the graph shown in <a href="#fig-grex2">Figure&nbsp;2</a>.</li>
+</ol>
+<p>ANSWER: 0.236</p>
+</section>
+<section id="graph-connectivity" class="level2">
+<h2 class="anchored" data-anchor-id="graph-connectivity">Graph Connectivity</h2>
+<ol type="1">
+<li>Write down a <strong>node cut set</strong> for the graph shown in <a href="#fig-grex1">Figure&nbsp;1</a>.</li>
+</ol>
+<p>ANSWER: Anything in the ballpark</p>
+<ol type="1">
+<li>Write down an <strong>edge cut set</strong> for the graph shown in <a href="#fig-grex1">Figure&nbsp;1</a>.</li>
+</ol>
+<p>ANSWER: Anything in the ballpark</p>
+<div class="cell">
+
 </div>
 <ol type="1">
-<li><p>Write down a <strong>node cut set</strong> for the graph shown in <a href="#fig-grex1">Figure&nbsp;1</a>. <br> [Grade Generously]</p></li>
-<li><p>Write down an <strong>edge cut set</strong> for the graph shown in <a href="#fig-grex1">Figure&nbsp;1</a>. <br> [Grade Generously]</p></li>
-<li><p>What is the <strong>k-connectivity</strong> of the graph? <br> 3 (also accept 4)</p></li>
-<li><p>What is the <strong>edge connectivity</strong> of the graph? <br> 3 (also accept 4)</p></li>
-<li><p>What is the <strong>pairwise k-connectivity</strong> between nodes <em>E</em> and <em>G</em>? <br> 4</p></li>
+<li>What is the <strong>k-connectivity</strong> of the graph in <a href="#fig-grex1">Figure&nbsp;1</a>?</li>
 </ol>
+<p>ANSWER: 2</p>
+<ol type="1">
+<li>What is the <strong>edge connectivity</strong> of the graph in <a href="#fig-grex1">Figure&nbsp;1</a>?</li>
+</ol>
+<p>ANSWER: 3</p>
+<ol type="1">
+<li>What is the <strong>pairwise k-connectivity</strong> between nodes <em>J</em> and <em>O</em> in <a href="#fig-grex1">Figure&nbsp;1</a>?</li>
+</ol>
+<p>ANSWER: 4</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

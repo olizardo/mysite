@@ -33,6 +33,7 @@ title: "Homework VIII: Subgroups, Graph Connectivity, and Structural Similarity"
          bind_graphs(gr2) %>% 
          bind_graphs(gr3) %>% 
          graph_join(gr4)
+    gr <- as_undirected(gr)
     p <- ggraph(gr, layout = 'kk') 
     p <- p + geom_edge_link(color = "steelblue", width = 1.15) 
     p <- p + geom_node_point(color = "tan2", size = 16) 
@@ -41,61 +42,40 @@ title: "Homework VIII: Subgroups, Graph Connectivity, and Structural Similarity"
     p
 ```
 1. List the nodes in all the **cliques** of *size four* in @fig-grex1.
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+
+```{r}
+    c <- cliques(gr, min = 4, max = 4)
+    kbl(toupper(matrix(letters[unlist(c)], ncol = 4, byrow = TRUE)))
+```
 
 1. List the nodes in all the **cliques** of *size five* in @fig-grex1.
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+
+```{r}
+    c <- cliques(gr, min = 5, max = 5)
+    kbl(toupper(matrix(letters[unlist(c)], ncol = 5, byrow = TRUE)))
+```
 
   
 1. How many **cliques** of *size four* does node *M* belong to?
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+
+```{r, include = FALSE}
+    c <- cliques(gr, min = 4, max = 4)
+    c <- matrix(names(unlist(c)), ncol = 4, byrow = TRUE)
+```
+
+ANSWER: `r sum(as.numeric(apply(c, 1, function(x) {"K" %in% x})))`
 
 
 1. List the nodes in one of the **2-cliques** in @fig-grex1:
-<br>
-<br>
-<br>
-<br>
 
+ANSWER: Anything in the ballpark
 
 1. List the nodes in the *five cliques of size four* nested inside the clique of size five in @fig-grex1.
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+
+```{r}
+    kbl(c[c(1, 5:8), ])
+```
+
 
 ## Structural Equivalence and Structural Similarity
 
@@ -115,6 +95,7 @@ title: "Homework VIII: Subgroups, Graph Connectivity, and Structural Similarity"
     gr <- play_blocks(n = 14, size_blocks = c(4, 2, 4, 4), 
                       p_between = pm)
     V(gr)$name <- sample(LETTERS[1:length(V(gr))])
+    gr <- as_undirected(gr)
     p <- ggraph(gr, layout = 'kk') 
     p <- p + geom_edge_link(color = "steelblue", width = 1.07) 
     p <- p + geom_node_point(color = "tan2", size = 16) 
@@ -126,10 +107,8 @@ title: "Homework VIII: Subgroups, Graph Connectivity, and Structural Similarity"
 - In the matrix below, write down the cell entries for the **adjacency matrix** corresponding to the graph shown in @fig-grex2:
 
 ```{r}
-    a <- matrix(" ", nrow = length(V(gr)), ncol = length(V(gr)))
-    rownames(a) <- LETTERS[1:length(V(gr))]
-    colnames(a) <- LETTERS[1:length(V(gr))]
-    diag(a) <- "----"
+    a <- as.matrix(as_adjacency_matrix(gr))
+    a <- a[LETTERS[1:nrow(a)], LETTERS[1:nrow(a)]]
     kbl(a, format = "html", align = "c")  %>% 
          column_spec(1, bold = TRUE) %>% 
          column_spec (2:length(V(gr)), 
@@ -142,10 +121,8 @@ title: "Homework VIII: Subgroups, Graph Connectivity, and Structural Similarity"
 - Using the information from the previous matrix, in the matrix below, write down the cell entries for the **structural similarity matrix** corresponding to the graph shown in @fig-grex2 using the **Euclidean Distance**:
 
 ```{r}
-    a <- matrix(" ", nrow = length(V(gr)), ncol = length(V(gr)))
-    rownames(a) <- LETTERS[1:length(V(gr))]
-    colnames(a) <- LETTERS[1:length(V(gr))]
-    diag(a) <- "----"
+    a <- as.matrix(round(dist(as.matrix(as_adjacency_matrix(gr))), 2))
+    a <- a[LETTERS[1:nrow(a)], LETTERS[1:nrow(a)]]
     kbl(a, format = "html", align = "c")  %>% 
          column_spec(1, bold = TRUE) %>% 
          column_spec (2:length(V(gr)), 
@@ -156,66 +133,93 @@ title: "Homework VIII: Subgroups, Graph Connectivity, and Structural Similarity"
 ```
 
 1. Using the Information in the previous matrix, write down the set of nodes that are **structurally equivalent** (e.g., connected to the same set of neighbors) in the graph shown in @fig-grex2.
-<br>
-<br>
-<br>
-<br>
+
+```{r} 
+   a <- (a == 0) * 1
+    diag(a) <- 0
+   a[lower.tri(a)] <- 0
+   se <- graph_from_adjacency_matrix(a)
+   kbl(as_edgelist(se))
+```
+
+
+
+
 
 1. Out of the nodes that are not structurally equivalent, which pairs of nodes have the highest **structural similarity** in the graph shown in @fig-grex2?
-<br>
-<br>
-<br>
-<br>
+
+```{r}
+    a <- as.matrix(round(dist(as.matrix(as_adjacency_matrix(gr))), 2))
+    a <- (a == min(a[a!=0])) * 1
+   a[lower.tri(a)] <- 0
+   se <- graph_from_adjacency_matrix(a)
+   kbl(as_edgelist(se))
+```
+
 
 1. Using the **Jaccard Similarity** metric, compute the structural similarity between nodes *K* and *N* in the graph shown in @fig-grex2.
-<br>
-<br>
-<br>
-<br>
+
+```{r}
+    A <- as.matrix(as_adjacency_matrix(gr))
+    M <- A %*% A
+    d <- rowSums(A)
+```
+
+
+ANSWER: `r M["K", "N"]/(d["K"] + d["N"] - M["K", "N"])`
 
 1. Using the **Dice Similarity** metric, compute the structural similarity between nodes *L* and *M* in the graph shown in @fig-grex2.
-<br>
-<br>
-<br>
-<br>
+
+ANSWER: `r (2 * M["L", "M"])/(d["L"] + d["M"])`
+
 
 1. Using the **Cosine Similarity** metric, compute the structural similarity between nodes *D* and *B* in the graph shown in @fig-grex2.
-<br>
-<br>
-<br>
-<br>
+
+ANSWER: `r round((M["D", "B"])/sqrt(d["D"] * d["B"]), 3)`
+
 
 ## Graph Connectivity
 
 1. Write down a **node cut set** for the graph shown in @fig-grex1.
-<br>
-<br>
-<br>
-<br>
 
+ANSWER: Anything in the ballpark
 
 1. Write down an **edge cut set** for the graph shown in @fig-grex1.
-<br>
-<br>
-<br>
-<br>
+
+ANSWER: Anything in the ballpark
+
+```{r}
+    set.seed(458)
+    gr1 <- create_complete(4) %>% 
+        mutate(name = toupper(letters[1:4]))
+    gr2 <- create_complete(4) %>% 
+        mutate(name = toupper(letters[5:8]))
+    gr3 <- create_complete(5) %>% 
+        mutate(name = toupper(letters[9:13]))
+    gr4 <- play_islands(n_islands = 4, size_islands = 4, 
+                        p_within = 1, m_between = 1) %>% 
+         mutate(name = LETTERS[1:16])
+    gr <- bind_graphs(gr1) %>% 
+         bind_graphs(gr2) %>% 
+         bind_graphs(gr3) %>% 
+         graph_join(gr4)
+    gr <- as_undirected(gr)
+```
+
 
 1. What is the **k-connectivity** of the graph in @fig-grex1?
-<br>
-<br>
-<br>
-<br>
+
+ANSWER: `r vertex_connectivity(gr)`
+
 
 1. What is the **edge connectivity** of the graph in @fig-grex1?
-<br>
-<br>
-<br>
-<br>
+
+ANSWER: `r edge_connectivity(gr)`
+
 
 1. What is the **pairwise k-connectivity** between nodes *J* and *O* in @fig-grex1?
-<br>
-<br>
-<br>
-<br>
+
+ANSWER: `r vertex_connectivity(gr, source = "J", target = "O")`
+
 
 
