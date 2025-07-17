@@ -48,7 +48,8 @@ format:
 - Armstrong, E. A., & Bernstein, M. (2008). Culture, power, and institutions: A multi‐institutional politics approach to social movements. *Sociological Theory*, 26(1), 74-99.
 - Barley, S. R., & Tolbert, P. S. (1997). Institutionalization and structuration: Studying the links between action and institution. *Organization Studies*, 18(1), 93-117. 
 - Beckert, J. (2010). Institutional isomorphism revisited: Convergence and divergence in institutional change. *Sociological Theory*, 28(2), 150-166.
-- Buchholz, L. (2016). What is a global field? Theorizing fields beyond the nation-state. *The Sociological Review*, 64(2\_suppl), 31-60. 
+- Buchholz, L. (2016). What is a global field? Theorizing fields beyond the nation-state. *The Sociological Review*, 64(2\_suppl), 31-60.
+- DiCicco-Bloom, B., & Gibson, D. R. (2010). More than a game: Sociological theory from the theories of games. *Sociological Theory*, 28(3), 247-271. 
 - Dimaggio, P. J., & Powell, W. W. (1983). The iron cage revisited: Institutional isomorphism and collective rationality in organizational fields. *American Sociological Review*, 48(2), 147-160. 
 - Friedland, R. and Alford, R. (1991). Bringing society back in: Symbols, practices, and institutional contradictions. Pp. 232-263 in DiMaggio, P. and Powell, W., editors, *The New Institutionalism in Organizational Analysis*. University of Chicago Press. 
 - Fligstein, N., & McAdam, D. (2011). Toward a general theory of strategic action fields. *Sociological Theory*, 29(1), 1-26.
@@ -82,6 +83,7 @@ format:
 - Heiskala, R. (2011). The meaning of meaning in sociology. The achievements and shortcomings of Alfred Schutz's phenomenological sociology. *Journal for the Theory of Social Behaviour*, 41(3), 231-246.
 - Hitlin, S., & Elder, G. H. (2007). Time, self, and the curiously abstract concept of agency. *Sociological Theory*, 25(2), 170-191
 - Itzigsohn, J., & Brown, K. (2015). Sociology and the theory of double consciousness: WEB Du Bois’s phenomenology of racialized subjectivity. *Du Bois Review*, 12(2), 231-248.
+- Leifer, E. M. (1988). Interaction preludes to role setting: Exploratory local action. *American Sociological Review*, 865-878.
 - Reay, M. (2010). Knowledge distribution, embodiment, and insulation. *Sociological Theory*, *28_(1), 91-107.
 - Surak, K. (2017). Rupture and Rhythm: A Phenomenology of National Experiences. *Sociological Theory*, 35(4), 312-333.
 - Tavory, I., & Fine, G. A. (2020). Disruption and the Theory of the Interaction Order. *Theory and Society*, *49_(3), 365-385. 

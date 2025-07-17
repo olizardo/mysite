@@ -1,0 +1,11 @@
+Omar Lizardo,
+The Correspondence Analysis of two-mode networks revisited,
+Social Networks,
+Volume 83,
+2025,
+Pages 134-151,
+ISSN 0378-8733,
+https://doi.org/10.1016/j.socnet.2025.06.001.
+(https://www.sciencedirect.com/science/article/pii/S0378873325000401)
+Abstract: This paper reconsiders the status of Correspondence Analysis (CA) as a tool for analyzing two-mode networks, comparing it with the Bonacich dual centrality approach and revealing the mathematical linkages between them as eigenvector-based methods. While Bonacich centrality identifies core–periphery structures and is helpful for clustering nodes based on the criterion of similarity via structural equivalence, CA is best at detecting subsets of actors and events based on a generalized relational similarity criterion, thus coming closer to clustering via regular equivalence. Ultimately, both CA and Bonacich centrality prove to be valuable yet distinct strategies for the dual projection analysis of two-mode networks, highlighting the duality between actors and events.
+Keywords: Correspondence Analysis; Bonacich centrality; Duality; Two-mode networks; Clustering
