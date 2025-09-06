@@ -2,7 +2,7 @@
 title: "Omar Lizardo"
 about:
   template: jolla
-  image: profile-cropped.jpg
+  image: profile.jpg
   image-shape: round
   links:
      - icon: github
