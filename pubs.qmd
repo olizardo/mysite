@@ -46,6 +46,8 @@
 
 ### Computational Social Science
 
+- "Analysis of flows in social media uncovers a new multi-step model of information spread." *Journal of Statistical Mechanics: Theory and Experiment*: 113402. [doi:10.1088/1742-5468/ad8748](https://doi.org/10.1088/1742-5468/ad8748).
+
 - "Predicting relationship labels and individual personality traits from telecommunication history in social networks using Hawkes processes." *IEEE Access* 11: 8492-8503. [doi:10.1109/ACCESS.2023.3238970](https://doi.org/10.1109/ACCESS.2023.3238970)
 
 - "Modeling memory imprints induced by interactions in social networks." Pp. 186-195 in R. Thomson, C. Dancy and A. Pyke (Eds.), *Social, Cultural, and Behavioral Modeling SBP-BRiMS 2022. Lecture Notes in Computer Science, vol 13558*. Springer, Cham. [doi:10.1007/978-3-031-17114-7_18](https://doi.org/10.1007/978-3-031-17114-7_18)
@@ -93,6 +95,8 @@
 ### Consumers and Consumption
 
 - "Bourdieu, distinction, and aesthetic consumption." In Frederick F. Wherry and Ian Woodward (Eds.), *The Oxford Handbook of Consumption*. Oxford University Press. [doi:10.1093/oxfordhb/9780190273385.013.4](http://dx.doi.org/10.1093/oxfordhb/9780190273385.013.4)
+
+- "Highbrow omnivorousness on the small screen? Cultural industry systems and patterns of cultural choice in Europe." *Poetics: Journal of Empirical Research on Culture, the Media and the Arts* 37: 1-23. [doi:10.1016/j.poetic.2008.10.001](doi:10.1016/j.poetic.2008.10.001)
 
 - "Understanding the flow of symbolic goods in the global cultural economy."  *International Journal of Contemporary Sociology* 45:  13-34. [(pdf)](/workpap/symb-goods-cult-econ.pdf)
 
@@ -182,6 +186,8 @@
 
 ### Social Network Analysis
 
+- "Temporal dynamics of the friendship paradox in a smartphone communication network." *Applied Network Science* 10: 16 [doi:10.1007/s41109-025-00710-1.2024](https://doi.org/10.1007/s41109-025-00710-1.2024).
+
 - "The Correspondence Analysis of two-mode networks revisited." *Social Networks* 83: 134-151. [doi:10.1016/j.socnet.2025.06.001](https://doi.org/10.1016/j.socnet.2025.06.001)
 
 - "Incubators or diffusers? Examining the dynamic coupling of context and social ties across multiple foci." *Social Networks* 77: 151-165. [doi:10.1016/j.socnet.2022.02.004](https://doi.org/10.1016/j.socnet.2022.02.004)
@@ -198,7 +204,9 @@
 
 - "Predictors of short-term decay of cell phone contacts in a large scale communication network." *Social Networks* 33: 245-257. [doi:10.1016/j.socnet.2011.07.002](https://doi.org/10.1016/j.socnet.2011.07.002)
 
-### Sociology of Taste
+### Culture & Inequality
+
+- "Culture and inequality." In L. Spillman (Ed.) *The Oxford Encyclopedia of Sociology*. Oxford University Press. [pdf](workpap/version0.pdf)
 
 - "The end of symbolic exclusion? The rise of 'categorical tolerance' in the musical tastes of Americans: 1993 - 2012." *Sociological Science* 3: 85-108. [doi:10.15195/v3.a5](https://doi.org/10.15195/v3.a5)
 
@@ -212,4 +220,3 @@
 
 - "Reconceptualizing and theorizing 'omnivorousness': Genetic and relational mechanisms.'' *Sociological Theory* 30: 260-280. [doi:10.1177/0735275112466999](https://doi.org/10.1177/0735275112466999)
 
-- "Highbrow omnivorousness on the small screen? Cultural industry systems and patterns of cultural choice in Europe." *Poetics: Journal of Empirical Research on Culture, the Media and the Arts* 37: 1-23. [doi:10.1016/j.poetic.2008.10.001](doi:10.1016/j.poetic.2008.10.001)
