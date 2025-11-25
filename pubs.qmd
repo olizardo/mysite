@@ -186,6 +186,8 @@
 
 ### Social Network Analysis
 
+- "Eigenvectors in Social Network Analysis." In E. Bienenstock and M. Brashears (Eds.) *The Handbook of Mathematical Sociology*. Edward Elgar. [pdf](workpap/eigenvectors.pdf)
+
 - "Temporal dynamics of the friendship paradox in a smartphone communication network." *Applied Network Science* 10: 16 [doi:10.1007/s41109-025-00710-1.2024](https://doi.org/10.1007/s41109-025-00710-1.2024).
 
 - "The Correspondence Analysis of two-mode networks revisited." *Social Networks* 83: 134-151. [doi:10.1016/j.socnet.2025.06.001](https://doi.org/10.1016/j.socnet.2025.06.001)
@@ -207,6 +209,8 @@
 ### Culture & Inequality
 
 - "Culture and inequality." In L. Spillman (Ed.) *The Oxford Encyclopedia of Sociology*. Oxford University Press. [pdf](workpap/version0.pdf)
+
+- "The forward march of Categorical Tolerance in the United States." *Sociological Science* forthcoming. [pdf](workpap/cattol.pdf)
 
 - "The end of symbolic exclusion? The rise of 'categorical tolerance' in the musical tastes of Americans: 1993 - 2012." *Sociological Science* 3: 85-108. [doi:10.15195/v3.a5](https://doi.org/10.15195/v3.a5)
 
