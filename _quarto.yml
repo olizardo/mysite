@@ -16,9 +16,6 @@ website:
       - file: pubs.qmd
         text: "Work"
         icon: pencil-square
-      - file: blog.qmd
-        text: "Blog"
-        icon: journal-richtext
       - text: "Teaching"
         icon: pencil
         menu: 
@@ -40,6 +37,9 @@ website:
           - text: "SOCIOL 245 (Cultural Sociology)"
             icon: file-text
             href: syllabi/SOCIOL245.qmd
+          - text: "Methods and Stuff"
+            icon: graph-up
+            href: https://olizardo.github.io/methods-and-stuff/
 
       - file: vita.pdf
         text: "Vita"

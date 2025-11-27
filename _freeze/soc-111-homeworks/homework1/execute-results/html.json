@@ -1,0 +1,16 @@
+{
+  "hash": "8ce2634a15d4fe377d2a7174305ce90b",
+  "result": {
+    "markdown": "---\ntitle: \"Homework I: Graph Theory\"\n---\n\n\n\n\n## Vertex and edge sets\n\n\n\n::: {.cell}\n::: {.cell-output-display}\n![A simple graph.](homework1_files/figure-html/fig-grex1-1.png){#fig-grex1 width=960}\n:::\n:::\n\n\nConsider the graph shown in @fig-grex1:\n\n1. Write down the **vertex set** of the graph: \n<br>\n<br>\n<br>\n<br>\n\n1. Write down the **edge set** of the graph:\n<br>\n<br>\n<br>\n<br>\n\n## Node Neighborhoods\n\n1. Write down the **neighborhood** of node **F**\n<br>\n<br>\n<br>\n<br>\n\n1. Write down the **neighborhood** of node **J**\n<br>\n<br>\n<br>\n<br>\n\n1. What is the **intersection** of the neighborhoods of nodes **F** and **J**?\n<br>\n<br>\n<br>\n<br>\n\n1. What is the **intersection** of the neighborhoods of nodes **A** and **F**?\n<br>\n<br>\n<br>\n<br>\n\n1. What is the **union** of the neighborhoods of nodes **H** and **J**? \n<br>\n<br>\n<br>\n<br>\n\n## Graph Metrics\n\n1. What is the **order** of the graph?\n<br>\n<br>\n<br>\n<br>\n\n1. What is the **size** of the graph?\n<br>\n<br>\n<br>\n<br>\n\n1. Write down the graph's **degree sequence**:\n<br>\n<br>\n<br>\n<br>\n\n1. Write down the graph's **maximum Degree**:\n<br>\n<br>\n<br>\n<br>\n\n1. Write down the graph's **minimum degree**:\n<br>\n<br>\n<br>\n<br>\n\n1. What is the graph's **degree range**?\n<br>\n<br>\n<br>\n<br>\n\n1. What is the graph's **sum of degrees**?\n<br>\n<br>\n<br>\n<br>\n\n1. What is the graph's **average degree**?\n<br>\n<br>\n<br>\n<br>\n\n1. What is the graph's **maximum size**?\n<br>\n<br>\n<br>\n<br>\n\n1. Compute the **density** of the graph:\n<br>\n<br>\n<br>\n<br>\n\n\n## Subgraphs\n\n1. Go back to @fig-grex1. Draw the **node-deleted** subgraph of this graph that *excludes* nodes *D*, *F*, and *J*\n<br>\n<br>\n<br>\n<br>\n<br>\n<br>\n<br>\n<br>\n<br>\n<br>\n<br>\n<br>\n<br>\n<br>\n<br>\n<br>\n<br>\n<br>\n<br>\n<br>\n<br>\n<br>\n<br>\n<br>\n<br>\n<br>\n<br>\n<br>\n\n1. List the **isolate** nodes in the node-deleted subgraph you obtained in the previous step.\n\n<br>\n<br>\n<br>\n<br>\n<br>\n<br>\n",
+    "supporting": [
+      "homework1_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

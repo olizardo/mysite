@@ -1,0 +1,20 @@
+{
+  "hash": "98b1e4fb781aea070502196ba50c94fc",
+  "result": {
+    "markdown": "---\ntitle: \"Introduction to Graphs\"\nformat:\n  revealjs:\n    incremental: false \n    theme: simple \n    smaller: true\n---\n\n\n\n\n## What are graphs?\n\n- A graph $G$ is a set of two sets\n\n  - A set of nodes $V$ (points, vertices)\n  - A set of edges $E$ (lines, links)\n  \n$$\n  G = \\{E, V\\} \n$${#eq-graph1}\n\n- Nodes represent the entities (e.g., actors) in the social network\n- Edges represent the relations or connections between entities\n\n## What are graphs?\n\n:::: {.columns}\n::: {.column width=\"45%\"}\n- On the right you can see (a pictorial representation of) a graph\n  - The graph's node set is:\n    - $V = \\{A, B, C, D\\}$\n  - The graph's edge set is:\n    - $E = \\{AB, AC\\}$\n- The cardinality of the node set is four $|V| = 4$\n- The cardinality of the edge set is two $|E| = 2$\n:::\n\n::: {.column width=\"55%\"}\n\n::: {.cell}\n::: {.cell-output-display}\n![](intro-to-graphs_files/figure-revealjs/unnamed-chunk-1-1.png){width=960}\n:::\n:::\n\n:::\n::::\n\n## What are graphs?\n\n:::: {.columns}\n::: {.column width=\"45%\"}\n- We can refer to graphs by their number of nodes and edges.\n  - Like this: $G(|V|, |E|)$\n- The graph on the right is a $G(4, 2)$ graph\n  - It has four nodes and two edges\n- The $G(1, 0)$ graph is called the **trivial graph**\n  - One is the loneliest number!\n- The smallest non-trivial graph is the $G(2, 1)$ graph\n  - Also referred to as a **connected dyad**\n\n:::\n\n::: {.column width=\"55%\"}\n\n::: {.cell}\n::: {.cell-output-display}\n![](intro-to-graphs_files/figure-revealjs/unnamed-chunk-2-1.png){width=960}\n:::\n:::\n\n\n:::\n::::\n\n::: {.cell}\n\n:::\n",
+    "supporting": [
+      "intro-to-graphs_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {
+      "include-after-body": [
+        "\r\n<script>\r\n  // htmlwidgets need to know to resize themselves when slides are shown/hidden.\r\n  // Fire the \"slideenter\" event (handled by htmlwidgets.js) when the current\r\n  // slide changes (different for each slide format).\r\n  (function () {\r\n    // dispatch for htmlwidgets\r\n    function fireSlideEnter() {\r\n      const event = window.document.createEvent(\"Event\");\r\n      event.initEvent(\"slideenter\", true, true);\r\n      window.document.dispatchEvent(event);\r\n    }\r\n\r\n    function fireSlideChanged(previousSlide, currentSlide) {\r\n      fireSlideEnter();\r\n\r\n      // dispatch for shiny\r\n      if (window.jQuery) {\r\n        if (previousSlide) {\r\n          window.jQuery(previousSlide).trigger(\"hidden\");\r\n        }\r\n        if (currentSlide) {\r\n          window.jQuery(currentSlide).trigger(\"shown\");\r\n        }\r\n      }\r\n    }\r\n\r\n    // hookup for slidy\r\n    if (window.w3c_slidy) {\r\n      window.w3c_slidy.add_observer(function (slide_num) {\r\n        // slide_num starts at position 1\r\n        fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);\r\n      });\r\n    }\r\n\r\n  })();\r\n</script>\r\n\r\n"
+      ]
+    },
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
