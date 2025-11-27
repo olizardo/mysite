@@ -13,9 +13,15 @@ website:
   navbar:
     background: "#2D68C4"
     right:
-      - file: pubs.qmd
-        text: "Work"
+      - text: "Work"
         icon: pencil-square
+        menu:
+          - text: "Selected Publications"
+            icon: book
+            href: pubs.qmd
+          - text: "Methods and Stuff"
+            icon: graph-up
+            href: https://olizardo.github.io/methods-and-stuff/
       - text: "Teaching"
         icon: pencil
         menu: 
@@ -37,9 +43,6 @@ website:
           - text: "SOCIOL 245 (Cultural Sociology)"
             icon: file-text
             href: syllabi/SOCIOL245.qmd
-          - text: "Methods and Stuff"
-            icon: graph-up
-            href: https://olizardo.github.io/methods-and-stuff/
 
       - file: vita.pdf
         text: "Vita"
