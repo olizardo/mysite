@@ -11,6 +11,7 @@ format:
 ## Theory and Theorizing
 - Abend, G. (2008). The meaning of 'Theory.' *Sociological Theory*, 26(2), 173-199. 
 - Alexander, J. C. (1987). What is Theory? Twenty Lectures: Sociological Theory Since World War II. Columbia University Press. (Pp. 1-21).
+- Besbris, M., & Khan, S. (2017). Less Theory. More Description. *Sociological Theory*, 35(2), 147-153.
 - Craib, I. (1992) What's Wrong with Theory and Why We Still Need it. Modern Social Theory. St Martin's Press. (Pp. 1-13).
 - Craib, I. (1992) Cutting a Path Through the Jungle. Modern Social Theory. St Martin's Press. (Pp. 15-31).
 - Davis, M. S. (1971). That's interesting! Towards a phenomenology of sociology and a sociology of phenomenology. *Philosophy of the Social Sciences*, 1(2), 309-344. 
@@ -18,6 +19,8 @@ format:
 - Heiskala, R. (2014). Evidence and interest in social theory An ontological-practical approach. *Acta Sociologica*, 57(4), 279-292.
 - Joas, H., & Knöbl, W. (2009). What is Theory? Pp. 1-19 in *Social Theory: Twenty Introductory Lectures*. Cambridge University Press 
 - Martin, J. L. (2015) On Theory in Sociology. Pp. 1-44 in *Thinking Through Theory*. W. W. Norton
+- Mears, A. (2017). Puzzling in sociology: On doing and undoing theoretical puzzles. *Sociological Theory*, 35(2), 138-146.
+
 
 ## Habit and Practice 
 - Archer, M. S. (2010). Routine, reflexivity, and realism. *Sociological Theory*, 28(3), 272-303. 
@@ -34,6 +37,7 @@ format:
 - King, A. (2000). Thinking with Bourdieu against Bourdieu: A'practical'critique of the habitus. *Sociological Theory*, 18(3), 417-433.
 - Lau, R. W. (2004). Habitus and the Practical Logic of Practice: An Interpretation. *Sociology*, 38(2), 369-387
 - Liao, S. Y., & Huebner, B. (2021). Oppressive things. *Philosophy and Phenomenological Research*, 103(1), 92-113. 
+- Luft, A. (2023). The moral career of the genocide perpetrator: Cognition, emotions, and dehumanization as a consequence, not a cause, of violence. *Sociological Theory*, 41(4), 324-351.
 - Ngo, H. (2016). Racist habits: A phenomenological analysis of racism and the habitual body. *Philosophy & Social Criticism*, 42(9), 847-872. 
 - Ostrow, J. (1987). Habit and inhabitance: an analysis of experience in the classroom. *Human Studies*, 213-224.
 - Pagis, M. (2010). From abstract concepts to experiential knowledge: Embodying enlightenment in a meditation center. *Qualitative Sociology*, 33(4), 469-489. 
