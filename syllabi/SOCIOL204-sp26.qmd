@@ -39,7 +39,7 @@ format:
 - Abbott, A. (2005). Linked ecologies: States and universities as environments for professions. *Sociological Theory*, 23(3), 245-274. 
 - Beckert, J. (2010). Institutional isomorphism revisited: Convergence and divergence in institutional change. *Sociological Theory*, 28(2), 150-166.
 - Dimaggio, P. J., & Powell, W. W. (1983). The iron cage revisited: Institutional isomorphism and collective rationality in organizational fields. *American Sociological Review*, 48(2), 147-160. 
-- Martin, J. L. (2003). What is field theory? *American Journal of Sociology*, 109_(1), 1-49. 
+- Garcelon, M. (2010). The missing key: Institutions, networks, and the project of neoclassical sociology. *Sociological Theory*, 28(3), 326-353.
 - Wang, Y. (2016). Homology and isomorphism: Bourdieu in conversation with New Institutionalism. *The British Journal of Sociology*, 67(2), 348-370. 
 
 ### Week 5 (February 11)
@@ -47,7 +47,7 @@ format:
 - Fligstein, N., & McAdam, D. (2011). Toward a general theory of strategic action fields. *Sociological Theory*, 29(1), 1-26.
 - Krause, M. (2018). How fields vary. *The British Journal of Sociology*, 69(1), 3-22. 
 - Ray, V. (2019). A theory of racialized organizations. *American Sociological Review*, 84_(1), 26-53. 
-- Meyer, J. W., & Jepperson, R. L. (2000). The 'actors' of modern society: The cultural construction of social agency. *Sociological Theory*, *18_(1), 100-120. 
+- Meyer, J. W., & Bromley, P. (2013). The worldwide expansion of 'organization'. *Sociological Theory*, 31(4), 366-389.
 
 ## Interaction, Situations, and Phenomenology
 ### Week 6 (February 18)
