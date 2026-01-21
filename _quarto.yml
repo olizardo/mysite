@@ -34,9 +34,9 @@ website:
           - text: "SOCIOL 204 (Topics in Sociological Theorizing Reading List)"
             icon: file-text
             href: syllabi/SOCIOL204.qmd
-          - text: "SOCIOL 204 (Topics in Sociological Theorizing Spring 2025)"
+          - text: "SOCIOL 204 (Topics in Sociological Theorizing Winter 2026)"
             icon: file-text
-            href: syllabi/SOCIOL204-sp25.qmd
+            href: syllabi/SOCIOL204-w26.qmd
           - text: "SOCIOL 208A & 208B (Computational Social Networks Sequence)"
             icon: globe
             href: https://olizardo.github.io/SOCIOL208/
