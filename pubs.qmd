@@ -30,8 +30,6 @@
 
 - "'Mirror neurons,' collective objects and the problem of transmission: reconsidering Stephen Turner's critique of practice theory." *Journal for the Theory of Social Behaviour* 34: 375-401. [doi:10.1111/j.1468-5914.2007.00340.x](https://doi.org/10.1111/j.1468-5914.2007.00340.x)
 
-- "The cognitive origins of Bourdieu's 'habitus'." *Journal for the Theory of Social Behaviour* 34: 375-401. [doi:10.1111/j.1468-5914.2004.00255.x](https://doi.org/10.1111/j.1468-5914.2004.00255.x)
-
 ### Classical Sociological Theory
 
 - "Human totality and the Total Social Fact." *Distinktion: Journal of Social Theory*. [doi:10.1080/1600910X.2025.2555236](https://doi.org/10.1080/1600910X.2025.2555236)
@@ -120,7 +118,7 @@
 
 - "Culture and inequality." In L. Spillman (Ed.) *The Oxford Encyclopedia of Sociology*. Oxford University Press. [pdf](workpap/version0.pdf)
 
-- "The forward march of Categorical Tolerance in the United States." *Sociological Science* forthcoming. [pdf](workpap/cattol.pdf)
+- "The forward march of Categorical Tolerance in the United States." *Sociological Science* 13:22-44. [10.15195/v13.a2](https://doi.org/10.15195/v13.a2)
 
 - "The end of symbolic exclusion? The rise of 'categorical tolerance' in the musical tastes of Americans: 1993 - 2012." *Sociological Science* 3: 85-108. [doi:10.15195/v3.a5](https://doi.org/10.15195/v3.a5)
 
@@ -209,10 +207,12 @@
 
 - "Skills, toolkits, contexts and institutions: clarifying the relationship between different approaches to cognition in cultural sociology." *Poetics: Journal of Empirical Research on Culture, the Media and the Arts* 38: 204-227. [doi:10.1016/j.poetic.2009.11.003](https://doi.org/10.1016/j.poetic.2009.11.003)
 
+- "The cognitive origins of Bourdieu's 'habitus'." *Journal for the Theory of Social Behaviour* 34: 375-401. [doi:10.1111/j.1468-5914.2004.00255.x](https://doi.org/10.1111/j.1468-5914.2004.00255.x)
 
-## Institutions 
 
-- "Functionaries: A distributional approach to institutional analysis." *Journal for the Theory of Social Behaviour*. [(pdf)](/workpap/functionaries.pdf)
+## Institutions & Organization
+
+- "Functionaries: A distributional approach to institutional analysis." *Journal for the Theory of Social Behaviour*. 56:e70030.  [doi:10.1111/jtsb.70030](https://doi.org/10.1111/jtsb.70030)
 
 - "The Cultural environment for innovation and entrepreneurship." In O. Sorenson and P. Thornton (Eds.), *Handbook of Sociology of Innovation and Entrepreneurship*. De Gruyter. [doi:10.1515/9783111085722-026](https://doi.org/10.1515/9783111085722-026)
 
