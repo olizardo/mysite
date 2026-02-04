@@ -106,7 +106,7 @@
 
 - "Simmel's dialectic of form and content in recent work in cultural sociology." *The Germanic Review: Literature, Culture, Theory* 94:93-100. [doi:10.1080/00168890.2019.1585664](https://doi.org/10.1080/00168890.2019.1585664)
 
-- "Institutional movement logics and the changing shape of the U.S. social movement field, 1960--1995." *Social Forces* 97: 1389--1422. [doi:10.1093/sf/soy122](https://doi.org/10.1093/sf/soy122)
+- "Institutional movement logics and the changing shape of the U.S. social movement field, 1960--1995." *Social Forces* 97: 1389-1422. [doi:10.1093/sf/soy122](https://doi.org/10.1093/sf/soy122)
 
 - "Visualizing bring-backs." *Socius: Sociological Research for a Dynamic World* 4. [doi:10.1177/2378023118805362](https://doi.org/10.1177/2378023118805362)
 

@@ -37,13 +37,16 @@ format:
 - King, A. (2000). Thinking with Bourdieu against Bourdieu: A'practical'critique of the habitus. *Sociological Theory*, 18(3), 417-433.
 - Lau, R. W. (2004). Habitus and the Practical Logic of Practice: An Interpretation. *Sociology*, 38(2), 369-387
 - Liao, S. Y., & Huebner, B. (2021). Oppressive things. *Philosophy and Phenomenological Research*, 103(1), 92-113. 
+- Lizardo, O. (2004). The cognitive origins of Bourdieu's habitus. *Journal for the Theory of Social Behaviour*, 34(4), 375-401.
 - Luft, A. (2023). The moral career of the genocide perpetrator: Cognition, emotions, and dehumanization as a consequence, not a cause, of violence. *Sociological Theory*, 41(4), 324-351.
 - Ngo, H. (2016). Racist habits: A phenomenological analysis of racism and the habitual body. *Philosophy & Social Criticism*, 42(9), 847-872. 
 - Ostrow, J. (1987). Habit and inhabitance: an analysis of experience in the classroom. *Human Studies*, 213-224.
 - Pagis, M. (2010). From abstract concepts to experiential knowledge: Embodying enlightenment in a meditation center. *Qualitative Sociology*, 33(4), 469-489. 
 - Reckwitz, A. (2002). Toward a theory of social practices: A development in culturalist theorizing. *European Journal of Social Theory*, (2), 243-263. 
 - Sullivan, S. (2000). Reconfiguring gender with John Dewey: Habit, bodies, and cultural change. *Hypatia*, 15(1), 23-42. 
+- Silva, E. B. (2016). Unity and fragmentation of the habitus. *The Sociological Review*, 64(1), 166-183.
 - Swidler, A. (2001). What anchors cultural practices. Pp. 74-92 in Schatzki, T. R., Knorr-Cetina, K., and Savigny, E. V., editors, *The Practice Turn in Contemporary Theory*. Routledge.
+- Wacquant, L. (2016). A concise genealogy and anatomy of habitus. *The Sociological Review*, 64(1), 64-72.
 - Whitford, J. (2002). Pragmatism and the untenable dualism of means and ends: Why rational choice theory does not deserve paradigmatic privilege. *Theory and Society*, 31(3), 325-363.
 - Winchester, D. (2008). Embodying the faith: Religious practice and the making of a Muslim moral habitus. *Social Forces*, 86(4), 1753-1780. 
 
@@ -74,6 +77,8 @@ format:
 - Silber, I. F. (1995). Space, fields, boundaries: The rise of spatial metaphors in contemporary sociological theory. *Social Research*, 323-355.
 - Steinmetz, G. (2016). Social fields, subfields and social spaces at the scale of empires: Explaining the colonial state and colonial sociology. *The Sociological Review*, 64(2), 98-123.
 - Strang, D., & Meyer, J. W. (1993). Institutional conditions for diffusion. *Theory and Society*, 487-511.
+- Voronov, M., & Weber, K. (2020). People, actors, and the humanizing of institutional theory. *Journal of Management Studies*, 57(4), 873-884.
+- Voronov, M., Glynn, M. A., & Weber, K. (2022). Under the radar: institutional drift and non‐strategic institutional change. *Journal of management Studies*, 59(3), 819-842. 
 - Wang, Y. (2016). Homology and isomorphism: Bourdieu in conversation with New Institutionalism. *The British Journal of Sociology*, 67(2), 348-370. 
 - Wimmer, A. (2021). Domains of diffusion: How culture and institutions travel around the world and with what consequences. *American Journal of Sociology*, *126_(6), 1389-1438. 
 
