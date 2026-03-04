@@ -7,107 +7,116 @@ format:
 ---
 
 # Readings
-
-## Theory and Theorizing
+## On Theory
+### What is Theory?
 - Abend, G. (2008). The meaning of 'Theory.' *Sociological Theory*, 26(2), 173-199. 
 - Alexander, J. C. (1987). What is Theory? Twenty Lectures: Sociological Theory Since World War II. Columbia University Press. (Pp. 1-21).
+- Heiskala, R. (2014). Evidence and interest in social theory An ontological-practical approach. *Acta Sociologica*, 57(4), 279-292.
+- Craib, I. (1992) Cutting a Path Through the Jungle. Modern Social Theory. St Martin's Press. (Pp. 15-31).
+- Joas, H., & Knöbl, W. (2009). What is Theory? Pp. 1-19 in *Social Theory: Twenty Introductory Lectures*. Cambridge University Press.
+- Martin, J. L. (2015) On Theory in Sociology. Pp. 1-44 in *Thinking Through Theory*. W. W. Norton.
+
+### Why is Theory?
 - Besbris, M., & Khan, S. (2017). Less Theory. More Description. *Sociological Theory*, 35(2), 147-153.
 - Craib, I. (1992) What's Wrong with Theory and Why We Still Need it. Modern Social Theory. St Martin's Press. (Pp. 1-13).
-- Craib, I. (1992) Cutting a Path Through the Jungle. Modern Social Theory. St Martin's Press. (Pp. 15-31).
 - Davis, M. S. (1971). That's interesting! Towards a phenomenology of sociology and a sociology of phenomenology. *Philosophy of the Social Sciences*, 1(2), 309-344. 
 - Healy, K. (2017). Fuck nuance. *Sociological Theory*, 35(2), 118-127. 
-- Heiskala, R. (2014). Evidence and interest in social theory An ontological-practical approach. *Acta Sociologica*, 57(4), 279-292.
-- Joas, H., & Knöbl, W. (2009). What is Theory? Pp. 1-19 in *Social Theory: Twenty Introductory Lectures*. Cambridge University Press 
-- Martin, J. L. (2015) On Theory in Sociology. Pp. 1-44 in *Thinking Through Theory*. W. W. Norton
 - Mears, A. (2017). Puzzling in sociology: On doing and undoing theoretical puzzles. *Sociological Theory*, 35(2), 138-146.
 
-
 ## Habit and Practice 
-- Archer, M. S. (2010). Routine, reflexivity, and realism. *Sociological Theory*, 28(3), 272-303. 
--  Camic, C.  (1986). The Matter of Habit. *American Journal of Sociology* 91,(5), 1039-1087.
-- Casey, E. S. (1984). Habitual body and memory in Merleau-Ponty. In *Phenomenology and the Human Sciences* (pp. 39-57). Dordrecht: Springer Netherlands.
+### Conceptual and Definitonal Considerations
+- Atkinson, W. (2010). Phenomenological additions to the Bourdieusian toolbox: Two problems for Bourdieu, two solutions from Schutz. *Sociological Theory*, 28(1), 1-19.
 - Crossley, N. (2013). Habit and habitus. *Body & Society*, 19(2-3), 136-161. 
-- Dalton, B. (2004). Creativity, Habit, and the Social Products of Creative Action: Revising Joas, Incorporating Bourdieu. *Sociological Theory*, 22(4):603-622 
-- Dubrule, A. (2022). Gender and Habit: John Dewey and Iris Marion Young on Embodiment and Transformation. *The Pluralist*, 17(1), 45-51. 
-- Elder‐Vass, D. (2007). Reconciling Archer and Bourdieu in an emergentist theory of action. *Sociological Theory*, 25(4), 325-346.
-- Engman, A., & Cranford, C. (2016). Habit and the Body: Lessons for Social Theories of Habit from the Experiences of People with Physical Disabilities. *Sociological Theory*, 34(1), 27-44.
-- Gold, T. (2022). Contentious Tactics as Jazz Performances: A Pragmatist Approach to the Study of Repertoire Change. *Sociological Theory*, 40(3), 249-271. 
-- Gross, N. (2009). A pragmatist theory of social mechanisms. *American Sociological Review*, 74(3), 358-379. 
-- Haslanger, S. (2018). What is a social practice? *Royal Institute of Philosophy Supplements*, 82, 231-247. 
-- King, A. (2000). Thinking with Bourdieu against Bourdieu: A'practical'critique of the habitus. *Sociological Theory*, 18(3), 417-433.
-- Lau, R. W. (2004). Habitus and the Practical Logic of Practice: An Interpretation. *Sociology*, 38(2), 369-387
-- Liao, S. Y., & Huebner, B. (2021). Oppressive things. *Philosophy and Phenomenological Research*, 103(1), 92-113. 
+- Crossley, N. (2001). The phenomenological habitus and its construction. *Theory and society*, *30_(1), 81-120.
+- Lau, R. W. (2004). Habitus and the Practical Logic of Practice: An Interpretation. *Sociology*, 38(2), 369-387.
 - Lizardo, O. (2004). The cognitive origins of Bourdieu's habitus. *Journal for the Theory of Social Behaviour*, 34(4), 375-401.
+- Silva, E. B. (2016). Unity and fragmentation of the habitus. *The Sociological Review*, 64(1), 166-183.
+- Wacquant, L. (2016). A concise genealogy and anatomy of habitus. *The Sociological Review*, 64(1), 64-72.
+
+### Systems of Oppression and Difference
+- Dubrule, A. (2022). Gender and Habit: John Dewey and Iris Marion Young on Embodiment and Transformation. *The Pluralist*, 17(1), 45-51. 
+- Engman, A., & Cranford, C. (2016). Habit and the Body: Lessons for Social Theories of Habit from the Experiences of People with Physical Disabilities. *Sociological Theory*, 34(1), 27-44.
+- Itzigsohn, J., & Brown, K. (2015). Sociology and the theory of double consciousness: WEB Du Bois’s phenomenology of racialized subjectivity. *Du Bois Review*, 12(2), 231-248.
+- Liao, S. Y., & Huebner, B. (2021). Oppressive things. *Philosophy and Phenomenological Research*, 103(1), 92-113. 
 - Luft, A. (2023). The moral career of the genocide perpetrator: Cognition, emotions, and dehumanization as a consequence, not a cause, of violence. *Sociological Theory*, 41(4), 324-351.
+- MacMullan, T. (2011). Habits of Hate. *Journal of Hate Studies*, 9(1), 93-112.
 - Ngo, H. (2016). Racist habits: A phenomenological analysis of racism and the habitual body. *Philosophy & Social Criticism*, 42(9), 847-872. 
+- Sullivan, S. (2018). Becoming a citizen: habits of national belonging in the United States. *Geografiska Annaler: Series B, Human Geography*, 100(2), 163-177.
+- Sullivan, S. (2000). Reconfiguring gender with John Dewey: Habit, bodies, and cultural change. *Hypatia*, 15(1), 23-42. 
+- Sullivan, S. (2014). The hearts and guts of white people: Ethics, ignorance, and the physiology of white racism. *Journal of Religious Ethics*, 42(4), 591-611.
+- Sullivan, S. (2024). WEB Du Bois as a Critical Anthropologist of Race. *European Journal of Pragmatism and American Philosophy*, 16(XVI-2).
+- Yancy, G. (2008). Elevators, social spaces and racism: A philosophical analysis. *Philosophy & Social Criticism*, 34(8), 843-876.
+- Young, I. M. (1980). Throwing like a girl: A phenomenology of feminine body comportment motility and spatiality. *Human Studies*, 3(1), 137-156.
+
+### Other Applications
+- Gold, T. (2022). Contentious Tactics as Jazz Performances: A Pragmatist Approach to the Study of Repertoire Change. *Sociological Theory*, 40(3), 249-271. 
 - Ostrow, J. (1987). Habit and inhabitance: an analysis of experience in the classroom. *Human Studies*, 213-224.
 - Pagis, M. (2010). From abstract concepts to experiential knowledge: Embodying enlightenment in a meditation center. *Qualitative Sociology*, 33(4), 469-489. 
-- Reckwitz, A. (2002). Toward a theory of social practices: A development in culturalist theorizing. *European Journal of Social Theory*, (2), 243-263. 
-- Sullivan, S. (2000). Reconfiguring gender with John Dewey: Habit, bodies, and cultural change. *Hypatia*, 15(1), 23-42. 
-- Silva, E. B. (2016). Unity and fragmentation of the habitus. *The Sociological Review*, 64(1), 166-183.
-- Swidler, A. (2001). What anchors cultural practices. Pp. 74-92 in Schatzki, T. R., Knorr-Cetina, K., and Savigny, E. V., editors, *The Practice Turn in Contemporary Theory*. Routledge.
-- Wacquant, L. (2016). A concise genealogy and anatomy of habitus. *The Sociological Review*, 64(1), 64-72.
-- Whitford, J. (2002). Pragmatism and the untenable dualism of means and ends: Why rational choice theory does not deserve paradigmatic privilege. *Theory and Society*, 31(3), 325-363.
 - Winchester, D. (2008). Embodying the faith: Religious practice and the making of a Muslim moral habitus. *Social Forces*, 86(4), 1753-1780. 
 
-## Fields, Ecologies, and Institutions
-- Abbott, A. (2005). Linked ecologies: States and universities as environments for professions. *Sociological Theory*, *23_(3), 245-274. 
+## Field Theory
+### General Considerations
+- DiCicco-Bloom, B., & Gibson, D. R. (2010). More than a game: Sociological theory from the theories of games. *Sociological Theory*, 28(3), 247-271. 
+- Kluttz, D. N., & Fligstein, N. (2016). Varieties of sociological field theory. In *Handbook of Contemporary Sociological Theory* (pp. 185-204). Springer.
+- Fligstein, N., & McAdam, D. (2011). Toward a general theory of strategic action fields. *Sociological Theory*, 29(1), 1-26.
+- Fligstein, N. (2001). Social skill and the theory of fields. *Sociological Theory*, 19(2):105-125. 
+- Krause, M. (2018). How fields vary. *The British Journal of Sociology*, 69(1), 3-22. 
+- Martin, J. L. (2003). What is field theory? *American Journal of Sociology*, 109(1), 1-49. 
+- Wang, Y. (2016). Homology and isomorphism: Bourdieu in conversation with New Institutionalism. *The British Journal of Sociology*, 67(2), 348-370. 
+
+### Global Fields
+- Buchholz, L. (2016). What is a global field? Theorizing fields beyond the nation-state. *The Sociological Review*, 64(2\_suppl), 31-60.
+- Go, J. (2008). Global fields and imperial forms: Field theory and the British and American empires. *Sociological Theory*, 26(3), 201-229.
+- Mudge, S. L., & Vauchez, A. (2016). Fielding supranationalism: The European Central Bank as a field effect. *The Sociological Review*, 64(2_suppl), 146-169.
+- Mudge, S. L., & Vauchez, A. (2012). Building Europe on a weak field: law, economics, and scholarly avatars in transnational politics. *American Journal of Sociology*, 118(2), 449-492.
+- Steinmetz, G. (2016). Social fields, subfields and social spaces at the scale of empires: Explaining the colonial state and colonial sociology. *The Sociological Review*, 64(2), 98-123.
+
+### Other Applications
+- Green, A. I. (2008). The Social organization of desire: The sexual fields approach. *Sociological Theory*, 26(1), 25-50.
+
+## Institutional Theory
+### General Considerations
+- Voronov, M., & Weber, K. (2020). People, actors, and the humanizing of institutional theory. *Journal of Management Studies*, 57(4), 873-884.
+
+### Decoupling and Isomorphism
+- Dimaggio, P. J., & Powell, W. W. (1983). The iron cage revisited: Institutional isomorphism and collective rationality in organizational fields. *American Sociological Review*, 48(2), 147-160. 
+- Beckert, J. (2010). Institutional isomorphism revisited: Convergence and divergence in institutional change. *Sociological Theory*, 28(2), 150-166.
+- Hallett, T., & Hawbaker, A. (2021). The case for an inhabited institutionalism in organizational research: interaction, coupling, and change reconsidered. *Theory and Society*, *50_(1), 1-32. 
+- Meyer, J. W., & Rowan, B. (1977). Institutionalized organizations: Formal structure as myth and ceremony. *American Journal of Sociology*, *83_(2), 340-363. 
+
+### Institutional Logics
+- Friedland, R. and Alford, R. (1991). Bringing society back in: Symbols, practices, and institutional contradictions. Pp. 232-263 in DiMaggio, P. and Powell, W., editors, *The New Institutionalism in Organizational Analysis*. University of Chicago Press. 
+- Thornton, P. H., & Ocasio, W. (1999). Institutional logics and the historical contingency of power in organizations: Executive succession in the higher education publishing industry, 1958–1990. *American Journal of Sociology*, 105(3), 801-843.
+
+### Institutional Change
 - Armstrong, E. A., & Bernstein, M. (2008). Culture, power, and institutions: A multi‐institutional politics approach to social movements. *Sociological Theory*, 26(1), 74-99.
 - Barley, S. R., & Tolbert, P. S. (1997). Institutionalization and structuration: Studying the links between action and institution. *Organization Studies*, 18(1), 93-117. 
-- Beckert, J. (2010). Institutional isomorphism revisited: Convergence and divergence in institutional change. *Sociological Theory*, 28(2), 150-166.
-- Buchholz, L. (2016). What is a global field? Theorizing fields beyond the nation-state. *The Sociological Review*, 64(2\_suppl), 31-60.
-- DiCicco-Bloom, B., & Gibson, D. R. (2010). More than a game: Sociological theory from the theories of games. *Sociological Theory*, 28(3), 247-271. 
-- Dimaggio, P. J., & Powell, W. W. (1983). The iron cage revisited: Institutional isomorphism and collective rationality in organizational fields. *American Sociological Review*, 48(2), 147-160. 
-- Friedland, R. and Alford, R. (1991). Bringing society back in: Symbols, practices, and institutional contradictions. Pp. 232-263 in DiMaggio, P. and Powell, W., editors, *The New Institutionalism in Organizational Analysis*. University of Chicago Press. 
-- Fligstein, N., & McAdam, D. (2011). Toward a general theory of strategic action fields. *Sociological Theory*, 29(1), 1-26.
-- Frank, D. J., & Meyer, J. W. (2002). The profusion of individual roles and identities in the postwar period. *Sociological Theory*, *20_(1), 86-105. 
-- Go, J. (2008). Global fields and imperial forms: Field theory and the British and American empires. *Sociological Theory*, 26(3), 201-229.
-- Green, A. I. (2008). The Social organization of desire: The sexual fields approach. *Sociological Theory*, 26(1), 25-50
-- Jepperson, R. L. (1991). Institutions, institutional effects, and institutionalism. Pp. 143-163 in DiMaggio, P. and Powell, W., editors, *The New Institutionalism in Organizational Analysis*. The University of Chicago Press. 
-- Kluttz, D. N., & Fligstein, N. (2016). Varieties of sociological field theory. In *Handbook of Contemporary Sociological Theory* (pp. 185-204). Springer. 
-- Krause, M. (2018). How fields vary. *The British Journal of Sociology*, *69_(1), 3-22. 
-- Liu, S., & Emirbayer, M. (2016). Field and Ecology. *Sociological Theory*, 34(1), 62-79. 
-- Martin, J. L. (2003). What is field theory? *American Journal of Sociology*, 109_(1), 1-49. 
-- Martin, P. Y. (2004). Gender as social institution. *Social Forces*, 82(4), 1249-1273.
-- Meyer, J. W., & Rowan, B. (1977). Institutionalized organizations: Formal structure as myth and ceremony. *American Journal of Sociology*, *83_(2), 340-363. 
-- Meyer, J. W., & Jepperson, R. L. (2000). The 'actors' of modern society: The cultural construction of social agency. *Sociological Theory*, *18_(1), 100-120. 
-- Meyer, J. W., Boli, J., Thomas, G. M., & Ramirez, F. O. (1997). World society and the nation-state. *American Journal of Sociology*, *103_(1), 144-181. 
-- Ocasio, W., & Thornton, P. H. (1999). Institutional logics and the historical contingency of power in organizations: Executive succession in the higher education publishing industry, 1958-1990. *American journal of Sociology*, 105(3), 801-843.
-- Schneiberg, M., & Clemens, E. S. (2006). The typical tools for the job: Research strategies in institutional analysis. *Sociological Theory*, 24(3), 195-227.
-- Silber, I. F. (1995). Space, fields, boundaries: The rise of spatial metaphors in contemporary sociological theory. *Social Research*, 323-355.
-- Steinmetz, G. (2016). Social fields, subfields and social spaces at the scale of empires: Explaining the colonial state and colonial sociology. *The Sociological Review*, 64(2), 98-123.
-- Strang, D., & Meyer, J. W. (1993). Institutional conditions for diffusion. *Theory and Society*, 487-511.
-- Voronov, M., & Weber, K. (2020). People, actors, and the humanizing of institutional theory. *Journal of Management Studies*, 57(4), 873-884.
 - Voronov, M., Glynn, M. A., & Weber, K. (2022). Under the radar: institutional drift and non‐strategic institutional change. *Journal of management Studies*, 59(3), 819-842. 
-- Wang, Y. (2016). Homology and isomorphism: Bourdieu in conversation with New Institutionalism. *The British Journal of Sociology*, 67(2), 348-370. 
-- Wimmer, A. (2021). Domains of diffusion: How culture and institutions travel around the world and with what consequences. *American Journal of Sociology*, *126_(6), 1389-1438. 
+- Waeger, D., & Weber, K. (2019). Institutional complexity and organizational change: An open polity perspective. *Academy of Management Review*, 44(2), 336-359.
 
-## Interactionism and Phenomenology
-- Atkinson, W. (2010). Phenomenological additions to the Bourdieusian toolbox: Two problems for Bourdieu, two solutions from Schutz. *Sociological Theory*, 28(1), 1-19.
-- Cetina, K. K. (2009). The synthetic situation: Interactionism for a global world. *Symbolic Interaction*, 32(1), 61-87. 
-- Crawley, S. L. (2022). Queering doing gender: The curious absence of ethnomethodology in gender studies and in sociology. *Sociological Theory*, 40(4), 366-392.
-- Crossley, N. (2001). The phenomenological habitus and its construction. *Theory and society*, *30_(1), 81-120.
-- Fligstein, N. (2001). Social skill and the theory of fields. *Sociological Theory*, 19(2):105-125. 
-- Hallett, T., & Hawbaker, A. (2021). The case for an inhabited institutionalism in organizational research: interaction, coupling, and change reconsidered. *Theory and Society*, *50_(1), 1-32. 
-- Heiskala, R. (2011). The meaning of meaning in sociology. The achievements and shortcomings of Alfred Schutz's phenomenological sociology. *Journal for the Theory of Social Behaviour*, 41(3), 231-246.
-- Hitlin, S., & Elder, G. H. (2007). Time, self, and the curiously abstract concept of agency. *Sociological Theory*, 25(2), 170-191
-- Itzigsohn, J., & Brown, K. (2015). Sociology and the theory of double consciousness: WEB Du Bois’s phenomenology of racialized subjectivity. *Du Bois Review*, 12(2), 231-248.
-- Leifer, E. M. (1988). Interaction preludes to role setting: Exploratory local action. *American Sociological Review*, 865-878.
-- Reay, M. (2010). Knowledge distribution, embodiment, and insulation. *Sociological Theory*, *28_(1), 91-107.
-- Surak, K. (2017). Rupture and Rhythm: A Phenomenology of National Experiences. *Sociological Theory*, 35(4), 312-333.
-- Tavory, I., & Fine, G. A. (2020). Disruption and the Theory of the Interaction Order. *Theory and Society*, *49_(3), 365-385. 
-- Tavory, I. (2018). Between situations: Anticipation, rhythms, and the theory of interaction. *Sociological Theory*, *36_(2), 117-133.
-- Tavory, I., & Winchester, D. (2012). Experiential careers: the routinization and de-routinization of religious life. *Theory and Society*, 41, 351-373.
-- Tavory, I., & Eliasoph, N. (2013). Coordinating Futures: Toward a Theory of Anticipation. *American Journal of Sociology*, 118(4), 908-942.
-- Timmermans, S., & Tavory, I. (2020). Racist Encounters: A Pragmatist Semiotic Analysis of Interaction. *Sociological Theory*, 38(4), 295-317. 
-- Young, I. M. (1980). Throwing like a girl: A phenomenology of feminine body comportment motility and spatiality. *Human Studies*, 3(1), 137-156.
-- Yancy, G. (2008). Elevators, social spaces and racism: A philosophical analysis. *Philosophy & Social Criticism*, 34(8), 843-876.
+### Difussion and World Society
+- Frank, D. J., & Meyer, J. W. (2002). The profusion of individual roles and identities in the postwar period. *Sociological Theory*, *20_(1), 86-105. 
+- Jepperson, R. L. (1991). Institutions, institutional effects, and institutionalism. Pp. 143-163 in DiMaggio, P. and Powell, W., editors, *The New Institutionalism in Organizational Analysis*. The University of Chicago Press. 
+- Meyer, J. W., Boli, J., Thomas, G. M., & Ramirez, F. O. (1997). World society and the nation-state. *American Journal of Sociology*, *103_(1), 144-181. 
+- Meyer, J. W., & Bromley, P. (2013). The worldwide expansion of “organization”. Sociological theory, 31(4), 366-389.
+- Meyer, J. W., & Jepperson, R. L. (2000). The 'actors' of modern society: The cultural construction of social agency. *Sociological Theory*, *18_(1), 100-120. 
+- Strang, D., & Meyer, J. W. (1993). Institutional conditions for diffusion. *Theory and Society*, 487-511.
+
+### Other Applications
+- Ince, J., Cleckner, C., & Hallett, T. (2025). Extending the Bridge: Racialized Organizations, Inhabited Institutionalism, and Racialization. *Sociology of Race and Ethnicity* (online first).
+- Schneiberg, M., & Clemens, E. S. (2006). The typical tools for the job: Research strategies in institutional analysis. *Sociological Theory*, 24(3), 195-227.
+
+## Ecologies
+- Abbott, A. (2005). Linked ecologies: States and universities as environments for professions. *Sociological Theory*, *23_(3), 245-274. 
+- Liu, S., & Emirbayer, M. (2016). Field and Ecology. *Sociological Theory*, 34(1), 62-79. 
+- Liu, S. (2021). Between social spaces. *European Journal of Social Theory*, 24(1), 123-139.
 
 ## Networks, Relations, and Structures
 - Bourdieu, P. (1985). The social space and the genesis of groups. *Social science information*, 24(2), 195-220.
 - Crossley, N. (2022). A Dependent Structure of Interdependence: Structure and Agency in Relational Perspective. *Sociology*, 56(1), 166-182. 
 - Dépelteau, F. (2008). Relational Thinking: A Critique of Co‐Deterministic Theories of sructure and Agency.*Sociological Theory*,26(1), 51-73 
-- Elder Vass, D. (2008). Integrating institutional, relational and embodied structure: an emergentist perspective. *The British Journal of Sociology*, 59(2), 281-299 
+- Elder Vass, D. (2008). Integrating institutional, relational and embodied structure: an emergentist perspective. *The British Journal of Sociology*, 59(2), 281-299.
+- Fine, G. A., & Kleinman, S. (1983). Network and meaning: An interactionist approach to structure. *Symbolic Interaction*, 6(1), 97-110.
 - Haslanger, S. (2016). What is a (social) structural explanation? *Philosophical Studies*, 173, 113–130.
 - Haslanger, S. (2015). Social structure, narrative and explanation. *Canadian Journal of Philosophy*, 45(1), 1-15.
 - Joas, H., & Knöbl, W. (2009). Structuralism and Poststructuralism. Pp. 339-370 in *Social Theory: Twenty Introductory Lectures*. Cambridge University Press. 
