@@ -114,7 +114,7 @@ UCLA prohibits gender discrimination, sexual harassment, domestic and dating vio
 |Assignment | Points |
 |:--------- | :----- |
 |Homework (9, worth 20 pts each) | 180 pts total |
-|Quizzes (5, 18 pts each) | 90 pts total |
+|Quizzes (5, worth 18 pts each) | 90 pts total |
 |Section Engagement | 30 pts total |
 |**Total** | **300** |
 
