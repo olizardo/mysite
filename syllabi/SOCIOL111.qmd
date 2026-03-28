@@ -175,9 +175,9 @@ We expect that everyone by now is familiar with it because not knowing the rules
 
 > **Yes**. The lectures will make more sense, and you will get more out of them, if you do the readings before the lecture and then review them again after the lecture. 
 
-- *There are a bunch of formulas! Do I have to memorize each and everyone of them to pass the exams?*
+- *There are a bunch of formulas! Do I have to memorize each and everyone of them to pass the class?*
 
-> **No**. The beauty of network analysis is that we can clarify social science concepts using math. So most of the time, formulas will be there just to show that this can be done. However, there will be a very small amount (two to three) formulas that are very basic and that you should be able to use in the exam to come up with answers to the question. *I will let you know exactly which formulas these are* and where to find them in the lecture slides and the online lesson handouts.
+> **No**. The beauty of network analysis is that we can clarify social science concepts using math. So most of the time, formulas will be there just to show that this can be done. However, there will be a very small amount (two to three) formulas that are very basic and that you should be able to consult to answer a quiz question. *I will let you know exactly which formulas these are* and where to find them in the lecture slides and the online lesson handouts.
 
 - *There are lots of concepts and terminology. Do I need to know everything definition?*
 
@@ -187,14 +187,14 @@ We expect that everyone by now is familiar with it because not knowing the rules
 
 > Check Bruinlearn for due dates for each homework. 
 
-- *I have multiple final exams on the same day as the one scheduled for this course, can I make a private arrangement to take the final on a different day?*
+<!-- - *I have multiple final exams on the same day as the one scheduled for this course, can I make a private arrangement to take the final on a different day?*
 
-> **No**. The midterm and final will be scheduled over a 12 hour window. This should allow you to find a time to take it without conflict. This is also information that is available to you from the get go so you can plan accordingly. Making private arrangements with every individual who has multiple finals scheduled for the same day would be both unworkable and unfair to others. The only reasons to reschedule an exam remain the ones listed above: Documentable emergencies, mental and physical health issues, or deaths in the family.
+> **No**. The midterm and final will be scheduled over a 12 hour window. This should allow you to find a time to take it without conflict. This is also information that is available to you from the get go so you can plan accordingly. Making private arrangements with every individual who has multiple finals scheduled for the same day would be both unworkable and unfair to others. The only reasons to reschedule an exam remain the ones listed above: Documentable emergencies, mental and physical health issues, or deaths in the family. -->
 
 - *I fell behind and now I want some extra-credit. Can I please get some?*
 
-> **No**. This class is designed and battle-tested for you to do well with the actual number of assingments and requirements listed here. Keep up with everything and you are guaranteed to do well. 
+> **No**. This class is designed and battle-tested for you to do well with the actual number of assignments and requirements listed here. Keep up with everything and you are guaranteed to do well. 
 
 - *I am on the waiting list. Can you just let me into the class if I beg really hard?*
 
-> **No**. The class cannot go over the official enrollment. The waiting list is exactly as advertised. You wait until sommeone drops. 
+> **No**. This class is mandated to have sections and sections cannot go over the official enrollment. The waiting list is exactly as advertised. You wait until someone drops. 
