@@ -21,21 +21,21 @@ format:
 
 | Name | SOCIOL 111 (Social Networks) |
 | :---        |    :----   |
-| Lecture Time | Mondays and Wednesdays 8-9:15a |
-| Lecture Place | Royce 190 |
-| In-Person Office Hours |  Fridays 1-2p |
-| Zoom Office Hours |  Mondays Noon-1p |
+| Lecture Time | Mondays and Wednesdays 2-3:15a |
+| Lecture Place | Haines 220 |
+| In-Person Office Hours |  Wednesdays 1-2p |
+| Zoom Office Hours |  Wednesdays Noon-1p |
 | Office | Haines 290 
 | Zoom Office | [https://ucla.zoom.us/my/olizardo](https://ucla.zoom.us/my/olizardo) |
 
 # Course Description
-These days, "social networks" are everywhere. Yet, before networking, and social media networks became buzzwords (e.g., before you were born) they were (and continue to be) a field of rigorous study in the social sciences called **social network analysis** (SNA). In fact, networks became central in sociology during the 1960s and 1970s because they were used to take such fuzzy concepts as "social relationships," "social ties," and "social structures" from being evocative abstractions that explained everything (and therefore nothing) to concrete topics of empirical research and social-scientific measurement. 
+These days, "social networks" are everywhere. Yet, before networking, and social media networks became buzzwords (e.g., before you were born) they were (and continue to be) a field of rigorous study in the social sciences called **social network analysis** (SNA). In fact, networks became central in sociology during the 1960s and 1970s because they were used to take such fuzzy concepts as "social relationships," "social ties," "groups", "roles", and "social structures" from being evocative abstractions that explained everything (and therefore nothing) to concrete topics of empirical research and social-scientific measurement. 
 
 In this course, we will explore this more concrete and "scientific" part of social networks. We will see that the field of study of social networks is distinctive for not only having its own set of theories and concepts (and associated "lingo") but also for the way in which these concepts are immediately made tangible in mathematical (usually quantitative form) using the tools of graph theory and matrix algebra. In Social Network Analysis (SNA), there is thus no clear separation of the theory from the analysis part. Another thing is distinctive about SNA concerning other areas of sociology is that it is not thematically restricted. Instead, SNA is comprised of a general set of analytic tools that can be used to study social processes in *any* field of sociology. This course will thus reflect that thematic diversity.
 
 # Thematic Sequence
 
-The course is designed to introduce you to the entire panoply of concepts and theories that form the core of the field of SNA as well as the relevant measurement and mathematical representation tools. This field has a long history, but today it is a massive endeavor recruiting people from all of the social science disciplines. Because the primary tools of SNA are [Graph Theory](https://en.wikipedia.org/wiki/Graph_theory) and [Matrix Algebra](https://en.wikipedia.org/wiki/Matrix_(mathematics)). Throughout the quarter we will jump back and forth between conceptual discussion and mathematical representation, so we will intersperse the more "math heavy" parts of the class---concentrating on **social network analysis**---with the more "concept heavy" parts, focusing on **social network theory**. These parts of the class will broaden the scope of the discussion, exploring how various social phenomena, from affective "balance" in social relations, to status attainment, hierarchy, negative interactions, the diffusion of innovations (and disease), and "the small world" can be understood from a social network perspective. 
+The course is designed to introduce you to the entire panoply of concepts and theories that form the core of the field of SNA as well as the relevant measurement and mathematical representation tools. This field has a long history, but today it is a massive project recruiting people from all of the social science disciplines. Because the primary tools of SNA are [Graph Theory](https://en.wikipedia.org/wiki/Graph_theory) and [Matrix Algebra](https://en.wikipedia.org/wiki/Matrix_(mathematics)). Throughout the quarter we will jump back and forth between conceptual discussion and mathematical representation, so we will intersperse the more "math heavy" parts of the class---concentrating on **social network analysis**---with the more "concept heavy" parts, focusing on **social network theory**. These parts of the class will broaden the scope of the discussion, exploring how various social phenomena, from affective "balance" in social relations, to status attainment, hierarchy, negative interactions, the diffusion of innovations (and disease), and "the small world" can be understood from a social network perspective. 
 
 # Learning Goals and Objectives
 
@@ -53,7 +53,7 @@ By the end of the course, you should be able to:
 
 - The official meeting times for this class are *Monday* and *Wednesday* these are also the days when your TA-led section meetings and lectures will happen. Note that you are *required* to attend TA-led section meetings, as this is where your participation grades will be coming from.  
 
-- The lecture component for the class is scheduled for **Mondays and Wednesdays starting at 8a Pacific Standard Time**. The current (rolling) schedule of topics can be found on the Bruinlearn website under each class module (corresponding to each week). **Attendance at the lecture is not required**, but it is **strongly** encouraged if you are able to make it. In fact, *the best predictor of doing well in the class is regular attendance at the lecture*. **Asking questions and taking notes during live delivery of the material aids learning and retention**. 
+- The lecture component for the class is scheduled for **Mondays and Wednesdays starting at 2p Pacific Standard Time**. The current (rolling) schedule of topics can be found on the Bruinlearn website under each class module (corresponding to each week). **Attendance at the lecture is not required**, but it is **strongly** encouraged. In fact, *the best predictor of doing well in the class is regular attendance at the lecture*, so if one of your question is "how can I get a good grade in this class?" my answer is "by attending lecture and taking good notes", since **asking questions and taking notes during live delivery of the material aids learning and retention**. 
 
 - All the slides on which the lectures will be based can be found on the associated lesson page on Bruinlearn. **Note that these are live slides** (their contents is bound to change). However, you will be able to see those changes when they happen.
 
@@ -62,11 +62,11 @@ By the end of the course, you should be able to:
 - There are no textbooks required for this course. All required readings will come from an online textbook (that is a work in progress). Links to each of the readings can be found in the Bruinlearn site.  
 
 # Course Requirements
-- **Section engagement (10% of the final grade)**: Because this is a large lecture class, attendance and participation at TA-led virtual discussion sections will be your primary form of graded participation and is highly encouraged.  In discussion sections you will: do activities and some writing (both in and out of class), discuss readings and homework, delve deeper, and work together to understand the material. To do this requires attendance, participation, and preparation. Your section TAs will gauge your performance in section to generate this score. You get one discussion section absence as a freebie. After that, each will result in a decrease in your grade for section engagement at the end of the semester (e.g., on your second absence an A- becomes a B+, on the third it becomes a B). **The section meetings are planned for in-person only.**
+- **Homework Exercises (60% of the final grade)**: Starting on week 2, there will be **weekly homework assignments** designed to help you understand and apply the theories, concepts, and techniques that we will be learning in class. Instructions for each homework will be available on Bruinlearn.
 
-- **Homework Exercises (40% of the final grade)**: Starting on week 2, there will be **weekly homework assignments** designed to help you understand and apply the theories, concepts, and techniques that we will be learning in class. Instructions for each homework will be available on Bruinlearn.
+- **Biweekly Quizzes (30% of the final grade)**: This class has no final or midterm exams. In instead, you will take five (5) quizzes **every two weeks** covering the lecture material from the previous two weeks. These are **timed quizzes** (20 minutes) consisting of 18 multiple choice questions designed to evaluate your understanding and capacity to apply the theories, concepts, and definitions that we will be learning during throughout quarter. **If you have extra time allotments from CAE, I will apply those automatically, so you don't have to email or ask me about them**. 
 
-- **Midterm and Final Exams (50% of the final grade)**: The midterm and final will consist of a **timed exam** (100 minutes) designed to evaluate your understanding and capacity to apply the theories, concepts, and techniques that we will be learning during the quarter (with extra time alloted for those who have exemptions). The final is not cumulative. That means that midterm will deal with material covered from week 1 to week 5 and the final will deal with material covered from week 6 to week 10. 
+- **Section engagement (10% of the final grade)**: Because this is a large lecture class, attendance and participation at TA-led virtual discussion sections will be your primary form of graded participation.  In discussion sections you will: Do activities and some writing (both in and out of class), discuss readings and homework, delve deeper, and work together to understand the material. To do this requires attendance, participation, and preparation. Your section TAs will gauge your performance in section to generate this score. You get one discussion section absence as a freebie. After that, each will result in a decrease in your grade for section engagement at the end of the semester (e.g., on your second absence an A- becomes a B+, on the third it becomes a B). **The section meetings are planned for in-person only.**
 
 # Expectations and Policies
 
@@ -74,19 +74,14 @@ By the end of the course, you should be able to:
 *You are expected to participate in section meetings. This will be part of your grade in the course*. If you are unsure of how best to participate, talk to me or your TA and we will share ideas.
 
 ## Homework Assignments
-**The homework is very important. Please do it**. You will have 8 assignments over the 10 weeks, due weekly through the quarter. These homework assignments will give you an opportunity to use the concepts and techniques from the course to analyze various social systems, as well as testing your understanding of basic definitions and procedures. Think of them like exercises; they are there to build your network muscles!  
+**The homework is very important. Please do it**. You will have 9 assignments over the 10 weeks, due weekly through the quarter. These homework assignments will give you an opportunity to use the concepts and techniques from the course to analyze various social systems, as well as testing your understanding of basic definitions and procedures. Think of them like exercises; they are there to build your network muscles!  
 
-**Please make sure you truly understand a solution, and please: DO NOT COPY SOLUTIONS.** We will figure it out. If we discover that some members of a working group have copied solutions, the entire group will be reported to the Dean of Students on the grounds of Academic Misconduct. Even if we don’t catch you, you won’t really understand what you’ve done, and things will not go well when exams roll around. You’ll only be hurting yourself in the long run.
+**Please make sure you truly understand a solution, and please: DO NOT COPY SOLUTIONS.** We will figure it out. If we discover that some members of a working group have copied solutions, the entire group will be reported to the Dean of Students on the grounds of Academic Misconduct. Even if we don’t catch you, you won't really understand what you’ve done, and things will not go well when exams roll around. You’ll only be hurting yourself in the long run.
 
 **If you turn in homework late, without permission or an extraordinarily good excuse (e.g., accompanied by a doctor’s note or irrefutable evidence of a zombie apocalypse), you will lose marks**: 2 points out of 10 for each day late. We will not accept homework more than 5 days after the due date, and may impose tighter deadlines for late homework as the need arises. When submitting an assignment, please be sure that you have the final version you intend to upload for grading. 
 
-## Exams
-Exams will usually consist of of multiple choice questions. **Both exams will be open book timed tests and administered via Bruinlearn** (not in person). Some of the questions will require you to engage in some simple arithmetic computations. Exams–including the final-will only be administered on the scheduled dates. An exception will only be made in the case of a documented illness or family emergency.  
-
-### Exam Dates
-
-- Midterm: **Thursday of Week 5** (May 1st)
-- Final: **Thursday of Finals Week** (June 12th)
+## Quizzes
+Quizzes will usually consist of of eighteen (18) multiple choice questions. **quizzes will be open book timed tests and administered via Bruinlearn** (not in person), lasting for twenty minutes. **Quizzes will only be administered on the scheduled dates** (typically Thursday) which you can find on the Bruinlearn website. An exception will only be made in the case of a **documented** illness or family emergency.  
 
 <!--# Violence and Discrimination Resources
 UCLA prohibits gender discrimination, sexual harassment, domestic and dating violence, sexual assault, and stalking. If you have experienced any of these, there are a variety of campus resources to assist you, including a confidential hotline where you can talk to someone 24/7: (310) 825-0768. Title IX is a federal civil rights law in the United States of America that was passed as part (Title IX) of the Education Amendments of 1972. Therefore international students have access to the same services at the Title IX office as non-international students. Please note that faculty and TAs are responsible employees, which means faculty, TAs, and other UC employees are required under the UC Policy on Sexual Violence and Sexual Harassment to inform the Title IX Coordinator—a non-confidential resource —should they become aware that you or any other student has experienced sexual violence or gender discrimination.
@@ -118,10 +113,9 @@ UCLA prohibits gender discrimination, sexual harassment, domestic and dating vio
 
 |Assignment | Points |
 |:--------- | :----- |
-|Homework (8, worth 15 pts each) | 120 pts total |
+|Homework (9, worth 20 pts each) | 180 pts total |
+|Quizzes (5, 18 pts each) | 90 pts total |
 |Section Engagement | 30 pts total |
-|Midterm  | 75 pts total |
-|Final | 75 pts total |
 |**Total** | **300** |
 
 ### Letter Grade Determination
@@ -148,10 +142,7 @@ UCLA prohibits gender discrimination, sexual harassment, domestic and dating vio
 3. When you do email please be patient. We might respond immediately, we might not. Give us a day (or a weekend) to get back to you. 
 4. You don't need to schedule an appointment for my student hours. My doors are wide open during that time (check with your TA about their particular scheduling policy). 
 5. However, if you want to meet outside student hours times, please contact me to set up an appointment for a time I am available. 
-6. Feel free to meet with any of us, regardless of the section you are in. However, if you want to discuss a grade, you must talk with the person who graded your assignment (your TA, unless otherwise noted).
-
-## Open Student Hours with Prof. Lizardo
-**Fridays 1-3p at Haines 290** 
+6. Feel free to meet with any of us, regardless of the section you are in. However, if you want to discuss a grade, you must talk with the person who graded your assignment (your TA, unless otherwise noted). 
 
 - *This Syllabus has answers to the most common questions about the course*. Please, check the syllabus first, before asking us about due-dates, assignment requirements, etc.
 
@@ -166,9 +157,9 @@ UCLA prohibits gender discrimination, sexual harassment, domestic and dating vio
 - *Office Hours are available to add to your experience in this course*. Please make use of them.  Each of us has specific office hours each week.  If you can not make it during the times noted earlier, please email with at least two dates and times to arrange a meeting either in-person or over Zoom. 
 
 ## Academic Code of Conduct
-Students are strongly encouraged to discuss ideas for papers and assignments with other students. You can also show drafts of your papers to other students and receive from them editing assistance. However, all written work (papers, posted questions and comments) must be written by the student submitting the work. Any suspected instance of cheating or plagiarism will be dealt with according to the policies of UCLA’s Honor Code. As an undergraduate at the UCLA, you are bound by the University's academic code of conduct found [here](https://www.deanofstudents.ucla.edu/Individual-Student-Code).
+Any suspected instance of cheating or plagiarism will be dealt with according to the policies of UCLA’s Honor Code. As an undergraduate at the UCLA, you are bound by the University's academic code of conduct found [here](https://www.deanofstudents.ucla.edu/Individual-Student-Code).
 
-We expect that everyone by now is familiar with it because not knowing the rules is not an excuse; you can violate the conduct without knowing it. So (re) familiarize yourself with it. Of most relevance to the class, is the part of the code of conduct that deals with "Academic Dishonesty."  This term covers a wide range of behaviors and practices, some of which you may think is not such a big deal at all (e.g., copying and pasting a sentence from a Wikipedia article without citation or attribution). Note, however, that academic dishonesty covers much more than that and includes but is not limited to: "cheating, fabrication or falsification, plagiarism, multiple submissions or facilitating academic misconduct which occurs in academic exercises or submissions."
+We expect that everyone by now is familiar with it because not knowing the rules is not an excuse; you can violate the conduct without knowing it. So (re) familiarize yourself with it. Of most relevance to the class, is the part of the code of conduct that deals with "Academic Dishonesty."  This term covers a wide range of behaviors and practices, some of which you may think is not such a big deal at all. Note, however, that academic dishonesty covers much more than that and includes but is not limited to: "cheating, fabrication or falsification, plagiarism, multiple submissions or facilitating academic misconduct which occurs in academic exercises or submissions."
 
 # Frequently Asked Questions
 
