@@ -28,13 +28,13 @@ format:
 
 # Course Description
 
-These days, “social networks” are everywhere. Yet, before networking, and social media networks became buzzwords (e.g., before you were born) they were (and continue to be) a field of rigorous study in the social sciences called **social network analysis** (SNA). In fact, networks became central in sociology during the 1960s and 1970s because they were used to take such fuzzy concepts as “social relationships,” “social ties,” “groups, “roles,” and “social structures” from being evocative abstractions that explained everything (and therefore nothing) to concrete topics of empirical research and social-scientific measurement.
+These days, “social networks” are everywhere. Yet, before networking and social media became buzzwords (e.g., before you were born), they were (and continue to be) a field of rigorous study in the social sciences known as **social network analysis** (SNA). In fact, networks became central in sociology during the 1960s and 1970s because they were used to take such fuzzy concepts as “social relationships,” “social ties,” “groups, “roles,” and “social structures” from being evocative abstractions that explained everything (and therefore nothing) to concrete topics of empirical research and social-scientific measurement.
 
-In this course, we will explore this more concrete and “scientific” part of social networks. We will see that the field of study of social networks is distinctive for not only having its own set of theories and concepts (and associated “lingo”) but also for the way in which these concepts are immediately made tangible in mathematical (usually quantitative form) using the tools of graph theory and matrix algebra. In Social Network Analysis (SNA), there is thus no clear separation between the theory and the analysis. Another distinctive feature of SNA compared to other areas of sociology is that it is not thematically restricted. Instead, SNA comprises a general set of analytic tools that can be used to study social processes in _any_ field of sociology. This course will thus reflect that thematic diversity.
+In this course, we will explore this more concrete and “scientific” part of social networks. We will see that the field of study of social networks is distinctive for not only having its own set of theories and concepts (and associated “lingo”) but also for the way in which these concepts are immediately made tangible in mathematical (usually quantitative form) using the tools of graph theory and matrix algebra. In Social Network Analysis (SNA), there is thus no clear separation between the theory and the analysis. Another distinctive feature of SNA compared to other areas of sociology is that it is not thematically restricted. Instead, SNA comprises a general set of analytic tools for studying social processes in _any_ field of sociology. This course will thus reflect that thematic diversity.
 
 # Thematic Sequence
 
-The course is designed to introduce you to the entire panoply of concepts and theories that form the core of the field of SNA, as well as the relevant measurement and mathematical representation tools. This field has a long history, but today it is a massive project that recruits people from all social science disciplines. Because the primary tools of SNA are [Graph Theory](https://en.wikipedia.org/wiki/Graph_theory) and [Matrix Algebra](https://en.wikipedia.org/wiki/Matrix_(mathematics)). Throughout the quarter, we will jump back and forth between conceptual discussion and mathematical representation, so we will intersperse the more “math-heavy” parts of the class—concentrating on **social network analysis**—with the more “concept heavy” parts, focusing on **social network theory**. These parts of the class will broaden the scope of the discussion, exploring how various social phenomena, from affective “balance” in social relations, to status attainment, hierarchy, negative interactions, the diffusion of innovations (and disease), and “the small world” can be understood from a social network perspective.
+The course is designed to introduce you to the entire panoply of concepts and theories that form the core of the field of SNA, as well as the relevant measurement and mathematical representation tools. This field has a long history, but today it is a massive project that recruits people from across the social sciences. Because the primary tools of SNA are [Graph Theory](https://en.wikipedia.org/wiki/Graph_theory) and [Matrix Algebra](https://en.wikipedia.org/wiki/Matrix_(mathematics)). Throughout the quarter, we will jump back and forth between conceptual discussion and mathematical representation, so we will intersperse the more “math-heavy” parts of the class—concentrating on **social network analysis**—with the more “concept heavy” parts, focusing on **social network theory**. These parts of the class will broaden the scope of the discussion, exploring how various social phenomena, from affective “balance” in social relations, to status attainment, hierarchy, negative interactions, the diffusion of innovations (and disease), and “the small world” can be understood from a social network perspective.
 
 # Learning Goals and Objectives
 
@@ -52,7 +52,7 @@ _This is how each week of the class is organized._
 
 *   The official meeting times for this class are _Monday_ and _Wednesday;_ these are also the days when your TA-led section meetings and lectures will happen. Note that you are _required_ to attend TA-led section meetings, as this is where your participation grades will be coming from.
     
-*   The lecture component for the class is scheduled for **Mondays and Wednesdays starting at 2 p.m. Pacific Standard Time**. The current (rolling) schedule of topics can be found on the Bruinlearn website under each class module (one per week). **Attendance at the lecture is not required**, but it is **strongly** encouraged. In fact, _the best predictor of doing well in the class is regular attendance at the lecture_, so if one of your questions is “how can I get a good grade in this class?” my answer is “by attending the lecture and taking good notes”, since **asking questions and taking notes during live delivery of the material aids learning and retention**.
+*   The lecture component for the class is scheduled for **Mondays and Wednesdays starting at 2 p.m. Pacific Standard Time**. The current (rolling) schedule of topics is available on the Bruinlearn website under each class module (one per week). **Attendance at the lecture is not required**, but it is **strongly** encouraged. In fact, _the best predictor of doing well in the class is regular attendance at the lecture_, so if one of your questions is “how can I get a good grade in this class?” my answer is “by attending the lecture and taking good notes”, since **asking questions and taking notes during live delivery of the material aids learning and retention**.
     
 *   All the slides on which the lectures will be based can be found on the associated lesson page on Bruinlearn. **Note that these are live slides** (their contents are bound to change). However, you will be able to see those changes when they happen.
     
@@ -67,26 +67,26 @@ _This is how each week of the class is organized._
     
 *   **Biweekly Quizzes (30% of the final grade)**: This class has no final or midterm exams. Instead, you will take five (5) quizzes **every two weeks** covering the lecture material from the previous two weeks. These are **timed quizzes** (20 minutes) consisting of 18 multiple-choice questions designed to evaluate your understanding and capacity to apply the theories, concepts, and definitions that we will be learning throughout the quarter. **If you have extra time allotments from CAE, I will apply those automatically, so you don’t have to email or ask me about them**.
     
-*   **Section engagement (10% of the final grade)**: Because this is a large lecture class, attendance and participation at TA-led virtual discussion sections will be your primary form of graded participation. In discussion sections, you will: Do activities and some writing (both in and out of class), discuss readings and homework, delve deeper, and work together to understand the material. This requires attendance, participation, and preparation. Your section TAs will gauge your performance in the section to generate this score. You get one discussion section absence as a freebie. After that, each will result in a decrease in your grade for section engagement at the end of the semester (e.g., on your second absence, an A- becomes a B+, on the third, it becomes a B). **The section meetings are planned to be in person only.**
+*   **Section engagement (10% of the final grade)**: Because this is a large lecture class, attendance and participation at TA-led virtual discussion sections will be your primary form of graded participation. In discussion sections, you will: Do activities and some writing (both in and out of class), discuss readings and homework, delve deeper, and work together to understand the material. This requires attendance, participation, and preparation. Your section TAs will assess your performance to generate this score. You get one discussion section absence as a freebie. After that, each will result in a decrease in your grade for section engagement at the end of the semester (e.g., on your second absence, an A- becomes a B+, on the third, it becomes a B). **The section meetings are planned to be in person only.**
     
 
 # Expectations and Policies
 
 ## Participation
 
-_You are expected to participate in section meetings. This will be part of your grade in the course_. If you are unsure of how best to participate, talk to me or your TA and we will share ideas.
+_You are expected to participate in section meetings. This will be part of your grade in the course_. If you are unsure of how best to participate, talk to me or your TA, and we will share ideas.
 
 ## Homework Assignments
 
-**The homework is very important. Please do it**. You will have 9 assignments over the 10-week period, due weekly throughout the quarter. These homework assignments will give you an opportunity to use the concepts and techniques from the course to analyze various social systems, as well as evaluate your understanding of basic definitions and procedures. Think of them like exercises; they are there to build your network muscles!
+**The homework is very important. Please do it**. You will have 9 assignments over the 10-week period, with one due each week. These homework assignments will give you an opportunity to use the concepts and techniques from the course to analyze various social systems, as well as evaluate your understanding of basic definitions and procedures. Think of them like exercises; they are there to build your network muscles!
 
-**Please make sure you truly understand a solution, and please: DO NOT COPY SOLUTIONS.** We will figure it out. If we discover that some members of a working group have copied solutions, the entire group will be reported to the Dean of Students for Academic Misconduct. Even if we don’t catch you, you won’t really understand what you’ve done, and things will not go well when exams roll around. You’ll only be hurting yourself in the long run.
+**Please make sure you truly understand a solution, and please: DO NOT COPY SOLUTIONS.** We will figure it out. If we discover that some members of a working group have copied solutions, the entire group will be reported to the Dean of Students for Academic Misconduct. Even if we don’t catch you, you won’t really understand what you’ve done, and things will not go well when the biweekly quizzes begin to roll around. You’ll only be hurting yourself in the long run.
 
 **If you turn in homework late, without permission or an extraordinarily good excuse (e.g., accompanied by a doctor’s note or irrefutable evidence of a zombie apocalypse), you will lose marks**: 2 points out of 10 for each day late. We will not accept homework more than 5 days after the due date, and may impose tighter deadlines for late homework as the need arises. When submitting an assignment, please ensure you have the final version you intend to upload for grading.
 
 ## Quizzes
 
-**Quizzes will usually consist of eighteen (18) multiple-choice questions. Quizzes will be open-book, timed tests** **administered via Bruinlearn** (not in person) and lasting 20 minutes. **Quizzes will only be administered on the scheduled dates** (typically Thursday), which you can find on the Bruinlearn website. An exception will only be made in the case of a **documented** illness or family emergency.
+**Quizzes will usually consist of eighteen (18) multiple-choice questions. Quizzes will be open-book, timed tests administered via Bruinlearn (not in person) and lasting 20 minutes. **Quizzes will only be administered on the scheduled dates** (typically Thursday), which you can find on the Bruinlearn website. An exception will only be made in the case of a **documented** illness or family emergency.
 
 ## Final Grading Scheme
 
@@ -149,11 +149,11 @@ We expect that everyone is familiar with it by now, because not knowing the rule
 
 *   _I don’t like the time my discussion section meets. Can I join another one?_
 
-> **No**. You are assigned to the discussion section you are assigned by the registrar and each section must remain the size that it is. However, if you do the legwork of finding another student to switch with you and notify both TAs about it, you may do so.
+> **No**. You are assigned to the discussion section that you are assigned by the registrar, and each section must remain the size that it is. However, if you do the legwork of finding another student to switch with you and notify both TAs, you may do so.
 
 *   _Is there a discussion in the first week?_
 
-> **No**. There are no discussion section meetings the first week.
+> **No**. There are no discussion section meetings in the first week.
 
 *   _Do we need to do the readings before or after the lecture?_
 
@@ -161,20 +161,20 @@ We expect that everyone is familiar with it by now, because not knowing the rule
 
 *   _There are a bunch of formulas! Do I have to memorize each and every one of them to pass the class?_
 
-> **No**. The beauty of network analysis is that we can clarify social science concepts using math. So most of the time, formulas will be there just to show that this can be done. However, there will be a very small amount (two to three) formulas that are very basic and that you should be able to consult to answer a quiz question. _I will let you know exactly which formulas these are_ and where to find them in the lecture slides and the online lesson handouts.
+> **No**. The beauty of network analysis is that we can clarify social science concepts using math. So most of the time, formulas will be there just to show that this can be done. However, there will be a very small number (two to three) formulas that are very basic and that you should be able to consult to answer a quiz question. _I will let you know exactly which formulas these are_ and where to find them in the lecture slides and the online lesson handouts.
 
-*   _There are many concepts and terms. Do I need to know every definition?_
+*   _There are many concepts and terms. Do I need to know every definition??_
 
-> **No**. The textbook goes into more detail on the material and provide important background on key concepts. For the most part the lecture slides should be your guide as to what is important. If it is mentioned on both the textbook and the lecture, it will likely be in the exam. If it is mentioned in the textbook but not the lecture, I will not test you on it.
+> **No**. The textbook goes into more detail on the material and provides important background on key concepts. For the most part, the lecture slides should be your guide as to what is important. If it is mentioned in both the textbook and the lecture, it will likely be in one of the weekly quizzes. If it is mentioned in the textbook but not the lecture, I will not test you on it.
 
 *   _When should I turn my homework in?_
 
-> Check Bruinlearn for due dates for each homework.
+Check Bruinlearn for the due dates of each homework assignment.
 
 *   _I fell behind, and now I want some extra credit. Can I please get some?_
 
-> **No**. This class is designed and battle-tested for you to do well with the actual number of assignments and requirements listed here. Keep up with everything and you are guaranteed to do well.
+> **No**. This class is designed and battle-tested to help you do well with the actual number of assignments and requirements listed here. Keep up with everything, and you are guaranteed to do well.
 
 *   _I am on the waiting list. Can you just let me into the class if I beg really hard?_
 
-> **No**. This class is mandated to have sections and sections cannot go over the official enrollment. The waiting list is exactly as advertised. You wait until someone drops.
+> **No**. This class is mandated to have sections, and sections cannot go over the official enrollment. The waiting list is exactly as advertised. You wait until someone drops.
