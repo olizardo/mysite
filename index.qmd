@@ -5,43 +5,38 @@ about:
   image: profile.jpg
   image-shape: round
   links:
-     - icon: github
-       text: View Source
-       href: https://github.com/olizardo/mysite/blob/main/index.qmd
+    - icon: envelope
+      text: Email
+      href: mailto:olizardo@soc.ucla.edu
+    - icon: google
+      text: Google Scholar
+      href: https://scholar.google.com/citations?user=Lt5nMNkAAAAJ&hl=en
+    - icon: journal-bookmark-fill
+      text: Semantic Scholar
+      href: https://www.semanticscholar.org/author/Omar-Lizardo/2632398
+    - icon: orcid
+      text: ORCID
+      href: https://orcid.org/0000-0002-5405-3007
+    - icon: github
+      text: View Source
+      href: https://github.com/olizardo/mysite/blob/main/index.qmd
 ---
 
-<p align="justify"> 
-{{< fa address-card size=large >}} I am the LeRoy Neiman Term Chair Professor of Sociology at the University of California, Los Angeles. 
-</p>
+{{< fa address-card size=large >}} I am the LeRoy Neiman Term Chair Professor of Sociology at the University of California, Los Angeles.
 
-<p align="justify"> 
 {{< fa chart-line size=large >}} I study culture, cognition, networks, theory, consumption, institutions, and organization.
-</p>
 
-<p align="left"> 
 {{< fa graduation-cap size=large >}} PhD in Sociology, *University of Arizona*, 2006.
-</p>
 
-<p align="left"> 
 {{< fa graduation-cap size=large >}} BS in Psychology, *Brooklyn College of the City University of New York*, 1997.
-</p>
 
-<p align="justify"> 
 I am also:
-</p>
 
-<ul align="justify">
-  <li>Current co-editor of the journal [*Sociological Theory*](https://journals.sagepub.com/home/stx), with [Z. Magubane](https://www.bc.edu/bc-web/schools/mcas/departments/sociology/people/faculty-directory/zine-magubane.html), [V. Patil](https://www.linkedin.com/in/vrushali01) and [S. L. Crawley](http://sociology.usf.edu/faculty/scrawley/).</li>
-  <li> Current chair of the American Sociological Association's [Section on Mathematical Sociology](https://mathematicalsociology.wordpress.com/)
-  <li>Former chair of the American Sociology Association's [Section on Sociology of Culture](https://asaculturesection.org/). </li>
-  <li>Current member of the [Sociological Research Association](https://www.sociological-research-assoc.org/).</li>
-  <li>Current member of the [Board of Reviewing Editors](https://www.science.org/content/page/editors-and-advisory-boards#board-of-reviewing-editors) of the journal [*Science*](https://www.science.org/journal/science).</li>
-  <li>Current member of the Editorial Advisory Board of the journals [*Poetics*](https://www.sciencedirect.com/journal/poetics), [*Journal for the Theory of Social Behaviour*](https://onlinelibrary.wiley.com/journal/14685914), and [*Theory & Social Inquiry*](https://www.theoryandsocialinquiry.org/).</li>
-  <li> Current member of the Editorial Advisory Board of the the Stanford University Press Series on [Culture and Economic Life](https://www.sup.org/books/series/culture-and-economic-life), the Princeton University Press Series on [Studies in Cultural Sociology](https://press.princeton.edu/series/princeton-studies-in-cultural-sociology), and the Oxford University Press Series on [Social Network Mechanisms](http://www.oxfordsnmseries.com/).</li>
-  <li>Former co-editor of [*American Sociological Review*](https://journals.sagepub.com/home/asr).</li>
-</ul>
-
-<center>
-{{< ai google-scholar size=Large >}} [Google Scholar](https://scholar.google.com/citations?user=Lt5nMNkAAAAJ&hl=en) {{< ai semantic-scholar size=Large >}} [Semantic Scholar](https://www.semanticscholar.org/author/Omar-Lizardo/2632398) {{< ai orcid size=large >}} [0000-0002-5405-3007](https://orcid.org/0000-0002-5405-3007)<br>
-{{< fa envelope size=large >}} [olizardo@soc.ucla.edu](mailto:olizardo@soc.ucla.edu)
-</center >
+* Current co-editor of the journal [*Sociological Theory*](https://journals.sagepub.com/home/stx), with [Z. Magubane](https://www.bc.edu/bc-web/schools/mcas/departments/sociology/people/faculty-directory/zine-magubane.html), [V. Patil](https://umbc.academia.edu/VrushaliPatil) and [S. L. Crawley](https://www.usf.edu/arts-sciences/departments/sociology/people/faculty/s-l-crawley.aspx/).
+* Current chair of the American Sociological Association's [Section on Mathematical Sociology](https://mathematicalsociology.wordpress.com/).
+* Former chair of the American Sociology Association's [Section on Sociology of Culture](https://asaculturesection.org/).
+* Current member of the [Sociological Research Association](https://www.sociological-research-assoc.org/).
+* Current member of the [Board of Reviewing Editors](https://www.science.org/content/page/editors-and-advisory-boards#board-of-reviewing-editors) of the journal [*Science*](https://www.science.org/journal/science).
+* Current member of the Editorial Advisory Board of the journals [*Poetics*](https://www.sciencedirect.com/journal/poetics), [*Journal for the Theory of Social Behaviour*](https://onlinelibrary.wiley.com/journal/14685914), and [*Theory & Social Inquiry*](https://www.theoryandsocialinquiry.org/).
+* Current member of the Editorial Advisory Board of the Stanford University Press Series on [Culture and Economic Life](https://www.sup.org/books/series/culture-and-economic-life), the Princeton University Press Series on [Studies in Cultural Sociology](https://press.princeton.edu/series/princeton-studies-in-cultural-sociology), and the Oxford University Press Series on [Social Network Mechanisms](http://www.oxfordsnmseries.com/).
+* Former co-editor of [*American Sociological Review*](https://journals.sagepub.com/home/asr).
