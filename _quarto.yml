@@ -58,10 +58,9 @@ format:
   html:
     theme:
       light: [flatly, custom.scss]
-      dark: darkly    
+      dark: [darkly, custom-dark.scss]    
     css: styles.css
     toc: true
-    linkcolor: "#ff7e26;"
 
 editor: source
 

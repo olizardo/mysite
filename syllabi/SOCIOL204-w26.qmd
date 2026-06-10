@@ -73,8 +73,8 @@ format:
 - Sewell Jr, W. H. (1992). A theory of structure: Duality, agency, and transformation. *American Journal of Sociology*, 98(1), 1-29.
 - Reed, I. A. (2017). Chains of power and their representation. *Sociological Theory*, 35(2), 87-117.
 
-### Week 9 (May 23)
-- Dépelteau, F. (2008). Relational Thinking: A Critique of Co‐Deterministic Theories of sructure and Agency.*Sociological Theory*,26(1), 51-73 
+### Week 9 (March 11)
+- Dépelteau, F. (2008). Relational Thinking: A Critique of Co‐Deterministic Theories of Structure and Agency.*Sociological Theory*,26(1), 51-73 
 - Elder Vass, D. (2008). Integrating institutional, relational and embodied structure: an emergentist perspective. *The British Journal of Sociology*, 59(2), 281-299.
 - Emirbayer, M. (1997). Manifesto for a relational sociology. *American Journal of Sociology*, 103_(2), 281-317. 
 - Haslanger, S. (2016). What is a (social) structural explanation? *Philosophical Studies*, 173, 113–130.
@@ -82,7 +82,7 @@ format:
 
 ## Culture, Cognition, and Action
 
-### Week 10 (March 11)
+### Week 10 (March 18)
 - Brett, G. (2022). Dueling with Dual-Process Models: Cognition, Creativity, and Context. *Sociological Theory*, 40(2), 179-201.
 - Freeman, K. J., Condron, D. J., & Steidl, C. R. (2020). Structures of stratification: Advancing a sociological debate over culture and resources. *Critical Sociology*, 46_(2), 191-206. 
 - Swidler, A. (1986). Culture in action: Symbols and strategies. *American Sociological Review*, 51,:273–286. 
