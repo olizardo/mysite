@@ -66,7 +66,7 @@
 
 - "What is implicit culture?" *Journal for the Theory of Social Behaviour* 52: 412-437. [doi:10.1111/jtsb.12333](https://doi.org/10.1111/jtsb.12333)
 
-- "Culture, cognition, and internalization." *Sociological Forum* 36: 1177-1206. [doi:10.1111/socf.12771](doi:10.1111/socf.1277)
+- "Culture, cognition, and internalization." *Sociological Forum* 36: 1177-1206. [doi:10.1111/socf.12771](https://doi.org/10.1111/socf.12771)
 
 - "Improving cultural analysis: Considering personal culture in its declarative and nondeclarative modes." *American Sociological Review* 82: 88-115. [doi:10.1177/0003122416675175](https://doi.org/10.1177/0003122416675175)
 
@@ -84,7 +84,7 @@
 
 - "Bourdieu, distinction, and aesthetic consumption." In Frederick F. Wherry and Ian Woodward (Eds.), *The Oxford Handbook of Consumption*. Oxford University Press. [doi:10.1093/oxfordhb/9780190273385.013.4](http://dx.doi.org/10.1093/oxfordhb/9780190273385.013.4)
 
-- "Highbrow omnivorousness on the small screen? Cultural industry systems and patterns of cultural choice in Europe." *Poetics: Journal of Empirical Research on Culture, the Media and the Arts* 37: 1-23. [doi:10.1016/j.poetic.2008.10.001](doi:10.1016/j.poetic.2008.10.001)
+- "Highbrow omnivorousness on the small screen? Cultural industry systems and patterns of cultural choice in Europe." *Poetics: Journal of Empirical Research on Culture, the Media and the Arts* 37: 1-23. [doi:10.1016/j.poetic.2008.10.001](https://doi.org/10.1016/j.poetic.2008.10.001)
 
 - "Understanding the flow of symbolic goods in the global cultural economy."  *International Journal of Contemporary Sociology* 45:  13-34. [(pdf)](/workpap/symb-goods-cult-econ.pdf)
 
@@ -138,7 +138,7 @@
 
 - "Eigenvectors in Social Network Analysis." In E. Bienenstock and M. Brashears (Eds.) *The Handbook of Mathematical Sociology*. Edward Elgar. [pdf](workpap/eigenvectors.pdf)
 
-- "Temporal dynamics of the friendship paradox in a smartphone communication network." *Applied Network Science* 10: 16 [doi:10.1007/s41109-025-00710-1.2024](https://doi.org/10.1007/s41109-025-00710-1.2024).
+- "Temporal dynamics of the friendship paradox in a smartphone communication network." *Applied Network Science* 10: 16 [doi:10.1007/s41109-025-00710-1](https://doi.org/10.1007/s41109-025-00710-1).
 
 - "The Correspondence Analysis of two-mode networks revisited." *Social Networks* 83: 134-151. [doi:10.1016/j.socnet.2025.06.001](https://doi.org/10.1016/j.socnet.2025.06.001)
 
@@ -195,7 +195,7 @@
 
 ## Cognition
 
-- "The Raw and the (Over)Cooked: States are physical qualities."" *Metaphor and the Social World* 14: 22-42. [doi:10.1075/msw.00039.ash](doi:10.1075/msw.00039.ash)
+- "The Raw and the (Over)Cooked: States are physical qualities."" *Metaphor and the Social World* 14: 22-42. [doi:10.1075/msw.00039.ash](https://doi.org/10.1075/msw.00039.ash)
 
 - "Culture, cognition, and internalization." *Sociological Forum* 36: 1177-1206. [doi:10.1111/socf.12771](https://doi.org/10.1111/socf.12771)
 
@@ -218,7 +218,7 @@
 
 - "Organizations and the structure of culture." *Sociology Compass* 17: e13063. [doi:10.1111/soc4.13063](https://doi.org/10.1111/soc4.13063)
 
-- "Specifying the 'what' and separating the 'how': Doings, sayings, codes, and artifacts as the building blocks of institutions." *Research in the Sociology of Organizations* 65(A): 217-234. [doi.org/10.1108/S0733-558X2019000065A021](doi.org/10.1108/S0733-558X2019000065A021)
+- "Specifying the 'what' and separating the 'how': Doings, sayings, codes, and artifacts as the building blocks of institutions." *Research in the Sociology of Organizations* 65(A): 217-234. [doi:10.1108/S0733-558X2019000065A021](https://doi.org/10.1108/S0733-558X2019000065A021)
 
 - "An institutional logics approach to the analysis of social movement fields." *Social Currents* 2: 58-80. [doi:10.1017/nws.2014.7](https://doi.org/10.1017/nws.2014.7)
 
