@@ -288,7 +288,7 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-teaching">    
         <li>
-    <a class="dropdown-item" href="https://olizardo.github.io/networks-textbook/"><i class="bi bi-book" role="img">
+    <a class="dropdown-item" href="https://networks-textbook.netlify.app/"><i class="bi bi-book" role="img">
 </i> 
  <span class="dropdown-text">Social Networks (111) Textbook</span></a>
   </li>  
@@ -563,7 +563,7 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li><p>Griswold, Wendy. 1987. “A Methodological Framework for the Sociology of Culture.” <em>Sociological Methodology</em> 17: 1-36. <a href="https://doi.org/10.2307/271027">link</a></p></li>
 <li><p>Schudson, Michael. 1989. “How Culture Works: Perspectives from Media Studies on the Efficacy of Symbols.” <em>Theory &amp; Society</em> 18:153-180. <a href="https://www.jstor.org/stable/657530">link</a></p></li>
-<li><p>McDonnell, Terence E., Christopher A. Bail and Iddo Tavory. 2017. “A Theory of Resonance.” <em>Sociological Theory</em> 35(1): 1-14. <a href="https://doi.org/10.1177/07352751176928">link</a></p></li>
+<li><p>McDonnell, Terence E., Christopher A. Bail and Iddo Tavory. 2017. “A Theory of Resonance.” <em>Sociological Theory</em> 35(1): 1-14. <a href="https://doi.org/10.1177/0735275117692837">link</a></p></li>
 <li><p>Santana-Acuña, Alvaro.2014. “How a Literary Work Becomes a Classic: The Case of One Hundred Years of Solitude.” <em>American Journal of Cultural Sociology</em> 2: 97-149. <a href="https://doi.org/10.1057/ajcs.2013.16">link</a></p></li>
 </ul>
 </section>
@@ -738,7 +738,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/olizardo\.github\.io\/mysite\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
