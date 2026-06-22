@@ -17,9 +17,6 @@ about:
     - icon: orcid
       text: ORCID
       href: https://orcid.org/0000-0002-5405-3007
-    - icon: github
-      text: View Source
-      href: https://github.com/olizardo/mysite/blob/main/index.qmd
 ---
 
 {{< fa address-card size=large >}} I am the LeRoy Neiman Term Chair Professor of Sociology at the University of California, Los Angeles.
@@ -32,11 +29,18 @@ about:
 
 I am also:
 
-* Current co-editor of the journal [*Sociological Theory*](https://journals.sagepub.com/home/stx), with [Z. Magubane](https://www.bc.edu/bc-web/schools/mcas/departments/sociology/people/faculty-directory/zine-magubane.html), [V. Patil](https://umbc.academia.edu/VrushaliPatil) and [S. L. Crawley](https://www.usf.edu/arts-sciences/departments/sociology/people/faculty/s-l-crawley.aspx/).
-* Current chair of the American Sociological Association's [Section on Mathematical Sociology](https://mathematicalsociology.wordpress.com/).
-* Former chair of the American Sociology Association's [Section on Sociology of Culture](https://asaculturesection.org/).
-* Current member of the [Sociological Research Association](https://www.sociological-research-assoc.org/).
-* Current member of the [Board of Reviewing Editors](https://www.science.org/content/page/editors-and-advisory-boards#board-of-reviewing-editors) of the journal [*Science*](https://www.science.org/journal/science).
-* Current member of the Editorial Advisory Board of the journals [*Poetics*](https://www.sciencedirect.com/journal/poetics), [*Journal for the Theory of Social Behaviour*](https://onlinelibrary.wiley.com/journal/14685914), and [*Theory & Social Inquiry*](https://www.theoryandsocialinquiry.org/).
-* Current member of the Editorial Advisory Board of the Stanford University Press Series on [Culture and Economic Life](https://www.sup.org/books/series/culture-and-economic-life), the Princeton University Press Series on [Studies in Cultural Sociology](https://press.princeton.edu/series/princeton-studies-in-cultural-sociology), and the Oxford University Press Series on [Social Network Mechanisms](http://www.oxfordsnmseries.com/).
-* Former co-editor of [*American Sociological Review*](https://journals.sagepub.com/home/asr).
+{{< fa user-check >}} Current co-editor of the journal [*Sociological Theory*](https://journals.sagepub.com/home/stx), with [Z. Magubane](https://www.bc.edu/bc-web/schools/mcas/departments/sociology/people/faculty-directory/zine-magubane.html), [V. Patil](https://umbc.academia.edu/VrushaliPatil) and [S. L. Crawley](https://www.usf.edu/arts-sciences/departments/sociology/people/faculty/s-l-crawley.aspx/).
+
+{{< fa user-check >}} Current chair of the American Sociological Association's [Section on Mathematical Sociology](https://mathematicalsociology.wordpress.com/).
+
+{{< fa user-check >}} Former chair of the American Sociology Association's [Section on Sociology of Culture](https://asaculturesection.org/).
+
+{{< fa user-check >}} Current member of the [Sociological Research Association](https://www.sociological-research-assoc.org/).
+
+{{< fa user-check >}} Current member of the [Board of Reviewing Editors](https://www.science.org/content/page/editors-and-advisory-boards#board-of-reviewing-editors) of the journal [*Science*](https://www.science.org/journal/science).
+
+{{< fa user-check >}} Current member of the Editorial Advisory Board of the journals [*Poetics*](https://www.sciencedirect.com/journal/poetics), [*Journal for the Theory of Social Behaviour*](https://onlinelibrary.wiley.com/journal/14685914), and [*Theory & Social Inquiry*](https://www.theoryandsocialinquiry.org/).
+
+{{< fa user-check >}} Current member of the Editorial Advisory Board of the Stanford University Press Series on [Culture and Economic Life](https://www.sup.org/books/series/culture-and-economic-life), the Princeton University Press Series on [Studies in Cultural Sociology](https://press.princeton.edu/series/princeton-studies-in-cultural-sociology), and the Oxford University Press Series on [Social Network Mechanisms](http://www.oxfordsnmseries.com/).
+
+{{< fa user-check >}} Former co-editor of [*American Sociological Review*](https://journals.sagepub.com/home/asr).

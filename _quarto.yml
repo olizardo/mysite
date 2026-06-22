@@ -26,7 +26,7 @@ website:
         menu: 
           - text: "Social Networks (111) Textbook"
             icon: book
-            href: https://olizardo.github.io/networks-textbook/
+            href: https://networks-textbook.netlify.app/
           - text: "SOCIOL 111 (Social Networks Undergraduate Class)"
             icon: file-text
             href: syllabi/SOCIOL111.qmd
