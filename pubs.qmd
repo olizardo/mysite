@@ -14,7 +14,7 @@
 
 ### Action and Practice Theory
 
-- "Hysteresis in recent sociological research" *Working Paper*. [(pdf)](/workpap/hysteresis-review.pdf)
+- "Hysteresis in recent sociological research" *Working Paper*. [(pdf)](workpap/hysteresis-review.pdf)
 
 - "Wanting, Liking, and the sociology of motivation." *Sociological Forum*. [doi:10.1111/socf.12996](http://doi.org/10.1111/socf.12996)
 
@@ -58,7 +58,7 @@
 
 ### Cultural Theory
 
-- "Kinding culture" *Working Paper* [(pdf)](/workpap/kinding.pdf)
+- "Kinding culture" *Working Paper* [(pdf)](workpap/kinding.pdf)
 
 - "Culture and social psychology." Pp. 233–253 in L. Doan, K. A. Hegtvedt and  J. E. Stets (Eds.), *Handbook of Social Psychology*. [doi:10.1007/978-3-031-93138-3_12](https://doi.org/10.1007/978-3-031-93138-3_12)
 
@@ -86,7 +86,7 @@
 
 - "Highbrow omnivorousness on the small screen? Cultural industry systems and patterns of cultural choice in Europe." *Poetics: Journal of Empirical Research on Culture, the Media and the Arts* 37: 1-23. [doi:10.1016/j.poetic.2008.10.001](https://doi.org/10.1016/j.poetic.2008.10.001)
 
-- "Understanding the flow of symbolic goods in the global cultural economy."  *International Journal of Contemporary Sociology* 45:  13-34. [(pdf)](/workpap/symb-goods-cult-econ.pdf)
+- "Understanding the flow of symbolic goods in the global cultural economy."  *International Journal of Contemporary Sociology* 45:  13-34. [(pdf)](workpap/symb-goods-cult-econ.pdf)
 
 - "The question of culture consumption and stratification revisited." *Sociologica: Italian Online Sociological Review* 2/2008. [doi:10.2383/27709](https://www.rivisteweb.it/doi/10.2383/27709)
 
@@ -163,7 +163,7 @@
 
 - "Culture and social capital." Pp. 140–156 in R. Côté, S. McDonald and J. Shen (Eds.) *The Handbook of Inequality and Social Capital*. Edward Elgar. [doi:10.4337/9781802202373.00018](https://doi.org/10.4337/9781802202373.00018)
 
-- "Culture and networks." Pp. 188-201 in J. McLevey, J. Scott, and P. J. Carrington (Eds.) *The Sage Handbook of Social Network Analysis*. Sage Publications. [doi:10.4135/9781529682618](https://doi.org/10.4135/9781529682618)
+- "Culture and networks." Pp. 188-201 in J. McLevey, J. Scott, and P. J. Carrington (Eds.) *The Sage Handbook of Social Network Analysis*. Sage Publications. [doi:10.4135/9781529614695](https://doi.org/10.4135/9781529614695)
 
 - "Variety in cultural choice and the activation of social ties." *Social Science Research* 42: 321–330. [doi:10.1016/j.ssresearch.2012.09.014](https://doi.org/10.1016/j.ssresearch.2012.09.014)
 
@@ -222,12 +222,12 @@
 
 - "An institutional logics approach to the analysis of social movement fields." *Social Currents* 2: 58-80. [doi:10.1017/nws.2014.7](https://doi.org/10.1017/nws.2014.7)
 
-- "How organizational theory can help network theorizing: Linking structure and dynamics via cross-level analogies." *Research in the Sociology of Organizations* 40: 33-56. [doi:10.1108/S0733-558X(2014)0000040002](https://doi.org/10.1108/S0733-558X(2014)0000040002)
+- "How organizational theory can help network theorizing: Linking structure and dynamics via cross-level analogies." *Research in the Sociology of Organizations* 40: 33-56. [doi:10.1108/S0733-558X(2014)0000040002](https://doi.org/10.1108/S0733-558X%282014%290000040002)
 
 - "Defining and theorizing terrorism: A global actor-centered approach." *Journal of World Systems Research* 14: 91-118.[doi:10.5195/jwsr.2008.341](https://doi.org/10.5195/jwsr.2008.341)
 
 - "Can cultural capital theory be reconsidered in the light of world polity institutionalism? Evidence from Spain." *Poetics: Journal of Empirical Research on Culture, the Media and the Arts* 33: 81-110. [doi:10.1016/j.poetic.2005.02.001](https://doi.org/10.1016/j.poetic.2005.02.001)
 
-- "The comparative analysis of organizational forms: Integrating field and ecological approaches." *Research in the Sociology of Organizations* 26: 117-151. [doi:10.1108/S0733-558X(2009)0000026007](https://doi.org/10.1108/S0733-558X(2009)0000026007)
+- "The comparative analysis of organizational forms: Integrating field and ecological approaches." *Research in the Sociology of Organizations* 26: 117-151. [doi:10.1108/S0733-558X(2009)0000026007](https://doi.org/10.1108/S0733-558X%282009%290000026007)
 
 

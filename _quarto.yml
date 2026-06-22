@@ -43,10 +43,10 @@ website:
             icon: file-text
             href: syllabi/SOCIOL245.qmd
 
-      - file: vita.pdf
+      - href: vita.pdf
         text: "Vita"
         icon: file-pdf
-      - file: bio.qmd
+      - href: bio.qmd
         text: "Bio"
         icon: person-circle
       - href: mailto:olizardo@soc.ucla.edu
