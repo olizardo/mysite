@@ -27,6 +27,9 @@ website:
           - text: "Social Networks (111) Textbook"
             icon: book
             href: https://networks-textbook.netlify.app/
+          - text: "Classical Sociological Theory Notes"
+          - icon: book
+            href: https://olizardo.github.io/classical-sociological-theory-notes/
           - text: "SOCIOL 111 (Social Networks Undergraduate Class)"
             icon: file-text
             href: syllabi/SOCIOL111.qmd
