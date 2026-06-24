@@ -28,10 +28,10 @@ website:
             icon: book
             href: https://networks-textbook.netlify.app/
           - text: "Classical Sociological Theory Notes"
-          - icon: book
+            icon: book
             href: https://olizardo.github.io/classical-sociological-theory-notes/
-          - text: "Survey Sample International Data"
-          - icon: table
+          - text: "Survey Sample International Data (2012)"
+            icon: table
             href: "https://olizardo.github.io/SSI-2012/"
           - text: "SOCIOL 111 (Social Networks Undergraduate Class)"
             icon: file-text
