@@ -21,6 +21,12 @@ website:
           - text: "Methods and Stuff"
             icon: graph-up
             href: https://olizardo.github.io/methods-and-stuff/
+      - text: "Public Available Data"
+        icon: database
+        menu:
+          - text: "Survey Sample International Data (2012)"
+            icon: table
+            href: "https://olizardo.github.io/SSI-2012/"
       - text: "Teaching"
         icon: pencil
         menu: 
@@ -30,9 +36,6 @@ website:
           - text: "Classical Sociological Theory Notes"
             icon: book
             href: https://olizardo.github.io/classical-sociological-theory-notes/
-          - text: "Survey Sample International Data (2012)"
-            icon: table
-            href: "https://olizardo.github.io/SSI-2012/"
           - text: "SOCIOL 111 (Social Networks Undergraduate Class)"
             icon: file-text
             href: syllabi/SOCIOL111.qmd
