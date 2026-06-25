@@ -21,7 +21,7 @@ website:
           - text: "Methods and Stuff"
             icon: graph-up
             href: https://olizardo.github.io/methods-and-stuff/
-      - text: "Public Available Data"
+      - text: "Data"
         icon: database
         menu:
           - text: "Survey Sample International Data (2012)"
