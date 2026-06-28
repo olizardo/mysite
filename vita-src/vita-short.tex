@@ -1,0 +1,283 @@
+%%%
+%%% ------------------------------------------------------------------------
+%%% Requirements (should be included in a modern tex distribution):
+%%% Requirements that are included in a modern tex distribution:
+%%% ------------------------------------------------------------------------
+%%% xelatex
+%%% fontspec.sty
+%%% hyperrref.sty
+%%% xunicode.sty
+%%% color.sty
+%%% url.sty
+%%% fancyhdr.sty
+%%% memoir.cls
+%%% fontawesome.sty
+%%%
+%%% 
+%%% 
+%%% ------------------------------------------------------------------------
+%%% Requirements from https://github.com/kjhealy/latex-custom-kjh
+%%% ------------------------------------------------------------------------
+%%% org-preamble-xelatex.sty
+%%% memoir-article-styles.sty
+%%%
+%%% ------------------------------------------------------------------------
+%%% Optional
+%%% ------------------------------------------------------------------------
+%%% git
+%%% vc.sty
+%%% revnum.sty
+%%% Fonts
+%%%
+%%% ------------------------------------------------------------------------
+%%% Note
+%%%------------------------------------------------------------------------
+%%% Because this is a hand-tweaked file, be on the look out for \medksip, 
+%%% \bigskip and \newpage commands here and there, which are used to balance
+%%% the layout or avoid widows & orphans, etc. You should of course add or 
+%%% remove these as needed.
+%%%------------------------------------------------------------------------
+
+%
+\documentclass[10pt]{article}   
+\usepackage[top=1in, bottom=1in, left=1in, right=2.25in]{geometry}
+
+%%%------------------------------------------------------------------------
+%%% Metadata
+%%%------------------------------------------------------------------------
+
+%% Change as needed. Or just add me as a coauthor. Only some of these are 
+%% used below in the hyperref declaration and address banner section.
+
+\def\myauthor{Omar Lizardo}
+\def\mytitle{Vita}
+\def\mycopyright{\myauthor}
+\def\mykeywords{}
+\def\mysubtitle{}
+\def\myaffiliation{University of California, Los Angeles}
+\def\myaddress{375 Portola Plaza, 264 Haines Hall, Los Angeles, CA, 90095}
+\def\myemail{olizardo@soc.ucla.edu}
+\def\myweb{http://olizardo.bol.ucla.edu}
+\def\myphone{310-267-5438}
+\def\myfax{}
+\def\mytwitter{}
+\def\myversion{}
+\def\myrevision{}
+
+\def\myaffiliation{University of California, Los Angeles}
+\def\myauthor{Omar Lizardo}
+\date{} % not used (revision control instead)
+\def\mykeywords{Omar, Lizardo, Omar Lizardo, Vita, CV, Resume, Sociology}
+
+%%%------------------------------------------------------------------------  
+%%% Git version tracking 
+%%%------------------------------------------------------------------------
+
+%% If you don't use git or the vc package (from CTAN), comment this out.
+%% If you comment it out, be sure to remove the \rfoot comment below, too.
+%% \input{vc}
+
+%%%------------------------------------------------------------------------
+%%% Required style files
+%%%------------------------------------------------------------------------
+\usepackage{fancyhdr}
+\usepackage{parskip}
+\usepackage{setspace}
+\usepackage{multicol}
+        \setlength{\multicolsep}{6.0pt plus 2.0pt minus 1.5pt}% 50% of original values
+\usepackage{enumitem}
+\usepackage{fontawesome}
+\usepackage[usenames,dvipsnames]{xcolor}
+%% hyperlinks
+\usepackage[final, xetex, colorlinks=true, urlcolor=ucladark]{hyperref}
+
+%%%------------------------------------------------------------------------
+%%% Document
+%%%------------------------------------------------------------------------
+
+\begin{document}
+%% Custom Colors
+\definecolor{ucladark}{HTML}{003B5C}
+\definecolor{uclablue}{HTML}{005587}
+\definecolor{uclagold}{HTML}{FFB81C}
+\definecolor{uclamagenta}{HTML}{FF00A5}
+
+%% Setting up fonts
+\setromanfont[Scale = 1.05]{Latin Modern Roman}
+\setsansfont[Color = ucladark, Scale = 1.5]{Roboto Light}
+%\setmonofont[Color = uclablue, Scale = 0.65]{iosevka-medium.ttf}
+%% Choose fonts for use with xelatex
+%% Minion and Myriad are widely available, from Adobe. 
+%% Pragmata is available to buy at http://www.fsd.it/fonts/pragma.htm
+%% and is worth every penny. Any good monospace font will work fine, though.
+%% Consolas or inconsolata are good alternatives.
+
+
+
+%%%------------------------------------------------------------------------
+%%% Local commands
+%%%------------------------------------------------------------------------
+
+%% Marginal header
+%% Note: as the document goes on you may need to introduce a (gradually increasing)
+%% \vspace element to keep the marginal header pleasingly aligned with the first 
+%% item in the body text. Like this: \marginhead{{\vskip 0.4em}Grants}, or 
+%% \marginhead{{\vskip 0.8em}Service}. Experiment as needed.
+
+\newcommand{\marginhead}[1]{\marginpar{\textsf{{\vspace{1.3em}\flushright #1}}\doublespacing}}
+\marginparwidth = 150pt
+\oddsidemargin = 100pt
+\marginparsep = 0pt
+
+%% custom ampersand (font consistent with the one chosen above)
+%\newcommand{\amper}{{\fontspec[Colour=000066]{Corbel}\selectfont\&\,}}
+
+%% No bullets on labels
+\renewcommand{\labelitemi}{~} 
+
+%% Custom hanging indent for vita items
+\def\ind{\hangindent=0.75 true cm\hangafter=1 \noindent}
+\def\noind{\hangindent=0 true cm\hangafter=1 \noindent}
+
+%\def\ind{\hangindent=18pt\hangafter=1 \noindent}
+\def\labelitemi{~}
+\renewcommand{\labelitemii}{~}
+
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+
+\renewcommand{\labelenumi}{\S\theenumi.}
+
+
+
+%%%------------------------------------------------------------------------
+%%% Page layout
+%%%------------------------------------------------------------------------
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\rhead{Last updated: \today}
+%\chead{-\thepage-OL}
+
+%% git revision control footer 
+%% \rfoot{\texttt{\scriptsize \VCRevision\ on \VCDateTEX}} % git revision info inserted via external script -- see docs for vc package for details. comment out this line if you're not using vc, and also remove the \input{vc} line above.
+%%%------------------------------------------------------------------------
+%%% Address and contact block
+%%%------------------------------------------------------------------------
+\begin{minipage}[t]{3.5in}
+    \faUniversity \, \href{https://soc.ucla.edu}{Department of Sociology}, \href{https://ucla.edu}{UCLA} \\
+    \faLocationArrow \, \href{https://goo.gl/maps/Ge1pAsh17ANWcdRB7}{264 Haines Hall, Los Angeles, CA, 90095} \\
+    \faPhone \, \myphone  \\ 
+    \faEnvelope \, \href{mailto:\myemail}{\myemail} \\
+    \faGlobe \, \href{\myweb}{olizardo.bol.ucla.edu} \\
+    \faGithub \, \href{https://github.com/olizardo}{Github}    
+\end{minipage}
+\begin{minipage}[t]{5in}
+\vspace{-3.8mm}
+    \href{https://scholar.google.com/citations?user=Lt5nMNkAAAAJ&hl=en}{Google Scholar} \\
+    \href{https://www.semanticscholar.org/author/Omar-Lizardo/2632398}{Semantic Scholar} \\
+    \href{https://www.webofscience.com/wos/author/record/477048}{Clarivate (WoS)} \\
+    \href{https://www.scopus.com/authid/detail.uri?authorId=6508228764}{Scopus} \\
+    \href{https://philpeople.org/profiles/omar-lizardo}{PhilPapers} \\
+    \href{https://orcid.org/0000-0002-5405-3007}{ORCID: 0000-0002-5405-3007} 
+\end{minipage}
+\vspace{10mm}
+%% Name 
+\newcommand{\myname}{\fontspec[Colour=ucladark, Scale = 3]{Roboto Thin} \noindent}
+\begin{center}
+    {\myname  Omar Lizardo}
+\end{center}
+
+\reversemarginpar
+\bigskip
+\bigskip
+%% Education
+\marginhead{{\vskip -1.2em}Education}
+\noindent\emph{University of Arizona (Tucson, AZ) \vspace{0.01in}}
+
+\ind {\bf PhD, Sociology}, 2006. 
+
+\ind {\bf MA, Sociology}, 2002.
+
+\medskip
+\noindent\emph{Brooklyn College, City University of New York (Brooklyn, NY) \vspace{0.02in}}
+
+\ind {\bf BS, Psychology}, 1997.
+
+%% Appointments
+\bigskip
+\marginhead{{\vskip -1.2em} Academic \newline Positions}
+    \input{01-positions}
+\newpage
+%% Memberships
+\marginhead{{\vskip -1.2em}Professional \newline Memberships}
+    \input{03-memberships}
+\medskip
+\marginhead{{\vskip -1.2em} Distinctions, \newline Honors, \newline and Awards}
+    \input{02-awards}
+%% Use revnumerate environment if numbered publications are needed. 
+%% (Include it above in the preamble).
+%% \renewcommand{\labelenumi}{\emph{a}\theenumi.}
+%% \begin{revnumerate}
+\newpage
+\marginhead{{\vskip -1.2em}Books}
+    \input{04-books}
+\bigskip
+\marginhead{{\vskip -1.2em}Selected \newline Articles}
+
+\ind {\bf Omar Lizardo}. ``Two-mode relational similarities.'' {\em Social Networks}  76: 34-41 \href{https://doi.org/10.1016/j.socnet.2023.06.002}{\nolinkurl{doi:10.1016/j.socnet.2023.06.002}}
+
+
+\ind Mateusz Nurek, Rados\l{}aw Michalski, {\bf Omar Lizardo} and Marian-Andrei Rizoiu. ``Predicting relationship labels and individual personality traits from telecommunication history in social networks using Hawkes processes.'' {\em IEEE Access} 11: 8492-8503. \href{https://doi.org/10.1109/ACCESS.2023.3238970}{\nolinkurl{10.1109/ACCESS.2023.3238970}}
+
+
+\ind Brandon Sepulvado, Michael Lee Wood, Ethan Fridmanski, Cheng Wang, Matthew J. Chandler, {\bf Omar Lizardo}, David Hachen. ``Predicting homophily and social network connectivity from dyadic behavioral similarity trajectory clusters.'' {\em Social Science Computer Review} 40:195-211. \href{https://doi.org/10.1177/0894439320923123}{\nolinkurl{doi:10.1177/0894439320923123}}
+
+
+\ind Cheng Wang, {\bf Omar Lizardo} and David Hachen. ``Using big data to examine the effect of urbanism on social networks.'' {\em Journal of Urban Affairs} 43:40-56. \href{https://doi.org/10.1080/07352166.2018.1550350}{\nolinkurl{doi:10.1080/07352166.2018.1550350}}
+
+
+\ind James Flamino, Boles\l{}aw K. Szyma\'{n}ski, Ashwin Bahulkar, Kevin Chan and {\bf Omar Lizardo}. ``Creation, evolution, and dissolution of social groups.'' {\em Scientific Reports} 11: 17470. \href{https://doi.org/10.1038/s41598-021-96805-7}{\nolinkurl{doi:10.1038/s41598-021-96805-7}} 
+
+
+\ind Shikang Liu, David Hachen, {\bf Omar Lizardo}, Christian Poellabauer, Aaron Striegel and Tijana Milenkovi\'{c}. ``The power of dynamic social networks to predict individuals' mental health.'' {\em Biocomputing} 25: 635-646. \href{https://doi.org/10.1142/9789811215636_0056}{\nolinkurl{doi:10.1142/9789811215636_0056}}
+
+
+\ind {\bf Omar Lizardo}. ``Simmel's dialectic of form and content in recent work in cultural sociology.'' {\em The Germanic Review: Literature, Culture, Theory} 94:93-100. \href{https://doi.org/10.1080/00168890.2019.1585664}{\nolinkurl{doi:10.1080/00168890.2019.1585664}}
+
+
+\ind Ashwin Bahulkar, Boles\l{}aw K. Szyma\'{n}ski, Kevin Chan and {\bf Omar Lizardo}. ``Impact of attributes on group formation.'' {\em Proceedings of the IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining (ASONAM)}: 1250-1257. \href{https://doi.org/10.1109/asonam.2018.8508658}{\nolinkurl{doi:10.1109/asonam.2018.8508658}} 
+
+
+\ind {\bf Omar Lizardo}. ``Improving cultural analysis: Considering personal culture in its declarative and nondeclarative modes.'' {\em American Sociological Review} 82: 88-115. \href{https://doi.org/10.1177/0003122416675175}{\nolinkurl{doi:10.1177/0003122416675175}} 
+
+
+\ind {\bf Omar Lizardo}, Robert Mowry, Brandon Sepulvado, Dustin S. Stoltz, Marshall A. Taylor, Justin Van Ness and Michael Lee Wood. ``What are dual process models? Implications for cultural analysis in sociology.'' {\em Sociological Theory} 34: 287-310.\textcolor{uclablue}{*}\footnotetext{\textcolor{uclablue}{*}Lead article.} \href{https://doi.org/10.1177/0735275116675900}{\nolinkurl{doi:10.1177/0735275116675900}}
+
+
+\ind Cheng Wang, {\bf Omar Lizardo} and David Hachen. ``Triadic evolution in a large-scale mobile phone network.'' {\em Journal of Complex Networks} 3: 264-290. \href{https://doi.org/10.1093/comnet/cnu030}{\nolinkurl{doi:10.1093/comnet/cnu030}}
+
+
+\ind {\bf Omar Lizardo}. ``Omnivorousness as the bridging of cultural holes: A measurement strategy.'' {\em Theory and Society}  43: 395-419. \href{https://doi.org/10.1007/s11186-014-9220-9}{\nolinkurl{doi:10.1007/s11186-014-9220-9}}
+
+\ind Cheng Wang, {\bf Omar Lizardo}, David Hachen, Anthony Strathman, Zolt\'{a}n Toroczkai, and Nitesh Chawla. ``A dyadic reciprocity index for repeated interaction networks.'' {\em Network Science} 1: 31-48.\textcolor{uclablue}{**}\footnotetext{\textcolor{uclablue}{**}Inaugural issue.} \href{https://doi.org/10.1017/nws.2012.5}{\nolinkurl{doi:10.1017/nws.2012.5}}
+
+
+\ind {\bf Omar Lizardo} and Sara Skiles. ``Reconceptualizing and theorizing ‘omnivorousness’: Genetic and relational mechanisms.'' {\em Sociological Theory} 30: 260-280. \href{https://doi.org/10.1177/0735275112466999}{\nolinkurl{doi:10.1177/0735275112466999}}
+
+
+\ind Troy Raeder, {\bf Omar Lizardo}, David Hachen, and Nitesh V. Chawla. ``Predictors of short-term decay of cell phone contacts in a large scale communication network.'' {\em Social Networks} 33: 245-257.\textcolor{uclablue}{*}\footnotetext{\textcolor{uclablue}{*}Lead article.} \href{https://doi.org/10.1016/j.socnet.2011.07.002}{\nolinkurl{doi:10.1016/j.socnet.2011.07.002}}
+
+\ind Stephen Vaisey and {\bf Omar Lizardo}. ``Can cultural worldviews influence network composition?''  {\em Social Forces} 88: 1595-1618. \href{https://doi.org/10.1353/sof.2010.0009}{\nolinkurl{doi:10.1353/sof.2010.0009}}
+
+\ind {\bf Omar Lizardo} and Michael Strand. ``Skills, toolkits, contexts and institutions: clarifying the relationship between different approaches to  cognition in cultural sociology.''  {\em Poetics: Journal of Empirical Research on Culture, the Media and the Arts} 38: 204-227. \href{https://doi.org/10.1016/j.poetic.2009.11.003}{\nolinkurl{doi:10.1016/j.poetic.2009.11.003}}
+
+\ind {\bf Omar Lizardo}. ``How cultural tastes shape personal networks.'' {\em American Sociological Review} 71:  778-807.\textcolor{black}{$^{\varphi}$}\footnotetext{\textcolor{black}{$^{\varphi}$}Winner of the 2008 Clifford Geertz Prize for Best Article.}$^{,}$\textcolor{uclablue}{$^{3}$}\footnotetext{\textcolor{uclablue}{$^{3}$}Excerpted and Reprinted in:  Matt Wray (Ed.), \emph{Cultural Sociology: An Introduction}. New York: W.W. Norton, 2013.}$^{,}$\textcolor{uclablue}{$^{4}$}\footnotetext{\textcolor{uclablue}{$^{4}$}Summarized in: J\"{o}rg R\"{o}ssel and Sebastian Weingartner (Eds.), {\em Key Works of Network Research.} Springer VS, Wiesbaden, 2019.}
+
+\ind {\bf Omar Lizardo}. ``The cognitive origins of Bourdieu's habitus.'' {\em Journal for the Theory of Social Behaviour} 34: 375-401. \href{https://doi.org/10.1111/j.1468-5914.2004.00255.x}{\nolinkurl{doi:10.1111/j.1468-5914.2004.00255.x}}
+
+\bigskip
+\marginhead{{\vskip -1.2em} Editorial \newline Work}
+    \input{14-editor}
+    \input{15-edboard}
+\marginhead{{\vskip -1.2em} Courses \newline Taught}  
+    \input{22-courses}
+\end{document}

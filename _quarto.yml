@@ -55,7 +55,7 @@ website:
             icon: file-text
             href: syllabi/SOCIOL245.qmd
 
-      - href: vita.pdf
+      - href: cv.qmd
         text: "Vita"
         icon: file-pdf
       - href: bio.qmd

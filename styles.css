@@ -1,1 +1,42 @@
-/* css styles */
+/* Custom styles for Omar Lizardo's Academic Website */
+
+/* General page styling enhancements */
+body {
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+/* Custom styling for CV entries with hanging indents */
+.cventry p {
+  padding-left: 2.5rem;
+  text-indent: -2.5rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.65;
+}
+
+/* Prevent list items inside .cventry from inheriting hanging indents */
+.cventry ul, .cventry ol {
+  text-indent: 0;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.cventry li {
+  text-indent: 0;
+  margin-bottom: 0.25rem;
+}
+
+/* Style the PDF download button */
+.btn-outline-primary {
+  color: #c2410c;
+  border-color: #c2410c;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-outline-primary:hover {
+  background-color: #c2410c;
+  border-color: #c2410c;
+  color: #ffffff;
+}
