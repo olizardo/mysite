@@ -973,6 +973,9 @@ Panelist, *Conference on Networks and Culture*. Stanford University Graduate Sch
 ## Conference Presentations
 ### 2020–Present
 ::: {.cventry}
+
+Clayton Childress and **Omar Lizardo**. "The social distribution of aesthetic values beyond the Pure Gaze: Cultural capital, political ideology, and new forms of aesthetic distinction." Third Sociological Science Conference, Stanford University, Stanford, CA.
+
 **Omar Lizardo**. "The forward march of Categorical Tolerance in the United States." First Sociological Science Conference, Duke University, Durham, NC.
 
 Mateusz Nurek, Joanna Kołaczek,  Radosław Michalski, Bolesław K. Szymański and **Omar Lizardo**. "Modeling opinion formation using a new Cognitive Naming Game model." International Sunbelt Social Networks Conference (Sunbelt'24), Edinburgh, Scotland.  
