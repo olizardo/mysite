@@ -27,6 +27,9 @@ website:
           - text: "Survey Sample International Data (2012)"
             icon: table
             href: "https://olizardo.github.io/SSI-2012/"
+          - text: "NetSense Study"
+          - icon: table
+            href: "https://olizardo.github.io/NetSense/"
       - text: "Teaching"
         icon: pencil
         menu: 
