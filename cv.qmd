@@ -1,9 +1,12 @@
 ---
 title: "Curriculum Vitae"
 subtitle: "Omar Lizardo"
+date: last-modified
+date-format: long
 format:
   html:
     toc: true
+    toc-location: left
     toc-depth: 3
     css: styles.css
   pdf:

@@ -5,6 +5,7 @@ execute:
 
 website:
   title: "Omar Lizardo's Academic Website"
+  site-url: https://olizardo.github.io/mysite
   search: true
   open-graph: true
   repo-url: https://github.com/olizardo/mysite
