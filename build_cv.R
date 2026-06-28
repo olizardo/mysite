@@ -54,6 +54,10 @@ clean_tex_to_md <- function(filepath, is_list = FALSE) {
   text <- gsub("\\footnotetext{\\textcolor{uclablue}{*}Honors Thesis.}", "* *Honors Thesis.*", text, fixed = TRUE)
   text <- gsub("\\textcolor{uclablue}{\\ddag}\\footnotetext{\\textcolor{uclablue}{\\ddag}Theology.}", "^[Theology.]", text, fixed = TRUE)
   
+  # Convert hrefs and nolinkurls FIRST so they don't break footnote brace matching!
+  text <- gsub("\\\\nolinkurl\\{([^}]+)\\}", "\\1", text, perl = TRUE)
+  text <- gsub("\\\\href\\{([^}]+)\\s*\\}\\{([^}]+)\\s*\\}", "[\\2](\\1)", text, perl = TRUE)
+  
   # 4. General footnote conversion using exact backreference matches (brace-aware for 1 nested level)
   pat <- "\\\\textcolor\\{([a-zA-Z]+)\\}\\{(.*?)\\}\\\\footnotetext\\{\\\\textcolor\\{\\1\\}\\{\\2\\}\\s*((?:[^{}]|\\{[^{}]*\\})*)\\}"
   text <- gsub(pat, "^[\\3]", text, perl = TRUE)
@@ -97,6 +101,18 @@ clean_tex_to_md <- function(filepath, is_list = FALSE) {
   text <- gsub("\\l", "ł", text, fixed = TRUE)
   text <- gsub("\\'{a}", "á", text, fixed = TRUE)
   text <- gsub("\\'a", "á", text, fixed = TRUE)
+  text <- gsub("\\'{e}", "é", text, fixed = TRUE)
+  text <- gsub("\\'e", "é", text, fixed = TRUE)
+  text <- gsub("\\'{E}", "É", text, fixed = TRUE)
+  text <- gsub("\\'E", "É", text, fixed = TRUE)
+  text <- gsub("\\`{e}", "è", text, fixed = TRUE)
+  text <- gsub("\\`e", "è", text, fixed = TRUE)
+  text <- gsub("\\^{o}", "ô", text, fixed = TRUE)
+  text <- gsub("\\^o", "ô", text, fixed = TRUE)
+  text <- gsub("\\\"{i}", "ï", text, fixed = TRUE)
+  text <- gsub("\\\"i", "ï", text, fixed = TRUE)
+  text <- gsub("\\\"{e}", "ë", text, fixed = TRUE)
+  text <- gsub("\\\"e", "ë", text, fixed = TRUE)
   text <- gsub("\\'{o}", "ó", text, fixed = TRUE)
   text <- gsub("\\'o", "ó", text, fixed = TRUE)
   text <- gsub("\\\"{o}", "ö", text, fixed = TRUE)
@@ -135,15 +151,11 @@ clean_tex_to_md <- function(filepath, is_list = FALSE) {
   text <- gsub("\\\\textbf\\{([^}]+)\\}", "**\\1**", text, perl = TRUE)
   text <- gsub("\\\\emph\\{([^}]+)\\}", "*\\1*", text, perl = TRUE)
   text <- gsub("\\\\textit\\{([^}]+)\\}", "*\\1*", text, perl = TRUE)
-  text <- gsub("\\\\nolinkurl\\{([^}]+)\\}", "\\1", text, perl = TRUE)
   
   # Handle the dual backslash or braces for bold/italic LaTeX structures
   text <- gsub("\\{\\\\bf\\s+([^}]+)\\}", "**\\1**", text, perl = TRUE)
   text <- gsub("\\{\\\\em\\s+([^}]+)\\}", "*\\1*", text, perl = TRUE)
   text <- gsub("\\{\\\\it\\s+([^}]+)\\}", "*\\1*", text, perl = TRUE)
-  
-  # Match \href{url}{text}
-  text <- gsub("\\\\href\\{([^}]+)\\s*\\}\\{([^}]+)\\s*\\}", "[\\2](\\1)", text, perl = TRUE)
   
   # Remove remaining double backslashes \\ (LaTeX newlines) with empty string
   text <- gsub("\\\\", "", text, fixed = TRUE)

@@ -253,7 +253,7 @@ Louis Faust, Cheng Wang, David Hachen, **Omar Lizardo**, Nitesh V. Chawla. "Phys
 
 **Omar Lizardo**. "Specifying the 'what' and separating the 'how': Doings, sayings, codes, and artifacts as the building blocks of institutions." *Research in the Sociology of Organizations* 65(A): 217-234.   [doi.org/10.1108/S0733-558X2019000065A021](https://doi.org/10.1108/S0733-558X2019000065A021)
 
-Louis Faust, Priscilla Jim\'{e}nez-Pazmino, James K. Holland, **Omar Lizardo**, David Hachen and Nitesh V. Chawla. "What 30 Days tells us about 3 Years: Identifying early signs of user abandonment and non-adherence." *Proceedings of the 13th EAI International Conference on Pervasive Computing Technologies for Healthcare (PervasiveHealth)*: 216-224. [doi:10.1145/3329189.3329196](https://doi.org/10.1145/3329189.3329196)
+Louis Faust, Priscilla Jiménez-Pazmino, James K. Holland, **Omar Lizardo**, David Hachen and Nitesh V. Chawla. "What 30 Days tells us about 3 Years: Identifying early signs of user abandonment and non-adherence." *Proceedings of the 13th EAI International Conference on Pervasive Computing Technologies for Healthcare (PervasiveHealth)*: 216-224. [doi:10.1145/3329189.3329196](https://doi.org/10.1145/3329189.3329196)
 :::
 
 ### 2018
@@ -277,7 +277,7 @@ Dustin S. Stoltz and **Omar Lizardo**. "Deliberate trust and intuitive faith: A 
 
 ### 2017
 ::: {.cventry}
-Sudip Vhaduri, Christian Poellabauer, Aaron Striegel, **Omar Lizardo** and David Hachen. "Discovering places of interest using sensor data from smartphones and wearables." *Proceedings of the IEEE International Conference on SmartWorld, Ubiquitous Intelligence & Computing*: 1-8. [doi:10.1109/UIC-ATC.2017.8397495](https://doi.org/10.1109/UIC-ATC.2017.8397495)
+Sudip Vhaduri, Christian Poellabauer, Aaron Striegel, **Omar Lizardo** and David Hachen. "Discovering places of interest using sensor data from smartphones and wearables." *Proceedings of the IEEE International Conference on SmartWorld, Ubiquitous Intelligence \& Computing*: 1-8. [doi:10.1109/UIC-ATC.2017.8397495](https://doi.org/10.1109/UIC-ATC.2017.8397495)
 
 Brandon Sepulvado and **Omar Lizardo**. "Cognitive sociology in France." *American Sociologist* 48: 366-381. 
 [doi:10.1007/s12108-017-9341-5](https://doi.org/10.1007/s12108-017-9341-5)
@@ -383,13 +383,13 @@ Stephen Vaisey and **Omar Lizardo**. "Can cultural worldviews influence network 
 
 **Omar Lizardo** and Leeloo Strand. "Postmodernism and globalization." *Protosociology: An International Journal of Interdisciplinary Research* [Volume 26](http://www.protosociology.de/Download/ProtoSociology-Vol26-S.pdf): 36-72. [doi:10.5840/protosociology2009263](https://doi.org/10.5840/protosociology2009263)
 
-**Omar Lizardo**. "The Devil as cognitive mapping."  *Rethinking Marxism: A Journal of Economics Culture & Society * 21: 605-618. [doi:10.1080/08935690903145838](https://doi.org/10.1080/08935690903145838)
+**Omar Lizardo**. "The Devil as cognitive mapping."  *Rethinking Marxism: A Journal of Economics Culture \& Society * 21: 605-618. [doi:10.1080/08935690903145838](https://doi.org/10.1080/08935690903145838)
 
 **Omar Lizardo**. "The comparative analysis of organizational forms:  Integrating field and ecological approaches."  *Research in the Sociology of Organizations* 26: 117-151. [doi:10.1108/S0733-558X(2009)0000026007](https://doi.org/10.1108/S0733-558X(2009)0000026007)
 
 Jessica Collett and **Omar Lizardo**. "A power-control theory of gender and religiosity." *Journal for the Scientific Study of Religion* 48: 213-231.^[Featured article (with peer commentary and authors' response).] [doi:10.1111/j.1468-5906.2009.01441.x](https://doi.org/10.1111/j.1468-5906.2009.01441.x)
 
-**Omar Lizardo**. "Is a 'Special Psychology' of Practice Possible? From Values and Attitudes to Embodied Dispositions." *Theory & Psychology* 19: 1-15.^[Lead article on a special issue edited by Lo\"{i}c J. D. Wacquant.] [doi:10.1177/0959354309345891](https://doi.org/10.1177/0959354309345891)
+**Omar Lizardo**. "Is a 'Special Psychology' of Practice Possible? From Values and Attitudes to Embodied Dispositions." *Theory \& Psychology* 19: 1-15.^[Lead article on a special issue edited by Loïc J. D. Wacquant.] [doi:10.1177/0959354309345891](https://doi.org/10.1177/0959354309345891)
 
 **Omar Lizardo**. "Formalism, behavioral realism and the interdisciplinary challenge in sociological theory." *Journal for the Theory of Social Behaviour*.  39: 39-79. [doi:10.1111/j.1468-5914.2008.00393.x](https://doi.org/10.1111/j.1468-5914.2008.00393.x)
 
@@ -398,11 +398,11 @@ Jessica Collett and **Omar Lizardo**. "A power-control theory of gender and reli
 
 ### 2008
 ::: {.cventry}
-**Omar Lizardo**. "The question of culture consumption and stratification revisited." *Sociologica: International Journal for Sociological Debate* 2/2008.^[Featured article (with peer commentary and authors' response).]^[Reprinted in:  Alan Warde (Ed.), *Consumption, Volume IV: Appreciation*. Thousand Oaks: Sage Publications, 2010.] [doi:10.2383/27709](https://www.rivisteweb.it/doi/10.2383/27709) 
+**Omar Lizardo**. "The question of culture consumption and stratification revisited." *Sociologica: International Journal for Sociological Debate* 2/2008.^[Featured article (with peer commentary and authors' response).]^[Reprinted in:  Alan Warde (Ed.), *Consumption, Volume IV: Appreciation*. Thousand Oaks: Sage Publications, 2010. [doi:10.4135/9781446261125](https://doi.org/10.4135/9781446261125)] [doi:10.2383/27709](https://www.rivisteweb.it/doi/10.2383/27709) 
 
 **Omar Lizardo**.  "Defining and theorizing terrorism:  A global actor-centered approach." *Journal of World Systems Research* 14: 91-118.^[Lead article.] [doi:10.5195/jwsr.2008.341](https://doi.org/10.5195/jwsr.2008.341)
 
-**Omar Lizardo**. "Understanding the flow of symbolic goods in the global cultural economy."  *International Journal of Contemporary Sociology* 45:  13-34.^[Reprinted in: Alan Warde (Ed.), *Consumption, Volume I: Theoretical and Historical Approaches*. Thousand Oaks: Sage Publications, 2010.] 
+**Omar Lizardo**. "Understanding the flow of symbolic goods in the global cultural economy."  *International Journal of Contemporary Sociology* 45:  13-34.^[Reprinted in: Alan Warde (Ed.), *Consumption, Volume I: Theoretical and Historical Approaches*. Thousand Oaks: Sage Publications, 2010. [doi:10.4135/9781446261125](https://doi.org/10.4135/9781446261125)] 
 
 **Omar Lizardo** and Sara Skiles.  "Cultural consumption in the fine and popular arts realms."  *Sociology Compass* 2:  485-502. [doi:10.1111/j.1751-9020.2008.00101.x](https://doi.org/10.1111/j.1751-9020.2008.00101.x)
 :::
@@ -418,7 +418,7 @@ Jeff Larson and **Omar Lizardo**. "Generations, identities and the collective me
 
 ### 2006
 ::: {.cventry}
-**Omar Lizardo**. "How cultural tastes shape personal networks." *American Sociological Review* 71:  778-807.^[Winner of the 2008 Clifford Geertz Prize for Best Article.]^[Excerpted and Reprinted in:  Matt Wray (Ed.), *Cultural Sociology: An Introduction*. New York: W.W. Norton, 2013.]^[Summarized in: Jörg Rössel and Sebastian Weingartner (Eds.), *Key Works of Network Research.* Springer VS, Wiesbaden, 2019.]
+**Omar Lizardo**. "How cultural tastes shape personal networks." *American Sociological Review* 71:  778-807.^[Winner of the 2008 Clifford Geertz Prize for Best Article.]^[Excerpted and Reprinted in:  Matt Wray (Ed.), *Cultural Sociology: An Introduction*. New York: W.W. Norton, 2013.]^[Summarized in: Jörg Rössel and Sebastian Weingartner (Eds.), *Key Works of Network Research.* Springer VS, Wiesbaden, 2019. [doi:10.1007/978-3-658-21742-6](https://doi.org/10.1007/978-3-658-21742-6)]
 [doi:10.1177/000312240607100504](https://doi.org/10.1177/000312240607100504)
 
 **Omar Lizardo**. "The effect of economic and cultural globalization on anti-U.S. transnational terrorism 1971-2000." *Journal of World Systems Research* 12:  149-186. [doi:10.5195/jwsr.2006.374](https://doi.org/10.5195/jwsr.2006.374)
@@ -432,7 +432,7 @@ Jeff Larson and **Omar Lizardo**. "Generations, identities and the collective me
 
 **Omar Lizardo**. "The cognitive origins of Bourdieu's habitus." *Journal for the Theory of Social Behaviour* 34: 375-401. [doi:10.1111/j.1468-5914.2004.00255.x](https://doi.org/10.1111/j.1468-5914.2004.00255.x)
 
-Albert J. Bergesen and **Omar Lizardo**. "International terrorism and the world system." *Sociological Theory* 22: 38-52.^[Reprinted in: P. James and R.R. Sharma (Eds.) *Globalization and Violence*, Volume IV. Thousand Oaks: Sage Publications, 2006.]^[Translated (German) and reprinted in: Thorsten Bonacker and Christoph Weller (Eds.) *Konflikte der Weltgesellschaft:  Akteure, Strukturen, Dynamiken*.  Frankfurt: Campus Verlag, 2006.] [doi:10.1111/j.1467-9558.2004.00203.x](https://doi.org/10.1111/j.1467-9558.2004.00203.x)
+Albert J. Bergesen and **Omar Lizardo**. "International terrorism and the world system." *Sociological Theory* 22: 38-52.^[Reprinted in: P. James and R.R. Sharma (Eds.) *Globalization and Violence*, Volume IV. Thousand Oaks: Sage Publications, 2006. [doi:10.4135/9781446261866](https://doi.org/10.4135/9781446261866)]^[Translated (German) and reprinted in: Thorsten Bonacker and Christoph Weller (Eds.) *Konflikte der Weltgesellschaft:  Akteure, Strukturen, Dynamiken*.  Frankfurt: Campus Verlag, 2006.] [doi:10.1111/j.1467-9558.2004.00203.x](https://doi.org/10.1111/j.1467-9558.2004.00203.x)
 
 **Omar Lizardo** and Albert J. Bergesen. "Types of terrorism by world system location." *Humboldt Journal of Social Relations* 27: 162-192. [www.jstor.org/stable/23524157](https://www.jstor.org/stable/23524157)
 :::
@@ -446,7 +446,7 @@ Albert J. Bergesen and **Omar Lizardo**. "International terrorism and the world 
 
 **Omar Lizardo**. "Cultural tastes and everyday networks." Pp. 54-65 in N. Crossley and P. Widdop (Eds.), *The Handbook of Culture and Social Networks*. Edward Elgar. [doi:10.4337/9781803928784.00010](https://doi.org/10.4337/9781803928784.00010)
 
-**Omar Lizardo**. "Culture and social capital." Pp. 140–156 in R. C\^{o}t\'{e}, S. McDonald and J. Shen (Eds.), *The Handbook of Inequality and Social Capital*. Edward Elgar. [doi:10.4337/9781802202373.00018](https://doi.org/10.4337/9781802202373.00018)
+**Omar Lizardo**. "Culture and social capital." Pp. 140–156 in R. C\^{o}té, S. McDonald and J. Shen (Eds.), *The Handbook of Inequality and Social Capital*. Edward Elgar. [doi:10.4337/9781802202373.00018](https://doi.org/10.4337/9781802202373.00018)
 
 **Omar Lizardo**. "Culture and networks." Pp. 188-201 in P. Carrington, J. McLevey and J. Scott (Eds.), *The SAGE Handbook of Social Network Analysis*. Sage Publications.  [doi:10.4135/9781529682618.i1022](https://doi.org/10.4135/9781529682618.i1022)
 
@@ -471,11 +471,11 @@ Seth Abrutyn and **Omar Lizardo**. "Introduction." Pp. 1-13 in S. Abrutyn and O.
 
 Elliot Weininger and **Omar Lizardo**. "Introduction." In E. Weininger, A. Lareau and O. Lizardo (Eds.), *Ritual, Emotion, Violence: Studies on the Micro-Sociology of Randall Collins.* Routledge. 
 
-Ashwin Bahulkar, Bolesław K. Szymański, Kevin Chan and **Omar Lizardo**. "Co-evolution of two networks representing different social relations in NetSense." Pp. 423-434 in H. Cherifi, S. Gaito, W. Quattrociocchi and A. Sala (Eds.)  *Complex Networks & Their Applications V: Proceedings of the 5th International Workshop on Complex Networks and Their Applications (COMPLEX NETWORKS 2016)*. Cham, Switzerland: Springer. [doi:10.1007/978-3-319-50901-3_34](https://doi.org/10.1007/978-3-319-50901-3_34)
+Ashwin Bahulkar, Bolesław K. Szymański, Kevin Chan and **Omar Lizardo**. "Co-evolution of two networks representing different social relations in NetSense." Pp. 423-434 in H. Cherifi, S. Gaito, W. Quattrociocchi and A. Sala (Eds.)  *Complex Networks \& Their Applications V: Proceedings of the 5th International Workshop on Complex Networks and Their Applications (COMPLEX NETWORKS 2016)*. Cham, Switzerland: Springer. [doi:10.1007/978-3-319-50901-3_34](https://doi.org/10.1007/978-3-319-50901-3_34)
 
 Bolesław K. Szymański, **Omar Lizardo**, Casey Doyle, Panagiotis D. Karampourniotis, Pramesh Singh, Gyorgy Korniss, and Jonathan Z. Bakdash. "The spread of opinions in societies." Pp. 61-84 in J. V. Cohn, S. Schatz, H. Freeman and D. J. Y. Combs (Eds.), *Modeling Sociocultural Influences on Decision Making: Understanding Conflict, Enabling Stability.* CRC Press. [doi:10.1201/9781315369587-14](http://dx.doi.org/10.1201/9781315369587-14)
 
-**Omar Lizardo**. "Cultural theory." Pp. 99-120 in S. Abrutyn (Ed.), *Handbook of Contemporary Sociological Theory.* Springer.  [doi:10.1007/978-3-319-32250-6_6](https://doi.org/10.1007/978-3-319-32250-6_6)
+**Omar Lizardo**. "Cultural theory." Pp. 99-120 in S. Abrutyn (Ed.), *Handbook of Contemporary Sociological Theory.* Springer.  [doi:10.1007/978-3-319-32250-6\_6](https://doi.org/10.1007/978-3-319-32250-6_6)
 :::
 
 ### 2002–2015
@@ -588,7 +588,7 @@ Jessica Collett and **Omar Lizardo**. "Localizing cultural phenomena by specifyi
 
 "Review of: Status, Power and Ritual Interaction: A Relational Reading of Durkheim, Goffman and Collins by Theodore D. Kemper." *Perspectives: Newsletter of the ASA Theory Section* 35(1).
 
-"Review of: Reframing the Social: Emergentist Systemism and Social Theory by Poe Yu-Ze Wan." *Science & Education* 22: 1295-1297. [doi:10.1007/s11191-012-9518-9](https://doi.org/10.1007/s11191-012-9518-9)
+"Review of: Reframing the Social: Emergentist Systemism and Social Theory by Poe Yu-Ze Wan." *Science \& Education* 22: 1295-1297. [doi:10.1007/s11191-012-9518-9](https://doi.org/10.1007/s11191-012-9518-9)
 
 "Review of: The Legacy of Pierre Bourdieu: Critical Essays Edited by Simon Susen and Bryan S. Turner." *Contemporary Sociology* 42: 427-428. [doi: 10.1177/0094306113484702dd](https://doi.org/10.1177/0094306113484702dd)
 
@@ -642,7 +642,7 @@ Shikang Liu, Fatemeh Vahedian, David Hachen, **Omar Lizardo**, Christian Poellab
 
 Radosław Michalski, Bolesław K. Szymański, Przemysław Kazienko, Christian Lebiere, **Omar Lizardo** and Marcin Kulisiewicz. "Social networks through the prism of cognition." [arXiv:1806.04658](https://arxiv.org/abs/1806.04658).
 
-Louis Faust, Priscilla Jim\'{e}nez, David Hachen, **Omar Lizardo**, Aaron Striegel, and Nitesh V. Chawla. "Long-term compliance habits: What early data tells us." [arXiv:1804.04256](https://arxiv.org/abs/1804.04256).
+Louis Faust, Priscilla Jiménez, David Hachen, **Omar Lizardo**, Aaron Striegel, and Nitesh V. Chawla. "Long-term compliance habits: What early data tells us." [arXiv:1804.04256](https://arxiv.org/abs/1804.04256).
 
 Ashwin Bahulkar, Bolesław K. Szymański, Nitesh Chawla, **Omar Lizardo** and Kevin Chan. "Influence of Personal Preferences on Link Dynamics in Social Networks." [arXiv:1709.07401](https://arxiv.org/abs/1709.07401).
 
@@ -734,7 +734,7 @@ Panelist, Author Meets Critics/Book, Power in Modernity: Agency Relations and th
 
 ### 2018–2020
 ::: {.cventry}
-"Concluding Remarks." *Cognition & Migration workshop*, Paris, France, 2020 (remote).
+"Concluding Remarks." *Cognition \& Migration workshop*, Paris, France, 2020 (remote).
 
 "Incubators or diffusers? Examining the dynamic coupling of context and social ties across multiple foci." *University of Arizona School of Sociology Brown Bag Series*,  2020 (remote).
 
@@ -841,7 +841,7 @@ Panelist, *Conference on Networks and Culture*. Stanford University Graduate Sch
 ::: {.cventry}
 "Triadic evolution in a large-scale mobile phone network." 
 
- - Hightower Seminar in Organization & Management, Goizeta Business School, Emory University, Atlanta, GA, 2014.
+ - Hightower Seminar in Organization \& Management, Goizeta Business School, Emory University, Atlanta, GA, 2014.
  - MORS Colloquium, Haas Business School, University of California Berkeley, Berkeley, CA, 2014. 
 
 "The end of theorists: The relevance, opportunities, and pitfalls of theorizing in sociology." *Lewis Coser Memorial Lecture and Salon*, Annual Meeting of the American Sociological Association, San Francisco, CA, 2014.
@@ -888,7 +888,7 @@ Panelist, *Conference on Networks and Culture*. Stanford University Graduate Sch
 
  "Taste and the logic of practice in *Distinction*." *Thirty Years after 'Distinction' Conference*,  Science Po, Paris, France, 2010.
 
- "Instituting organizations, cultural categories and structured inequality: The World Heritage Committee and the creation of outstanding universal value." *Organizations & Markets Workshop*, Booth School of Business, University of Chicago, Chicago, IL, 2010.
+ "Instituting organizations, cultural categories and structured inequality: The World Heritage Committee and the creation of outstanding universal value." *Organizations \& Markets Workshop*, Booth School of Business, University of Chicago, Chicago, IL, 2010.
 
  "Instituting organizations, cultural categories and structured inequality: The World Heritage Committee and the creation of outstanding universal value." Pomona College, Claremont, California, 2010.
 :::
@@ -954,7 +954,7 @@ Panelist, *Conference on Networks and Culture*. Stanford University Graduate Sch
 
 **Principal Investigator** (Dissertation Improvement Grant for Sara Skiles), Research Grant Award (SES-1203426): "Aesthetic Taste Expression and Symbolic Boundary Work."  National Science Foundation, \$9,100 (2012-2013).
 
-**Principal Investigator** (with Aaron Striegel [Lead-PI], David Hachen [PI], and Christian Poellabauer [PI] ), Division of Information & Intelligent Systems, Social-Computational Systems Program, Research Grant Award (\#0968529): "SoCS:  Explorations on the Effects of Pervasive Networking on Social Relationships and Resource Planning." National Science Foundation, \$802,325 (2010-2015).
+**Principal Investigator** (with Aaron Striegel [Lead-PI], David Hachen [PI], and Christian Poellabauer [PI] ), Division of Information \& Intelligent Systems, Social-Computational Systems Program, Research Grant Award (\#0968529): "SoCS:  Explorations on the Effects of Pervasive Networking on Social Relationships and Resource Planning." National Science Foundation, \$802,325 (2010-2015).
 
 **Co-Awardee** (with David Hachen) Grant to organize a "Distinguished Speaker Series on Social Networks," Institute for Scholarship in the Liberal Arts (ISLA) Henkels Lecture Series, University of Notre Dame, \$15,000 (2009-2010).
 
@@ -974,7 +974,7 @@ Joel Stillerman and **Omar Lizardo**. "Barriers to Culture as Coordination: Reco
 
 Cheng Wang, **Omar Lizardo** and David Hachen. "Temporal patterns of the dyadic reciprocity among a sample of college students." International Sunbelt Social Networks Conference (Sunbelt'23), Portland, Oregon.  
 
-James Flamino, Ross DeVito, **Omar Lizardo** and Bolesław K. Szymański. "Modeling the impact of cell phone interactions on memory imprints of members of social networks." 15$^{th}$ International Conference on Social Computing, Behavioral-Cultural Modeling & Prediction and Behavior Representation in Modeling and Simulation (SBP-BRiMS'22), Pittsburgh, PA (Hybrid). 
+James Flamino, Ross DeVito, **Omar Lizardo** and Bolesław K. Szymański. "Modeling the impact of cell phone interactions on memory imprints of members of social networks." 15$^{th}$ International Conference on Social Computing, Behavioral-Cultural Modeling \& Prediction and Behavior Representation in Modeling and Simulation (SBP-BRiMS'22), Pittsburgh, PA (Hybrid). 
 
 Cheng Wang, **Omar Lizardo** and David Hachen. "Temporal pattern of the friendship paradox among a sample of college students."  International Sunbelt Social Networks Conference (Sunbelt'22), Cairns, Australia (remote).  
 
@@ -1160,7 +1160,7 @@ Albert J. Bergesen and **Omar Lizardo**. 2002. "Terrorism and hegemonic decline.
 
 **Associate Editor** 
 
- - 2025-present. *Theory & Social Inquiry*
+ - 2025-present. *Theory \& Social Inquiry*
  - 2025-present. *Social Problems*
  - 2022-present. *Discover Data*
  - 2020-present *Frontiers in Big Data (Networks)*.
@@ -1298,7 +1298,7 @@ Albert J. Bergesen and **Omar Lizardo**. 2002. "Terrorism and hegemonic decline.
 ### Conference Session Presider
 **Conference Session Presider**
 
- - Session "Showcasing excellent scholarship in the History of Sociology & Social Thought." Annual Meeting of the American Sociological Association, Chicago, Illinois, 2025.
+ - Session "Showcasing excellent scholarship in the History of Sociology \& Social Thought." Annual Meeting of the American Sociological Association, Chicago, Illinois, 2025.
 
  - Regular session on "The making and remaking of Science in bureaucratic and institutional context." Annual Meeting of the American Sociological Association, Los Angeles, California, 2022.
 
@@ -1471,7 +1471,7 @@ Albert J. Bergesen and **Omar Lizardo**. 2002. "Terrorism and hegemonic decline.
 - Cultural Sociology^[Graduate Seminar.] 
 - Topics in Sociological Theorizing<sup>†</sup>  
 - Social Networks 
-- Social Network Methods (A & B)<sup>†</sup> 
+- Social Network Methods (A \& B)<sup>†</sup> 
 - Theory and Research in Sociology<sup>†</sup> 
 
 [ *University of Notre Dame*]
