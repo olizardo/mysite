@@ -54,8 +54,8 @@ clean_tex_to_md <- function(filepath, is_list = FALSE) {
   text <- gsub("\\footnotetext{\\textcolor{uclablue}{*}Honors Thesis.}", "* *Honors Thesis.*", text, fixed = TRUE)
   text <- gsub("\\textcolor{uclablue}{\\ddag}\\footnotetext{\\textcolor{uclablue}{\\ddag}Theology.}", "^[Theology.]", text, fixed = TRUE)
   
-  # 4. General footnote conversion using exact backreference matches
-  pat <- "\\\\textcolor\\{([a-zA-Z]+)\\}\\{(.*?)\\}\\\\footnotetext\\{\\\\textcolor\\{\\1\\}\\{\\2\\}\\s*(.*?)\\}"
+  # 4. General footnote conversion using exact backreference matches (brace-aware for 1 nested level)
+  pat <- "\\\\textcolor\\{([a-zA-Z]+)\\}\\{(.*?)\\}\\\\footnotetext\\{\\\\textcolor\\{\\1\\}\\{\\2\\}\\s*((?:[^{}]|\\{[^{}]*\\})*)\\}"
   text <- gsub(pat, "^[\\3]", text, perl = TRUE)
   
   # 5. Clean up superscript commas between multiple footnotes
@@ -80,11 +80,13 @@ clean_tex_to_md <- function(filepath, is_list = FALSE) {
   text <- gsub("\\newline", " ", text, fixed = TRUE)
   
   # 9. Clean up indentation of bullet points and text to prevent them from becoming monospace code blocks!
-  # Use [ \t] instead of \s so we do NOT match or consume newline characters \n!
-  # This completely preserves double newlines \n\n (empty lines) between paragraph blocks!
+  # First, standardize all bullet lists to exactly two spaces of indentation
   text <- gsub("(?m)^[ \\t]+-\\s+", "  - ", text, perl = TRUE)
+  # Next, strip all leading whitespace from any lines that are NOT bullet list items.
+  # This completely flattens raw LaTeX text lines (like names, header titles) to the margin,
+  # preventing them from being parsed as preformatted indented code blocks (Courier font) in HTML and PDF!
   text <- gsub("(?m)^[ \\t]+(?!-)", "", text, perl = TRUE)
-  text <- gsub("(?m)^\\t+-\\s+", "  - ", text, perl = TRUE)
+  text <- gsub("(?m)^\\t+(?!-)", "", text, perl = TRUE)
   text <- gsub("\t", "  ", text, fixed = TRUE)
   
   # 10. Simple fixed replacements for LaTeX commands/accents
