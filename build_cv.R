@@ -19,40 +19,77 @@ clean_tex_to_md <- function(filepath) {
   # Remove inline comments (?<!\\)%[^\n]*
   text <- gsub("(?<!\\\\)%[^\n]*", "", text, perl = TRUE)
   
-  # Replace double backslashes \\ (LaTeX newlines) with empty string/newline
-  text <- gsub("\\\\", "", text, fixed = TRUE)
+  # 1. Normalize typos and line-splits in source LaTeX files before any parsing!
+  text <- gsub("(?m)uclablue\\s*\\n\\s*", "uclablue", text, perl = TRUE)
+  text <- gsub("\\bxtcolor\\{", "\\\\textcolor\\{", text, perl = TRUE)
+  text <- gsub("\\begin{sloppypar}", "", text, fixed = TRUE)
+  text <- gsub("\\end{sloppypar}", "", text, fixed = TRUE)
   
-  # Match footnotetext with backreferences for color and marker to turn into markdown footnotes!
+  # Normalize math superscripts inside textcolor arguments so they match footnotetext markers exactly!
+  text <- gsub("{$^{\\dag}$}", "{\\dag}", text, fixed = TRUE)
+  text <- gsub("{$^{\\dag \\dag}$}", "{\\dag \\dag}", text, fixed = TRUE)
+  text <- gsub("{$^{\\dag \\dag \\dag}$}", "{\\dag \\dag \\dag}", text, fixed = TRUE)
+  text <- gsub("{$^{\\dag \\dag \\dag \\dag}$}", "{\\dag \\dag \\dag \\dag}", text, fixed = TRUE)
+  text <- gsub("{$^\\dag$}", "{\\dag}", text, fixed = TRUE)
+  text <- gsub("{$^{\\ddag}$}", "{\\ddag}", text, fixed = TRUE)
+  
+  # 2. Remove layout/spacing/formatting commands completely at the very beginning
+  # so they don't corrupt brace-matching for bold and italics!
+  text <- gsub("(?m)^\\s*\\\\setlength.*$", "", text, perl = TRUE)
+  text <- gsub("(?m)^\\s*\\\\itemsep.*$", "", text, perl = TRUE)
+  text <- gsub("(?m)^\\s*\\\\multicolsep.*$", "", text, perl = TRUE)
+  text <- gsub("(?m)^\\s*\\\\begin\\{multicols\\}.*$", "", text, perl = TRUE)
+  text <- gsub("(?m)^\\s*\\\\end\\{multicols\\}.*$", "", text, perl = TRUE)
+  text <- gsub("(?m)^\\s*\\\\begin\\{itemize\\}.*$", "", text, perl = TRUE)
+  text <- gsub("(?m)^\\s*\\\\end\\{itemize\\}.*$", "", text, perl = TRUE)
+  text <- gsub("(?m)^\\s*\\\\vspace\\{[^}]+\\}$", "", text, perl = TRUE)
+  text <- gsub("\\\\vspace\\{[^}]+\\}", "", text, perl = TRUE) # inline vspace
+  text <- gsub("(?m)^\\s*\\\\footnotesize.*$", "", text, perl = TRUE)
+  text <- gsub("(?m)^\\s*\\\\small.*$", "", text, perl = TRUE)
+  text <- gsub("\\\\footnotesize", "", text, fixed = TRUE)
+  text <- gsub("\\\\small", "", text, fixed = TRUE)
+  
+  # 3. Specific footnotetext / mismatched markers replacements BEFORE general replacements!
+  text <- gsub("\\footnotetext{\\textcolor{uclablue}{*}Co-Chair.}", "* *Co-Chair.*", text, fixed = TRUE)
+  text <- gsub("\\footnotetext{\\textcolor{uclablue}{*}Honors Thesis.}", "* *Honors Thesis.*", text, fixed = TRUE)
+  text <- gsub("\\textcolor{uclablue}{\\ddag}\\footnotetext{\\textcolor{uclablue}{\\ddag}Theology.}", "^[Theology.]", text, fixed = TRUE)
+  
+  # 4. General footnote conversion using exact backreference matches
   pat <- "\\\\textcolor\\{([a-zA-Z]+)\\}\\{(.*?)\\}\\\\footnotetext\\{\\\\textcolor\\{\\1\\}\\{\\2\\}\\s*(.*?)\\}"
   text <- gsub(pat, "^[\\3]", text, perl = TRUE)
   
-  # Clean up superscript commas between multiple footnotes
+  # 5. Clean up superscript commas between multiple footnotes
   text <- gsub("$^{,}$", "", text, fixed = TRUE)
   
-  # Handle specific residual footnotes and markers
+  # 6. Handle standard/residual standalone textcolor markers (not followed by footnotetext)
   text <- gsub("\\textcolor{uclablue}{*}", "*", text, fixed = TRUE)
   text <- gsub("\\textcolor{uclablue}{**}", "**", text, fixed = TRUE)
-  text <- gsub("\\textcolor{uclablue}{$^{\\ddag}$}", "‡", text, fixed = TRUE)
-  text <- gsub("\\textcolor{uclablue}{$^{\\dag}$}", "†", text, fixed = TRUE)
-  text <- gsub("\\textcolor{uclablue}{$^{\\dag \\dag}$}", "††", text, fixed = TRUE)
-  text <- gsub("\\textcolor{uclablue}{$^{\\dag \\dag \\dag}$}", "†††", text, fixed = TRUE)
-  text <- gsub("\\textcolor{uclablue}{$^{\\dag \\dag \\dag \\dag}$}", "††††", text, fixed = TRUE)
+  text <- gsub("\\textcolor{uclablue}{\\ddag}", "‡", text, fixed = TRUE)
+  text <- gsub("\\textcolor{uclablue}{\\dag}", "<sup>†</sup>", text, fixed = TRUE)
+  text <- gsub("\\textcolor{uclablue}{\\dag \\dag}", "<sup>††</sup>", text, fixed = TRUE)
+  text <- gsub("\\textcolor{uclablue}{\\dag \\dag \\dag}", "<sup>†††</sup>", text, fixed = TRUE)
+  text <- gsub("\\textcolor{uclablue}{\\dag \\dag \\dag \\dag}", "<sup>††††</sup>", text, fixed = TRUE)
   
-  text <- gsub("\\footnotetext{\\textcolor{uclablue}{*}Co-Chair.}", "* *Co-Chair.*", text, fixed = TRUE)
-  text <- gsub("\\footnotetext{\\textcolor{uclablue}{\\ddag}Theology.}", "* ‡ *Theology.*", text, fixed = TRUE)
-  text <- gsub("\\footnotetext{\\textcolor{uclablue}{**}Computer Science and Engineering.}", "* ** *Computer Science and Engineering.*", text, fixed = TRUE)
-  text <- gsub("\\footnotetext{\\textcolor{uclablue}{\\dag}University of Chicago}", "* † *University of Chicago*", text, fixed = TRUE)
-  text <- gsub("\\footnotetext{\\textcolor{uclablue}{\\dag \\dag}Northwestern University, Kellogg School of Management}", "* †† *Northwestern University, Kellogg School of Management*", text, fixed = TRUE)
-  text <- gsub("\\footnotetext{\\textcolor{uclablue}{\\dag \\dag \\dag}University of Toronto}", "* ††† *University of Toronto*", text, fixed = TRUE)
-  text <- gsub("\\footnotetext{\\textcolor{uclablue}{\\dag \\dag \\dag \\dag}Duke University}", "* †††† *Duke University*", text, fixed = TRUE)
-  
-  # List items - must run BEFORE dash replacements!
+  # 7. List items - must run BEFORE dash replacements!
   text <- gsub("\\item[--]", "-", text, fixed = TRUE)
   text <- gsub("\\item[- ]", "-", text, fixed = TRUE)
   text <- gsub("\\item[-]", "-", text, fixed = TRUE)
   text <- gsub("\\item", "-", text, fixed = TRUE)
   
-  # Simple fixed replacements for LaTeX commands/accents
+  # 8. Replace newline with space (to avoid unrendered/escaped LaTeX command and overfull margins!)
+  text <- gsub("\\newline", " ", text, fixed = TRUE)
+  
+  # 9. Clean up indentation of bullet points and text to prevent them from becoming monospace code blocks!
+  # First, standardize all bullet lists to exactly two spaces of indentation
+  text <- gsub("(?m)^\\s+-\\s+", "  - ", text, perl = TRUE)
+  # Next, strip all leading whitespace from any lines that are NOT bullet list items.
+  # This completely flattens raw LaTeX text lines (like names, header titles) to the margin,
+  # preventing them from being parsed as preformatted indented code blocks (Courier font) in HTML and PDF!
+  text <- gsub("(?m)^\\s+(?!-)", "", text, perl = TRUE)
+  text <- gsub("(?m)^\\t+(?!-)", "", text, perl = TRUE)
+  text <- gsub("\t", "  ", text, fixed = TRUE)
+  
+  # 10. Simple fixed replacements for LaTeX commands/accents
   text <- gsub("\\&", "&", text, fixed = TRUE)
   text <- gsub("\\_", "_", text, fixed = TRUE)
   text <- gsub("\\l{}", "ł", text, fixed = TRUE)
@@ -94,11 +131,6 @@ clean_tex_to_md <- function(filepath) {
   text <- gsub("\\ind ", "", text, fixed = TRUE)
   text <- gsub("\\ind", "", text, fixed = TRUE)
   
-  # Remove specific itemize spacing lines
-  text <- gsub("\\setlength\\itemsep{-0.55em}", "", text, fixed = TRUE)
-  text <- gsub("\\setlength\\itemsep{-0.5ex}", "", text, fixed = TRUE)
-  text <- gsub("\\setlength\\multicolsep{0pt}", "", text, fixed = TRUE)
-  
   # Dynamic regex matching for bold, italic, href
   text <- gsub("\\\\textbf\\{([^}]+)\\}", "**\\1**", text, perl = TRUE)
   text <- gsub("\\\\emph\\{([^}]+)\\}", "*\\1*", text, perl = TRUE)
@@ -113,14 +145,8 @@ clean_tex_to_md <- function(filepath) {
   # Match \href{url}{text}
   text <- gsub("\\\\href\\{([^}]+)\\s*\\}\\{([^}]+)\\s*\\}", "[\\2](\\1)", text, perl = TRUE)
   
-  # Remove other LaTeX commands
-  text <- gsub("\\\\begin\\{itemize\\}[^\n]*", "", text, perl = TRUE)
-  text <- gsub("\\\\end\\{itemize\\}", "", text, perl = TRUE)
-  text <- gsub("\\\\vspace\\{[^}]+\\}", "", text, perl = TRUE)
-  text <- gsub("\\\\begin\\{multicols\\}\\{[^}]+\\}", "", text, perl = TRUE)
-  text <- gsub("\\\\end\\{multicols\\}", "", text, perl = TRUE)
-  text <- gsub("\\\\footnotesize", "", text, perl = TRUE)
-  text <- gsub("\\\\small", "", text, perl = TRUE)
+  # Remove remaining double backslashes \\ (LaTeX newlines) with empty string
+  text <- gsub("\\\\", "", text, fixed = TRUE)
   
   # Clean up multiple newlines
   text <- gsub("\\n{3,}", "\n\n", text)
@@ -150,6 +176,10 @@ qmd_content <- c(qmd_content, "          \\usepackage{parskip}")
 qmd_content <- c(qmd_content, "          \\usepackage{fancyhdr}")
 qmd_content <- c(qmd_content, "          \\usepackage{hanging}")
 qmd_content <- c(qmd_content, "          \\usepackage{xcolor}")
+qmd_content <- c(qmd_content, "          \\usepackage{xurl}")
+qmd_content <- c(qmd_content, "          \\usepackage{microtype}")
+qmd_content <- c(qmd_content, "          \\usepackage{hyperref}")
+qmd_content <- c(qmd_content, "          \\hypersetup{breaklinks=true, colorlinks=true, urlcolor=ucladark}")
 qmd_content <- c(qmd_content, "          \\definecolor{uclablue}{HTML}{005587}")
 qmd_content <- c(qmd_content, "          \\definecolor{ucladark}{HTML}{003B5C}")
 qmd_content <- c(qmd_content, "          \\definecolor{uclagold}{HTML}{FFB81C}")

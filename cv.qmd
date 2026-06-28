@@ -16,6 +16,10 @@ format:
           \usepackage{fancyhdr}
           \usepackage{hanging}
           \usepackage{xcolor}
+          \usepackage{xurl}
+          \usepackage{microtype}
+          \usepackage{hyperref}
+          \hypersetup{breaklinks=true, colorlinks=true, urlcolor=ucladark}
           \definecolor{uclablue}{HTML}{005587}
           \definecolor{ucladark}{HTML}{003B5C}
           \definecolor{uclagold}{HTML}{FFB81C}
@@ -55,95 +59,64 @@ Department of Sociology, University of California, Los Angeles
 
 ## Academic Positions
 ::: {.cventry}
-*University of California, Los Angeles, USA 
-
+*University of California, Los Angeles, USA *
 2018–Present. **Professor**, Department of Sociology.
-
 2023–2028. **LeRoy Neiman Term Chair**, Department of Sociology. 
-
 2018–2023. **LeRoy Neiman Term Chair**, Department of Sociology. 
 
-*University of Notre Dame, USA 
-
+*University of Notre Dame, USA *
 2016–2018. **Professor**, Department of Sociology.
-
 2012–2016. **Associate Professor**, Department of Sociology.
-
 2006–2012. **Assistant Professor**, Department of Sociology.
-
 2008–2018. **Member**, Interdisciplinary Center for Network Science and Applications (ICenSA).
-
 2008–2018. **Faculty Fellow**, Kroc Institute for Peace Studies.
-
 2008–2010. **Faculty Fellow**, Nanovic Center for European Studies.
 
-*Wrocław University of Technology (Politechnika Wrocławska), Poland 
-
+*Wrocław University of Technology (Politechnika Wrocławska), Poland *
 2015–2016. **Visiting Professor**, Faculty of Computer Science and Management.
 
-*Trent University, Canada 
-
+*Trent University, Canada *
 2007–present.  **External Member**, Centre for the Critical Study of Global Power and Politics.
 
-*University of Arizona, USA 
-
+*University of Arizona, USA *
 2000–2006.  **Graduate Assistant**, Department of Sociology.
 :::
 
 ## Professional Memberships
 - *Academy of Management*
-    - *American Sociological Association*
-        
-            
-            
-            - Economic Sociology 
-            - History of Sociology and Social Thought  
-            - Mathematical Sociology 
-            - Sociology of Consumers and Consumption 
-            - Sociology of Culture 
-            - Theory
-        
-    - *Association for Computing Machinery*
-    - *Cognitive Science Society*
-    - *International Network for Social Network Analysis*
+ - *American Sociological Association*
+
+ - Economic Sociology 
+ - History of Sociology and Social Thought  
+ - Mathematical Sociology 
+ - Sociology of Consumers and Consumption 
+ - Sociology of Culture 
+ - Theory
+ - *Association for Computing Machinery*
+ - *Cognitive Science Society*
+ - *International Network for Social Network Analysis*
 
 ## Distinctions, Honors, and Awards
-- (with Michael Strand), American Sociological Association Section on Theory *Theory Prize for Outstanding Book* for *Orienting to Chance: Probabilism and the Future of Social Theory* (Honorable Mention), 2026.
-
-- Elected member, *Sigma Xi, The Scientific Research Honor Society*, 2026.
-
-- Elected member, *Sociological Research Association*, 2019. 
-
-- (with Michael Strand), American Sociological Association Section on Theory *Theory Prize for Outstanding Article* for "Beyond world images: Belief as embodied action in the world" (Honorable Mention), 2017.
-
-- (with Jessica Collett), American Sociological Association Section on Emotions *Recent Contribution Award* for "Embarrassment and social organization: A multiple identities model" (Honorable Mention), 2015.
-
-- (with Robert Fishman), American Sociological Association Section on Comparative and Historical Sociology *Charles Tilly Best Article Award* for "'How macro-historical change shapes cultural taste: Legacies of democratization in Spain and Portugal," 2014.
-
-- (with Aaron Striegel, Shu Liu, Lei meng, Christian Poelleabauer, and David Hachen) Best Paper Award at The Fifth ACM Hotplanet Workshop, Hong Kong 2013.
-
-- American Sociological Association Section on Theory *Lewis Coser Award for Theoretical Agenda Setting*, 2013.
-
-- American Sociological Association Section on Culture  *Clifford Geertz Prize for Best Article* for "How cultural tastes shape personal networks," 2008.
-
-- (with Jessica Collett), American Sociological Association Section on Religion  *Best Graduate Student Paper Award* for "Why biology is not (religious) destiny: a second look at gender differences in religiosity,"   2005.
-
-- (with Jessica Collett), American Sociological Association Section on Emotions  *Best Graduate Student Paper Award* for "Socioeconomic status and the experience of anger," 2005.
-
-- University of Arizona Department of Sociology's  *Raymond V. Bowers Graduate Student Paper Competition* for "Why biology is not (religious) destiny: a second look at gender differences in religiosity," 2005.
-
-- University of Arizona Department of Sociology's  *Raymond V. Bowers Graduate Student Paper Competition* for "The effect of employment status on gender differences in culture consumption," 2003.
-
-- *Student Paper Competition*, Graduate Division General Social Survey for "The effect of employment status on gender differences in culture consumption" (Honorable Mention), 2003.
+- (with Leeloo Strand), American Sociological Association Section on Theory *Theory Prize for Outstanding Book* for *Orienting to Chance: Probabilism and the Future of Social Theory* (Honorable Mention), 2026.
+ - Elected member, *Sigma Xi, The Scientific Research Honor Society*, 2026.
+ - Elected member, *Sociological Research Association*, 2019. 
+ - (with Leeloo Strand), American Sociological Association Section on Theory *Theory Prize for Outstanding Article* for "Beyond world images: Belief as embodied action in the world" (Honorable Mention), 2017.
+ - (with Jessica Collett), American Sociological Association Section on Emotions *Recent Contribution Award* for "Embarrassment and social organization: A multiple identities model" (Honorable Mention), 2015.
+ - (with Robert Fishman), American Sociological Association Section on Comparative and Historical Sociology *Charles Tilly Best Article Award* for "'How macro-historical change shapes cultural taste: Legacies of democratization in Spain and Portugal," 2014.
+ - (with Aaron Striegel, Shu Liu, Lei meng, Christian Poelleabauer, and David Hachen) Best Paper Award at The Fifth ACM Hotplanet Workshop, Hong Kong 2013.
+ - American Sociological Association Section on Theory *Lewis Coser Award for Theoretical Agenda Setting*, 2013.
+ - American Sociological Association Section on Culture  *Clifford Geertz Prize for Best Article* for "How cultural tastes shape personal networks," 2008.
+ - (with Jessica Collett), American Sociological Association Section on Religion  *Best Graduate Student Paper Award* for "Why biology is not (religious) destiny: a second look at gender differences in religiosity,"   2005.
+ - (with Jessica Collett), American Sociological Association Section on Emotions  *Best Graduate Student Paper Award* for "Socioeconomic status and the experience of anger," 2005.
+ - University of Arizona Department of Sociology's  *Raymond V. Bowers Graduate Student Paper Competition* for "Why biology is not (religious) destiny: a second look at gender differences in religiosity," 2005.
+ - University of Arizona Department of Sociology's  *Raymond V. Bowers Graduate Student Paper Competition* for "The effect of employment status on gender differences in culture consumption," 2003.
+ - *Student Paper Competition*, Graduate Division General Social Survey for "The effect of employment status on gender differences in culture consumption" (Honorable Mention), 2003.
 
 ## Books
 ::: {.cventry}
-Michael Strand and **Omar Lizardo**. *Orienting to Chance: Probabilism and the Future of Social Theory*. University of Chicago Press. [doi:10.7208/chicago/9780226843124.001.0001](https://doi.org/10.7208/chicago/9780226843124.001.0001)
-
+Leeloo Strand and **Omar Lizardo**. *Orienting to Chance: Probabilism and the Future of Social Theory*. University of Chicago Press. [doi:10.7208/chicago/9780226843124.001.0001](https://doi.org/10.7208/chicago/9780226843124.001.0001)
 Seth Abrutyn and **Omar Lizardo** (Editors). *Handbook of Classical Sociological Theory*. Springer. [doi:10.1007/978-3-030-78205-4](https://doi.org/10.1007/978-3-030-78205-4)
-
 John Mohr, Christopher A. Bail, Margaret Frye, Jennifer C. Lena, **Omar Lizardo**, Terence E. McDonnell, Ann Mische, Iddo Tavory and Frederick Wherry. *Measuring Culture*. Columbia University Press. [doi:10.7312/mohr18028](https://doi.org/10.7312/mohr18028)
-
 Elliot Weininger, Annette Lareau and **Omar Lizardo** (Editors). *Ritual, Emotion, Violence: Studies on the Micro-Sociology of Randall Collins*. Routledge. [doi:10.4324/9780429464157](https://doi.org/10.4324/9780429464157)
 :::
 
@@ -151,13 +124,9 @@ Elliot Weininger, Annette Lareau and **Omar Lizardo** (Editors). *Ritual, Emotio
 ### In Press / Recent
 ::: {.cventry}
 **Omar Lizardo**. "A Generalized approach to combining similarity and eigenvector analysis of networks." *Connections*.
-
 Clayton Childress and **Omar Lizardo**. "Diversity as a dominant social value." *Annual Review of Sociology* 52: In Press. [doi:10.1146/annurev-soc-031025-063531](https://doi.org/10.1146/annurev-soc-031025-063531).
-
 **Omar Lizardo**. "Kinding culture." *Journal for the Theory of Social Behaviour*. 56:e70041. [doi:10.1111/jtsb.70041](https://doi.org/10.1111/jtsb.70041).
-
 Dustin S. Stoltz, Marshall A. Taylor and **Omar Lizardo**. "Functionaries: A distributional approach to institutional analysis." *Journal for the Theory of Social Behaviour* 56:e70030. [doi:10.1111/jtsb.70030](https://doi.org/10.1111/jtsb.70030).
-
 **Omar Lizardo**. "The forward march of Categorical Tolerance in the United States." *Sociological Science*. 13:
 22-44. [doi:10.15195/v13.a2](https://doi.org/10.15195/v13.a2).
 :::
@@ -165,273 +134,175 @@ Dustin S. Stoltz, Marshall A. Taylor and **Omar Lizardo**. "Functionaries: A dis
 ### 2024–2025
 ::: {.cventry}
 Seth Abrutyn and **Omar Lizardo**. "Human totality and the Total Social Fact." *Distinktion: Journal of Social Theory*. [doi:10.1080/1600910X.2025.2555236](https://doi.org/10.1080/1600910X.2025.2555236).
-
 **Omar Lizardo**. "The Correspondence Analysis of two-mode networks revisited." *Social Networks* 83: 134-151. [doi:10.1016/j.socnet.2025.06.001](https://doi.org/10.1016/j.socnet.2025.06.001).
-
 Cheng Wang, **Omar Lizardo** and David S. Hachen. "Temporal dynamics of the friendship paradox in a smartphone communication network." *Applied Network Science* 10: 16 [doi:10.1007/s41109-025-00710-1](https://doi.org/10.1007/s41109-025-00710-1).
-
 Cheng Wang, **Omar Lizardo** and David S. Hachen. "Exploring the multidimensional influences on sleep and active heart rate dynamics: A comprehensive study. *Qeios*. [doi:10.32388/TL5F3I.2](https://doi.org/10.32388/TL5F3I.2).
-
 Matteo Serafino, G. Virginio Clemente, James Flamino, Bolesław K. Szymański, **Omar Lizardo** and Hernán A. Makse. "Analysis of flows in social media uncovers a new multi-step model of information spread." *Journal of Statistical Mechanics: Theory and Experiment*: 113402. [doi:10.1088/1742-5468/ad8748](https://doi.org/10.1088/1742-5468/ad8748).
-
 **Omar Lizardo**. "From macrogenres to microgenres via relationality." *Poetics: Journal of Empirical Research on Culture, the Media and the Arts* 102: 101868. [doi:10.1016/j.poetic.2024.101868](https://doi.org/10.1016/j.poetic.2024.101868)
-
 Seth Abrutyn and **Omar Lizardo**. "Wanting, Liking, and the sociology of motivation." *Sociological Forum* 39: 173-188. [doi:10.1111/socf.12996](https://doi.org/10.1111/socf.12996)
-
 Travis Ashby, **Omar Lizardo**, Dustin S. Stoltz and Michael Lee Wood. "The Raw and the (Over)Cooked: States are physical qualities." *Metaphor and the Social World*. 14: 22-42. [doi:10.1075/msw.00039.ash](https://doi.org/10.1075/msw.00039.ash)
-
 **Omar Lizardo**. "Theorizing the concept of social tie using frames." *Social Networks*. 78: 138-149. [doi:10.1016/j.socnet.2024.01.001](https://doi.org/10.1016/j.socnet.2024.01.001)
-
 David Hachen, Cheng Wang, Brandon Sepulvado and **Omar Lizardo**. "Generators or diffusers? Examining differences in the dynamic coupling of context and social ties across multiple types of foci." *Social Networks* 77: 151-165. [doi:10.1016/j.socnet.2022.02.004](https://doi.org/10.1016/j.socnet.2022.02.004)
-
 **Omar Lizardo**. "Two-mode relational similarities." *Social Networks*  76: 34-41. [doi:10.1016/j.socnet.2023.06.002](https://doi.org/10.1016/j.socnet.2023.06.002)
 :::
 
 ### 2022–2023
 ::: {.cventry}
 **Omar Lizardo**. "Visualizing the decline in cultural participation in Europe post-crisis." *Socius: Sociological Research for a Dynamic World* 9: [doi:10.1177/23780231231184968](https://doi.org/10.1177/23780231231184968)
-
 **Omar Lizardo**. "An analytical approach to culture." *Philosophy of the Social Sciences* 53: 281–302. [doi:10.1177/00483931231169313](https://doi.org/10.1177/00483931231169313)
-
 Seth Abrutyn and **Omar Lizardo**. "A motivational theory of roles, rewards, and institutions." *Journal for the Theory of Social Behaviour* 53: 200-220. [doi:10.1111/jtsb.12360](https://doi.org/10.1111/jtsb.12360)
-
 **Omar Lizardo** and Isaac Jilbert. "Organizations and the structure of culture." *Sociology Compass* 17: e13063. [doi:10.1111/soc4.13063](https://doi.org/10.1111/soc4.13063)
-
 Mateusz Nurek, Radosław Michalski, **Omar Lizardo** and Marian-Andrei Rizoiu. "Predicting relationship labels and individual personality traits from telecommunication history in social networks using Hawkes processes." *IEEE Access* 11: 8492-8503. [10.1109/ACCESS.2023.3238970](https://doi.org/10.1109/ACCESS.2023.3238970)
-
 **Omar Lizardo**. "What is implicit culture?"  *Journal for the Theory of Social Behaviour* 52: 412-437.^[Lead article.] [doi:10.1111/jtsb.12333](https://doi.org/10.1111/jtsb.12333)
-
 Cheng Wang, **Omar Lizardo** and David Hachen. "A longitudinal study of Fitbit usage behavior among college students." *Cyberpsychology, Behavior, and Social Networking* 25: 181-188. [doi:10.1089/cyber.2021.0047](https://doi.org/10.1089/cyber.2021.0047)
-
-Michael Strand and **Omar Lizardo**. "For a probabilistic sociology: A history of concept formation with Pierre Bourdieu." *Theory and Society* 51: 399–434.  [doi:10.1007/s11186-021-09452-2](https://doi.org/10.1007/s11186-021-09452-2) 
-
-Michael Strand and **Omar Lizardo**. "Chance, orientation, and interpretation:  Max Weber’s neglected probabilism and the future of social theory." *Sociological Theory* 40:124-150. [doi:10.1177/07352751221084712](https://doi.org/10.1177/07352751221084712)
-
+Leeloo Strand and **Omar Lizardo**. "For a probabilistic sociology: A history of concept formation with Pierre Bourdieu." *Theory and Society* 51: 399–434.  [doi:10.1007/s11186-021-09452-2](https://doi.org/10.1007/s11186-021-09452-2) 
+Leeloo Strand and **Omar Lizardo**. "Chance, orientation, and interpretation:  Max Weber’s neglected probabilism and the future of social theory." *Sociological Theory* 40:124-150. [doi:10.1177/07352751221084712](https://doi.org/10.1177/07352751221084712)
 Cheng Wang, **Omar Lizardo**, David Hachen. "Using Fitbit data to monitor the heart rate evolution patterns of college students." *Journal of American College Health* 70:875–882. [doi:10.1080/07448481.2020.1775610](https://doi.org/10.1080/07448481.2020.1775610)
-
 Brandon Sepulvado, Michael Lee Wood, Ethan Fridmanski, Cheng Wang, Matthew J. Chandler, **Omar Lizardo**, David Hachen. "Predicting homophily and social network connectivity from dyadic behavioral similarity trajectory clusters." *Social Science Computer Review* 40:195-211. [doi:10.1177/0894439320923123](https://doi.org/10.1177/0894439320923123)
-
 Ethan Fridmanski, Michael Lee Wood, **Omar Lizardo** and David Hachen. "Clustering in a newly forming social network by subjective perceptions of loneliness."  *Journal of American College Health* 70: 1326-1331. [doi:10.1080/07448481.2020.1806852](https://doi.org/10.1080/07448481.2020.1806852)
 :::
 
 ### 2021
 ::: {.cventry}
 **Omar Lizardo**. "Culture, cognition, and internalization." *Sociological Forum* 36: 1177-1206.^[Lead article on a special issue edited by Karen Cerulo and Vanina Leschziner.] [doi:10.1111/socf.12771](https://doi.org/10.1111/socf.12771)
-
 Cheng Wang, Stephen Mattingly, Jessica Payne, **Omar Lizardo** and David Hachen. "The impact of social networks on sleep among a cohort of college students." *SSM Population Health* 16: 100937. [doi:10.1016/j.ssmph.2021.100937](https://doi.org/10.1016/j.ssmph.2021.100937) 
-
 James Flamino, Bolesław K. Szymański, Ashwin Bahulkar, Kevin Chan and **Omar Lizardo**. "Creation, evolution, and dissolution of social groups." *Scientific Reports* 11: 17470. [doi:10.1038/s41598-021-96805-7](https://doi.org/10.1038/s41598-021-96805-7) 
-
 **Omar Lizardo**. "Habit and the explanation of action." *Journal for the Theory of Social Behaviour* 51: 391-411. [doi:10.1111/jtsb.12273](https://doi.org/10.1111/jtsb.12273)
-
 Shikang Liu, Fatemeh Vahedian, David Hachen, **Omar Lizardo**, Christian Poellabauer, Aaron Striegel and Tijana Milenković. "Heterogeneous network approach to predict individuals' mental health." *ACM Transactions on Knowledge Discovery from Data (TKDD)* 15: 1-26. [doi:10.1145/3429446](https://doi.org/10.1145/3429446)
-
 Cheng Wang, **Omar Lizardo** and David Hachen. "Using big data to examine the effect of urbanism on social networks." *Journal of Urban Affairs* 43:40-56. [doi:10.1080/07352166.2018.1550350](https://doi.org/10.1080/07352166.2018.1550350)
-
 Cheng Wang, **Omar Lizardo** and David Hachen. "Using Fitbit data to examine factors that affect daily activity levels of college students." *PloS One* 16: e0244747. [doi:10.1371/journal.pone.0244747](https://doi.org/10.1371/journal.pone.0244747)
-
 Radosław Michalski, Bolesław K. Szymański, Przemysław Kazienko, Christian Lebiere, **Omar Lizardo** and Marcin Kulisiewicz. "Social networks through the prism of cognition." *Complexity*. [doi:10.1155/2021/4963903](https://doi.org/10.1155/2021/4963903)
 :::
 
 ### 2019–2020
 ::: {.cventry}
 Seth Abrutyn and **Omar Lizardo**. "Grief, Care, and Play: Theorizing the affective roots of the social self." *Advances in Group Processes* 37: 79-108.  [doi:10.1108/S0882-614520200000037004](https://doi.org/10.1108/S0882-614520200000037004)
-
 Cheng Wang, **Omar Lizardo** and David S. Hachen. "Neither influence nor selection: Examining the co-evolution of political orientation and social networks in the *NetSense* and *NetHealth* studies." *PloS one* 15: e0233458. [doi:10.1371/journal.pone.0233458](https://doi.org/10.1371/journal.pone.0233458)
-
-**Omar Lizardo**, Brandon Sepulvado, Dustin S. Stoltz, Marshall A. Taylor. "What can cognitive neuroscience do for cultural sociology?" *American Journal of Cultural Sociology* 8: 3-28.^[Lead article on a special issue edited by Philip Smith.] \newline[doi:10.1057/s41290-019-00077-8](https://doi.org/10.1057/s41290-019-00077-8)
-
+**Omar Lizardo**, Brandon Sepulvado, Dustin S. Stoltz, Marshall A. Taylor. "What can cognitive neuroscience do for cultural sociology?" *American Journal of Cultural Sociology* 8: 3-28.^[Lead article on a special issue edited by Philip Smith.]  [doi:10.1057/s41290-019-00077-8](https://doi.org/10.1057/s41290-019-00077-8)
 Shikang Liu, David Hachen, **Omar Lizardo**, Christian Poellabauer, Aaron Striegel and Tijana Milenković. "The power of dynamic social networks to predict individuals' mental health." *Biocomputing* 25: 635-646. [doi:10.1142/9789811215636_0056](https://doi.org/10.1142/9789811215636_0056)
-
 Jeff Larson and **Omar Lizardo**.  "Institutional movement logics and the changing shape of the U.S. social movement field, 1960–1995." *Social Forces* 97: 1389–1422. [doi:10.1093/sf/soy122](https://doi.org/10.1093/sf/soy122)
-
 **Omar Lizardo**. "Simmel's dialectic of form and content in recent work in cultural sociology." *The Germanic Review: Literature, Culture, Theory* 94:93-100. [doi:10.1080/00168890.2019.1585664](https://doi.org/10.1080/00168890.2019.1585664)
-
 Louis Faust, Cheng Wang, David Hachen, **Omar Lizardo**, Nitesh V. Chawla. "Physical Activity Trend eXtraction: A framework for extracting moderate-vigorous physical activity trends From wearable fitness tracker data." *JMIR Mhealth Uhealth* 7:e11075. [doi:10.2196/11075](https://doi.org/10.2196/11075)
-
-**Omar Lizardo**. "Specifying the 'what' and separating the 'how': Doings, sayings, codes, and artifacts as the building blocks of institutions." *Research in the Sociology of Organizations* 65(A): 217-234. \newline [doi.org/10.1108/S0733-558X2019000065A021](https://doi.org/10.1108/S0733-558X2019000065A021)
-
+**Omar Lizardo**. "Specifying the 'what' and separating the 'how': Doings, sayings, codes, and artifacts as the building blocks of institutions." *Research in the Sociology of Organizations* 65(A): 217-234.   [doi.org/10.1108/S0733-558X2019000065A021](https://doi.org/10.1108/S0733-558X2019000065A021)
 Louis Faust, Priscilla Jim\'{e}nez-Pazmino, James K. Holland, **Omar Lizardo**, David Hachen and Nitesh V. Chawla. "What 30 Days tells us about 3 Years: Identifying early signs of user abandonment and non-adherence." *Proceedings of the 13th EAI International Conference on Pervasive Computing Technologies for Healthcare (PervasiveHealth)*: 216-224. [doi:10.1145/3329189.3329196](https://doi.org/10.1145/3329189.3329196)
 :::
 
 ### 2018
 ::: {.cventry}
 Shikang Liu, David Hachen; **Omar Lizardo**, Christian Poellabauer, Aaron Striegel and Tijana Milenković. "Network analysis of the NetHealth data: Exploring the co-evolution of individuals' social networks and physical activities." *Applied Network Science* 3:45. 
-\newline
 [doi:10.1007/s41109-018-0103-2](https://doi.org/10.1007/s41109-018-0103-2)
-
 **Omar Lizardo**, Dustin S. Stoltz, Marshall A. Taylor and Michael Lee Wood. "Visualizing bring-backs." *Socius: Sociological Research for a Dynamic World* 4. [doi:10.1177/2378023118805362](https://doi.org/10.1177/2378023118805362)
-
 Ashwin Bahulkar, Bolesław K. Szymański, Kevin Chan and **Omar Lizardo**. "Impact of attributes on group formation." *Proceedings of the IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining (ASONAM)*: 1250-1257. [doi:10.1109/asonam.2018.8508658](https://doi.org/10.1109/asonam.2018.8508658) 
-
 Louis Faust, David Hachen, **Omar Lizardo** and Nitesh Chawla. "Quantifying subjective well-being using trends in weekend activity." *Proceedings of the IEEE International Conference on Healthcare Informatics (ICHI)*: 123-129. [doi:10.1109/ichi.2018.00021](https://doi.org/10.1109/ichi.2018.00021)
-
 **Omar Lizardo**. "The mutual specification of genres and audiences: Reflective two-mode centralities in person-to-culture choice data." *Poetics: Journal of Empirical Research on Culture, the Media and the Arts* 68: 52-71. [doi:10.1016/j.poetic.2018.04.003](https://doi.org/10.1016/j.poetic.2018.04.003)
-
 Dustin S. Stoltz and **Omar Lizardo**. "Deliberate trust and intuitive faith: A dual-process model of reliance." *Journal for the Theory of Social Behaviour* 48: 230-250. [doi:10.1111/jtsb.12160](https://doi.org/10.1111/jtsb.12160)
-
 **Omar Lizardo** and Dustin S. Stoltz. "Max Weber's ideal versus material interest distinction revisited." *European Journal of Social Theory* 21: 3–21.^[Lead article.] [doi:10.1177/1368431017710906](https://doi.org/10.1177/1368431017710906)
 :::
 
 ### 2017
 ::: {.cventry}
 Sudip Vhaduri, Christian Poellabauer, Aaron Striegel, **Omar Lizardo** and David Hachen. "Discovering places of interest using sensor data from smartphones and wearables." *Proceedings of the IEEE International Conference on SmartWorld, Ubiquitous Intelligence & Computing*: 1-8. [doi:10.1109/UIC-ATC.2017.8397495](https://doi.org/10.1109/UIC-ATC.2017.8397495)
-
 Brandon Sepulvado and **Omar Lizardo**. "Cognitive sociology in France." *American Sociologist* 48: 366-381. 
 [doi:10.1007/s12108-017-9341-5](https://doi.org/10.1007/s12108-017-9341-5)
-
 Ashwin Bahulkar, Bolesław K. Szymański, Kevin Chan and **Omar Lizardo**. "Coevolution of a multilayer node-aligned network of which layers represent different social relations." *Computational Social Networks* 4: 11 [doi:10.1186/s40649-017-0047-1](https://doi.org/10.1186/s40649-017-0047-1) 
-
 Ashwin Bahulkar, Bolesław K. Szymański, Nitesh Chawla, **Omar Lizardo** and Kevin Chan. "Influence of personal preferences on link dynamics in social networks." *Complexity* [doi:10.1155/2017/4543563](https://doi.org/10.1155/2017/4543563)
-
-Michael Strand and **Omar Lizardo**. "The hysteresis effect: Theorizing mismatch in action" *Journal for the Theory of Social Behaviour* 47: 164–194. [doi:10.1111/jtsb.12117](https://doi.org/10.1111/jtsb.12117)
-
+Leeloo Strand and **Omar Lizardo**. "The hysteresis effect: Theorizing mismatch in action" *Journal for the Theory of Social Behaviour* 47: 164–194. [doi:10.1111/jtsb.12117](https://doi.org/10.1111/jtsb.12117)
 Louis Faust, Rachael Purta, David Hachen, Aaron Striegel, Christian Poellabauer, **Omar Lizardo**, Nitesh V. Chawla. "Exploring compliance: Observations from a large scale Fitbit study." *Proceedings of the 2nd International Workshop on Social Sensing (SOCIALSENS)*: 55-60. [doi:10.1145/3055601.3055608](https://doi.org/10.1145/3055601.3055608)
-
 **Omar Lizardo**. "Improving cultural analysis: Considering personal culture in its declarative and nondeclarative modes." *American Sociological Review* 82: 88-115. [doi:10.1177/0003122416675175](https://doi.org/10.1177/0003122416675175) 
-
 Joseph Cabrera, Stephan Scholz, George Hobor and **Omar Lizardo**. "Integrating 'standard' residents into 'non-standard' communities: A longitudinal analysis of social capital in a new urbanist development."  *Journal of Urbanism* 10: 63-76. [doi:10.1080/17549175.2016.1139620](https://doi.org/10.1080/17549175.2016.1139620)
 :::
 
 ### 2016
 ::: {.cventry}
 **Omar Lizardo**, Robert Mowry, Brandon Sepulvado, Dustin S. Stoltz, Marshall A. Taylor, Justin Van Ness and Michael Lee Wood. "What are dual process models? Implications for cultural analysis in sociology." *Sociological Theory* 34: 287-310.^[Lead article.] [doi:10.1177/0735275116675900](https://doi.org/10.1177/0735275116675900)
-
 Rachel Purta, Stephen Mattingly, Lixing Song, **Omar Lizardo**, David Hachen, Christian Poellabauer and  Aaron Striegel. "Experiences measuring sleep and physical activity patterns across a large college cohort with fitbits." *Proceedings of the ACM International Symposium on Wearable Computers* 28-35. [doi:10.1145/2971763.2971767](https://doi.org/10.1145/2971763.2971767)
-
 **Omar Lizardo**. "Why 'cultural matters' matter: Culture talk as the mobilization of cultural capital in interaction." *Poetics: Journal of Empirical Research on Culture, the Media and the Arts* 58: 1-17.^[Lead article.] [doi:10.1016/j.poetic.2016.09.002](https://doi.org/10.1016/j.poetic.2016.09.002)
-
 Stephen Vaisey and **Omar Lizardo**. "Cultural fragmentation or acquired dispositions? A new approach to accounting for patterns of cultural change." *Socius: Sociological Research for a Dynamic World* 2. [doi:10.1177/2378023116669726](https://doi.org/10.1177/2378023116669726)
-
-Ashwin	Bahulkar, Bolesław K. Szymański, **Omar Lizardo**, Yuxiao Dong, Yang Yang and Nitesh V. Chawla. "Analysis of link formation, persistence, and dissolution in NetSense data." *Proceedings of the IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining*: 1197-1204.^[Nominated for the Best Paper Award.] [doi:10.1109/ASONAM.2016.7752391](https://doi.org/10.1109/ASONAM.2016.7752391)
-
+Ashwin  Bahulkar, Bolesław K. Szymański, **Omar Lizardo**, Yuxiao Dong, Yang Yang and Nitesh V. Chawla. "Analysis of link formation, persistence, and dissolution in NetSense data." *Proceedings of the IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining*: 1197-1204.^[Nominated for the Best Paper Award.] [doi:10.1109/ASONAM.2016.7752391](https://doi.org/10.1109/ASONAM.2016.7752391)
 **Omar Lizardo** and Sara Skiles. "Cultural objects as prisms: Perceived audience composition of musical genres as a resource for symbolic exclusion." *Socius: Sociological Research for a Dynamic World* 2. [doi:10.1177/2378023116641695](https://doi.org/10.1177/2378023116641695)
-
 **Omar Lizardo**. "Cultural symbols and cultural power." *Qualitative Sociology* 39: 199-204.  [doi:10.1007/s11133-016-9329-4](https://doi.org/10.1007/s11133-016-9329-4)
-
 **Omar Lizardo** and Sara Skiles. "The end of symbolic exclusion? The rise of 'categorical tolerance' in the musical tastes of Americans: 1993-2012." *Sociological Science* 3: 85-108. [doi:10.15195/v3.a5](https://doi.org/10.15195/v3.a5)
 :::
 
 ### 2015
 ::: {.cventry}
 Brandon Sepulvado, Michael Penta, David Hachen and **Omar Lizardo**. "Social affiliation from religious disaffiliation: Evidence of selective mixing among youth with no religious preference during the transition to college." *Journal for the Scientific Study of Religion*. 54: 833-841. [doi:10.1111/jssr.12227](https://doi.org/10.1111/jssr.12227)
-
 **Omar Lizardo** and Sara Skiles. "Musical taste and patterns of symbolic exclusion in the United States 1993–2012: Generational dynamics of differentiation and continuity." *Poetics: Journal of Empirical Research on Culture, the Media and the Arts*  53: 9-21.^[Lead article.] [doi:10.1016/j.poetic.2015.08.003](https://doi.org/10.1016/j.poetic.2015.08.003)
-
 **Omar Lizardo**, Michael Penta, Matthew Chandler, Casey Doyle, G. Korniss, Bolesław K. Szymański, and Jonathan Bakdash. "Analysis of opinion evolution in a multi-cultural student social network."  *Proceedings of the 6th International Conference on Applied Human Factors and Ergonomics*: 3977-3984. [doi:10.1016/j.promfg.2015.07.938](https://doi.org/10.1016/j.promfg.2015.07.938)
-
 Cheng Wang, **Omar Lizardo** and David Hachen. "Triadic evolution in a large-scale mobile phone network." *Journal of Complex Networks* 3: 264-290. [doi:10.1093/comnet/cnu030](https://doi.org/10.1093/comnet/cnu030)
-
-Michael Strand and **Omar Lizardo**. "Beyond world images: Belief as embodied action in the world." *Sociological Theory* 33:44-70.^[Honorable mention, Theory Prize for Outstanding Article.] [doi:10.1177/0735275115572397](https://doi.org/10.1177/0735275115572397)
-
+Leeloo Strand and **Omar Lizardo**. "Beyond world images: Belief as embodied action in the world." *Sociological Theory* 33:44-70.^[Honorable mention, Theory Prize for Outstanding Article.] [doi:10.1177/0735275115572397](https://doi.org/10.1177/0735275115572397)
 Jeff Larson and **Omar Lizardo**. "An institutional logics approach to the analysis of social movement fields." *Social Currents* 2: 58-80. [doi:10.1017/nws.2014.7](https://doi.org/10.1017/nws.2014.7)
 :::
 
 ### 2013–2014
 ::: {.cventry}
 Cheng Wang, **Omar Lizardo** and David Hachen. "Algorithms for generating large-scale clustered random graphs." *Network Science* 2: 403-415. [doi:10.1017/nws.2014.7](https://doi.org/10.1017/nws.2014.7)
-
 **Omar Lizardo**. "Taste and the logic of practice in *Distinction*." *Czech Sociological Review* 50: 335-364. [www.jstor.org/stable/24642586](https://www.jstor.org/stable/24642586)
-
 **Omar Lizardo**. "Omnivorousness as the bridging of cultural holes: A measurement strategy." *Theory and Society*  43: 395-419. [doi:10.1007/s11186-014-9220-9](https://doi.org/10.1007/s11186-014-9220-9)
-
 **Omar Lizardo** and Melissa Fletcher Pirkey. "How organizational theory can help network theorizing: Linking structure and dynamics via cross-level analogies." *Research in the Sociology of Organizations* 40: 33-56.^[Lead article.] [doi:10.1108/S0733-558X(2014)0000040002](https://doi.org/10.1108/S0733-558X(2014)0000040002)
-
 Cheng Wang, David Hachen, and **Omar Lizardo**. "The co-evolution of communication networks and drinking behaviors."  *Proceedings of the AAAI Fall Symposium Series*: 30-36. [url:https://www.aaai.org/ocs/index.php/FSS/FSS13/paper/view/7404](https://www.aaai.org/ocs/index.php/FSS/FSS13/paper/view/7404)
-
 **Omar Lizardo**.  "Schmaus' functionalist approach to the explanation of social facts: An assessment and critique."  *Philosophy of the Social Sciences* 43: 453-492. [doi:10.1177/0048393112458491](https://doi.org/10.1177/0048393112458491) 
-
 **Omar Lizardo** and Jessica Collett. "Embarrassment and social organization: A multiple identities model." *Social Forces* 92: 353-375.  [doi:10.1093/sf/sot078](https://doi.org/10.1093/sf/sot078)
-
 Aaron Striegel, Shu Liu, Lei Meng, Christian Poellabauer, David Hachen, and **Omar Lizardo**. "Lessons learned from the NetSense smartphone study." *Computer Communication Review* 43:51-56.^[Best Paper Award.]  [doi: 10.1145/2491159.2491171](https://doi.org/ 10.1145/2491159.2491171)
-
 **Omar Lizardo**. 2013. "Reconceptualizing abstract conceptualization in social theory: The case of the ‘structure’ concept." *Journal for the Theory of Social Behaviour* 43: 155-180. [doi:10.1111/jtsb.12011](https://doi.org/10.1111/jtsb.12011) 
-
 Robert M. Fishman and **Omar Lizardo**. "How macro-historical change shapes cultural taste: Legacies of democratization in Spain and Portugal." *American Sociological Review* 78: 213-223.^[Winner of the 2014 Charles Tilly Best Article Award.] [doi:10.1177/0003122413478816](https://doi.org/10.1177/0003122413478816)
-
 Cheng Wang, **Omar Lizardo**, David Hachen, Anthony Strathman, Zoltán Toroczkai, and Nitesh Chawla. "A dyadic reciprocity index for repeated interaction networks." *Network Science* 1: 31-48.^[Inaugural issue.] [doi:10.1017/nws.2012.5](https://doi.org/10.1017/nws.2012.5)
-
 **Omar Lizardo**. "Variety in cultural choice and the activation of social ties." *Social Science Research* 42: 321–330. [doi:10.1016/j.ssresearch.2012.09.014](https://doi.org/10.1016/j.ssresearch.2012.09.014)
 :::
 
 ### 2010–2012
 ::: {.cventry}
 **Omar Lizardo** and Sara Skiles. "Reconceptualizing and theorizing ‘omnivorousness’: Genetic and relational mechanisms." *Sociological Theory* 30: 260-280. [doi:10.1177/0735275112466999](https://doi.org/10.1177/0735275112466999)
-
 **Omar Lizardo**.  "The conceptual bases of metaphors of dirt and cleanliness in moral and non-moral reasoning." *Cognitive Linguistics* 23-2: 367-394. [doi:10.1515/cog-2012-0011](https://doi.org/10.1515/cog-2012-0011)
-
 Troy Raeder, **Omar Lizardo**, David Hachen, and Nitesh V. Chawla. "Predictors of short-term decay of cell phone contacts in a large scale communication network." *Social Networks* 33: 245-257.^[Lead article.] [doi:10.1016/j.socnet.2011.07.002](https://doi.org/10.1016/j.socnet.2011.07.002)
-
 **Omar Lizardo**. "Cultural correlates of ego-network closure."  *Sociological Perspectives* 54: 479-487. [doi:10.1525/sop.2011.54.3.479](https://doi.org/10.1525/sop.2011.54.3.479)
-
 **Omar Lizardo**. "Pierre Bourdieu as a post-cultural theorist."  *Cultural Sociology* 5: 1-22.^[Lead article in a special issue edited by Marco Santoro.] [doi:10.1177/1749975510389714](https://doi.org/10.1177/1749975510389714)
-
-**Omar Lizardo**. "Beyond the antinomies of structure: Levi-Strauss, Giddens, Bourdieu and Sewell."  *Theory and Society* 39:  651-688. \newline [doi:10.1007/s11186-010-9125-1](https://doi.org/10.1007/s11186-010-9125-1)
-
+**Omar Lizardo**. "Beyond the antinomies of structure: Levi-Strauss, Giddens, Bourdieu and Sewell."  *Theory and Society* 39:  651-688.   [doi:10.1007/s11186-010-9125-1](https://doi.org/10.1007/s11186-010-9125-1)
 Jessica Collett and **Omar Lizardo**. 2010. "Occupational status and the experience of anger."  *Social Forces* 88: 2079-2104. [doi:10.1353/sof.2010.0037](https://doi.org/10.1353/sof.2010.0037)
-
 Stephen Vaisey and **Omar Lizardo**. "Can cultural worldviews influence network composition?"  *Social Forces* 88: 1595-1618. [doi:10.1353/sof.2010.0009](https://doi.org/10.1353/sof.2010.0009)
-
-**Omar Lizardo** and Michael Strand. "Skills, toolkits, contexts and institutions: clarifying the relationship between different approaches to  cognition in cultural sociology."  *Poetics: Journal of Empirical Research on Culture, the Media and the Arts* 38: 204-227. [doi:10.1016/j.poetic.2009.11.003](https://doi.org/10.1016/j.poetic.2009.11.003)
+**Omar Lizardo** and Leeloo Strand. "Skills, toolkits, contexts and institutions: clarifying the relationship between different approaches to  cognition in cultural sociology."  *Poetics: Journal of Empirical Research on Culture, the Media and the Arts* 38: 204-227. [doi:10.1016/j.poetic.2009.11.003](https://doi.org/10.1016/j.poetic.2009.11.003)
 :::
 
 ### 2009
 ::: {.cventry}
 **Omar Lizardo**. "Taking representational dualism seriously: Revisiting the Durkheim-Spencer debate on the rise of individualism."  *Sociological Perspectives* 52: 533-555. [doi:10.1525/sop.2009.52.4.533](https://doi.org/10.1525/sop.2009.52.4.533)
-
-**Omar Lizardo** and Michael Strand. "Postmodernism and globalization." *Protosociology: An International Journal of Interdisciplinary Research* [Volume 26](http://www.protosociology.de/Download/ProtoSociology-Vol26-S.pdf): 36-72. [doi:10.5840/protosociology2009263](https://doi.org/10.5840/protosociology2009263)
-
+**Omar Lizardo** and Leeloo Strand. "Postmodernism and globalization." *Protosociology: An International Journal of Interdisciplinary Research* [Volume 26](http://www.protosociology.de/Download/ProtoSociology-Vol26-S.pdf): 36-72. [doi:10.5840/protosociology2009263](https://doi.org/10.5840/protosociology2009263)
 **Omar Lizardo**. "The Devil as cognitive mapping."  *Rethinking Marxism: A Journal of Economics Culture & Society * 21: 605-618. [doi:10.1080/08935690903145838](https://doi.org/10.1080/08935690903145838)
-
 **Omar Lizardo**. "The comparative analysis of organizational forms:  Integrating field and ecological approaches."  *Research in the Sociology of Organizations* 26: 117-151. [doi:10.1108/S0733-558X(2009)0000026007](https://doi.org/10.1108/S0733-558X(2009)0000026007)
-
 Jessica Collett and **Omar Lizardo**. "A power-control theory of gender and religiosity." *Journal for the Scientific Study of Religion* 48: 213-231.^[Featured article (with peer commentary and authors' response).] [doi:10.1111/j.1468-5906.2009.01441.x](https://doi.org/10.1111/j.1468-5906.2009.01441.x)
-
 **Omar Lizardo**. "Is a 'Special Psychology' of Practice Possible? From Values and Attitudes to Embodied Dispositions." *Theory & Psychology* 19: 1-15.^[Lead article on a special issue edited by Lo\"{i]c J. D. Wacquant.} [doi:10.1177/0959354309345891](https://doi.org/10.1177/0959354309345891)
-
 **Omar Lizardo**. "Formalism, behavioral realism and the interdisciplinary challenge in sociological theory." *Journal for the Theory of Social Behaviour*.  39: 39-79. [doi:10.1111/j.1468-5914.2008.00393.x](https://doi.org/10.1111/j.1468-5914.2008.00393.x)
-
 **Omar Lizardo** and Sara Skiles. "Highbrow omnivorousness on the small screen? Cultural industry systems and patterns of cultural choice in Europe." *Poetics: Journal of Empirical Research on Culture, the Media and the Arts* 37: 1-23.^[Lead article.] [doi:10.1016/j.poetic.2008.10.001](https://doi.org/10.1016/j.poetic.2008.10.001)
 :::
 
 ### 2008
 ::: {.cventry}
 **Omar Lizardo**. "The question of culture consumption and stratification revisited." *Sociologica: International Journal for Sociological Debate* 2/2008.^[Featured article (with peer commentary and authors' response).]^[Reprinted in:  Alan Warde (Ed.), *Consumption, Volume IV: Appreciation]. Thousand Oaks: Sage Publications, 2010.* [doi:10.2383/27709](https://www.rivisteweb.it/doi/10.2383/27709) 
-
 **Omar Lizardo**.  "Defining and theorizing terrorism:  A global actor-centered approach." *Journal of World Systems Research* 14: 91-118.^[Lead article.] [doi:10.5195/jwsr.2008.341](https://doi.org/10.5195/jwsr.2008.341)
-
 **Omar Lizardo**. "Understanding the flow of symbolic goods in the global cultural economy."  *International Journal of Contemporary Sociology* 45:  13-34.^[Reprinted in: Alan Warde (Ed.), *Consumption, Volume I: Theoretical and Historical Approaches]. Thousand Oaks: Sage Publications, 2010.* 
-   
 **Omar Lizardo** and Sara Skiles.  "Cultural consumption in the fine and popular arts realms."  *Sociology Compass* 2:  485-502. [doi:10.1111/j.1751-9020.2008.00101.x](https://doi.org/10.1111/j.1751-9020.2008.00101.x)
 :::
 
 ### 2007
 ::: {.cventry}
 **Omar Lizardo**. "Fight Club, or, the cultural contradictions of late capitalism."  *Journal for Cultural Research* 11:  221-243. [doi:10.1177/02632764070240041102](https://doi.org/10.1177/02632764070240041102)
-
 Jeff Larson and **Omar Lizardo**. "Generations, identities and the collective memory of Che Guevara." *Sociological Forum* 22: 425-451. [doi:10.1111/j.1573-7861.2007.00045.x](https://doi.org/10.1111/j.1573-7861.2007.00045.x) 
-
 **Omar Lizardo**. "'Mirror neurons,' collective objects and the problem of transmission:  reconsidering Stephen Turner's critique of practice theory."  *Journal for the Theory of Social Behaviour* 37:  319-350. [doi:10.1111/j.1468-5914.2007.00340.x4](https://doi.org/10.1111/j.1468-5914.2007.00340.x4)
 :::
 
 ### 2006
 ::: {.cventry}
 **Omar Lizardo**. "How cultural tastes shape personal networks." *American Sociological Review* 71:  778-807.^[Winner of the 2008 Clifford Geertz Prize for Best Article.]^[Excerpted and Reprinted in:  Matt Wray (Ed.), *Cultural Sociology: An Introduction]. New York: W.W. Norton, 2013.*^[Summarized in: J\"{o]rg Rössel and Sebastian Weingartner (Eds.), *Key Works of Network Research.* Springer VS, Wiesbaden, 2019.}
-\newline[doi:10.1177/000312240607100504](https://doi.org/10.1177/000312240607100504)
-
+[doi:10.1177/000312240607100504](https://doi.org/10.1177/000312240607100504)
 **Omar Lizardo**. "The effect of economic and cultural globalization on anti-U.S. transnational terrorism 1971-2000." *Journal of World Systems Research* 12:  149-186. [doi:10.5195/jwsr.2006.374](https://doi.org/10.5195/jwsr.2006.374)
-
-**Omar Lizardo**. "The puzzle of women's 'highbrow' culture consumption: Integrating gender and work into Bourdieu's class theory of taste." *Poetics: Journal of Empirical Research on Culture, the Media and the Arts* 34: 1-23.^[Lead article.] xtcolor{uclablue}{*}\footnotetext{*Lead article.} [doi:10.1016/j.poetic.2005.09.0011](https://doi.org/10.1016/j.poetic.2005.09.001)
+**Omar Lizardo**. "The puzzle of women's 'highbrow' culture consumption: Integrating gender and work into Bourdieu's class theory of taste." *Poetics: Journal of Empirical Research on Culture, the Media and the Arts* 34: 1-23.^[Lead article.] ^[Lead article.] [doi:10.1016/j.poetic.2005.09.0011](https://doi.org/10.1016/j.poetic.2005.09.001)
 :::
 
 ### 2003–2005
 ::: {.cventry}
 **Omar Lizardo**.  "Can cultural capital theory be reconsidered in the light of world polity institutionalism? Evidence from Spain." *Poetics:  Journal of Empirical Research on Culture, the Media and the Arts* 33: 81-110.^[Lead article.] [doi:10.1016/j.poetic.2005.02.001](https://doi.org/10.1016/j.poetic.2005.02.001) 
-
 **Omar Lizardo**. "The cognitive origins of Bourdieu's habitus." *Journal for the Theory of Social Behaviour* 34: 375-401. [doi:10.1111/j.1468-5914.2004.00255.x](https://doi.org/10.1111/j.1468-5914.2004.00255.x)
-
 Albert J. Bergesen and **Omar Lizardo**. "International terrorism and the world system." *Sociological Theory* 22: 38-52.^[Reprinted in: P. James and R.R. Sharma (Eds.) *Globalization and Violence], Volume IV. Thousand Oaks: Sage Publications, 2006.*^[Translated (German) and reprinted in: Thorsten Bonacker and Christoph Weller (Eds.) *Konflikte der Weltgesellschaft:  Akteure, Strukturen, Dynamiken].  Frankfurt: Campus Verlag, 2006.* [doi:10.1111/j.1467-9558.2004.00203.x](https://doi.org/10.1111/j.1467-9558.2004.00203.x)
-
 **Omar Lizardo** and Albert J. Bergesen. "Types of terrorism by world system location." *Humboldt Journal of Social Relations* 27: 162-192. [www.jstor.org/stable/23524157](https://www.jstor.org/stable/23524157)
 :::
 
@@ -439,57 +310,36 @@ Albert J. Bergesen and **Omar Lizardo**. "International terrorism and the world 
 ### 2021–2030
 ::: {.cventry}
 **Omar Lizardo**. "Culture and social psychology." Pp. 233–253 in L. Doan, K. A. Hegtvedt and  J. E. Stets (Eds.), *Handbook of Social Psychology: Micro, Meso, and Macro Orientations*. Springer. [doi:10.1007/978-3-031-93138-3_12](https://doi.org/10.1007/978-3-031-93138-3_12)
-
 **Omar Lizardo** and Anthony Shu. "The Cultural environment for innovation and entrepreneurship." Pp. 467-480 in O. Sorenson and P. Thornton (Eds.), *Handbook of Sociology of Innovation and Entrepreneurship*. De Gruyter. [doi:10.1515/9783111085722-026](https://doi.org/10.1515/9783111085722-026)
-
 **Omar Lizardo**. "Cultural tastes and everyday networks." Pp. 54-65 in N. Crossley and P. Widdop (Eds.), *The Handbook of Culture and Social Networks*. Edward Elgar. [doi:10.4337/9781803928784.00010](https://doi.org/10.4337/9781803928784.00010)
-
 **Omar Lizardo**. "Culture and social capital." Pp. 140–156 in R. C\^{o}t\'{e}, S. McDonald and J. Shen (Eds.), *The Handbook of Inequality and Social Capital*. Edward Elgar. [doi:10.4337/9781802202373.00018](https://doi.org/10.4337/9781802202373.00018)
-
 **Omar Lizardo**. "Culture and networks." Pp. 188-201 in P. Carrington, J. McLevey and J. Scott (Eds.), *The SAGE Handbook of Social Network Analysis*. Sage Publications.  [doi:10.4135/9781529682618.i1022](https://doi.org/10.4135/9781529682618.i1022)
-
 James Flamino, Ross DeVito, **Omar Lizardo** and Bolesław K. Szymański. "Modeling memory imprints induced by interactions in social networks." Pp. 186-195 in R. Thomson, C. Dancy and A. Pyke (Eds.), *Social, Cultural, and Behavioral Modeling*. *SBP-BRiMS 2022. Lecture Notes in Computer Science, vol 13558*. Springer, Cham. [doi:10.1007/978-3-031-17114-7_18](https://doi.org/10.1007/978-3-031-17114-7_18)
-
 Brandon Sepulvado, **Omar Lizardo**, Michael Lee Wood, Cheng Wang, David Hachen. "Examining the association between behavioral trajectory similarity clusters in social networks." Pp. 36-55 in G. Giordano, M. L. Restaino and A. Salvini (Eds.)  *Methods and Applications in Social Networks Analysis: Evidence from Collaborative, Governance, Historical and Mobility Networks*. FrancoAngeli [20.500.12657/53211](https://library.oapen.org/handle/20.500.12657/53211)
-
 Seth Abrutyn and **Omar Lizardo**. "Introduction." Pp. 1-13 in S. Abrutyn and O. Lizardo (Eds.) *Handbook of Classical Sociological Theory*. Springer. [doi:10.1007/978-3-030-78205-4_1](https://doi.org/10.1007/978-3-030-78205-4_1)
-
 **Omar Lizardo**. "The cognitive-historical origins of conceptual ambiguity in social theory." Pp. 607-630 in S. Abrutyn and O. Lizardo (Eds.) *Handbook of Classical Sociological Theory*. Springer. [doi:10.1007/978-3-030-78205-4_28](https://doi.org/10.1007/978-3-030-78205-4_28)
 :::
 
 ### 2016–2020
 ::: {.cventry}
 **Omar Lizardo** and Marshall A. Taylor. "Correspondence analysis." In P. Atkinson, S. Delamont, A. Cernat, J. W. Sakshaug, and R. A. Williams (Eds.) *SAGE Research Methods Foundations*. SAGE Publications. [doi:10.4135/9781526421036883300]( http://dx.doi.org/10.4135/9781526421036883300 )
-
 **Omar Lizardo**. "Pierre Bourdieu as cognitive sociologist." Pp. 65-80 in W. H. Brekhus and G. Ignatow (Eds.), *The Oxford Handbook of Cognitive Sociology*. Oxford University Press. [doi:10.1093/oxfordhb/9780190273385.013.4](https://doi.org/10.1093/oxfordhb/9780190273385.013.4)
-
 **Omar Lizardo**. "Bourdieu, distinction, and aesthetic consumption." Pp.  179–194 in F. F. Wherry and I. Woodward (Eds.), *The Oxford Handbook of Consumption*. Oxford University Press. [doi:10.1093/oxfordhb/9780190695583.013.7]( https://doi.org/10.1093/oxfordhb/9780190695583.013.7)
-
 **Omar Lizardo**. "Culture and stratification." Pp. 198-206 in J. R. Hall, L. Grindstaff and M-C. Lo (Eds.), *Routledge Handbook of Cultural Sociology, 2nd Edition*. Routledge. [doi:10.4324/9781315267784-22](http://dx.doi.org/10.4324/9781315267784-22 )
-
 Elliot Weininger and **Omar Lizardo**. "Introduction." In E. Weininger, A. Lareau and O. Lizardo (Eds.), *Ritual, Emotion, Violence: Studies on the Micro-Sociology of Randall Collins.* Routledge. 
-
 Ashwin Bahulkar, Bolesław K. Szymański, Kevin Chan and **Omar Lizardo**. "Co-evolution of two networks representing different social relations in NetSense." Pp. 423-434 in H. Cherifi, S. Gaito, W. Quattrociocchi and A. Sala (Eds.)  *Complex Networks & Their Applications V: Proceedings of the 5th International Workshop on Complex Networks and Their Applications (COMPLEX NETWORKS 2016)*. Cham, Switzerland: Springer. [doi:10.1007/978-3-319-50901-3_34](https://doi.org/10.1007/978-3-319-50901-3_34)
-
 Bolesław K. Szymański, **Omar Lizardo**, Casey Doyle, Panagiotis D. Karampourniotis, Pramesh Singh, Gyorgy Korniss, and Jonathan Z. Bakdash. "The spread of opinions in societies." Pp. 61-84 in J. V. Cohn, S. Schatz, H. Freeman and D. J. Y. Combs (Eds.), *Modeling Sociocultural Influences on Decision Making: Understanding Conflict, Enabling Stability.* CRC Press. [doi:10.1201/9781315369587-14](http://dx.doi.org/10.1201/9781315369587-14)
-
-**Omar Lizardo**. "Cultural theory." Pp. 99-120 in S. Abrutyn (Ed.), *Handbook of Contemporary Sociological Theory.* Springer. \newline[doi:10.1007/978-3-319-32250-6_6](https://doi.org/10.1007/978-3-319-32250-6_6)
+**Omar Lizardo**. "Cultural theory." Pp. 99-120 in S. Abrutyn (Ed.), *Handbook of Contemporary Sociological Theory.* Springer.  [doi:10.1007/978-3-319-32250-6_6](https://doi.org/10.1007/978-3-319-32250-6_6)
 :::
 
 ### 2002–2015
 ::: {.cventry}
 **Omar Lizardo** and Sara Skiles. "After omnivorousness: Is Bourdieu still relevant?"  Pp. 90-103 in L. Hanquinet and M. Savage (Eds.), *Routledge International Handbook of the Sociology of Art and Culture*. Routledge. [doi:10.4324/9780203740248.ch5](https://www.routledgehandbooks.com/doi/10.4324/9780203740248.ch5)
-
 David Galehouse, Tommy Nguyen, Sameet Sreenivasan, **Omar Lizardo**, Gyorgy Korniss and Bolesław K. Szymański. "Impact of network connectivity and agent commitment on spread of opinions in social networks." Pp. 149-160 in S. Schatz, J. Cohn and D. Nicholson (Eds.) *Advances in Cross-Cultural Decision Making*. CRC Press. 
-
 **Omar Lizardo**. "Embodied culture as procedure: Cognitive science and the link between subjective and objective culture." Pp. 70-86 in A. Warde and D. Southerton (Eds.), *The Habits of Consumption: COLLeGIUM: Studies Across Disciplines in the Humanities and Social Sciences*, Volume 12. Helsinki Collegium of Advanced Studies. [http://hdl.handle.net/10138/34223](http://hdl.handle.net/10138/34223)
-
 **Omar Lizardo**. "Jean Piaget: Sociology beyond holism and individualism." Pp. 315-322 in C. Edling and J. Rydgren (Eds.), *Sociological Insights of Great Thinkers: Sociology through Literature, Philosophy, and Science*. Praeger. 
-
 **Omar Lizardo**. "Culture and stratification."  Pp. 305-315 in J. R. Hall, L. Grindstaff and M-C. Lo (Eds.), *Handbook of Cultural Sociology*. Routledge. [doi:10.4324/9780203891377.ch29](https://www.routledgehandbooks.com/doi/10.4324/9780203891377.ch29)
-
 Albert J. Bergesen and **Omar Lizardo**. "Terrorism and hegemonic decline." Pp. 227-240 in J. Friedman and C. Chase-Dunn (Eds.), *Hegemonic Decline: Present and Past*. Paradigm Publishers. [doi:0.4324/9781315634173](https://doi.org/10.4324/9781315634173) 
-
 Albert J. Bergesen and **Omar Lizardo**. "Terrorism and world system theory." Pp. 9-23 in Ryszard Stemplowski (Ed.), {*Transnational Terrorism in the World System Perspective*}. The Polish Institute of International Affairs.^[Translated (Polish) and reprinted as:  Albert J. Bergesen and **Omar Lizardo]. 2002.  "Terroryzm a teoria systemu swiatowego (world-system)." *Polski Przeglad Dyplomatyczny** 2:  15-31.*
 :::
 
@@ -497,70 +347,45 @@ Albert J. Bergesen and **Omar Lizardo**. "Terrorism and world system theory." Pp
 ### 2016–Present
 ::: {.cventry}
 **Omar Lizardo**. "Cognitive sociology in the United States: Conversations with Omar Lizardo." *Dans Gen\'{e*ses} 4(125): 95-111.^[Translated from English to French by Wilfried Lignier.] [doi:10.3917/gen.125.0095](https://doi.org/10.3917/gen.125.0095).
-
 **Omar Lizardo**. "Classes and classification: Comment on Chan, Flemmen, Jarness and Roselund" *British Journal of Sociology* 70: 906-913. [doi:10.1111/1468-4446.12654](https://doi.org/10.1111/1468-4446.12654).
-
 Sarah Mustillo, **Omar Lizardo** and Rory McVeigh. "Editors' comment: A few guidelines for quantitative submissions." *American Sociological Review* 83: 1281–1283. [doi:10.1177/0003122418806282](https://doi.org/10.1177/0003122418806282).
-
 Dustin S. Stoltz and **Omar Lizardo**. "Four Questions for Omar Lizardo." *Culture: Newsletter of the Sociology of Culture Section of the American Sociological Association*  30(3). [https://asaculturesection.org/2018/11/30](https://asaculturesection.org/2018/11/30/four-questions-for-omar-lizardo/)
-
 **Omar Lizardo**. "Social theory tomorrow: A collaborative miniaturism proposal." *Culture: Newsletter of the Sociology of Culture Section of the American Sociological Association*  30(1). [https://asaculturesection.org/2018/03/19](https://asaculturesection.org/2018/03/19/symposium-on-social-theory-now-social-theory-tomorrow-a-collaborative-miniaturism-proposal/)
-
-**Omar Lizardo**. "Publishing theory at *ASR*." *Perspectives: Newsletter of the ASA Theory Section* 39(1). \newline [https://www.asanet.org/news_item/publishing-theory-asr/](https://www.asanet.org/news_item/publishing-theory-asr/)
-
+**Omar Lizardo**. "Publishing theory at *ASR*." *Perspectives: Newsletter of the ASA Theory Section* 39(1).   [https://www.asanet.org/news_item/publishing-theory-asr/](https://www.asanet.org/news_item/publishing-theory-asr/)
 **Omar Lizardo**, Rory McVeigh and Sarah Mustillo. "Meeting the challenges of a 21st century flagship journal: Sustaining excellence, upgrading the process, and expanding the range." *American Sociological Review*. 81: 1-3. [doi:10.1177/0003122415620404](https://doi.org/10.1177/0003122415620404).
 :::
 
 ### 2011–2014
 ::: {.cventry}
 Jessica Collett and **Omar Lizardo**. "Localizing cultural phenomena by specifying social psychological mechanisms: Introduction to the special issue." *Social Psychology Quarterly* 77: 95-99. [doi:10.1177/0190272514529409](https://doi.org/10.1177/0190272514529409).
-
 **Omar Lizardo**. "Foreword." Pp. vii-xii in Adam Isaiah Green (Ed.), *Sexual Fields: Toward a Sociology of Collective Sexual Life*. The University of Chicago Press.
-
 **Omar Lizardo**. "Beyond the Comtean schema: The sociology of culture and cognition versus cognitive social science."  *Sociological Forum* 29: 983–989. [doi:10.1111/socf.12130](https://doi.org/10.1111/socf.12130).
-
 **Omar Lizardo**. "Theorizing and cognitive science." *Perspectives: Newsletter of the ASA Theory Section* 36(1).
-
 **Omar Lizardo**.  "Social psychological processes as mechanisms for the explanation of cultural phenomena." *Culture: Newsletter of the Sociology of Culture Section of the American Sociological Association* 26(1): Spring 2013. [https://asaculturesection/2013a_spring.pdf](https://asaculturesection.files.wordpress.com/2018/03/2013a_spring.pdf)
-
 **Omar Lizardo**. "What young people should know about theory and theorizing today." *Perspectives: Newsletter of the ASA Theory Section* 34(2).
-
 **Omar Lizardo** and Terence McDonnell. "Culture warriors: Cultural sociology at Notre Dame University." *Culture: Newsletter of the Sociology of Culture Section of the American Sociological Association* 25(3).  [https://asaculturesection/2012c_fall.pdf](https://asaculturesection.files.wordpress.com/2018/03/2012c_fall.pdf)
-
 **Omar Lizardo**.  "Analytical sociology’s superfluous revolution: Comment on Little." *Sociologica: International Journal for Sociological Debate* 1/2012. [doi: 10.2383/36902](https://www.rivisteweb.it/doi/10.2383/36902)
- 
 **Omar Lizardo**. "The three phases of Bourdieu's American reception:  Comment on Lamont."  *Sociological Forum* 27: 238-244. [doi: 10.1111/j.1573-7861.2011.01310.x](https://doi.org/10.1111/j.1573-7861.2011.01310.x).
 :::
 
 ### 2008–2010
 ::: {.cventry}
 **Omar Lizardo**.  "The Problem of the Cultural Determination of Cognition in Institutional Theory." *Culture :Newsletter of the Sociology of Culture Section of the American Sociological Association* 24(2).
-
 **Omar Lizardo** and Jessica Collett.  "Rescuing the Baby from the Bathwater: Continuing the Conversation on Gender, Risk, and Religiosity." *Journal for the Scientific Study of Religion*. 48: 256-259. [doi: 10.1111/j.1468-5906.2009.01445.x](https://doi.org/10.1111/j.1468-5906.2009.01445.x)
-
- **Omar Lizardo**.  2009. "Letter to the editor."  *Harvard Business Review* 87: 106.
-
- **Omar Lizardo**.  2008. "Comments to the editor."  *Sociological Forum* 23: 850-851.
-
- **Omar Lizardo**. "The question of culture consumption and stratification revisited: A response to the Comments." *Sociologica: International Journal for Sociological Debate* 2/2008. [doi:10.2383/27736](https://www.rivisteweb.it/doi/10.2383/27736) 
- 
- **Omar Lizardo**.  "Three cheers for unoriginality: Comment on John Goldthorpe." *Sociologica: International Journal for Sociological Debate* 1/2008. [doi:10.2383/26580](https://www.rivisteweb.it/doi/10.2383/26580)
+**Omar Lizardo**.  2009. "Letter to the editor."  *Harvard Business Review* 87: 106.
+**Omar Lizardo**.  2008. "Comments to the editor."  *Sociological Forum* 23: 850-851.
+**Omar Lizardo**. "The question of culture consumption and stratification revisited: A response to the Comments." *Sociologica: International Journal for Sociological Debate* 2/2008. [doi:10.2383/27736](https://www.rivisteweb.it/doi/10.2383/27736) 
+**Omar Lizardo**.  "Three cheers for unoriginality: Comment on John Goldthorpe." *Sociologica: International Journal for Sociological Debate* 1/2008. [doi:10.2383/26580](https://www.rivisteweb.it/doi/10.2383/26580)
 :::
 
 ## Encyclopedia Entries
 ::: {.cventry}
 **Omar Lizardo**. 2026. "Culture and inequality." In Lynette Spillman (Ed.) *The Oxford Research Encyclopedia of Sociology*. Oxford University Press. [doi: 10.1093/acrefore/9780197791295.013.ORE_SOC-00108.R2](https://doi.org/10.1093/acrefore/9780197791295.013.ORE_SOC-00108.R2) 
-
 **Omar Lizardo**. 2015. "Culture, cognition and embodiment." In James D. Wright (Ed.) *International Encyclopedia of the Social and Behavioral Sciences*. Elsevier. [doi:10.1016/B978-0-08-097086-8.10442-8](https://doi.org/10.1016/B978-0-08-097086-8.10442-8)
-
 **Omar Lizardo**. 2013. "Habitus."  In Byron Kaldis (Ed.) *Encyclopedia of Philosophy and the Social Sciences*. Thousand Oaks: Sage Publications. 
-
 **Omar Lizardo**. 2011. "Cultural capital."  In Dale Southerton(Ed.), *Encyclopedia of Consumer Culture*.  Thousand Oaks: Sage Publications. 
-
 **Omar Lizardo**. 2006. "Foreign terrorism." In James Ciment (Ed.), *Social Issues in America: An Encyclopedia*. New York: M.E. Sharpe. 
-
 **Omar Lizardo**. 2006. "Relational cohesion theory." In George Ritzer (Ed.), *Encyclopedia of Sociology*. New York: Blackwell. [doi:10.1002/9781405165518.wbeosr045](https://doi.org/10.1002/9781405165518.wbeosr045)
-
 **Omar Lizardo**. 2006. "Peter Blau." In George Ritzer (Ed.), *Encyclopedia of Sociology*. New York: Blackwell.  [doi:10.1002/9781405165518.wbeosb031](https://doi.org/10.1002/9781405165518.wbeosb031)
 :::
 
@@ -568,38 +393,23 @@ Jessica Collett and **Omar Lizardo**. "Localizing cultural phenomena by specifyi
 ### 2020–Present
 ::: {.cventry}
 "Review of: Pierre Bourdieu’s Political Economy of Being by Ghassan Hage." *Journal of Anthropological Research*.
-
 "Solving the problem of the permanent social: On Isaac Ariail Reed's Power in Modernity." (Review of: Power in Modernity Agency Relations and the Creative Destruction of the King’s Two Bodies by Isaac Ariail Reed.) *American Journal of Cultural Sociology*  11: 480–485 [doi:10.1057/s41290-022-00156-3](https://doi.org/10.1057/s41290-022-00156-3).
-
 "Review of: Model Cases: On Canonical Research Objects and Sites by Monika Krause." *British Journal of Sociology* 73: 654-656. [doi:10.1111/1468-4446.12937](https://doi.org/10.1111/1468-4446.12937). 
-
 "Review of: Symbolic Violence: Conversations with Bourdieu by Michael Burawoy." *American Journal of Sociology* 127: 1366–1369. [doi:10.1086/717638](https://doi.org/10.1086/717638).
 :::
 
 ### 2011–2019
 ::: {.cventry}
-\begin{sloppypar}
 "Review of: Contested Tastes: Foie Gras and the Politics of Food by Michaela DeSoucey." *Administrative Science Quarterly* 62: NP31-NP34. [doi:10.1177/0001839217700127](https://doi.org/10.1177/0001839217700127)
-\end{sloppypar}
-
 ""A collective object for the sociology of morality project: Review essay on The Moral Background by Gabriel Abend." *Contemporary Sociology* 39: 199-204.  [doi:10.1177/0094306116629409a](https://doi.org/10.1177/0094306116629409a)
-
 "Review of: Still Connected: Family and Friends in American Since 1970 by Claude S. Fischer." *Social Forces* 93: e103. [doi:10.1093/sf/sos158](https://doi.org/10.1093/sf/sos158)
-
 "Review of: Status, Power and Ritual Interaction: A Relational Reading of Durkheim, Goffman and Collins by Theodore D. Kemper." *Perspectives: Newsletter of the ASA Theory Section* 35(1).
-
 "Review of: Reframing the Social: Emergentist Systemism and Social Theory by Poe Yu-Ze Wan." *Science & Education* 22: 1295-1297. [doi:10.1007/s11191-012-9518-9](https://doi.org/10.1007/s11191-012-9518-9)
-
 "Review of: The Legacy of Pierre Bourdieu: Critical Essays Edited by Simon Susen and Bryan S. Turner." *Contemporary Sociology* 42: 427-428. [doi: 10.1177/0094306113484702dd](https://doi.org/10.1177/0094306113484702dd)
-
 "Review of: Interpretation and Social Knowledge by Isaac Ariail Reed." *American Journal of Sociology* 118: 497-499. [doi:10.1086/666312](https://doi.org/10.1086/666312)
-
 "Review of: Making the Social World: The Structure of Human Civilization by John R. Searle." *Journal of World Systems Research* 18: 290-292. [doi:10.5195/jwsr.2012.476](https://doi.org/10.5195/jwsr.2012.476)
-
 "The resilience of life: On Simmel's last testament (Review of: The View of Life by Georg Simmel.)" *Contemporary Sociology* 41: 302-304. [doi: 10.1177/0094306112443518c](https://doi.org/10.1177/0094306112443518c)
-
  "Georg Simmel: Life, self, culture and society: A review of the conference."  *Perspectives: Newsletter of the ASA Theory Section* 33(2).
-
 "Review of:  Spiritual Economies: Islam, Globalization, and the Afterlife of Development by Daromir Rudnyckyj." *Administrative Science Quarterly* 56: 485-489. [doi:10.1177/0001839212437698](https://doi.org/10.1177/0001839212437698)
 :::
 
@@ -607,19 +417,12 @@ Jessica Collett and **Omar Lizardo**. "Localizing cultural phenomena by specifyi
 ::: {.cventry}
 "Review of: Global Rebellion: Religious Challenges to the Secular State, From Christian Militias to Al Qaeda by Mark Juergensmeyer." *International Journal of Comparative Sociology* 51: 396-400. [doi:10.1177/00207152100510050405](https://doi.org/10.1177/00207152100510050405
 )
-
 "Review of: Social Structures by John Levi Martin" *Sociologica: International Journal for Sociological Debate* 8. [doi: 10.2383/32721](http://www.rivisteweb.it/doi/10.2383/32721).
-
 "Review of: Exotic Commodities: Modern Objects and Everyday Life in China by Frank Dikotter." *American Journal of Sociology* 114: 530-532. [doi:10.1086/595592](https://doi.org/10.1086/595592)
-
 "Review of: Organs without Bodies: On Deleuze and Consequences by Slavoj Zizek." *Theory, Culture and Society* 24:  142-146.  [doi:10.1177/02632764070240041102](https://doi.org/10.1177/02632764070240041102)
-
 **Omar Lizardo**. "Review of: Cities, War, and Terrorism: Towards an Urban Geopolitics edited by Stephen Graham." *International Sociology* 22:  595-599.  [doi:10.1177/02685809070220050703](https://doi.org/10.1177/02685809070220050703)
-
 "Review of: Sovereign Bodies: Citizens, Migrants, and States in the Postcolonial World edited by Thomas Blom Hansen and Finn Stepputat." *Journal of World Systems Research* 12:  203-207. [doi:10.5195/jwsr.2006.378](https://doi.org/10.5195/jwsr.2006.378)
-
 "Review of: The Emerging Monoculture: Assimilation and the 'Model Minority' edited by Eric Mark Kramer."  *Contemporary Sociology* 33: 422-424. [doi:10.1177/009430610403300412](https://doi.org/10.1177/009430610403300412)
-
 "Review of: The Empire of Disorder by Alain Joxe." *Journal of World Systems Research* 9: 174-177. [doi: 10.5195/jwsr.2003.252](https://doi.org/10.5195/jwsr.2003.252)
 :::
 
@@ -627,66 +430,38 @@ Jessica Collett and **Omar Lizardo**. "Localizing cultural phenomena by specifyi
 ::: {.cventry}
 Matteo Serafino, G. Virginio Clemente, James Flamino, Bolesław K. Szymański, **Omar Lizardo** and Hernán A. Makse. "Analysis of flows in social media uncovers a new
 multi-step model of information spread." [arXiv:2409.01225](https://arxiv.org/abs/2409.01225).
-
 Mateusz Nurek, Joanna Kołaczek, Radosław Michalski, Bolesław K. Szymański and **Omar Lizardo**. "CoDiNG – Naming game with continuous latent state of agents." [arXiv:2406.19204](https://arxiv.org/abs/2406.19204).
-
 James Flamino, Ross DeVito, **Omar Lizardo** and Bolesław K. Szymański. "Modeling memory imprints induced by interactions in social networks." [arXiv:2101.09417](https://arxiv.org/abs/2101.09417).
-
 James Flamino, Ross DeVito, Bolesław K. Szymański and **Omar Lizardo**. "A machine learning approach to predicting continuous tie strengths." [arXiv:2101.09417](https://arxiv.org/abs/2101.09417).
-
 Mateusz Nurek, Radosław Michalski, **Omar Lizardo** and Marian-Andrei Rizoiu. "Predicting Relationship Labels and Individual Personality Traits from Telecommunication History in Social Networks using Hawkes Processes." [arXiv:2009.02032](https://arxiv.org/abs/2009.02032).
-
 Shikang Liu, David Hachen, **Omar Lizardo**, Christian Poellabauer, Aaron Striegel and Tijana Milenkovic. "The power of dynamic social networks to predict individuals' mental health." [arXiv:1908.02614](https://arxiv.org/abs/1908.02614).
-
 Shikang Liu, Fatemeh Vahedian, David Hachen, **Omar Lizardo**, Christian Poellabauer, Aaron Striegel and Tijana Milenkovic. "Heterogeneous network approach to predict individuals' mental health." [arXiv:1906.04346](https://arxiv.org/abs/1906.04346).
-
 Radosław Michalski, Bolesław K. Szymański, Przemysław Kazienko, Christian Lebiere, **Omar Lizardo** and Marcin Kulisiewicz. "Social networks through the prism of cognition." [arXiv:1806.04658](https://arxiv.org/abs/1806.04658).
-
 Louis Faust, Priscilla Jim\'{e}nez, David Hachen, **Omar Lizardo**, Aaron Striegel, and Nitesh V. Chawla. "Long-term compliance habits: What early data tells us." [arXiv:1804.04256](https://arxiv.org/abs/1804.04256).
-
 Ashwin Bahulkar, Bolesław K. Szymański, Nitesh Chawla, **Omar Lizardo** and Kevin Chan. "Influence of Personal Preferences on Link Dynamics in Social Networks." [arXiv:1709.07401](https://arxiv.org/abs/1709.07401).
-
 Ashwin Bahulkar, Bolesław K. Szymański, **Omar Lizardo**, Yuxiao Dong, Yang Yang and Nitesh V. Chawla. "Analysis of link formation, persistence and dissolution in NetSense Data." [arXiv:1611.00568](https://arxiv.org/abs/1611.00568).
-
 Yang Yang, **Omar Lizardo**, Dong Wang, Yuxiao Dong, Aaron D. Striegel, David Hachen, and Nitesh V. Chawla. "Gender differences in communication behaviors, spatial proximity patterns, and mobility habits." 2016. [arXiv:1607.06740](https://arxiv.org/abs/1607.06740).
-
 Yuxiao Dong, **Omar Lizardo**, Nitesh V. Chawla. "Do the young live in a 'smaller world' than the old? Age-specific degrees of separation in a large-scale Mobile communication network." [arXiv:1606.07556](https://arxiv.org/abs/1606.07556).
-
  Cheng Wang, Anthony Strathman, **Omar Lizardo**, David Hachen, Zoltan Toroczkai and Nitesh V. Chawla. "Weighted reciprocity in human communication networks." [arXiv:1108.2822](https://arxiv.org/abs/1108.2822).
-
 Troy Raeder, **Omar Lizardo**, David Hachen and Nitesh V. Chawla. "Predictors of short-term decay of cell phone contacts in a large scale communication network." [arXiv:1102.1753](https://arxiv.org/abs/1102.1753).
 :::
 
 ## SocArXiv e-prints
 ::: {.cventry}
 Travis Ashby, **Omar Lizardo**, Dustin S. Stoltz, and Michael L. Wood. "The raw and the (over)cooked states are physical qualities." [https://doi.org/10.31235/osf.io/h5nuq](https://doi.org/10.31235/osf.io/h5nuq).
-
 Dustin S. Stoltz, Marshall A. Taylor and **Omar Lizardo**. "Functionaries: Institutional theory without institutions." *SocArXiv preprint* [https://doi.org/10.31235/osf.io/p48ft](https://doi.org/10.31235/osf.io/p48ft).
-
-Michael Strand and **Omar Lizardo**. "Chance, orientation, and interpretation: Max Weber’s neglected probabilism and the future of social theory." [https://doi.org/10.31235/osf.io/dsy4j](https://doi.org/10.31235/osf.io/dsy4j).
-
+Leeloo Strand and **Omar Lizardo**. "Chance, orientation, and interpretation: Max Weber’s neglected probabilism and the future of social theory." [https://doi.org/10.31235/osf.io/dsy4j](https://doi.org/10.31235/osf.io/dsy4j).
 **Omar Lizardo**. "Habit and the explanation of action." [https://doi.org/10.31235/osf.io/7fdz8](https://doi.org/10.31235/osf.io/7fdz8).
-
 **Omar Lizardo**. "An Analytic Approach to Culture." [https://doi.org/10.31235/osf.io/62xbd](https://doi.org/10.31235/osf.io/62xbd).
-
 **Omar Lizardo** and Isaac Jilbert. 2022. "Organizations and the structure of culture." [https://doi.org/10.31235/osf.io/75phj](https://doi.org/10.31235/osf.io/75phj).
-
 Seth Abrutyn and **Omar Lizardo**. "A motivational theory of roles, rewards, and institutions." [https://doi.org/10.31235/osf.io/eu792](https://doi.org/10.31235/osf.io/eu792).
-
 **Omar Lizardo**, Brandon Sepulvado, Dustin S. Stoltz, and Marshall A. Taylor. "What can cognitive neuroscience do for Cultural Sociology?" [doi:10.31235/osf.io/zuyvf](https://doi.org/10.31235/osf.io/zuyvf)
-
 **Omar Lizardo** "Pierre Bourdieu as Cognitive Sociologist." [doi:10.31235/osf.io/9fb6h](https://doi.org/10.31235/osf.io/9fb6h)
-
 **Omar Lizardo** "The mutual specification of genres and audiences: reflective two-mode centralities in person-to-culture Data." [doi:10.31235/osf.io/nrbsa](https://doi.org/10.31235/osf.io/nrbsa)
-
 Dustin S., Stoltz and **Omar Lizardo**. "Deliberate trust and intuitive faith: A Dual-Process Model of reliance." [https://doi.org/10.31235/osf.io/9kpmz](https://doi.org/10.31235/osf.io/9kpmz).
-
 **Omar Lizardo**. "Cultural theory." [https://doi.org/10.31235/osf.io/erf4v](https://doi.org/10.31235/osf.io/erf4v).
-
 **Omar Lizardo**. "Omnivorousness as the bridging of cultural holes: A measurement strategy." [doi:10.31235/osf.io/x9r3c](https://doi.org/10.31235/osf.io/x9r3c)
-
 **Omar Lizardo**. "The end of theorists: The relevance, opportunities, and pitfalls of theorizing in Sociology today." *SocArXiv preprint*. [doi:10.31235/osf.io/3ws5f](https://doi.org/10.31235/osf.io/3ws5f)
-
 **Omar Lizardo**. "Social constructivism and theories of reference." [doi:10.31235/osf.io/x7jqg](https://doi.org/10.31235/osf.io/x7jqg)
 :::
 
@@ -694,285 +469,165 @@ Dustin S., Stoltz and **Omar Lizardo**. "Deliberate trust and intuitive faith: A
 ### 2021–Present
 ::: {.cventry}
 "The future of Sociology as a discipline." Presidential Plenary,  Annual Meeting of the Southern Sociological Society, Charlotte, NC, 2025.
-
 "Publishing in top disciplinary journals in Sociology." Professional Development Workshop, McGill Desautels Faculty of Management, Montreal, 2024.
-
 "Professional taste: Omnivorousness, empathy, and possibility in the structure of evaluation." 
-
-    \setlength-sep{-0.55em}
-        - *Northwestern Sociology Colloquium Speaker Series*, Northwestern University, Evanston, IL, 2025.
-        - *Seminar Series of the Institute for Analytical Sociology*, Norrköping, Sweden, 2024 (Remote).
-        - *McGill Desautels Faculty of Management Speaker Series*, McGill University, Montreal, 2024.
-        - *UCSD's Sociology Colloquium Speaker Series*, University of California, San Diego, CA, 2024. 
-
+ - *Northwestern Sociology Colloquium Speaker Series*, Northwestern University, Evanston, IL, 2025.
+ - *Seminar Series of the Institute for Analytical Sociology*, Norrköping, Sweden, 2024 (Remote).
+ - *McGill Desautels Faculty of Management Speaker Series*, McGill University, Montreal, 2024.
+ - *UCSD's Sociology Colloquium Speaker Series*, University of California, San Diego, CA, 2024. 
 "Coasting on duality: What we get when we do two-mode (network) CA." 
-
-    \setlength-sep{-0.55em}
-        - *Wolfwebs Speaker Series*, North Carolina State University, Raleigh, NC, 2024. 
-	- *Duality@50 Workshop: Making progress and looking forward*, Hotel and Congress Center Monte Veritá Ascona, Switzerland, 2024.
-
+ - *Wolfwebs Speaker Series*, North Carolina State University, Raleigh, NC, 2024. 
+ - *Duality@50 Workshop: Making progress and looking forward*, Hotel and Congress Center Monte Veritá Ascona, Switzerland, 2024.
 "The past, present, and future of culture and cognition work in Sociology." *Conference on What is the Future of Culture and Cognition?* Rutgers University, New Brunswick, NJ, 2023 (remote). 
-
 "Omnivorous taste as category-mediated performance."  
-
-    \setlength-sep{-0.55em}
-        - {Sociology Department Seminar Series}, John Hopkins University, Baltimore, MD, 2023.
-	- *FSU Sociology Colloquium Series*, Florida State University, Tallahassee, FL, 2023.
- 	- *Yale Computational Social Science Workshop*, Yale University, New Haven, CT, 2022.
-
+ - {Sociology Department Seminar Series}, John Hopkins University, Baltimore, MD, 2023.
+ - *FSU Sociology Colloquium Series*, Florida State University, Tallahassee, FL, 2023.
+ - *Yale Computational Social Science Workshop*, Yale University, New Haven, CT, 2022.
 "Between Embodiment and Categorization: The 'omnivore thesis' revisited." *Joint Degree Program in Social Policy, Dilemmas of Inequality Lecture/Workshop Series*, Princeton University, Princeton, NJ, 2022. 
-
 Panelist, Roundtable on "Cultural Change and Democracy." *Twenty-Eighth International Conference of Europeanists*, Lisbon, Portugal, 2022. 
-
 Panelist, Author Meets Critics/Book, Power in Modernity: Agency Relations and the Creative Destruction of the King's Two Bodies by Isaac Ariail Reed. *Annual Meeting of the Social Science History Association*, Philadelphia, PA, 2021.
-
 "The structures of taste: The 'omnivore thesis' revisited." *Sociology Department Colloquium Series, University of Texas, Austin*, 2021 (remote). 
-
 "Discovering microgenre communities in survey data on cultural practices." *University of Notre Dame Sociology Department Culture Workshop*, 2021 (remote).
-
 "What's wrong with social psychology?" *Virtual Annual Meeting of the American Sociological Association*, 2021 (remote).
-
 "Inspired by: Pierre Bourdieu (1980, 1983, 1985)." *Virtual Miniconference on the Social Logic of the Demand and Supply of Authenticity*, 2021 (remote).
 :::
 
 ### 2018–2020
 ::: {.cventry}
 "Concluding Remarks." *Cognition & Migration workshop*, Paris, France, 2020 (remote).
-
 "Incubators or diffusers? Examining the dynamic coupling of context and social ties across multiple foci." *University of Arizona School of Sociology Brown Bag Series*,  2020 (remote).
-
 "Linking social position and schematic disposition." *University of Michigan Sociology Department Colloquium*, Ann Arbor, MI, 2020.
-
 "Conceptualizing culture in the social sciences: An analytic approach."
-
-	\setlength-sep{-0.55em}
-	- *Berkeley Haas Culture Conference*, Haas School of Business, University of California, Berkeley, Berkely, CA, 2020.
-	- *Diverse Intelligences Summer Institute*, St. Andrews, Scotland, 2019.
-
+ - *Berkeley Haas Culture Conference*, Haas School of Business, University of California, Berkeley, Berkely, CA, 2020.
+ - *Diverse Intelligences Summer Institute*, St. Andrews, Scotland, 2019.
 Panelist, *Network Ecology Mini-Conference*. Stanford University, Palo Alto, CA, 2019.
-
 "Cultural units beyond representation." *Diverse Intelligences Summer Institute*, St. Andrews, Scotland, 2019.
-
 "Discovering taste communities in survey data."
-
-	\setlength-sep{-0.55em}
-	- *University of Notre Dame, Department of Sociology Culture Workshop* (virtual), 2021.
-	- *University of Arizona School of Sociology Brown Bag Series*,  Tucson, AZ, 2019. 
-    -*Jensen Lecture Series*, Department of Sociology, Duke University, Durham, North Carolina, 2018.
-    -Keynote Address, *Understanding Everyday Participation Project Closing Conference*, Manchester, UK, 2018.
-
+ - *University of Notre Dame, Department of Sociology Culture Workshop* (virtual), 2021.
+ - *University of Arizona School of Sociology Brown Bag Series*,  Tucson, AZ, 2019. 
+ -*Jensen Lecture Series*, Department of Sociology, Duke University, Durham, North Carolina, 2018.
+ -Keynote Address, *Understanding Everyday Participation Project Closing Conference*, Manchester, UK, 2018.
 "Dual process models in social psychology and cultural sociology: Implications for the study of trust." Heidelberg Center for American Studies, Heidelberg University, Heidelberg, Germany, 2018. 
-
 "Examining the link between different tie properties in ego networks." 
-    
-    \setlength-sep{-0.55em}
-    - Sociology Department Colloquium, Emory University, Atlanta, GA, 2019.
-	- Department of Sociology and The Mitchell Centre for Social Network Analysis, University of Manchester, Manchester, UK, 2018.
-
+ - Sociology Department Colloquium, Emory University, Atlanta, GA, 2019.
+ - Department of Sociology and The Mitchell Centre for Social Network Analysis, University of Manchester, Manchester, UK, 2018.
 "Social position and the complexity of schemas for cultural objects." *Brandeis University Sociology Department Colloquium*, Waltham, MA, 2018.
 :::
 
 ### 2015–2017
 ::: {.cventry}
 "Institutional movement logics and the changing shape of the U.S. social movement field, 1960–1995,"
-    
-    	\setlength-sep{-0.55em}
-        - *Workshop on Social Organization*, Department of Sociology, Princeton University, Princeton, New Jersey, 2017.
-        - *Culture and Politics Workshop*, Department of Sociology at the University of North Carolina Chapel Hill, Chapel Hill, North Carolina, 2017.
-
+ - *Workshop on Social Organization*, Department of Sociology, Princeton University, Princeton, New Jersey, 2017.
+ - *Culture and Politics Workshop*, Department of Sociology at the University of North Carolina Chapel Hill, Chapel Hill, North Carolina, 2017.
 Panelist, *Conference on Networks and Culture*. Stanford University Graduate School of Business, Palo Alto, CA, 2017.
-
 "Publishing theory at *ASR*." Invited panel on *How to Publish in Theory* Annual Meeting of the American Sociological Association, Montreal, Canada, 2017. 
-
 *Thematic Session on Boundaries and Fields*. Annual Meeting of the American Sociological Association, Montreal, Canada, 2017. 
-
 "A procedural theory of culture." 
-	
-	\setlength-sep{-0.55em}
-    	- Department of Sociology at the University of North Carolina Chapel Hill Colloquium Series, Chapel Hill, North Carolina, 2017.
-    	- Department of Sociology at the University of Illinois at Chicago Colloquium Series, Chicago, Illinois, 2017.
-    	- Department of Sociology at Princeton University Colloquium Series, Princeton, New Jersey, 2017.
-      - New York University  Department of Sociology Culture Workshop, New York, New York, 2017.
-    	- Keynote address at the *Cultural Sociology Lowlands Conference*. University of Amsterdam, Amsterdam, The Netherlands, 2017.
-     
-
+ - Department of Sociology at the University of North Carolina Chapel Hill Colloquium Series, Chapel Hill, North Carolina, 2017.
+ - Department of Sociology at the University of Illinois at Chicago Colloquium Series, Chicago, Illinois, 2017.
+ - Department of Sociology at Princeton University Colloquium Series, Princeton, New Jersey, 2017.
+ - New York University  Department of Sociology Culture Workshop, New York, New York, 2017.
+ - Keynote address at the *Cultural Sociology Lowlands Conference*. University of Amsterdam, Amsterdam, The Netherlands, 2017.
 "Matching in cultural activities and persistence of social ties in the NetSense dataset."
-
-	\setlength-sep{-0.55em}
-    - Sociology Department Colloquium, Dartmouth College, Hanover, New Hampshire, 2017.
-	- Hanken Business School, Helsinki, Finland, 2017. 
-    - Session on *Stability of Social Systems in the Age of Networked World* ARL NS CTA Annual Technical Meeting, Clayton Center, University of Delaware, Newark, Delaware, 2017.
-    - Grenoble \'{E}cole de Management, Grenoble, France, 2017.
-
+ - Sociology Department Colloquium, Dartmouth College, Hanover, New Hampshire, 2017.
+ - Hanken Business School, Helsinki, Finland, 2017. 
+ - Session on *Stability of Social Systems in the Age of Networked World* ARL NS CTA Annual Technical Meeting, Clayton Center, University of Delaware, Newark, Delaware, 2017.
+ - Grenoble \'{E}cole de Management, Grenoble, France, 2017.
 *Conference on Fields, Logics, Framing, and Cognition*. University of California at Berkeley, Berkeley, CA, 2017.
-
 "The Mutual specification of genres and audiences: Reflective two-mode centralities in person-to-culture choice data." 
-
-	\setlength-sep{-0.55em}
-	- *Formalizing Culture Workshop*, University of Bern, Bern, Switzerland, 2016. 
-    - *'Culture Club' Seminar*, University of Amsterdam, Amsterdam, The Netherlands, 2017.
-
+ - *Formalizing Culture Workshop*, University of Bern, Bern, Switzerland, 2016. 
+ - *'Culture Club' Seminar*, University of Amsterdam, Amsterdam, The Netherlands, 2017.
 "Schematic logics and patterns of culture choice: Linking cognition and action in the sociology of taste." 
-
-	\setlength-sep{-0.55em}
-	- *UC Berkeley Sociology Departmental Colloquium Series*, University of California, Berkeley, 2017.
-	- *Social Research and Public Policy Seminar Series*, Department of Sociology, New York University, Abu Dhabi, 2016. 
-	- *Sociology Colloquium*, Northwestern University, Evanston, IL, 2016.
-    - *Department of Sociology Theory Workshop*, University of Iowa, Iowa City, IA, 2016.
-
+ - *UC Berkeley Sociology Departmental Colloquium Series*, University of California, Berkeley, 2017.
+ - *Social Research and Public Policy Seminar Series*, Department of Sociology, New York University, Abu Dhabi, 2016. 
+ - *Sociology Colloquium*, Northwestern University, Evanston, IL, 2016.
+ - *Department of Sociology Theory Workshop*, University of Iowa, Iowa City, IA, 2016.
 "Publishing organization theory work at ASR." 
-
-	\setlength-sep{-0.55em}
-	- Hanken Business School, Helsinki, Finland, 2017. 
-    - Grenoble \'{E}cole de Management, Grenoble, France, 2017.
-	- *Social Interaction and Organizing at Northwestern (SION) Speaker Series*, Northwestern University, Evanston, IL, 2016. 
-
+ - Hanken Business School, Helsinki, Finland, 2017. 
+ - Grenoble \'{E}cole de Management, Grenoble, France, 2017.
+ - *Social Interaction and Organizing at Northwestern (SION) Speaker Series*, Northwestern University, Evanston, IL, 2016. 
 "Multilevel systems, interactive mechanisms, and the nature of culture." Section on Sociology of Culture Invited Session on *Recent Advances in the Sociology of Culture*. Annual Meetings of the American Sociological Association, Seattle, WA, 2016. 
-
 "A Plea for Social Mechanisms in culture and cognition research: A multilevel systems approach."  *New Directions in Culture and Cognition Mini-Conference*, Annual Meetings of the Eastern Sociological Society, Boston, MA, 2016.
-
 "Linking position and perception: How social location shape the presumed characteristics of genre audiences." *University of British Columbia Sociology Department Seminar Series*, Vancouver, BC, 2016.
-
 "Cultural objects as prisms: Perceived audience composition of musical styles as a resource for symbolic exclusion in the United States." 
-
-	\setlength-sep{-0.55em}
-	- *Grand Valley State University Sociology Department Colloquium*, Allendale, MI, 2017.
-	- *Sociology Graduate Student Society (SGSS) Sponsored Talk*, University of Georgia, Athens, GA, 2016.
-	- *Harvard University Sociology Department Colloquium Series*, Cambridge, MA, 2016.
-	- *University of North Carolina at Charlotte Sociology Department Colloquium Series*, Charlotte, NC, 2015. 
-	- *University of Arizona School of Sociology Brown Bag Series*,  Tucson, AZ, 2015. 
- 
-
+ - *Grand Valley State University Sociology Department Colloquium*, Allendale, MI, 2017.
+ - *Sociology Graduate Student Society (SGSS) Sponsored Talk*, University of Georgia, Athens, GA, 2016.
+ - *Harvard University Sociology Department Colloquium Series*, Cambridge, MA, 2016.
+ - *University of North Carolina at Charlotte Sociology Department Colloquium Series*, Charlotte, NC, 2015. 
+ - *University of Arizona School of Sociology Brown Bag Series*,  Tucson, AZ, 2015. 
 "(Prolegomenon to a) cultural dynamics: An analytic approach to processes of cultural change and reproduction." *Micro-Macro Conference*, Stockholm, Sweden, 2015. 
-
 "How sexual fields clarify the properties of fields in general," *Thematic Session on Sexual Fields*, Annual Meeting of the American Sociological Association, Chicago, IL, 2015.
-
 "The non-arbitrariness of cultural power: Grounding and motivation in cultural symbols." *Thematic Session on The Sources of Cultural Power*, Annual Meeting of the American Sociological Association, Chicago, IL, 2015.
-
 *Measuring Culture Conference*. University of Notre Dame, Notre Dame Bend, IN, 2015.
 :::
 
 ### 2010–2014
 ::: {.cventry}
 "Triadic evolution in a large-scale mobile phone network." 
-
-	\setlength-sep{-0.55em}
-	- Hightower Seminar in Organization & Management, Goizeta Business School, Emory University, Atlanta, GA, 2014.
-	- MORS Colloquium, Haas Business School, University of California Berkeley, Berkeley, CA, 2014. 
-
+ - Hightower Seminar in Organization & Management, Goizeta Business School, Emory University, Atlanta, GA, 2014.
+ - MORS Colloquium, Haas Business School, University of California Berkeley, Berkeley, CA, 2014. 
 "The end of theorists: The relevance, opportunities, and pitfalls of theorizing in sociology." *Lewis Coser Memorial Lecture and Salon*, Annual Meeting of the American Sociological Association, San Francisco, CA, 2014.
-
 "Bourdieu and the hard embodiment of culture: Methodological and theoretical challenges." *Thematic Session on Bourdieu, Culture, and Empirical Research.* Annual Meeting of the American Sociological Association, San Francisco, CA, 2014.
-
 *Symposium on Affinities of Language, Cultural Tool Kits, Institutional Logics: Advancing Strategies of Action*, Annual Meeting of the Academy of Management, Philadelphia, PA, 2014.
-
 *Measuring Culture 2 Conference*, University of California at Santa Barbara, Santa Barbara, CA, 2014. 
-
 "Beyond words: The conceptual basis of sociological theory." *Gert H. Mueller Social Theory Speaker Series: The Craft of Doing Theory*, Department of Sociology, American University, Washington, D. C., 2014.
-
 "Cultural omnivorousness and the perceived audience composition of musical styles." *Culture and Inequality Workshop*, Department of Sociology, Princeton University, Princeton, NJ, 2014
-
 *Special Session on What Should the Sociology of Culture and Cognition Look Like? — A Conversation.*, Annual Meeting of the Eastern Sociological Society, Baltimore, MD, 2014.
-
 "Persistence, churn, and decay in dynamic ego networks." Yale Institute for Network Science, Yale University, New Haven, CT, 2013.
-
 "A theory of cultural embodiment." *Center for Cultural Sociology Workshop*, Yale University, New Haven, CT, 2013.
-
 "Age group dynamics and horizontal differentiation among Americans of different levels of education, 1993 - 2012." *Emerging Cultural Capital and New Forms of Distinction Workshop*, London School of Economics, London, UK, 2013.
-
 "The duality of persons and genres: Omnivorousness, cultural networks, and cultural holes." Keynote address at the *The Social Spaces of Music: Networks, Worlds, Fields and Scenes Conference*, Centre for Research on Socio-Cultural Change, The University of Manchester, Manchester, UK, 2013.
-
 "Cultural capital and the dynamics of personal networks." Department of Sociology, University of Illinois at Chicago, Chicago, IL, 2012.
-
 "Measuring cultural holes." *Measuring Culture 1 Conference*, University of British Columbia, Vancouver, BC, 2012.
-
 "Cultural capital and the dynamics of personal networks." Department of Sociology, Columbia University, New York, NY, 2012.
-
 "Cultural tastes and the dynamics of personal networks." Department of Sociology, Duke University, Durham, NC, 2012.
-
 *Quantifying Social Fields Conference*, held at the Institute for Research on Labor and Employment, University of California at Berkeley, Berkeley, California, 2012.
-
 "Making distinctions: getting clear on some of the ‘hard problems’ in the study of culture." *Social Theory and Evidence Workshop*, Department of Sociology, University of Chicago, Chicago, IL, 2012.
-
 "Liking things, talking culture, and making friends." Department of Sociology, City College, City University of New York, New York, NY, 2012.
-
 "How organizational theory can help network theorizing: Linking structure and dynamics via cross-level analogies." *Scandinavian Consortium for Organizational Research (SCANCOR) Seminar*, Stanford University, Stanford, CA, 2012.
  "From culture to enculturation."  *SSIM Kickoff Meeting*, held at The Washington State Criminal Justice Training Commission, Burien, WA, 2011.
-
  "Embodied culture as procedure: Cognitive science and the link between subjective and objective culture."  *Symposium on Social Science and Sustainable Consumption*, Helsinki, Finland, 2011.
-
  "Taste and the logic of practice in *Distinction*." *Thirty Years after 'Distinction' Conference*,  Science Po, Paris, France, 2010.
-
  "Instituting organizations, cultural categories and structured inequality: The World Heritage Committee and the creation of outstanding universal value." *Organizations & Markets Workshop*, Booth School of Business, University of Chicago, Chicago, IL, 2010.
-
  "Instituting organizations, cultural categories and structured inequality: The World Heritage Committee and the creation of outstanding universal value." Pomona College, Claremont, California, 2010.
 :::
 
 ### 2004–2009
 ::: {.cventry}
 "Culture and categorization in an international organization: The case of UNESCO and the world heritage committee." *Stanford University Graduate School of Business Organizational Behavior Seminar*, Stanford, CA, 2009.
-
 "Seeing culture like UNESCO: Uncovering the building blocks of organizational cognition during unsettled times." *University of Pennsylvania Sociology Department Colloquium Series*. Philadelphia, Pennsylvania, 2009.
-
 "Cultural Capital in Interaction." *MIT-Harvard Economic Sociology Seminar*. Cambridge, Massachusetts, 2009.
-
 "Cultural Capital in Interaction."  *University of Notre Dame Sociology Department Brown Bag Seminar Series.* Notre Dame, Indiana, 2009.
-
  "Rethinking socialization theory from the point of view of practice theory."  *International workshop on the 'Social Formations of Habit.'* Manchester University, United Kingdom, 2008.
-
  "Rethinking the relevance of Bourdieu's class theory for the sociology of taste." *Northwestern University Sociology Department Culture and Society Workshop.* Evanston, Illinois, 2008.
-
  "Adaptation, reproduction and social change in the institutional analysis of organizations:  A dual cognition model."  *Junior Theorists Symposium*.  Harvard University, Boston, Massachusetts, 2008.
-
  **Panelist**, special session on "Culture and stratification," *Culture Section Anniversary Symposium, Culture Section Miniconference*, Harvard University. Boston, Massachusetts, 2008.
-
  "The over-time stability of cultural taste:  Network versus cultural capital perspectives."   *Princeton University Sociology Department Culture Workshop*.  Princeton, New Jersey, 2008.
-
  "Cultural capital and social networks."  *University of Toronto Sociology Department Brown Bag Seminar Series.* Ontario, Canada, 2008.
-
  **Participant**, *Research on Orchestras Meeting*, Center for Arts and Cultural Policy Studies, Princeton University. Princeton, New Jersey, 2008.
-
 **Participant**, * John Templeton Foundation Human Personhood Conference*, University of Southern California, Los Angeles. California, 2008.
-
  "Rethinking the relevance of Bourdieu's class theory for the sociology of taste." *University of Toronto Sociology Department Culture Workshop.* Ontario, Canada, 2008.
-
  "Cultural capital and social networks."  *University of Notre Dame Sociology Department Brown Bag Seminar Series.* Notre Dame, Indiana, 2008.
-
  "Can we still speak of cultural capital in the United States? An empirical analysis of the relationship between high-status cultural competence and wages." *University of Chicago Workshop on Money, Markets and Consumption.* Chicago, Illinois, 2007.
-
 **Participant**, *BYU Comparative Organizations Conference*, Sundance, Utah, 2007.
-
  "(Post 9/11) national pride as affective attachment to a large group:  A choice-process analysis."  *Indiana University Social Psychology, Health, and the Life Course (SHeL) Workshop.* Bloomington, Indiana, 2007.
-
 "Dynamics of status and emotion in small groups: a formal model and simulation." *University of Arizona Social Psychology Colloquium.*  Tucson, Arizona, 2005.
-
 "The effect of economic and cultural globalization on anti-U.S. transnational terrorism 1971-2000." *Stanford University Terrorism Research Group.* Stanford, CA, 2004.
 :::
 
 ## Grants and Sponsored Programs
 ::: {.cventry}
 **Principal Investigator** (with Bolesław K. Szymański [PI] and Hernan Makse [PI]), Human Networks and Data Science Program, Research Grant Award (\#2214216): "Collaborative Research: HNDS-R: Dynamics and Mechanisms of Information Spread via Social Media." National Science Foundation, \$992,000 (2022-2025).
-
 **Project Advisory Board Member**. Mads Meier Jæger (PI), "Mozart with Mom? Family Background, Cultural Participation, and Social Inequality." Velux Foundations funded project, University of Copenhagen, Denmark, \$DKK 5,400,000 (2018-2021).
-
 **Principal Investigator** (Dissertation Improvement Grant for Brandon Sepulvado), Research Grant Award (SES-1702667): "The Emergence of Disciplinary Networks: The Case of French Neurology." National Science Foundation, \$11,334.00 (2017-2018).
-
 **Principal Investigator**, Network Science Collaborative Technology Alliance (NS-CTA), "Influencing, Agitation Propagation, and Social Contagion in Empirical Networks and Data-Driven Models." United States Army Research Laboratory, \$180,000 (2016-2018).
-
 **Principal Investigator**, Network Science Collaborative Technology Alliance (NS-CTA), "Social Dynamics, Opinion Spreading, and Influencing in Social Networks." United States Army Research Laboratory, \$165,602 (2014-2016).
-
 **Investigator** (with Nitesh Chawla [co-Investigator], David Hachen [co-Investigator], Tijana Milenković [co-Investigator], Jessica Payne [co-Investigator], Aaron Striegel [co-Investigator], and Christian Poellabauer [co-Investigator]), "NetHealth: Modeling the Co-evolution of Social Networks and Health Behaviors." National Institutes of Health (R01 HL117757-01A1), \$2,913,061 (2014-2018).
- 
 **Principal Investigator** (with  David Hachen [Lead-PI], Jeffrey Liew [PI], and Aaron Striegel [PI]), "Using Smart Devices to Capture the Emotionality of Offline Communication." National Academies Keck Futures Initiative Grant, \$100,000 (2013-2014).
-
 **Principal Investigator**, Network Science Collaborative Technology Alliance (NS-CTA), "Social Dynamics, Opinion Spreading, and Influencing in Social Networks." United States Army Research Laboratory, \$84,714 (2013-2014).
-
 **Principal Investigator** (Dissertation Improvement Grant for Sara Skiles), Research Grant Award (SES-1203426): "Aesthetic Taste Expression and Symbolic Boundary Work."  National Science Foundation, \$9,100 (2012-2013).
-
 **Principal Investigator** (with Aaron Striegel [Lead-PI], David Hachen [PI], and Christian Poellabauer [PI] ), Division of Information & Intelligent Systems, Social-Computational Systems Program, Research Grant Award (\#0968529): "SoCS:  Explorations on the Effects of Pervasive Networking on Social Relationships and Resource Planning." National Science Foundation, \$802,325 (2010-2015).
-
 **Co-Awardee** (with David Hachen) Grant to organize a "Distinguished Speaker Series on Social Networks," Institute for Scholarship in the Liberal Arts (ISLA) Henkels Lecture Series, University of Notre Dame, \$15,000 (2009-2010).
-
 **Principal Investigator** (with Zoltan Toroczkai [Lead-PI], Mark Alber PI], Nitesh Chawla [PI], and David Hachen [PI]), Division of Behavioral and Cognitive Sciences, Dynamics of Human Behavior Program, Research Grant Award (\#0826958): "DHB: Longitudinal Analysis and Modeling of Large-Scale Social Networks Based on Cell Phone Records."  National Science Foundation, \$711,770 (2008-2012).
 :::
 
@@ -980,513 +635,385 @@ Panelist, *Conference on Networks and Culture*. Stanford University Graduate Sch
 ### 2020–Present
 ::: {.cventry}
 **Omar Lizardo**. "The forward march of Categorical Tolerance in the United States." First Sociological Science Conference, Duke University, Durham, NC.
-
-Mateusz Nurek, Joanna Kołaczek,  Radosław Michalski, Bolesław K. Szymański and **Omar Lizardo**. "Modeling opinion formation using a new Cognitive Naming Game model." International Sunbelt Social Networks Conference (Sunbelt'24), Edinburgh, Scotland.	
-
-Michael Strand and **Omar Lizardo**. "Toward a Probabilistic Critique of the Sign." Annual Meeting of the American Sociological Association. Philadelphia, Pennsylvania. 
-
+Mateusz Nurek, Joanna Kołaczek,  Radosław Michalski, Bolesław K. Szymański and **Omar Lizardo**. "Modeling opinion formation using a new Cognitive Naming Game model." International Sunbelt Social Networks Conference (Sunbelt'24), Edinburgh, Scotland.  
+Leeloo Strand and **Omar Lizardo**. "Toward a Probabilistic Critique of the Sign." Annual Meeting of the American Sociological Association. Philadelphia, Pennsylvania. 
 Joel Stillerman and **Omar Lizardo**. "Barriers to Culture as Coordination: Reconsidering Erickson’s Thesis with Evidence from Chile’s Middle Classes." Annual Meeting of the American Sociological Association. Philadelphia, Pennsylvania. 
-
-Cheng Wang, **Omar Lizardo** and David Hachen. "Temporal patterns of the dyadic reciprocity among a sample of college students." International Sunbelt Social Networks Conference (Sunbelt'23), Portland, Oregon.	
-
+Cheng Wang, **Omar Lizardo** and David Hachen. "Temporal patterns of the dyadic reciprocity among a sample of college students." International Sunbelt Social Networks Conference (Sunbelt'23), Portland, Oregon.  
 James Flamino, Ross DeVito, **Omar Lizardo** and Bolesław K. Szymański. "Modeling the impact of cell phone interactions on memory imprints of members of social networks." 15$^{th}$ International Conference on Social Computing, Behavioral-Cultural Modeling & Prediction and Behavior Representation in Modeling and Simulation (SBP-BRiMS'22), Pittsburgh, PA (Hybrid). 
-
-Cheng Wang, **Omar Lizardo** and David Hachen. "Temporal pattern of the friendship paradox among a sample of college students."  International Sunbelt Social Networks Conference (Sunbelt'22), Cairns, Australia (remote).	
-
-Ethan Fridmanski, David Hachen, **Omar Lizardo** and Cheng Wang. "Do Lonely Birds Flock Together? Determinants of assortative mixing in college student networks."	International Sunbelt Social Networks Conference (Sunbelt'22), Cairns, Australia (remote).
-
-David Hachen, **Omar Lizardo** and Cheng Wang.	"Cross-Cutting Ethnoracial Social Ties Among Undergraduate Students at an Elite University." International Sunbelt Social Networks Conference (Sunbelt'22), Cairns, Australia (remote).
-
-Cheng Wang, Stephen Mattingly, Jessica Payne, **Omar Lizardo** and David Hachen. "Peer influence on personal sleep patterns."	Networks 2021: A Joint Sunbelt and NetSci Conference: Combined meeting of the International Network for Social Network Analysis (Sunbelt'21), and the Network Science Society (NetSci'21) (virtual).
-
+Cheng Wang, **Omar Lizardo** and David Hachen. "Temporal pattern of the friendship paradox among a sample of college students."  International Sunbelt Social Networks Conference (Sunbelt'22), Cairns, Australia (remote).  
+Ethan Fridmanski, David Hachen, **Omar Lizardo** and Cheng Wang. "Do Lonely Birds Flock Together? Determinants of assortative mixing in college student networks."  International Sunbelt Social Networks Conference (Sunbelt'22), Cairns, Australia (remote).
+David Hachen, **Omar Lizardo** and Cheng Wang.  "Cross-Cutting Ethnoracial Social Ties Among Undergraduate Students at an Elite University." International Sunbelt Social Networks Conference (Sunbelt'22), Cairns, Australia (remote).
+Cheng Wang, Stephen Mattingly, Jessica Payne, **Omar Lizardo** and David Hachen. "Peer influence on personal sleep patterns."  Networks 2021: A Joint Sunbelt and NetSci Conference: Combined meeting of the International Network for Social Network Analysis (Sunbelt'21), and the Network Science Society (NetSci'21) (virtual).
 David Hachen and **Omar Lizardo**. "The NetHealth project and data: New opportunities for studying social networks and health related behaviors." Networks 2021: A Joint Sunbelt and NetSci Conference: Combined meeting of the International Network for Social Network Analysis (Sunbelt'21), and the Network Science Society (NetSci'21) (virtual).
-
 David Hachen, **Omar Lizardo**, Ethan Fridmanski and Cheng Wang." Do lonely birds flock together? Determinants of assortative mixing on loneliness among a cohort of first year college students." Networks 2021: A Joint Sunbelt and NetSci Conference: Combined meeting of the International Network for Social Network Analysis (Sunbelt'21), and the Network Science Society (NetSci'21) (virtual).
-
 Mateusz Nurek, Radosław Michalski, **Omar Lizardo** and Marian-Andrei Rizoiu. 2021. "Predicting relationships and Big Five personality traits from telecommunication history based on Hawkes process." The 30th ACM International Conference on Information and Knowledge Management (virtual).
-
 Radosław Michalski, Bolesław K. Szymański, Przemysław Kazienko, Christian Lebiere, **Omar Lizardo** and Marcin Kulisiewicz. "Cognition-driven temporal social networks." *Networks 2021: A Joint Conference of Sunbelt and NetSci* (virtual).
-
 Shikang Liu, David Hachen, **Omar Lizardo**, Christian Poellabauer, Aaron Striegel and Tijana Milenkovic. 2020. "The power of dynamic social networks to predict individuals' mental health." Pacific Symposium on Biocomputing (PSB '20), Big Island of Hawaii, HI.
 :::
 
 ### 2018–2019
 ::: {.cventry}
 Ashwin Bahulkar, Boleslaw K. Szymanski, Kevin Chan and **Omar Lizardo**. 2019. "Modeling and predicting human social behavior." 25th ACM SIGKDD Conference on Knowledge Discovery and Data Mining, Anchorage, Alaska. 
-
 Louis Faust, Priscilla Jimenez-Pazmino, James K. Holland, **Omar Lizardo**, David Hachen and Nitesh V. Chawla. 2019. "What 30 Days tells us Aaout 3 Years: Leveraging early signs of user abandonment and compliance." 13th EAI International Conference on Pervasive Computing Technologies for Healthcare, Trento, Italy.
-
 Cheng Wang, **Omar Lizardo** and David Hachen. 2018. "Dynamics of local clustering in temporal social networks." 2nd North American Social Networks Conference, Washington, DC.
-
 Shikang Liu, David Hachen, **Omar Lizardo**, Christian Poellabauer, Aaron Striegel and Tijana Milenkovic. 2018. "Network analysis of the NetHealth data: Exploring co-evolution of individuals' social networks and physical activities." 2018 KDD Workshop on Machine Learning for Medicine and Healthcare, London, United Kingdom.
-
 David Hachen, **Omar Lizardo** and Matthew Chandler. 2018. "Examining the empirical linkages between different kinds of ties in dynamic ego networks."  International Sunbelt Social Networks Conference (Sunbelt'18), Utrecht, The Netherlands.
-
 Ashwin Bahulkar, Boleslaw Szymanski, **Omar Lizardo** and Kevin Chan. 2018. "Impact of Attributes on Group Formation." 4th Edition of the Workshop on Social Influence, at the IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining (ASONAM 2018), Barcelona, Spain.
-
 Shikang Liu, David Hachen, **Omar Lizardo**, Christian Poellabauer, Aaron Striegel and Tijana Milenkovic. 2018. "Exploring co-evolution between individuals' social networks and physical activities in NetHealth data." Intelligent Systems for Molecular Biology Conference (ISMB'18), Chicago, Illinois. 
-
 Louis Faust, Priscilla Jimenez, David Hachen, **Omar Lizardo**, Aaron Striegel and Nitesh V. Chawla. 2018. "Long-term compliance habits: What early data tells us."  Short Workshop on Next Steps Towards Long Term Self Tracking at the ACM CHI Conference on Human Factors in Computing Systems (CHI'18). Montreal, Canada.
-
 Radosław Michalski, Boleslaw Szymanski, Przemysław Kazienko, Christian Lebiere, **Omar Lizardo** and Marcin Kulisiewicz. 2018. "CogSNet: Cognition-driven social network." International School and Conference on Network Science (NetSci'18), Paris, France.
-
 Dustin Stoltz, Marshall Taylor and **Omar Lizardo**. 2018. "Functionaries: Institutional theory without institutions." Annual Meeting of the American Sociological Association. Philadelphia, Pennsylvania.
 :::
 
 ### 2016–2017
 ::: {.cventry}
 Matthew Chandler and **Omar Lizardo**. 2017. "The shapes of solidarity: Theorizing emergent structures in social networks with abstract geometry."  Annual Meeting of the American Sociological Association. Montreal, Canada. 
-
 Sudip Vhaduri, Christian Poellabauer, Aaron Striegel, **Omar Lizardo** and David Hachen. 2017. "Discovering places of Interest using sensor data from smartphones and wearables." 14th IEEE International Conference on Ubiquitous Intelligence and Computing (UIC'17). San Francisco, CA.
-
 Yuxiao Dong, **Omar Lizardo** and Nitesh Chawla. 2017. "Do the young live in a smaller world than the old? age-specific degrees of separation in human communication." 5th Conference on the Analysis of Mobile Phone Datasets (NetMob'17). Milan, Italy. 
-
-Ashwin Bahulkar, Boleslaw Szymanski, Kevin Chan and **Omar Lizardo**. 2017.	"Coevolving networks in the NetSense dataset." International School and Conference on Network Science (NetSci'17). Indianapolis, Indiana. 
-
+Ashwin Bahulkar, Boleslaw Szymanski, Kevin Chan and **Omar Lizardo**. 2017.  "Coevolving networks in the NetSense dataset." International School and Conference on Network Science (NetSci'17). Indianapolis, Indiana. 
 **Omar Lizardo**. 2017. "Schematic logics and patterns of culture choice: Linking cognition and action in the sociology of taste." Culture and Cognition Mini-Conference, Annual Meetings of the Eastern Sociological Society, Philadelphia, PA.
-
 Jennifer Lena and **Omar Lizardo**. 2016. "The 'omnivorous generation:' Artistic valorization and institutional work in the 20th century United States." Annual Meeting of the Social Science History Association. Chicago, Illinois. 
-
 Ashwin Bahulkar, Boleslaw Szymanski, Kevin Chan and **Omar Lizardo**. 2016. "Co-evolution of two networks representing different social relations in NetSense." 5th International Workshop on Complex Networks and their Applications (Complex Networks 2016). Milan, Italy. 
-
-Ashwin Bahulkar, Boleslaw Szymanski, **Omar Lizardo**, Nitesh Chawla, Yuxiao Dong and Yang Yang.	2016. "Analysis of link formation, persistence and dissolution in NetSense data." 6th Workshop on Social Network Analysis in Applications (SNAA'16).
-
+Ashwin Bahulkar, Boleslaw Szymanski, **Omar Lizardo**, Nitesh Chawla, Yuxiao Dong and Yang Yang.  2016. "Analysis of link formation, persistence and dissolution in NetSense data." 6th Workshop on Social Network Analysis in Applications (SNAA'16).
 Rachael Purta, Stephen Mattingly, Lixing Song, **Omar Lizardo**, David Hachen, Christian Poellabauer and Aaron Striegel. 2016. "Experiences measuring sleep and physical activity patterns across a large college cohort with Fitbits." 20th International Symposium on Wearable Computers (ISWC'16). Heidelberg, Germany.
-
-Ashwin Bahulkar, Boleslaw Szymanski, **Omar Lizardo**, Nitesh Chawla, Yuxiao Dong and Yang Yang.	2016. "Analysis of link formation, persistence and dissolution in NetSense data." Proceedings of Advances in Social Network Analysis and Mining 2016 (P-ASONAM'16).
-
+Ashwin Bahulkar, Boleslaw Szymanski, **Omar Lizardo**, Nitesh Chawla, Yuxiao Dong and Yang Yang.  2016. "Analysis of link formation, persistence and dissolution in NetSense data." Proceedings of Advances in Social Network Analysis and Mining 2016 (P-ASONAM'16).
 David Hachen, **Omar Lizardo**, Carlene Gundy and Cheng Wang. 2016. "The dynamic coupling of two-mode social foci networks." Networks in the Global World Conference (NetGloW'16), St. Petersburg, Russia. 
-
 Yuxiao Dong, **Omar Lizardo** and Nitesh Chawla. 2016. "Longer degrees of separation between seniors in mobile communication." 2nd International Conference on Computational Social Science ($IC^2S^2$), Kellogg School of Management, Northwestern University, Evanston, Illinois. 
-
 David Hachen, **Omar Lizardo**, Michael Penta, Matthew Chandler and Brandon Sepulvado. 2016. "Ethnoracial status and tie decay in social networks: Linking triracial hierarchy and Simmelian tie theory." International Sunbelt Social Networks Conference (Sunbelt'16), Newport Beach, California.
-
 Brandon Sepulvado, David Hachen, **Omar Lizardo** and Matthew Chandler. 2016. "The big five personality traits in network formation." International Sunbelt Social Networks Conference (Sunbelt'16), Newport Beach, California.
 :::
 
 ### 2010–2015
 ::: {.cventry}
 David Hachen, **Omar Lizardo**, Michael Penta, Brandon Sepulvado and Matthew Chandler. 2015. "Social tie formation, development and persistence: insights from the analysis of changes in the social networks of a college student cohort." International Conference on Computational Social Science ($IC^2S^2$), Helsinki, Finland.
-
 Jennifer Lena and **Omar Lizardo**. 2015. "Institutional entrepreneurship, artistic valorization, and the generation of cultural taste."  Annual Meeting of the American Sociological Association. Chicago, Illinois. 
-
 **Omar Lizardo** and Sara Skiles. 2014. "Cultural Objects as prisms: Perceived audience composition of Musical Styles as a
 Resource for Symbolic Exclusion in the United States." Annual Meeting of the Social Science History Association. Toronto, Ontario, Canada. 
-
 **Omar Lizardo** and Melissa Fletcher Pirkey. 2014. " Social cognitive mechanisms of category-based impression formation in markets." 17th Annual Organizational Ecology Conference, Barcelona, Spain.
-
 David Hachen and **Omar Lizardo**. 2014. "Dynamic ego networks." Temporal Networks, Human Dynamics, and Social Physics NetSci'14 Symposium (TnetSphys'14), Berkeley, California. 
-
 David Hachen and **Omar Lizardo**. 2014. "Growth, stability, change and inequality in dynamic ego networks."  International Sunbelt Social Networks Conference (Sunbelt'14). St Pete's Beach, Florida. 
-
 Matthew Chandler and **Omar Lizardo**. 2014. "The shapes of solidarity: A formal network theory of community and society." International Sunbelt Social Networks Conference (Sunbelt'14). St Pete's Beach, Florida. 
-
 Jeff Larson and  **Omar Lizardo**. 2014. "An institutional logics approach to the analysis of social movement fields." Annual Meeting of the Eastern Sociological Society, Baltimore, Maryland.
-
 David Hachen and **Omar Lizardo**. 2013. "The effects of individual traits on the formation of social networks among first-year college students."  International School and Conference on Network Science (NetSci'13), Copenhagen, Denmark.
-
 Aaron Striegel, Shu Liu, Lei Meng, Christian Poellabauer, David Hachen and **Omar Lizardo**. 2013. "Lessons Learned from the NetSense Smartphone Study." he 5th ACM HotPlanet Workshop (HotPlanet'13). Hong Kong. 
-
 David Hachen, **Omar Lizardo**, Zoltan Toroczkai,  Cheng Wang, Anthony Strathman, Nitesh Chawla. 2012. "Weighted reciprocity in human communication networks."  Annual Meeting of the American Sociological Association. Denver, Colorado. 
-
 Cheng Wang, David Hachen and **Omar Lizardo**. 2013. "The Co-evolution of Communication Networks and Drinking Behaviors." AAAI Fall Symposium 2013 on
 Social Networks and Social Contagion Web Analytics and Computational Social Science (SNSC'13). Arlington, Virginia.
-
 David Hachen, **Omar Lizardo**, Michael Penta and Bryant Crubaugh.  2012. "Netsense: a new network data collection platform for the study of the dynamics of social relationships."  International Sunbelt Social Networks Conference (Sunbelt'12). St Pete's Beach, Florida. 
-
 Michael Penta, **Omar Lizardo**, David Hachen and Bryant Crubaugh. 2012. "The Ol' Ball and Chain: Negative effect of intimate long distance relationships on new tie formation." International Sunbelt Social Networks Conference (Sunbelt'12). St Pete's Beach, Florida.
-
 **Omar Lizardo**.  2012. "Beyond the antinomies of constructivism:  Practice theory, reference and the ontological stability of the social."  14th Annual Philosophy of Social Science Roundtable.  University of Nebraska, Lincoln, Nebraska.
-
-**Omar Lizardo** and Michael Strand. 2011.  "Beyond 'world images': Belief as embodied action in the world."  Annual Meeting of the American Sociological Association. Las Vegas, Nevada. 
-
+**Omar Lizardo** and Leeloo Strand. 2011.  "Beyond 'world images': Belief as embodied action in the world."  Annual Meeting of the American Sociological Association. Las Vegas, Nevada. 
 **Omar Lizardo** and David Hachen. 2011.  "Dyadic reciprocity and the emergence of degree-assortativity in weighted social networks."  International Sunbelt Social Networks Conference (Sunbelt'11). St Pete's Beach, Florida. 
-
 Robert M. Fishman and **Omar Lizardo**. 2010.  "Why Portugal and Spain came to diverge in cultural tastes: Legacies of polar opposite pathways to democracy." Annual Meeting of the Social Science History Association. Chicago, IL. 
-
 Robert M. Fishman and **Omar Lizardo**. 2010.  "How legacies of macro-political transformation shape patterns of cultural taste." Annual Meeting of the American Sociological Association. Atlanta, Georgia. 
-
 **Omar Lizardo** and Melissa Fletcher Pirkey. 2010.  "Instituting organizations, cultural categories and structured inequality." Annual Meeting of the American Sociological Association. Atlanta, Georgia. 
-
 **Omar Lizardo**. 2010.  "Rethinking *habitus*: Cognitive dynamics and externalization."  Paper presented for the Culture and Cognition Research Network.  Annual Meeting of the American Sociological Association. Atlanta, Georgia. 
-
  **Omar Lizardo** and David Hachen.  2010. " Reciprocity and degree assortativity in human communication networks." International School and Conference on Network Science (NetSci'10). Cambridge, Massachusetts.
 :::
 
 ### 2006–2009
 ::: {.cventry}
 **Omar Lizardo**. 2009.  "Social psychological processes as mechanisms for the explanation of cultural phenomena." Annual Meeting of the American Sociological Association. San Francisco, California.   
-
 David Hachen, **Omar Lizardo**, Cheng Wang, Zoltan Toroczkai, Nitesh V. Chawla, Ryan Lichtenwalter, Troy Raeder, Anthony Strathman, and Zhechao Zhou.  2009. "Reciprocity: The missing link." International School and Conference on Network Science (NetSci'09). Venice, Italy.
-
 David Hachen, **Omar Lizardo**, Cheng Wang and Zhechao Zhou.  2009. "Correlates of reciprocity in a large-scale communication network: A weighted edge approach." International Sunbelt Social Networks Conference (Sunbelt'09). San Diego, California. 
-
 **Omar Lizardo**. 2008. "Beyond the antinomies of structure: Recovering the insights of methodological structuralism." Annual Meeting of the American Sociological Association. Boston, Massachusetts.
-
 Albert J. Bergesen and **Omar Lizardo**.  2008. "Political economy of the world-system vs. world society/polity:  A crucial test of competing theoretical paradigms." Annual Meeting of the American Sociological Association. Boston, Massachusetts.   
-
 **Omar Lizardo**. 2008. "Cultural competence and network activation:  cultural capital as an enabling factor in the instrumental use of social ties." International Sunbelt Social Networks Conference (Sunbelt'08). St. Pete Beach, Florida.
-
 **Omar Lizardo**. 2007.  "'Mirror neurons,' collective objects and the problem of transmission: Reconsidering Stephen Turner's critique of practice theory." Annual Meeting of the American Sociological Association. New York, New York.
-
 Jeff Larson and **Omar Lizardo**. 2006. "Collective memory and the identity politics of commodification: the case of Che Guevara."  Annual Meeting of the American Sociological Association. Montreal, Canada.  
-
 **Omar Lizardo**. 2006. "Bourdieuian class position and interracial friendship choice." International Sunbelt Social Networks Conference (Sunbelt'06). Vancouver, British Columbia, Canada.
 :::
 
 ### 2002–2005
 ::: {.cventry}
 **Omar Lizardo** and Jessica L. Collett. 2005. "Why biology is not (religious) destiny: a second look at gender differences in religiosity." Annual Meeting of the American Sociological Association. Philadelphia, Pennsylvania.   
-
 **Omar Lizardo**. 2005. "Elastic social structures and compromised selves: some empirical implications of Goffman's embarrassment-interaction link." Annual Meeting of the American Sociological Association. Philadelphia, Pennsylvania.   
-
 **Omar Lizardo**. 2005. "Musical taste and culture consumption in Europe: a cross-national analysis." Annual meeting of the Pacific Sociological Association. Portland, Oregon. 
-
 **Omar Lizardo**. 2005. "What is structure?" Annual meeting of the Pacific Sociological Association. Portland, Oregon.  
-
  **Omar Lizardo**. 2005. "Latent association models for ego-network data." International Sunbelt Social Networks Conference (Sunbelt'05). Redondo Beach, California.
-
 **Omar Lizardo**. 2004. "The value of mass culture: highbrow and popular consumption and network outcomes." Annual Meeting of the American Sociological Association. San Francisco, California. 
-
 **Omar Lizardo** and Jessica L. Collett. 2004. "Socioeconomic status and the experience of anger." Annual Meeting of the American Sociological Association, San Francisco, California.  
-
 **Omar Lizardo**. 2004. "Towards an impure sociology: formalism, behavioral realism and the interdisciplinary challenge in social theory." Annual meeting of the Pacific Sociological Association. San Francisco, California.   
-
 **Omar Lizardo**. 2003. "The effect of employment status on gender differences in culture consumption." Annual meeting of the American Sociological Association. Atlanta, Georgia.  
-
 **Omar Lizardo**. 2003. "Towards a knowledge-interaction theory of group formation and inequality." Annual meeting of the Pacific Sociological Association. Pasadena, California.   
-
 **Omar Lizardo**. 2003. "Creating the reality of society: the role of cognitive mechanisms in Durkheim's theory of ritual." Annual meeting of the Pacific Sociological Association. Pasadena, California. 
- 
 Albert J. Bergesen and **Omar Lizardo**. 2002. "Terrorism and the world-system." Annual Meeting of the American Sociological Association. Chicago, Illinois.
-
 Albert J. Bergesen and **Omar Lizardo**. 2002. "Terrorism and hegemonic decline." Political Economy of World-Systems Conference. University of California at Riverside.
 :::
 
 ## Editorial Work
 **Lead Editor**
-
-    - 2024-2026. *Sociological Theory* (with S. L. Crawley, Zine Magubane, and Vrushali Patil)
-    - 2024. Special issue of *Poetics: Journal of Empirical Research on Culture, the Media and the Arts* entitled "Dual Purposes: Duality in Cultural and Social Research." (with Andrew Davis and Kyle Puetz)
-    - 2016-2020. *American Sociological Review* (with Rory McVeigh and Sarah Mustillo).
-    - 2014. Special issue of *Social Psychology Quarterly* entitled "Social Psychology and Culture: Advancing the Connections" (with Jessica Collett).
-    - 2009-2011. *Perspectives, the Newsletter of the Theory Section of the  American Sociological Association*, (with Erika Summers-Effler). 
-    - 2006-2009. *Perspectives, the Newsletter of the Theory Section of the  American Sociological Association* (with Erika Summers-Effler and Dustin Kidd). 
-
+ - 2024-2026. *Sociological Theory* (with S. L. Crawley, Zine Magubane, and Vrushali Patil)
+ - 2024. Special issue of *Poetics: Journal of Empirical Research on Culture, the Media and the Arts* entitled "Dual Purposes: Duality in Cultural and Social Research." (with Andrew Davis and Kyle Puetz)
+ - 2016-2020. *American Sociological Review* (with Rory McVeigh and Sarah Mustillo).
+ - 2014. Special issue of *Social Psychology Quarterly* entitled "Social Psychology and Culture: Advancing the Connections" (with Jessica Collett).
+ - 2009-2011. *Perspectives, the Newsletter of the Theory Section of the  American Sociological Association*, (with Erika Summers-Effler). 
+ - 2006-2009. *Perspectives, the Newsletter of the Theory Section of the  American Sociological Association* (with Erika Summers-Effler and Dustin Kidd). 
 **Associate Editor** 
-
-    - 2025-present. *Theory & Social Inquiry*
-    - 2025-present. *Social Problems*
-    - 2022-present. *Discover Data*
-    - 2020-present *Frontiers in Big Data (Networks)*.
-
+ - 2025-present. *Theory & Social Inquiry*
+ - 2025-present. *Social Problems*
+ - 2022-present. *Discover Data*
+ - 2020-present *Frontiers in Big Data (Networks)*.
 **Board of Reviewing Editors** 
-
-    - 2020-present. *Science*.
+ - 2020-present. *Science*.
 
 ### Editorial Boards
 **Editorial Advisory Board Member** 
-
-    - 2025-present. *Oxford University Press Series on Social Network Mechanisms*.
-    - 2023-present. *Princeton University Press Series in Cultural Sociology.*
-    - 2017-present. *Stanford University Press Series on Culture and Economic Life.*
-    - 2020-2023. *Sociological Theory*.
-	- 2018-present. *Debats: Journal on Culture, Power and Identities*. 
-    - 2018-present. *Poetics: Journal of Empirical Research on Culture, the Media and the Arts*.
-    - 2015-2017. *Poetics: Journal of Empirical Research on Culture, the Media and the Arts*.
-    - 2014-2018. *Social Forces*.
-    - 2013-2023.  *Theory and Society*.
-    - 2013-2016. *Social Currents*.
-    - 2012-2015. *American Sociological Review*. 
-    - 2012-2020. *Journal of World Systems Research*.
-    - 2011-present. *Journal for the Theory of Social Behaviour*.
-    - 2011-2023. *Sociological Forum*.
-    - 2011-2015. *Mobilization: An International Journal*.
-    - 2010-2013. *Social Forces*.
-    - 2010-2013. *Sociologica: Italian Online Sociological Review*.
-    - 2008-2011. *Journal of World Systems Research*.
-    - 2009-2012. *Sociological Theory*.
-    - 2008-2014. *Poetics: Journal of Empirical Research on Culture, the Media and the Arts*.
+ - 2025-present. *Oxford University Press Series on Social Network Mechanisms*.
+ - 2023-present. *Princeton University Press Series in Cultural Sociology.*
+ - 2017-present. *Stanford University Press Series on Culture and Economic Life.*
+ - 2020-2023. *Sociological Theory*.
+ - 2018-present. *Debats: Journal on Culture, Power and Identities*. 
+ - 2018-present. *Poetics: Journal of Empirical Research on Culture, the Media and the Arts*.
+ - 2015-2017. *Poetics: Journal of Empirical Research on Culture, the Media and the Arts*.
+ - 2014-2018. *Social Forces*.
+ - 2013-2023.  *Theory and Society*.
+ - 2013-2016. *Social Currents*.
+ - 2012-2015. *American Sociological Review*. 
+ - 2012-2020. *Journal of World Systems Research*.
+ - 2011-present. *Journal for the Theory of Social Behaviour*.
+ - 2011-2023. *Sociological Forum*.
+ - 2011-2015. *Mobilization: An International Journal*.
+ - 2010-2013. *Social Forces*.
+ - 2010-2013. *Sociologica: Italian Online Sociological Review*.
+ - 2008-2011. *Journal of World Systems Research*.
+ - 2009-2012. *Sociological Theory*.
+ - 2008-2014. *Poetics: Journal of Empirical Research on Culture, the Media and the Arts*.
 
 ### Program Committees
 **Steering Committee Member** 
-
-    - 2019-present. [SocArXiv](https://socopen.org/).
-
+ - 2019-present. [SocArXiv](https://socopen.org/).
 **PhD Teaching Board** 
-
-    - 2017-present. Doctoral Program in *Analysis of Social and Economic Processes (ASEP)*, Maurizio Pisati (Director), Department of Sociology and Social Research, University of Milano-Bicocca, Italy. 
-
+ - 2017-present. Doctoral Program in *Analysis of Social and Economic Processes (ASEP)*, Maurizio Pisati (Director), Department of Sociology and Social Research, University of Milano-Bicocca, Italy. 
 **Advisory Board Member** 
-
-    - 2023-2026. Department of Sociology, Johns Hopkins University.
-    - 2023-2024. *Duality@50* Conference, Monte Verità, Ascona, Switzerland.
-
+ - 2023-2026. Department of Sociology, Johns Hopkins University.
+ - 2023-2024. *Duality@50* Conference, Monte Verità, Ascona, Switzerland.
 **Program Committee Member** 
-
-    - SI 2022, Workshop on Social Influence, at the IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining (ASONAM 2022), Istanbul, Turkey.
-    - 28th ACM/SIGKDD Conference on Knowledge Discovery and Data Mining (KDD 2022), Washington DC.
-    - SI 2021, Workshop on Social Influence, at the IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining (ASONAM 2021), (Virtual).
-    - 7th International Conference on Computational Social Science (IC2S2-2021), Zurich, Switzerland.
-    - 5th Edition of the Workshop on Social Influence, at the IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining (ASONAM 2019), Vancouver, Canada. 
-    - 4th Edition of the Workshop on Social Influence, at the IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining (ASONAM 2018), Barcelona, Spain. 
-    - 3rd Edition of the Workshop on Social Influence, at the IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining (ASONAM 2017), Sidney, Australia. 
-    - 3rd International Conference on Computational Social Science ($IC^2S^2$), Cologne, Germany, 2017. 
-    - 2nd Edition of the Workshop on Social Influence, at the IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining (ASONAM 2016), San Francisco, CA. 
-    - 30 Years after "Distinction" Conference, at the Institut d'Etudes Politiques de Paris (Science Po), Paris, France, 2010.
-    - American Sociological Association Section on Social Psychology, 2008.
+ - SI 2022, Workshop on Social Influence, at the IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining (ASONAM 2022), Istanbul, Turkey.
+ - 28th ACM/SIGKDD Conference on Knowledge Discovery and Data Mining (KDD 2022), Washington DC.
+ - SI 2021, Workshop on Social Influence, at the IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining (ASONAM 2021), (Virtual).
+ - 7th International Conference on Computational Social Science (IC2S2-2021), Zurich, Switzerland.
+ - 5th Edition of the Workshop on Social Influence, at the IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining (ASONAM 2019), Vancouver, Canada. 
+ - 4th Edition of the Workshop on Social Influence, at the IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining (ASONAM 2018), Barcelona, Spain. 
+ - 3rd Edition of the Workshop on Social Influence, at the IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining (ASONAM 2017), Sidney, Australia. 
+ - 3rd International Conference on Computational Social Science ($IC^2S^2$), Cologne, Germany, 2017. 
+ - 2nd Edition of the Workshop on Social Influence, at the IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining (ASONAM 2016), San Francisco, CA. 
+ - 30 Years after "Distinction" Conference, at the Institut d'Etudes Politiques de Paris (Science Po), Paris, France, 2010.
+ - American Sociological Association Section on Social Psychology, 2008.
 
 ## Professional Service
 ### ASA Committees
 **American Sociological Association Committee Member**
-
-    - Section on the Sociology of Culture, Stuart Hall Award in Cultural Sociology Selection Committee, 2025. 
-    - Section on Theory, Junior Theorist Award Selection Committee, 2024.
-    - Section on Consumers and Consumption Distinguished Scholarly Publication Award Selection Committee, 2024.
-    - Section on Social Psychology, Professional and External Affairs Committee, 2021-2024.
-    - Section on Mathematical Sociology, Award for Progress in Mathematical Sociology Selection Committee, 2023.
-    - Section on Consumers and Consumption Distinguished Scholarly Publication Award Selection Committee, 2023.
-    - W.E.B. Du Bois Career of Distinguished Scholarship Award Selection Committee, 2021-2023.
-    - Section on the Sociology of Culture, Program Committee, 2022.
-    - Section on the Sociology of Culture, Program Committee, 2021.
-    - Lewis A. Coser Award for Theoretical Agenda-Setting Selection Committee, 2015.
-    - Section on Comparative and Historical Sociology, Charles Tilly Best Article Award Selection Committee, 2015.
-    - Committee on Nominations, 2014-2015. 
-    - Section on Theory, Theory Prize Selection Committee, 2014.
-    - Section on Theory, Theory Prize Selection Committee, 2012.
-    - Section on Mathematical Sociology, Graduate Student Paper Award Selection Committee, 2012.
-    - Section on the History of Sociology, Annual Publication Prize Award Selection Committee, 2010.
-    - Section on the Sociology of Culture, Clifford Geertz Award for Best Article Selection Committee, 2009.
-    - Section on Theory, Membership Committee, 2009.
-    - Section on the Sociology of Culture, Committee on Nominations, 2007.
-
+ - Section on the Sociology of Culture, Stuart Hall Award in Cultural Sociology Selection Committee, 2025. 
+ - Section on Theory, Junior Theorist Award Selection Committee, 2024.
+ - Section on Consumers and Consumption Distinguished Scholarly Publication Award Selection Committee, 2024.
+ - Section on Social Psychology, Professional and External Affairs Committee, 2021-2024.
+ - Section on Mathematical Sociology, Award for Progress in Mathematical Sociology Selection Committee, 2023.
+ - Section on Consumers and Consumption Distinguished Scholarly Publication Award Selection Committee, 2023.
+ - W.E.B. Du Bois Career of Distinguished Scholarship Award Selection Committee, 2021-2023.
+ - Section on the Sociology of Culture, Program Committee, 2022.
+ - Section on the Sociology of Culture, Program Committee, 2021.
+ - Lewis A. Coser Award for Theoretical Agenda-Setting Selection Committee, 2015.
+ - Section on Comparative and Historical Sociology, Charles Tilly Best Article Award Selection Committee, 2015.
+ - Committee on Nominations, 2014-2015. 
+ - Section on Theory, Theory Prize Selection Committee, 2014.
+ - Section on Theory, Theory Prize Selection Committee, 2012.
+ - Section on Mathematical Sociology, Graduate Student Paper Award Selection Committee, 2012.
+ - Section on the History of Sociology, Annual Publication Prize Award Selection Committee, 2010.
+ - Section on the Sociology of Culture, Clifford Geertz Award for Best Article Selection Committee, 2009.
+ - Section on Theory, Membership Committee, 2009.
+ - Section on the Sociology of Culture, Committee on Nominations, 2007.
 **American Sociological Association Committee Chair**
-
-    - Section on Social Psychology, Professional and External Affairs Committee, 2024.
-    - W.E.B. Du Bois Career of Distinguished Scholarship Award Selection Committee, 2023.
-    - Section on the Sociology of Culture, Clifford Geertz Award for Best Article Selection Committee, 2021.
-    - Section on the Sociology of Culture, Committee on Nominations, 2019.
-    - Section on Theory, Shils-Coleman Graduate Student Paper Award, 2012.
-
+ - Section on Social Psychology, Professional and External Affairs Committee, 2024.
+ - W.E.B. Du Bois Career of Distinguished Scholarship Award Selection Committee, 2023.
+ - Section on the Sociology of Culture, Clifford Geertz Award for Best Article Selection Committee, 2021.
+ - Section on the Sociology of Culture, Committee on Nominations, 2019.
+ - Section on Theory, Shils-Coleman Graduate Student Paper Award, 2012.
 **American Sociological Association Elected Officer** 
-
-    - Section on Mathematical Sociology (Chair), 2025-2026.
-    - Section on Mathematical Sociology (Chair-Elect), 2024-2025.
-    - Section on the Sociology of Culture (Past Chair), 2020-2021.
-    - Section on the Sociology of Culture (Chair), 2018-2019.
-    - Section on the Sociology of Culture (Chair-Elect), 2017-2018.
-    - Section on Theory (Council), 2011-2014.
-    - Section on the Sociology of Culture (Council), 2011-2014.
+ - Section on Mathematical Sociology (Chair), 2025-2026.
+ - Section on Mathematical Sociology (Chair-Elect), 2024-2025.
+ - Section on the Sociology of Culture (Past Chair), 2020-2021.
+ - Section on the Sociology of Culture (Chair), 2018-2019.
+ - Section on the Sociology of Culture (Chair-Elect), 2017-2018.
+ - Section on Theory (Council), 2011-2014.
+ - Section on the Sociology of Culture (Council), 2011-2014.
 
 ### Conference Organizer
 **Conference Session Organizer**
-
-    - Session on "Formal models of duality in culture and society." Annual Meeting of the American Sociological Association, Montreal, Canada, 2024.
-    - Session on "Duality in social networks after fifty years: Contemporary advances and future prospects." International Sunbelt Social Networks Conference (Sunbelt'24), Edinburgh, Scotland.
-    - Regular session on "The making and remaking of Science in bureaucratic and institutional context." Annual Meeting of the American Sociological Association, Los Angeles, California, 2022.
-    - Thematic session on "Intellectual displacements." Annual Meeting of the American Sociological Association, Los Angeles, California, 2022.
-    - Regular session on "Popular culture: Fields of cultural production ." Annual Meeting of the American Sociological Association, New York, New York, 2019.
-    - Regular session on "Popular culture: Cultural taste and aesthetics." Annual Meeting of the American Sociological Association, New York, New York, 2019.
-    - Session on "Race, emotion and social networks." Annual Meeting of the American Sociological Association, Philadelphia, Pennsylvania, 2018.
-    - Session on  "Can cultural sociology be an interscience?" Annual Meeting of the American Sociological Association, Seattle, Washington, 2016.
-    - Regular session on "Habitus"   Annual meeting of the American Sociological Association, San Francisco, California, 2014.
-    - Special session on "Cognitive science and methodological practice in sociology: Implications, challenges and prospects."  Annual meeting of the American Sociological Association, Las Vegas, Nevada, 2011.
-    - Session on "Exploring the role of culture in the creation and reproduction of social boundaries" Annual meeting of the Pacific Sociological Association, Seattle, Washington, 2011.
-    - Joint invited session (Section on the Sociology of Culture and Section on Social Psychology) on "What can social psychologists learn from cultural sociology?"   Annual meeting of the American Sociological Association, Atlanta, Georgia, 2010.
-    - Session on "What's new at the intersection of culture and cognition?" Annual meeting of the American Sociological Association, San Francisco, California, 2009.
-    - Roundtables for the Section on the Sociology of Culture, Annual meeting of the American Sociological Association, New York, New York, 2007.
-    - Session on "Comparative approaches to cultural taste and culture consumption." Annual meeting of the Pacific Sociological Association, Portland, Oregon, 2005.
-    - (with Michelle Bata) Session on "Local responses to globalization." Annual meeting of the Pacific Sociological Association, San Francisco, California, 2004.
+ - Session on "Formal models of duality in culture and society." Annual Meeting of the American Sociological Association, Montreal, Canada, 2024.
+ - Session on "Duality in social networks after fifty years: Contemporary advances and future prospects." International Sunbelt Social Networks Conference (Sunbelt'24), Edinburgh, Scotland.
+ - Regular session on "The making and remaking of Science in bureaucratic and institutional context." Annual Meeting of the American Sociological Association, Los Angeles, California, 2022.
+ - Thematic session on "Intellectual displacements." Annual Meeting of the American Sociological Association, Los Angeles, California, 2022.
+ - Regular session on "Popular culture: Fields of cultural production ." Annual Meeting of the American Sociological Association, New York, New York, 2019.
+ - Regular session on "Popular culture: Cultural taste and aesthetics." Annual Meeting of the American Sociological Association, New York, New York, 2019.
+ - Session on "Race, emotion and social networks." Annual Meeting of the American Sociological Association, Philadelphia, Pennsylvania, 2018.
+ - Session on  "Can cultural sociology be an interscience?" Annual Meeting of the American Sociological Association, Seattle, Washington, 2016.
+ - Regular session on "Habitus"   Annual meeting of the American Sociological Association, San Francisco, California, 2014.
+ - Special session on "Cognitive science and methodological practice in sociology: Implications, challenges and prospects."  Annual meeting of the American Sociological Association, Las Vegas, Nevada, 2011.
+ - Session on "Exploring the role of culture in the creation and reproduction of social boundaries" Annual meeting of the Pacific Sociological Association, Seattle, Washington, 2011.
+ - Joint invited session (Section on the Sociology of Culture and Section on Social Psychology) on "What can social psychologists learn from cultural sociology?"   Annual meeting of the American Sociological Association, Atlanta, Georgia, 2010.
+ - Session on "What's new at the intersection of culture and cognition?" Annual meeting of the American Sociological Association, San Francisco, California, 2009.
+ - Roundtables for the Section on the Sociology of Culture, Annual meeting of the American Sociological Association, New York, New York, 2007.
+ - Session on "Comparative approaches to cultural taste and culture consumption." Annual meeting of the Pacific Sociological Association, Portland, Oregon, 2005.
+ - (with Michelle Bata) Session on "Local responses to globalization." Annual meeting of the Pacific Sociological Association, San Francisco, California, 2004.
 
 ### Conference Session Discussant
 **Conference Session Discussant**
-
-    - Session on "Field theory, history, and sociological analysis: New directions." Annual meeting of the American Sociological Association, Montreal, Canada, 2024.
-    - Author Meets Critics panel on Robert M. Fishman's *Democratic Practice: Origins of the Iberian Divide in Political Inclusion*. 26th International Conference of Europeanists, Universidad Carlos III de Madrid, Madrid, Spain, 2019. 
-    - Author meets critics roundtable session for Vanina Leschziner's *Recipes for Success Elite Chefs, Restaurants, and Culinary Styles in New York and San Francisco*. Annual meeting of the American Sociological Association, San Francisco, California, 2014.
-    - Regular Session on "Habitus"   Annual meeting of the American Sociological Association, San Francisco, California, 2014.
-    - Session on "Habitus: Empirical explorations of how class-based dispositions shape daily life." Annual Meeting of the Eastern Sociological Society, Baltimore, MD, 2014.
-    - Session on "Consumption and inequalities." Annual Meeting of the American Sociological Association, New York, New York, 2013.
-    - Session on "New approaches to modeling cultural processes." Annual meeting of the American Sociological Association, Las Vegas, Nevada, 2011.
-    - Session on "Local responses to globalization." Annual meeting of the Pacific Sociological Association, San Francisco, California, 2004.
+ - Session on "Field theory, history, and sociological analysis: New directions." Annual meeting of the American Sociological Association, Montreal, Canada, 2024.
+ - Author Meets Critics panel on Robert M. Fishman's *Democratic Practice: Origins of the Iberian Divide in Political Inclusion*. 26th International Conference of Europeanists, Universidad Carlos III de Madrid, Madrid, Spain, 2019. 
+ - Author meets critics roundtable session for Vanina Leschziner's *Recipes for Success Elite Chefs, Restaurants, and Culinary Styles in New York and San Francisco*. Annual meeting of the American Sociological Association, San Francisco, California, 2014.
+ - Regular Session on "Habitus"   Annual meeting of the American Sociological Association, San Francisco, California, 2014.
+ - Session on "Habitus: Empirical explorations of how class-based dispositions shape daily life." Annual Meeting of the Eastern Sociological Society, Baltimore, MD, 2014.
+ - Session on "Consumption and inequalities." Annual Meeting of the American Sociological Association, New York, New York, 2013.
+ - Session on "New approaches to modeling cultural processes." Annual meeting of the American Sociological Association, Las Vegas, Nevada, 2011.
+ - Session on "Local responses to globalization." Annual meeting of the Pacific Sociological Association, San Francisco, California, 2004.
 
 ### Conference Session Presider
 **Conference Session Presider**
-
-   - Session "Showcasing excellent scholarship in the History of Sociology & Social Thought." Annual Meeting of the American Sociological Association, Chicago, Illinois, 2025.
-   
-   - Regular session on "The making and remaking of Science in bureaucratic and institutional context." Annual Meeting of the American Sociological Association, Los Angeles, California, 2022.
-    
-    - Thematic session on "Intellectual displacements." Annual Meeting of the American Sociological Association, Los Angeles, California, 2022.
-    
-    - Regular session on "Popular culture: Fields of cultural production." Annual Meeting of the American Sociological Association, New York, New York, 2019.
-    
-    - Regular session on "Popular culture: Cultural taste and aesthetics." Annual Meeting of the American Sociological Association, New York, New York, 2019.
-    
-    - Session on  "Can cultural sociology be an interscience?" Annual Meeting of the American Sociological Association, Seattle, Washington, 2016.
-    
-    - Session on "Habitus: Empirical explorations of how class-based dispositions shape daily life." Annual Meeting of the Eastern Sociological Society, Baltimore, MD, 2014.
-    
-    - Session on "Realism and sociology." Annual Meeting of the American Sociological Association, Denver, Colorado, 2012.
-    
-    - Session on "Music and genres: Boundaries, formation and identity." Annual Meeting of the Southern Sociological Society, New Orleans, Louisiana, 2012.
-    
-    - Session on "Comparative views on changing social contracts." Annual Meeting of the Southern Sociological Society, New Orleans, Louisiana, 2012.
-    
-    - Session on "New approaches to modeling cultural processes." Annual meeting of the American Sociological Association, Las Vegas, Nevada, 2011.
-    
-    - Session on "Content and structure." Annual meeting of the American Sociological Association, San Francisco, California, 2009.
-    
-    - Session on "The global Umma: The imagined community of radical Islam."  Annual meeting of the American Sociological Association, San Francisco, California, 2009.
-    
-    - Section on the Sociology of Culture and Section on Social Psychology joint invited session on "What can social psychologists learn from cultural sociology?"   Annual meeting of the American Sociological Association, Atlanta, Georgia, 2010.
+ - Session "Showcasing excellent scholarship in the History of Sociology & Social Thought." Annual Meeting of the American Sociological Association, Chicago, Illinois, 2025.
+ - Regular session on "The making and remaking of Science in bureaucratic and institutional context." Annual Meeting of the American Sociological Association, Los Angeles, California, 2022.
+ - Thematic session on "Intellectual displacements." Annual Meeting of the American Sociological Association, Los Angeles, California, 2022.
+ - Regular session on "Popular culture: Fields of cultural production." Annual Meeting of the American Sociological Association, New York, New York, 2019.
+ - Regular session on "Popular culture: Cultural taste and aesthetics." Annual Meeting of the American Sociological Association, New York, New York, 2019.
+ - Session on  "Can cultural sociology be an interscience?" Annual Meeting of the American Sociological Association, Seattle, Washington, 2016.
+ - Session on "Habitus: Empirical explorations of how class-based dispositions shape daily life." Annual Meeting of the Eastern Sociological Society, Baltimore, MD, 2014.
+ - Session on "Realism and sociology." Annual Meeting of the American Sociological Association, Denver, Colorado, 2012.
+ - Session on "Music and genres: Boundaries, formation and identity." Annual Meeting of the Southern Sociological Society, New Orleans, Louisiana, 2012.
+ - Session on "Comparative views on changing social contracts." Annual Meeting of the Southern Sociological Society, New Orleans, Louisiana, 2012.
+ - Session on "New approaches to modeling cultural processes." Annual meeting of the American Sociological Association, Las Vegas, Nevada, 2011.
+ - Session on "Content and structure." Annual meeting of the American Sociological Association, San Francisco, California, 2009.
+ - Session on "The global Umma: The imagined community of radical Islam."  Annual meeting of the American Sociological Association, San Francisco, California, 2009.
+ - Section on the Sociology of Culture and Section on Social Psychology joint invited session on "What can social psychologists learn from cultural sociology?"   Annual meeting of the American Sociological Association, Atlanta, Georgia, 2010.
 
 ## Student Advising
 ### PhD Dissertation Committee
 ::: {.cventry}
 **Doctoral Dissertations Directed **
-\footnotetext{*Co-Chair.}
-
+* *Co-Chair.*
  *University of California, Los Angeles* 
 
-   
-    Isaac Jilbert (2026) 
-    Acton Jiashi Feng (2027) 
-    Aya Ambrose Konishi (2027) 
-    Anthony Shu (2028) 
-    Stephanie Zhang* (2028) 
-    Nida Sanglimsuwan* (2028) 
-
+Isaac Jilbert (2026) 
+Acton Jiashi Feng (2027) 
+Aya Ambrose Konishi (2027) 
+Anthony Shu (2028) 
+Stephanie Zhang* (2028) 
+Nida Sanglimsuwan* (2028) 
  *University of Notre Dame* 
 
-    
-    Christopher John Hausmann (2011) 
-    Justin Farrell* (2013) 
-    Ana Velitchkova (2014) 
-    Sara Skiles (2014) 
-    Melissa Pirkey (2015) 
-    Marshall Taylor (2019) 
-    Michael Wood* (2019) 
-    Brandon Sepulvado* (2019) 
-    Dustin Stoltz* (2020) 
+Christopher John Hausmann (2011) 
+Justin Farrell* (2013) 
+Ana Velitchkova (2014) 
+Sara Skiles (2014) 
+Melissa Pirkey (2015) 
+Marshall Taylor (2019) 
+Michael Wood* (2019) 
+Brandon Sepulvado* (2019) 
+Dustin Stoltz* (2020) 
 
  **Ph.D. Committee Member (Sociology, Unless Otherwise Stated)** 
-
  *University of California, Los Angeles*
- 
-    Alina Ashelman (2022) 
-    Anthony James Williams (2023) 
-    Bernard Koch (2023) 
-    Carmella N. Stoddard (2024) 
-    Andrew Chalfoun (2026) 
-    Kaiting Zhou (2027) 
-    Michelle Marinello (2027) 
-    Kaitlyn Cunningham (2027) 
-    Riley Ceperich (2027) 
-    Vivek Ramakrishnan (2027) 
-    Hsiu-Yu Yang (2028) 
-    Roxanne Corbeil (2028) 
+Alina Ashelman (2022) 
+Anthony James Williams (2023) 
+Bernard Koch (2023) 
+Carmella N. Stoddard (2024) 
+Andrew Chalfoun (2026) 
+Kaiting Zhou (2027) 
+Michelle Marinello (2027) 
+Kaitlyn Cunningham (2027) 
+Riley Ceperich (2027) 
+Vivek Ramakrishnan (2027) 
+Hsiu-Yu Yang (2028) 
+Roxanne Corbeil (2028) 
 
  *University of Notre Dame*
 
-    Carl A. Neblett (2008) 
-    Elizabeth E. Martinez (2011) 
-    Patricia Snell Herzog (2011) 
-    Heather Elaine Price (2011) 
-    Cheng Wang (2012) 
-    Sarah Shafiq (2012) 
-    Michael Strand (2013) 
-    Brandon Vaidyanathan (2013) 
-    Kari Marie Hojara (2014) 
-    Peter Mundey (2014) 
-    Daniel Castillo‡* ‡ *Theology.* (2014)  
-    Yang Yang^[Computer Science and Engineering.] (2015) 
-    Daniel Escher (2015) 
-    Brad Vermurlen (2016) 
-    Kevin Estep (2017) 
-    Yuxiao Dong**  (2017) 
-    Matthew Chandler (2017) 
-    Aastha Nigam**  (2018) 
-    Stefanie Israel de Souza (2019) 
-    Justin Van Ness (2019) 
-    Robert Mowry (2021)
+Carl A. Neblett (2008) 
+Elizabeth E. Martinez (2011) 
+Patricia Snell Herzog (2011) 
+Heather Elaine Price (2011) 
+Cheng Wang (2012) 
+Sarah Shafiq (2012) 
+Leeloo Strand (2013) 
+Brandon Vaidyanathan (2013) 
+Kari Marie Hojara (2014) 
+Peter Mundey (2014) 
+Daniel Castillo^[Theology.] (2014)  
+Yang Yang^[Computer Science and Engineering.] (2015) 
+Daniel Escher (2015) 
+Brad Vermurlen (2016) 
+Kevin Estep (2017) 
+Yuxiao Dong**  (2017) 
+Matthew Chandler (2017) 
+Aastha Nigam**  (2018) 
+Stefanie Israel de Souza (2019) 
+Justin Van Ness (2019) 
+Robert Mowry (2021)
 
  *External*
- 
-    Alessandra Lembo†* † *University of Chicago* (2022) 
-    Tae-Ung Choi††* †† *Northwestern University, Kellogg School of Management* (2023) 
-    Gordon Brett†††* ††† *University of Toronto* (2023) 
-    Turgut Keskintürk††††* †††† *Duke University* (2025)
+Alessandra Lembo^[University of Chicago] (2022) 
+Tae-Ung Choi^[Northwestern University, Kellogg School of Management] (2023) 
+Gordon Brett^[University of Toronto] (2023) 
+Turgut Keskintürk^[Duke University] (2025)
 :::
 
 ### MA Thesis Committee
 ::: {.cventry}
 **Master's Theses Directed**
-
  *University of California, Los Angeles* 
-    
-    
-    Acton Jiashi Feng (2023) 
-    Aya Ambrose Konishi (2023)   	
-    Anthony Shu (2024) 
-    Sebastian Pressing (2025)
+
+Acton Jiashi Feng (2023) 
+Aya Ambrose Konishi (2023)     
+Anthony Shu (2024) 
+Sebastian Pressing (2025)
 
  *University of Notre Dame* 
-    
-    
-    Thomas Buschman (2010) 
-    Michael Penta (2012) 
-    Brandon Sepulvado (2014) 
+
+Thomas Buschman (2010) 
+Michael Penta (2012) 
+Brandon Sepulvado (2014) 
 
  **M.A. Committee Member** 
-
  *University of California, Los Angeles*
 
-    
-    Kaitlyn Cunningham (2022) 
-    Nida Sanglimsuwan (2022) 
-    Shibing Zhou (2024) 
-    Riley Ceperich (2023) 
-    Michael Courville (2025) 
-    Anne Lin (2025)  
-    Stephanie Zhang (2025) 
+Kaitlyn Cunningham (2022) 
+Nida Sanglimsuwan (2022) 
+Shibing Zhou (2024) 
+Riley Ceperich (2023) 
+Michael Courville (2025) 
+Anne Lin (2025)  
+Stephanie Zhang (2025) 
 
  *University of Notre Dame*
 
-    
-    Elizabeth Blakey Martinez (2007) 
-    Christopher John Hausmann (2008) 
-    Michael Strand (2008) 
-    Lisa Weaver Swartz (2008) 
-    Matthew Vernon Howell (2009) 
-    Patricia Snell (2009) 
-    Mehrdad Babadi (2013) 
-    Stefanie Israel (2014) 
-    Michael Rotolo (2018)
+Elizabeth Blakey Martinez (2007) 
+Christopher John Hausmann (2008) 
+Leeloo Strand (2008) 
+Lisa Weaver Swartz (2008) 
+Matthew Vernon Howell (2009) 
+Patricia Snell (2009) 
+Mehrdad Babadi (2013) 
+Stefanie Israel (2014) 
+Michael Rotolo (2018)
 :::
 
 ### Undergraduate Honors Thesis Advising
 ::: {.cventry}
 **Undergraduate Research Faculty Advisor** 
-
  *University of California, Los Angeles*
 
-    
-    Shiyu (David) Ji (2020) 
-    Jacarra Knowles (2023) 
-    Hebah Halibi (2025)
-
+Shiyu (David) Ji (2020) 
+Jacarra Knowles (2023) 
+Hebah Halibi (2025)
  *University of Notre Dame*
 
-    
-    Erin Robertson**\footnotetext{\textcolor{uclablue}
-    {**}McNair's Project.}  (2007) 
-    Teresa Bone* (2008) 
-    Melissa Truitt* (2011)  
-    Yo Tam Yoon* (2012) 
-    Olevia Boykin* (2014) 
-    Karyn Vilbig* (2014)  
-    Molly Feeney^[Honors Thesis.] (2015)
+Erin Robertson**\footnotetext{\textcolor{uclablue}
+{**}McNair's Project.}  (2007) 
+Teresa Bone* (2008) 
+Melissa Truitt* (2011)  
+Yo Tam Yoon* (2012) 
+Olevia Boykin* (2014) 
+Karyn Vilbig* (2014)  
+Molly Feeney** *Honors Thesis.* (2015)
 :::
 
 ## Courses Taught
@@ -1494,22 +1021,21 @@ Albert J. Bergesen and **Omar Lizardo**. 2002. "Terrorism and hegemonic decline.
 [ *University of California, Los Angeles*]
 
 Cultural Sociology^[Graduate Seminar.] 
-Topics in Sociological Theorizing\textcolor{uclablue}{$^\dag$}  
+Topics in Sociological Theorizing<sup>†</sup>  
 Social Networks 
-Social Network Methods (A & B)\textcolor{uclablue}{$^\dag$} 
-Theory and Research in Sociology\textcolor{uclablue}{$^\dag$} 
-  
+Social Network Methods (A & B)<sup>†</sup> 
+Theory and Research in Sociology<sup>†</sup> 
 
 [ *University of Notre Dame*]
 
-Classical Sociological Theory\textcolor{uclablue}{$^\dag$}   
+Classical Sociological Theory<sup>†</sup>   
 Consumer Culture Research  
-Contemporary Theory\textcolor{uclablue}{$^\dag$}  
-Culture and Cognition\textcolor{uclablue}{$^\dag$}  
+Contemporary Theory<sup>†</sup>  
+Culture and Cognition<sup>†</sup>  
 Culture, Morality, and Society  
 Foundations of Sociological Theory  
-From Publishable to Published\textcolor{uclablue}{$^\dag$}   
+From Publishable to Published<sup>†</sup>   
 Social Networks  
-Social Networks\textcolor{uclablue}{$^\dag$}
+Social Networks<sup>†</sup>
 :::
 

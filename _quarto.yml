@@ -57,7 +57,7 @@ website:
 
       - href: cv.qmd
         text: "Vita"
-        icon: file-pdf
+        icon: file-person
       - href: bio.qmd
         text: "Bio"
         icon: person-circle
