@@ -630,7 +630,7 @@ multi-step model of information spread." [arXiv:2409.01225](https://arxiv.org/ab
 
 Mateusz Nurek, Joanna Kołaczek, Radosław Michalski, Bolesław K. Szymański and **Omar Lizardo**. "CoDiNG – Naming game with continuous latent state of agents." [arXiv:2406.19204](https://arxiv.org/abs/2406.19204).
 
-James Flamino, Ross DeVito, **Omar Lizardo** and Bolesław K. Szymański. "Modeling memory imprints induced by interactions in social networks." [arXiv:2101.09417](https://arxiv.org/abs/2101.09417).
+James Flamino, Ross DeVito, **Omar Lizardo** and Bolesław K. Szymański. "Modeling memory imprints induced by interactions in social networks." [arXiv:2210.03197](https://arxiv.org/abs/2210.03197).
 
 James Flamino, Ross DeVito, Bolesław K. Szymański and **Omar Lizardo**. "A machine learning approach to predicting continuous tie strengths." [arXiv:2101.09417](https://arxiv.org/abs/2101.09417).
 
@@ -659,6 +659,12 @@ Troy Raeder, **Omar Lizardo**, David Hachen and Nitesh V. Chawla. "Predictors of
 
 ## SocArXiv e-prints
 ::: {.cventry}
+**Omar Lizardo**. "Specifying the 'what' and separating the 'how': Doings, sayings, codes, and artifacts as the building blocks of institutions." [https://doi.org/10.31235/osf.io/2eu34](https://doi.org/10.31235/osf.io/2eu34).
+
+Seth Abrutyn and **Omar Lizardo**. "Grief, Care, and Play: Theorizing the affective roots of the social self." [https://doi.org/10.31219/osf.io/pkh7c](https://doi.org/10.31219/osf.io/pkh7c).
+
+**Omar Lizardo**, Robert Mowry, Brandon Sepulvado, Dustin S. Stoltz, Marshall A. Taylor, Justin Van Ness and Michael Lee Wood. "What are dual process models? Implications for cultural analysis in sociology." [https://doi.org/10.31235/osf.io/sx8b6](https://doi.org/10.31235/osf.io/sx8b6).
+
 Travis Ashby, **Omar Lizardo**, Dustin S. Stoltz, and Michael L. Wood. "The raw and the (over)cooked states are physical qualities." [https://doi.org/10.31235/osf.io/h5nuq](https://doi.org/10.31235/osf.io/h5nuq).
 
 Dustin S. Stoltz, Marshall A. Taylor and **Omar Lizardo**. "Functionaries: Institutional theory without institutions." *SocArXiv preprint* [https://doi.org/10.31235/osf.io/p48ft](https://doi.org/10.31235/osf.io/p48ft).
