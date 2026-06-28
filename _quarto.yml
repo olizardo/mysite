@@ -28,7 +28,7 @@ website:
             icon: table
             href: "https://olizardo.github.io/SSI-2012/"
           - text: "NetSense Study"
-          - icon: table
+            icon: table
             href: "https://olizardo.github.io/NetSense/"
       - text: "Teaching"
         icon: pencil
