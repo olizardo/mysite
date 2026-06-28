@@ -5,7 +5,7 @@ library(utils)
 src_dir <- "vita-src"
 
 # Define the text cleaning function
-clean_tex_to_md <- function(filepath) {
+clean_tex_to_md <- function(filepath, is_list = FALSE) {
   if (!file.exists(filepath)) {
     warning(paste("File does not exist:", filepath))
     return("")
@@ -20,7 +20,7 @@ clean_tex_to_md <- function(filepath) {
   text <- gsub("(?<!\\\\)%[^\n]*", "", text, perl = TRUE)
   
   # 1. Normalize typos and line-splits in source LaTeX files before any parsing!
-  text <- gsub("(?m)uclablue\\s*\\n\\s*", "uclablue", text, perl = TRUE)
+  text <- gsub("uclablue\\}\\s*\\n\\s*", "uclablue\\}", text, perl = TRUE)
   text <- gsub("\\bxtcolor\\{", "\\\\textcolor\\{", text, perl = TRUE)
   text <- gsub("\\begin{sloppypar}", "", text, fixed = TRUE)
   text <- gsub("\\end{sloppypar}", "", text, fixed = TRUE)
@@ -35,17 +35,17 @@ clean_tex_to_md <- function(filepath) {
   
   # 2. Remove layout/spacing/formatting commands completely at the very beginning
   # so they don't corrupt brace-matching for bold and italics!
-  text <- gsub("(?m)^\\s*\\\\setlength.*$", "", text, perl = TRUE)
-  text <- gsub("(?m)^\\s*\\\\itemsep.*$", "", text, perl = TRUE)
-  text <- gsub("(?m)^\\s*\\\\multicolsep.*$", "", text, perl = TRUE)
-  text <- gsub("(?m)^\\s*\\\\begin\\{multicols\\}.*$", "", text, perl = TRUE)
-  text <- gsub("(?m)^\\s*\\\\end\\{multicols\\}.*$", "", text, perl = TRUE)
-  text <- gsub("(?m)^\\s*\\\\begin\\{itemize\\}.*$", "", text, perl = TRUE)
-  text <- gsub("(?m)^\\s*\\\\end\\{itemize\\}.*$", "", text, perl = TRUE)
-  text <- gsub("(?m)^\\s*\\\\vspace\\{[^}]+\\}$", "", text, perl = TRUE)
+  text <- gsub("(?m)^[ \\t]*\\\\setlength.*$", "", text, perl = TRUE)
+  text <- gsub("(?m)^[ \\t]*\\\\itemsep.*$", "", text, perl = TRUE)
+  text <- gsub("(?m)^[ \\t]*\\\\multicolsep.*$", "", text, perl = TRUE)
+  text <- gsub("(?m)^[ \\t]*\\\\begin\\{multicols\\}.*$", "", text, perl = TRUE)
+  text <- gsub("(?m)^[ \\t]*\\\\end\\{multicols\\}.*$", "", text, perl = TRUE)
+  text <- gsub("(?m)^[ \\t]*\\\\begin\\{itemize\\}.*$", "", text, perl = TRUE)
+  text <- gsub("(?m)^[ \\t]*\\\\end\\{itemize\\}.*$", "", text, perl = TRUE)
+  text <- gsub("(?m)^[ \\t]*\\\\vspace\\{[^}]+\\}$", "", text, perl = TRUE)
   text <- gsub("\\\\vspace\\{[^}]+\\}", "", text, perl = TRUE) # inline vspace
-  text <- gsub("(?m)^\\s*\\\\footnotesize.*$", "", text, perl = TRUE)
-  text <- gsub("(?m)^\\s*\\\\small.*$", "", text, perl = TRUE)
+  text <- gsub("(?m)^[ \\t]*\\\\footnotesize.*$", "", text, perl = TRUE)
+  text <- gsub("(?m)^[ \\t]*\\\\small.*$", "", text, perl = TRUE)
   text <- gsub("\\\\footnotesize", "", text, fixed = TRUE)
   text <- gsub("\\\\small", "", text, fixed = TRUE)
   
@@ -80,13 +80,11 @@ clean_tex_to_md <- function(filepath) {
   text <- gsub("\\newline", " ", text, fixed = TRUE)
   
   # 9. Clean up indentation of bullet points and text to prevent them from becoming monospace code blocks!
-  # First, standardize all bullet lists to exactly two spaces of indentation
-  text <- gsub("(?m)^\\s+-\\s+", "  - ", text, perl = TRUE)
-  # Next, strip all leading whitespace from any lines that are NOT bullet list items.
-  # This completely flattens raw LaTeX text lines (like names, header titles) to the margin,
-  # preventing them from being parsed as preformatted indented code blocks (Courier font) in HTML and PDF!
-  text <- gsub("(?m)^\\s+(?!-)", "", text, perl = TRUE)
-  text <- gsub("(?m)^\\t+(?!-)", "", text, perl = TRUE)
+  # Use [ \t] instead of \s so we do NOT match or consume newline characters \n!
+  # This completely preserves double newlines \n\n (empty lines) between paragraph blocks!
+  text <- gsub("(?m)^[ \\t]+-\\s+", "  - ", text, perl = TRUE)
+  text <- gsub("(?m)^[ \\t]+(?!-)", "", text, perl = TRUE)
+  text <- gsub("(?m)^\\t+-\\s+", "  - ", text, perl = TRUE)
   text <- gsub("\t", "  ", text, fixed = TRUE)
   
   # 10. Simple fixed replacements for LaTeX commands/accents
@@ -123,13 +121,13 @@ clean_tex_to_md <- function(filepath) {
   text <- gsub("''", "\"", text, fixed = TRUE)
   text <- gsub("`", "'", text, fixed = TRUE)
   
-  # LaTeX layout spacing
+  # LaTeX layout spacing - convert \ind to double newlines to split paragraphs!
   text <- gsub("\\noindent", "", text, fixed = TRUE)
   text <- gsub("\\medskip", "\n", text, fixed = TRUE)
   text <- gsub("\\bigskip", "\n\n", text, fixed = TRUE)
   text <- gsub("\\newpage", "", text, fixed = TRUE)
-  text <- gsub("\\ind ", "", text, fixed = TRUE)
-  text <- gsub("\\ind", "", text, fixed = TRUE)
+  text <- gsub("\\ind ", "\n\n", text, fixed = TRUE)
+  text <- gsub("\\ind", "\n\n", text, fixed = TRUE)
   
   # Dynamic regex matching for bold, italic, href
   text <- gsub("\\\\textbf\\{([^}]+)\\}", "**\\1**", text, perl = TRUE)
@@ -148,7 +146,13 @@ clean_tex_to_md <- function(filepath) {
   # Remove remaining double backslashes \\ (LaTeX newlines) with empty string
   text <- gsub("\\\\", "", text, fixed = TRUE)
   
-  # Clean up multiple newlines
+  # 11. Convert raw text list items ending in \\ or standalone plain text lines in list-blocks
+  # into standard Markdown bullet list items! This runs on the clean Markdown text.
+  if (is_list) {
+    text <- gsub("(?m)^[ \\t]*([A-Za-z][^\\n]*?)$", "- \\1", text, perl = TRUE)
+  }
+  
+  # Clean up multiple newlines (collapse 3 or more into exactly 2)
   text <- gsub("\\n{3,}", "\n\n", text)
   
   return(trimws(text))
@@ -394,22 +398,23 @@ qmd_content <- c(qmd_content, clean_tex_to_md(file.path(src_dir, "20-presider.te
 qmd_content <- c(qmd_content, "## Student Advising")
 qmd_content <- c(qmd_content, "### PhD Dissertation Committee")
 qmd_content <- c(qmd_content, "::: {.cventry}")
-qmd_content <- c(qmd_content, clean_tex_to_md(file.path(src_dir, "21a-phd.tex")))
+qmd_content <- c(qmd_content, clean_tex_to_md(file.path(src_dir, "21a-phd.tex"), is_list = TRUE))
 qmd_content <- c(qmd_content, ":::")
 qmd_content <- c(qmd_content, "")
 qmd_content <- c(qmd_content, "### MA Thesis Committee")
 qmd_content <- c(qmd_content, "::: {.cventry}")
-qmd_content <- c(qmd_content, clean_tex_to_md(file.path(src_dir, "21b-ma.tex")))
+qmd_content <- c(qmd_content, clean_tex_to_md(file.path(src_dir, "21b-ma.tex"), is_list = TRUE))
 qmd_content <- c(qmd_content, ":::")
 qmd_content <- c(qmd_content, "")
 qmd_content <- c(qmd_content, "### Undergraduate Honors Thesis Advising")
 qmd_content <- c(qmd_content, "::: {.cventry}")
-qmd_content <- c(qmd_content, clean_tex_to_md(file.path(src_dir, "21c-ug.tex")))
+qmd_content <- c(qmd_content, clean_tex_to_md(file.path(src_dir, "21c-ug.tex"), is_list = TRUE))
 qmd_content <- c(qmd_content, ":::")
 qmd_content <- c(qmd_content, "")
 
 # 18. Courses Taught
-qmd_content <- c(qmd_content, add_hanging_section("Courses Taught", "22-courses.tex"))
+qmd_content <- c(qmd_content, "## Courses Taught")
+qmd_content <- c(qmd_content, clean_tex_to_md(file.path(src_dir, "22-courses.tex"), is_list = TRUE), "")
 
 # Write out the file
 writeLines(qmd_content, "cv.qmd")
