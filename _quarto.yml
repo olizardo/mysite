@@ -21,7 +21,7 @@ website:
             href: pubs.qmd
           - text: "Methods and Stuff"
             icon: graph-up
-            href: https://olizardo.github.io/methods-and-stuff/
+            href: methods-and-stuff/index.qmd
       - text: "Data"
         icon: database
         menu:
@@ -65,6 +65,21 @@ website:
       - href: mailto:olizardo@soc.ucla.edu
         icon: envelope
         text: "Email"
+
+  sidebar:
+    - title: "Methods and Stuff"
+      style: "docked"
+      contents:
+        - href: methods-and-stuff/index.qmd
+        - href: methods-and-stuff/ca.qmd
+        - href: methods-and-stuff/CA-viz-tabular-time.qmd
+        - href: methods-and-stuff/poly.qmd
+        - href: methods-and-stuff/two-mode-impressionists.qmd
+        - href: methods-and-stuff/temporal-cultural-hole-bridging.qmd
+        - href: methods-and-stuff/generalized-model-relational-similarity.qmd
+        - href: methods-and-stuff/generalized-rel-sim-bipartite-graphs.qmd
+        - href: methods-and-stuff/two-mode-reflections.qmd
+        - href: methods-and-stuff/bonacich-reflections.qmd
         
 format:
   html:
