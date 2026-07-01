@@ -1,0 +1,54 @@
+---
+title: "Using Simple Correspondence Analysis to Present Tabular Data that Shows Change Over Time"
+description: "Post using Correspondence Analysis to visualize tabular data with Examples."
+author: "Omar Lizardo"
+date: "2023-08-22"
+categories: [Correspondence Analysis, Measuring Culture]
+draft: true
+---
+
+```{r Setup, include=FALSE}
+     knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+     library(FactoMineR)
+     library(kableExtra)
+```
+
+```{r}
+     tab.07 <- matrix(c(242, 324, 191, 118, 419, 244,135, 87,
+                 310, 270, 189, 108, 455, 230, 115, 43), 
+                 nrow = 4, byrow = TRUE)
+     tab.13 <- matrix(c(330, 283, 168, 114, 507, 219,  95, 50, 
+                 336, 274, 172,  98,  582, 204,  76,  53), 
+                 nrow = 4, byrow = TRUE)
+     rownames(tab.07) <- c("Italy_07", "Greece_07", 
+                           "Spain_07", "Portugal_07")
+     rownames(tab.13) <- c("Italy_13", "Greece_13", 
+                           "Spain_13", "Portugal_13")
+     colnames(tab.07) <- c("Zero", "One to Two", "Three to Four",
+                           "Five to Six")
+     colnames(tab.13) <- c("Zero", "One to Two", "Three to Four",
+                           "Five to Six")
+     stack.tab <- rbind(tab.07, tab.13)
+     #stack.tab <- cbind(stack.tab, year = c(rep(2007, 4), rep(2013, 4)))
+```
+
+```{r}
+     d <- matrix(c(2, 5, 1, 6, 3, 13, 22, 20, 13, 0, 2, 3), 
+                   nrow = 4, byrow = TRUE)
+     rownames(d) <- c("Only hierarchical", "Only egalitarian", 
+                        "Both: ambivalent", "Neither: neutral")
+     colnames(d) <- c("Stayers (High Educ.)", "Movers (Low to High)", "Stayers (Less Educ.)")
+     CA(d)
+```
+
+
+```{r}
+#| label: fig-stack
+#| fig-cap: Correspondence analysis biplot of a stacked table
+#| fig-cap-location: margin
+#| fig-width: 10
+#| fig-height: 6
+
+CA(stack.tab)
+```
+
