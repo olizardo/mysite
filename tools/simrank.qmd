@@ -1,0 +1,54 @@
+---
+title: "SimRank"
+execute: 
+  eval: false
+  echo: true
+format: 
+   html:
+      code-line-numbers: true
+---
+
+`SimRank` is a recursive similarity measure where nodes are considered similar if they are connected to similar others. The following implementation covers the generalized version proposed by Zhao et al. (2009).
+
+```r
+SimRank <- function(w, alpha = 0.8, beta = 1) {
+  do <- rowSums(w) 
+  di <- colSums(w) 
+  n <- nrow(w) 
+  z <- diag(1, n, n)
+  rownames(z) <- rownames(w)
+  colnames(z) <- colnames(w)
+  onei <- apply(w, 1, function(x) which(x == 1), simplify = FALSE)
+  inei <- apply(w, 2, function(x) which(x == 1), simplify = FALSE)
+  delta <- 1
+  while (delta > 1e-10) {
+    z.o <- z
+    for (i in 1:n) {
+      for (j in 1:n) {
+        if (i == j) next
+        min.di <- min(di[i], di[j])
+        min.do <- min(do[i], do[j])
+        if (min.di != 0 & min.do != 0) {
+          a <- alpha / (di[i] * di[j])
+          b <- sum(as.matrix(z.o[inei[[i]], inei[[j]]]))
+          c <- alpha / (do[i] * do[j])
+          d <- sum(as.matrix(z.o[onei[[i]], onei[[j]]]))
+          z[i, j] <- beta * a * b + (1 - beta) * c * d
+        }
+        if (min.di != 0 & min.do == 0) {
+          a <- alpha / (di[i] * di[j])
+          b <- sum(as.matrix(z.o[inei[[i]], inei[[j]]]))
+          z[i, j] <- beta * a * b
+        }
+        if (min.di == 0 & min.do != 0) {
+          c <- alpha / (do[i] * do[j])
+          d <- sum(as.matrix(z.o[onei[[i]], onei[[j]]]))
+          z[i, j] <- (1 - beta) * c * d
+        }
+      }
+    }
+    delta <- abs(sum(abs(z)) - sum(abs(z.o)))
+  }
+  return(z)
+}
+```

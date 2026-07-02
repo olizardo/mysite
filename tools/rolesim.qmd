@@ -1,0 +1,61 @@
+---
+title: "RoleSim"
+execute: 
+  eval: false
+  echo: true
+format: 
+   html:
+      code-line-numbers: true
+---
+
+`RoleSim` (Jin et al. 2014) is a generalization of SimRank that computes similarity using maximum matching between neighbor sets, making it sensitive to automorphic similarity.
+
+```r
+RoleSim <- function(w, beta = 0.5) {
+  do <- rowSums(w)
+  di <- colSums(w)
+  n <- nrow(w)
+  z <- matrix(1, n, n)
+  rownames(z) <- rownames(w)
+  colnames(z) <- colnames(w)
+  onei <- apply(w, 1, function(x) which(x == 1), simplify = FALSE)
+  inei <- apply(w, 2, function(x) which(x == 1), simplify = FALSE)
+  delta <- 1
+  while (delta > 1e-10) {
+    z.o <- z
+    for (i in 1:n) {
+      for (j in i:n) {
+        if (i == j) next
+        min.di <- min(di[i], di[j])
+        max.di <- max(di[i], di[j])
+        min.do <- min(do[i], do[j])
+        max.do <- max(do[i], do[j])
+        if (min.di != 0 & min.do != 0) {
+          k <- z.o[inei[[i]], inei[[j]], drop = FALSE]
+          d <- as.numeric(which(c(di[i], di[j]) == min.di)[1])
+          mu.i <- sum(apply(k, d, max))
+          k <- z.o[onei[[i]], onei[[j]], drop = FALSE]
+          d <- as.numeric(which(c(do[i], do[j]) == min.do)[1])
+          mu.o <- sum(apply(k, d, max))
+          z[i, j] <- (beta * (mu.o + mu.i) / (max.do + max.di)) + (1 - beta)
+        }
+        if (min.di != 0 & min.do == 0) {
+          k <- z.o[inei[[i]], inei[[j]], drop = FALSE]
+          d <- as.numeric(which(c(di[i], di[j]) == min.di)[1])
+          mu.i <- sum(apply(k, d, max))
+          z[i, j] <- (beta * (mu.i / max.di)) + (1 - beta)
+        }
+        if (min.di == 0 & min.do != 0) {
+          k <- z.o[onei[[i]], onei[[j]], drop = FALSE]
+          d <- as.numeric(which(c(do[i], do[j]) == min.do)[1])
+          mu.o <- sum(apply(k, d, max))
+          z[i, j] <- (beta * (mu.o / max.do)) + (1 - beta)
+        }
+      }
+    }
+    z[lower.tri(z)] <- t(z)[lower.tri(z)]
+    delta <- sum(abs(abs(z) - abs(z.o)))
+  }
+  return(z)
+}
+```

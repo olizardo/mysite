@@ -1,0 +1,40 @@
+---
+title: "CentSim"
+execute: 
+  eval: false
+  echo: true
+format: 
+   html:
+      code-line-numbers: true
+---
+
+`CentSim` (Li et al. 2015) defines role similarity based on the ratio of centrality measures (Degree, Harmonic, Betweenness, and Eigenvector).
+
+```r
+cent.sim <- function(x) {
+  library(igraph)
+  c1 <- degree(x)
+  c2 <- harmonic_centrality(x)
+  c3 <- betweenness(x)
+  c4 <- eigen_centrality(x)$vector
+  n <- vcount(x)
+  min.max <- function(a, b) {
+    if (max(a, b) != 0) return(min(a, b) / max(a, b))
+    else return(1)
+  }
+  z <- diag(1, n, n)
+  rownames(z) <- V(x)$name
+  colnames(z) <- V(x)$name
+  for (i in 1:n) {
+    for (j in i:n) {
+      w1 <- min.max(c1[i], c1[j])
+      w2 <- min.max(c2[i], c2[j])
+      w3 <- min.max(c3[i], c3[j])
+      w4 <- min.max(c4[i], c4[j])
+      z[i, j] <- (w1 + w2 + w3 + w4) / 4
+    }
+  }
+  z[lower.tri(z)] <- t(z)[lower.tri(z)]
+  return(z)
+}
+```

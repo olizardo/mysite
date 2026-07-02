@@ -1,0 +1,62 @@
+---
+title: "Generalized Relational Similarity (Kovacs 2010)"
+execute: 
+  eval: false
+  echo: true
+format: 
+   html:
+      code-line-numbers: true
+---
+
+This R function implements Kovacs's (2010) generalized relational similarity measure, which computes similarities by iterating through the row and column spaces of an affiliation matrix.
+
+You can find the raw function on GitHub: [`gen.sim.corr.abs.R`](https://github.com/olizardo/Two-Mode-Relational-Similarity/blob/main/Functions/gen.sim.corr.abs.R).
+
+## Source Code
+
+```r
+gen.sim.corr.abs <- function(x, sigma = 0.001) {
+  library(expm) 
+  r <- nrow(x) 
+  c <- ncol(x) 
+  r.c <- diag(r) 
+  c.c <- diag(c) 
+  r.m <- rowMeans(x) 
+  c.m <- colMeans(x) 
+  d.r.c <- 1 
+  d.c.c <- 1 
+  k <- 1 
+  while (d.r.c > sigma | d.c.c > sigma) { 
+    p.r.c <- r.c
+    p.c.c <- c.c
+    for (i in 1: r) { 
+      for (j in 1:r) {
+        if (i != j) {
+          r.x <- x[i, ] - r.m[i]
+          r.y <- x[j, ] - r.m[j]
+          r.xy <- r.x %*% c.c %*% t(r.y)
+          r.xx <- r.x %*% c.c %*% t(r.x)
+          r.yy <- r.y %*% c.c %*% t(r.y)
+          r.c[i, j] <- r.xy / sqrt(r.xx * r.yy)
+        }
+      }
+    }
+    for (i in 1:c) {
+      for (j in 1:c) {
+        if (i != j) {
+          c.x <- x[, i] - c.m[i]
+          c.y <- x[, j] - c.m[j]
+          c.xy <- t(c.x) %*% r.c %*% c.y
+          c.xx <- t(c.x) %*% r.c %*% c.x
+          c.yy <- t(c.y) %*% r.c %*% c.y
+          c.c[i, j] <- c.xy / sqrt(c.xx * c.yy)
+        }
+      }
+    }
+    d.r.c <- sum(abs(r.c - p.r.c))
+    d.c.c <- sum(abs(c.c - p.c.c))
+    k <- k + 1
+  }
+  return(list(r.sim = r.c, c.sim = c.c, iterations = k))
+}
+```

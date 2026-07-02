@@ -97,6 +97,10 @@ website:
       contents:
         - href: tools/index.qmd
         - href: tools/reflections.qmd
+        - href: tools/simrank.qmd
+        - href: tools/rolesim.qmd
+        - href: tools/centsim.qmd
+        - href: tools/gensim.qmd
         
 format:
   html:

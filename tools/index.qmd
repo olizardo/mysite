@@ -4,4 +4,11 @@ title: "Tools & Functions"
 
 This section contains some data analysis functions and tools I've written for other work.
 
+### Network Centrality
 * [reflections](reflections.qmd): R function for computing the method of reflections centrality for two-mode networks.
+
+### Role & Vertex Similarity
+* [SimRank](simrank.qmd): R implementation of the SimRank vertex similarity algorithm.
+* [RoleSim](rolesim.qmd): R implementation of the RoleSim automorphic similarity algorithm.
+* [CentSim](centsim.qmd): R implementation of role similarity based on centrality measure ratios.
+* [Generalized Relational Similarity](gensim.qmd): R implementation of Kovacs's (2010) generalized relational similarity measure.
