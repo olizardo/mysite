@@ -482,7 +482,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#source-code" id="toc-source-code" class="nav-link active" data-scroll-target="#source-code">Source Code</a></li>
+  <li><a href="#reference" id="toc-reference" class="nav-link active" data-scroll-target="#reference">Reference</a></li>
+  <li><a href="#source-code" id="toc-source-code" class="nav-link" data-scroll-target="#source-code">Source Code</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/olizardo/mysite/blob/main/tools/gensim.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li></ul></div></nav>
     </div>
@@ -510,8 +511,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <p>This R function implements Kovacs’s (2010) generalized relational similarity measure for two-mode networks, which computes similarities by iterating through the row and column spaces of an affiliation matrix.</p>
-<p><strong>Reference:</strong> - Kovacs, B. (2010). Generalized relational similarity. <em>Social Networks</em>, 32(3), 197-210.</p>
+<section id="reference" class="level2">
+<h2 class="anchored" data-anchor-id="reference">Reference</h2>
+<ul>
+<li>Kovacs, B. (2010). Generalized relational similarity. <em>Social Networks</em>, 32(3), 197-210.</li>
+</ul>
 <p>You can find the raw function on GitHub: <a href="https://github.com/olizardo/Two-Mode-Relational-Similarity/blob/main/Functions/gen.sim.corr.abs.R"><code>gen.sim.corr.abs.R</code></a>.</p>
+</section>
 <section id="source-code" class="level2">
 <h2 class="anchored" data-anchor-id="source-code">Source Code</h2>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a>gen.sim.corr.abs <span class="ot">&lt;-</span> <span class="cf">function</span>(x, <span class="at">sigma =</span> <span class="fl">1e-05</span>) {</span>

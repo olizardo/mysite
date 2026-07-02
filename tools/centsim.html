@@ -477,8 +477,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#reference" id="toc-reference" class="nav-link active" data-scroll-target="#reference">Reference</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/olizardo/mysite/blob/main/tools/centsim.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -504,7 +510,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <p><code>CentSim</code> (Li et al.&nbsp;2015) defines role similarity based on the ratio of centrality measures (Degree, Harmonic, Betweenness, and Eigenvector).</p>
-<p><strong>Reference:</strong> - Li, L., Qian, L., Lee, V. E., Leng, M., Chen, M., &amp; Chen, X. (2015). Fast and accurate computation of role similarity via vertex centrality. In <em>Web-Age Information Management</em> (pp.&nbsp;57-69). Springer.</p>
+<section id="reference" class="level2">
+<h2 class="anchored" data-anchor-id="reference">Reference</h2>
+<ul>
+<li>Li, L., Qian, L., Lee, V. E., Leng, M., Chen, M., &amp; Chen, X. (2015). Fast and accurate computation of role similarity via vertex centrality. In <em>Web-Age Information Management</em> (pp.&nbsp;57-69). Springer.</li>
+</ul>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a>cent.sim <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
 <span id="cb1-2"><a href="#cb1-2"></a>  <span class="fu">library</span>(igraph)</span>
 <span id="cb1-3"><a href="#cb1-3"></a>  c1 <span class="ot">&lt;-</span> <span class="fu">degree</span>(x)</span>
@@ -533,6 +543,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-26"><a href="#cb1-26"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -953,4 +964,4 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/olizardo/mysite/blob/main/tools/centsim.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/olizardo/mysite/blob/main/tools/centsim.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li></ul></div></div></div></footer></body></html>

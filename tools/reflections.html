@@ -482,7 +482,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#optimized-source-code" id="toc-optimized-source-code" class="nav-link active" data-scroll-target="#optimized-source-code">Optimized Source Code</a></li>
+  <li><a href="#reference" id="toc-reference" class="nav-link active" data-scroll-target="#reference">Reference</a></li>
+  <li><a href="#optimized-source-code" id="toc-optimized-source-code" class="nav-link" data-scroll-target="#optimized-source-code">Optimized Source Code</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/olizardo/mysite/blob/main/tools/reflections.qmd" class="toc-action"><i class="bi bi-github"></i>View source</a></li></ul></div></nav>
     </div>
@@ -510,8 +511,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <p>This R function computes the centralities of persons and groups in two-mode networks using Hidalgo &amp; Hausmann’s (2009) “method of reflections.”</p>
-<p><strong>Reference:</strong> Hidalgo, C. A., &amp; Hausmann, R. (2009). The building blocks of economic complexity. <em>Proceedings of the National Academy of Sciences</em>, 106(26), 10570-10575.</p>
+<section id="reference" class="level2">
+<h2 class="anchored" data-anchor-id="reference">Reference</h2>
+<p>Hidalgo, C. A., &amp; Hausmann, R. (2009). The building blocks of economic complexity. <em>Proceedings of the National Academy of Sciences</em>, 106(26), 10570-10575.</p>
 <p>You can find the raw function on GitHub: <a href="https://github.com/olizardo/correspondence-analysis-two-mode-networks/blob/main/Functions/reflections.R"><code>reflections.R</code></a> (from the <a href="https://github.com/olizardo/correspondence-analysis-two-mode-networks/tree/main/Functions">correspondence-analysis-two-mode-networks</a> repository).</p>
+</section>
 <section id="optimized-source-code" class="level2">
 <h2 class="anchored" data-anchor-id="optimized-source-code">Optimized Source Code</h2>
 <p>This version leverages R’s matrix algebra capabilities for significantly better performance on large networks:</p>
