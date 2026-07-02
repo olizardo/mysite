@@ -1,9 +1,14 @@
 ---
 title: "Reflective Centralities in Two Mode Data"
-author: "Omar Lizardo"
-date: "2023-01-24"
-categories: [generalized similarities, two-mode networks, reflections, complexity]
-draft: false
+execute: 
+  eval: true
+  echo: true
+  output: true
+  warning: false
+  message: false
+format: 
+   html:
+      code-line-numbers: true
 ---
 
 
@@ -568,7 +573,7 @@ The most dramatic change in status is for $E1$ in @fig-gr-odd, which begins as t
 
 
 ## Conclusion
-The H-H reflective metric can be an insightful tool to analyze  centralities in two-mode data, respecting the principle of duality (Breiger, 1974). In this post, I showed the approach can reveal substantive meaningful patterns in the position of persons and groups in a classic two-mode network data set. 
+The H-H reflective metric can be an insightful tool to analyze  centralities in two-mode data, respecting the principle of duality (Breiger, 1974). Here, I showed the approach can reveal substantive meaningful patterns in the position of persons and groups in a classic two-mode network data set. 
 
 ## References
 Breiger, R. L. (1974). The duality of persons and groups. *Social Forces*, 53(2), 181-190.

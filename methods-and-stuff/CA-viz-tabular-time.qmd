@@ -1,10 +1,14 @@
 ---
 title: "Using Simple Correspondence Analysis to Present Tabular Data that Shows Change Over Time"
-description: "Post using Correspondence Analysis to visualize tabular data with Examples."
-author: "Omar Lizardo"
-date: "2023-08-22"
-categories: [Correspondence Analysis, Measuring Culture]
-draft: true
+execute: 
+  eval: true
+  echo: true
+  output: true
+  warning: false
+  message: false
+format: 
+   html:
+      code-line-numbers: true
 ---
 
 

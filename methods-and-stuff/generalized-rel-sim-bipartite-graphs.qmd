@@ -1,8 +1,14 @@
 ---
 title: "Generalized Relational Similarities of Bipartite Graphs"
-author: "Omar Lizardo"
-date: "2024-05-05"
-draft: true
+execute: 
+  eval: true
+  echo: true
+  output: true
+  warning: false
+  message: false
+format: 
+   html:
+      code-line-numbers: true
 ---
 
 

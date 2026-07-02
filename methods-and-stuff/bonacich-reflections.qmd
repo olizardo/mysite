@@ -1,15 +1,20 @@
 ---
 title: "Bonacich Centrality and the Method of Reflections"
-author: "Omar Lizardo"
-date: "2024-05-05"
-categories: [reflections, two-mode networks, centrality, eigenvectors]
-draft: false
+execute: 
+  eval: true
+  echo: true
+  output: true
+  warning: false
+  message: false
+format: 
+   html:
+      code-line-numbers: true
 ---
 
 
 
 
-In a [previous post](https://olizardo.github.io/mysite/posts/two-mode-reflections/), I showed how the "method of reflections" introduced by Hidalgo & Hausmann (2009)---hereafter HH---works in the case of two-mode network data. While reading that, some of you might have thought that there is a well-established network centrality metric for two-mode networks that is supposed to work just like the method of reflections: That is, defining the centrality of entities in one mode (e.g., persons) according to centralities of the entities in the other mode (e.g., groups). I refer to the Bonacich "eigenvector" centrality---see Bonacich (1991) and Faust (1997) for discussion.
+In a [previous discussion](two-mode-reflections.qmd), I showed how the "method of reflections" introduced by Hidalgo & Hausmann (2009)---hereafter HH---works in the case of two-mode network data. While reading that, some of you might have thought that there is a well-established network centrality metric for two-mode networks that is supposed to work just like the method of reflections: That is, defining the centrality of entities in one mode (e.g., persons) according to centralities of the entities in the other mode (e.g., groups). I refer to the Bonacich "eigenvector" centrality---see Bonacich (1991) and Faust (1997) for discussion.
 
 
 ::: {#tbl-sw .cell tbl-cap='Southern Women Data.'}
@@ -350,7 +355,7 @@ In a [previous post](https://olizardo.github.io/mysite/posts/two-mode-reflection
 :::
 
 
-In this post I show how the Bonacich centrality fits into the reflection idea, and why this means it is a different metric from that yielded by HH's reflection method. This also the difference between Bonacich and Correspondence Analysis (CA), because the HH reflection method is equivalent to CA. 
+Here I show how the Bonacich centrality fits into the reflection idea, and why this means it is a different metric from that yielded by HH's reflection method. This also the difference between Bonacich and Correspondence Analysis (CA), because the HH reflection method is equivalent to CA. 
 
 Consider an affiliation matrix $\mathbf{A}$ of dimensions $|P| \times |G|$ where $|P|$ is the cardinality of the person set and $|G|$ the cardinality of the group set in the two-mode network. Each entry in the matrix $a_{pg} = 1$ if person *p* affiliates with group $g$ and zero otherwise. An affiliation matrix of this type, representing Davis et al.'s (1941) famous Southern Women data, is shown as @tbl-sw. 
 

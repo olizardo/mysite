@@ -1,16 +1,21 @@
 ---
 title: "Implementation of Kovacs's Generalized Model of Relational Similarity for R"
-author: "Omar Lizardo"
-date: "2023-01-20"
-categories: [Generalized similarities, two-mode networks, correlation distance]
-draft: false
+execute: 
+  eval: true
+  echo: true
+  output: true
+  warning: false
+  message: false
+format: 
+   html:
+      code-line-numbers: true
 ---
 
 
 
 
 ## Introduction
-In an insightful, and somewhat overlooked paper published in *Social Networks*, [Kovacs (2010) introduced a generalized relational similarity measure](https://doi.org/10.1016/j.socnet.2010.02.001) based on iterated correlations, applicable to two-mode and one-mode network data. This post provides a brief description of Kovacs's approach, and introduces an implementation of his proposed algorithm as a function for the *R* statistical computing environment. 
+In an insightful, and somewhat overlooked paper published in *Social Networks*, [Kovacs (2010) introduced a generalized relational similarity measure](https://doi.org/10.1016/j.socnet.2010.02.001) based on iterated correlations, applicable to two-mode and one-mode network data. This page provides a brief description of Kovacs's approach, and introduces an implementation of his proposed algorithm as a function for the *R* statistical computing environment. 
 
 According to Kovacs, a desirable generalized similarity measure must have two desirable properties. 
 

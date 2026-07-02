@@ -1,15 +1,18 @@
 ---
 title: "Temporal Cultural Hole Bridging"
-description: "Post on incorporating temporal dynamics into the cultural holes argument."
-author: "Omar Lizardo"
-date: "2023-01-18"
-categories: [cultural holes, categories, two-mode networks, temporal networks]
-draft: false
-image: "re-dil.png"
+execute: 
+  eval: true
+  echo: true
+  output: true
+  warning: false
+  message: false
+format: 
+   html:
+      code-line-numbers: true
 ---
 
 ## Introduction
-In a previous [post](http://olizardo.bol.ucla.edu/posts/cultural-networks-categories/) I point to a forthcoming [chapter](/workpap/culture-and-networks.pdf) where I argue for the intimate link (conceptually and in terms of formalization) between recent work on categories in the organizations literature and the developing line of research on cultural holes in the culture and networks tradition. At the end of the chapter, I noted that one of the areas where cultural holes work can move forward is by incorporating a dynamic or temporal component. The basic cultural holes argument, noting that people's---or organizations; see Silver et al. (2022)---positions in the socio-cultural structure matter for various outcomes relies essentially on a model of comparative statics. 
+In a previous [discussion](poly.qmd) I point to a forthcoming [chapter](/workpap/culture-and-networks.pdf) where I argue for the intimate link (conceptually and in terms of formalization) between recent work on categories in the organizations literature and the developing line of research on cultural holes in the culture and networks tradition. At the end of the chapter, I noted that one of the areas where cultural holes work can move forward is by incorporating a dynamic or temporal component. The basic cultural holes argument, noting that people's---or organizations; see Silver et al. (2022)---positions in the socio-cultural structure matter for various outcomes relies essentially on a model of comparative statics. 
 
 However, if we consider a person's portfolio of connections to a set of cultural categories or objects---their "cultural ego network"---at any point in time, it is clear that this cross-sectional outcome is the result of some time-ordered process of adding links. That is, while this information is usually absent in most setups, links in two-mode cultural networks do have a hidden attribute (e.g., "age"). Given this attribute, it is possible to order the links from oldest to youngest. 
 
@@ -21,7 +24,7 @@ Consider a set of freelance workers, each with a job history. At some cross-sect
 $$
      JJ = A^TA
 $${#eq-1}
-As I noted in the previous [post](http://olizardo.bol.ucla.edu/posts/cultural-networks-categories/), once we have $JJ$, we have the ingredients to compute most measures of similarity between jobs (and by implication distance in some categorical space). 
+As I noted in the previous [discussion](poly.qmd), once we have $JJ$, we have the ingredients to compute most measures of similarity between jobs (and by implication distance in some categorical space). 
 
 In the 2014 paper, Leung computes an asymmetric similarity measure (p. 145) as follows:
 
