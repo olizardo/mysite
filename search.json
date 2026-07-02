@@ -4,9 +4,39 @@
     "href": "tools/index.html",
     "title": "Tools & Functions",
     "section": "",
-    "text": "This section contains some data analysis functions and tools I’ve written for other work.\n\nreflections: R function for computing the method of reflections centrality for two-mode networks.",
+    "text": "This section contains some data analysis functions and tools I’ve written for other work.\n\nNetwork Centrality\n\nreflections: R function for computing the method of reflections centrality for two-mode networks.\n\n\n\nRole & Vertex Similarity\n\nSimRank: R implementation of the SimRank vertex similarity algorithm.\nRoleSim: R implementation of the RoleSim automorphic similarity algorithm.\nCentSim: R implementation of role similarity based on centrality measure ratios.\nGeneralized Relational Similarity: R implementation of Kovacs’s (2010) generalized relational similarity measure.",
     "crumbs": [
       "Tools & Functions"
+    ]
+  },
+  {
+    "objectID": "tools/centsim.html",
+    "href": "tools/centsim.html",
+    "title": "CentSim",
+    "section": "",
+    "text": "CentSim (Li et al. 2015) defines role similarity based on the ratio of centrality measures (Degree, Harmonic, Betweenness, and Eigenvector).\ncent.sim &lt;- function(x) {\n  library(igraph)\n  c1 &lt;- degree(x)\n  c2 &lt;- harmonic_centrality(x)\n  c3 &lt;- betweenness(x)\n  c4 &lt;- eigen_centrality(x)$vector\n  n &lt;- vcount(x)\n  min.max &lt;- function(a, b) {\n    if (max(a, b) != 0) return(min(a, b) / max(a, b))\n    else return(1)\n  }\n  z &lt;- diag(1, n, n)\n  rownames(z) &lt;- V(x)$name\n  colnames(z) &lt;- V(x)$name\n  for (i in 1:n) {\n    for (j in i:n) {\n      w1 &lt;- min.max(c1[i], c1[j])\n      w2 &lt;- min.max(c2[i], c2[j])\n      w3 &lt;- min.max(c3[i], c3[j])\n      w4 &lt;- min.max(c4[i], c4[j])\n      z[i, j] &lt;- (w1 + w2 + w3 + w4) / 4\n    }\n  }\n  z[lower.tri(z)] &lt;- t(z)[lower.tri(z)]\n  return(z)\n}",
+    "crumbs": [
+      "CentSim"
+    ]
+  },
+  {
+    "objectID": "tools/gensim.html",
+    "href": "tools/gensim.html",
+    "title": "Generalized Relational Similarity (Kovacs 2010)",
+    "section": "",
+    "text": "This R function implements Kovacs’s (2010) generalized relational similarity measure, which computes similarities by iterating through the row and column spaces of an affiliation matrix.\nYou can find the raw function on GitHub: gen.sim.corr.abs.R.",
+    "crumbs": [
+      "Generalized Relational Similarity (Kovacs 2010)"
+    ]
+  },
+  {
+    "objectID": "tools/gensim.html#source-code",
+    "href": "tools/gensim.html#source-code",
+    "title": "Generalized Relational Similarity (Kovacs 2010)",
+    "section": "Source Code",
+    "text": "Source Code\ngen.sim.corr.abs &lt;- function(x, sigma = 0.001) {\n  library(expm) \n  r &lt;- nrow(x) \n  c &lt;- ncol(x) \n  r.c &lt;- diag(r) \n  c.c &lt;- diag(c) \n  r.m &lt;- rowMeans(x) \n  c.m &lt;- colMeans(x) \n  d.r.c &lt;- 1 \n  d.c.c &lt;- 1 \n  k &lt;- 1 \n  while (d.r.c &gt; sigma | d.c.c &gt; sigma) { \n    p.r.c &lt;- r.c\n    p.c.c &lt;- c.c\n    for (i in 1: r) { \n      for (j in 1:r) {\n        if (i != j) {\n          r.x &lt;- x[i, ] - r.m[i]\n          r.y &lt;- x[j, ] - r.m[j]\n          r.xy &lt;- r.x %*% c.c %*% t(r.y)\n          r.xx &lt;- r.x %*% c.c %*% t(r.x)\n          r.yy &lt;- r.y %*% c.c %*% t(r.y)\n          r.c[i, j] &lt;- r.xy / sqrt(r.xx * r.yy)\n        }\n      }\n    }\n    for (i in 1:c) {\n      for (j in 1:c) {\n        if (i != j) {\n          c.x &lt;- x[, i] - c.m[i]\n          c.y &lt;- x[, j] - c.m[j]\n          c.xy &lt;- t(c.x) %*% r.c %*% c.y\n          c.xx &lt;- t(c.x) %*% r.c %*% c.x\n          c.yy &lt;- t(c.y) %*% r.c %*% c.y\n          c.c[i, j] &lt;- c.xy / sqrt(c.xx * c.yy)\n        }\n      }\n    }\n    d.r.c &lt;- sum(abs(r.c - p.r.c))\n    d.c.c &lt;- sum(abs(c.c - p.c.c))\n    k &lt;- k + 1\n  }\n  return(list(r.sim = r.c, c.sim = c.c, iterations = k))\n}",
+    "crumbs": [
+      "Generalized Relational Similarity (Kovacs 2010)"
     ]
   },
   {
@@ -894,6 +924,16 @@
     "text": "Early Life\nI was born in New York City, spent the better part of the first 17 years of my life in a (then) small coastal city called La Romana (i.e. “The Roman” with feminine inflection) on the Southeast corner of Dominican Republic, and have lived in the U.S. ever since.\n\n\nAcademic Training\nI earned a Bachelor of Science in Psychology from Brooklyn College in 1997. Starting in the year 2000, I enrolled in the graduate program in the Department of Sociology at the University of Arizona, where I was fortunate to earn a Ph.D. in 2006 under the supervision and mentorship of Ron Breiger and Al Bergesen.\n\n\nEarly Academic Career\nStarting in 2006, I had the privilege to spend the first twelve years of my academic career in the Department of Sociology at the University of Notre Dame. I was promoted to Associate Professor with tenure in 2012, and to Full Professor in 2016. While at Notre Dame, I was selected as co-editor, with Rory McVeigh and Sarah Mustillo, of the American Sociological Review, the flagship journal of the American Sociological Association (ASA), for a five-year term starting in 2015. In 2014, received the Lewis Coser Award for Theoretical Agenda Setting from the ASA’s Section on Theory.\n\n\nRecent Academic Career\nIn 2018, I decided to make the transition to the West (best) coast and moved to California, where I am currently a ladder faculty member and LeRoy Neiman Term Chair Professor in the Department of Sociology at UCLA. While at UCLA, I was elected a member of the Sociological Research Association in 2019. In 2020, I was appointed to the Board of Review Editors for the journal Science."
   },
   {
+    "objectID": "tools/rolesim.html",
+    "href": "tools/rolesim.html",
+    "title": "RoleSim",
+    "section": "",
+    "text": "RoleSim (Jin et al. 2014) is a generalization of SimRank that computes similarity using maximum matching between neighbor sets, making it sensitive to automorphic similarity.\nRoleSim &lt;- function(w, beta = 0.5) {\n  do &lt;- rowSums(w)\n  di &lt;- colSums(w)\n  n &lt;- nrow(w)\n  z &lt;- matrix(1, n, n)\n  rownames(z) &lt;- rownames(w)\n  colnames(z) &lt;- colnames(w)\n  onei &lt;- apply(w, 1, function(x) which(x == 1), simplify = FALSE)\n  inei &lt;- apply(w, 2, function(x) which(x == 1), simplify = FALSE)\n  delta &lt;- 1\n  while (delta &gt; 1e-10) {\n    z.o &lt;- z\n    for (i in 1:n) {\n      for (j in i:n) {\n        if (i == j) next\n        min.di &lt;- min(di[i], di[j])\n        max.di &lt;- max(di[i], di[j])\n        min.do &lt;- min(do[i], do[j])\n        max.do &lt;- max(do[i], do[j])\n        if (min.di != 0 & min.do != 0) {\n          k &lt;- z.o[inei[[i]], inei[[j]], drop = FALSE]\n          d &lt;- as.numeric(which(c(di[i], di[j]) == min.di)[1])\n          mu.i &lt;- sum(apply(k, d, max))\n          k &lt;- z.o[onei[[i]], onei[[j]], drop = FALSE]\n          d &lt;- as.numeric(which(c(do[i], do[j]) == min.do)[1])\n          mu.o &lt;- sum(apply(k, d, max))\n          z[i, j] &lt;- (beta * (mu.o + mu.i) / (max.do + max.di)) + (1 - beta)\n        }\n        if (min.di != 0 & min.do == 0) {\n          k &lt;- z.o[inei[[i]], inei[[j]], drop = FALSE]\n          d &lt;- as.numeric(which(c(di[i], di[j]) == min.di)[1])\n          mu.i &lt;- sum(apply(k, d, max))\n          z[i, j] &lt;- (beta * (mu.i / max.di)) + (1 - beta)\n        }\n        if (min.di == 0 & min.do != 0) {\n          k &lt;- z.o[onei[[i]], onei[[j]], drop = FALSE]\n          d &lt;- as.numeric(which(c(do[i], do[j]) == min.do)[1])\n          mu.o &lt;- sum(apply(k, d, max))\n          z[i, j] &lt;- (beta * (mu.o / max.do)) + (1 - beta)\n        }\n      }\n    }\n    z[lower.tri(z)] &lt;- t(z)[lower.tri(z)]\n    delta &lt;- sum(abs(abs(z) - abs(z.o)))\n  }\n  return(z)\n}",
+    "crumbs": [
+      "RoleSim"
+    ]
+  },
+  {
     "objectID": "tools/reflections.html",
     "href": "tools/reflections.html",
     "title": "Method of Reflections (reflections.R)",
@@ -911,6 +951,16 @@
     "text": "Optimized Source Code\nThis version leverages R’s matrix algebra capabilities for significantly better performance on large networks:\nreflections &lt;- function(x, iter = 20) {\n  # Ensure input is a matrix\n  if (!is.matrix(x)) x &lt;- as.matrix(x)\n  \n  p &lt;- nrow(x)\n  g &lt;- ncol(x)\n  \n  # Pre-allocate containers\n  p_c &lt;- matrix(0, p, iter)\n  g_c &lt;- matrix(0, g, iter)\n  \n  # Initialization: Degree centralities\n  p_c[, 1] &lt;- rowSums(x)\n  g_c[, 1] &lt;- colSums(x)\n  \n  # Pre-calculate inverses to avoid repeated division in loops\n  p_inv &lt;- 1 / p_c[, 1]\n  g_inv &lt;- 1 / g_c[, 1]\n  \n  # Iterative update using matrix multiplication\n  for (k in 1:(iter - 1)) {\n    # Person centralities are group sums weighted by group centralities\n    p_c[, k + 1] &lt;- (x %*% g_c[, k]) * p_inv\n    # Group centralities are person sums weighted by person centralities\n    g_c[, k + 1] &lt;- (t(x) %*% p_c[, k]) * g_inv\n  }\n  \n  # Rescaling and Ranking\n  p_s &lt;- apply(p_c, 2, scale)\n  g_s &lt;- apply(g_c, 2, scale)\n  \n  p_r &lt;- apply(p_s, 2, rank)\n  g_r &lt;- apply(g_s, 2, rank)\n  \n  # Reverse rank (smaller value = higher rank)\n  p_r &lt;- (max(p_r) + 1) - p_r\n  \n  # Set metadata\n  dimnames(p_c) &lt;- list(rownames(x), paste0(\"Cr\", 1:iter))\n  dimnames(g_c) &lt;- list(colnames(x), paste0(\"Cr_\", 1:iter))\n  \n  return(list(p.c = p_c, g.c = g.c, p.s = p_s, g.s = g.s, p.r = p_r, g.r = g.r))\n}",
     "crumbs": [
       "Method of Reflections (reflections.R)"
+    ]
+  },
+  {
+    "objectID": "tools/simrank.html",
+    "href": "tools/simrank.html",
+    "title": "SimRank",
+    "section": "",
+    "text": "SimRank is a recursive similarity measure where nodes are considered similar if they are connected to similar others. The following implementation covers the generalized version proposed by Zhao et al. (2009).\nSimRank &lt;- function(w, alpha = 0.8, beta = 1) {\n  do &lt;- rowSums(w) \n  di &lt;- colSums(w) \n  n &lt;- nrow(w) \n  z &lt;- diag(1, n, n)\n  rownames(z) &lt;- rownames(w)\n  colnames(z) &lt;- colnames(w)\n  onei &lt;- apply(w, 1, function(x) which(x == 1), simplify = FALSE)\n  inei &lt;- apply(w, 2, function(x) which(x == 1), simplify = FALSE)\n  delta &lt;- 1\n  while (delta &gt; 1e-10) {\n    z.o &lt;- z\n    for (i in 1:n) {\n      for (j in 1:n) {\n        if (i == j) next\n        min.di &lt;- min(di[i], di[j])\n        min.do &lt;- min(do[i], do[j])\n        if (min.di != 0 & min.do != 0) {\n          a &lt;- alpha / (di[i] * di[j])\n          b &lt;- sum(as.matrix(z.o[inei[[i]], inei[[j]]]))\n          c &lt;- alpha / (do[i] * do[j])\n          d &lt;- sum(as.matrix(z.o[onei[[i]], onei[[j]]]))\n          z[i, j] &lt;- beta * a * b + (1 - beta) * c * d\n        }\n        if (min.di != 0 & min.do == 0) {\n          a &lt;- alpha / (di[i] * di[j])\n          b &lt;- sum(as.matrix(z.o[inei[[i]], inei[[j]]]))\n          z[i, j] &lt;- beta * a * b\n        }\n        if (min.di == 0 & min.do != 0) {\n          c &lt;- alpha / (do[i] * do[j])\n          d &lt;- sum(as.matrix(z.o[onei[[i]], onei[[j]]]))\n          z[i, j] &lt;- (1 - beta) * c * d\n        }\n      }\n    }\n    delta &lt;- abs(sum(abs(z)) - sum(abs(z.o)))\n  }\n  return(z)\n}",
+    "crumbs": [
+      "SimRank"
     ]
   }
 ]
