@@ -8,14 +8,14 @@ format:
       code-line-numbers: true
 ---
 
-This R function implements Kovacs's (2010) generalized relational similarity measure, which computes similarities by iterating through the row and column spaces of an affiliation matrix.
+This R function implements Kovacs's (2010) generalized relational similarity measure for two-mode networks, which computes similarities by iterating through the row and column spaces of an affiliation matrix.
 
 You can find the raw function on GitHub: [`gen.sim.corr.abs.R`](https://github.com/olizardo/Two-Mode-Relational-Similarity/blob/main/Functions/gen.sim.corr.abs.R).
 
 ## Source Code
 
 ```r
-gen.sim.corr.abs <- function(x, sigma = 0.001) {
+gen.sim.corr.abs <- function(x, sigma = 1e-05) {
   library(expm) 
   r <- nrow(x) 
   c <- ncol(x) 
