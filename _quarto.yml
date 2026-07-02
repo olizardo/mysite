@@ -58,6 +58,9 @@ website:
           - text: "Two-Mode Relational Similarities"
             icon: github
             href: "https://github.com/olizardo/Two-Mode-Relational-Similarity"
+          - text: "Decline in Cultural Participation Post-Crisis"
+            icon: github
+            href: "https://github.com/olizardo/Visualizing-the-Decline-in-Cultural-Participation-in-Europe-Post-Crisis"
       - text: "Teaching"
         icon: pencil
         menu: 
