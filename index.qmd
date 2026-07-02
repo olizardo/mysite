@@ -1,9 +1,9 @@
 ---
 title: "Omar Lizardo"
 about:
-  template: jolla
+  template: trestles
   image: profile.jpg
-  image-shape: round
+  image-shape: rounded
   links:
     - icon: envelope
       text: Email
@@ -17,30 +17,54 @@ about:
     - icon: orcid
       text: ORCID
       href: https://orcid.org/0000-0002-5405-3007
+    - icon: file-pdf
+      text: Download CV
+      href: cv.pdf
 ---
 
-{{< fa address-card size=large >}} I am the LeRoy Neiman Term Chair Professor of Sociology at the University of California, Los Angeles.
+### Welcome!
+I am the LeRoy Neiman Term Chair Professor of Sociology at the University of California, Los Angeles. I study culture, cognition, networks, theory, consumption, institutions, and organization.
 
-{{< fa chart-line size=large >}} I study culture, cognition, networks, theory, consumption, institutions, and organization.
+* **PhD in Sociology**, *University of Arizona*, 2006.
+* **BS in Psychology**, *Brooklyn College of the City University of New York*, 1997.
 
-{{< fa graduation-cap size=large >}} PhD in Sociology, *University of Arizona*, 2006.
+[Read my full biographical notes &rarr;](bio.qmd)
 
-{{< fa graduation-cap size=large >}} BS in Psychology, *Brooklyn College of the City University of New York*, 1997.
+---
 
-I am also:
+### Editorial & Academic Roles
 
-{{< fa user-check >}} Current co-editor of the journal [*Sociological Theory*](https://journals.sagepub.com/home/stx), with [Z. Magubane](https://www.bc.edu/bc-web/schools/mcas/departments/sociology/people/faculty-directory/zine-magubane.html), [V. Patil](https://umbc.academia.edu/VrushaliPatil) and [S. L. Crawley](https://www.usf.edu/arts-sciences/departments/sociology/people/faculty/s-l-crawley.aspx/).
+**Current Editorial Positions**  
+* Co-editor, [*Sociological Theory*](https://journals.sagepub.com/home/stx) (with [Z. Magubane](https://www.bc.edu/bc-web/schools/mcas/departments/sociology/people/faculty-directory/zine-magubane.html), [V. Patil](https://umbc.academia.edu/VrushaliPatil) and [S. L. Crawley](https://www.usf.edu/arts-sciences/departments/sociology/people/faculty/s-l-crawley.aspx/)).
+* Board of Reviewing Editors, [*Science*](https://www.science.org/journal/science).
+* Editorial Advisory Board, [*Poetics*](https://www.sciencedirect.com/journal/poetics), [*Journal for the Theory of Social Behaviour*](https://onlinelibrary.wiley.com/journal/14685914), and [*Theory & Social Inquiry*](https://www.theoryandsocialinquiry.org/).
+* Editorial Advisory Board for book series at Stanford University Press (Culture and Economic Life), Princeton University Press (Studies in Cultural Sociology), and Oxford University Press (Social Network Mechanisms).
+* *Former* co-editor, [*American Sociological Review*](https://journals.sagepub.com/home/asr).
 
-{{< fa user-check >}} Current chair of the American Sociological Association's [Section on Mathematical Sociology](https://mathematicalsociology.wordpress.com/).
+**Memberships & Service**  
+* Chair, ASA [Section on Mathematical Sociology](https://mathematicalsociology.wordpress.com/).
+* Elected Member, [Sociological Research Association](https://www.sociological-research-assoc.org/).
+* *Former* Chair, ASA [Section on Sociology of Culture](https://asaculturesection.org/).
 
-{{< fa user-check >}} Former chair of the American Sociology Association's [Section on Sociology of Culture](https://asaculturesection.org/).
+---
 
-{{< fa user-check >}} Current member of the [Sociological Research Association](https://www.sociological-research-assoc.org/).
+### Explore My Work
 
-{{< fa user-check >}} Current member of the [Board of Reviewing Editors](https://www.science.org/content/page/editors-and-advisory-boards#board-of-reviewing-editors) of the journal [*Science*](https://www.science.org/journal/science).
+::: {.grid}
 
-{{< fa user-check >}} Current member of the Editorial Advisory Board of the journals [*Poetics*](https://www.sciencedirect.com/journal/poetics), [*Journal for the Theory of Social Behaviour*](https://onlinelibrary.wiley.com/journal/14685914), and [*Theory & Social Inquiry*](https://www.theoryandsocialinquiry.org/).
+::: {.g-col-4}
+**[Selected Publications](pubs.qmd)**  
+A curated list of my peer-reviewed articles, books, and working papers.
+:::
 
-{{< fa user-check >}} Current member of the Editorial Advisory Board of the Stanford University Press Series on [Culture and Economic Life](https://www.sup.org/books/series/culture-and-economic-life), the Princeton University Press Series on [Studies in Cultural Sociology](https://press.princeton.edu/series/princeton-studies-in-cultural-sociology), and the Oxford University Press Series on [Social Network Mechanisms](http://www.oxfordsnmseries.com/).
+::: {.g-col-4}
+**[Methods & Stuff](methods-and-stuff/index.qmd)**  
+Tutorials and theoretical essays on formal methods for analyzing data.
+:::
 
-{{< fa user-check >}} Former co-editor of [*American Sociological Review*](https://journals.sagepub.com/home/asr).
+::: {.g-col-4}
+**[Tools & Code](tools/index.qmd)**  
+R implementations of network role similarity and centrality algorithms.
+:::
+
+:::
