@@ -14,7 +14,7 @@
     "href": "tools/centsim.html",
     "title": "CentSim",
     "section": "",
-    "text": "CentSim (Li et al. 2015) defines role similarity based on the ratio of centrality measures (Degree, Harmonic, Betweenness, and Eigenvector).\ncent.sim &lt;- function(x) {\n  library(igraph)\n  c1 &lt;- degree(x)\n  c2 &lt;- harmonic_centrality(x)\n  c3 &lt;- betweenness(x)\n  c4 &lt;- eigen_centrality(x)$vector\n  n &lt;- vcount(x)\n  min.max &lt;- function(a, b) {\n    if (max(a, b) != 0) return(min(a, b) / max(a, b))\n    else return(1)\n  }\n  z &lt;- diag(1, n, n)\n  rownames(z) &lt;- V(x)$name\n  colnames(z) &lt;- V(x)$name\n  for (i in 1:n) {\n    for (j in i:n) {\n      w1 &lt;- min.max(c1[i], c1[j])\n      w2 &lt;- min.max(c2[i], c2[j])\n      w3 &lt;- min.max(c3[i], c3[j])\n      w4 &lt;- min.max(c4[i], c4[j])\n      z[i, j] &lt;- (w1 + w2 + w3 + w4) / 4\n    }\n  }\n  z[lower.tri(z)] &lt;- t(z)[lower.tri(z)]\n  return(z)\n}",
+    "text": "CentSim (Li et al. 2015) defines role similarity based on the ratio of centrality measures (Degree, Harmonic, Betweenness, and Eigenvector).\nReference: - Li, L., Qian, L., Lee, V. E., Leng, M., Chen, M., & Chen, X. (2015). Fast and accurate computation of role similarity via vertex centrality. In Web-Age Information Management (pp. 57-69). Springer.\ncent.sim &lt;- function(x) {\n  library(igraph)\n  c1 &lt;- degree(x)\n  c2 &lt;- harmonic_centrality(x)\n  c3 &lt;- betweenness(x)\n  c4 &lt;- eigen_centrality(x)$vector\n  n &lt;- vcount(x)\n  min.max &lt;- function(a, b) {\n    if (max(a, b) != 0) return(min(a, b) / max(a, b))\n    else return(1)\n  }\n  z &lt;- diag(1, n, n)\n  rownames(z) &lt;- V(x)$name\n  colnames(z) &lt;- V(x)$name\n  for (i in 1:n) {\n    for (j in i:n) {\n      w1 &lt;- min.max(c1[i], c1[j])\n      w2 &lt;- min.max(c2[i], c2[j])\n      w3 &lt;- min.max(c3[i], c3[j])\n      w4 &lt;- min.max(c4[i], c4[j])\n      z[i, j] &lt;- (w1 + w2 + w3 + w4) / 4\n    }\n  }\n  z[lower.tri(z)] &lt;- t(z)[lower.tri(z)]\n  return(z)\n}",
     "crumbs": [
       "CentSim"
     ]
@@ -22,21 +22,21 @@
   {
     "objectID": "tools/gensim.html",
     "href": "tools/gensim.html",
-    "title": "Generalized Relational Similarity (Kovacs 2010)",
+    "title": "Generalized Relational Similarity",
     "section": "",
-    "text": "This R function implements Kovacs’s (2010) generalized relational similarity measure for two-mode networks, which computes similarities by iterating through the row and column spaces of an affiliation matrix.\nYou can find the raw function on GitHub: gen.sim.corr.abs.R.",
+    "text": "This R function implements Kovacs’s (2010) generalized relational similarity measure for two-mode networks, which computes similarities by iterating through the row and column spaces of an affiliation matrix.\nReference: - Kovacs, B. (2010). Generalized relational similarity. Social Networks, 32(3), 197-210.\nYou can find the raw function on GitHub: gen.sim.corr.abs.R.",
     "crumbs": [
-      "Generalized Relational Similarity (Kovacs 2010)"
+      "Generalized Relational Similarity"
     ]
   },
   {
     "objectID": "tools/gensim.html#source-code",
     "href": "tools/gensim.html#source-code",
-    "title": "Generalized Relational Similarity (Kovacs 2010)",
+    "title": "Generalized Relational Similarity",
     "section": "Source Code",
     "text": "Source Code\ngen.sim.corr.abs &lt;- function(x, sigma = 1e-05) {\n  library(expm) \n  r &lt;- nrow(x) \n  c &lt;- ncol(x) \n  r.c &lt;- diag(r) \n  c.c &lt;- diag(c) \n  r.m &lt;- rowMeans(x) \n  c.m &lt;- colMeans(x) \n  d.r.c &lt;- 1 \n  d.c.c &lt;- 1 \n  k &lt;- 1 \n  while (d.r.c &gt; sigma | d.c.c &gt; sigma) { \n    p.r.c &lt;- r.c\n    p.c.c &lt;- c.c\n    for (i in 1: r) { \n      for (j in 1:r) {\n        if (i != j) {\n          r.x &lt;- x[i, ] - r.m[i]\n          r.y &lt;- x[j, ] - r.m[j]\n          r.xy &lt;- r.x %*% c.c %*% t(r.y)\n          r.xx &lt;- r.x %*% c.c %*% t(r.x)\n          r.yy &lt;- r.y %*% c.c %*% t(r.y)\n          r.c[i, j] &lt;- r.xy / sqrt(r.xx * r.yy)\n        }\n      }\n    }\n    for (i in 1:c) {\n      for (j in 1:c) {\n        if (i != j) {\n          c.x &lt;- x[, i] - c.m[i]\n          c.y &lt;- x[, j] - c.m[j]\n          c.xy &lt;- t(c.x) %*% r.c %*% c.y\n          c.xx &lt;- t(c.x) %*% r.c %*% c.x\n          c.yy &lt;- t(c.y) %*% r.c %*% c.y\n          c.c[i, j] &lt;- c.xy / sqrt(c.xx * c.yy)\n        }\n      }\n    }\n    d.r.c &lt;- sum(abs(r.c - p.r.c))\n    d.c.c &lt;- sum(abs(c.c - p.c.c))\n    k &lt;- k + 1\n  }\n  return(list(r.sim = r.c, c.sim = c.c, iterations = k))\n}",
     "crumbs": [
-      "Generalized Relational Similarity (Kovacs 2010)"
+      "Generalized Relational Similarity"
     ]
   },
   {
@@ -928,7 +928,7 @@
     "href": "tools/rolesim.html",
     "title": "RoleSim",
     "section": "",
-    "text": "RoleSim (Jin et al. 2014) is a generalization of SimRank that computes similarity using maximum matching between neighbor sets, making it sensitive to automorphic similarity.",
+    "text": "RoleSim (Jin et al. 2014) is a generalization of SimRank that computes similarity using maximum matching between neighbor sets, making it sensitive to automorphic similarity.\nReference: - Jin, R., Lee, V. E., & Li, L. (2014). Scalable and axiomatic ranking of network role similarity. ACM Transactions on Knowledge Discovery from Data (TKDD), 8(1), 1-37.",
     "crumbs": [
       "RoleSim"
     ]
@@ -948,7 +948,7 @@
     "href": "tools/reflections.html",
     "title": "Method of Reflections (reflections.R)",
     "section": "",
-    "text": "This R function computes the centralities of persons and groups in two-mode networks using Hidalgo & Hausmann’s (2009) “method of reflections.”\nYou can find the raw function on GitHub: reflections.R (from the correspondence-analysis-two-mode-networks repository).",
+    "text": "This R function computes the centralities of persons and groups in two-mode networks using Hidalgo & Hausmann’s (2009) “method of reflections.”\nReference: Hidalgo, C. A., & Hausmann, R. (2009). The building blocks of economic complexity. Proceedings of the National Academy of Sciences, 106(26), 10570-10575.\nYou can find the raw function on GitHub: reflections.R (from the correspondence-analysis-two-mode-networks repository).",
     "crumbs": [
       "Method of Reflections (reflections.R)"
     ]
@@ -968,7 +968,7 @@
     "href": "tools/simrank.html",
     "title": "SimRank",
     "section": "",
-    "text": "SimRank is a recursive similarity measure where nodes are considered similar if they are connected to similar others. The following implementation covers the generalized version proposed by Zhao et al. (2009).\nSimRank &lt;- function(w, alpha = 0.8, beta = 1) {\n  do &lt;- rowSums(w) \n  di &lt;- colSums(w) \n  n &lt;- nrow(w) \n  z &lt;- diag(1, n, n)\n  rownames(z) &lt;- rownames(w)\n  colnames(z) &lt;- colnames(w)\n  onei &lt;- apply(w, 1, function(x) which(x == 1), simplify = FALSE)\n  inei &lt;- apply(w, 2, function(x) which(x == 1), simplify = FALSE)\n  delta &lt;- 1\n  while (delta &gt; 1e-10) {\n    z.o &lt;- z\n    for (i in 1:n) {\n      for (j in 1:n) {\n        if (i == j) next\n        min.di &lt;- min(di[i], di[j])\n        min.do &lt;- min(do[i], do[j])\n        if (min.di != 0 & min.do != 0) {\n          a &lt;- alpha / (di[i] * di[j])\n          b &lt;- sum(as.matrix(z.o[inei[[i]], inei[[j]]]))\n          c &lt;- alpha / (do[i] * do[j])\n          d &lt;- sum(as.matrix(z.o[onei[[i]], onei[[j]]]))\n          z[i, j] &lt;- beta * a * b + (1 - beta) * c * d\n        }\n        if (min.di != 0 & min.do == 0) {\n          a &lt;- alpha / (di[i] * di[j])\n          b &lt;- sum(as.matrix(z.o[inei[[i]], inei[[j]]]))\n          z[i, j] &lt;- beta * a * b\n        }\n        if (min.di == 0 & min.do != 0) {\n          c &lt;- alpha / (do[i] * do[j])\n          d &lt;- sum(as.matrix(z.o[onei[[i]], onei[[j]]]))\n          z[i, j] &lt;- (1 - beta) * c * d\n        }\n      }\n    }\n    delta &lt;- abs(sum(abs(z)) - sum(abs(z.o)))\n  }\n  return(z)\n}",
+    "text": "SimRank is a recursive similarity measure where nodes are considered similar if they are connected to similar others. The following implementation covers the generalized version proposed by Zhao et al. (2009).\nReferences: - Jeh, G., & Widom, J. (2002). SimRank: a measure of structural-context similarity. Proceedings of the 8th ACM SIGKDD international conference on Knowledge discovery and data mining, 538-543. - Zhao, P., Han, J., & Sun, Y. (2009). P-Rank: a comprehensive structural similarity measure over information networks. Proceedings of the 18th ACM conference on Information and knowledge management, 553-562.\nSimRank &lt;- function(w, alpha = 0.8, beta = 1) {\n  do &lt;- rowSums(w) \n  di &lt;- colSums(w) \n  n &lt;- nrow(w) \n  z &lt;- diag(1, n, n)\n  rownames(z) &lt;- rownames(w)\n  colnames(z) &lt;- colnames(w)\n  onei &lt;- apply(w, 1, function(x) which(x == 1), simplify = FALSE)\n  inei &lt;- apply(w, 2, function(x) which(x == 1), simplify = FALSE)\n  delta &lt;- 1\n  while (delta &gt; 1e-10) {\n    z.o &lt;- z\n    for (i in 1:n) {\n      for (j in 1:n) {\n        if (i == j) next\n        min.di &lt;- min(di[i], di[j])\n        min.do &lt;- min(do[i], do[j])\n        if (min.di != 0 & min.do != 0) {\n          a &lt;- alpha / (di[i] * di[j])\n          b &lt;- sum(as.matrix(z.o[inei[[i]], inei[[j]]]))\n          c &lt;- alpha / (do[i] * do[j])\n          d &lt;- sum(as.matrix(z.o[onei[[i]], onei[[j]]]))\n          z[i, j] &lt;- beta * a * b + (1 - beta) * c * d\n        }\n        if (min.di != 0 & min.do == 0) {\n          a &lt;- alpha / (di[i] * di[j])\n          b &lt;- sum(as.matrix(z.o[inei[[i]], inei[[j]]]))\n          z[i, j] &lt;- beta * a * b\n        }\n        if (min.di == 0 & min.do != 0) {\n          c &lt;- alpha / (do[i] * do[j])\n          d &lt;- sum(as.matrix(z.o[onei[[i]], onei[[j]]]))\n          z[i, j] &lt;- (1 - beta) * c * d\n        }\n      }\n    }\n    delta &lt;- abs(sum(abs(z)) - sum(abs(z.o)))\n  }\n  return(z)\n}",
     "crumbs": [
       "SimRank"
     ]
