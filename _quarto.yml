@@ -40,6 +40,18 @@ website:
           - text: "Distinction Centrality"
             icon: code-slash
             href: "https://olizardo.github.io/Jilbert-Distinction-Centrality/"
+      - text: "Repliction Repos"
+        icon: github
+        menu:
+          - text: "Combining Similarity Eigenvector"
+            icon: github
+            href: "https://github.com/olizardo/combining-similarity-eigenvector"
+          - text: "CA Two-Mode Networks"
+            icon: github
+            href: "https://github.com/olizardo/correspondence-analysis-two-mode-networks"
+          - text: "Categorical Tolerance Followup"
+            icon: github
+            href: "https://github.com/olizardo/sociological-science-categorical-tolerance-followup"
       - text: "Teaching"
         icon: pencil
         menu: 
