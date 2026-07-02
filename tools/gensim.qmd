@@ -1,5 +1,5 @@
 ---
-title: "Generalized Relational Similarity (Kovacs 2010)"
+title: "Generalized Relational Similarity"
 execute: 
   eval: false
   echo: true
@@ -9,6 +9,9 @@ format:
 ---
 
 This R function implements Kovacs's (2010) generalized relational similarity measure for two-mode networks, which computes similarities by iterating through the row and column spaces of an affiliation matrix.
+
+**Reference:**
+- Kovacs, B. (2010). Generalized relational similarity. *Social Networks*, 32(3), 197-210.
 
 You can find the raw function on GitHub: [`gen.sim.corr.abs.R`](https://github.com/olizardo/Two-Mode-Relational-Similarity/blob/main/Functions/gen.sim.corr.abs.R).
 
