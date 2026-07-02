@@ -6,9 +6,6 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Omar Lizardo">
-<meta name="dcterms.date" content="2023-01-18">
-<meta name="description" content="Post on incorporating temporal dynamics into the cultural holes argument.">
 
 <title>Temporal Cultural Hole Bridging – Omar Lizardo’s Academic Website</title>
 <style>
@@ -110,7 +107,7 @@ window.Quarto = {
 
 <link rel="stylesheet" href="../styles.css">
 <meta property="og:title" content="Temporal Cultural Hole Bridging – Omar Lizardo’s Academic Website">
-<meta property="og:description" content="Post on incorporating temporal dynamics into the cultural holes argument.">
+<meta property="og:description" content="">
 <meta property="og:image" content="https://olizardo.github.io/mysite/methods-and-stuff/re-dil.png">
 <meta property="og:site_name" content="Omar Lizardo’s Academic Website">
 <meta property="og:image:height" content="540">
@@ -431,6 +428,12 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../methods-and-stuff/CA-viz-tabular-time.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Using Simple Correspondence Analysis to Present Tabular Data that Shows Change Over Time</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../methods-and-stuff/poly.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Cultural Networks and Categories</span></a>
   </div>
@@ -451,6 +454,12 @@ window.Quarto = {
   <div class="sidebar-item-container"> 
   <a href="../methods-and-stuff/generalized-model-relational-similarity.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Implementation of Kovacs’s Generalized Model of Relational Similarity for R</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../methods-and-stuff/generalized-rel-sim-bipartite-graphs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Generalized Relational Similarities of Bipartite Graphs</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -489,36 +498,13 @@ window.Quarto = {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Temporal Cultural Hole Bridging</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">cultural holes</div>
-    <div class="quarto-category">categories</div>
-    <div class="quarto-category">two-mode networks</div>
-    <div class="quarto-category">temporal networks</div>
-  </div>
-  </div>
-
-<div>
-  <div class="description">
-    Post on incorporating temporal dynamics into the cultural holes argument.
-  </div>
 </div>
+
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Omar Lizardo </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">January 18, 2023</p>
-    </div>
-  </div>
   
     
   </div>
@@ -530,7 +516,7 @@ window.Quarto = {
 
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
-<p>In a previous <a href="http://olizardo.bol.ucla.edu/posts/cultural-networks-categories/">post</a> I point to a forthcoming <a href="../workpap/culture-and-networks.pdf">chapter</a> where I argue for the intimate link (conceptually and in terms of formalization) between recent work on categories in the organizations literature and the developing line of research on cultural holes in the culture and networks tradition. At the end of the chapter, I noted that one of the areas where cultural holes work can move forward is by incorporating a dynamic or temporal component. The basic cultural holes argument, noting that people’s—or organizations; see Silver et al.&nbsp;(2022)—positions in the socio-cultural structure matter for various outcomes relies essentially on a model of comparative statics.</p>
+<p>In a previous <a href="../methods-and-stuff/poly.html">discussion</a> I point to a forthcoming <a href="../workpap/culture-and-networks.pdf">chapter</a> where I argue for the intimate link (conceptually and in terms of formalization) between recent work on categories in the organizations literature and the developing line of research on cultural holes in the culture and networks tradition. At the end of the chapter, I noted that one of the areas where cultural holes work can move forward is by incorporating a dynamic or temporal component. The basic cultural holes argument, noting that people’s—or organizations; see Silver et al.&nbsp;(2022)—positions in the socio-cultural structure matter for various outcomes relies essentially on a model of comparative statics.</p>
 <p>However, if we consider a person’s portfolio of connections to a set of cultural categories or objects—their “cultural ego network”—at any point in time, it is clear that this cross-sectional outcome is the result of some time-ordered process of adding links. That is, while this information is usually absent in most setups, links in two-mode cultural networks do have a hidden attribute (e.g., “age”). Given this attribute, it is possible to order the links from oldest to youngest.</p>
 </section>
 <section id="accounting-for-time-in-cultural-holes" class="level2">
@@ -539,7 +525,7 @@ window.Quarto = {
 <p>Consider a set of freelance workers, each with a job history. At some cross-section, we observe a two-mode network (<span class="math inline">\(\mathbf{A}\)</span>) of dimensions <span class="math inline">\(P \times J\)</span> where <span class="math inline">\(P\)</span> is the number of freelancers and <span class="math inline">\(J\)</span> is the number of categorically defined jobs. We can project the jobs into a one-mode network <span class="math inline">\(\mathbf{JJ}\)</span> using the familiar formula due to Breiger (1974):</p>
 <p><span id="eq-1"><span class="math display">\[
      JJ = A^TA
-\tag{1}\]</span></span> As I noted in the previous <a href="http://olizardo.bol.ucla.edu/posts/cultural-networks-categories/">post</a>, once we have <span class="math inline">\(JJ\)</span>, we have the ingredients to compute most measures of similarity between jobs (and by implication distance in some categorical space).</p>
+\tag{1}\]</span></span> As I noted in the previous <a href="../methods-and-stuff/poly.html">discussion</a>, once we have <span class="math inline">\(JJ\)</span>, we have the ingredients to compute most measures of similarity between jobs (and by implication distance in some categorical space).</p>
 <p>In the 2014 paper, Leung computes an asymmetric similarity measure (p.&nbsp;145) as follows:</p>
 <p><span id="eq-2"><span class="math display">\[
      S_{ij} = \frac{JJ_{ij}}{J{ii}}

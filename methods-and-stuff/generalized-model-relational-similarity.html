@@ -6,8 +6,6 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Omar Lizardo">
-<meta name="dcterms.date" content="2023-01-20">
 
 <title>Implementation of Kovacs’s Generalized Model of Relational Similarity for R – Omar Lizardo's Academic Website</title>
 <style>
@@ -430,6 +428,12 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../methods-and-stuff/CA-viz-tabular-time.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Using Simple Correspondence Analysis to Present Tabular Data that Shows Change Over Time</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../methods-and-stuff/poly.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Cultural Networks and Categories</span></a>
   </div>
@@ -450,6 +454,12 @@ window.Quarto = {
   <div class="sidebar-item-container"> 
   <a href="../methods-and-stuff/generalized-model-relational-similarity.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Implementation of Kovacs’s Generalized Model of Relational Similarity for R</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../methods-and-stuff/generalized-rel-sim-bipartite-graphs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Generalized Relational Similarities of Bipartite Graphs</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -490,30 +500,13 @@ window.Quarto = {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Implementation of Kovacs’s Generalized Model of Relational Similarity for R</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">Generalized similarities</div>
-    <div class="quarto-category">two-mode networks</div>
-    <div class="quarto-category">correlation distance</div>
-  </div>
-  </div>
+</div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Omar Lizardo </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">January 20, 2023</p>
-    </div>
-  </div>
   
     
   </div>
@@ -525,7 +518,7 @@ window.Quarto = {
 
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
-<p>In an insightful, and somewhat overlooked paper published in <em>Social Networks</em>, <a href="https://doi.org/10.1016/j.socnet.2010.02.001">Kovacs (2010) introduced a generalized relational similarity measure</a> based on iterated correlations, applicable to two-mode and one-mode network data. This post provides a brief description of Kovacs’s approach, and introduces an implementation of his proposed algorithm as a function for the <em>R</em> statistical computing environment.</p>
+<p>In an insightful, and somewhat overlooked paper published in <em>Social Networks</em>, <a href="https://doi.org/10.1016/j.socnet.2010.02.001">Kovacs (2010) introduced a generalized relational similarity measure</a> based on iterated correlations, applicable to two-mode and one-mode network data. This page provides a brief description of Kovacs’s approach, and introduces an implementation of his proposed algorithm as a function for the <em>R</em> statistical computing environment.</p>
 <p>According to Kovacs, a desirable generalized similarity measure must have two desirable properties.</p>
 <ul>
 <li>First, it should respect the <em>principle of equivalence</em>, such that it classifies actors as similar if they have similar relations to other objects who are themselves similar.</li>

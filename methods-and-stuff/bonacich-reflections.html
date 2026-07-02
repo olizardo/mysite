@@ -6,8 +6,6 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Omar Lizardo">
-<meta name="dcterms.date" content="2024-05-05">
 
 <title>Bonacich Centrality and the Method of Reflections – Omar Lizardo’s Academic Website</title>
 <style>
@@ -427,6 +425,12 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../methods-and-stuff/CA-viz-tabular-time.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Using Simple Correspondence Analysis to Present Tabular Data that Shows Change Over Time</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../methods-and-stuff/poly.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Cultural Networks and Categories</span></a>
   </div>
@@ -447,6 +451,12 @@ window.Quarto = {
   <div class="sidebar-item-container"> 
   <a href="../methods-and-stuff/generalized-model-relational-similarity.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Implementation of Kovacs’s Generalized Model of Relational Similarity for R</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../methods-and-stuff/generalized-rel-sim-bipartite-graphs.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Generalized Relational Similarities of Bipartite Graphs</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -482,31 +492,13 @@ window.Quarto = {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Bonacich Centrality and the Method of Reflections</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">reflections</div>
-    <div class="quarto-category">two-mode networks</div>
-    <div class="quarto-category">centrality</div>
-    <div class="quarto-category">eigenvectors</div>
-  </div>
-  </div>
+</div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Omar Lizardo </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">May 5, 2024</p>
-    </div>
-  </div>
   
     
   </div>
@@ -516,7 +508,7 @@ window.Quarto = {
 </header>
 
 
-<p>In a <a href="https://olizardo.github.io/mysite/posts/two-mode-reflections/">previous post</a>, I showed how the “method of reflections” introduced by Hidalgo &amp; Hausmann (2009)—hereafter HH—works in the case of two-mode network data. While reading that, some of you might have thought that there is a well-established network centrality metric for two-mode networks that is supposed to work just like the method of reflections: That is, defining the centrality of entities in one mode (e.g., persons) according to centralities of the entities in the other mode (e.g., groups). I refer to the Bonacich “eigenvector” centrality—see Bonacich (1991) and Faust (1997) for discussion.</p>
+<p>In a <a href="../methods-and-stuff/two-mode-reflections.html">previous discussion</a>, I showed how the “method of reflections” introduced by Hidalgo &amp; Hausmann (2009)—hereafter HH—works in the case of two-mode network data. While reading that, some of you might have thought that there is a well-established network centrality metric for two-mode networks that is supposed to work just like the method of reflections: That is, defining the centrality of entities in one mode (e.g., persons) according to centralities of the entities in the other mode (e.g., groups). I refer to the Bonacich “eigenvector” centrality—see Bonacich (1991) and Faust (1997) for discussion.</p>
 <div class="cell">
 <div id="tbl-sw" class="cell quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
@@ -861,7 +853,7 @@ Table&nbsp;1: Southern Women Data.
 </figure>
 </div>
 </div>
-<p>In this post I show how the Bonacich centrality fits into the reflection idea, and why this means it is a different metric from that yielded by HH’s reflection method. This also the difference between Bonacich and Correspondence Analysis (CA), because the HH reflection method is equivalent to CA.</p>
+<p>Here I show how the Bonacich centrality fits into the reflection idea, and why this means it is a different metric from that yielded by HH’s reflection method. This also the difference between Bonacich and Correspondence Analysis (CA), because the HH reflection method is equivalent to CA.</p>
 <p>Consider an affiliation matrix <span class="math inline">\(\mathbf{A}\)</span> of dimensions <span class="math inline">\(|P| \times |G|\)</span> where <span class="math inline">\(|P|\)</span> is the cardinality of the person set and <span class="math inline">\(|G|\)</span> the cardinality of the group set in the two-mode network. Each entry in the matrix <span class="math inline">\(a_{pg} = 1\)</span> if person <em>p</em> affiliates with group <span class="math inline">\(g\)</span> and zero otherwise. An affiliation matrix of this type, representing Davis et al.’s (1941) famous Southern Women data, is shown as <a href="#tbl-sw" class="quarto-xref">Table&nbsp;1</a>.</p>
 <p>In this case, the degree centrality of people is given by:</p>
 <p><span id="eq-pc"><span class="math display">\[
