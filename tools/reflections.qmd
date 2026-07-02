@@ -1,0 +1,63 @@
+---
+title: "Method of Reflections (reflections.R)"
+execute: 
+  eval: false
+  echo: true
+format: 
+   html:
+      code-line-numbers: true
+---
+
+This R function computes the centralities of persons and groups in two-mode networks using Hidalgo & Hausmann's (2009) "method of reflections."
+
+You can find the raw function on GitHub: [`reflections.R`](https://github.com/olizardo/correspondence-analysis-two-mode-networks/blob/main/Functions/reflections.R) (from the [correspondence-analysis-two-mode-networks](https://github.com/olizardo/correspondence-analysis-two-mode-networks/tree/main/Functions) repository).
+
+## Optimized Source Code
+
+This version leverages R's matrix algebra capabilities for significantly better performance on large networks:
+
+```r
+reflections <- function(x, iter = 20) {
+  # Ensure input is a matrix
+  if (!is.matrix(x)) x <- as.matrix(x)
+  
+  p <- nrow(x)
+  g <- ncol(x)
+  
+  # Pre-allocate containers
+  p_c <- matrix(0, p, iter)
+  g_c <- matrix(0, g, iter)
+  
+  # Initialization: Degree centralities
+  p_c[, 1] <- rowSums(x)
+  g_c[, 1] <- colSums(x)
+  
+  # Pre-calculate inverses to avoid repeated division in loops
+  p_inv <- 1 / p_c[, 1]
+  g_inv <- 1 / g_c[, 1]
+  
+  # Iterative update using matrix multiplication
+  for (k in 1:(iter - 1)) {
+    # Person centralities are group sums weighted by group centralities
+    p_c[, k + 1] <- (x %*% g_c[, k]) * p_inv
+    # Group centralities are person sums weighted by person centralities
+    g_c[, k + 1] <- (t(x) %*% p_c[, k]) * g_inv
+  }
+  
+  # Rescaling and Ranking
+  p_s <- apply(p_c, 2, scale)
+  g_s <- apply(g_c, 2, scale)
+  
+  p_r <- apply(p_s, 2, rank)
+  g_r <- apply(g_s, 2, rank)
+  
+  # Reverse rank (smaller value = higher rank)
+  p_r <- (max(p_r) + 1) - p_r
+  
+  # Set metadata
+  dimnames(p_c) <- list(rownames(x), paste0("Cr", 1:iter))
+  dimnames(g_c) <- list(colnames(x), paste0("Cr_", 1:iter))
+  
+  return(list(p.c = p_c, g.c = g.c, p.s = p_s, g.s = g.s, p.r = p_r, g.r = g.r))
+}
+```

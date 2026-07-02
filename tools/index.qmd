@@ -1,0 +1,7 @@
+---
+title: "Tools & Functions"
+---
+
+This section contains some data analysis functions and tools I've written for other work.
+
+* [reflections](reflections.qmd): R function for computing the method of reflections centrality for two-mode networks.

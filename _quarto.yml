@@ -31,6 +31,15 @@ website:
           - text: "NetSense Study"
             icon: table
             href: "https://olizardo.github.io/NetSense-Codebook/"
+      - text: "Tools"
+        icon: tools
+        menu:
+          - text: "Functions"
+            icon: code-slash
+            href: tools/index.qmd
+          - text: "Distinction Centrality"
+            icon: code-slash
+            href: "https://olizardo.github.io/Jilbert-Distinction-Centrality/"
       - text: "Teaching"
         icon: pencil
         menu: 
@@ -67,7 +76,8 @@ website:
         text: "Email"
 
   sidebar:
-    - title: "Methods and Stuff"
+    - id: methods
+      title: "Methods and Stuff"
       style: "docked"
       contents:
         - href: methods-and-stuff/index.qmd
@@ -80,6 +90,13 @@ website:
         - href: methods-and-stuff/generalized-rel-sim-bipartite-graphs.qmd
         - href: methods-and-stuff/two-mode-reflections.qmd
         - href: methods-and-stuff/bonacich-reflections.qmd
+        
+    - id: tools
+      title: "Tools & Functions"
+      style: "docked"
+      contents:
+        - href: tools/index.qmd
+        - href: tools/reflections.qmd
         
 format:
   html:
