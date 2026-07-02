@@ -55,6 +55,9 @@ website:
           - text: "Discovering Focused Microgenre Communities"
             icon: github
             href: "https://github.com/olizardo/Discovering-Focused-Microgenre-Communities"
+          - text: "Two-Mode Relational Similarities"
+            icon: github
+            href: "https://github.com/olizardo/Two-Mode-Relational-Similarity"
       - text: "Teaching"
         icon: pencil
         menu: 
