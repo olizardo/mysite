@@ -214,7 +214,7 @@ qmd_content <- c(qmd_content, "")
 
 # Add elegant HTML download button and hide it in PDF
 qmd_content <- c(qmd_content, "::: {.content-visible when-format=\"html\"}")
-qmd_content <- c(qmd_content, "[{{< fa file-pdf >}} Download PDF Version](vita.pdf){.btn .btn-outline-primary .btn-sm role=\"button\"}")
+qmd_content <- c(qmd_content, "[{{< fa file-pdf >}} Download PDF Version](cv.pdf){.btn .btn-outline-primary .btn-sm role=\"button\"}")
 qmd_content <- c(qmd_content, ":::")
 qmd_content <- c(qmd_content, "")
 
