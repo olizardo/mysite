@@ -1,5 +1,15 @@
 [
   {
+    "objectID": "tools/index.html",
+    "href": "tools/index.html",
+    "title": "Tools & Functions",
+    "section": "",
+    "text": "This section contains some data analysis functions and tools I’ve written for other work.\n\nreflections: R function for computing the method of reflections centrality for two-mode networks.",
+    "crumbs": [
+      "Tools & Functions"
+    ]
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Omar Lizardo",
@@ -882,5 +892,25 @@
     "title": "Brief Biographical Notes",
     "section": "",
     "text": "Early Life\nI was born in New York City, spent the better part of the first 17 years of my life in a (then) small coastal city called La Romana (i.e. “The Roman” with feminine inflection) on the Southeast corner of Dominican Republic, and have lived in the U.S. ever since.\n\n\nAcademic Training\nI earned a Bachelor of Science in Psychology from Brooklyn College in 1997. Starting in the year 2000, I enrolled in the graduate program in the Department of Sociology at the University of Arizona, where I was fortunate to earn a Ph.D. in 2006 under the supervision and mentorship of Ron Breiger and Al Bergesen.\n\n\nEarly Academic Career\nStarting in 2006, I had the privilege to spend the first twelve years of my academic career in the Department of Sociology at the University of Notre Dame. I was promoted to Associate Professor with tenure in 2012, and to Full Professor in 2016. While at Notre Dame, I was selected as co-editor, with Rory McVeigh and Sarah Mustillo, of the American Sociological Review, the flagship journal of the American Sociological Association (ASA), for a five-year term starting in 2015. In 2014, received the Lewis Coser Award for Theoretical Agenda Setting from the ASA’s Section on Theory.\n\n\nRecent Academic Career\nIn 2018, I decided to make the transition to the West (best) coast and moved to California, where I am currently a ladder faculty member and LeRoy Neiman Term Chair Professor in the Department of Sociology at UCLA. While at UCLA, I was elected a member of the Sociological Research Association in 2019. In 2020, I was appointed to the Board of Review Editors for the journal Science."
+  },
+  {
+    "objectID": "tools/reflections.html",
+    "href": "tools/reflections.html",
+    "title": "Method of Reflections (reflections.R)",
+    "section": "",
+    "text": "This R function computes the centralities of persons and groups in two-mode networks using Hidalgo & Hausmann’s (2009) “method of reflections.”\nYou can find the raw function on GitHub: reflections.R (from the correspondence-analysis-two-mode-networks repository).",
+    "crumbs": [
+      "Method of Reflections (reflections.R)"
+    ]
+  },
+  {
+    "objectID": "tools/reflections.html#optimized-source-code",
+    "href": "tools/reflections.html#optimized-source-code",
+    "title": "Method of Reflections (reflections.R)",
+    "section": "Optimized Source Code",
+    "text": "Optimized Source Code\nThis version leverages R’s matrix algebra capabilities for significantly better performance on large networks:\nreflections &lt;- function(x, iter = 20) {\n  # Ensure input is a matrix\n  if (!is.matrix(x)) x &lt;- as.matrix(x)\n  \n  p &lt;- nrow(x)\n  g &lt;- ncol(x)\n  \n  # Pre-allocate containers\n  p_c &lt;- matrix(0, p, iter)\n  g_c &lt;- matrix(0, g, iter)\n  \n  # Initialization: Degree centralities\n  p_c[, 1] &lt;- rowSums(x)\n  g_c[, 1] &lt;- colSums(x)\n  \n  # Pre-calculate inverses to avoid repeated division in loops\n  p_inv &lt;- 1 / p_c[, 1]\n  g_inv &lt;- 1 / g_c[, 1]\n  \n  # Iterative update using matrix multiplication\n  for (k in 1:(iter - 1)) {\n    # Person centralities are group sums weighted by group centralities\n    p_c[, k + 1] &lt;- (x %*% g_c[, k]) * p_inv\n    # Group centralities are person sums weighted by person centralities\n    g_c[, k + 1] &lt;- (t(x) %*% p_c[, k]) * g_inv\n  }\n  \n  # Rescaling and Ranking\n  p_s &lt;- apply(p_c, 2, scale)\n  g_s &lt;- apply(g_c, 2, scale)\n  \n  p_r &lt;- apply(p_s, 2, rank)\n  g_r &lt;- apply(g_s, 2, rank)\n  \n  # Reverse rank (smaller value = higher rank)\n  p_r &lt;- (max(p_r) + 1) - p_r\n  \n  # Set metadata\n  dimnames(p_c) &lt;- list(rownames(x), paste0(\"Cr\", 1:iter))\n  dimnames(g_c) &lt;- list(colnames(x), paste0(\"Cr_\", 1:iter))\n  \n  return(list(p.c = p_c, g.c = g.c, p.s = p_s, g.s = g.s, p.r = p_r, g.r = g.r))\n}",
+    "crumbs": [
+      "Method of Reflections (reflections.R)"
+    ]
   }
 ]

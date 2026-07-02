@@ -1,79 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://olizardo.github.io/mysite/tools/index.html</loc>
+    <lastmod>2026-07-02T03:30:38.171Z</lastmod>
+  </url>
+  <url>
     <loc>https://olizardo.github.io/mysite/index.html</loc>
-    <lastmod>2026-07-02T03:13:19.380Z</lastmod>
+    <lastmod>2026-07-02T03:30:38.158Z</lastmod>
   </url>
   <url>
     <loc>https://olizardo.github.io/mysite/syllabi/SOCIOL111.html</loc>
-    <lastmod>2026-07-02T03:13:19.392Z</lastmod>
+    <lastmod>2026-07-02T03:30:38.169Z</lastmod>
   </url>
   <url>
     <loc>https://olizardo.github.io/mysite/syllabi/SOCIOL204-w26.html</loc>
-    <lastmod>2026-07-02T03:13:19.393Z</lastmod>
+    <lastmod>2026-07-02T03:30:38.171Z</lastmod>
   </url>
   <url>
     <loc>https://olizardo.github.io/mysite/syllabi/SOCIOL204.html</loc>
-    <lastmod>2026-07-02T03:13:19.393Z</lastmod>
+    <lastmod>2026-07-02T03:30:38.171Z</lastmod>
   </url>
   <url>
     <loc>https://olizardo.github.io/mysite/pubs.html</loc>
-    <lastmod>2026-07-02T03:13:19.392Z</lastmod>
+    <lastmod>2026-07-02T03:30:38.169Z</lastmod>
   </url>
   <url>
     <loc>https://olizardo.github.io/mysite/methods-and-stuff/index.html</loc>
-    <lastmod>2026-07-02T03:13:19.382Z</lastmod>
+    <lastmod>2026-07-02T03:30:38.160Z</lastmod>
   </url>
   <url>
     <loc>https://olizardo.github.io/mysite/methods-and-stuff/bonacich-reflections.html</loc>
-    <lastmod>2026-07-02T03:13:19.381Z</lastmod>
+    <lastmod>2026-07-02T03:30:38.159Z</lastmod>
   </url>
   <url>
     <loc>https://olizardo.github.io/mysite/methods-and-stuff/generalized-model-relational-similarity.html</loc>
-    <lastmod>2026-07-02T03:13:19.381Z</lastmod>
+    <lastmod>2026-07-02T03:30:38.159Z</lastmod>
   </url>
   <url>
     <loc>https://olizardo.github.io/mysite/methods-and-stuff/CA-viz-tabular-time.html</loc>
-    <lastmod>2026-07-02T03:13:19.380Z</lastmod>
+    <lastmod>2026-07-02T03:30:38.158Z</lastmod>
   </url>
   <url>
     <loc>https://olizardo.github.io/mysite/methods-and-stuff/poly.html</loc>
-    <lastmod>2026-07-02T03:13:19.382Z</lastmod>
+    <lastmod>2026-07-02T03:30:38.160Z</lastmod>
   </url>
   <url>
     <loc>https://olizardo.github.io/mysite/methods-and-stuff/two-mode-impressionists.html</loc>
-    <lastmod>2026-07-02T03:13:19.382Z</lastmod>
+    <lastmod>2026-07-02T03:30:38.160Z</lastmod>
   </url>
   <url>
     <loc>https://olizardo.github.io/mysite/methods-and-stuff/generalized-rel-sim-bipartite-graphs.html</loc>
-    <lastmod>2026-07-02T03:13:19.382Z</lastmod>
+    <lastmod>2026-07-02T03:30:38.160Z</lastmod>
   </url>
   <url>
     <loc>https://olizardo.github.io/mysite/methods-and-stuff/temporal-cultural-hole-bridging.html</loc>
-    <lastmod>2026-07-02T03:13:19.382Z</lastmod>
+    <lastmod>2026-07-02T03:30:38.160Z</lastmod>
   </url>
   <url>
     <loc>https://olizardo.github.io/mysite/methods-and-stuff/two-mode-reflections.html</loc>
-    <lastmod>2026-07-02T03:13:19.385Z</lastmod>
+    <lastmod>2026-07-02T03:30:38.162Z</lastmod>
   </url>
   <url>
     <loc>https://olizardo.github.io/mysite/methods-and-stuff/ca.html</loc>
-    <lastmod>2026-07-02T03:13:19.381Z</lastmod>
+    <lastmod>2026-07-02T03:30:38.159Z</lastmod>
   </url>
   <url>
     <loc>https://olizardo.github.io/mysite/cv.html</loc>
-    <lastmod>2026-07-02T03:13:19.380Z</lastmod>
+    <lastmod>2026-07-02T03:30:38.158Z</lastmod>
   </url>
   <url>
     <loc>https://olizardo.github.io/mysite/syllabi/SOCIOL204-sp25.html</loc>
-    <lastmod>2026-07-02T03:13:19.393Z</lastmod>
+    <lastmod>2026-07-02T03:30:38.171Z</lastmod>
   </url>
   <url>
     <loc>https://olizardo.github.io/mysite/syllabi/SOCIOL245.html</loc>
-    <lastmod>2026-07-02T03:13:19.393Z</lastmod>
+    <lastmod>2026-07-02T03:30:38.171Z</lastmod>
   </url>
   <url>
     <loc>https://olizardo.github.io/mysite/bio.html</loc>
-    <lastmod>2026-07-02T03:13:19.380Z</lastmod>
+    <lastmod>2026-07-02T03:30:38.158Z</lastmod>
+  </url>
+  <url>
+    <loc>https://olizardo.github.io/mysite/tools/reflections.html</loc>
+    <lastmod>2026-07-02T03:30:38.171Z</lastmod>
   </url>
 </urlset>
