@@ -19,6 +19,8 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+    # Give the job a longer maximum timeout (default is usually enough, but just in case)
+    timeout-minutes: 30
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -41,7 +43,12 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: '_site'
+          # Let's ensure the artifact is retained for a bit to avoid race conditions
+          retention-days: 1
 
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          # Increase the timeout for the deploy status check to 10 minutes (600000 ms)
+          timeout: 600000
