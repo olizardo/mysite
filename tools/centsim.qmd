@@ -10,7 +10,7 @@ format:
 
 `CentSim` (Li et al. 2015) defines role similarity based on the ratio of centrality measures (Degree, Harmonic, Betweenness, and Eigenvector).
 
-**Reference:**
+## Reference
 - Li, L., Qian, L., Lee, V. E., Leng, M., Chen, M., & Chen, X. (2015). Fast and accurate computation of role similarity via vertex centrality. In *Web-Age Information Management* (pp. 57-69). Springer.
 
 ```r

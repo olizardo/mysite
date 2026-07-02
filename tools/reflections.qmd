@@ -10,7 +10,7 @@ format:
 
 This R function computes the centralities of persons and groups in two-mode networks using Hidalgo & Hausmann's (2009) "method of reflections."
 
-**Reference:** 
+## Reference
 Hidalgo, C. A., & Hausmann, R. (2009). The building blocks of economic complexity. *Proceedings of the National Academy of Sciences*, 106(26), 10570-10575.
 
 You can find the raw function on GitHub: [`reflections.R`](https://github.com/olizardo/correspondence-analysis-two-mode-networks/blob/main/Functions/reflections.R) (from the [correspondence-analysis-two-mode-networks](https://github.com/olizardo/correspondence-analysis-two-mode-networks/tree/main/Functions) repository).

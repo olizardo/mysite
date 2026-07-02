@@ -10,7 +10,7 @@ format:
 
 `RoleSim` (Jin et al. 2014) is a generalization of SimRank that computes similarity using maximum matching between neighbor sets, making it sensitive to automorphic similarity.
 
-**Reference:**
+## Reference
 - Jin, R., Lee, V. E., & Li, L. (2014). Scalable and axiomatic ranking of network role similarity. *ACM Transactions on Knowledge Discovery from Data (TKDD)*, 8(1), 1-37.
 
 ## Optimized Source Code
