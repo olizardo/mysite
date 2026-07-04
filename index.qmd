@@ -25,8 +25,8 @@ about:
 ### Welcome!
 I am the LeRoy Neiman Term Chair Professor of Sociology at the University of California, Los Angeles. I study culture, cognition, networks, theory, consumption, institutions, and organization.
 
-* **PhD in Sociology**, *University of Arizona*, 2006.
-* **BS in Psychology**, *Brooklyn College of the City University of New York*, 1997.
+- {{< fa graduation-cap >}} **PhD in Sociology**, *University of Arizona*, 2006.
+- {{< fa graduation-cap >}} **BS in Psychology**, *Brooklyn College of the City University of New York*, 1997.
 
 [Read my full biographical notes &rarr;](bio.qmd)
 
@@ -35,16 +35,19 @@ I am the LeRoy Neiman Term Chair Professor of Sociology at the University of Cal
 ### Editorial & Academic Roles
 
 **Current Editorial Positions**  
-* Co-editor, [*Sociological Theory*](https://journals.sagepub.com/home/stx) (with [Z. Magubane](https://www.bc.edu/bc-web/schools/mcas/departments/sociology/people/faculty-directory/zine-magubane.html), [V. Patil](https://umbc.academia.edu/VrushaliPatil) and [S. L. Crawley](https://www.usf.edu/arts-sciences/departments/sociology/people/faculty/s-l-crawley.aspx/)).
-* Board of Reviewing Editors, [*Science*](https://www.science.org/journal/science).
-* Editorial Advisory Board, [*Poetics*](https://www.sciencedirect.com/journal/poetics), [*Journal for the Theory of Social Behaviour*](https://onlinelibrary.wiley.com/journal/14685914), and [*Theory & Social Inquiry*](https://www.theoryandsocialinquiry.org/).
-* Editorial Advisory Board for book series at Stanford University Press (Culture and Economic Life), Princeton University Press (Studies in Cultural Sociology), and Oxford University Press (Social Network Mechanisms).
-* *Former* co-editor, [*American Sociological Review*](https://journals.sagepub.com/home/asr).
+
+- Co-editor, [*Sociological Theory*](https://journals.sagepub.com/home/stx) (with [Z. Magubane](https://www.bc.edu/bc-web/schools/mcas/departments/sociology/people/faculty-directory/zine-magubane.html), [V. Patil](https://umbc.academia.edu/VrushaliPatil) and [S. L. Crawley](https://www.usf.edu/arts-sciences/departments/sociology/people/faculty/s-l-crawley.aspx/)).
+- Board of Reviewing Editors, [*Science*](https://www.science.org/journal/science).
+- Editorial Advisory Board, [*Poetics*](https://www.sciencedirect.com/journal/poetics), [*Journal for the Theory of Social Behaviour*](https://onlinelibrary.wiley.com/journal/14685914), and [*Theory & Social Inquiry*](https://www.theoryandsocialinquiry.org/).
+- Editorial Advisory Board for book series at Stanford University Press (Culture and Economic Life), Princeton University Press (Studies in Cultural Sociology), and Oxford University Press (Social Network Mechanisms).
+- *Former* co-editor, [*American Sociological Review*](https://journals.sagepub.com/home/asr).
 
 **Memberships & Service**  
-* Chair, ASA [Section on Mathematical Sociology](https://mathematicalsociology.wordpress.com/).
-* Elected Member, [Sociological Research Association](https://www.sociological-research-assoc.org/).
-* *Former* Chair, ASA [Section on Sociology of Culture](https://asaculturesection.org/).
+
+- Chair, ASA [Section on Mathematical Sociology](https://mathematicalsociology.wordpress.com/).
+- Elected Member, [Sociological Research Association](https://www.sociological-research-assoc.org/).
+- Elected member, Sigma Xi, The Scientific Research Honor Society.
+- *Former* Chair, ASA [Section on Sociology of Culture](https://asaculturesection.org/).
 
 ---
 

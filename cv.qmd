@@ -50,10 +50,13 @@ Department of Sociology, University of California, Los Angeles
 ## Education
 ::: {.cventry}
 *University of Arizona (Tucson, AZ)*
+
 **PhD, Sociology**, 2006.
+
 **MA, Sociology**, 2002.
 
 *Brooklyn College, City University of New York (Brooklyn, NY)*
+
 **BS, Psychology**, 1997.
 :::
 
@@ -1330,7 +1333,6 @@ Albert J. Bergesen and **Omar Lizardo**. "Terrorism and hegemonic decline." Poli
 ### PhD Dissertation Committee
 ::: {.cventry}
 **Doctoral Dissertations Directed **
-* *Co-Chair.*
 
  *University of California, Los Angeles* 
 
@@ -1338,20 +1340,22 @@ Albert J. Bergesen and **Omar Lizardo**. "Terrorism and hegemonic decline." Poli
 - Acton Jiashi Feng (2027) 
 - Aya Ambrose Konishi (2027) 
 - Anthony Shu (2028) 
-- Stephanie Zhang* (2028) 
-- Nida Sanglimsuwan* (2028) 
+- Stephanie Zhang[^co] (2028) 
+- Nida Sanglimsuwan[^co] (2028) 
 
  *University of Notre Dame* 
 
 - Christopher John Hausmann (2011) 
-- Justin Farrell* (2013) 
+- Justin Farrell[^co] (2013) 
 - Ana Velitchkova (2014) 
 - Sara Skiles (2014) 
 - Melissa Pirkey (2015) 
 - Marshall Taylor (2019) 
-- Michael Wood* (2019) 
-- Brandon Sepulvado* (2019) 
-- Dustin Stoltz* (2020) 
+- Michael Wood[^co] (2019) 
+- Brandon Sepulvado[^co] (2019) 
+- Dustin Stoltz[^co] (2020) 
+
+[^co]: Co-chair. 
 
  **Ph.D. Committee Member (Sociology, Unless Otherwise Stated)** 
 
@@ -1383,16 +1387,18 @@ Albert J. Bergesen and **Omar Lizardo**. "Terrorism and hegemonic decline." Poli
 - Kari Marie Hojara (2014) 
 - Peter Mundey (2014) 
 - Daniel Castillo^[Theology.] (2014)  
-- Yang Yang^[Computer Science and Engineering.] (2015) 
+- Yang Yang[^cs] (2015) 
 - Daniel Escher (2015) 
 - Brad Vermurlen (2016) 
 - Kevin Estep (2017) 
-- Yuxiao Dong**  (2017) 
+- Yuxiao Dong[^cs]  (2017) 
 - Matthew Chandler (2017) 
-- Aastha Nigam**  (2018) 
+- Aastha Nigam[^cs]  (2018) 
 - Stefanie Israel de Souza (2019) 
 - Justin Van Ness (2019) 
 - Robert Mowry (2021)
+
+[^cs]: Computer Science and Engineering.
 
  *External*
 
@@ -1457,32 +1463,36 @@ Albert J. Bergesen and **Omar Lizardo**. "Terrorism and hegemonic decline." Poli
  *University of Notre Dame*
 
 - Erin Robertson^[McNair's Project.]  (2007) 
-- Teresa Bone* (2008) 
-- Melissa Truitt* (2011)  
-- Yo Tam Yoon* (2012) 
-- Olevia Boykin* (2014) 
-- Karyn Vilbig* (2014)  
-- Molly Feeney** *Honors Thesis.* (2015)
+- Teresa Bone[^ho] (2008) 
+- Melissa Truitt[^ho] (2011)  
+- Yo Tam Yoon[^ho] (2012) 
+- Olevia Boykin[^ho] (2014) 
+- Karyn Vilbig[^ho] (2014)  
+- Molly Feeney[^ho] (2015)
 :::
+
+[^ho]: Honors Thesis. 
+
 
 ## Courses Taught
 [ *University of California, Los Angeles*]
 
 - Cultural Sociology^[Graduate Seminar.] 
-- Topics in Sociological Theorizing<sup>†</sup>  
+- Topics in Sociological Theorizing[^gs] 
 - Social Networks 
-- Social Network Methods (A & B)<sup>†</sup> 
-- Theory and Research in Sociology<sup>†</sup> 
+- Social Network Methods (A & B)[^gs] 
+- Theory and Research in Sociology[^gs]
 
 [ *University of Notre Dame*]
 
-- Classical Sociological Theory<sup>†</sup>   
+- Classical Sociological Theory[^gs]  
 - Consumer Culture Research  
-- Contemporary Theory<sup>†</sup>  
-- Culture and Cognition<sup>†</sup>  
+- Contemporary Theory[^gs]
+- Culture and Cognition[^gs]
 - Culture, Morality, and Society  
 - Foundations of Sociological Theory  
-- From Publishable to Published<sup>†</sup>   
+- From Publishable to Published[^gs]  
 - Social Networks  
-- Social Networks<sup>†</sup>
+- Social Networks[^gs]
 
+[^gs]: Graduate Seminar. 
