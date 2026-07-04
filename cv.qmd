@@ -988,164 +988,164 @@ David Hachen and **Omar Lizardo**. "The NetHealth project and data: New opportun
 
 David Hachen, **Omar Lizardo**, Ethan Fridmanski and Cheng Wang." Do lonely birds flock together? Determinants of assortative mixing on loneliness among a cohort of first year college students." Networks 2021: A Joint Sunbelt and NetSci Conference: Combined meeting of the International Network for Social Network Analysis (Sunbelt'21), and the Network Science Society (NetSci'21) (virtual).
 
-Mateusz Nurek, Radosław Michalski, **Omar Lizardo** and Marian-Andrei Rizoiu. 2021. "Predicting relationships and Big Five personality traits from telecommunication history based on Hawkes process." The 30th ACM International Conference on Information and Knowledge Management (virtual).
+Mateusz Nurek, Radosław Michalski, **Omar Lizardo** and Marian-Andrei Rizoiu. "Predicting relationships and Big Five personality traits from telecommunication history based on Hawkes process." The 30th ACM International Conference on Information and Knowledge Management (virtual).
 
 Radosław Michalski, Bolesław K. Szymański, Przemysław Kazienko, Christian Lebiere, **Omar Lizardo** and Marcin Kulisiewicz. "Cognition-driven temporal social networks." *Networks 2021: A Joint Conference of Sunbelt and NetSci* (virtual).
 
-Shikang Liu, David Hachen, **Omar Lizardo**, Christian Poellabauer, Aaron Striegel and Tijana Milenkovic. 2020. "The power of dynamic social networks to predict individuals' mental health." Pacific Symposium on Biocomputing (PSB '20), Big Island of Hawaii, HI.
+Shikang Liu, David Hachen, **Omar Lizardo**, Christian Poellabauer, Aaron Striegel and Tijana Milenkovic. "The power of dynamic social networks to predict individuals' mental health." Pacific Symposium on Biocomputing (PSB '20), Big Island of Hawaii, HI.
 :::
 
 ### 2018–2019
 ::: {.cventry}
-Ashwin Bahulkar, Boleslaw K. Szymanski, Kevin Chan and **Omar Lizardo**. 2019. "Modeling and predicting human social behavior." 25th ACM SIGKDD Conference on Knowledge Discovery and Data Mining, Anchorage, Alaska. 
+Ashwin Bahulkar, Boleslaw K. Szymanski, Kevin Chan and **Omar Lizardo**. "Modeling and predicting human social behavior." 25th ACM SIGKDD Conference on Knowledge Discovery and Data Mining, Anchorage, Alaska. 
 
-Louis Faust, Priscilla Jimenez-Pazmino, James K. Holland, **Omar Lizardo**, David Hachen and Nitesh V. Chawla. 2019. "What 30 Days tells us Aaout 3 Years: Leveraging early signs of user abandonment and compliance." 13th EAI International Conference on Pervasive Computing Technologies for Healthcare, Trento, Italy.
+Louis Faust, Priscilla Jimenez-Pazmino, James K. Holland, **Omar Lizardo**, David Hachen and Nitesh V. Chawla. "What 30 Days tells us Aaout 3 Years: Leveraging early signs of user abandonment and compliance." 13th EAI International Conference on Pervasive Computing Technologies for Healthcare, Trento, Italy.
 
-Cheng Wang, **Omar Lizardo** and David Hachen. 2018. "Dynamics of local clustering in temporal social networks." 2nd North American Social Networks Conference, Washington, DC.
+Cheng Wang, **Omar Lizardo** and David Hachen. "Dynamics of local clustering in temporal social networks." 2nd North American Social Networks Conference, Washington, DC.
 
-Shikang Liu, David Hachen, **Omar Lizardo**, Christian Poellabauer, Aaron Striegel and Tijana Milenkovic. 2018. "Network analysis of the NetHealth data: Exploring co-evolution of individuals' social networks and physical activities." 2018 KDD Workshop on Machine Learning for Medicine and Healthcare, London, United Kingdom.
+Shikang Liu, David Hachen, **Omar Lizardo**, Christian Poellabauer, Aaron Striegel and Tijana Milenkovic. "Network analysis of the NetHealth data: Exploring co-evolution of individuals' social networks and physical activities." 2018 KDD Workshop on Machine Learning for Medicine and Healthcare, London, United Kingdom.
 
-David Hachen, **Omar Lizardo** and Matthew Chandler. 2018. "Examining the empirical linkages between different kinds of ties in dynamic ego networks."  International Sunbelt Social Networks Conference (Sunbelt'18), Utrecht, The Netherlands.
+David Hachen, **Omar Lizardo** and Matthew Chandler. "Examining the empirical linkages between different kinds of ties in dynamic ego networks."  International Sunbelt Social Networks Conference (Sunbelt'18), Utrecht, The Netherlands.
 
-Ashwin Bahulkar, Boleslaw Szymanski, **Omar Lizardo** and Kevin Chan. 2018. "Impact of Attributes on Group Formation." 4th Edition of the Workshop on Social Influence, at the IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining (ASONAM 2018), Barcelona, Spain.
+Ashwin Bahulkar, Boleslaw Szymanski, **Omar Lizardo** and Kevin Chan. "Impact of Attributes on Group Formation." 4th Edition of the Workshop on Social Influence, at the IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining (ASONAM 2018), Barcelona, Spain.
 
-Shikang Liu, David Hachen, **Omar Lizardo**, Christian Poellabauer, Aaron Striegel and Tijana Milenkovic. 2018. "Exploring co-evolution between individuals' social networks and physical activities in NetHealth data." Intelligent Systems for Molecular Biology Conference (ISMB'18), Chicago, Illinois. 
+Shikang Liu, David Hachen, **Omar Lizardo**, Christian Poellabauer, Aaron Striegel and Tijana Milenkovic. "Exploring co-evolution between individuals' social networks and physical activities in NetHealth data." Intelligent Systems for Molecular Biology Conference (ISMB'18), Chicago, Illinois. 
 
-Louis Faust, Priscilla Jimenez, David Hachen, **Omar Lizardo**, Aaron Striegel and Nitesh V. Chawla. 2018. "Long-term compliance habits: What early data tells us."  Short Workshop on Next Steps Towards Long Term Self Tracking at the ACM CHI Conference on Human Factors in Computing Systems (CHI'18). Montreal, Canada.
+Louis Faust, Priscilla Jimenez, David Hachen, **Omar Lizardo**, Aaron Striegel and Nitesh V. Chawla. "Long-term compliance habits: What early data tells us."  Short Workshop on Next Steps Towards Long Term Self Tracking at the ACM CHI Conference on Human Factors in Computing Systems (CHI'18). Montreal, Canada.
 
-Radosław Michalski, Boleslaw Szymanski, Przemysław Kazienko, Christian Lebiere, **Omar Lizardo** and Marcin Kulisiewicz. 2018. "CogSNet: Cognition-driven social network." International School and Conference on Network Science (NetSci'18), Paris, France.
+Radosław Michalski, Boleslaw Szymanski, Przemysław Kazienko, Christian Lebiere, **Omar Lizardo** and Marcin Kulisiewicz. "CogSNet: Cognition-driven social network." International School and Conference on Network Science (NetSci'18), Paris, France.
 
-Dustin Stoltz, Marshall Taylor and **Omar Lizardo**. 2018. "Functionaries: Institutional theory without institutions." Annual Meeting of the American Sociological Association. Philadelphia, Pennsylvania.
+Dustin Stoltz, Marshall Taylor and **Omar Lizardo**. "Functionaries: Institutional theory without institutions." Annual Meeting of the American Sociological Association. Philadelphia, Pennsylvania.
 :::
 
 ### 2016–2017
 ::: {.cventry}
-Matthew Chandler and **Omar Lizardo**. 2017. "The shapes of solidarity: Theorizing emergent structures in social networks with abstract geometry."  Annual Meeting of the American Sociological Association. Montreal, Canada. 
+Matthew Chandler and **Omar Lizardo**. "The shapes of solidarity: Theorizing emergent structures in social networks with abstract geometry."  Annual Meeting of the American Sociological Association. Montreal, Canada. 
 
-Sudip Vhaduri, Christian Poellabauer, Aaron Striegel, **Omar Lizardo** and David Hachen. 2017. "Discovering places of Interest using sensor data from smartphones and wearables." 14th IEEE International Conference on Ubiquitous Intelligence and Computing (UIC'17). San Francisco, CA.
+Sudip Vhaduri, Christian Poellabauer, Aaron Striegel, **Omar Lizardo** and David Hachen. "Discovering places of Interest using sensor data from smartphones and wearables." 14th IEEE International Conference on Ubiquitous Intelligence and Computing (UIC'17). San Francisco, CA.
 
-Yuxiao Dong, **Omar Lizardo** and Nitesh Chawla. 2017. "Do the young live in a smaller world than the old? age-specific degrees of separation in human communication." 5th Conference on the Analysis of Mobile Phone Datasets (NetMob'17). Milan, Italy. 
+Yuxiao Dong, **Omar Lizardo** and Nitesh Chawla. "Do the young live in a smaller world than the old? age-specific degrees of separation in human communication." 5th Conference on the Analysis of Mobile Phone Datasets (NetMob'17). Milan, Italy. 
 
-Ashwin Bahulkar, Boleslaw Szymanski, Kevin Chan and **Omar Lizardo**. 2017.  "Coevolving networks in the NetSense dataset." International School and Conference on Network Science (NetSci'17). Indianapolis, Indiana. 
+Ashwin Bahulkar, Boleslaw Szymanski, Kevin Chan and **Omar Lizardo**. "Coevolving networks in the NetSense dataset." International School and Conference on Network Science (NetSci'17). Indianapolis, Indiana. 
 
-**Omar Lizardo**. 2017. "Schematic logics and patterns of culture choice: Linking cognition and action in the sociology of taste." Culture and Cognition Mini-Conference, Annual Meetings of the Eastern Sociological Society, Philadelphia, PA.
+**Omar Lizardo**. "Schematic logics and patterns of culture choice: Linking cognition and action in the sociology of taste." Culture and Cognition Mini-Conference, Annual Meetings of the Eastern Sociological Society, Philadelphia, PA.
 
-Jennifer Lena and **Omar Lizardo**. 2016. "The 'omnivorous generation:' Artistic valorization and institutional work in the 20th century United States." Annual Meeting of the Social Science History Association. Chicago, Illinois. 
+Jennifer Lena and **Omar Lizardo**. "The 'omnivorous generation:' Artistic valorization and institutional work in the 20th century United States." Annual Meeting of the Social Science History Association. Chicago, Illinois. 
 
-Ashwin Bahulkar, Boleslaw Szymanski, Kevin Chan and **Omar Lizardo**. 2016. "Co-evolution of two networks representing different social relations in NetSense." 5th International Workshop on Complex Networks and their Applications (Complex Networks 2016). Milan, Italy. 
+Ashwin Bahulkar, Boleslaw Szymanski, Kevin Chan and **Omar Lizardo**. "Co-evolution of two networks representing different social relations in NetSense." 5th International Workshop on Complex Networks and their Applications (Complex Networks 2016). Milan, Italy. 
 
-Ashwin Bahulkar, Boleslaw Szymanski, **Omar Lizardo**, Nitesh Chawla, Yuxiao Dong and Yang Yang.  2016. "Analysis of link formation, persistence and dissolution in NetSense data." 6th Workshop on Social Network Analysis in Applications (SNAA'16).
+Ashwin Bahulkar, Boleslaw Szymanski, **Omar Lizardo**, Nitesh Chawla, Yuxiao Dong and Yang Yang. "Analysis of link formation, persistence and dissolution in NetSense data." 6th Workshop on Social Network Analysis in Applications (SNAA'16).
 
-Rachael Purta, Stephen Mattingly, Lixing Song, **Omar Lizardo**, David Hachen, Christian Poellabauer and Aaron Striegel. 2016. "Experiences measuring sleep and physical activity patterns across a large college cohort with Fitbits." 20th International Symposium on Wearable Computers (ISWC'16). Heidelberg, Germany.
+Rachael Purta, Stephen Mattingly, Lixing Song, **Omar Lizardo**, David Hachen, Christian Poellabauer and Aaron Striegel. "Experiences measuring sleep and physical activity patterns across a large college cohort with Fitbits." 20th International Symposium on Wearable Computers (ISWC'16). Heidelberg, Germany.
 
-Ashwin Bahulkar, Boleslaw Szymanski, **Omar Lizardo**, Nitesh Chawla, Yuxiao Dong and Yang Yang.  2016. "Analysis of link formation, persistence and dissolution in NetSense data." Proceedings of Advances in Social Network Analysis and Mining 2016 (P-ASONAM'16).
+Ashwin Bahulkar, Boleslaw Szymanski, **Omar Lizardo**, Nitesh Chawla, Yuxiao Dong and Yang Yang. "Analysis of link formation, persistence and dissolution in NetSense data." Proceedings of Advances in Social Network Analysis and Mining 2016 (P-ASONAM'16).
 
-David Hachen, **Omar Lizardo**, Carlene Gundy and Cheng Wang. 2016. "The dynamic coupling of two-mode social foci networks." Networks in the Global World Conference (NetGloW'16), St. Petersburg, Russia. 
+David Hachen, **Omar Lizardo**, Carlene Gundy and Cheng Wang. "The dynamic coupling of two-mode social foci networks." Networks in the Global World Conference (NetGloW'16), St. Petersburg, Russia. 
 
-Yuxiao Dong, **Omar Lizardo** and Nitesh Chawla. 2016. "Longer degrees of separation between seniors in mobile communication." 2nd International Conference on Computational Social Science ($IC^2S^2$), Kellogg School of Management, Northwestern University, Evanston, Illinois. 
+Yuxiao Dong, **Omar Lizardo** and Nitesh Chawla. "Longer degrees of separation between seniors in mobile communication." 2nd International Conference on Computational Social Science ($IC^2S^2$), Kellogg School of Management, Northwestern University, Evanston, Illinois. 
 
-David Hachen, **Omar Lizardo**, Michael Penta, Matthew Chandler and Brandon Sepulvado. 2016. "Ethnoracial status and tie decay in social networks: Linking triracial hierarchy and Simmelian tie theory." International Sunbelt Social Networks Conference (Sunbelt'16), Newport Beach, California.
+David Hachen, **Omar Lizardo**, Michael Penta, Matthew Chandler and Brandon Sepulvado. "Ethnoracial status and tie decay in social networks: Linking triracial hierarchy and Simmelian tie theory." International Sunbelt Social Networks Conference (Sunbelt'16), Newport Beach, California.
 
-Brandon Sepulvado, David Hachen, **Omar Lizardo** and Matthew Chandler. 2016. "The big five personality traits in network formation." International Sunbelt Social Networks Conference (Sunbelt'16), Newport Beach, California.
+Brandon Sepulvado, David Hachen, **Omar Lizardo** and Matthew Chandler. "The big five personality traits in network formation." International Sunbelt Social Networks Conference (Sunbelt'16), Newport Beach, California.
 :::
 
 ### 2010–2015
 ::: {.cventry}
-David Hachen, **Omar Lizardo**, Michael Penta, Brandon Sepulvado and Matthew Chandler. 2015. "Social tie formation, development and persistence: insights from the analysis of changes in the social networks of a college student cohort." International Conference on Computational Social Science ($IC^2S^2$), Helsinki, Finland.
+David Hachen, **Omar Lizardo**, Michael Penta, Brandon Sepulvado and Matthew Chandler. "Social tie formation, development and persistence: insights from the analysis of changes in the social networks of a college student cohort." International Conference on Computational Social Science ($IC^2S^2$), Helsinki, Finland.
 
-Jennifer Lena and **Omar Lizardo**. 2015. "Institutional entrepreneurship, artistic valorization, and the generation of cultural taste."  Annual Meeting of the American Sociological Association. Chicago, Illinois. 
+Jennifer Lena and **Omar Lizardo**. "Institutional entrepreneurship, artistic valorization, and the generation of cultural taste."  Annual Meeting of the American Sociological Association. Chicago, Illinois. 
 
-**Omar Lizardo** and Sara Skiles. 2014. "Cultural Objects as prisms: Perceived audience composition of Musical Styles as a
+**Omar Lizardo** and Sara Skiles. "Cultural Objects as prisms: Perceived audience composition of Musical Styles as a
 Resource for Symbolic Exclusion in the United States." Annual Meeting of the Social Science History Association. Toronto, Ontario, Canada. 
 
-**Omar Lizardo** and Melissa Fletcher Pirkey. 2014. " Social cognitive mechanisms of category-based impression formation in markets." 17th Annual Organizational Ecology Conference, Barcelona, Spain.
+**Omar Lizardo** and Melissa Fletcher Pirkey. " Social cognitive mechanisms of category-based impression formation in markets." 17th Annual Organizational Ecology Conference, Barcelona, Spain.
 
-David Hachen and **Omar Lizardo**. 2014. "Dynamic ego networks." Temporal Networks, Human Dynamics, and Social Physics NetSci'14 Symposium (TnetSphys'14), Berkeley, California. 
+David Hachen and **Omar Lizardo**. "Dynamic ego networks." Temporal Networks, Human Dynamics, and Social Physics NetSci'14 Symposium (TnetSphys'14), Berkeley, California. 
 
-David Hachen and **Omar Lizardo**. 2014. "Growth, stability, change and inequality in dynamic ego networks."  International Sunbelt Social Networks Conference (Sunbelt'14). St Pete's Beach, Florida. 
+David Hachen and **Omar Lizardo**. "Growth, stability, change and inequality in dynamic ego networks."  International Sunbelt Social Networks Conference (Sunbelt'14). St Pete's Beach, Florida. 
 
-Matthew Chandler and **Omar Lizardo**. 2014. "The shapes of solidarity: A formal network theory of community and society." International Sunbelt Social Networks Conference (Sunbelt'14). St Pete's Beach, Florida. 
+Matthew Chandler and **Omar Lizardo**. "The shapes of solidarity: A formal network theory of community and society." International Sunbelt Social Networks Conference (Sunbelt'14). St Pete's Beach, Florida. 
 
-Jeff Larson and  **Omar Lizardo**. 2014. "An institutional logics approach to the analysis of social movement fields." Annual Meeting of the Eastern Sociological Society, Baltimore, Maryland.
+Jeff Larson and  **Omar Lizardo**. "An institutional logics approach to the analysis of social movement fields." Annual Meeting of the Eastern Sociological Society, Baltimore, Maryland.
 
-David Hachen and **Omar Lizardo**. 2013. "The effects of individual traits on the formation of social networks among first-year college students."  International School and Conference on Network Science (NetSci'13), Copenhagen, Denmark.
+David Hachen and **Omar Lizardo**. "The effects of individual traits on the formation of social networks among first-year college students."  International School and Conference on Network Science (NetSci'13), Copenhagen, Denmark.
 
-Aaron Striegel, Shu Liu, Lei Meng, Christian Poellabauer, David Hachen and **Omar Lizardo**. 2013. "Lessons Learned from the NetSense Smartphone Study." he 5th ACM HotPlanet Workshop (HotPlanet'13). Hong Kong. 
+Aaron Striegel, Shu Liu, Lei Meng, Christian Poellabauer, David Hachen and **Omar Lizardo**. "Lessons Learned from the NetSense Smartphone Study." he 5th ACM HotPlanet Workshop (HotPlanet'13). Hong Kong. 
 
-David Hachen, **Omar Lizardo**, Zoltan Toroczkai,  Cheng Wang, Anthony Strathman, Nitesh Chawla. 2012. "Weighted reciprocity in human communication networks."  Annual Meeting of the American Sociological Association. Denver, Colorado. 
+David Hachen, **Omar Lizardo**, Zoltan Toroczkai,  Cheng Wang, Anthony Strathman, Nitesh Chawla. "Weighted reciprocity in human communication networks."  Annual Meeting of the American Sociological Association. Denver, Colorado. 
 
-Cheng Wang, David Hachen and **Omar Lizardo**. 2013. "The Co-evolution of Communication Networks and Drinking Behaviors." AAAI Fall Symposium 2013 on
+Cheng Wang, David Hachen and **Omar Lizardo**. "The Co-evolution of Communication Networks and Drinking Behaviors." AAAI Fall Symposium 2013 on
 Social Networks and Social Contagion Web Analytics and Computational Social Science (SNSC'13). Arlington, Virginia.
 
-David Hachen, **Omar Lizardo**, Michael Penta and Bryant Crubaugh.  2012. "Netsense: a new network data collection platform for the study of the dynamics of social relationships."  International Sunbelt Social Networks Conference (Sunbelt'12). St Pete's Beach, Florida. 
+David Hachen, **Omar Lizardo**, Michael Penta and Bryant Crubaugh. "Netsense: a new network data collection platform for the study of the dynamics of social relationships."  International Sunbelt Social Networks Conference (Sunbelt'12). St Pete's Beach, Florida. 
 
-Michael Penta, **Omar Lizardo**, David Hachen and Bryant Crubaugh. 2012. "The Ol' Ball and Chain: Negative effect of intimate long distance relationships on new tie formation." International Sunbelt Social Networks Conference (Sunbelt'12). St Pete's Beach, Florida.
+Michael Penta, **Omar Lizardo**, David Hachen and Bryant Crubaugh. "The Ol' Ball and Chain: Negative effect of intimate long distance relationships on new tie formation." International Sunbelt Social Networks Conference (Sunbelt'12). St Pete's Beach, Florida.
 
-**Omar Lizardo**.  2012. "Beyond the antinomies of constructivism:  Practice theory, reference and the ontological stability of the social."  14th Annual Philosophy of Social Science Roundtable.  University of Nebraska, Lincoln, Nebraska.
+**Omar Lizardo**. "Beyond the antinomies of constructivism:  Practice theory, reference and the ontological stability of the social."  14th Annual Philosophy of Social Science Roundtable.  University of Nebraska, Lincoln, Nebraska.
 
-**Omar Lizardo** and Leeloo Strand. 2011.  "Beyond 'world images': Belief as embodied action in the world."  Annual Meeting of the American Sociological Association. Las Vegas, Nevada. 
+**Omar Lizardo** and Leeloo Strand. "Beyond 'world images': Belief as embodied action in the world."  Annual Meeting of the American Sociological Association. Las Vegas, Nevada. 
 
-**Omar Lizardo** and David Hachen. 2011.  "Dyadic reciprocity and the emergence of degree-assortativity in weighted social networks."  International Sunbelt Social Networks Conference (Sunbelt'11). St Pete's Beach, Florida. 
+**Omar Lizardo** and David Hachen. "Dyadic reciprocity and the emergence of degree-assortativity in weighted social networks."  International Sunbelt Social Networks Conference (Sunbelt'11). St Pete's Beach, Florida. 
 
-Robert M. Fishman and **Omar Lizardo**. 2010.  "Why Portugal and Spain came to diverge in cultural tastes: Legacies of polar opposite pathways to democracy." Annual Meeting of the Social Science History Association. Chicago, IL. 
+Robert M. Fishman and **Omar Lizardo**. "Why Portugal and Spain came to diverge in cultural tastes: Legacies of polar opposite pathways to democracy." Annual Meeting of the Social Science History Association. Chicago, IL. 
 
-Robert M. Fishman and **Omar Lizardo**. 2010.  "How legacies of macro-political transformation shape patterns of cultural taste." Annual Meeting of the American Sociological Association. Atlanta, Georgia. 
+Robert M. Fishman and **Omar Lizardo**. "How legacies of macro-political transformation shape patterns of cultural taste." Annual Meeting of the American Sociological Association. Atlanta, Georgia. 
 
-**Omar Lizardo** and Melissa Fletcher Pirkey. 2010.  "Instituting organizations, cultural categories and structured inequality." Annual Meeting of the American Sociological Association. Atlanta, Georgia. 
+**Omar Lizardo** and Melissa Fletcher Pirkey. "Instituting organizations, cultural categories and structured inequality." Annual Meeting of the American Sociological Association. Atlanta, Georgia. 
 
-**Omar Lizardo**. 2010.  "Rethinking *habitus*: Cognitive dynamics and externalization."  Paper presented for the Culture and Cognition Research Network.  Annual Meeting of the American Sociological Association. Atlanta, Georgia. 
+**Omar Lizardo**. "Rethinking *habitus*: Cognitive dynamics and externalization."  Paper presented for the Culture and Cognition Research Network.  Annual Meeting of the American Sociological Association. Atlanta, Georgia. 
 
- **Omar Lizardo** and David Hachen.  2010. " Reciprocity and degree assortativity in human communication networks." International School and Conference on Network Science (NetSci'10). Cambridge, Massachusetts.
+ **Omar Lizardo** and David Hachen. " Reciprocity and degree assortativity in human communication networks." International School and Conference on Network Science (NetSci'10). Cambridge, Massachusetts.
 :::
 
 ### 2006–2009
 ::: {.cventry}
-**Omar Lizardo**. 2009.  "Social psychological processes as mechanisms for the explanation of cultural phenomena." Annual Meeting of the American Sociological Association. San Francisco, California.   
+**Omar Lizardo**. "Social psychological processes as mechanisms for the explanation of cultural phenomena." Annual Meeting of the American Sociological Association. San Francisco, California.   
 
-David Hachen, **Omar Lizardo**, Cheng Wang, Zoltan Toroczkai, Nitesh V. Chawla, Ryan Lichtenwalter, Troy Raeder, Anthony Strathman, and Zhechao Zhou.  2009. "Reciprocity: The missing link." International School and Conference on Network Science (NetSci'09). Venice, Italy.
+David Hachen, **Omar Lizardo**, Cheng Wang, Zoltan Toroczkai, Nitesh V. Chawla, Ryan Lichtenwalter, Troy Raeder, Anthony Strathman, and Zhechao Zhou. "Reciprocity: The missing link." International School and Conference on Network Science (NetSci'09). Venice, Italy.
 
-David Hachen, **Omar Lizardo**, Cheng Wang and Zhechao Zhou.  2009. "Correlates of reciprocity in a large-scale communication network: A weighted edge approach." International Sunbelt Social Networks Conference (Sunbelt'09). San Diego, California. 
+David Hachen, **Omar Lizardo**, Cheng Wang and Zhechao Zhou. "Correlates of reciprocity in a large-scale communication network: A weighted edge approach." International Sunbelt Social Networks Conference (Sunbelt'09). San Diego, California. 
 
-**Omar Lizardo**. 2008. "Beyond the antinomies of structure: Recovering the insights of methodological structuralism." Annual Meeting of the American Sociological Association. Boston, Massachusetts.
+**Omar Lizardo**. "Beyond the antinomies of structure: Recovering the insights of methodological structuralism." Annual Meeting of the American Sociological Association. Boston, Massachusetts.
 
-Albert J. Bergesen and **Omar Lizardo**.  2008. "Political economy of the world-system vs. world society/polity:  A crucial test of competing theoretical paradigms." Annual Meeting of the American Sociological Association. Boston, Massachusetts.   
+Albert J. Bergesen and **Omar Lizardo**. "Political economy of the world-system vs. world society/polity:  A crucial test of competing theoretical paradigms." Annual Meeting of the American Sociological Association. Boston, Massachusetts.   
 
-**Omar Lizardo**. 2008. "Cultural competence and network activation:  cultural capital as an enabling factor in the instrumental use of social ties." International Sunbelt Social Networks Conference (Sunbelt'08). St. Pete Beach, Florida.
+**Omar Lizardo**. "Cultural competence and network activation:  cultural capital as an enabling factor in the instrumental use of social ties." International Sunbelt Social Networks Conference (Sunbelt'08). St. Pete Beach, Florida.
 
-**Omar Lizardo**. 2007.  "'Mirror neurons,' collective objects and the problem of transmission: Reconsidering Stephen Turner's critique of practice theory." Annual Meeting of the American Sociological Association. New York, New York.
+**Omar Lizardo**. "'Mirror neurons,' collective objects and the problem of transmission: Reconsidering Stephen Turner's critique of practice theory." Annual Meeting of the American Sociological Association. New York, New York.
 
-Jeff Larson and **Omar Lizardo**. 2006. "Collective memory and the identity politics of commodification: the case of Che Guevara."  Annual Meeting of the American Sociological Association. Montreal, Canada.  
+Jeff Larson and **Omar Lizardo**. "Collective memory and the identity politics of commodification: the case of Che Guevara."  Annual Meeting of the American Sociological Association. Montreal, Canada.  
 
-**Omar Lizardo**. 2006. "Bourdieuian class position and interracial friendship choice." International Sunbelt Social Networks Conference (Sunbelt'06). Vancouver, British Columbia, Canada.
+**Omar Lizardo**. "Bourdieuian class position and interracial friendship choice." International Sunbelt Social Networks Conference (Sunbelt'06). Vancouver, British Columbia, Canada.
 :::
 
 ### 2002–2005
 ::: {.cventry}
-**Omar Lizardo** and Jessica L. Collett. 2005. "Why biology is not (religious) destiny: a second look at gender differences in religiosity." Annual Meeting of the American Sociological Association. Philadelphia, Pennsylvania.   
+**Omar Lizardo** and Jessica L. Collett. "Why biology is not (religious) destiny: a second look at gender differences in religiosity." Annual Meeting of the American Sociological Association. Philadelphia, Pennsylvania.   
 
-**Omar Lizardo**. 2005. "Elastic social structures and compromised selves: some empirical implications of Goffman's embarrassment-interaction link." Annual Meeting of the American Sociological Association. Philadelphia, Pennsylvania.   
+**Omar Lizardo**. "Elastic social structures and compromised selves: some empirical implications of Goffman's embarrassment-interaction link." Annual Meeting of the American Sociological Association. Philadelphia, Pennsylvania.   
 
-**Omar Lizardo**. 2005. "Musical taste and culture consumption in Europe: a cross-national analysis." Annual meeting of the Pacific Sociological Association. Portland, Oregon. 
+**Omar Lizardo**. "Musical taste and culture consumption in Europe: a cross-national analysis." Annual meeting of the Pacific Sociological Association. Portland, Oregon. 
 
-**Omar Lizardo**. 2005. "What is structure?" Annual meeting of the Pacific Sociological Association. Portland, Oregon.  
+**Omar Lizardo**. "What is structure?" Annual meeting of the Pacific Sociological Association. Portland, Oregon.  
 
- **Omar Lizardo**. 2005. "Latent association models for ego-network data." International Sunbelt Social Networks Conference (Sunbelt'05). Redondo Beach, California.
+ **Omar Lizardo**. "Latent association models for ego-network data." International Sunbelt Social Networks Conference (Sunbelt'05). Redondo Beach, California.
 
-**Omar Lizardo**. 2004. "The value of mass culture: highbrow and popular consumption and network outcomes." Annual Meeting of the American Sociological Association. San Francisco, California. 
+**Omar Lizardo**. "The value of mass culture: highbrow and popular consumption and network outcomes." Annual Meeting of the American Sociological Association. San Francisco, California. 
 
-**Omar Lizardo** and Jessica L. Collett. 2004. "Socioeconomic status and the experience of anger." Annual Meeting of the American Sociological Association, San Francisco, California.  
+**Omar Lizardo** and Jessica L. Collett. "Socioeconomic status and the experience of anger." Annual Meeting of the American Sociological Association, San Francisco, California.  
 
-**Omar Lizardo**. 2004. "Towards an impure sociology: formalism, behavioral realism and the interdisciplinary challenge in social theory." Annual meeting of the Pacific Sociological Association. San Francisco, California.   
+**Omar Lizardo**. "Towards an impure sociology: formalism, behavioral realism and the interdisciplinary challenge in social theory." Annual meeting of the Pacific Sociological Association. San Francisco, California.   
 
-**Omar Lizardo**. 2003. "The effect of employment status on gender differences in culture consumption." Annual meeting of the American Sociological Association. Atlanta, Georgia.  
+**Omar Lizardo**. "The effect of employment status on gender differences in culture consumption." Annual meeting of the American Sociological Association. Atlanta, Georgia.  
 
-**Omar Lizardo**. 2003. "Towards a knowledge-interaction theory of group formation and inequality." Annual meeting of the Pacific Sociological Association. Pasadena, California.   
+**Omar Lizardo**. "Towards a knowledge-interaction theory of group formation and inequality." Annual meeting of the Pacific Sociological Association. Pasadena, California.   
 
-**Omar Lizardo**. 2003. "Creating the reality of society: the role of cognitive mechanisms in Durkheim's theory of ritual." Annual meeting of the Pacific Sociological Association. Pasadena, California. 
+**Omar Lizardo**. "Creating the reality of society: the role of cognitive mechanisms in Durkheim's theory of ritual." Annual meeting of the Pacific Sociological Association. Pasadena, California. 
 
-Albert J. Bergesen and **Omar Lizardo**. 2002. "Terrorism and the world-system." Annual Meeting of the American Sociological Association. Chicago, Illinois.
+Albert J. Bergesen and **Omar Lizardo**. "Terrorism and the world-system." Annual Meeting of the American Sociological Association. Chicago, Illinois.
 
-Albert J. Bergesen and **Omar Lizardo**. 2002. "Terrorism and hegemonic decline." Political Economy of World-Systems Conference. University of California at Riverside.
+Albert J. Bergesen and **Omar Lizardo**. "Terrorism and hegemonic decline." Political Economy of World-Systems Conference. University of California at Riverside.
 :::
 
 ## Editorial Work
