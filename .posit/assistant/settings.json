@@ -3,5 +3,8 @@
     "edit": {
       "*.md": "allow"
     }
+  },
+  "sandbox": {
+    "enabled": false
   }
 }

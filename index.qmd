@@ -22,19 +22,25 @@ about:
       href: cv.pdf
 ---
 
-### Welcome!
-I am the LeRoy Neiman Term Chair Professor of Sociology at the University of California, Los Angeles. I study culture, cognition, networks, theory, consumption, institutions, and organization.
+### {{< fa house >}} Welcome!
+{{< fa university >}} **Title and Affiliation** 
 
-- {{< fa graduation-cap >}} **PhD in Sociology**, *University of Arizona*, 2006.
-- {{< fa graduation-cap >}} **BS in Psychology**, *Brooklyn College of the City University of New York*, 1997.
+I am the LeRoy Neiman Term Chair Professor of Sociology at the University of California, Los Angeles. 
 
-[Read my full biographical notes &rarr;](bio.qmd)
+{{< fa book >}} **Research Interests**
+
+I study culture, cognition, networks, theory, consumption, institutions, and organization.
+
+  - {{< fa graduation-cap >}} **PhD in Sociology**, *University of Arizona*, 2006.
+  - {{< fa graduation-cap >}} **BS in Psychology**, *Brooklyn College of the City University of New York*, 1997.
+
+[{{< fa user-circle >}} Read my full biographical notes &rarr;](bio.qmd)
 
 ---
 
-### Editorial & Academic Roles
+### {{< fa landmark >}} Editorial & Academic Roles
 
-**Current Editorial Positions**  
+{{< fa edit >}} **Current Editorial Positions**  
 
 - Co-editor, [*Sociological Theory*](https://journals.sagepub.com/home/stx) (with [Z. Magubane](https://www.bc.edu/bc-web/schools/mcas/departments/sociology/people/faculty-directory/zine-magubane.html), [V. Patil](https://umbc.academia.edu/VrushaliPatil) and [S. L. Crawley](https://www.usf.edu/arts-sciences/departments/sociology/people/faculty/s-l-crawley.aspx/)).
 - Board of Reviewing Editors, [*Science*](https://www.science.org/journal/science).
@@ -42,31 +48,31 @@ I am the LeRoy Neiman Term Chair Professor of Sociology at the University of Cal
 - Editorial Advisory Board for book series at Stanford University Press (Culture and Economic Life), Princeton University Press (Studies in Cultural Sociology), and Oxford University Press (Social Network Mechanisms).
 - *Former* co-editor, [*American Sociological Review*](https://journals.sagepub.com/home/asr).
 
-**Memberships & Service**  
+{{< fa users >}} **Memberships & Service**  
 
 - Chair, ASA [Section on Mathematical Sociology](https://mathematicalsociology.wordpress.com/).
 - Elected Member, [Sociological Research Association](https://www.sociological-research-assoc.org/).
-- Elected member, Sigma Xi, The Scientific Research Honor Society.
+- Elected member, [Sigma Xi, The Scientific Research Honor Society](https://www.sigmaxi.org/).
 - *Former* Chair, ASA [Section on Sociology of Culture](https://asaculturesection.org/).
 
 ---
 
-### Explore My Work
+### {{< fa compass >}} Explore My Work
 
 ::: {.grid}
 
 ::: {.g-col-4}
-**[Selected Publications](pubs.qmd)**  
+**{{< fa book >}} [Selected Publications](pubs.qmd)**  
 A curated list of my peer-reviewed articles, books, and working papers.
 :::
 
 ::: {.g-col-4}
-**[Methods & Stuff](methods-and-stuff/index.qmd)**  
+**{{< fa project-diagram >}} [Methods & Stuff](methods-and-stuff/index.qmd)**  
 Tutorials and theoretical essays on formal methods for analyzing data.
 :::
 
 ::: {.g-col-4}
-**[Tools & Code](tools/index.qmd)**  
+**{{< fa laptop-code >}} [Tools & Code](tools/index.qmd)**  
 R implementations of network role similarity and centrality algorithms.
 :::
 
