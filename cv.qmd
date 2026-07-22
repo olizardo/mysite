@@ -100,14 +100,12 @@ Department of Sociology, University of California, Los Angeles
 ## Professional Memberships
 - *Academy of Management*
  - *American Sociological Association*
-
- - Economic Sociology 
- - History of Sociology and Social Thought  
- - Mathematical Sociology 
- - Sociology of Consumers and Consumption 
- - Sociology of Culture 
- - Theory
-
+   - Economic Sociology 
+   - History of Sociology and Social Thought  
+   - Mathematical Sociology 
+   - Sociology of Consumers and Consumption 
+   - Sociology of Culture 
+   - Theory
  - *Association for Computing Machinery*
  - *Cognitive Science Society*
  - *International Network for Social Network Analysis*

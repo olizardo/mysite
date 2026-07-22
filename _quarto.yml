@@ -40,7 +40,7 @@ website:
           - text: "Distinction Centrality"
             icon: code-slash
             href: "https://olizardo.github.io/Jilbert-Distinction-Centrality/"
-      - text: "Replication Repos"
+      - text: "Reproducible Research"
         icon: github
         menu:
           - text: "Combining Similarity and Eigenvector Centrality"
