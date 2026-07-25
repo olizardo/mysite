@@ -43,6 +43,9 @@ website:
       - text: "Reproducible Research"
         icon: github
         menu:
+          - text: "Why 'Cultural Matters' Matter"
+          - icon: github
+            href: "https://github.com/olizardo/lizardo-culture-talk-stratification"
           - text: "Combining Similarity and Eigenvector Centrality"
             icon: github
             href: "https://github.com/olizardo/combining-similarity-eigenvector"
