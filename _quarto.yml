@@ -44,7 +44,7 @@ website:
         icon: github
         menu:
           - text: "Why 'Cultural Matters' Matter"
-          - icon: github
+            icon: github
             href: "https://github.com/olizardo/lizardo-culture-talk-stratification"
           - text: "Combining Similarity and Eigenvector Centrality"
             icon: github
