@@ -155,7 +155,7 @@ Elliot Weininger, Annette Lareau and **Omar Lizardo** (Editors). *Ritual, Emotio
 ::: {.cventry}
 **Omar Lizardo**. "A Generalized approach to combining similarity and eigenvector analysis of networks." *Connections*.
 
-Clayton Childress and **Omar Lizardo**. "Diversity as a dominant social value." *Annual Review of Sociology* 52: In Press. [doi:10.1146/annurev-soc-031025-063531](https://doi.org/10.1146/annurev-soc-031025-063531).
+Clayton Childress and **Omar Lizardo**. "Diversity as a dominant social value." *Annual Review of Sociology* 52: 119-140. [doi:10.1146/annurev-soc-031025-063531](https://doi.org/10.1146/annurev-soc-031025-063531).
 
 **Omar Lizardo**. "Kinding culture." *Journal for the Theory of Social Behaviour*. 56:e70041. [doi:10.1111/jtsb.70041](https://doi.org/10.1111/jtsb.70041).
 
