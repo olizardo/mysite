@@ -1,7 +1,16 @@
 {
   "permission": {
     "edit": {
-      "*.md": "allow"
+      "*.md": "allow",
+      "*.qmd": "allow"
+    },
+    "bash": {
+      "quarto render *": "allow",
+      "grep *": "allow",
+      "sort *": "allow",
+      "uniq *": "allow",
+      "sed *": "allow",
+      "diff *": "allow"
     }
   },
   "sandbox": {

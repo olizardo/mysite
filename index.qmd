@@ -19,7 +19,7 @@ about:
       href: https://orcid.org/0000-0002-5405-3007
     - icon: file-pdf
       text: Download CV
-      href: cv.pdf
+      href: https://olizardo.github.io/mysite/cv.pdf
 ---
 
 ### {{< fa house >}} Welcome!
