@@ -11,7 +11,15 @@
       "uniq *": "allow",
       "sed *": "allow",
       "diff *": "allow",
-      "python3 *": "allow"
+      "python3 *": "allow",
+      "git status *": "allow",
+      "git remote *": "allow",
+      "git branch *": "allow",
+      "git fetch *": "allow",
+      "git push *": "allow",
+      "gh auth status *": "allow",
+      "ssh *": "allow",
+      "git config *": "allow"
     },
     "webfetch": {
       "https://api.crossref.org/*": "allow"
