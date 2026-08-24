@@ -19,7 +19,7 @@ format:
 
 | Name | SOCIOL 111 (Social Networks) |
 | --- | --- |
-| Lecture Time | Mondays and Wednesdays 2-3:15 a.m |
+| Lecture Time | Mondays and Wednesdays 2-3:15 p.m. |
 | Lecture Place | Haines 220 |
 | In-Person Office Hours | Wednesdays 1-2p |
 | Zoom Office Hours | Wednesdays Noon-1p |

@@ -8,20 +8,20 @@ format:
 # Instructor Information
 
 | Name | Omar Lizardo |
-| :---        |    :----   | 
-|Position  | Professor of Sociology |
-|Email | [olizardo@soc.ucla.edu](https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=olizardo@soc.ucla.edu) |
-|url | [https://olizardo.github.io/mysite/](https://olizardo.github.io/mysite/) |
+| :--- | :--- | 
+| Position | Professor of Sociology |
+| Email | [olizardo@soc.ucla.edu](https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=olizardo@soc.ucla.edu) |
+| url | [https://olizardo.github.io/mysite/](https://olizardo.github.io/mysite/) |
 
 
 # Course Information
 
 | Name | SOCIOL 245 (Cultural Sociology) |
-| :---        |    :----   |
+| :--- | :--- |
 | Time | Fridays 9-11:50a |
 | Place | Bunche 2121 |
-| Office Hours |  Wednesdays and Thursdays 1-2p |
-| Office | Haines 290 or by [Zoom](https://ucla.zoom.us/my/olizardo)  appointment |
+| Office Hours | Wednesdays and Thursdays 1-2p |
+| Office | Haines 290 or by [Zoom](https://ucla.zoom.us/my/olizardo) appointment |
 
 # Course Description
 This course is designed with two main goals in mind:
@@ -69,27 +69,27 @@ For our first week meeting, each of you should submit at least one comment or qu
 The week you are a discussion leader you will work with your co-discussion leaders to create an analytic memo covering the readings for that week. The memo should go beyond a summary of the readings. Instead you should aim to produce:
 - A synthetic document, bringing up points of commonality, tensions, contradictions, and prospects for future development. 
 - In addition, the memo will close with a series of discussion questions for us to consider in class. The questions can focus on any aspect of the readings, whether conceptual, substantive, empirical applications, implications, and the like.
-- The memo will be submitted by noon the day before class (that is Thursday by 5p) in the so that your classmates have a chance to read it, comment on it, and add their own perspective and questions. You will submit it via the *discussion leader tool on Bruinlearn*, so that we all have a chance to take a look at it before we meet for class discussion.
+- The memo will be submitted by noon the day before class (that is Thursday by 5p) so that your classmates have a chance to read it, comment on it, and add their own perspective and questions. You will submit it via the *discussion leader tool on Bruinlearn*, so that we all have a chance to take a look at it before we meet for class discussion.
 
 
 ## Final Written Assignment 
-The basic goal here is for you to end up with something that could be useful to you at the end of the day. As such, I'll give you a set of options here, but if you none of these work, we can talk about something that can be customized for your needs and goals. 
+The basic goal here is for you to end up with something that could be useful to you at the end of the day. As such, I'll give you a set of options here, but if none of these work, we can talk about something that can be customized for your needs and goals. 
 
 The final written assignment will be due on **Friday March 22nd at 11:59p**.
 
 By the end of the course you should be ready to submit one of the following:
 
 ### Draft Research Paper
-This will be a 15-20 page (double-spaced, Times New Roman Font, 12pt, 1in margins) draft of a research paper. This paper will *contain some kind of data analysis, involving data on culture broadly defined to include qualitative or quantitative data*. It will include an introduction reviewing literature and setting up a research problem or question. It will then move on to a methods section describing your data and analytic approach, and will close with a discussion section summarizing key findings, outlining implications for substantive research and theory, and describing potential future work and extensions. The goal here is to come up with a draft of a paper that could one day be submitted to the various social science and sociology-oriented journal focused on substantive research, whether "generalist" (e.g., *American Sociological Review*, *American Journal of Sociology*) or "specialist" (e.g., *Poetics*, *American Journal of Cultural Sociology*).
+This will be a 15-20 page (double-spaced, Times New Roman Font, 12pt, 1in margins) draft of a research paper. This paper will *contain some kind of data analysis, involving data on culture broadly defined to include qualitative or quantitative data*. It will include an introduction reviewing literature and setting up a research problem or question. It will then move on to a methods section describing your data and analytic approach, and will close with a discussion section summarizing key findings, outlining implications for substantive research and theory, and describing potential future work and extensions. The goal here is to come up with a draft of a paper that could one day be submitted to the various social science and sociology-oriented journals focused on substantive research, whether "generalist" (e.g., *American Sociological Review*, *American Journal of Sociology*) or "specialist" (e.g., *Poetics*, *American Journal of Cultural Sociology*).
 
 ### Draft Conceptual Paper
-This will be a 15-20 page (double-spaced, Times New Roman Font, 12pt, 1in margins) draft of a theory paper. The paper will focus on a set of concepts, theoretical ideas, or overall perspectives for approaching the study of social life that are *based, inspired, extend, or incorporate ideas, concepts, debates, or perspectives from cultural sociology* (broadly defined). The goal here is to come up with a draft of a paper that could one day be submitted to the various social science and sociology-oriented journal focused on "culture" or "theory." 
+This will be a 15-20 page (double-spaced, Times New Roman Font, 12pt, 1in margins) draft of a theory paper. The paper will focus on a set of concepts, theoretical ideas, or overall perspectives for approaching the study of social life that are *based, inspired, extend, or incorporate ideas, concepts, debates, or perspectives from cultural sociology* (broadly defined). The goal here is to come up with a draft of a paper that could one day be submitted to the various social science and sociology-oriented journals focused on "culture" or "theory." 
 
 ### Draft Literature Review
-This will be a 10 page (double-spaced, Times New Roman Font, 12pt, 1in margins) draft of a literature review of work *done from a cultural sociology perspective* on a topic of your interest. The paper will cover what has been done in the field so far, what the strengths and limitations of previous is, and will note gaps or opportunities for future work addressing those limitations or extending the literature to new substantive domains, perhaps linking previous work to the some of the stuff we will be reading in class. 
+This will be a 10 page (double-spaced, Times New Roman Font, 12pt, 1in margins) draft of a literature review of work *done from a cultural sociology perspective* on a topic of your interest. The paper will cover what has been done in the field so far, what the strengths and limitations of previous work are, and will note gaps or opportunities for future work addressing those limitations or extending the literature to new substantive domains, perhaps linking previous work to some of the stuff we will be reading in class. 
 
 ### Draft Research Proposal
-This will be a 10 page (single-spaced, Times New Roman Font, 12pt, 1in margins) draft of a research proposal for a *project incorporating core ideas and concepts from cultural sociology* that you plan to start in the near future. The proposal will include a background section reviewing previous work, noting their strengths and limitations, and pointing to gaps in the literature. It will also include an "approach" section describing your research project, your main research questions, the data gathering procedures you will use, and the data-analytic techniques you plan to implement once your data is collected. It will close with an implication sections describing what the contributions of your project will be and why it is relevant and important. 
+This will be a 10 page (single-spaced, Times New Roman Font, 12pt, 1in margins) draft of a research proposal for a *project incorporating core ideas and concepts from cultural sociology* that you plan to start in the near future. The proposal will include a background section reviewing previous work, noting their strengths and limitations, and pointing to gaps in the literature. It will also include an "approach" section describing your research project, your main research questions, the data gathering procedures you will use, and the data-analytic techniques you plan to implement once your data is collected. It will close with an implication section describing what the contributions of your project will be and why it is relevant and important. 
 
 Whatever you decide, you will submit *an extended abstract of your final project*, **due on week 5 (Sunday 11:59p)**. This will be a *one-page, single-spaced* document with 12pt Times New Roman Font and 1in margins. I will provide you with brief feedback and a "green light" on the abstract. 
 
@@ -100,13 +100,13 @@ Whatever you decide, you will submit *an extended abstract of your final project
 
 ## Week 1 (1/12): The Production of Culture 
 
-- Marx, Karl and F. Engels. 1970. Pp. 39-95 from *The German Ideology*, edited by C.J. Arthur. New York: International Publishers.
+- Marx, Karl and Friedrich Engels. 1970. Pp. 39-95 in *The German Ideology*, edited by C. J. Arthur. New York: International Publishers.
 
-- Adorno, T, and M. Horkheimer. 2002. "The Culture Industry: Enlightenment as Mass Deception." Pp. 94-136 in G. S. Noerr (Ed.) *Dialectic of Enlightenment: Philosophical Fragments* (trans. by E. Jephcott). Stanford: Stanford University Press. 
+- Adorno, Theodor W. and Max Horkheimer. 2002. "The Culture Industry: Enlightenment as Mass Deception." Pp. 94-136 in *Dialectic of Enlightenment: Philosophical Fragments*, edited by G. S. Noerr (trans. by E. Jephcott). Stanford: Stanford University Press. 
 
-- Benjamin, Walter. 2008. "The Work of Art in the Age of Its Technological Reproducibility" Pp. 19-55 in M. W. Jennings, B. Doherty and T. Y. Levin (Eds.) *The Work of Art in the Age of its Technological Reproducibility, and Other Writings on Media* (trans. by E. Jephcott and H. Zohn). Cambridge, MA: Harvard University Press.
+- Benjamin, Walter. 2008. "The Work of Art in the Age of Its Technological Reproducibility." Pp. 19-55 in *The Work of Art in the Age of its Technological Reproducibility, and Other Writings on Media*, edited by M. W. Jennings, B. Doherty, and T. Y. Levin (trans. by E. Jephcott and H. Zohn). Cambridge, MA: Harvard University Press.
 
-- Peterson, Richard A. and N. Anand. 2004. "The Production of Culture Perspective." *Annual Review of Sociology* 30:311–34. [link](https://doi.org/10.1146/annurev.soc.30.012703.110557)
+- Peterson, Richard A. and N. Anand. 2004. "The Production of Culture Perspective." *Annual Review of Sociology* 30: 311-334. [link](https://doi.org/10.1146/annurev.soc.30.012703.110557)
 
 - Bourdieu, Pierre. 1983. "The Field of Cultural Production, or: The Economic World Reversed." *Poetics* 12(4-5): 311-356. [link](https://doi.org/10.1016/0304-422X(83)90012-8)
 
@@ -118,7 +118,7 @@ Whatever you decide, you will submit *an extended abstract of your final project
 
 - Bourdieu, Pierre. 1980. "The Production of Belief: Contribution to an Economy of Symbolic Goods." *Media, Culture & Society* 2(3): 261-293. [link](https://doi.org/10.1177/016344378000200305)
 
-- Childress, Clayton. 2017. *Under the Cover: The Creation, Production, and Reception of a Novel*. Princeton University Press. (Introduction and Chap. 6)
+- Childress, Clayton. 2017. *Under the Cover: The Creation, Production, and Reception of a Novel*. Princeton: Princeton University Press. (Introduction and Chap. 6)
 
 - Lena, Jennifer C. and Mark C. Pachucki. 2013. "The sincerest form of flattery: Innovation, repetition, and status in an art movement." *Poetics* 41(3): 236-264. [link](https://doi.org/10.1016/j.poetic.2013.02.002)
 
@@ -126,53 +126,41 @@ Whatever you decide, you will submit *an extended abstract of your final project
 
 - Griswold, Wendy. 1987. "A Methodological Framework for the Sociology of Culture." *Sociological Methodology* 17: 1-36. [link](https://doi.org/10.2307/271027)
 
-- Schudson, Michael. 1989. "How Culture Works: Perspectives from Media Studies on the Efficacy of Symbols." *Theory & Society* 18:153-180. [link](https://www.jstor.org/stable/657530)
+- Schudson, Michael. 1989. "How Culture Works: Perspectives from Media Studies on the Efficacy of Symbols." *Theory and Society* 18(2): 153-180. [link](https://www.jstor.org/stable/657530)
 
-- McDonnell, Terence E., Christopher A. Bail and Iddo Tavory. 2017. "A Theory of Resonance." *Sociological Theory* 35(1): 1-14. [link](https://doi.org/10.1177/0735275117692837)
+- McDonnell, Terence E., Christopher A. Bail, and Iddo Tavory. 2017. "A Theory of Resonance." *Sociological Theory* 35(1): 1-14. [link](https://doi.org/10.1177/0735275117692837)
 
-- Santana-Acuña, Alvaro.2014. "How a Literary Work Becomes a Classic: The Case of One Hundred Years of Solitude." *American Journal of Cultural Sociology* 2: 97-149. [link](https://doi.org/10.1057/ajcs.2013.16)
-
+- Santana-Acuña, Álvaro. 2014. "How a Literary Work Becomes a Classic: The Case of One Hundred Years of Solitude." *American Journal of Cultural Sociology* 2(1): 97-149. [link](https://doi.org/10.1057/ajcs.2013.16)
 
 ## Week 4 (2/2): Culture, Classification, and Boundaries
 
-- Douglas, M. 1966. *Purity and Danger*. London: Routledge and Kegan, Paul. (Introduction, Chap. 1, and Chap. 6).
+- Douglas, Mary. 1966. *Purity and Danger: An Analysis of Concepts of Pollution and Taboo*. London: Routledge & Kegan Paul. (Introduction, Chap. 1, and Chap. 6)
 
-<!--
+- Anand, N. and B. C. Jones. 2008. "Tournament Rituals, Category Dynamics, and Field Configuration: The Case of the Booker Prize." *Journal of Management Studies* 45(6): 1036-1060. [link](https://doi.org/10.1111/j.1467-6486.2008.00782.x)
 
-- Monk Jr, Ellis P. 2022. "Inequality Without Groups: Contemporary Theories of Categories, Intersectional Typicality, and the Disaggregation of Difference." *Sociological Theory* 40(1): 3-27. [link](https://doi.org/10.1177/07352751221076863)
--->
+- Lamont, Michèle and Virág Molnár. 2002. "The Study of Boundaries in the Social Sciences." *Annual Review of Sociology* 28: 167-195. [link](https://doi.org/10.1146/annurev.soc.28.110601.141107)
 
-- Anand, N., & Jones, B. C. (2008). Tournament rituals, category dynamics, and field configuration: The case of the Booker Prize. *Journal of Management Studies*, 45(6), 1036-1060. [link](https://doi.org/10.1111/j.1467-6486.2008.00782.x)
+- DiMaggio, Paul J. 1987. "Classification in Art." *American Sociological Review* 52(4): 440-455. [link](https://www.jstor.org/stable/2095290)
 
-- Lamont, Michele, and Virag Molnár. 2002. "The Study of Boundaries in the Social Sciences."  *Annual Review of Sociology* 28:167–195. [link](https://doi.org/10.1146/annurev.soc.28.110601.141107)
-
-- DiMaggio, Paul J. 1987. "Classification in Art." *American Sociological Review* 52(4):440–455. [link](https://www.jstor.org/stable/2095290)
-
-- Lena, Jennifer C. and Richard A. Peterson. 2008. "Classification as Culture: Types and Trajectories of Music Genres." *American Sociological Review* 73:697–718. [link](https://doi.org/10.1177/000312240807300501)
+- Lena, Jennifer C. and Richard A. Peterson. 2008. "Classification as Culture: Types and Trajectories of Music Genres." *American Sociological Review* 73(5): 697-718. [link](https://doi.org/10.1177/000312240807300501)
 
 ## Week 5 (2/9): Culture and Inequality
 
 - Willis, Paul. 1977. *Learning to Labour: How Working Class Kids Get Working Class Jobs*. Farnborough, England: Saxon House. (Introduction and Chap. 2)
 
-- Lareau, Annette. 2011. *Unequal Childhoods: Class, Race, and Family Life*. University of California Press (Chap. 1).
+- Lareau, Annette. 2011. *Unequal Childhoods: Class, Race, and Family Life*. Berkeley: University of California Press. (Chap. 1)
 
-- Bourdieu, Pierre. 1984. *Distinction: A Social Critique of the Judgement of Taste*. Translated by Richard Nice. Cambridge, MA, Harvard University Press. (Chap. 3)
+- Bourdieu, Pierre. 1984. *Distinction: A Social Critique of the Judgement of Taste*. Translated by Richard Nice. Cambridge, MA: Harvard University Press. (Chap. 3)
 
-- Tran, M. T. (2022). The Racial Barriers in US Independent Filmmaking. *Sociological Inquiry*, 92(2), 490-513. [link](https://doi.org/10.1111/soin.12469)
+- Tran, M. T. 2022. "The Racial Barriers in US Independent Filmmaking." *Sociological Inquiry* 92(2): 490-513. [link](https://doi.org/10.1111/soin.12469)
 
-<!--
-- Bryson, Bethany. 1996. "Anything but Heavy Metal”: Symbolic Exclusion and Musical Dislikes." *American Sociological Review* 61:884-899. [link](https://www.jstor.org/stable/2096459)
+- Rivera, Lauren A. 2012. "Hiring as Cultural Matching: The Case of Elite Professional Service Firms." *American Sociological Review* 77(6): 999-1022. [link](https://doi.org/10.1177/0003122412463213)
 
-- Lizardo, Omar, and Sara Skiles. 2016. "Cultural Objects as Prisms: Perceived Audience Composition of Musical Genres as a Resource for Symbolic Exclusion." *Socius* 2. [link](https://doi.org/10.1177/2378023116641695)
--->
+## Week 6 (2/16): Culture, Institutions, and Historical Change
 
-- Rivera, Lauren. 2012. "Hiring as Cultural Matching: The Case of Elite Professional Service Firms." *American Sociological Review* 77 (6): 999–1022. [link](https://doi.org/10.1177/0003122412463213)
+- Berger, Peter L. and Thomas Luckmann. 1966. *The Social Construction of Reality: A Treatise on the Sociology of Knowledge*. New York: Anchor Books. (Introduction, Part I, Part II, Pp. 129-163)
 
-## Week 6  (2/16): Culture, Institutions, and Historical Change
-
-- Berger, Peter L. and Thomas Luckmann. 1966. *The Social Construction of Reality: A Treatise on the Sociology of Knowledge*.  New York: Anchor Books. (Introduction, Part I, Part II, Pp. 129-163)
-
-- Sewell, William H. Jr. 1992. "A Theory of Structure: Duality, Agency, and Transformation." *American Journal of Sociology* 98: 1-29.
+- Sewell, William H. Jr. 1992. "A Theory of Structure: Duality, Agency, and Transformation." *American Journal of Sociology* 98(1): 1-29. [link](https://www.jstor.org/stable/2781860)
 
 - Elias, Norbert. 1978. *The Civilizing Process, Vol. 1: The History of Manners*. New York: Urizen Press. (Preface, Pp. 53-85)
 
@@ -180,19 +168,19 @@ Whatever you decide, you will submit *an extended abstract of your final project
 
 ## Week 7 (2/23): Interpretation and Cultural Autonomy
 
-- Alexander, Jeffrey, and Philip Smith. 2001. “The Strong Program in Cultural Theory: Elements of a Structural Hermeneutics.” in *Handbook of Sociological Theory*, Pp. 135-150. Boston, MA: Springer.
+- Alexander, Jeffrey C. and Philip Smith. 2001. "The Strong Program in Cultural Theory: Elements of a Structural Hermeneutics." Pp. 135-150 in *Handbook of Sociological Theory*, edited by J. H. Turner. Boston, MA: Springer.
 
-- Geertz, Clifford. 1973. *The Interpretation of Culture*. New York: Basic Books. (Chap. 1, Chap. 8 and Chap. 15).
+- Geertz, Clifford. 1973. *The Interpretation of Cultures*. New York: Basic Books. (Chap. 1, Chap. 8, and Chap. 15)
 
-- Eliasoph, Nina, and Paul Lichterman. 2003. "Culture in Interaction." *American Journal of Sociology* 108(4): 735-794. [link](https://doi.org/10.1086/367920)
+- Eliasoph, Nina and Paul Lichterman. 2003. "Culture in Interaction." *American Journal of Sociology* 108(4): 735-794. [link](https://doi.org/10.1086/367920)
 
-- Wagner-Pacifici, Robin, and Barry Schwartz. 1991. "The Vietnam Veterans Memorial: Commemorating a Difficult Past." *American journal of Sociology* 97(2): 376-420. [link](https://doi.org/10.1086/229783)
+- Wagner-Pacifici, Robin and Barry Schwartz. 1991. "The Vietnam Veterans Memorial: Commemorating a Difficult Past." *American Journal of Sociology* 97(2): 376-420. [link](https://doi.org/10.1086/229783)
 
 ## Week 8 (3/1): Culture, Politics, and Morality
 
 - Luker, Kristin. 1984. *Abortion and the Politics of Motherhood*. Berkeley, CA: University of California Press. (Introduction, Chap. 8)
 
-- Binder, Amy J. 2009. *Contentious Curricula: Afrocentrism and Creationism in American Public Schools*. Princeton: Princeton University Press. (Chap. 6)
+- Binder, Amy J. 2002. *Contentious Curricula: Afrocentrism and Creationism in American Public Schools*. Princeton: Princeton University Press. (Chap. 6)
 
 - Alexander, Jeffrey C. 2018. "The Societalization of Social Problems: Church Pedophilia, Phone Hacking, and the Financial Crisis." *American Sociological Review* 83(6): 1049-1078. [link](https://doi.org/10.1177/0003122418803376)
 
@@ -202,29 +190,22 @@ Whatever you decide, you will submit *an extended abstract of your final project
 
 - Marx, Karl. 1977. "The Commodity." Pp. 125-177 in *Capital, Volume 1*. New York: Vintage Books.
 
-- Zelizer, Viviana. 2000. "The Purchase of Intimacy." *Law and Social Inquiry* 25(3): 817-848. [link](https://doi.org/10.1111/j.1747-4469.2000.tb00162.x)
+- Zelizer, Viviana. 2000. "The Purchase of Intimacy." *Law & Social Inquiry* 25(3): 817-848. [link](https://doi.org/10.1111/j.1747-4469.2000.tb00162.x)
 
-- Fourcade, Marion. 2011. "Cents and Sensibility: Economic Valuation and the Nature of 'Nature.'" *American Journal of Sociology* 116 (6): 1721-77. [pdf](https://doi.org/10.1086/659640)
+- Fourcade, Marion. 2011. "Cents and Sensibility: Economic Valuation and the Nature of 'Nature.'" *American Journal of Sociology* 116(6): 1721-1777. [link](https://doi.org/10.1086/659640)
 
-- Fourcade, Marion and Kieran Healy. 2017. "Seeing Like a Market." *Socio-Economic Review* 15.1: 9-29. [link](https://doi.org/10.1093/ser/mww033)
+- Fourcade, Marion and Kieran Healy. 2017. "Seeing Like a Market." *Socio-Economic Review* 15(1): 9-29. [link](https://doi.org/10.1093/ser/mww033)
 
-- Krippner, Greta R. and Daniel Hirschman. 2022. "The Person of the Category: The Pricing of Risk and the Politics of Classification in Insurance and Credit." *Theory & Society* 51(5): 685-727. [link](https://doi.org/10.1007/s11186-022-09500-5)
+- Krippner, Greta R. and Daniel Hirschman. 2022. "The Person of the Category: The Pricing of Risk and the Politics of Classification in Insurance and Credit." *Theory and Society* 51(5): 685-727. [link](https://doi.org/10.1007/s11186-022-09500-5)
 
 ## Week 10 (3/15): Culture and Cognition
 
-- Swidler, Ann. 1986. "Culture in Action: Symbols and Strategies." *American Sociological Review* 51: 273-286. [link](https://www.jstor.org/stable/2095521)
+- Swidler, Ann. 1986. "Culture in Action: Symbols and Strategies." *American Sociological Review* 51(2): 273-286. [link](https://www.jstor.org/stable/2095521)
 
-- Vaisey, Stephen. 2009 "Motivation and justification: A Dual-Process Model of Culture in Action." *American Journal of Sociology* 114(6): 1675-1715. [link](https://doi.org/10.1086/597179)
+- Vaisey, Stephen. 2009. "Motivation and Justification: Toward a Dual-Process Theory of Culture in Action." *American Journal of Sociology* 114(6): 1675-1715. [link](https://doi.org/10.1086/597179)
 
 - Lizardo, Omar. 2017. "Improving Cultural Analysis: Considering Personal Culture in its Declarative and Nondeclarative Modes." *American Sociological Review* 82(1): 88-115. [link](https://doi.org/10.1177/0003122416675175)
 
-- Brubaker, Rogers, Mara Loveman and Peter Stamatov. 2004. "Ethnicity as Cognition." *Theory & Society* 33: 31-64. [link](https://doi.org/10.1023/B:RYSO.0000021405.18890.63)
+- Brubaker, Rogers, Mara Loveman, and Peter Stamatov. 2004. "Ethnicity as Cognition." *Theory and Society* 33(1): 31-64. [link](https://doi.org/10.1023/B:RYSO.0000021405.18890.63)
 
-- Cerulo, Karen A., Vanina Leschziner and Hana Shepherd. 2021. "Rethinking Culture and Cognition." *Annual Review of Sociology* 47: 63-85. [link](https://doi.org/10.1146/annurev-soc-072320-095202)
-
-
-
-
-
-
-
+- Cerulo, Karen A., Vanina Leschziner, and Hana Shepherd. 2021. "Rethinking Culture and Cognition." *Annual Review of Sociology* 47: 63-85. [link](https://doi.org/10.1146/annurev-soc-072320-095202)

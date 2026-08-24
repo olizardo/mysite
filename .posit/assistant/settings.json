@@ -10,7 +10,14 @@
       "sort *": "allow",
       "uniq *": "allow",
       "sed *": "allow",
-      "diff *": "allow"
+      "diff *": "allow",
+      "python3 *": "allow"
+    },
+    "webfetch": {
+      "https://api.crossref.org/*": "allow"
+    },
+    "executeCode": {
+      "*": "allow"
     }
   },
   "sandbox": {
