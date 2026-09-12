@@ -155,6 +155,8 @@ Elliot Weininger, Annette Lareau and **Omar Lizardo** (Editors). *Ritual, Emotio
 ::: {.cventry}
 **Omar Lizardo**. "A Generalized approach to combining similarity and eigenvector analysis of networks." *Connections*.
 
+Mateusz Nurek, Joanna Kołaczek, Radosław Michalski, Bolesław K. Szymański and **Omar Lizardo**. "CoDiNG – Naming game with continuous latent state of individual agents." *IEEE Transactions on Computational Social Systems*.
+
 Clayton Childress and **Omar Lizardo**. "Diversity as a dominant social value." *Annual Review of Sociology* 52: 119-140. [doi:10.1146/annurev-soc-031025-063531](https://doi.org/10.1146/annurev-soc-031025-063531).
 
 **Omar Lizardo**. "Kinding culture." *Journal for the Theory of Social Behaviour*. 56:e70041. [doi:10.1111/jtsb.70041](https://doi.org/10.1111/jtsb.70041).
@@ -570,6 +572,8 @@ Jessica Collett and **Omar Lizardo**. "Localizing cultural phenomena by specifyi
 ## Book Reviews
 ### 2020–Present
 ::: {.cventry}
+"Mapping the architectonic: On John Levi Martin’s The True, The Good, and The Beautiful." *Contemporary Sociology*.
+
 "Review of: Pierre Bourdieu’s Political Economy of Being by Ghassan Hage." *Journal of Anthropological Research*.
 
 "Solving the problem of the permanent social: On Isaac Ariail Reed's Power in Modernity." (Review of: Power in Modernity Agency Relations and the Creative Destruction of the King’s Two Bodies by Isaac Ariail Reed.) *American Journal of Cultural Sociology*  11: 480–485 [doi:10.1057/s41290-022-00156-3](https://doi.org/10.1057/s41290-022-00156-3).
