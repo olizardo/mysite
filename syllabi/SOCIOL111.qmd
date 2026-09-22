@@ -9,172 +9,182 @@ format:
 
 # Instructor Information
 
-| Name | Omar Lizardo |
+| Field | Details |
 | --- | --- |
+| Name | Omar Lizardo |
 | Position | Professor of Sociology |
-| Email | [olizardo@soc.ucla.edu](https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=olizardo@soc.ucla.edu) |
-| url | [https://olizardo.github.io/mysite/](https://olizardo.github.io/mysite/) |
+| Email | [olizardo@soc.ucla.edu](mailto:olizardo@soc.ucla.edu) |
+| Website | [https://olizardo.github.io/mysite/](https://olizardo.github.io/mysite/) |
+| Office | Haines Hall 290 |
+| In-Person Office Hours | Tuesdays 2:00 -- 3:00 pm (Haines 290) |
+| Zoom Office Hours | Tuesdays 1:00 -- 2:00 pm |
+| Virtual Office | [https://ucla.zoom.us/my/olizardo](https://ucla.zoom.us/my/olizardo) |
 
 # Course Information
 
-| Name | SOCIOL 111 (Social Networks) |
+| Field | Details |
 | --- | --- |
-| Lecture Time | Mondays and Wednesdays 2-3:15 p.m. |
-| Lecture Place | Haines 220 |
-| In-Person Office Hours | Wednesdays 1-2p |
-| Zoom Office Hours | Wednesdays Noon-1p |
-| Office | Haines 290 |
-| Zoom Office | [https://ucla.zoom.us/my/olizardo](https://ucla.zoom.us/my/olizardo) |
+| Department | Sociology (SOCIOL) |
+| Course | SOCIOL 111 -- Social Networks |
+| Class ID | 347337200 |
+| Class Website | [Bruin Learn (Canvas)](https://bruinlearn.ucla.edu/courses/238980) |
+| Lecture Days & Time | Tuesdays & Thursdays (TR), 11:00 am -- 12:15 pm (Pacific Time) |
+| Lecture Location | Royce Hall Room 362 |
+| Enrollment Status | Closed: Class Full (120) \| Waitlist Full (30) |
+| Office | Haines Hall 290 |
+| In-Person Office Hours | Tuesdays 2:00 -- 3:00 pm |
+| Zoom Office Hours | Tuesdays 1:00 -- 2:00 pm |
 
 # Course Description
 
-These days, “social networks” are everywhere. Yet, before networking and social media became buzzwords (e.g., before you were born), they were (and continue to be) a field of rigorous study in the social sciences known as **social network analysis** (SNA). In fact, networks became central in sociology during the 1960s and 1970s because they were used to take such fuzzy concepts as “social relationships,” “social ties,” “groups, “roles,” and “social structures” from being evocative abstractions that explained everything (and therefore nothing) to concrete topics of empirical research and social-scientific measurement.
+These days, "social networks" are everywhere. Yet, before networking and social media became buzzwords (e.g., before you were born), they were (and continue to be) a field of rigorous study in the social sciences known as **social network analysis** (SNA). In fact, networks became central in sociology during the 1960s and 1970s because they were used to take such fuzzy concepts as "social relationships," "social ties," "groups," "roles," and "social structures" from being evocative abstractions that explained everything (and therefore nothing) to concrete topics of empirical research and social-scientific measurement.
 
-In this course, we will explore this more concrete and “scientific” part of social networks. We will see that the field of study of social networks is distinctive for not only having its own set of theories and concepts (and associated “lingo”) but also for the way in which these concepts are immediately made tangible in mathematical (usually quantitative form) using the tools of graph theory and matrix algebra. In Social Network Analysis (SNA), there is thus no clear separation between the theory and the analysis. Another distinctive feature of SNA compared to other areas of sociology is that it is not thematically restricted. Instead, SNA comprises a general set of analytic tools for studying social processes in _any_ field of sociology. This course will thus reflect that thematic diversity.
+In this course, we will explore this more concrete and "scientific" part of social networks. We will see that the field of study of social networks is distinctive for not only having its own set of theories and concepts (and associated "lingo") but also for the way in which these concepts are immediately made tangible in mathematical (usually quantitative) form using the tools of graph theory and matrix algebra. In Social Network Analysis (SNA), there is thus no clear separation between the theory and the analysis. Another distinctive feature of SNA compared to other areas of sociology is that it is not thematically restricted. Instead, SNA comprises a general set of analytic tools for studying social processes in _any_ field of sociology. This course will thus reflect that thematic diversity.
 
 # Thematic Sequence
 
-The course is designed to introduce you to the entire panoply of concepts and theories that form the core of the field of SNA, as well as the relevant measurement and mathematical representation tools. This field has a long history, but today it is a massive project that recruits people from across the social sciences. Since the primary tools of SNA are [Graph Theory](https://en.wikipedia.org/wiki/Graph_theory) and [Matrix Algebra](https://en.wikipedia.org/wiki/Matrix_(mathematics)), throughout the quarter we will jump back and forth between conceptual discussion and mathematical representation, so we will intersperse the more “math-heavy” parts of the class—concentrating on **social network analysis**—with the more “concept heavy” parts, focusing on **social network theory**. These parts of the class will broaden the scope of the discussion, exploring how various social phenomena, from affective “balance” in social relations, to status attainment, hierarchy, negative interactions, the diffusion of innovations (and disease), and “the small world” can be understood from a social network perspective.
+The course is designed to introduce you to the entire panoply of concepts and theories that form the core of the field of SNA, as well as the relevant measurement and mathematical representation tools. This field has a long history, but today it is a massive project that recruits people from across the social sciences. Because the primary tools of SNA are graph theory and matrix algebra, throughout the quarter we will jump back and forth between conceptual discussion and mathematical representation, interspersing the more "math-heavy" parts of the class with the more "concept-heavy" parts focusing on social network theory.
+
+Beginning in week 4, we will switch over to substantive theories about how social networks work, focusing on the case of status attainment. The second half of the class will broaden the scope as we explore how various social phenomena—from collaboration and creativity, to status, hierarchy, negative interactions, the diffusion of innovations (and disease), and "the small world"—can be understood from a social network perspective.
 
 # Learning Goals and Objectives
 
 By the end of the course, you should be able to:
 
 *   Understand basic network concepts and theories.
-*   Use basic social-scientific terminology to describe patterns of structure and change observed in networks.
-*   Master and be capable of using measures based on graph theory and matrix algebra to analyze and describe social networks.
-*   Comprehend the way that social network concepts, theory, and measures can be applied to shed light on a wide variety of phenomena across different fields of study in the social sciences and beyond.
-*   Have a good sense of what the main theories in the field of social networks are and the phenomena they attempt to explain.
+*   Use social-scientific terminology to describe patterns of structure and change observed in networks.
+*   Understand and be capable of using measures based on graph theory and matrix algebra to analyze and describe social networks.
+*   Understand how social network concepts, theory, and measures can be applied to shed light on a wide variety of phenomena across different fields of study in the social sciences and beyond.
 
 # Organization of the Class
 
-_This is how each week of the class is organized._
+_This is how each week of the class is organized:_
 
-*   The official meeting times for this class are _Monday_ and _Wednesday;_ these are also the days when your TA-led section meetings and lectures will happen. Note that you are _required_ to attend TA-led section meetings, as this is where your participation grades will be coming from.
-    
-*   The lecture component for the class is scheduled for **Mondays and Wednesdays starting at 2 p.m. Pacific Standard Time**. The current (rolling) schedule of topics is available on the Bruinlearn website under each class module (one per week). **Attendance at the lecture is not required**, but it is **strongly** encouraged. In fact, _the best predictor of doing well in the class is regular attendance at the lecture_, so if one of your questions is “how can I get a good grade in this class?” my answer is “by attending the lecture and taking good notes”, since **asking questions and taking notes during live delivery of the material aids learning and retention**.
-    
-*   All the slides on which the lectures will be based can be found on the associated lesson page on Bruinlearn. **Note that these are live slides** (their contents are bound to change). However, you will be able to see those changes when they happen.
-    
-*   To prepare for each class, you should read all the material in advance, including slides and textbook readings, take notes, and prepare questions about anything that remains unclear.
-    
-*   There are no textbooks required for this course. All required readings will come from an online textbook (that is a work in progress). Links to each reading can be found on the Bruinlearn site.
-    
+*   **Meeting Times:** The official lecture meeting times for this class are **Tuesdays and Thursdays (TR), 11:00 am -- 12:15 pm** in **Royce Hall Room 362**. In addition, you will attend your assigned TA-led discussion section. Attendance and active engagement at TA-led section meetings are required, as this is where your participation grades will be coming from.
+
+*   **Lectures:** Attendance at the lecture is not required, but it is **strongly** encouraged. In fact, _the best predictor of doing well in the class is regular attendance at the lecture_. Asking questions and taking notes during live delivery of the material aids learning and retention.
+
+*   **Lecture Slides:** All slides on which lectures are based can be found on the associated lesson page on Bruin Learn. Note that these are live slides (their contents are bound to change).
+
+*   **Course Textbook & Readings:** There are no physical textbooks required for purchase. All required readings come from the free online textbook and lesson materials on Bruin Learn:
+    *   [SOC 111 Online Textbook: Social Networks](https://olizardo.github.io/networks-textbook/)
+
+*   **Preparation:** To prepare for each class, read the assigned material in advance, including slides and textbook readings, take notes, and prepare questions about concepts that remain unclear.
 
 # Course Requirements
 
-*   **Homework Exercises (60% of the final grade)**: Starting in week 2, there will be **weekly homework assignments** designed to help you understand and apply the theories, concepts, and techniques that we will be learning in class. Instructions for each homework will be available on Bruinlearn.
-    
-*   **Biweekly Quizzes (30% of the final grade)**: This class has no final or midterm exams. Instead, you will take five (5) quizzes **every two weeks** covering the lecture material from the previous two weeks. These are **timed quizzes** (20 minutes) consisting of 18 multiple-choice questions designed to evaluate your understanding and capacity to apply the theories, concepts, and definitions that we will be learning throughout the quarter. **If you have extra time allotments from CAE, I will apply those automatically, so you don’t have to email or ask me about them**.
-    
-*   **Section engagement (10% of the final grade)**: Because this is a large lecture class, attendance and participation at TA-led virtual discussion sections will be your primary form of graded participation. In discussion sections, you will: Do activities and some writing (both in and out of class), discuss readings and homework, delve deeper, and work together to understand the material. This requires attendance, participation, and preparation. Your section TAs will assess your performance to generate this score. You get one discussion section absence as a freebie. After that, each will result in a decrease in your grade for section engagement at the end of the semester (e.g., on your second absence, an A- becomes a B+, on the third, it becomes a B). **The section meetings are planned to be in person only.**
-    
+*   **Homework Exercises (60% of the final grade / 135 points)**: Starting in Week 2, there will be **9 weekly homework assignments** (15 points each) designed to help you understand and apply the theories, concepts, and techniques that we will be learning in class. Homework assignments are **due on Mondays by 11:59 pm PT** via Bruin Learn. Instructions and submission links for each homework are available on Bruin Learn.
+
+*   **Biweekly Quizzes (30% of the final grade / 90 points)**: This class has **no final or midterm exams**. Instead, you will take five (5) quizzes **every two weeks** covering the lecture material from the previous two weeks. These are **timed quizzes** (20 minutes) consisting of 18 multiple-choice questions designed to evaluate your understanding and capacity to apply theories, concepts, and definitions. Quizzes open on Friday mornings at 8:00 am and are **due on Sunday nights by 11:59 pm PT** via Bruin Learn. If you have CAE accommodations, they will be applied automatically.
+
+*   **Section Engagement (10% of the final grade / 30 points)**: Because this is a large lecture class, attendance and participation at TA-led discussion sections will be your primary form of graded participation. Section meetings are planned to be in-person only. You get one discussion section absence as a freebie. After that, each unexcused absence results in a penalty on your section engagement grade.
 
 # Expectations and Policies
 
 ## Participation
 
-_You are expected to participate in section meetings. This will be part of your grade in the course_. If you are unsure of how best to participate, talk to me or your TA, and we will share ideas.
+You are expected to participate in section meetings. If you are unsure of how best to participate, talk to the instructor or your TA.
 
 ## Homework Assignments
 
-**The homework is very important. Please do it**. You will have 9 assignments over the 10-week period, with one due each week. These homework assignments will give you an opportunity to use the concepts and techniques from the course to analyze various social systems, as well as evaluate your understanding of basic definitions and procedures. Think of them like exercises; they are there to build your network muscles!
-
-**Please make sure you truly understand a solution, and please: DO NOT COPY SOLUTIONS.** We will figure it out. If we discover that some members of a working group have copied solutions, the entire group will be reported to the Dean of Students for Academic Misconduct. Even if we don’t catch you, you won’t really understand what you’ve done, and things will not go well when the biweekly quizzes begin to roll around. You’ll only be hurting yourself in the long run.
-
-**If you turn in homework late, without permission or an extraordinarily good excuse (e.g., accompanied by a doctor’s note or irrefutable evidence of a zombie apocalypse), you will lose marks**: 2 points out of 10 for each day late. We will not accept homework more than 5 days after the due date, and may impose tighter deadlines for late homework as the need arises. When submitting an assignment, please ensure you have the final version you intend to upload for grading.
+*   **Do the homework:** Homework builds your network muscles! Work in groups (up to 5 people) if you wish, but each student must submit their own solution in their own words.
+*   **Due Days & Times:** All homework assignments are **due on Mondays by 11:59 pm PT**.
+*   **Do Not Copy Solutions:** Copied solutions will be reported to the Dean of Students for Academic Misconduct.
+*   **Late Policy:** Late homework loses 3 points out of 15 (20%) for each day late. In accordance with the 5-day late policy, homework will not be accepted more than 5 days after the due date (locking on Saturdays at 11:59 pm PT).
 
 ## Quizzes
 
-**Quizzes will usually consist of eighteen (18) multiple-choice questions. Quizzes will be open-book, timed tests administered via Bruinlearn (not in person) and lasting 20 minutes. **Quizzes will only be administered on the scheduled dates** (typically Thursday), which you can find on the Bruinlearn website. An exception will only be made in the case of a **documented** illness or family emergency.
+Quizzes consist of 18 multiple-choice questions. They are open-book, timed tests administered via Bruin Learn (not in person) lasting 20 minutes. Quizzes are administered on scheduled biweekly dates, **opening on Friday at 8:00 am PT and due on Sunday nights by 11:59 pm PT**. Make-ups are granted only for documented medical or family emergencies.
 
-## Final Grading Scheme
+## Master Assignment & Quiz Deadlines Schedule
 
-### Assignment Point distribution
+| Assessment | Material Covered | Opens / Available | Due Date (11:59 pm PT) | Late Window Closes |
+| --- | --- | --- | --- | --- |
+| **Homework 1** | Lessons 1--3 | Mon., Sep. 28 (8:00 am) | **Monday, Oct. 5** | Sat., Oct. 10 |
+| **Quiz 1** | Weeks 0 & 1 (Lessons 1--3) | Fri., Oct. 9 (8:00 am) | **Sunday, Oct. 11** | Sun., Oct. 11 |
+| **Homework 2** | Lessons 4--5 | Mon., Oct. 5 (8:00 am) | **Monday, Oct. 12** | Sat., Oct. 17 |
+| **Homework 3** | Lessons 6--7 | Mon., Oct. 12 (8:00 am) | **Monday, Oct. 19** | Sat., Oct. 24 |
+| **Quiz 2** | Weeks 2 & 3 (Lessons 4--7) | Fri., Oct. 23 (8:00 am) | **Sunday, Oct. 25** | Sun., Oct. 25 |
+| **Homework 4** | Lessons 8--9 | Mon., Oct. 19 (8:00 am) | **Monday, Oct. 26** | Sat., Oct. 31 |
+| **Homework 5** | Lessons 10--11 | Mon., Oct. 26 (8:00 am) | **Monday, Nov. 2** | Sat., Nov. 7 |
+| **Quiz 3** | Weeks 4 & 5 (Lessons 8--11) | Fri., Nov. 6 (8:00 am) | **Sunday, Nov. 8** | Sun., Nov. 8 |
+| **Homework 6** | Lessons 12--14 | Mon., Nov. 2 (8:00 am) | **Monday, Nov. 9** | Sat., Nov. 14 |
+| **Quiz 4** | Weeks 6 & 7 (Lessons 12--16) | Fri., Nov. 13 (8:00 am) | **Sunday, Nov. 15** | Sun., Nov. 15 |
+| **Homework 7** | Lessons 15--16 | Mon., Nov. 9 (8:00 am) | **Monday, Nov. 16** | Sat., Nov. 21 |
+| **Homework 8** | Lessons 16--17 | Thu., Nov. 19 (8:00 am) | **Monday, Nov. 30** | Sat., Dec. 5 |
+| **Quiz 5** | Weeks 8 & 10 (Lessons 17--18) | Fri., Dec. 4 (8:00 am) | **Sunday, Dec. 6** | Sun., Dec. 6 |
+| **Homework 9** | Lesson 18 | Tue., Dec. 1 (8:00 am) | **Monday, Dec. 7** (Finals Week) | Sat., Dec. 12 |
 
-| Assignment | Points |
-| --- | --- |
-| Homework (9, worth 20 pts each) | 180 pts total |
-| Quizzes (5, worth 18 pts each) | 90 pts total |
-| Section Engagement | 30 pts total |
-| **Total** | **300** |
+# Final Grading Scheme
 
-### Letter Grade Determination
+## Assignment Point Distribution
+
+| Assignment | Points | % of Grade |
+| --- | --- | --- |
+| Homework (9 @ 15 pts each) | 135 pts total | 60% |
+| Quizzes (5 @ 18 pts each) | 90 pts total | 30% |
+| Section Engagement | 30 pts total | 10% |
+| **Total** | **255 pts** | **100%** |
+
+## Letter Grade Determination
 
 | Letter Grade | Point % | Point Total |
 | --- | --- | --- |
-| **A+** | \>= 97% | 291+ |
-| **A** | 93-96% | 279-290 |
-| **A-** | 90-92% | 270-278 |
-| **B+** | 87-89% | 261-269 |
-| **B** | 83-86% | 249-260 |
-| **B-** | 80-82% | 240-248 |
-| **C+** | 77-79% | 231-239 |
-| **C** | 73-76% | 219-230 |
-| **C-** | 70-72% | 210-218 |
-| **D** | 60-69% | 180-209 |
-| **F** | < 60% | <= 179 |
+| **A+** | \>= 97% | 247+ |
+| **A** | 93 -- 96% | 237 -- 246 |
+| **A-** | 90 -- 92% | 230 -- 236 |
+| **B+** | 87 -- 89% | 222 -- 229 |
+| **B** | 83 -- 86% | 212 -- 221 |
+| **B-** | 80 -- 82% | 204 -- 211 |
+| **C+** | 77 -- 79% | 197 -- 203 |
+| **C** | 73 -- 76% | 186 -- 196 |
+| **C-** | 70 -- 72% | 179 -- 185 |
+| **D** | 60 -- 69% | 154 -- 178 |
+| **F** | < 60% | <= 153 |
 
 # Communicating with Us
 
-## Rules of engagement
+## Rules of Engagement
 
-1.  I try to be very available to my students. However, like you, I have a life beyond this class. I have a family and friends, other students, and other obligations. The TAs do too!
-2.  **Before emailing us with a question, please check the syllabus and/or the course website to see if it has already been answered elsewhere.** Check the emails I send periodically.
-3.  When you do email, please be patient. We might respond immediately, we might not. Give us a day (or a weekend) to get back to you.
-4.  You don’t need to schedule an appointment for my student hours. My doors are wide open during that time (check with your TA about their particular scheduling policy).
-5.  However, if you want to meet outside student hours, please contact me to set up an appointment for a time I am available.
-6.  Feel free to meet with any of us, regardless of the section you are in. However, if you want to discuss a grade, you must talk with the person who graded your assignment (your TA, unless otherwise noted).
-
-*   _This Syllabus has answers to the most common questions about the course_. Please check the syllabus first, before asking us about due dates, assignment requirements, etc.
-    
-*   _Bruinlearn will be used for most communication in this course_. You can find a link to the syllabus, the reading schedule, and all assignments there. I will also post lecture slides before each class. We strongly encourage you to visit the Bruinlearn site regularly as part of your preparation for this course.
-    
-*   _E-mail should be used for quick communications_ (things that can be responded to in no more than a few sentences); use office hours for anything requiring more in-depth discussion. Please consider email as subject to the same standards of communication as you would all other forms of written material in this course (i.e., you should use complete sentences, proper punctuation, etc.). We will typically respond to email within two work days.
-    
-*   _If you have a small question or a clarification, please email your TA first._ If the TA does not have the answer, then email me.
-    
-*   _We will not, under any circumstances, discuss grades over email_. Use an office hour appointment to discuss grade issues with me.
-    
-*   _Office Hours are available to add to your experience in this course_. Please make use of them. Each of us has specific office hours each week. If you cannot make it during the times noted earlier, please email with at least two dates and times to arrange a meeting, either in person or over Zoom.
-    
+1.  Before emailing with a question, please check the syllabus and course website to see if it has been answered.
+2.  Allow up to 1 business day (or over the weekend) for an email response.
+3.  Office hours are open; you do not need an appointment during regular office hours.
+4.  If you want to discuss a grade, you must talk directly with the person who graded your assignment (typically your TA).
 
 ## Academic Code of Conduct
 
-Any suspected instance of cheating or plagiarism will be addressed in accordance with UCLA’s Honor Code policies. As an undergraduate at UCLA, you are bound by the University’s academic code of conduct found [here](https://www.deanofstudents.ucla.edu/Individual-Student-Code).
-
-We expect that everyone is familiar with it by now, because not knowing the rules is not an excuse; you can violate the conduct without realizing it. So (re) familiarize yourself with it. Most relevant to the class is the part of the code of conduct that addresses “Academic Dishonesty.” This term covers a wide range of behaviors and practices, some of which you may think are not such a big deal at all. Note, however, that academic dishonesty covers much more than that and includes but is not limited to: “cheating, fabrication or falsification, plagiarism, multiple submissions or facilitating academic misconduct which occurs in academic exercises or submissions.”
+Students are bound by the UCLA Student Conduct Code ([deanofstudents.ucla.edu](https://www.deanofstudents.ucla.edu/Individual-Student-Code)). Suspected academic dishonesty will be referred directly to the Dean of Students.
 
 # Frequently Asked Questions
 
-*   _I don’t like the time my discussion section meets. Can I join another one?_
+*   _I don't like the time my discussion section meets. Can I join another one?_
 
-> **No**. You are assigned to the discussion section that you are assigned by the registrar, and each section must remain the size that it is. However, if you do the legwork of finding another student to switch with you and notify both TAs, you may do so.
+> **No.** You are assigned to the discussion section by the registrar and section sizes must remain balanced. You may only switch if you arrange a direct swap with another student and notify both TAs.
 
 *   _Is there a discussion in the first week?_
 
-> **No**. There are no discussion section meetings in the first week.
+> **No.** There are no discussion section meetings during Week 0. Discussions begin in Week 1.
 
 *   _Do we need to do the readings before or after the lecture?_
 
-> **Yes**. The lectures will make more sense, and you will get more out of them, if you do the readings before the lecture and then review them again after the lecture.
+> **Yes.** Lectures make far more sense if you read before lecture and review afterward.
 
-*   _There are a bunch of formulas! Do I have to memorize each and every one of them to pass the class?_
+*   _There are a bunch of formulas! Do I have to memorize each and every one?_
 
-> **No**. The beauty of network analysis is that we can clarify social science concepts using math. So most of the time, formulas will be there just to show that this can be done. However, there will be a very small number (two to three) formulas that are very basic and that you should be able to consult to answer a quiz question. _I will let you know exactly which formulas these are_ and where to find them in the lecture slides and the online lesson handouts.
+> **No.** Only a few basic formulas (clearly indicated in lecture) will be consulted for quiz questions.
 
-*   _There are many concepts and terms. Do I need to know every definition??_
+*   _There are many concepts and terms. Do I need to know every definition?_
 
-> **No**. The textbook goes into more detail on the material and provides important background on key concepts. For the most part, the lecture slides should be your guide as to what is important. If it is mentioned in both the textbook and the lecture, it will likely be in one of the weekly quizzes. If it is mentioned in the textbook but not the lecture, I will not test you on it.
+> **No.** The lecture slides are your guide to what is tested. If a term is in both the lecture and textbook, it will likely be on a quiz.
 
 *   _When should I turn my homework in?_
 
-Check Bruinlearn for the due dates of each homework assignment.
+Check Bruin Learn for each assignment's specific deadline.
 
 *   _I fell behind, and now I want some extra credit. Can I please get some?_
 
-> **No**. This class is designed and battle-tested to help you do well with the actual number of assignments and requirements listed here. Keep up with everything, and you are guaranteed to do well.
+> **No.** The course is structured so that keeping up with regular assignments ensures you do well.
 
-*   _I am on the waiting list. Can you just let me into the class if I beg really hard?_
+*   _I am on the waiting list. Can you let me in?_
 
-> **No**. This class is mandated to have sections, and sections cannot go over the official enrollment. The waiting list is exactly as advertised. You wait until someone drops.
+> **No.** Section sizes cannot exceed room/enrollment capacity. You must wait for an open spot via the registrar.
