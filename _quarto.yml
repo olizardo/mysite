@@ -69,7 +69,7 @@ website:
         menu: 
           - text: "Social Networks (111) Textbook"
             icon: book
-            href: https://networks-textbook.netlify.app/
+            href: https://olizardo.github.io/networks-textbook/
           - text: "Classical Sociological Theory Notes"
             icon: book
             href: https://olizardo.github.io/classical-sociological-theory-notes/
