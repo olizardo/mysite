@@ -121,9 +121,9 @@ Department of Sociology, University of California, Los Angeles
 
 - (with Jessica Collett), American Sociological Association Section on Emotions *Recent Contribution Award* for "Embarrassment and social organization: A multiple identities model" (Honorable Mention), 2015.
 
-- (with Robert Fishman), American Sociological Association Section on Comparative and Historical Sociology *Charles Tilly Best Article Award* for "'How macro-historical change shapes cultural taste: Legacies of democratization in Spain and Portugal," 2014.
+- (with Robert M. Fishman), American Sociological Association Section on Comparative and Historical Sociology *Charles Tilly Best Article Award* for "'How macro-historical change shapes cultural taste: Legacies of democratization in Spain and Portugal," 2014.
 
-- (with Aaron Striegel, Shu Liu, Lei meng, Christian Poelleabauer, and David Hachen) Best Paper Award at The Fifth ACM Hotplanet Workshop, Hong Kong 2013.
+- (with Aaron Striegel, Shu Liu, Lei Meng, Christian Poellabauer, and David Hachen) Best Paper Award at The Fifth ACM Hotplanet Workshop, Hong Kong 2013.
 
 - American Sociological Association Section on Theory *Lewis Coser Award for Theoretical Agenda Setting*, 2013.
 
@@ -426,7 +426,7 @@ Jeff Larson and **Omar Lizardo**. "Generations, identities and the collective me
 
 **Omar Lizardo**. "The effect of economic and cultural globalization on anti-U.S. transnational terrorism 1971-2000." *Journal of World Systems Research* 12:  149-186. [doi:10.5195/jwsr.2006.374](https://doi.org/10.5195/jwsr.2006.374)
 
-**Omar Lizardo**. "The puzzle of women's 'highbrow' culture consumption: Integrating gender and work into Bourdieu's class theory of taste." *Poetics: Journal of Empirical Research on Culture, the Media and the Arts* 34: 1-23.^[Lead article.] ^[Lead article.] [doi:10.1016/j.poetic.2005.09.0011](https://doi.org/10.1016/j.poetic.2005.09.001)
+**Omar Lizardo**. "The puzzle of women's 'highbrow' culture consumption: Integrating gender and work into Bourdieu's class theory of taste." *Poetics: Journal of Empirical Research on Culture, the Media and the Arts* 34: 1-23.^[Lead article.] [doi:10.1016/j.poetic.2005.09.0011](https://doi.org/10.1016/j.poetic.2005.09.001)
 :::
 
 ### 2003–2005
@@ -587,7 +587,7 @@ Jessica Collett and **Omar Lizardo**. "Localizing cultural phenomena by specifyi
 ::: {.cventry}
 "Review of: Contested Tastes: Foie Gras and the Politics of Food by Michaela DeSoucey." *Administrative Science Quarterly* 62: NP31-NP34. [doi:10.1177/0001839217700127](https://doi.org/10.1177/0001839217700127)
 
-""A collective object for the sociology of morality project: Review essay on The Moral Background by Gabriel Abend." *Contemporary Sociology* 39: 199-204.  [doi:10.1177/0094306116629409a](https://doi.org/10.1177/0094306116629409a)
+"A collective object for the sociology of morality project: Review essay on The Moral Background by Gabriel Abend." *Contemporary Sociology* 39: 199-204.  [doi:10.1177/0094306116629409a](https://doi.org/10.1177/0094306116629409a)
 
 "Review of: Still Connected: Family and Friends in American Since 1970 by Claude S. Fischer." *Social Forces* 93: e103. [doi:10.1093/sf/sos158](https://doi.org/10.1093/sf/sos158)
 
@@ -641,9 +641,9 @@ James Flamino, Ross DeVito, Bolesław K. Szymański and **Omar Lizardo**. "A mac
 
 Mateusz Nurek, Radosław Michalski, **Omar Lizardo** and Marian-Andrei Rizoiu. "Predicting Relationship Labels and Individual Personality Traits from Telecommunication History in Social Networks using Hawkes Processes." [arXiv:2009.02032](https://arxiv.org/abs/2009.02032).
 
-Shikang Liu, David Hachen, **Omar Lizardo**, Christian Poellabauer, Aaron Striegel and Tijana Milenkovic. "The power of dynamic social networks to predict individuals' mental health." [arXiv:1908.02614](https://arxiv.org/abs/1908.02614).
+Shikang Liu, David Hachen, **Omar Lizardo**, Christian Poellabauer, Aaron Striegel and Tijana Milenković. "The power of dynamic social networks to predict individuals' mental health." [arXiv:1908.02614](https://arxiv.org/abs/1908.02614).
 
-Shikang Liu, Fatemeh Vahedian, David Hachen, **Omar Lizardo**, Christian Poellabauer, Aaron Striegel and Tijana Milenkovic. "Heterogeneous network approach to predict individuals' mental health." [arXiv:1906.04346](https://arxiv.org/abs/1906.04346).
+Shikang Liu, Fatemeh Vahedian, David Hachen, **Omar Lizardo**, Christian Poellabauer, Aaron Striegel and Tijana Milenković. "Heterogeneous network approach to predict individuals' mental health." [arXiv:1906.04346](https://arxiv.org/abs/1906.04346).
 
 Radosław Michalski, Bolesław K. Szymański, Przemysław Kazienko, Christian Lebiere, **Omar Lizardo** and Marcin Kulisiewicz. "Social networks through the prism of cognition." [arXiv:1806.04658](https://arxiv.org/abs/1806.04658).
 
@@ -718,7 +718,7 @@ Dustin S., Stoltz and **Omar Lizardo**. "Deliberate trust and intuitive faith: A
 
 "Omnivorous taste as category-mediated performance."  
 
- - {Sociology Department Seminar Series}, John Hopkins University, Baltimore, MD, 2023.
+ - {Sociology Department Seminar Series}, Johns Hopkins University, Baltimore, MD, 2023.
  - *FSU Sociology Colloquium Series*, Florida State University, Tallahassee, FL, 2023.
  - *Yale Computational Social Science Workshop*, Yale University, New Haven, CT, 2022.
 
@@ -994,30 +994,30 @@ Cheng Wang, Stephen Mattingly, Jessica Payne, **Omar Lizardo** and David Hachen.
 
 David Hachen and **Omar Lizardo**. "The NetHealth project and data: New opportunities for studying social networks and health related behaviors." Networks 2021: A Joint Sunbelt and NetSci Conference: Combined meeting of the International Network for Social Network Analysis (Sunbelt'21), and the Network Science Society (NetSci'21) (virtual).
 
-David Hachen, **Omar Lizardo**, Ethan Fridmanski and Cheng Wang." Do lonely birds flock together? Determinants of assortative mixing on loneliness among a cohort of first year college students." Networks 2021: A Joint Sunbelt and NetSci Conference: Combined meeting of the International Network for Social Network Analysis (Sunbelt'21), and the Network Science Society (NetSci'21) (virtual).
+David Hachen, **Omar Lizardo**, Ethan Fridmanski and Cheng Wang. "Do lonely birds flock together? Determinants of assortative mixing on loneliness among a cohort of first year college students." Networks 2021: A Joint Sunbelt and NetSci Conference: Combined meeting of the International Network for Social Network Analysis (Sunbelt'21), and the Network Science Society (NetSci'21) (virtual).
 
 Mateusz Nurek, Radosław Michalski, **Omar Lizardo** and Marian-Andrei Rizoiu. "Predicting relationships and Big Five personality traits from telecommunication history based on Hawkes process." The 30th ACM International Conference on Information and Knowledge Management (virtual).
 
 Radosław Michalski, Bolesław K. Szymański, Przemysław Kazienko, Christian Lebiere, **Omar Lizardo** and Marcin Kulisiewicz. "Cognition-driven temporal social networks." *Networks 2021: A Joint Conference of Sunbelt and NetSci* (virtual).
 
-Shikang Liu, David Hachen, **Omar Lizardo**, Christian Poellabauer, Aaron Striegel and Tijana Milenkovic. "The power of dynamic social networks to predict individuals' mental health." Pacific Symposium on Biocomputing (PSB '20), Big Island of Hawaii, HI.
+Shikang Liu, David Hachen, **Omar Lizardo**, Christian Poellabauer, Aaron Striegel and Tijana Milenković. "The power of dynamic social networks to predict individuals' mental health." Pacific Symposium on Biocomputing (PSB '20), Big Island of Hawaii, HI.
 :::
 
 ### 2018–2019
 ::: {.cventry}
 Ashwin Bahulkar, Boleslaw K. Szymanski, Kevin Chan and **Omar Lizardo**. "Modeling and predicting human social behavior." 25th ACM SIGKDD Conference on Knowledge Discovery and Data Mining, Anchorage, Alaska. 
 
-Louis Faust, Priscilla Jimenez-Pazmino, James K. Holland, **Omar Lizardo**, David Hachen and Nitesh V. Chawla. "What 30 Days tells us Aaout 3 Years: Leveraging early signs of user abandonment and compliance." 13th EAI International Conference on Pervasive Computing Technologies for Healthcare, Trento, Italy.
+Louis Faust, Priscilla Jimenez-Pazmino, James K. Holland, **Omar Lizardo**, David Hachen and Nitesh V. Chawla. "What 30 Days tells us About 3 Years: Leveraging early signs of user abandonment and compliance." 13th EAI International Conference on Pervasive Computing Technologies for Healthcare, Trento, Italy.
 
 Cheng Wang, **Omar Lizardo** and David Hachen. "Dynamics of local clustering in temporal social networks." 2nd North American Social Networks Conference, Washington, DC.
 
-Shikang Liu, David Hachen, **Omar Lizardo**, Christian Poellabauer, Aaron Striegel and Tijana Milenkovic. "Network analysis of the NetHealth data: Exploring co-evolution of individuals' social networks and physical activities." 2018 KDD Workshop on Machine Learning for Medicine and Healthcare, London, United Kingdom.
+Shikang Liu, David Hachen, **Omar Lizardo**, Christian Poellabauer, Aaron Striegel and Tijana Milenković. "Network analysis of the NetHealth data: Exploring co-evolution of individuals' social networks and physical activities." 2018 KDD Workshop on Machine Learning for Medicine and Healthcare, London, United Kingdom.
 
 David Hachen, **Omar Lizardo** and Matthew Chandler. "Examining the empirical linkages between different kinds of ties in dynamic ego networks."  International Sunbelt Social Networks Conference (Sunbelt'18), Utrecht, The Netherlands.
 
 Ashwin Bahulkar, Boleslaw Szymanski, **Omar Lizardo** and Kevin Chan. "Impact of Attributes on Group Formation." 4th Edition of the Workshop on Social Influence, at the IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining (ASONAM 2018), Barcelona, Spain.
 
-Shikang Liu, David Hachen, **Omar Lizardo**, Christian Poellabauer, Aaron Striegel and Tijana Milenkovic. "Exploring co-evolution between individuals' social networks and physical activities in NetHealth data." Intelligent Systems for Molecular Biology Conference (ISMB'18), Chicago, Illinois. 
+Shikang Liu, David Hachen, **Omar Lizardo**, Christian Poellabauer, Aaron Striegel and Tijana Milenković. "Exploring co-evolution between individuals' social networks and physical activities in NetHealth data." Intelligent Systems for Molecular Biology Conference (ISMB'18), Chicago, Illinois. 
 
 Louis Faust, Priscilla Jimenez, David Hachen, **Omar Lizardo**, Aaron Striegel and Nitesh V. Chawla. "Long-term compliance habits: What early data tells us."  Short Workshop on Next Steps Towards Long Term Self Tracking at the ACM CHI Conference on Human Factors in Computing Systems (CHI'18). Montreal, Canada.
 
@@ -1078,7 +1078,7 @@ Jeff Larson and  **Omar Lizardo**. "An institutional logics approach to the anal
 
 David Hachen and **Omar Lizardo**. "The effects of individual traits on the formation of social networks among first-year college students."  International School and Conference on Network Science (NetSci'13), Copenhagen, Denmark.
 
-Aaron Striegel, Shu Liu, Lei Meng, Christian Poellabauer, David Hachen and **Omar Lizardo**. "Lessons Learned from the NetSense Smartphone Study." he 5th ACM HotPlanet Workshop (HotPlanet'13). Hong Kong. 
+Aaron Striegel, Shu Liu, Lei Meng, Christian Poellabauer, David Hachen and **Omar Lizardo**. "Lessons Learned from the NetSense Smartphone Study." The 5th ACM HotPlanet Workshop (HotPlanet'13). Hong Kong. 
 
 David Hachen, **Omar Lizardo**, Zoltan Toroczkai,  Cheng Wang, Anthony Strathman, Nitesh Chawla. "Weighted reciprocity in human communication networks."  Annual Meeting of the American Sociological Association. Denver, Colorado. 
 
