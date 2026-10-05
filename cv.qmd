@@ -970,7 +970,7 @@ Panelist, *Conference on Networks and Culture*. Stanford University Graduate Sch
 ### 2020–Present
 ::: {.cventry}
 
-Mateusz Nurek, Joanna Kołaczek,  Radosław Michalski, Bolesław K. Szymański and **Omar Lizardo**. "CoDiNG: A Hybrid Opinion Model Based on Human Cognition." Conference on Complex Systems (CCS '26), Binghmanton, NY. 
+Mateusz Nurek, Joanna Kołaczek,  Radosław Michalski, Bolesław K. Szymański and **Omar Lizardo**. "CoDiNG: A Hybrid Opinion Model Based on Human Cognition." Conference on Complex Systems (CCS '26), Binghamton, NY. 
 
 **Omar Lizardo**. "The forward march of Categorical Tolerance in the United States." First Sociological Science Conference, Duke University, Durham, NC.
 
