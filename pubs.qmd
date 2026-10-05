@@ -138,6 +138,8 @@
 
 ### Social Network Analysis
 
+- "Dynamics of local clustering in temporal social networks." *Sociological Methods & Research*. [doi:10.1177/00491241261492189](https://doi.org/10.1177/00491241261492189)
+
 - "Eigenvectors in Social Network Analysis." In E. Bienenstock and M. Brashears (Eds.) *The Handbook of Mathematical Sociology*. Edward Elgar. [pdf](workpap/eigenvectors.pdf)
 
 - "Temporal dynamics of the friendship paradox in a smartphone communication network." *Applied Network Science* 10: 16 [doi:10.1007/s41109-025-00710-1](https://doi.org/10.1007/s41109-025-00710-1).

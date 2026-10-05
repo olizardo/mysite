@@ -22,9 +22,14 @@
       "git config *": "allow"
     },
     "webfetch": {
-      "https://api.crossref.org/*": "allow"
+      "https://api.crossref.org/*": "allow",
+      "https://journals.sagepub.com/*": "allow",
+      "https://doi.org/*": "allow"
     },
     "executeCode": {
+      "*": "allow"
+    },
+    "websearch": {
       "*": "allow"
     }
   },
