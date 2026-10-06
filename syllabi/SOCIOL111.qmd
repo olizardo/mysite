@@ -16,8 +16,8 @@ format:
 | Email | [olizardo@soc.ucla.edu](mailto:olizardo@soc.ucla.edu) |
 | Website | [https://olizardo.github.io/mysite/](https://olizardo.github.io/mysite/) |
 | Office | Haines Hall 290 |
-| In-Person Office Hours | Thursdays 2:00 -- 3:00 pm (Haines 290) |
-| Zoom Office Hours | Thursdays 1:00 -- 2:00 pm |
+| In-Person Office Hours | Thursdays 1:00 -- 2:00 pm (Haines 290) |
+| Zoom Office Hours | Tuesdays & Thursdays 12:30 -- 1:00 pm |
 | Virtual Office | [https://ucla.zoom.us/my/olizardo](https://ucla.zoom.us/my/olizardo) |
 
 # Course Information
@@ -32,8 +32,8 @@ format:
 | Lecture Location | Royce Hall Room 362 |
 | Enrollment Status | Closed: Class Full (120) \| Waitlist Full (30) |
 | Office | Haines Hall 290 |
-| In-Person Office Hours | Thursdays 2:00 -- 3:00 pm |
-| Zoom Office Hours | Thursdays 1:00 -- 2:00 pm |
+| In-Person Office Hours | Thursdays 1:00 -- 2:00 pm |
+| Zoom Office Hours | Tuesdays & Thursdays 12:30 -- 1:00 pm |
 
 # Course Description
 
