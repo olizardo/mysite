@@ -8,6 +8,8 @@ format:
     css: styles.css
   pdf:
     pdf-engine: xelatex
+    filters:
+      - cventry.lua
     documentclass: article
     geometry: "margin=1in"
     include-in-header:
