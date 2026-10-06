@@ -638,9 +638,9 @@ Jessica Collett and **Omar Lizardo**. "Localizing cultural phenomena by specifyi
 Matteo Serafino, G. Virginio Clemente, James Flamino, Bolesław K. Szymański, **Omar Lizardo** and Hernán A. Makse. "Analysis of flows in social media uncovers a new
 multi-step model of information spread." [arXiv:2409.01225](https://arxiv.org/abs/2409.01225).
 
-Mateusz Nurek, Joanna Kołaczek, Radosław Michalski, Bolesław K. Szymański and **Omar Lizardo**. "CoDiNG – Naming game with continuous latent state of agents." [arXiv:2406.19204](https://arxiv.org/abs/2406.19204).
+Mateusz Nurek, Joanna Kołaczek, Radosław Michalski, Bolesław K. Szymański and **Omar Lizardo**. "CoDiNG – Naming game with continuous latent opinions of individual agents." [arXiv:2406.19204](https://arxiv.org/abs/2406.19204).
 
-James Flamino, Ross DeVito, **Omar Lizardo** and Bolesław K. Szymański. "Modeling memory imprints induced by interactions in social networks." [arXiv:2101.09417](https://arxiv.org/abs/2101.09417).
+James Flamino, Ross DeVito, **Omar Lizardo** and Bolesław K. Szymański. "Modeling memory imprints induced by interactions in social networks."^[Also published in the conference proceedings of SBP-BRiMS 2022, Pittsburgh, PA, Springer LNCS. [doi:10.1007/978-3-031-17114-7_18](https://doi.org/10.1007/978-3-031-17114-7_18)] [arXiv:2210.03197](https://arxiv.org/abs/2210.03197).
 
 James Flamino, Ross DeVito, Bolesław K. Szymański and **Omar Lizardo**. "A machine learning approach to predicting continuous tie strengths." [arXiv:2101.09417](https://arxiv.org/abs/2101.09417).
 
