@@ -1161,7 +1161,7 @@ Albert J. Bergesen and **Omar Lizardo**. "Terrorism and the world-system." Annua
 Albert J. Bergesen and **Omar Lizardo**. "Terrorism and hegemonic decline." Political Economy of World-Systems Conference. University of California at Riverside.
 :::
 
-## Editorial Work
+## Professional Service
 **Lead Editor**
 
  - 2024-2026. *Sociological Theory* (with S. L. Crawley, Zine Magubane, and Vrushali Patil)
@@ -1183,7 +1183,6 @@ Albert J. Bergesen and **Omar Lizardo**. "Terrorism and hegemonic decline." Poli
  - 2020-present. *Science*.
 
 ### Editorial Boards
-**Editorial Advisory Board Member** 
 
  - 2025-present. *Oxford University Press Series on Social Network Mechanisms*.
  - 2023-present. *Princeton University Press Series in Cultural Sociology.*
@@ -1206,12 +1205,13 @@ Albert J. Bergesen and **Omar Lizardo**. "Terrorism and hegemonic decline." Poli
  - 2009-2012. *Sociological Theory*.
  - 2008-2014. *Poetics: Journal of Empirical Research on Culture, the Media and the Arts*.
 
-### Program Committees
-**Steering Committee Member** 
+### Committees and Boards
+
+**Steering Committee Member**
 
  - 2019-present. [SocArXiv](https://socopen.org/).
 
-**PhD Teaching Board** 
+**PhD Teaching Board Member**
 
  - 2017-present. Doctoral Program in *Analysis of Social and Economic Processes (ASEP)*, Maurizio Pisati (Director), Department of Sociology and Social Research, University of Milano-Bicocca, Italy. 
 
@@ -1220,7 +1220,7 @@ Albert J. Bergesen and **Omar Lizardo**. "Terrorism and hegemonic decline." Poli
  - 2023-2026. Department of Sociology, Johns Hopkins University.
  - 2023-2024. *Duality@50* Conference, Monte Verità, Ascona, Switzerland.
 
-**Program Committee Member** 
+**Conference Program Committee Member**
 
  - SI 2022, Workshop on Social Influence, at the IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining (ASONAM 2022), Istanbul, Turkey.
  - 28th ACM/SIGKDD Conference on Knowledge Discovery and Data Mining (KDD 2022), Washington DC.
@@ -1234,7 +1234,6 @@ Albert J. Bergesen and **Omar Lizardo**. "Terrorism and hegemonic decline." Poli
  - 30 Years after "Distinction" Conference, at the Institut d'Etudes Politiques de Paris (Science Po), Paris, France, 2010.
  - American Sociological Association Section on Social Psychology, 2008.
 
-## Professional Service
 ### ASA Committees
 **American Sociological Association Committee Member**
 
@@ -1276,8 +1275,9 @@ Albert J. Bergesen and **Omar Lizardo**. "Terrorism and hegemonic decline." Poli
  - Section on Theory (Council), 2011-2014.
  - Section on the Sociology of Culture (Council), 2011-2014.
 
-### Conference Organizer
-**Conference Session Organizer**
+### Conference Service
+
+#### Session Organizer
 
  - Session on "Formal models of duality in culture and society." Annual Meeting of the American Sociological Association, Montreal, Canada, 2024.
  - Session on "Duality in social networks after fifty years: Contemporary advances and future prospects." International Sunbelt Social Networks Conference (Sunbelt'24), Edinburgh, Scotland.
@@ -1296,8 +1296,7 @@ Albert J. Bergesen and **Omar Lizardo**. "Terrorism and hegemonic decline." Poli
  - Session on "Comparative approaches to cultural taste and culture consumption." Annual meeting of the Pacific Sociological Association, Portland, Oregon, 2005.
  - (with Michelle Bata) Session on "Local responses to globalization." Annual meeting of the Pacific Sociological Association, San Francisco, California, 2004.
 
-### Conference Session Discussant
-**Conference Session Discussant**
+#### Session Discussant
 
  - Session on "Field theory, history, and sociological analysis: New directions." Annual meeting of the American Sociological Association, Montreal, Canada, 2024.
  - Author Meets Critics panel on Robert M. Fishman's *Democratic Practice: Origins of the Iberian Divide in Political Inclusion*. 26th International Conference of Europeanists, Universidad Carlos III de Madrid, Madrid, Spain, 2019. 
@@ -1308,8 +1307,7 @@ Albert J. Bergesen and **Omar Lizardo**. "Terrorism and hegemonic decline." Poli
  - Session on "New approaches to modeling cultural processes." Annual meeting of the American Sociological Association, Las Vegas, Nevada, 2011.
  - Session on "Local responses to globalization." Annual meeting of the Pacific Sociological Association, San Francisco, California, 2004.
 
-### Conference Session Presider
-**Conference Session Presider**
+#### Session Presider
 
  - Session "Showcasing excellent scholarship in the History of Sociology & Social Thought." Annual Meeting of the American Sociological Association, Chicago, Illinois, 2025.
 
@@ -1396,7 +1394,7 @@ Albert J. Bergesen and **Omar Lizardo**. "Terrorism and hegemonic decline." Poli
 - Brandon Vaidyanathan (2013) 
 - Kari Marie Hojara (2014) 
 - Peter Mundey (2014) 
-- Daniel Castillo^§^ (2014)  
+- Daniel Castillo^§^ (2014)
 - Yang Yang^‡^ (2015) 
 - Daniel Escher (2015) 
 - Brad Vermurlen (2016) 
@@ -1427,7 +1425,7 @@ Albert J. Bergesen and **Omar Lizardo**. "Terrorism and hegemonic decline." Poli
  *University of California, Los Angeles* 
 
 - Acton Jiashi Feng (2023) 
-- Aya Ambrose Konishi (2023)     
+- Aya Ambrose Konishi (2023)
 - Anthony Shu (2024) 
 - Sebastian Pressing (2025)
 
@@ -1446,7 +1444,7 @@ Albert J. Bergesen and **Omar Lizardo**. "Terrorism and hegemonic decline." Poli
 - Shibing Zhou (2024) 
 - Riley Ceperich (2023) 
 - Michael Courville (2025) 
-- Anne Lin (2025)  
+- Anne Lin (2025)
 - Stephanie Zhang (2025) 
 
  *University of Notre Dame*
@@ -1464,7 +1462,6 @@ Albert J. Bergesen and **Omar Lizardo**. "Terrorism and hegemonic decline." Poli
 
 ### Undergraduate Honors Thesis Advising
 ::: {.cventry}
-**Undergraduate Research Faculty Advisor** 
 
  *University of California, Los Angeles*
 
@@ -1476,10 +1473,10 @@ Albert J. Bergesen and **Omar Lizardo**. "Terrorism and hegemonic decline." Poli
 
 - Erin Robertson^‡^ (2007) 
 - Teresa Bone^§^ (2008) 
-- Melissa Truitt^§^ (2011)  
+- Melissa Truitt^§^ (2011)
 - Yo Tam Yoon^§^ (2012) 
 - Olevia Boykin^§^ (2014) 
-- Karyn Vilbig^§^ (2014)  
+- Karyn Vilbig^§^ (2014)
 - Molly Feeney^§^ (2015)
 :::
 
