@@ -559,7 +559,7 @@ Jessica Collett and **Omar Lizardo**. "Localizing cultural phenomena by specifyi
 
 ## Encyclopedia Entries
 ::: {.cventry}
-**Omar Lizardo**. 2026. "Culture and inequality." In Lynette Spillman (Ed.) *The Oxford Research Encyclopedia of Sociology*. Oxford University Press. [doi: 10.1093/acrefore/9780197791295.013.ORE_SOC-00108.R2](https://doi.org/10.1093/acrefore/9780197791295.013.ORE_SOC-00108.R2) 
+**Omar Lizardo**. 2026. "Culture and inequality." In Lynette Spillman (Ed.) *The Oxford Research Encyclopedia of Sociology*. Oxford University Press. [doi:10.1093/9780197852729.003.0108](https://doi.org/10.1093/9780197852729.003.0108)
 
 **Omar Lizardo**. 2015. "Culture, cognition and embodiment." In James D. Wright (Ed.) *International Encyclopedia of the Social and Behavioral Sciences*. Elsevier. [doi:10.1016/B978-0-08-097086-8.10442-8](https://doi.org/10.1016/B978-0-08-097086-8.10442-8)
 
