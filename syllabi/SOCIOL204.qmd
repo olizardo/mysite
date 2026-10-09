@@ -34,20 +34,22 @@ format:
 - Silva, E. B. (2016). Unity and fragmentation of the habitus. *The Sociological Review*, 64(1), 166-183.
 - Wacquant, L. (2016). A concise genealogy and anatomy of habitus. *The Sociological Review*, 64(1), 64-72.
 
-### Systems of Oppression and Difference
+### Gender, Bodies, and Embodiment
 - Dubrule, A. (2022). Gender and Habit: John Dewey and Iris Marion Young on Embodiment and Transformation. *The Pluralist*, 17(1), 45-51.
 - Engman, A., & Cranford, C. (2016). Habit and the Body: Lessons for Social Theories of Habit from the Experiences of People with Physical Disabilities. *Sociological Theory*, 34(1), 27-44.
+- Sullivan, S. (2000). Reconfiguring gender with John Dewey: Habit, bodies, and cultural change. *Hypatia*, 15(1), 23-42.
+- Young, I. M. (1980). Throwing like a girl: A phenomenology of feminine body comportment motility and spatiality. *Human Studies*, 3(1), 137-156.
+
+### Race, Racism, and Oppression
 - Itzigsohn, J., & Brown, K. (2015). Sociology and the theory of double consciousness: WEB Du Bois’s phenomenology of racialized subjectivity. *Du Bois Review*, 12(2), 231-248.
 - Liao, S. Y., & Huebner, B. (2021). Oppressive things. *Philosophy and Phenomenological Research*, 103(1), 92-113.
 - Luft, A. (2023). The moral career of the genocide perpetrator: Cognition, emotions, and dehumanization as a consequence, not a cause, of violence. *Sociological Theory*, 41(4), 324-351.
 - MacMullan, T. (2011). Habits of Hate. *Journal of Hate Studies*, 9(1), 93-112.
 - Ngo, H. (2016). Racist habits: A phenomenological analysis of racism and the habitual body. *Philosophy & Social Criticism*, 42(9), 847-872.
-- Sullivan, S. (2000). Reconfiguring gender with John Dewey: Habit, bodies, and cultural change. *Hypatia*, 15(1), 23-42.
 - Sullivan, S. (2014). The hearts and guts of white people: Ethics, ignorance, and the physiology of white racism. *Journal of Religious Ethics*, 42(4), 591-611.
 - Sullivan, S. (2018). Becoming a citizen: habits of national belonging in the United States. *Geografiska Annaler: Series B, Human Geography*, 100(2), 163-177.
 - Sullivan, S. (2024). WEB Du Bois as a Critical Anthropologist of Race. *European Journal of Pragmatism and American Philosophy*, 16(XVI-2).
 - Yancy, G. (2008). Elevators, social spaces and racism: A philosophical analysis. *Philosophy & Social Criticism*, 34(8), 843-876.
-- Young, I. M. (1980). Throwing like a girl: A phenomenology of feminine body comportment motility and spatiality. *Human Studies*, 3(1), 137-156.
 
 ### Other Applications
 - Gold, T. (2022). Contentious Tactics as Jazz Performances: A Pragmatist Approach to the Study of Repertoire Change. *Sociological Theory*, 40(3), 249-271.
@@ -114,58 +116,80 @@ format:
 - Liu, S., & Emirbayer, M. (2016). Field and Ecology. *Sociological Theory*, 34(1), 62-79.
 
 ## Networks, Relations, and Structures
+### Concepts of Social Structure
 - Bourdieu, P. (1985). The social space and the genesis of groups. *Social Science Information*, 24(2), 195-220.
-- Crossley, N. (2022). A Dependent Structure of Interdependence: Structure and Agency in Relational Perspective. *Sociology*, 56(1), 166-182.
-- Dépelteau, F. (2008). Relational Thinking: A Critique of Co‐Deterministic Theories of Structure and Agency. *Sociological Theory*, 26(1), 51-73.
 - Elder-Vass, D. (2008). Integrating institutional, relational and embodied structure: an emergentist perspective. *The British Journal of Sociology*, 59(2), 281-299.
-- Emirbayer, M. (1997). Manifesto for a relational sociology. *American Journal of Sociology*, 103(2), 281-317.
-- Erikson, E. (2013). Formalist and relationalist theory in social network analysis. *Sociological Theory*, 31(3), 219-242.
-- Fine, G. A., & Kleinman, S. (1983). Network and meaning: An interactionist approach to structure. *Symbolic Interaction*, 6(1), 97-110.
-- Fuhse, J. A. (2009). The meaning structure of social networks. *Sociological Theory*, 27(1), 51-73.
 - Haslanger, S. (2015). Social structure, narrative and explanation. *Canadian Journal of Philosophy*, 45(1), 1-15.
 - Haslanger, S. (2016). What is a (social) structural explanation? *Philosophical Studies*, 173, 113–130.
-- Heiskala, R. (2001). Theorizing power: Weber, Parsons, Foucault and neostructuralism. *Social Science Information*, 40(2), 241-264.
+- Porpora, D. V. (1989). Four concepts of social structure. *Journal for the Theory of Social Behaviour*, 19(2), 195-211.
+- Ritchie, K. (2020). Social structures and the ontology of social groups. *Philosophy and Phenomenological Research*, 100(2), 402-424.
+- Sewell Jr, W. H. (1992). A theory of structure: Duality, agency, and transformation. *American Journal of Sociology*, 98(1), 1-29.
+
+### Structuralism and Poststructuralism
 - Joas, H., & Knöbl, W. (2009). Structuralism and Poststructuralism. Pp. 339-370 in *Social Theory: Twenty Introductory Lectures*. Cambridge University Press.
 - Leschziner, V., & Brett, G. (2021). Symbol Systems and Social Structures. Pp. 559-582 in *Handbook of Classical Sociological Theory*. Springer.
 - Maryanski, A., & Turner, J. (1991). The offspring of functionalism: French and British structuralism. *Sociological Theory*, 9(1), 106-111.
+
+### Relational Sociology
+- Crossley, N. (2022). A Dependent Structure of Interdependence: Structure and Agency in Relational Perspective. *Sociology*, 56(1), 166-182.
+- Dépelteau, F. (2008). Relational Thinking: A Critique of Co‐Deterministic Theories of Structure and Agency. *Sociological Theory*, 26(1), 51-73.
+- Emirbayer, M. (1997). Manifesto for a relational sociology. *American Journal of Sociology*, 103(2), 281-317.
 - Mische, A. (2011). Relational sociology, culture, and agency. Pp. 80-97 in *The SAGE Handbook of Social Network Analysis*. SAGE Publications.
-- Porpora, D. V. (1989). Four concepts of social structure. *Journal for the Theory of Social Behaviour*, 19(2), 195-211.
-- Ray, V. (2019). A theory of racialized organizations. *American Sociological Review*, 84(1), 26-53.
-- Reed, I. A. (2013). Power: Relational, discursive, and performative dimensions. *Sociological Theory*, 31(3), 193-218.
-- Reed, I. A. (2017). Chains of power and their representation. *Sociological Theory*, 35(2), 87-117.
-- Risman, B. J. (2004). Gender As a Social Structure: Theory Wrestling with Activism. *Gender & Society*, 18(4), 429-450.
-- Ritchie, K. (2020). Social structures and the ontology of social groups. *Philosophy and Phenomenological Research*, 100(2), 402-424.
-- Saito, H. (2011). An actor-network theory of cosmopolitanism. *Sociological Theory*, 29(2), 124-149.
-- Sewell Jr, W. H. (1992). A theory of structure: Duality, agency, and transformation. *American Journal of Sociology*, 98(1), 1-29.
 - Singh, S. (2016). What Is Relational Structure? Introducing History to the Debates on the Relation between Fields and Social Networks. *Sociological Theory*, 34(2), 128-150.
 
+### Networks and Meaning
+- Erikson, E. (2013). Formalist and relationalist theory in social network analysis. *Sociological Theory*, 31(3), 219-242.
+- Fine, G. A., & Kleinman, S. (1983). Network and meaning: An interactionist approach to structure. *Symbolic Interaction*, 6(1), 97-110.
+- Fuhse, J. A. (2009). The meaning structure of social networks. *Sociological Theory*, 27(1), 51-73.
+- Saito, H. (2011). An actor-network theory of cosmopolitanism. *Sociological Theory*, 29(2), 124-149.
+
+### Power and Structure
+- Heiskala, R. (2001). Theorizing power: Weber, Parsons, Foucault and neostructuralism. *Social Science Information*, 40(2), 241-264.
+- Reed, I. A. (2013). Power: Relational, discursive, and performative dimensions. *Sociological Theory*, 31(3), 193-218.
+- Reed, I. A. (2017). Chains of power and their representation. *Sociological Theory*, 35(2), 87-117.
+
+### Structures of Inequality
+- Ray, V. (2019). A theory of racialized organizations. *American Sociological Review*, 84(1), 26-53.
+- Risman, B. J. (2004). Gender As a Social Structure: Theory Wrestling with Activism. *Gender & Society*, 18(4), 429-450.
+
 ## Culture, Cognition, and Action
-- Abramson, C. M. (2012). From 'either‐or' to 'when and how': A context‐dependent model of culture in action. *Journal for the Theory of Social Behaviour*, 42(2), 155-180.
+### Conceptual Foundations
 - Alexander, J. C. (1988). Action and its Environments. Pp. 301-333 in *Action and Its Environments: Toward a New Synthesis*. Columbia University Press.
-- Ayala Hurtado, E. (2022). Narrative continuity/rupture: Projected professional futures amid pervasive employment precarity. *Work and Occupations*, 49(1), 45-78.
-- Brett, G. (2022). Dueling with Dual-Process Models: Cognition, Creativity, and Context. *Sociological Theory*, 40(2), 179-201.
 - Eckstein, H. (1996). Culture as a foundation concept for the social sciences. *Journal of Theoretical Politics*, 8(4), 471-497.
-- Eliasoph, N., & Lichterman, P. (2003). Culture in interaction. *American Journal of Sociology*, 108(4), 735-794.
-- Emirbayer, M., & Goodwin, J. (1994). Network analysis, culture, and the problem of agency. *American Journal of Sociology*, 99(6), 1411-1454.
-- Emirbayer, M., & Mische, A. (1998). What is agency? *American Journal of Sociology*, 103(4), 962-1023.
-- Freeman, K. J., Condron, D. J., & Steidl, C. R. (2020). Structures of stratification: Advancing a sociological debate over culture and resources. *Critical Sociology*, 46(2), 191-206.
-- Haslanger, S. (2019). Cognition as a social skill. *Australasian Philosophical Review*, 3(1), 5-25.
-- Hays, S. (1994). Structure and agency and the sticky problem of culture. *Sociological Theory*, 12(1), 57-72.
 - Joas, H., & Knöbl, W. (2009). The Classical Attempt at Synthesis. Pp. 20-42 in *Social Theory: Twenty Introductory Lectures*. Cambridge University Press.
+- Sewell, W. H. (2005). The concept(s) of culture. Pp. 152-174 in *Logics of History*. University of Chicago Press.
+
+### Culture in Action
+- Abramson, C. M. (2012). From 'either‐or' to 'when and how': A context‐dependent model of culture in action. *Journal for the Theory of Social Behaviour*, 42(2), 155-180.
+- Eliasoph, N., & Lichterman, P. (2003). Culture in interaction. *American Journal of Sociology*, 108(4), 735-794.
+- Miles, A. (2014). Addressing the problem of cultural anchoring: An identity-based model of culture in action. *Social Psychology Quarterly*, 77(2), 210-227.
+- Swidler, A. (1986). Culture in action: Symbols and strategies. *American Sociological Review*, 51(2), 273-286.
+
+### Cognition and Dual-Process Models
+- Brett, G. (2022). Dueling with Dual-Process Models: Cognition, Creativity, and Context. *Sociological Theory*, 40(2), 179-201.
+- Haslanger, S. (2019). Cognition as a social skill. *Australasian Philosophical Review*, 3(1), 5-25.
 - Leschziner, V., & Green, A. I. (2013). Thinking about food and sex: Deliberate cognition in the routine practices of a field. *Sociological Theory*, 31(2), 116-144.
 - Lizardo, O., & Strand, M. (2010). Skills, toolkits, contexts and institutions: Clarifying the relationship between different approaches to cognition in cultural sociology. *Poetics*, 38(2), 205-228.
 - Luft, A. (2020). Theorizing moral cognition: Culture in action, situations, and relationships. *Socius*, 6, 1-14.
 - Luft, A. (2023). The moral career of the genocide perpetrator: Cognition, emotions, and dehumanization as a consequence, not a cause, of violence. *Sociological Theory*, 41(4), 324-351.
-- Miles, A. (2014). Addressing the problem of cultural anchoring: An identity-based model of culture in action. *Social Psychology Quarterly*, 77(2), 210-227.
-- Patterson, O. (2015). The nature and dynamics of cultural processes. Pp. 25-44 in *The Cultural Matrix: Understanding Black Youth*. Harvard University Press.
-- Reed, I. A., & Weinman, M. (2019). Agency, power, modernity: A manifesto for social theory. *European Journal of Cultural and Political Sociology*, 6(1), 6-50.
-- Sendroiu, I. (2022). 'All the old illusions': on guessing at being in crisis. *Sociological Theory*, 40(4), 297-321.
-- Sewell, W. H. (2005). The concept(s) of culture. Pp. 152-174 in *Logics of History*. University of Chicago Press.
-- Silver, D. (2011). The moodiness of action. *Sociological Theory*, 29(3), 199-222.
-- Spillman, L. (1995). Culture, social structures, and discursive fields. *Current Perspectives in Social Theory*, 15, 129-154.
 - Strand, M., & Lizardo, O. (2017). The hysteresis effect: Theorizing mismatch in action. *Journal for the Theory of Social Behaviour*, 47(2), 164-194.
-- Swidler, A. (1986). Culture in action: Symbols and strategies. *American Sociological Review*, 51(2), 273-286.
 - Vaisey, S. (2009). Motivation and justification: Toward a dual-process theory of culture in action. *American Journal of Sociology*, 114(6), 1675-1715.
 - Winchester, D. (2016). A hunger for God: embodied metaphor as cultural cognition in action. *Social Forces*, 95(2), 585-606.
 - Winchester, D., & Green, K. D. (2019). Talking your self into it: How and when accounts shape motivation for action. *Sociological Theory*, 37(3), 257-281.
+
+### Agency and Action
+- Emirbayer, M., & Goodwin, J. (1994). Network analysis, culture, and the problem of agency. *American Journal of Sociology*, 99(6), 1411-1454.
+- Emirbayer, M., & Mische, A. (1998). What is agency? *American Journal of Sociology*, 103(4), 962-1023.
+- Reed, I. A., & Weinman, M. (2019). Agency, power, modernity: A manifesto for social theory. *European Journal of Cultural and Political Sociology*, 6(1), 6-50.
+- Silver, D. (2011). The moodiness of action. *Sociological Theory*, 29(3), 199-222.
+
+### Culture, Structure, and Inequality
+- Freeman, K. J., Condron, D. J., & Steidl, C. R. (2020). Structures of stratification: Advancing a sociological debate over culture and resources. *Critical Sociology*, 46(2), 191-206.
+- Hays, S. (1994). Structure and agency and the sticky problem of culture. *Sociological Theory*, 12(1), 57-72.
+- Patterson, O. (2015). The nature and dynamics of cultural processes. Pp. 25-44 in *The Cultural Matrix: Understanding Black Youth*. Harvard University Press.
+- Spillman, L. (1995). Culture, social structures, and discursive fields. *Current Perspectives in Social Theory*, 15, 129-154.
+
+### Narratives and Repertoires in Practice
+- Ayala Hurtado, E. (2022). Narrative continuity/rupture: Projected professional futures amid pervasive employment precarity. *Work and Occupations*, 49(1), 45-78.
+- Sendroiu, I. (2022). 'All the old illusions': on guessing at being in crisis. *Sociological Theory*, 40(4), 297-321.
 - Zilberstein, S., Lamont, M., & Sanchez, M. (2023). Recreating a Plausible Future: Combining Cultural Repertoires in Unsettled Times. *Sociological Science*, 10, 348-373.
