@@ -31,6 +31,9 @@ website:
           - text: "NetSense Study"
             icon: table
             href: "https://olizardo.github.io/NetSense-Codebook/"
+          - text: "Kroeber & Kluckhohn Two-Mode Network Data"
+            icon: table
+            href: "https://olizardo.github.io/definitions-of-culture-two-mode/"
       - text: "Tools"
         icon: tools
         menu:
