@@ -110,10 +110,10 @@ You are expected to participate in section meetings. If you are unsure of how be
 | **Homework 5** | Affiliation Networks (Lesson 8) | Mon., Oct. 26 (9:00 am) | **Monday, Nov. 2** | Sat., Nov. 7 |
 | **Quiz 3** | Weeks 4 & 5 (Lessons 8--11) | Fri., Nov. 6 (8:00 am) | **Sunday, Nov. 8** | Sun., Nov. 8 |
 | **Homework 6** | Centrality (Lesson 9) | Mon., Nov. 2 (9:00 am) | **Monday, Nov. 9** | Sat., Nov. 14 |
-| **Quiz 4** | Weeks 6 & 7 (Lessons 12--16) | Fri., Nov. 13 (8:00 am) | **Sunday, Nov. 15** | Sun., Nov. 15 |
+| **Quiz 4** | Weeks 6--8 (Lessons 12--15) | Fri., Nov. 20 (8:00 am) | **Sunday, Nov. 22** | Sun., Nov. 22 |
 | **Homework 7** | Ego-Network Metrics (Lessons 12--13) | Mon., Nov. 9 (9:00 am) | **Monday, Nov. 16** | Sat., Nov. 21 |
 | **Homework 8** | Balance and Signed Graphs (Lesson 14) | Mon., Nov. 16 (9:00 am) | **Monday, Nov. 30** | Sat., Dec. 5 |
-| **Quiz 5** | Weeks 8 & 10 (Lessons 17--18) | Fri., Dec. 4 (8:00 am) | **Sunday, Dec. 6** | Sun., Dec. 6 |
+| **Quiz 5** | Weeks 8--10 (Lessons 16--18) | Fri., Dec. 4 (8:00 am) | **Sunday, Dec. 6** | Sun., Dec. 6 |
 | **Homework 9** | Subgroups, Graph Connectivity, and Structural Similarity (Lessons 16--17) | Mon., Nov. 30 (9:00 am) | **Monday, Dec. 7** (Finals Week) | Sat., Dec. 12 |
 
 # Final Grading Scheme
