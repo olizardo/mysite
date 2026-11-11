@@ -21,6 +21,12 @@ body {
   margin-bottom: 1rem;
 }
 
+/* FA's default display:inline-block breaks glyph advance under the negative
+   text-indent above (icon overlaps preceding text in Chrome). */
+.cventry p i.fa-brands, .cventry p i.fa-solid, .cventry p i.fa-regular {
+  display: inline;
+}
+
 .cventry li {
   text-indent: 0;
   margin-bottom: 0.25rem;
