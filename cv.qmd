@@ -156,9 +156,9 @@ Elliot Weininger, Annette Lareau and **Omar Lizardo** (Editors). *Ritual, Emotio
 ### In Press / Recent
 ::: {.cventry}
 
-**Omar Lizardo**. "Patriotism as a Choice Process: National Pride After 9/11." *Social Psychology Quarterly*. Forthcoming. [replication materials](https://github.com/olizardo/patriotism-choice-process).
+**Omar Lizardo**. "Patriotism as a Choice Process: National Pride After 9/11." *Social Psychology Quarterly*. Forthcoming. [{{< fa github >}} replication](https://github.com/olizardo/patriotism-choice-process).
 
-**Omar Lizardo**. "A Generalized approach to combining similarity and eigenvector analysis of networks." *Connections*. [replication materials](https://github.com/olizardo/combining-similarity-eigenvector).
+**Omar Lizardo**. "A Generalized approach to combining similarity and eigenvector analysis of networks." *Connections*. [{{< fa github >}} replication](https://github.com/olizardo/combining-similarity-eigenvector).
 
 Mateusz Nurek, Joanna Kołaczek, Radosław Michalski, Bolesław K. Szymański and **Omar Lizardo**. "CoDiNG – Naming game with continuous latent state of individual agents." *IEEE Transactions on Computational Social Systems*. [doi:10.1109/TCSS.2026.3738519](https://doi.org/10.1109/TCSS.2026.3738519).
 
@@ -171,14 +171,14 @@ Clayton Childress and **Omar Lizardo**. "Diversity as a dominant social value." 
 Dustin S. Stoltz, Marshall A. Taylor and **Omar Lizardo**. "Functionaries: A distributional approach to institutional analysis." *Journal for the Theory of Social Behaviour* 56:e70030. [doi:10.1111/jtsb.70030](https://doi.org/10.1111/jtsb.70030).
 
 **Omar Lizardo**. "The forward march of Categorical Tolerance in the United States." *Sociological Science*. 13:
-22-44. [doi:10.15195/v13.a2](https://doi.org/10.15195/v13.a2). [replication materials](https://github.com/olizardo/sociological-science-categorical-tolerance-followup).
+22-44. [doi:10.15195/v13.a2](https://doi.org/10.15195/v13.a2). [{{< fa github >}} replication](https://github.com/olizardo/sociological-science-categorical-tolerance-followup).
 :::
 
 ### 2024–2025
 ::: {.cventry}
 Seth Abrutyn and **Omar Lizardo**. "Human totality and the Total Social Fact." *Distinktion: Journal of Social Theory*. [doi:10.1080/1600910X.2025.2555236](https://doi.org/10.1080/1600910X.2025.2555236).
 
-**Omar Lizardo**. "The Correspondence Analysis of two-mode networks revisited." *Social Networks* 83: 134-151. [doi:10.1016/j.socnet.2025.06.001](https://doi.org/10.1016/j.socnet.2025.06.001). [replication materials](https://github.com/olizardo/correspondence-analysis-two-mode-networks).
+**Omar Lizardo**. "The Correspondence Analysis of two-mode networks revisited." *Social Networks* 83: 134-151. [doi:10.1016/j.socnet.2025.06.001](https://doi.org/10.1016/j.socnet.2025.06.001). [{{< fa github >}} replication](https://github.com/olizardo/correspondence-analysis-two-mode-networks).
 
 Cheng Wang, **Omar Lizardo** and David S. Hachen. "Temporal dynamics of the friendship paradox in a smartphone communication network." *Applied Network Science* 10: 16 [doi:10.1007/s41109-025-00710-1](https://doi.org/10.1007/s41109-025-00710-1).
 
@@ -186,7 +186,7 @@ Cheng Wang, **Omar Lizardo** and David S. Hachen. "Exploring the multidimensiona
 
 Matteo Serafino, G. Virginio Clemente, James Flamino, Bolesław K. Szymański, **Omar Lizardo** and Hernán A. Makse. "Analysis of flows in social media uncovers a new multi-step model of information spread." *Journal of Statistical Mechanics: Theory and Experiment*: 113402. [doi:10.1088/1742-5468/ad8748](https://doi.org/10.1088/1742-5468/ad8748).
 
-**Omar Lizardo**. "From macrogenres to microgenres via relationality." *Poetics: Journal of Empirical Research on Culture, the Media and the Arts* 102: 101868. [doi:10.1016/j.poetic.2024.101868](https://doi.org/10.1016/j.poetic.2024.101868). [replication materials](https://github.com/olizardo/Discovering-Focused-Microgenre-Communities).
+**Omar Lizardo**. "From macrogenres to microgenres via relationality." *Poetics: Journal of Empirical Research on Culture, the Media and the Arts* 102: 101868. [doi:10.1016/j.poetic.2024.101868](https://doi.org/10.1016/j.poetic.2024.101868). [{{< fa github >}} replication](https://github.com/olizardo/Discovering-Focused-Microgenre-Communities).
 
 Seth Abrutyn and **Omar Lizardo**. "Wanting, Liking, and the sociology of motivation." *Sociological Forum* 39: 173-188. [doi:10.1111/socf.12996](https://doi.org/10.1111/socf.12996)
 
@@ -196,12 +196,12 @@ Travis Ashby, **Omar Lizardo**, Dustin S. Stoltz and Michael Lee Wood. "The Raw 
 
 David Hachen, Cheng Wang, Brandon Sepulvado and **Omar Lizardo**. "Generators or diffusers? Examining differences in the dynamic coupling of context and social ties across multiple types of foci." *Social Networks* 77: 151-165. [doi:10.1016/j.socnet.2022.02.004](https://doi.org/10.1016/j.socnet.2022.02.004)
 
-**Omar Lizardo**. "Two-mode relational similarities." *Social Networks*  76: 34-41. [doi:10.1016/j.socnet.2023.06.002](https://doi.org/10.1016/j.socnet.2023.06.002). [replication materials](https://github.com/olizardo/Two-Mode-Relational-Similarity).
+**Omar Lizardo**. "Two-mode relational similarities." *Social Networks*  76: 34-41. [doi:10.1016/j.socnet.2023.06.002](https://doi.org/10.1016/j.socnet.2023.06.002). [{{< fa github >}} replication](https://github.com/olizardo/Two-Mode-Relational-Similarity).
 :::
 
 ### 2022–2023
 ::: {.cventry}
-**Omar Lizardo**. "Visualizing the decline in cultural participation in Europe post-crisis." *Socius: Sociological Research for a Dynamic World* 9: [doi:10.1177/23780231231184968](https://doi.org/10.1177/23780231231184968). [replication materials](https://github.com/olizardo/Visualizing-the-Decline-in-Cultural-Participation-in-Europe-Post-Crisis).
+**Omar Lizardo**. "Visualizing the decline in cultural participation in Europe post-crisis." *Socius: Sociological Research for a Dynamic World* 9: [doi:10.1177/23780231231184968](https://doi.org/10.1177/23780231231184968). [{{< fa github >}} replication](https://github.com/olizardo/Visualizing-the-Decline-in-Cultural-Participation-in-Europe-Post-Crisis).
 
 **Omar Lizardo**. "An analytical approach to culture." *Philosophy of the Social Sciences* 53: 281–302. [doi:10.1177/00483931231169313](https://doi.org/10.1177/00483931231169313)
 
@@ -278,7 +278,7 @@ Ashwin Bahulkar, Bolesław K. Szymański, Kevin Chan and **Omar Lizardo**. "Impa
 
 Louis Faust, David Hachen, **Omar Lizardo** and Nitesh Chawla. "Quantifying subjective well-being using trends in weekend activity." *Proceedings of the IEEE International Conference on Healthcare Informatics (ICHI)*: 123-129. [doi:10.1109/ichi.2018.00021](https://doi.org/10.1109/ichi.2018.00021)
 
-**Omar Lizardo**. "The mutual specification of genres and audiences: Reflective two-mode centralities in person-to-culture choice data." *Poetics: Journal of Empirical Research on Culture, the Media and the Arts* 68: 52-71. [doi:10.1016/j.poetic.2018.04.003](https://doi.org/10.1016/j.poetic.2018.04.003). [replication materials](https://github.com/olizardo/Reflective-Centralities).
+**Omar Lizardo**. "The mutual specification of genres and audiences: Reflective two-mode centralities in person-to-culture choice data." *Poetics: Journal of Empirical Research on Culture, the Media and the Arts* 68: 52-71. [doi:10.1016/j.poetic.2018.04.003](https://doi.org/10.1016/j.poetic.2018.04.003). [{{< fa github >}} replication](https://github.com/olizardo/Reflective-Centralities).
 
 Dustin S. Stoltz and **Omar Lizardo**. "Deliberate trust and intuitive faith: A dual-process model of reliance." *Journal for the Theory of Social Behaviour* 48: 230-250. [doi:10.1111/jtsb.12160](https://doi.org/10.1111/jtsb.12160)
 
@@ -311,7 +311,7 @@ Joseph Cabrera, Stephan Scholz, George Hobor and **Omar Lizardo**. "Integrating 
 
 Rachel Purta, Stephen Mattingly, Lixing Song, **Omar Lizardo**, David Hachen, Christian Poellabauer and  Aaron Striegel. "Experiences measuring sleep and physical activity patterns across a large college cohort with fitbits." *Proceedings of the ACM International Symposium on Wearable Computers* 28-35. [doi:10.1145/2971763.2971767](https://doi.org/10.1145/2971763.2971767)
 
-**Omar Lizardo**. "Why 'cultural matters' matter: Culture talk as the mobilization of cultural capital in interaction." *Poetics: Journal of Empirical Research on Culture, the Media and the Arts* 58: 1-17.^[Lead article.] [doi:10.1016/j.poetic.2016.09.002](https://doi.org/10.1016/j.poetic.2016.09.002). [replication materials](https://github.com/olizardo/lizardo-culture-talk-stratification).
+**Omar Lizardo**. "Why 'cultural matters' matter: Culture talk as the mobilization of cultural capital in interaction." *Poetics: Journal of Empirical Research on Culture, the Media and the Arts* 58: 1-17.^[Lead article.] [doi:10.1016/j.poetic.2016.09.002](https://doi.org/10.1016/j.poetic.2016.09.002). [{{< fa github >}} replication](https://github.com/olizardo/lizardo-culture-talk-stratification).
 
 Stephen Vaisey and **Omar Lizardo**. "Cultural fragmentation or acquired dispositions? A new approach to accounting for patterns of cultural change." *Socius: Sociological Research for a Dynamic World* 2. [doi:10.1177/2378023116669726](https://doi.org/10.1177/2378023116669726)
 
