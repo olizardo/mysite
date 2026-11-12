@@ -46,10 +46,10 @@ website:
       - text: "Reproducible Research"
         icon: github
         menu:
-          - text: "Why 'Cultural Matters' Matter"
+          - text: "Patriotism as a Choice Process"
             icon: github
-            href: "https://github.com/olizardo/lizardo-culture-talk-stratification"
-          - text: "Combining Similarity and Eigenvector Centrality"
+            href: "https://github.com/olizardo/patriotism-choice-process"
+          - text: "A Generalized Approach to Combining Similarity and Eigenvector Centrality"
             icon: github
             href: "https://github.com/olizardo/combining-similarity-eigenvector"
           - text: "The CA of Two-Mode Networks Revisited"
@@ -67,6 +67,21 @@ website:
           - text: "Decline in Cultural Participation Post-Crisis"
             icon: github
             href: "https://github.com/olizardo/Visualizing-the-Decline-in-Cultural-Participation-in-Europe-Post-Crisis"
+          - text: "Reflective Two-Mode Centralities (Genres and Audiences)"
+            icon: github
+            href: "https://github.com/olizardo/Reflective-Centralities"
+          - text: "Why 'Cultural Matters' Matter"
+            icon: github
+            href: "https://github.com/olizardo/lizardo-culture-talk-stratification"
+          - text: "Institutional Movement Logics and the Social Movement Field"
+            icon: github
+            href: "https://github.com/olizardo/larson-lizardo-institutional-movement-logics-SF"
+          - text: "Collective Memory of Che Guevara"
+            icon: github
+            href: "https://github.com/olizardo/che-guevara-collective-memory"
+          - text: "Variety in Cultural Choice and the Activation of Social Ties"
+            icon: github
+            href: "https://github.com/olizardo/replication-cultural-capital-network-activation"
       - text: "Teaching"
         icon: pencil
         menu: 
