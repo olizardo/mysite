@@ -255,7 +255,7 @@ Cheng Wang, **Omar Lizardo** and David S. Hachen. "Neither influence nor selecti
 
 Shikang Liu, David Hachen, **Omar Lizardo**, Christian Poellabauer, Aaron Striegel and Tijana Milenković. "The power of dynamic social networks to predict individuals' mental health." *Biocomputing* 25: 635-646. [doi:10.1142/9789811215636_0056](https://doi.org/10.1142/9789811215636_0056)
 
-Jeff Larson and **Omar Lizardo**.  "Institutional movement logics and the changing shape of the U.S. social movement field, 1960–1995." *Social Forces* 97: 1389–1422. [doi:10.1093/sf/soy122](https://doi.org/10.1093/sf/soy122)
+Jeff Larson and **Omar Lizardo**.  "Institutional movement logics and the changing shape of the U.S. social movement field, 1960–1995." *Social Forces* 97: 1389–1422. [doi:10.1093/sf/soy122](https://doi.org/10.1093/sf/soy122). [{{< fa brands github >}} replication](https://github.com/olizardo/larson-lizardo-institutional-movement-logics-SF).
 
 **Omar Lizardo**. "Simmel's dialectic of form and content in recent work in cultural sociology." *The Germanic Review: Literature, Culture, Theory* 94:93-100. [doi:10.1080/00168890.2019.1585664](https://doi.org/10.1080/00168890.2019.1585664)
 
@@ -363,7 +363,7 @@ Robert M. Fishman and **Omar Lizardo**. "How macro-historical change shapes cult
 
 Cheng Wang, **Omar Lizardo**, David Hachen, Anthony Strathman, Zoltán Toroczkai, and Nitesh Chawla. "A dyadic reciprocity index for repeated interaction networks." *Network Science* 1: 31-48.^[Inaugural issue.] [doi:10.1017/nws.2012.5](https://doi.org/10.1017/nws.2012.5)
 
-**Omar Lizardo**. "Variety in cultural choice and the activation of social ties." *Social Science Research* 42: 321–330. [doi:10.1016/j.ssresearch.2012.09.014](https://doi.org/10.1016/j.ssresearch.2012.09.014)
+**Omar Lizardo**. "Variety in cultural choice and the activation of social ties." *Social Science Research* 42: 321–330. [doi:10.1016/j.ssresearch.2012.09.014](https://doi.org/10.1016/j.ssresearch.2012.09.014). [{{< fa brands github >}} replication](https://github.com/olizardo/replication-cultural-capital-network-activation).
 :::
 
 ### 2010–2012
@@ -421,7 +421,7 @@ Jessica Collett and **Omar Lizardo**. "A power-control theory of gender and reli
 ::: {.cventry}
 **Omar Lizardo**. "Fight Club, or, the cultural contradictions of late capitalism."  *Journal for Cultural Research* 11:  221-243. [doi:10.1177/02632764070240041102](https://doi.org/10.1177/02632764070240041102)
 
-Jeff Larson and **Omar Lizardo**. "Generations, identities and the collective memory of Che Guevara." *Sociological Forum* 22: 425-451. [doi:10.1111/j.1573-7861.2007.00045.x](https://doi.org/10.1111/j.1573-7861.2007.00045.x) 
+Jeff Larson and **Omar Lizardo**. "Generations, identities and the collective memory of Che Guevara." *Sociological Forum* 22: 425-451. [doi:10.1111/j.1573-7861.2007.00045.x](https://doi.org/10.1111/j.1573-7861.2007.00045.x). [{{< fa brands github >}} replication](https://github.com/olizardo/che-guevara-collective-memory).
 
 **Omar Lizardo**. "'Mirror neurons,' collective objects and the problem of transmission:  reconsidering Stephen Turner's critique of practice theory."  *Journal for the Theory of Social Behaviour* 37:  319-350. [doi:10.1111/j.1468-5914.2007.00340.x4](https://doi.org/10.1111/j.1468-5914.2007.00340.x4)
 :::
