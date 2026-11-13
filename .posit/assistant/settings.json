@@ -19,7 +19,9 @@
       "git push *": "allow",
       "gh auth status *": "allow",
       "ssh *": "allow",
-      "git config *": "allow"
+      "git config *": "allow",
+      "curl *": "allow",
+      "cd *": "allow"
     },
     "webfetch": {
       "https://api.crossref.org/*": "allow",

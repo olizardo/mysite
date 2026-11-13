@@ -321,7 +321,7 @@ Ashwin  Bahulkar, Bolesław K. Szymański, **Omar Lizardo**, Yuxiao Dong, Yang Y
 
 **Omar Lizardo**. "Cultural symbols and cultural power." *Qualitative Sociology* 39: 199-204.  [doi:10.1007/s11133-016-9329-4](https://doi.org/10.1007/s11133-016-9329-4)
 
-**Omar Lizardo** and Sara Skiles. "The end of symbolic exclusion? The rise of 'categorical tolerance' in the musical tastes of Americans: 1993-2012." *Sociological Science* 3: 85-108. [doi:10.15195/v3.a5](https://doi.org/10.15195/v3.a5)
+**Omar Lizardo** and Sara Skiles. "The end of symbolic exclusion? The rise of 'categorical tolerance' in the musical tastes of Americans: 1993-2012." *Sociological Science* 3: 85-108. [doi:10.15195/v3.a5](https://doi.org/10.15195/v3.a5). [{{< fa brands github >}} replication](https://github.com/olizardo/lizardo-skiles-categorical-tolerance).
 :::
 
 ### 2015
