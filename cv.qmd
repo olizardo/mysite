@@ -158,7 +158,9 @@ Elliot Weininger, Annette Lareau and **Omar Lizardo** (Editors). *Ritual, Emotio
 
 Clayton Childress and **Omar Lizardo**. "An impure gaze: Aesthetic, moral, and political evaluation in the United States." *Socius*. Forthcoming. [{{< fa brands github >}} replication](https://github.com/olizardo/childress-lizardo-aesthetic-politics).
 
-**Omar Lizardo**. "Patriotism as a choice process: National pride after 9/11." *Social Psychology Quarterly*. Forthcoming. [{{< fa brands github >}} replication](https://github.com/olizardo/patriotism-choice-process).**Omar Lizardo**. "A generalized approach to combining similarity and eigenvector analysis of networks." *Connections*. [{{< fa brands github >}} replication](https://github.com/olizardo/combining-similarity-eigenvector).
+**Omar Lizardo**. "Patriotism as a choice process: National pride after 9/11." *Social Psychology Quarterly*. Forthcoming. [{{< fa brands github >}} replication](https://github.com/olizardo/patriotism-choice-process).
+
+**Omar Lizardo**. "A generalized approach to combining similarity and eigenvector analysis of networks." *Connections*. [{{< fa brands github >}} replication](https://github.com/olizardo/combining-similarity-eigenvector).
 
 Mateusz Nurek, Joanna Kołaczek, Radosław Michalski, Bolesław K. Szymański and **Omar Lizardo**. "CoDiNG – naming game with continuous latent state of individual agents." *IEEE Transactions on Computational Social Systems*. [doi:10.1109/TCSS.2026.3738519](https://doi.org/10.1109/TCSS.2026.3738519).
 
