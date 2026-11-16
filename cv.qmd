@@ -343,7 +343,7 @@ Jeff Larson and **Omar Lizardo**. "An institutional logics approach to the analy
 ::: {.cventry}
 Cheng Wang, **Omar Lizardo** and David Hachen. "Algorithms for generating large-scale clustered random graphs." *Network Science* 2: 403-415. [doi:10.1017/nws.2014.7](https://doi.org/10.1017/nws.2014.7)
 
-**Omar Lizardo**. "Taste and the logic of practice in *Distinction*." *Czech Sociological Review* 50: 335-364. [www.jstor.org/stable/24642586](https://www.jstor.org/stable/24642586)
+**Omar Lizardo**. "Taste and the logic of practice in *Distinction*." *Czech Sociological Review* 50: 335-364. [doi:10.13060/00380288.2014.50.3.105](https://doi.org/10.13060/00380288.2014.50.3.105)
 
 **Omar Lizardo**. "Omnivorousness as the bridging of cultural holes: A measurement strategy." *Theory and Society*  43: 395-419. [doi:10.1007/s11186-014-9220-9](https://doi.org/10.1007/s11186-014-9220-9)
 
@@ -479,7 +479,7 @@ Seth Abrutyn and **Omar Lizardo**. "Introduction." Pp. 1-13 in S. Abrutyn and O.
 
 **Omar Lizardo**. "Culture and stratification." Pp. 198-206 in J. R. Hall, L. Grindstaff and M-C. Lo (Eds.), *Routledge Handbook of Cultural Sociology, 2nd Edition*. Routledge. [doi:10.4324/9781315267784-22](http://dx.doi.org/10.4324/9781315267784-22 )
 
-Elliot Weininger and **Omar Lizardo**. "Introduction." In E. Weininger, A. Lareau and O. Lizardo (Eds.), *Ritual, Emotion, Violence: Studies on the Micro-Sociology of Randall Collins.* Routledge. 
+Elliot Weininger and **Omar Lizardo**. "Introduction." In E. Weininger, A. Lareau and O. Lizardo (Eds.), *Ritual, Emotion, Violence: Studies on the Micro-Sociology of Randall Collins.* Routledge. [doi:10.4324/9780429464157-1](https://doi.org/10.4324/9780429464157-1)
 
 Ashwin Bahulkar, Bolesław K. Szymański, Kevin Chan and **Omar Lizardo**. "Co-evolution of two networks representing different social relations in NetSense." Pp. 423-434 in H. Cherifi, S. Gaito, W. Quattrociocchi and A. Sala (Eds.)  *Complex Networks & Their Applications V: Proceedings of the 5th International Workshop on Complex Networks and Their Applications (COMPLEX NETWORKS 2016)*. Cham, Switzerland: Springer. [doi:10.1007/978-3-319-50901-3_34](https://doi.org/10.1007/978-3-319-50901-3_34)
 
