@@ -270,9 +270,7 @@ Louis Faust, Priscilla Jiménez-Pazmino, James K. Holland, **Omar Lizardo**, Dav
 
 ### 2018
 ::: {.cventry}
-Shikang Liu, David Hachen; **Omar Lizardo**, Christian Poellabauer, Aaron Striegel and Tijana Milenković. "Network analysis of the NetHealth data: Exploring the co-evolution of individuals' social networks and physical activities." *Applied Network Science* 3:45. 
-
-[doi:10.1007/s41109-018-0103-2](https://doi.org/10.1007/s41109-018-0103-2)
+Shikang Liu, David Hachen; **Omar Lizardo**, Christian Poellabauer, Aaron Striegel and Tijana Milenković. "Network analysis of the NetHealth data: Exploring the co-evolution of individuals' social networks and physical activities." *Applied Network Science* 3:45. [doi:10.1007/s41109-018-0103-2](https://doi.org/10.1007/s41109-018-0103-2)
 
 **Omar Lizardo**, Dustin S. Stoltz, Marshall A. Taylor and Michael Lee Wood. "Visualizing bring-backs." *Socius: Sociological Research for a Dynamic World* 4. [doi:10.1177/2378023118805362](https://doi.org/10.1177/2378023118805362)
 
@@ -494,11 +492,11 @@ Bolesław K. Szymański, **Omar Lizardo**, Casey Doyle, Panagiotis D. Karampourn
 ::: {.cventry}
 **Omar Lizardo** and Sara Skiles. "After omnivorousness: Is Bourdieu still relevant?"  Pp. 90-103 in L. Hanquinet and M. Savage (Eds.), *Routledge International Handbook of the Sociology of Art and Culture*. Routledge. [doi:10.4324/9780203740248.ch5](https://www.routledgehandbooks.com/doi/10.4324/9780203740248.ch5)
 
-David Galehouse, Tommy Nguyen, Sameet Sreenivasan, **Omar Lizardo**, Gyorgy Korniss and Bolesław K. Szymański. "Impact of network connectivity and agent commitment on spread of opinions in social networks." Pp. 149-160 in S. Schatz, J. Cohn and D. Nicholson (Eds.) *Advances in Cross-Cultural Decision Making*. CRC Press. 
+David Galehouse, Tommy Nguyen, Sameet Sreenivasan, **Omar Lizardo**, Gyorgy Korniss and Bolesław K. Szymański. "Impact of network connectivity and agent commitment on spread of opinions in social networks." Pp. 149-160 in S. Schatz, J. Cohn and D. Nicholson (Eds.) *Advances in Cross-Cultural Decision Making*. CRC Press. [doi:10.54941/ahfe100197](https://doi.org/10.54941/ahfe100197)
 
 **Omar Lizardo**. "Embodied culture as procedure: Cognitive science and the link between subjective and objective culture." Pp. 70-86 in A. Warde and D. Southerton (Eds.), *The Habits of Consumption: COLLeGIUM: Studies Across Disciplines in the Humanities and Social Sciences*, Volume 12. Helsinki Collegium of Advanced Studies. [http://hdl.handle.net/10138/34223](http://hdl.handle.net/10138/34223)
 
-**Omar Lizardo**. "Jean Piaget: Sociology beyond holism and individualism." Pp. 315-322 in C. Edling and J. Rydgren (Eds.), *Sociological Insights of Great Thinkers: Sociology through Literature, Philosophy, and Science*. Praeger. 
+**Omar Lizardo**. "Jean Piaget: Sociology beyond holism and individualism." Pp. 315-322 in C. Edling and J. Rydgren (Eds.), *Sociological Insights of Great Thinkers: Sociology through Literature, Philosophy, and Science*. Praeger. [doi:10.5040/9798216016236.ch-033](https://doi.org/10.5040/9798216016236.ch-033) 
 
 **Omar Lizardo**. "Culture and stratification."  Pp. 305-315 in J. R. Hall, L. Grindstaff and M-C. Lo (Eds.), *Handbook of Cultural Sociology*. Routledge. [doi:10.4324/9780203891377.ch29](https://www.routledgehandbooks.com/doi/10.4324/9780203891377.ch29)
 
@@ -567,11 +565,11 @@ Jessica Collett and **Omar Lizardo**. "Localizing cultural phenomena by specifyi
 
 **Omar Lizardo**. 2015. "Culture, cognition and embodiment." In James D. Wright (Ed.) *International Encyclopedia of the Social and Behavioral Sciences*. Elsevier. [doi:10.1016/B978-0-08-097086-8.10442-8](https://doi.org/10.1016/B978-0-08-097086-8.10442-8)
 
-**Omar Lizardo**. 2013. "Habitus."  In Byron Kaldis (Ed.) *Encyclopedia of Philosophy and the Social Sciences*. Thousand Oaks: Sage Publications. 
+**Omar Lizardo**. 2013. "Habitus."  In Byron Kaldis (Ed.) *Encyclopedia of Philosophy and the Social Sciences*. Thousand Oaks: Sage Publications. [doi:10.4135/9781452276052.n152](https://doi.org/10.4135/9781452276052.n152)
 
-**Omar Lizardo**. 2011. "Cultural capital."  In Dale Southerton(Ed.), *Encyclopedia of Consumer Culture*.  Thousand Oaks: Sage Publications. 
+**Omar Lizardo**. 2011. "Cultural capital."  In Dale Southerton(Ed.), *Encyclopedia of Consumer Culture*.  Thousand Oaks: Sage Publications. [doi:10.4135/9781412994248.n144](https://doi.org/10.4135/9781412994248.n144)
 
-**Omar Lizardo**. 2006. "Foreign terrorism." In James Ciment (Ed.), *Social Issues in America: An Encyclopedia*. New York: M.E. Sharpe. 
+**Omar Lizardo**. 2006. "Foreign terrorism." In James Ciment (Ed.), *Social Issues in America: An Encyclopedia*. New York: M.E. Sharpe. [doi:10.4324/9781315700724-157](https://doi.org/10.4324/9781315700724-157)
 
 **Omar Lizardo**. 2006. "Relational cohesion theory." In George Ritzer (Ed.), *Encyclopedia of Sociology*. New York: Blackwell. [doi:10.1002/9781405165518.wbeosr045](https://doi.org/10.1002/9781405165518.wbeosr045)
 
