@@ -94,6 +94,9 @@ website:
           - text: "SOCIOL 111 (Social Networks Undergraduate Class)"
             icon: file-text
             href: syllabi/SOCIOL111.qmd
+          - text: "SOC 111 Lecture Slides"
+            icon: easel
+            href: slides/SOCIOL111-slides.qmd
           - text: "SOCIOL 204 (Topics in Sociological Theorizing Reading List)"
             icon: file-text
             href: syllabi/SOCIOL204.qmd

@@ -1,0 +1,69 @@
+---
+title: "SOC 111 Lecture Slides"
+subtitle: "Social Networks (SOCIOL 111)"
+---
+
+This page collects the lecture slides for **SOC 111: Social Networks**. The decks are hosted as part of the companion textbook site, [*Social Networks: An Introduction*](https://olizardo.github.io/networks-textbook/). Use the arrow keys or the on-screen navigation to move through each deck. For the course syllabus, see [SOCIOL 111 (Social Networks Undergraduate Class)](../syllabi/SOCIOL111.html).
+
+## Networks and Social Structure
+
+| Lecture | Slides |
+|---------|--------|
+| What are networks? | [Slides](https://olizardo.github.io/networks-textbook/slides/what-are-networks.html) |
+| Ties, dyads, and triads | [Slides](https://olizardo.github.io/networks-textbook/slides/ties-motifs.html) |
+| Cognitive social structures | [Slides](https://olizardo.github.io/networks-textbook/slides/cognitive-social-structures.html) |
+
+## Graph Theory
+
+| Lecture | Slides |
+|---------|--------|
+| Graph theory | [Slides](https://olizardo.github.io/networks-textbook/slides/graph-theory.html) |
+| Directed graph metrics | [Slides](https://olizardo.github.io/networks-textbook/slides/graph-metrics-directed.html) |
+| Undirected graph metrics | [Slides](https://olizardo.github.io/networks-textbook/slides/graph-metrics-undirected.html) |
+| Cutsets, bridges & robustness | [Slides](https://olizardo.github.io/networks-textbook/slides/graph-cutsets-directed.html) |
+| Trees, forests & efficiency | [Slides](https://olizardo.github.io/networks-textbook/slides/graph-trees.html) |
+| Sub-groups & cliques | [Slides](https://olizardo.github.io/networks-textbook/slides/subgroups.html) |
+| Equivalence & similarity | [Slides](https://olizardo.github.io/networks-textbook/slides/positional-equivalence.html) |
+
+## Matrix Methods
+
+| Lecture | Slides |
+|---------|--------|
+| Networks, graphs, and matrices | [Slides](https://olizardo.github.io/networks-textbook/slides/matrix-intro.html) |
+| Matrix algebra in social networks, part I | [Slides](https://olizardo.github.io/networks-textbook/slides/matrix-operations.html) |
+| Matrix algebra in social networks, part II | [Slides](https://olizardo.github.io/networks-textbook/slides/matrix-multiplication.html) |
+| Advanced network matrices | [Slides](https://olizardo.github.io/networks-textbook/slides/matrix-advanced.html) |
+
+## Centrality and Position
+
+| Lecture | Slides |
+|---------|--------|
+| Centrality in networks | [Slides](https://olizardo.github.io/networks-textbook/slides/centrality.html) |
+| Affiliation networks | [Slides](https://olizardo.github.io/networks-textbook/slides/affiliation-networks.html) |
+| Blockmodeling | [Slides](https://olizardo.github.io/networks-textbook/slides/blockmodeling.html) |
+
+## Ego Networks
+
+| Lecture | Slides |
+|---------|--------|
+| Measuring ego networks | [Slides](https://olizardo.github.io/networks-textbook/slides/ego-metrics.html) |
+| Collecting ego-network data | [Slides](https://olizardo.github.io/networks-textbook/slides/ego-collect.html) |
+| Theories of ego network homogeneity and diversity | [Slides](https://olizardo.github.io/networks-textbook/slides/ego-homogeneity.html) |
+
+## Classic Theories of Social Networks
+
+| Lecture | Slides |
+|---------|--------|
+| The strength of weak ties | [Slides](https://olizardo.github.io/networks-textbook/slides/strength-weak-ties.html) |
+| The small world phenomenon | [Slides](https://olizardo.github.io/networks-textbook/slides/small-world.html) |
+| Burt's theory of structural holes | [Slides](https://olizardo.github.io/networks-textbook/slides/structural-holes.html) |
+| Dunbar's theory of social circles | [Slides](https://olizardo.github.io/networks-textbook/slides/dunbar-theory.html) |
+| Diffusion of innovations | [Slides](https://olizardo.github.io/networks-textbook/slides/diffusion-of-innovations.html) |
+
+## Balance, Exchange, and Conflict
+
+| Lecture | Slides |
+|---------|--------|
+| Balance theory and signed graphs | [Slides](https://olizardo.github.io/networks-textbook/slides/balance-signed-graphs.html) |
+| Chains of affection | [Slides](https://olizardo.github.io/networks-textbook/slides/chains-of-affection.html) |
+| Theories of valenced interactions | [Slides](https://olizardo.github.io/networks-textbook/slides/valenced-interactions.html) |

@@ -2,7 +2,8 @@
   "permission": {
     "edit": {
       "*.md": "allow",
-      "*.qmd": "allow"
+      "*.qmd": "allow",
+      "*.yml": "allow"
     },
     "bash": {
       "quarto render *": "allow",
@@ -29,7 +30,8 @@
     "webfetch": {
       "https://api.crossref.org/*": "allow",
       "https://journals.sagepub.com/*": "allow",
-      "https://doi.org/*": "allow"
+      "https://doi.org/*": "allow",
+      "https://olizardo.github.io/*": "allow"
     },
     "executeCode": {
       "*": "allow"
