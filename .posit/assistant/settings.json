@@ -38,6 +38,10 @@
     },
     "websearch": {
       "*": "allow"
+    },
+    "external_directory": {
+      "/home/omarlizardo/projects/ACADEMICS/networks-textbook/homeworks/*": "allow",
+      "/home/omarlizardo/projects/ACADEMICS/SOCIOL 111/homeworks/*": "allow"
     }
   },
   "sandbox": {

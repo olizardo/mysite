@@ -328,7 +328,7 @@ Ashwin  Bahulkar, Bolesław K. Szymański, **Omar Lizardo**, Yuxiao Dong, Yang Y
 ::: {.cventry}
 Brandon Sepulvado, Michael Penta, David Hachen and **Omar Lizardo**. "Social affiliation from religious disaffiliation: Evidence of selective mixing among youth with no religious preference during the transition to college." *Journal for the Scientific Study of Religion*. 54: 833-841. [doi:10.1111/jssr.12227](https://doi.org/10.1111/jssr.12227)
 
-**Omar Lizardo** and Sara Skiles. "Musical taste and patterns of symbolic exclusion in the United States 1993–2012: Generational dynamics of differentiation and continuity." *Poetics: Journal of Empirical Research on Culture, the Media and the Arts*  53: 9-21.^[Lead article.] [doi:10.1016/j.poetic.2015.08.003](https://doi.org/10.1016/j.poetic.2015.08.003)
+**Omar Lizardo** and Sara Skiles. "Musical taste and patterns of symbolic exclusion in the United States 1993–2012: Generational dynamics of differentiation and continuity." *Poetics: Journal of Empirical Research on Culture, the Media and the Arts*  53: 9-21.^[Lead article.] [doi:10.1016/j.poetic.2015.08.003](https://doi.org/10.1016/j.poetic.2015.08.003). [{{< fa brands github >}} replication](https://github.com/olizardo/lizardo-skiles-age-field-musical-taste)
 
 **Omar Lizardo**, Michael Penta, Matthew Chandler, Casey Doyle, G. Korniss, Bolesław K. Szymański, and Jonathan Bakdash. "Analysis of opinion evolution in a multi-cultural student social network."  *Proceedings of the 6th International Conference on Applied Human Factors and Ergonomics*: 3977-3984. [doi:10.1016/j.promfg.2015.07.938](https://doi.org/10.1016/j.promfg.2015.07.938)
 

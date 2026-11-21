@@ -82,6 +82,9 @@ website:
           - text: "Variety in Cultural Choice and the Activation of Social Ties"
             icon: github
             href: "https://github.com/olizardo/replication-cultural-capital-network-activation"
+          - text: "Musical Taste and Patterns of Symbolic Exclusion"
+            icon: github
+            href: "https://github.com/olizardo/lizardo-skiles-age-field-musical-taste"
       - text: "Teaching"
         icon: pencil
         menu: 
