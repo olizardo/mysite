@@ -45,4 +45,8 @@ When interacting with this codebase, please adhere to the following rules:
 ## Session updates (2026-11-20)
 
 - New CV replication link: Lizardo & Skiles, "Musical taste and patterns of symbolic exclusion in the United States 1993–2012" (*Poetics* 53) → `olizardo/lizardo-skiles-age-field-musical-taste` (matched by README, not repo name; `lizardo-skiles-categorical-tolerance` is the *Sociological Science* paper, `skiles-lizardo-taste-influence-paper` is a different under-review manuscript). Reproducible Research dropdown in `_quarto.yml` updated to match.
-- **No local full-site renders needed:** the repo's `publish.yml` workflow renders the site on push to `main`, so skip `quarto render` (full-site) for deployment; per-file renders are still fine for checking a single document locally.
+
+## Publish workflow (2026-11-20)
+
+- The site is deployed by `.github/workflows/publish.yml` ("Publish to GitHub Pages"): on every push to `main` it checks out the repo, installs Quarto + TinyTeX, renders the full site, and deploys to GitHub Pages. Concurrency group `pages` cancels superseded runs, so rapid pushes are safe.
+- **No local full-site renders needed for deployment:** push to `main` and let CI build. Per-file `quarto render <file>.qmd` is still the right way to check a single document locally before pushing; a full local `quarto render` is optional and slow (CV renders both HTML and PDF).
